@@ -4,6 +4,7 @@ LayoutTranslateBench (LTB) is a public benchmark for document translation with l
 
 ## BibTeX
 
+{% raw %}
 ```bibtex
 @misc{ltbench2026,
   title  = {{LayoutTranslateBench}: A Benchmark for Document Translation with Layout Preservation},
@@ -12,6 +13,7 @@ LayoutTranslateBench (LTB) is a public benchmark for document translation with l
   note   = {Version 0.1, composite score LTB-100}
 }
 ```
+{% endraw %}
 
 ## APA (7th)
 
