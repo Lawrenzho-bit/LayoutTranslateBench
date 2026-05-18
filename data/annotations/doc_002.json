@@ -1,0 +1,126 @@
+{
+  "doc_id": "doc_002",
+  "page_size": [400, 700],
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [50, 30, 300, 40],
+      "text": "Sunny Beans Coffee",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {"font_family": "sans", "size_hint": 22, "bold": true},
+      "references": {
+        "en-es": "Café Sunny Beans",
+        "en-de": "Sunny Beans Kaffee",
+        "en-zh": "阳光豆咖啡",
+        "en-ar": "قهوة صني بينز",
+        "en-ja": "サニー・ビーンズ・コーヒー"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [50, 80, 300, 30],
+      "text": "123 Main St, Portland, OR",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {"font_family": "sans", "size_hint": 12},
+      "references": {
+        "en-es": "123 Main St, Portland, OR",
+        "en-de": "123 Main St, Portland, OR",
+        "en-zh": "俄勒冈州波特兰市主街123号",
+        "en-ar": "123 مين ستريت، بورتلاند، أوريغون",
+        "en-ja": "オレゴン州ポートランド、メインストリート123"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [50, 200, 300, 30],
+      "text": "Latte           $4.50",
+      "reading_order": 2,
+      "layout_class": "table-cell",
+      "style": {"font_family": "mono", "size_hint": 14},
+      "references": {
+        "en-es": "Café con leche  $4.50",
+        "en-de": "Milchkaffee     $4,50",
+        "en-zh": "拿铁           $4.50",
+        "en-ar": "لاتيه           4.50$",
+        "en-ja": "ラテ           $4.50"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [50, 240, 300, 30],
+      "text": "Croissant       $3.75",
+      "reading_order": 3,
+      "layout_class": "table-cell",
+      "style": {"font_family": "mono", "size_hint": 14},
+      "references": {
+        "en-es": "Croissant       $3.75",
+        "en-de": "Croissant       $3,75",
+        "en-zh": "羊角面包       $3.75",
+        "en-ar": "كرواسون         3.75$",
+        "en-ja": "クロワッサン   $3.75"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [50, 320, 300, 30],
+      "text": "Subtotal        $8.25",
+      "reading_order": 4,
+      "layout_class": "table-cell",
+      "style": {"font_family": "mono", "size_hint": 14},
+      "references": {
+        "en-es": "Subtotal        $8.25",
+        "en-de": "Zwischensumme   $8,25",
+        "en-zh": "小计           $8.25",
+        "en-ar": "المجموع الفرعي  8.25$",
+        "en-ja": "小計           $8.25"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [50, 360, 300, 30],
+      "text": "Tax             $0.66",
+      "reading_order": 5,
+      "layout_class": "table-cell",
+      "style": {"font_family": "mono", "size_hint": 14},
+      "references": {
+        "en-es": "Impuesto        $0.66",
+        "en-de": "Steuer          $0,66",
+        "en-zh": "税            $0.66",
+        "en-ar": "ضريبة           0.66$",
+        "en-ja": "税             $0.66"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [50, 400, 300, 40],
+      "text": "Total           $8.91",
+      "reading_order": 6,
+      "layout_class": "table-cell",
+      "style": {"font_family": "mono", "size_hint": 16, "bold": true},
+      "references": {
+        "en-es": "Total           $8.91",
+        "en-de": "Gesamt          $8,91",
+        "en-zh": "总计           $8.91",
+        "en-ar": "الإجمالي         8.91$",
+        "en-ja": "合計           $8.91"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [50, 550, 300, 40],
+      "text": "Thank you for your visit",
+      "reading_order": 7,
+      "layout_class": "footer",
+      "style": {"font_family": "sans", "size_hint": 12, "italic": true},
+      "references": {
+        "en-es": "Gracias por su visita",
+        "en-de": "Danke für Ihren Besuch",
+        "en-zh": "感谢您的光临",
+        "en-ar": "شكراً لزيارتكم",
+        "en-ja": "ご来店ありがとうございました"
+      }
+    }
+  ]
+}

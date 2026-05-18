@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Large data files — pulled separately
+data/sources/*.pdf
+data/sources/*.png
+data/sources/*.jpg
+!data/sources/.gitkeep
+
+# Submission outputs — kept in git only for accepted systems
+submissions/*/output/
+
+# Local result scratch
+results/*.local.json

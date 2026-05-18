@@ -1,0 +1,111 @@
+{
+  "doc_id": "doc_004",
+  "page_size": [800, 1100],
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [80, 60, 640, 60],
+      "text": "Acme Industries Inc.",
+      "reading_order": 0,
+      "layout_class": "header",
+      "style": {"font_family": "sans", "size_hint": 24, "bold": true},
+      "references": {
+        "en-es": "Acme Industries Inc.",
+        "en-de": "Acme Industries Inc.",
+        "en-zh": "Acme工业公司",
+        "en-ar": "شركة أكمي إندستريز",
+        "en-ja": "アクメ・インダストリーズ株式会社"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [560, 160, 200, 30],
+      "text": "15 January 2026",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {"font_family": "serif", "size_hint": 14},
+      "references": {
+        "en-es": "15 de enero de 2026",
+        "en-de": "15. Januar 2026",
+        "en-zh": "2026年1月15日",
+        "en-ar": "15 يناير 2026",
+        "en-ja": "2026年1月15日"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [80, 240, 400, 80],
+      "text": "Mr. Robert Chen\n42 Oak Avenue\nBoston, MA 02101",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {"font_family": "serif", "size_hint": 14},
+      "references": {
+        "en-es": "Sr. Robert Chen\n42 Oak Avenue\nBoston, MA 02101",
+        "en-de": "Herr Robert Chen\n42 Oak Avenue\nBoston, MA 02101",
+        "en-zh": "罗伯特·陈先生\n马萨诸塞州波士顿橡树大道42号 02101",
+        "en-ar": "السيد روبرت تشين\n42 شارع أوك\nبوسطن، ماساتشوستس 02101",
+        "en-ja": "ロバート・チェン様\nオークアベニュー42番地\nマサチューセッツ州ボストン 02101"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [80, 360, 640, 30],
+      "text": "Dear Mr. Chen,",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {"font_family": "serif", "size_hint": 14},
+      "references": {
+        "en-es": "Estimado Sr. Chen,",
+        "en-de": "Sehr geehrter Herr Chen,",
+        "en-zh": "尊敬的陈先生:",
+        "en-ar": "عزيزي السيد تشين،",
+        "en-ja": "チェン様"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [80, 410, 640, 200],
+      "text": "Thank you for your interest in our enterprise services. We are pleased to confirm our proposal for the upcoming fiscal year and look forward to a continued partnership.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {"font_family": "serif", "size_hint": 14},
+      "references": {
+        "en-es": "Gracias por su interés en nuestros servicios empresariales. Nos complace confirmar nuestra propuesta para el próximo año fiscal y esperamos continuar nuestra colaboración.",
+        "en-de": "Vielen Dank für Ihr Interesse an unseren Unternehmensdienstleistungen. Wir bestätigen Ihnen gerne unser Angebot für das kommende Geschäftsjahr und freuen uns auf eine weitere Zusammenarbeit.",
+        "en-zh": "感谢您对我们企业服务的关注。我们很高兴确认即将到来的财年的提案,并期待继续合作。",
+        "en-ar": "نشكركم على اهتمامكم بخدماتنا المؤسسية. يسعدنا تأكيد عرضنا للسنة المالية القادمة ونتطلع إلى استمرار شراكتنا.",
+        "en-ja": "弊社の法人サービスにご関心をお寄せいただき、誠にありがとうございます。次年度のご提案を確認させていただき、引き続きのご協力をお願い申し上げます。"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [80, 700, 200, 30],
+      "text": "Sincerely,",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {"font_family": "serif", "size_hint": 14},
+      "references": {
+        "en-es": "Atentamente,",
+        "en-de": "Mit freundlichen Grüßen,",
+        "en-zh": "此致",
+        "en-ar": "مع خالص التقدير،",
+        "en-ja": "敬具"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [80, 800, 400, 40],
+      "text": "Alice Thompson, CEO",
+      "reading_order": 6,
+      "layout_class": "signature",
+      "style": {"font_family": "serif", "size_hint": 14, "bold": true},
+      "references": {
+        "en-es": "Alice Thompson, Directora Ejecutiva",
+        "en-de": "Alice Thompson, Geschäftsführerin",
+        "en-zh": "爱丽丝·汤普森,首席执行官",
+        "en-ar": "أليس طومسون، الرئيس التنفيذي",
+        "en-ja": "アリス・トンプソン、最高経営責任者"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+title: LayoutTranslateBench
+description: The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality.
+# Update `url` after the GitHub repo is created (e.g. https://<user>.github.io/document-parser).
+url: ""
+baseurl: ""
+
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+show_downloads: false
+
+exclude:
+  - .gitignore
+  - LICENSE
+  - DATASET_LICENSE
+  - pyproject.toml
+  - ltbench/
+  - ltbench.egg-info/
+  - tests/
+  - submissions/
+  - results/
+  - scripts/
+  - "**/__pycache__/**"
+  - ".github/"
+  - "*.log"
+
+include:
+  - leaderboard/index.html
+
+# Pages-served assets
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# SEO / GEO
+seo:
+  type: WebSite

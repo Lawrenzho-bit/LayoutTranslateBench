@@ -1,0 +1,15 @@
+{
+  "system_name": "identity-baseline",
+  "system_version": "0.1.0",
+  "manifest_version": "0.1",
+  "model_id_or_url": null,
+  "runner_config": {
+    "description": "returns source text and bboxes unchanged"
+  },
+  "hardware": "cpu",
+  "total_runtime_seconds": null,
+  "median_per_doc_runtime_seconds": null,
+  "cost_usd": null,
+  "submitter": null,
+  "notes": null
+}

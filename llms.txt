@@ -1,0 +1,34 @@
+# LayoutTranslateBench
+
+> The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality. 200 documents, 5 language pairs (en-es, en-de, en-zh, en-ar, en-ja), single composite score LTB-100. Open code (Apache-2.0) and open dataset (CC-BY-4.0).
+
+LayoutTranslateBench (LTB) evaluates translation systems on documents — not plain text. Each document is annotated with text regions (bounding boxes, reading order, style hints) and reference translations. Submissions report both the translated text AND where the translated text was placed in the rendered output, so LTB can score translation quality (chrF), layout fidelity (IoU), and reading-order preservation (Kendall tau) simultaneously.
+
+## Composite score
+
+LTB-100 (v0.1) = 100 × ( 0.50 × chrF/100 + 0.30 × Layout-IoU + 0.20 × Reading-order-tau )
+
+Range 0–100, higher is better. v0.2 will add OCR round-trip and visual fidelity (LPIPS) as additional 10% weights each.
+
+## Spec
+
+- [BENCHMARK.md](BENCHMARK.md): full benchmark specification
+- [docs/methodology.md](docs/methodology.md): scoring methodology, per-metric definitions, aggregation
+- [docs/submission.md](docs/submission.md): submission format and lifecycle
+- [docs/citation.md](docs/citation.md): how to cite
+- [docs/faq.md](docs/faq.md): frequently asked questions
+- [LEADERBOARD.md](LEADERBOARD.md): current leaderboard
+
+## Code
+
+- [ltbench/schemas.py](ltbench/schemas.py): Pydantic schemas for manifest, annotation, submission, results
+- [ltbench/metrics/](ltbench/metrics/): chrF, layout IoU, reading-order Kendall tau, composite LTB-100
+- [ltbench/cli.py](ltbench/cli.py): the `ltbench` command (init, verify, score, leaderboard)
+
+## What LTB is not
+
+- Not a plain-text translation benchmark (use WMT shared tasks for that)
+- Not an OCR benchmark (use OmniDocBench or socOCRbench)
+- Not a layout-only benchmark (use PubLayNet)
+
+LTB is the intersection: translation quality conditional on the system also preserving the document's visual structure.

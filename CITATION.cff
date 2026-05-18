@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "LayoutTranslateBench"
+message: "If you use this benchmark, please cite it as below."
+type: dataset
+abstract: >-
+  LayoutTranslateBench (LTB) is a public benchmark for document translation
+  with layout preservation. Submissions are scored on translation quality
+  (chrF), layout fidelity (IoU), and reading-order preservation (Kendall tau),
+  combined into a single composite score LTB-100.
+authors:
+  - name: "LayoutTranslateBench Contributors"
+version: "0.1.0"
+date-released: "2026-05-18"
+license: "Apache-2.0"
+keywords:
+  - benchmark
+  - document-ai
+  - translation
+  - localization
+  - layout-preservation
+  - ocr
+  - leaderboard
+repository-code: "https://github.com/<org>/document-parser"
+url: "https://github.com/<org>/document-parser"
+preferred-citation:
+  type: software
+  title: "LayoutTranslateBench: A Benchmark for Document Translation with Layout Preservation"
+  authors:
+    - name: "LayoutTranslateBench Contributors"
+  year: 2026
+  version: "0.1.0"
+  url: "https://github.com/<org>/document-parser"

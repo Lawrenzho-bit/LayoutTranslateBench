@@ -1,0 +1,81 @@
+{
+  "doc_id": "doc_005",
+  "page_size": [800, 1100],
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [80, 80, 640, 50],
+      "text": "Meeting Notes — Q1 Planning",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {"font_family": "handwritten", "size_hint": 22, "bold": true},
+      "references": {
+        "en-es": "Notas de reunión — Planificación Q1",
+        "en-de": "Besprechungsnotizen — Q1-Planung",
+        "en-zh": "会议笔记 — 第一季度规划",
+        "en-ar": "ملاحظات الاجتماع — تخطيط الربع الأول",
+        "en-ja": "会議メモ — 第1四半期計画"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [80, 200, 640, 40],
+      "text": "Action items:",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {"font_family": "handwritten", "size_hint": 18, "bold": true},
+      "references": {
+        "en-es": "Acciones a realizar:",
+        "en-de": "Aufgaben:",
+        "en-zh": "行动项目:",
+        "en-ar": "بنود العمل:",
+        "en-ja": "アクション項目:"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [120, 260, 600, 40],
+      "text": "1. Hire two engineers",
+      "reading_order": 2,
+      "layout_class": "list-item",
+      "style": {"font_family": "handwritten", "size_hint": 16},
+      "references": {
+        "en-es": "1. Contratar dos ingenieros",
+        "en-de": "1. Zwei Ingenieure einstellen",
+        "en-zh": "1. 招聘两名工程师",
+        "en-ar": "1. توظيف مهندسَين اثنَين",
+        "en-ja": "1. エンジニアを2名採用する"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [120, 320, 600, 40],
+      "text": "2. Ship MVP by April",
+      "reading_order": 3,
+      "layout_class": "list-item",
+      "style": {"font_family": "handwritten", "size_hint": 16},
+      "references": {
+        "en-es": "2. Lanzar el MVP antes de abril",
+        "en-de": "2. MVP bis April ausliefern",
+        "en-zh": "2. 在四月前发布MVP",
+        "en-ar": "2. إطلاق المنتج الأولي بحلول أبريل",
+        "en-ja": "2. 4月までにMVPをリリースする"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [120, 380, 600, 40],
+      "text": "3. Customer interviews",
+      "reading_order": 4,
+      "layout_class": "list-item",
+      "style": {"font_family": "handwritten", "size_hint": 16},
+      "references": {
+        "en-es": "3. Entrevistas con clientes",
+        "en-de": "3. Kundeninterviews",
+        "en-zh": "3. 客户访谈",
+        "en-ar": "3. مقابلات العملاء",
+        "en-ja": "3. 顧客インタビュー"
+      }
+    }
+  ]
+}

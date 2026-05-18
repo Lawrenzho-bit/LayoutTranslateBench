@@ -1,0 +1,51 @@
+{
+  "benchmark": "LayoutTranslateBench",
+  "version": "0.1",
+  "entries": [
+    {
+      "doc_id": "doc_001",
+      "category": "certificate",
+      "source_file": "sources/doc_001.png",
+      "annotation_file": "annotations/doc_001.json",
+      "page_size": [800, 1100],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    },
+    {
+      "doc_id": "doc_002",
+      "category": "receipt-invoice",
+      "source_file": "sources/doc_002.png",
+      "annotation_file": "annotations/doc_002.json",
+      "page_size": [400, 700],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    },
+    {
+      "doc_id": "doc_003",
+      "category": "scientific-paper",
+      "source_file": "sources/doc_003.png",
+      "annotation_file": "annotations/doc_003.json",
+      "page_size": [850, 1100],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    },
+    {
+      "doc_id": "doc_004",
+      "category": "business-letter",
+      "source_file": "sources/doc_004.png",
+      "annotation_file": "annotations/doc_004.json",
+      "page_size": [800, 1100],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    },
+    {
+      "doc_id": "doc_005",
+      "category": "handwritten-mixed",
+      "source_file": "sources/doc_005.png",
+      "annotation_file": "annotations/doc_005.json",
+      "page_size": [800, 1100],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    }
+  ]
+}
