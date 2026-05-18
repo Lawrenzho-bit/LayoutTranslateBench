@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/Lawrenzho-bit/LayoutTranslateBench/discussions
+    about: For open-ended questions, methodology discussions, or contributor coordination.
+  - name: 📊 Leaderboard
+    url: https://lawrenzho-bit.github.io/LayoutTranslateBench/leaderboard/
+    about: Browse current system scores.

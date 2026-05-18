@@ -1,0 +1,34 @@
+name: 🧪 Methodology proposal or bug
+description: Propose a change to scoring methodology, or report an error in the existing methodology
+title: "[Methodology] "
+labels: ["methodology", "discussion"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - New metric (additive)
+        - Replacement for an existing metric
+        - Aggregation / weighting change
+        - Region-matching change
+        - Bug in existing metric implementation
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What change, and why. Include a worked example if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected score impact
+      description: Which systems would gain or lose under this change? Any concerns about breaking comparability with existing v0.1 results?
+  - type: textarea
+    id: prior_art
+    attributes:
+      label: Prior art
+      description: Papers, other benchmarks, libraries that implement this metric well

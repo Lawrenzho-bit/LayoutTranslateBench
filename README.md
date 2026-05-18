@@ -1,5 +1,12 @@
 # LayoutTranslateBench
 
+[![CI](https://github.com/Lawrenzho-bit/LayoutTranslateBench/actions/workflows/ci.yml/badge.svg)](https://github.com/Lawrenzho-bit/LayoutTranslateBench/actions/workflows/ci.yml)
+[![Pages](https://github.com/Lawrenzho-bit/LayoutTranslateBench/actions/workflows/pages.yml/badge.svg)](https://lawrenzho-bit.github.io/LayoutTranslateBench/)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Dataset: CC BY 4.0](https://img.shields.io/badge/Dataset-CC_BY_4.0-orange.svg)](DATASET_LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-live-green.svg)](https://lawrenzho-bit.github.io/LayoutTranslateBench/leaderboard/)
+
 **The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality.**
 
 Today's translation tools either translate plain text well (DeepL, Google Translate) or translate documents while destroying their layout (DeepL Documents, Google Translate documents, ChatGPT vision). LayoutTranslateBench (LTB) is the first benchmark that measures both at once — so the next generation of layout-preserving translation tools has a single, objective number to optimize.

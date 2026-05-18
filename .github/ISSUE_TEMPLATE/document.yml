@@ -1,0 +1,55 @@
+name: 📄 New document contribution
+description: Propose adding a document + annotation to the LTB dataset
+title: "[Document] "
+labels: ["dataset", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing data. The dataset targets 200 documents across 10 categories. See [CONTRIBUTING.md](../CONTRIBUTING.md) for the full process.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Document category
+      options:
+        - certificate
+        - gov-form
+        - legal-contract
+        - scientific-paper
+        - slide
+        - receipt-invoice
+        - business-letter
+        - magazine-news
+        - bank-statement
+        - handwritten-mixed
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source / provenance
+      description: Where the document comes from (must be redistributable under CC-BY-4.0 or compatible)
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: e.g. CC-BY-4.0, CC0-1.0, Public Domain
+    validations:
+      required: true
+  - type: checkboxes
+    id: languages
+    attributes:
+      label: Which language pairs will you provide certified-style references for?
+      options:
+        - label: en-es
+        - label: en-de
+        - label: en-zh
+        - label: en-ar
+        - label: en-ja
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything special about this document?
+      description: e.g. handwritten signatures, table-heavy, RTL, mixed scripts, redactions

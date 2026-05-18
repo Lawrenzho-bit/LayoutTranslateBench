@@ -1,0 +1,54 @@
+name: 🔌 New runner adapter
+description: Propose adding a translation system as a runner on the leaderboard
+title: "[Runner] "
+labels: ["runner", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new runner. A runner is an adapter that wraps a translation system and produces LTB-format submissions.
+
+        See [CONTRIBUTING.md](../CONTRIBUTING.md) and [docs/submission.md](../docs/submission.md) before opening this issue.
+  - type: input
+    id: system_name
+    attributes:
+      label: System name
+      description: e.g. DeepL Documents, GPT-5 vision, Qwen3-VL-local
+    validations:
+      required: true
+  - type: input
+    id: model_id
+    attributes:
+      label: Model ID or URL
+      description: HuggingFace model ID, API endpoint, or vendor identifier
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Cloud API (paid)
+        - Cloud API (free tier sufficient)
+        - Local / open-weights
+        - Self-hosted
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: How does the system preserve layout?
+      description: Briefly — does it OCR + translate + re-render? Does it use a multimodal model directly? Pipeline diagram welcome.
+    validations:
+      required: true
+  - type: input
+    id: cost
+    attributes:
+      label: Estimated cost to score full 200-doc × 5-lang-pair benchmark
+      placeholder: e.g. $0 (local), $12 (DeepL free tier), $40 (GPT-5)
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I will submit a PR with the runner code under `ltbench/runners/`
+        - label: I will include a sample submission directory under `submissions/<system>/`
+        - label: I have read [CONTRIBUTING.md](../CONTRIBUTING.md)
