@@ -5,6 +5,8 @@ Commands:
     ltbench score                  — score a submission, write a result JSON
     ltbench leaderboard            — regenerate the static leaderboard from results/
     ltbench run-baseline           — run the identity baseline against the dataset
+    ltbench run-qwen-vl            — run a local Qwen-VL model against the dataset
+    ltbench render                 — render annotation JSONs to PNG source images
     ltbench info                   — print weights, lang pairs, version
 """
 
@@ -234,6 +236,96 @@ def run_baseline(
                 n_written += 1
     console.print(
         f"[green]Wrote {n_written} document submissions[/green] to {submission_dir}"
+    )
+
+
+@app.command(name="render")
+def render(
+    manifest: Path = typer.Option(Path("data/manifest.json")),
+    data_root: Path = typer.Option(Path("data")),
+) -> None:
+    """Render annotation JSONs into PNG source images under data/sources/."""
+    try:
+        from scripts.render_samples import render_all
+    except ImportError:
+        # Fall back to running the script directly from the project root
+        import importlib.util
+
+        script = Path(__file__).parent.parent / "scripts" / "render_samples.py"
+        spec = importlib.util.spec_from_file_location("render_samples", script)
+        if spec is None or spec.loader is None:
+            console.print("[red]Could not locate scripts/render_samples.py[/red]")
+            raise typer.Exit(code=2)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        render_all = mod.render_all  # type: ignore[attr-defined]
+
+    count = 0
+    for path in render_all(manifest_path=manifest, data_root=data_root):
+        console.print(f"  [green]rendered[/green]  {path}")
+        count += 1
+    console.print(f"[green]{count} PNG(s) written.[/green]")
+
+
+@app.command(name="run-qwen-vl")
+def run_qwen_vl(
+    manifest: Path = typer.Option(Path("data/manifest.json")),
+    data_root: Path = typer.Option(Path("data")),
+    submission_dir: Path = typer.Option(Path("submissions/qwen-vl")),
+    model_id: Optional[str] = typer.Option(
+        None,
+        help="HuggingFace model id. Defaults to Qwen/Qwen2.5-VL-3B-Instruct or $LTB_QWEN_MODEL_ID.",
+    ),
+    device: Optional[str] = typer.Option(None, help="cuda | cpu (auto if unset)"),
+    dtype: str = typer.Option("auto", help="auto | fp16 | bf16 | fp32"),
+    max_new_tokens: int = typer.Option(2048),
+) -> None:
+    """Run a local Qwen-VL model against the dataset and write a submission.
+
+    Requires the heavy extras: pip install -e ".[runners-qwen]"
+    """
+    from ltbench.runners import get_qwen_vl_runner
+
+    m = load_manifest(manifest)
+    runner = get_qwen_vl_runner(
+        model_id=model_id,
+        device=device,
+        dtype=dtype,
+        max_new_tokens=max_new_tokens,
+        data_root=data_root,
+    )
+
+    submission_dir.mkdir(parents=True, exist_ok=True)
+
+    console.print(f"[cyan]Loading model[/cyan] {runner.model_id} ...")
+    runner._ensure_loaded()  # warm load so the first translate doesn't dominate the timer
+    console.print(f"[green]Model loaded on {runner._actual_device}.[/green]")
+
+    sys_manifest_path = submission_dir / "manifest.json"
+    with sys_manifest_path.open("w", encoding="utf-8") as f:
+        json.dump(runner.system_manifest().model_dump(), f, indent=2)
+
+    n_written = 0
+    runtime_total = 0.0
+    for lang_pair in LANG_PAIRS:
+        path = submission_dir / f"{lang_pair}.jsonl"
+        with path.open("w", encoding="utf-8") as f:
+            for entry in m.entries:
+                ann = load_annotation(data_root / entry.annotation_file)
+                console.print(f"  [dim]{lang_pair} / {entry.doc_id}[/dim]", end="")
+                sub: DocumentSubmission = runner.translate(ann, lang_pair)  # type: ignore[arg-type]
+                f.write(sub.model_dump_json() + "\n")
+                n_written += 1
+                runtime_total += sub.runtime_seconds or 0.0
+                console.print(
+                    f" [green]→[/green] {len(sub.regions)} regions"
+                    f" ({sub.runtime_seconds:.1f}s)"
+                    if sub.runtime_seconds is not None
+                    else f" [green]→[/green] {len(sub.regions)} regions"
+                )
+    console.print(
+        f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
+        f" (total {runtime_total:.1f}s)"
     )
 
 
