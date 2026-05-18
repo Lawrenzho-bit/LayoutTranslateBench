@@ -10,8 +10,8 @@ them. Install with:
 
     pip install -e ".[runners-qwen]"
 
-Default model: Qwen/Qwen2.5-VL-3B-Instruct (3B, ~6 GB in fp16; fits on a 12 GB GPU,
-runs slowly on CPU). Set LTB_QWEN_MODEL_ID to override.
+Default model: Qwen/Qwen3-VL-2B-Instruct (2B, ~4 GB in fp16; the smallest current
+Qwen3-VL variant — best fit for CPU inference). Set LTB_QWEN_MODEL_ID to override.
 """
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ from ltbench.schemas import (
     SystemManifest,
 )
 
-DEFAULT_MODEL_ID = "Qwen/Qwen2.5-VL-3B-Instruct"
+DEFAULT_MODEL_ID = "Qwen/Qwen3-VL-2B-Instruct"
 DEFAULT_MAX_NEW_TOKENS = 2048
 DEFAULT_TEMPERATURE = 0.0
 
