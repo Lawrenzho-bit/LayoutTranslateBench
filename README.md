@@ -105,6 +105,6 @@ See [docs/citation.md](docs/citation.md). The short form:
 @misc{ltbench2026,
   title = {LayoutTranslateBench: A Benchmark for Document Translation with Layout Preservation},
   year  = {2026},
-  url   = {https://github.com/<org>/document-parser}
+  url   = {https://github.com/Lawrenzho-bit/LayoutTranslateBench}
 }
 ```

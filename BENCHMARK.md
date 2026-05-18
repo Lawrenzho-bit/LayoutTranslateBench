@@ -111,7 +111,7 @@ Without these, scores are accepted but flagged "unverified" on the leaderboard.
 @misc{ltbench2026,
   title  = {LayoutTranslateBench: A Benchmark for Document Translation with Layout Preservation},
   year   = {2026},
-  url    = {https://github.com/<org>/document-parser},
+  url    = {https://github.com/Lawrenzho-bit/LayoutTranslateBench},
   note   = {Version 0.1}
 }
 ```

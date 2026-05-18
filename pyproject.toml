@@ -46,10 +46,11 @@ dev = [
 ltbench = "ltbench.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/anthropic/document-parser"
-Documentation = "https://github.com/anthropic/document-parser/blob/main/BENCHMARK.md"
-Repository = "https://github.com/anthropic/document-parser"
-Issues = "https://github.com/anthropic/document-parser/issues"
+Homepage = "https://github.com/Lawrenzho-bit/LayoutTranslateBench"
+Documentation = "https://github.com/Lawrenzho-bit/LayoutTranslateBench/blob/main/BENCHMARK.md"
+Repository = "https://github.com/Lawrenzho-bit/LayoutTranslateBench"
+Issues = "https://github.com/Lawrenzho-bit/LayoutTranslateBench/issues"
+Leaderboard = "https://lawrenzho-bit.github.io/LayoutTranslateBench/leaderboard/"
 
 [tool.setuptools.packages.find]
 include = ["ltbench*"]

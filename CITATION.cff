@@ -20,8 +20,8 @@ keywords:
   - layout-preservation
   - ocr
   - leaderboard
-repository-code: "https://github.com/<org>/document-parser"
-url: "https://github.com/<org>/document-parser"
+repository-code: "https://github.com/Lawrenzho-bit/LayoutTranslateBench"
+url: "https://github.com/Lawrenzho-bit/LayoutTranslateBench"
 preferred-citation:
   type: software
   title: "LayoutTranslateBench: A Benchmark for Document Translation with Layout Preservation"
@@ -29,4 +29,4 @@ preferred-citation:
     - name: "LayoutTranslateBench Contributors"
   year: 2026
   version: "0.1.0"
-  url: "https://github.com/<org>/document-parser"
+  url: "https://github.com/Lawrenzho-bit/LayoutTranslateBench"

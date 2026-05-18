@@ -30,7 +30,7 @@ Honest limitations:
 
 Code: Apache-2.0. Dataset: CC-BY-4.0. No paywall, no API gate.
 
-Link: <github URL>
+Link: https://github.com/Lawrenzho-bit/LayoutTranslateBench
 
 Would especially appreciate feedback on the methodology (`docs/methodology.md`) before the held-out split lands.
 
@@ -57,9 +57,9 @@ Sample dataset has 5 documents × 5 language pairs (en-es, en-de, en-zh, en-ar, 
 
 Code Apache-2.0, data CC-BY-4.0. Identity-baseline result: LTB-100 = 62.05 (floor).
 
-Repo: <github URL>
-Spec: <github URL>/blob/main/BENCHMARK.md
-Methodology: <github URL>/blob/main/docs/methodology.md
+Repo: https://github.com/Lawrenzho-bit/LayoutTranslateBench
+Spec: https://github.com/Lawrenzho-bit/LayoutTranslateBench/blob/main/BENCHMARK.md
+Methodology: https://github.com/Lawrenzho-bit/LayoutTranslateBench/blob/main/docs/methodology.md
 
 Specific feedback I'd want:
 - Is character-level F (chrF₂) the right text metric here, or should we adopt MetricX / COMET-Kiwi (and accept the GPU dep)?
@@ -92,13 +92,13 @@ LTB-100 = 100 × (0.5·chrF/100 + 0.3·IoU + 0.2·τ). Identity baseline scores 
 • Full 200-doc dataset (human-translation curation in progress)
 • Visual fidelity (LPIPS) and OCR round-trip metrics — those land in v0.2
 
-Want a runner adapter? PRs welcome at <github URL>.
+Want a runner adapter? PRs welcome at https://github.com/Lawrenzho-bit/LayoutTranslateBench.
 
 5/ Why open everything?
 
 The benchmark category in 2026 has heavy LLM citation traffic. Whoever owns the metric people quote owns the category. The product comes later — the benchmark *is* the wedge.
 
-<github URL>
+https://github.com/Lawrenzho-bit/LayoutTranslateBench
 
 ---
 

@@ -1,8 +1,8 @@
 title: LayoutTranslateBench
 description: The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality.
-# Update `url` after the GitHub repo is created (e.g. https://<user>.github.io/document-parser).
-url: ""
-baseurl: ""
+url: "https://lawrenzho-bit.github.io"
+baseurl: "/LayoutTranslateBench"
+repository: Lawrenzho-bit/LayoutTranslateBench
 
 theme: minima
 markdown: kramdown

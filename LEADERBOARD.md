@@ -1,6 +1,6 @@
 # LayoutTranslateBench Leaderboard
 
-_Generated 2026-05-18T15:14:10+00:00 from LayoutTranslateBench v0.1.0._
+_Generated 2026-05-18T15:26:53+00:00 from LayoutTranslateBench v0.1.0._
 
 | Rank | System | LTB-100 | chrF | Layout IoU | Reading-order τ | Median runtime (s/doc) | Cost (USD) | Hardware |
 |---:|:---|---:|---:|---:|---:|---:|---:|:---|

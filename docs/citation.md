@@ -8,22 +8,22 @@ LayoutTranslateBench (LTB) is a public benchmark for document translation with l
 @misc{ltbench2026,
   title  = {{LayoutTranslateBench}: A Benchmark for Document Translation with Layout Preservation},
   year   = {2026},
-  url    = {https://github.com/<org>/document-parser},
+  url    = {https://github.com/Lawrenzho-bit/LayoutTranslateBench},
   note   = {Version 0.1, composite score LTB-100}
 }
 ```
 
 ## APA (7th)
 
-LayoutTranslateBench Contributors. (2026). *LayoutTranslateBench: A benchmark for document translation with layout preservation* (Version 0.1). https://github.com/&lt;org&gt;/document-parser
+LayoutTranslateBench Contributors. (2026). *LayoutTranslateBench: A benchmark for document translation with layout preservation* (Version 0.1). https://github.com/Lawrenzho-bit/LayoutTranslateBench
 
 ## MLA (9th)
 
-LayoutTranslateBench Contributors. *LayoutTranslateBench: A Benchmark for Document Translation with Layout Preservation*. Version 0.1, 2026, github.com/&lt;org&gt;/document-parser.
+LayoutTranslateBench Contributors. *LayoutTranslateBench: A Benchmark for Document Translation with Layout Preservation*. Version 0.1, 2026, github.com/Lawrenzho-bit/LayoutTranslateBench.
 
 ## Plain text
 
-LayoutTranslateBench v0.1, the first public benchmark for document translation with layout preservation, scored by the composite LTB-100 metric (50% chrF, 30% layout IoU, 20% reading-order Kendall tau). github.com/<org>/document-parser
+LayoutTranslateBench v0.1, the first public benchmark for document translation with layout preservation, scored by the composite LTB-100 metric (50% chrF, 30% layout IoU, 20% reading-order Kendall tau). github.com/Lawrenzho-bit/LayoutTranslateBench
 
 ## Citing specific elements
 
