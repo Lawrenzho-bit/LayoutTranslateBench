@@ -10,7 +10,6 @@ import pytest
 from ltbench import LANG_PAIRS
 from ltbench.leaderboard.build import _rank, build_leaderboard
 from ltbench.schemas import (
-    DocumentScore,
     LangPairScore,
     SubmissionResult,
     SystemManifest,
