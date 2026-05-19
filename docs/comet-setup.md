@@ -10,6 +10,8 @@ The fix is a **dedicated virtual environment** for COMET-based runs.
 
 ## One-time setup
 
+### Step 1: Create the venv and install dependencies
+
 ```bash
 # From the repo root:
 python -m venv .comet-env
@@ -18,12 +20,34 @@ python -m venv .comet-env
 .comet-env\Scripts\activate          # Windows (PowerShell or cmd)
 source .comet-env/bin/activate       # macOS / Linux
 
-# Install COMET + ltbench inside the venv:
+# Install torch first (the slowest dep — speeds up later resolution):
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Install COMET + ltbench:
 pip install unbabel-comet
 pip install -e .
 ```
 
-The venv directory is gitignored. ~3 GB on disk after install (torch + pytorch-lightning + COMET model weights).
+The venv directory is gitignored. ~3 GB on disk after install (torch + pytorch-lightning).
+
+### Step 2: HuggingFace authentication (required)
+
+`Unbabel/wmt22-cometkiwi-da` is a **gated model** — Unbabel requires free license acceptance before download. Without auth, you'll see `KeyError: "Model 'Unbabel/wmt22-cometkiwi-da' not supported by COMET."`
+
+To fix:
+
+1. Visit https://huggingface.co/Unbabel/wmt22-cometkiwi-da and click **"Agree and access repository"** (free, ~10 seconds).
+2. Create a read-only access token at https://huggingface.co/settings/tokens.
+3. Authenticate the venv:
+   ```bash
+   pip install huggingface_hub  # already a transitive dep, but make sure
+   huggingface-cli login        # paste token when prompted
+   # OR
+   set HF_TOKEN=hf_xxxxxxxx      # Windows
+   export HF_TOKEN=hf_xxxxxxxx   # macOS / Linux
+   ```
+
+Subsequent runs use the cached token — this is one-time per machine.
 
 ## Running with COMET-Kiwi
 

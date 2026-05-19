@@ -46,6 +46,8 @@ def _load_comet():
 
     Raises ImportError if `unbabel-comet` is not installed (with a pointer
     to the clean-venv workaround).
+    Raises RuntimeError with HF-auth instructions if the model is gated and
+    the user has no HuggingFace auth.
     """
     try:
         from comet import download_model, load_from_checkpoint
@@ -62,7 +64,28 @@ def _load_comet():
         ) from e
 
     model_id = _comet_model_id()
-    checkpoint_path = download_model(model_id)
+    try:
+        checkpoint_path = download_model(model_id)
+    except KeyError as e:
+        # COMET's download_model raises KeyError when snapshot_download fails
+        # (gated model + no auth) AND the legacy fallback misses. Surface a
+        # clear path forward.
+        raise RuntimeError(
+            f"COMET model {model_id!r} could not be downloaded. The most likely "
+            f"cause is HuggingFace authentication: Unbabel COMET models are "
+            f"'gated' (require free license acceptance). To fix:\n\n"
+            f"  1. Open https://huggingface.co/{model_id} and click 'Agree and "
+            f"access repository'.\n"
+            f"  2. Create an access token at https://huggingface.co/settings/tokens "
+            f"(read-only is enough).\n"
+            f"  3. Authenticate this Python environment with one of:\n"
+            f"       huggingface-cli login\n"
+            f"       set HF_TOKEN=<your-token>     # Windows\n"
+            f"       export HF_TOKEN=<your-token>  # Unix\n\n"
+            f"  4. Re-run the same ltbench command.\n\n"
+            f"Alternative: set LTB_COMET_MODEL to a non-gated COMET checkpoint "
+            f"if you have one cached locally."
+        ) from e
     return load_from_checkpoint(checkpoint_path)
 
 
