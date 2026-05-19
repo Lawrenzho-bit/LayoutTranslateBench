@@ -197,6 +197,7 @@ class LeaderboardRow(BaseModel):
     chrf: float
     layout_iou: float
     reading_order_tau: float
+    coverage: str = "—"  # e.g. "6/8" — pairs with n_docs > 0 vs LTB pairs
     median_runtime_s: float | None = None
     cost_usd: float | None = None
     hardware: str | None = None

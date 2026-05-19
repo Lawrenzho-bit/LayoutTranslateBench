@@ -8,7 +8,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from ltbench import __version__
+from ltbench import LANG_PAIRS, __version__
 from ltbench.schemas import LeaderboardRow, SubmissionResult
 
 _TEMPLATE_DIR = Path(__file__).parent / "templates"
@@ -29,8 +29,12 @@ def _load_results(results_dir: Path) -> list[SubmissionResult]:
 
 def _rank(results: list[SubmissionResult]) -> list[LeaderboardRow]:
     sorted_results = sorted(results, key=lambda r: r.overall_ltb_100, reverse=True)
+    total_pairs = len(LANG_PAIRS)
     rows: list[LeaderboardRow] = []
     for i, r in enumerate(sorted_results, start=1):
+        # Coverage = number of language pairs with at least one scored document
+        covered = sum(1 for p in r.per_lang_pair if p.n_docs > 0)
+        coverage = f"{covered}/{total_pairs}"
         rows.append(
             LeaderboardRow(
                 rank=i,
@@ -45,6 +49,7 @@ def _rank(results: list[SubmissionResult]) -> list[LeaderboardRow]:
                 hardware=r.system.hardware,
                 submitter=r.system.submitter,
                 verified=False,
+                coverage=coverage,
             )
         )
     return rows
@@ -56,18 +61,18 @@ def _render_markdown(rows: list[LeaderboardRow], generated_at: str) -> str:
         "",
         f"_Generated {generated_at} from LayoutTranslateBench v{__version__}._",
         "",
-        "| Rank | System | LTB-100 | chrF | Layout IoU | Reading-order τ | Median runtime (s/doc) | Cost (USD) | Hardware |",
-        "|---:|:---|---:|---:|---:|---:|---:|---:|:---|",
+        "| Rank | System | LTB-100 | chrF | Layout IoU | Reading-order τ | Coverage | Median runtime (s/doc) | Cost (USD) | Hardware |",
+        "|---:|:---|---:|---:|---:|---:|:---:|---:|---:|:---|",
     ]
     if not rows:
-        lines.append("| — | _no submissions yet_ | — | — | — | — | — | — | — |")
+        lines.append("| — | _no submissions yet_ | — | — | — | — | — | — | — | — |")
     for r in rows:
         runtime = f"{r.median_runtime_s:.2f}" if r.median_runtime_s is not None else "—"
         cost = f"${r.cost_usd:.4f}" if r.cost_usd is not None else "—"
         lines.append(
             f"| {r.rank} | {r.system_name} v{r.system_version} | {r.ltb_100:.2f} | "
             f"{r.chrf:.2f} | {r.layout_iou:.4f} | {r.reading_order_tau:.4f} | "
-            f"{runtime} | {cost} | {r.hardware or '—'} |"
+            f"{r.coverage} | {runtime} | {cost} | {r.hardware or '—'} |"
         )
     lines += [
         "",

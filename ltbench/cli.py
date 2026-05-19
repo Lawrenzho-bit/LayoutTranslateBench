@@ -7,6 +7,8 @@ Commands:
     ltbench run-baseline           — run the identity baseline against the dataset
     ltbench run-qwen-vl            — run a local Qwen-VL model against the dataset
     ltbench run-deepl              — run the DeepL Text API runner (oracle layout)
+    ltbench run-florence-nllb      — run the Florence-2 + NLLB-200 pipeline (end-to-end)
+    ltbench run-nllb               — run the NLLB-200 Text runner (oracle layout)
     ltbench render                 — render annotation JSONs to PNG source images
     ltbench info                   — print weights, lang pairs, version
 """
@@ -452,6 +454,176 @@ def run_deepl(
             f"{', '.join(skipped_unsupported)}. These pairs will appear as n=0 "
             f"on the leaderboard — that's a real DeepL coverage gap, not a bug."
         )
+    console.print(
+        f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
+        f" (total {runtime_total:.1f}s)"
+    )
+
+
+@app.command(name="run-florence-nllb")
+def run_florence_nllb(
+    manifest: Path = typer.Option(Path("data/manifest.json")),
+    data_root: Path = typer.Option(Path("data")),
+    submission_dir: Path = typer.Option(Path("submissions/florence-nllb")),
+    florence_model: Optional[str] = typer.Option(
+        None, help="HuggingFace id. Default: microsoft/Florence-2-base"
+    ),
+    nllb_model: Optional[str] = typer.Option(
+        None, help="HuggingFace id. Default: facebook/nllb-200-distilled-600M"
+    ),
+    device: Optional[str] = typer.Option(None, help="cuda | cpu (auto if unset)"),
+    lang_pairs: Optional[str] = typer.Option(
+        None, help="Comma-separated subset of language pairs."
+    ),
+    docs: Optional[str] = typer.Option(
+        None, help="Comma-separated subset of doc_ids."
+    ),
+) -> None:
+    """Run the Florence-2 + NLLB-200 end-to-end pipeline.
+
+    Florence-2 extracts text + bboxes; NLLB-200 translates each region.
+    Bboxes come from the model (not the GT) — this is a true end-to-end runner.
+
+    Requires: pip install -e ".[runners-florence-nllb]"
+    """
+    from ltbench.runners import get_florence_nllb_runner
+
+    m = load_manifest(manifest)
+    runner = get_florence_nllb_runner(
+        florence_model=florence_model,
+        nllb_model=nllb_model,
+        device=device,
+        data_root=data_root,
+    )
+
+    selected_pairs = list(LANG_PAIRS)
+    if lang_pairs:
+        wanted = {p.strip() for p in lang_pairs.split(",") if p.strip()}
+        selected_pairs = [p for p in LANG_PAIRS if p in wanted]
+        if not selected_pairs:
+            console.print(f"[red]No valid language pairs in --lang-pairs {lang_pairs}[/red]")
+            raise typer.Exit(code=2)
+
+    selected_entries = list(m.entries)
+    if docs:
+        wanted_docs = {d.strip() for d in docs.split(",") if d.strip()}
+        selected_entries = [e for e in m.entries if e.doc_id in wanted_docs]
+        if not selected_entries:
+            console.print(f"[red]No matching doc_ids in --docs {docs}[/red]")
+            raise typer.Exit(code=2)
+
+    submission_dir.mkdir(parents=True, exist_ok=True)
+
+    console.print(
+        f"[cyan]Loading[/cyan] {runner.florence_model} + {runner.nllb_model} ..."
+    )
+    runner._ensure_loaded()
+    console.print(f"[green]Loaded on {runner._actual_device}.[/green]")
+
+    sys_manifest_path = submission_dir / "manifest.json"
+    with sys_manifest_path.open("w", encoding="utf-8") as f:
+        json.dump(runner.system_manifest().model_dump(), f, indent=2)
+
+    total = len(selected_pairs) * len(selected_entries)
+    n_written = 0
+    runtime_total = 0.0
+    for lang_pair in selected_pairs:
+        path = submission_dir / f"{lang_pair}.jsonl"
+        with path.open("w", encoding="utf-8") as f:
+            for entry in selected_entries:
+                ann = load_annotation(data_root / entry.annotation_file)
+                console.print(
+                    f"  [dim]({n_written + 1}/{total})[/dim] {lang_pair} / {entry.doc_id}",
+                    end="",
+                )
+                sub: DocumentSubmission = runner.translate(ann, lang_pair)  # type: ignore[arg-type]
+                f.write(sub.model_dump_json() + "\n")
+                n_written += 1
+                runtime_total += sub.runtime_seconds or 0.0
+                rt = (
+                    f" ({sub.runtime_seconds:.1f}s)" if sub.runtime_seconds is not None else ""
+                )
+                console.print(f" [green]->[/green] {len(sub.regions)} regions{rt}")
+
+    runner.close()
+    console.print(
+        f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
+        f" (total {runtime_total:.1f}s)"
+    )
+
+
+@app.command(name="run-nllb")
+def run_nllb(
+    manifest: Path = typer.Option(Path("data/manifest.json")),
+    data_root: Path = typer.Option(Path("data")),
+    submission_dir: Path = typer.Option(Path("submissions/nllb-text-oracle")),
+    nllb_model: Optional[str] = typer.Option(
+        None, help="HuggingFace id. Default: facebook/nllb-200-distilled-600M"
+    ),
+    device: Optional[str] = typer.Option(None, help="cuda | cpu (auto if unset)"),
+    num_beams: int = typer.Option(4),
+    batch_size: int = typer.Option(8),
+    lang_pairs: Optional[str] = typer.Option(None),
+    docs: Optional[str] = typer.Option(None),
+) -> None:
+    """Run the NLLB-200 Text runner (oracle layout, open-source MT).
+
+    Requires: pip install -e ".[runners-nllb]"
+    """
+    from ltbench.runners import get_nllb_text_runner
+
+    m = load_manifest(manifest)
+    runner = get_nllb_text_runner(
+        nllb_model=nllb_model, device=device, num_beams=num_beams, batch_size=batch_size
+    )
+
+    selected_pairs = list(LANG_PAIRS)
+    if lang_pairs:
+        wanted = {p.strip() for p in lang_pairs.split(",") if p.strip()}
+        selected_pairs = [p for p in LANG_PAIRS if p in wanted]
+        if not selected_pairs:
+            console.print(f"[red]No valid language pairs in --lang-pairs {lang_pairs}[/red]")
+            raise typer.Exit(code=2)
+
+    selected_entries = list(m.entries)
+    if docs:
+        wanted_docs = {d.strip() for d in docs.split(",") if d.strip()}
+        selected_entries = [e for e in m.entries if e.doc_id in wanted_docs]
+        if not selected_entries:
+            console.print(f"[red]No matching doc_ids in --docs {docs}[/red]")
+            raise typer.Exit(code=2)
+
+    submission_dir.mkdir(parents=True, exist_ok=True)
+    console.print(f"[cyan]Loading[/cyan] {runner.nllb_model} ...")
+    runner._ensure_loaded()
+    console.print(f"[green]Loaded on {runner._actual_device}.[/green]")
+
+    sys_manifest_path = submission_dir / "manifest.json"
+    with sys_manifest_path.open("w", encoding="utf-8") as f:
+        json.dump(runner.system_manifest().model_dump(), f, indent=2)
+
+    total = len(selected_pairs) * len(selected_entries)
+    n_written = 0
+    runtime_total = 0.0
+    for lang_pair in selected_pairs:
+        path = submission_dir / f"{lang_pair}.jsonl"
+        with path.open("w", encoding="utf-8") as f:
+            for entry in selected_entries:
+                ann = load_annotation(data_root / entry.annotation_file)
+                console.print(
+                    f"  [dim]({n_written + 1}/{total})[/dim] {lang_pair} / {entry.doc_id}",
+                    end="",
+                )
+                sub: DocumentSubmission = runner.translate(ann, lang_pair)  # type: ignore[arg-type]
+                f.write(sub.model_dump_json() + "\n")
+                n_written += 1
+                runtime_total += sub.runtime_seconds or 0.0
+                rt = (
+                    f" ({sub.runtime_seconds:.1f}s)" if sub.runtime_seconds is not None else ""
+                )
+                console.print(f" [green]->[/green] {len(sub.regions)} regions{rt}")
+
+    runner.close()
     console.print(
         f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
         f" (total {runtime_total:.1f}s)"

@@ -42,6 +42,21 @@ runners-qwen = [
     "Pillow>=10.0",
     "qwen-vl-utils>=0.0.8",
 ]
+runners-florence-nllb = [
+    "torch>=2.1",
+    "transformers>=4.45",
+    "accelerate>=0.30",
+    "Pillow>=10.0",
+    "sentencepiece>=0.2.0",
+    "einops>=0.7",
+    "timm>=1.0",
+]
+runners-nllb = [
+    "torch>=2.1",
+    "transformers>=4.45",
+    "accelerate>=0.30",
+    "sentencepiece>=0.2.0",
+]
 visual = [
     "Pillow>=10.0",
     "numpy>=1.26",

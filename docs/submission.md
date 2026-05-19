@@ -117,4 +117,6 @@ If you submit a new oracle-layout runner, set `"oracle_layout": true` in your `r
 |---|---|---|---|
 | Identity baseline | `ltbench run-baseline` | (none) | Trivial lower bound — returns source text in source boxes |
 | Qwen-VL family | `ltbench run-qwen-vl` | `pip install -e ".[runners-qwen]"` | End-to-end zero-shot VLM (Qwen3-VL by default). Heavy install. |
-| DeepL Text + oracle layout | `ltbench run-deepl` | `pip install -e ".[runners-deepl]"` | Text-quality upper bound. Requires `DEEPL_API_KEY`. |
+| DeepL Text + oracle layout | `ltbench run-deepl` | `pip install -e ".[runners-deepl]"` | Commercial MT text-quality upper bound. Covers 6/8 pairs (no th, ms). Requires `DEEPL_API_KEY`. |
+| NLLB-200 Text + oracle layout | `ltbench run-nllb` | `pip install -e ".[runners-nllb]"` | Open-source MT text-quality baseline. Covers all 8 pairs including th + ms. NLLB-200 is CC-BY-NC-4.0 (research-only). |
+| Florence-2 + NLLB end-to-end | `ltbench run-florence-nllb` | `pip install -e ".[runners-florence-nllb]"` | True end-to-end product baseline. **v0.2-deferred**: Florence-2 has a transformers-5.x compat issue. |

@@ -8,6 +8,8 @@ __all__ = [
     "IdentityRunner",
     "get_qwen_vl_runner",
     "get_deepl_text_runner",
+    "get_florence_nllb_runner",
+    "get_nllb_text_runner",
 ]
 
 
@@ -23,3 +25,22 @@ def get_deepl_text_runner(**kwargs):
     from ltbench.runners.deepl_text import DeepLTextRunner
 
     return DeepLTextRunner(**kwargs)
+
+
+def get_florence_nllb_runner(**kwargs):
+    """Lazy import so torch + transformers are only loaded when used.
+
+    NOTE: Florence-2 has a transformers-5.x compatibility issue
+    (TokenizersBackend.additional_special_tokens AttributeError). Deferred
+    to v0.2 pending a fix; use nllb-text-oracle in the meantime.
+    """
+    from ltbench.runners.florence_nllb import FlorenceNllbRunner
+
+    return FlorenceNllbRunner(**kwargs)
+
+
+def get_nllb_text_runner(**kwargs):
+    """Lazy import so heavy deps are only loaded when used."""
+    from ltbench.runners.nllb_text import NllbTextRunner
+
+    return NllbTextRunner(**kwargs)
