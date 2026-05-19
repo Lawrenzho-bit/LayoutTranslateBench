@@ -134,7 +134,10 @@ def _normalise_bbox(
 class QwenVLRunner(Runner):
     """Runs a Qwen-VL model locally via transformers."""
 
-    name = "qwen-vl"
+    # `name` is intentionally NOT defined as a class attribute here — the
+    # property below dynamically derives it from the model_id so different
+    # model variants (Qwen3-VL-2B-Instruct, Qwen3-VL-8B-Instruct, ...) each
+    # produce a distinct system name on the leaderboard.
     version = "0.1.0"
 
     def __init__(
