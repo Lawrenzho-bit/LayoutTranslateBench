@@ -84,27 +84,39 @@ def score_document(
 
     # If COMET-Kiwi is requested, batch all per-region calls for this document
     # in one model invocation (huge speedup vs per-region single calls).
+    # IMPORTANT: COMET-Kiwi is reference-free, which means it cannot detect
+    # "wrong language" predictions — feeding (English source, English
+    # hypothesis) yields a high score because the model sees identical
+    # strings. We apply the v0.1.1 language-detection gate BEFORE COMET so
+    # wrong-language predictions get 0 (same semantics as chrF_with_lang_check).
     comet_scores_by_region: dict[str, float] = {}
     if text_metric == "comet-kiwi":
         from ltbench.metrics.comet import score_batch as comet_score_batch
+        from ltbench.metrics.language import is_target_language
 
-        # Build a parallel list of (source, hypothesis, region_id) for each
-        # matched region. Source is the ground-truth English; hypothesis is
-        # the predicted translation. COMET-Kiwi is reference-free.
-        sources: list[str] = []
-        hypotheses: list[str] = []
-        region_ids: list[str] = []
+        # Build per-region (source, hypothesis) for COMET, applying language gate.
+        # Predictions in the wrong target language are scored 0 without consulting
+        # COMET; the rest go in a batch to comet.score_batch().
+        sources_to_score: list[str] = []
+        hypotheses_to_score: list[str] = []
+        score_region_ids: list[str] = []
         for gt_region in annotation.regions:
             pid = mapping.get(gt_region.region_id)
             if pid is None:
                 continue
             pred_region = pred_by_id[pid]
-            sources.append(gt_region.text)
-            hypotheses.append(pred_region.text or "")
-            region_ids.append(gt_region.region_id)
-        if sources:
-            batch_scores = comet_score_batch(sources, hypotheses)
-            comet_scores_by_region = dict(zip(region_ids, batch_scores))
+            hyp = pred_region.text or ""
+            if not is_target_language(hyp, lang_pair):
+                # Confidently wrong language → 0 (matches chrF_with_lang_check)
+                comet_scores_by_region[gt_region.region_id] = 0.0
+                continue
+            sources_to_score.append(gt_region.text)
+            hypotheses_to_score.append(hyp)
+            score_region_ids.append(gt_region.region_id)
+        if sources_to_score:
+            batch_scores = comet_score_batch(sources_to_score, hypotheses_to_score)
+            for rid, s in zip(score_region_ids, batch_scores):
+                comet_scores_by_region[rid] = s
 
     for gt_region in annotation.regions:
         pid = mapping.get(gt_region.region_id)

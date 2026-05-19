@@ -90,23 +90,49 @@ def test_score_document_comet_kiwi_uses_score_batch():
     `unbabel-comet` installed.
     """
     ann = _make_annotation()
-    sub = _make_submission(text="some-translation-output")
+    # Use a clearly Spanish hypothesis so the language gate (added v0.1.2)
+    # accepts the prediction and routes to COMET. v0.1.2 applies the same
+    # language-detection penalty to COMET as it does to chrF — predictions
+    # in the wrong target language score 0 regardless of text-metric choice.
+    sub = _make_submission(text="Certificado de Nacimiento de la persona")
 
-    # Create a fake comet module
     fake_comet_module = SimpleNamespace(score_batch=lambda sources, hyps: [82.5])
     with patch.dict(sys.modules, {"ltbench.metrics.comet": fake_comet_module}):
         result = score_document(ann, sub, "en-es", text_metric="comet-kiwi")
 
-    # The single region's chrF field should equal the mocked COMET return
-    # (area-weighted, but there's only one full-area region here).
     assert result.chrf == pytest.approx(82.5)
-    # IoU should be perfect (identical bboxes)
     assert result.layout_iou == pytest.approx(1.0)
+
+
+def test_score_document_comet_kiwi_zeros_wrong_language():
+    """The language gate applies to COMET too — wrong-language predictions
+    score 0 without consulting the COMET model (which is reference-free
+    and would otherwise rate identical English strings as a 'good
+    translation' to Spanish)."""
+    ann = _make_annotation()
+    # English hypothesis for a Spanish target: should be rejected by the
+    # language gate and score 0 without COMET being called.
+    sub = _make_submission(text="Certificate of Birth is the official record")
+
+    score_batch_called = []
+
+    def fake_score_batch(sources, hyps):
+        score_batch_called.append((sources, hyps))
+        return [99.0] * len(sources)  # would be high if called
+
+    fake_comet = SimpleNamespace(score_batch=fake_score_batch)
+    with patch.dict(sys.modules, {"ltbench.metrics.comet": fake_comet}):
+        result = score_document(ann, sub, "en-es", text_metric="comet-kiwi")
+
+    # Language gate rejected → no call to COMET → score 0
+    assert score_batch_called == []
+    assert result.chrf == pytest.approx(0.0)
 
 
 def test_score_document_comet_kiwi_batches_multiple_regions():
     """COMET path should call score_batch ONCE per document with all matched
-    regions, not once per region. Verifies batching."""
+    regions that pass the language gate, not once per region. Verifies
+    batching efficiency."""
     ann = Annotation(
         doc_id="doc_test",
         page_size=(800.0, 1100.0),
@@ -114,26 +140,37 @@ def test_score_document_comet_kiwi_batches_multiple_regions():
             Region(
                 region_id="r0",
                 bbox=(0.0, 0.0, 400.0, 60.0),
-                text="Hello",
+                text="Hello world how are you",
                 reading_order=0,
                 layout_class="title",
-                references={"en-es": "Hola"},
+                references={"en-es": "Hola mundo cómo estás"},
             ),
             Region(
                 region_id="r1",
                 bbox=(0.0, 60.0, 400.0, 60.0),
-                text="World",
+                text="Good morning everyone today",
                 reading_order=1,
                 layout_class="paragraph",
-                references={"en-es": "Mundo"},
+                references={"en-es": "Buenos días a todos hoy"},
             ),
         ],
     )
+    # Clearly Spanish hypotheses that pass the language gate
     sub = DocumentSubmission(
         doc_id="doc_test",
         regions=[
-            PredictedRegion(region_id="r0", bbox=(0.0, 0.0, 400.0, 60.0), text="Hola", reading_order=0),
-            PredictedRegion(region_id="r1", bbox=(0.0, 60.0, 400.0, 60.0), text="Mundo", reading_order=1),
+            PredictedRegion(
+                region_id="r0",
+                bbox=(0.0, 0.0, 400.0, 60.0),
+                text="Hola mundo cómo estás",
+                reading_order=0,
+            ),
+            PredictedRegion(
+                region_id="r1",
+                bbox=(0.0, 60.0, 400.0, 60.0),
+                text="Buenos días a todos hoy",
+                reading_order=1,
+            ),
         ],
     )
 
@@ -147,9 +184,9 @@ def test_score_document_comet_kiwi_batches_multiple_regions():
     with patch.dict(sys.modules, {"ltbench.metrics.comet": fake_comet}):
         result = score_document(ann, sub, "en-es", text_metric="comet-kiwi")
 
-    # Exactly ONE call to score_batch with both regions
+    # Exactly ONE call to score_batch with both regions (batching efficiency)
     assert len(call_log) == 1
-    assert call_log[0][0] == ["Hello", "World"]
-    assert call_log[0][1] == ["Hola", "Mundo"]
+    assert len(call_log[0][0]) == 2
+    assert "Hello world" in call_log[0][0][0]
     # Both regions get the mocked 88.0 score
     assert result.chrf == pytest.approx(88.0)
