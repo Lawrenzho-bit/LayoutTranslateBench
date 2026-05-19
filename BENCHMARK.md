@@ -57,7 +57,7 @@ LTB-100 v0.1.1 is intentionally biased toward text quality (50%) because transla
 - **All LTB-100 scores ship with bootstrap 95% CIs** (1000 resamples, seed 42).
 - **End-to-end and oracle-layout systems are segregated on the leaderboard.** Oracle systems are text-quality upper bounds, not realistic measurements.
 
-Full details in [`docs/methodology.md`](docs/methodology.md#language-detection-penalty-v011).
+Full details in [`docs/methodology.md`](docs/methodology.md#language-detection-penalty-v011). Open methodology issues and their fix sequencing are tracked in [`docs/methodology-roadmap.md`](docs/methodology-roadmap.md).
 
 ## Why not just OCR + translate + paste?
 

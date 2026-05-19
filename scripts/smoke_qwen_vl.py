@@ -48,7 +48,6 @@ def main() -> int:
         print(f"  region_id={r.region_id} bbox={r.bbox} text={r.text[:60]!r}", flush=True)
 
     total = time.time() - t_start
-    est_full_run_s = t_load + (t_infer * 25)
     print(
         f"\nTotal smoke time: {total:.1f}s. "
         f"Estimated full run (model already loaded): {t_infer * 25:.0f}s "
