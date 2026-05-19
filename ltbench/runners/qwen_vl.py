@@ -163,8 +163,11 @@ class QwenVLRunner(Runner):
         self._actual_device: str | None = None
 
     @property
-    def name(self) -> str:  # type: ignore[override]
-        # Override the class attr so different model IDs produce different system names
+    def name(self) -> str:  # type: ignore[override]  # noqa: F811
+        # Intentionally shadows the class-level `name` default above so different
+        # model IDs (Qwen3-VL-2B, 4B, 8B, ...) produce distinct system names on
+        # the leaderboard. The class-level default is kept for static introspection
+        # and `type(runner).name` reads; the property handles dynamic instances.
         return f"qwen-vl-{self.model_id.split('/')[-1].lower()}"
 
     def system_manifest(self) -> SystemManifest:
