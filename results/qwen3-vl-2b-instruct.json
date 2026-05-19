@@ -1,0 +1,336 @@
+{
+  "system": {
+    "system_name": "qwen3-vl-2b-instruct",
+    "system_version": "0.1.0",
+    "manifest_version": "0.1",
+    "model_id_or_url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+    "runner_config": {
+      "max_new_tokens": 2048,
+      "temperature": 0.0,
+      "dtype": "auto",
+      "prompt_style": "structured-json-with-few-shot",
+      "bbox_format_requested": "[x1,y1,x2,y2]"
+    },
+    "hardware": "cpu",
+    "total_runtime_seconds": 911.5,
+    "median_per_doc_runtime_seconds": 184.9,
+    "cost_usd": 0.0,
+    "submitter": "LaurentHenri Contributors",
+    "notes": "Partial run: en-es language pair only (5 documents, v0.1 sample). Bbox grounding from a 2B vision-language model without document-specific post-processing is unreliable — this row demonstrates the zero-shot ceiling for a small local VLM on layout-preserving translation. Full 5-pair x 200-doc coverage planned in v0.2 with larger models."
+  },
+  "benchmark_version": "0.1",
+  "weights": {
+    "chrf": 0.5,
+    "layout_iou": 0.3,
+    "reading_order_tau": 0.2
+  },
+  "overall_ltb_100": 20.12589887039892,
+  "overall_chrf": 5.597092239748328,
+  "overall_layout_iou": 0.04424509168415852,
+  "overall_reading_order_tau": 0.8,
+  "per_lang_pair": [
+    {
+      "lang_pair": "en-es",
+      "n_docs": 5,
+      "chrf": 5.597092239748328,
+      "layout_iou": 0.04424509168415852,
+      "reading_order_tau": 0.8,
+      "ltb_100": 20.12589887039892
+    },
+    {
+      "lang_pair": "en-de",
+      "n_docs": 0,
+      "chrf": 0.0,
+      "layout_iou": 0.0,
+      "reading_order_tau": 0.0,
+      "ltb_100": 0.0
+    },
+    {
+      "lang_pair": "en-zh",
+      "n_docs": 0,
+      "chrf": 0.0,
+      "layout_iou": 0.0,
+      "reading_order_tau": 0.0,
+      "ltb_100": 0.0
+    },
+    {
+      "lang_pair": "en-ar",
+      "n_docs": 0,
+      "chrf": 0.0,
+      "layout_iou": 0.0,
+      "reading_order_tau": 0.0,
+      "ltb_100": 0.0
+    },
+    {
+      "lang_pair": "en-ja",
+      "n_docs": 0,
+      "chrf": 0.0,
+      "layout_iou": 0.0,
+      "reading_order_tau": 0.0,
+      "ltb_100": 0.0
+    }
+  ],
+  "per_doc": [
+    {
+      "doc_id": "doc_001",
+      "lang_pair": "en-es",
+      "chrf": 12.500348013440744,
+      "layout_iou": 0.09861162317541326,
+      "reading_order_tau": 1.0,
+      "ltb_100": 29.20852270198277,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 9.947964493419038,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 14.774257937393855,
+          "layout_iou": 0.11256637168141594,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 30.419784357927615,
+          "layout_iou": 0.23964497041420119,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 6.3682288285419135,
+          "layout_iou": 0.0680786686838124,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 8.510724298138845,
+          "layout_iou": 0.263828125,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 17.321952208662594,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r7",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "doc_id": "doc_002",
+      "lang_pair": "en-es",
+      "chrf": 5.128884338471099,
+      "layout_iou": 0.05796225162422345,
+      "reading_order_tau": 1.0,
+      "ltb_100": 24.303309717962254,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 8.538434100231852,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 3.0030030030030033,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 7.62053155670177,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 6.848438300051202,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 4.5311990876507,
+          "layout_iou": 0.014084507042253521,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 5.311890838206628,
+          "layout_iou": 0.09090909090909091,
+          "matched": true
+        },
+        {
+          "region_id": "r7",
+          "chrf": 5.595238095238095,
+          "layout_iou": 0.3125,
+          "matched": true
+        },
+        {
+          "region_id": "r8",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "doc_id": "doc_003",
+      "lang_pair": "en-es",
+      "chrf": 2.5800392893788313,
+      "layout_iou": 0.0071667493343596685,
+      "reading_order_tau": 1.0,
+      "ltb_100": 21.505022124720206,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 4.800547970651063,
+          "layout_iou": 0.020792079207920793,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 6.662195170784447,
+          "layout_iou": 0.09230542017427264,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 5.05615733757521,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 8.064293359266205,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r7",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r8",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "doc_id": "doc_004",
+      "lang_pair": "en-es",
+      "chrf": 0.0,
+      "layout_iou": 0.0,
+      "reading_order_tau": 0.0,
+      "ltb_100": 0.0,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        },
+        {
+          "region_id": "r7",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        }
+      ]
+    },
+    {
+      "doc_id": "doc_005",
+      "lang_pair": "en-es",
+      "chrf": 7.776189557450964,
+      "layout_iou": 0.05748483428679623,
+      "reading_order_tau": 1.0,
+      "ltb_100": 25.61263980732937,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 4.008176040369199,
+          "layout_iou": 0.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 12.575590984057177,
+          "layout_iou": 0.040268456375838924,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 10.306420004546307,
+          "layout_iou": 0.10359085963003264,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 12.92680516886898,
+          "layout_iou": 0.16387422538443883,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
+        }
+      ]
+    }
+  ],
+  "scored_at": "2026-05-19T01:36:38+00:00"
+}

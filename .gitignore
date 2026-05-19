@@ -20,11 +20,11 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Large data files — pulled separately
+# Large source files — pulled separately. The v0.1 sample PNGs are tracked.
 data/sources/*.pdf
-data/sources/*.png
 data/sources/*.jpg
 !data/sources/.gitkeep
+!data/sources/doc_*.png
 
 # Submission outputs — kept in git only for accepted systems
 submissions/*/output/
