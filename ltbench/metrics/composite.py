@@ -56,13 +56,22 @@ def score_document(
     annotation: Annotation,
     submission: DocumentSubmission,
     lang_pair: LangPair,
+    text_metric: str = "chrf",
 ) -> DocumentScore:
     """Score one document for one (system, language pair).
 
     Matches predicted regions to ground-truth regions (exact id then greedy IoU),
-    computes per-region chrF + IoU (area-weighted), and a single Kendall-tau on
-    matched regions' reading orders.
+    computes per-region text-quality + IoU (area-weighted), and a single
+    Kendall-tau on matched regions' reading orders.
+
+    text_metric:
+        "chrf" (default) — chrF₂ with language-detection gate (v0.1.1).
+        "comet-kiwi" — COMET-Kiwi-22 reference-free neural QE; requires
+            `unbabel-comet` installed (typically in a separate venv —
+            see ltbench/metrics/comet.py).
     """
+    if text_metric not in ("chrf", "comet-kiwi"):
+        raise ValueError(f"unknown text_metric {text_metric!r}; use 'chrf' or 'comet-kiwi'")
     mapping = match_regions(annotation.regions, submission.regions)
     pred_by_id = {r.region_id: r for r in submission.regions}
     region_scores: list[RegionScore] = []
@@ -72,6 +81,30 @@ def score_document(
     weighted_iou = 0.0
     matched_source_orders: list[int] = []
     matched_pred_orders: list[int] = []
+
+    # If COMET-Kiwi is requested, batch all per-region calls for this document
+    # in one model invocation (huge speedup vs per-region single calls).
+    comet_scores_by_region: dict[str, float] = {}
+    if text_metric == "comet-kiwi":
+        from ltbench.metrics.comet import score_batch as comet_score_batch
+
+        # Build a parallel list of (source, hypothesis, region_id) for each
+        # matched region. Source is the ground-truth English; hypothesis is
+        # the predicted translation. COMET-Kiwi is reference-free.
+        sources: list[str] = []
+        hypotheses: list[str] = []
+        region_ids: list[str] = []
+        for gt_region in annotation.regions:
+            pid = mapping.get(gt_region.region_id)
+            if pid is None:
+                continue
+            pred_region = pred_by_id[pid]
+            sources.append(gt_region.text)
+            hypotheses.append(pred_region.text or "")
+            region_ids.append(gt_region.region_id)
+        if sources:
+            batch_scores = comet_score_batch(sources, hypotheses)
+            comet_scores_by_region = dict(zip(region_ids, batch_scores))
 
     for gt_region in annotation.regions:
         pid = mapping.get(gt_region.region_id)
@@ -92,7 +125,13 @@ def score_document(
         pred_region = pred_by_id[pid]
         # v0.1.1: chrF is gated by language detection. Predictions in the wrong
         # language are scored 0 regardless of character overlap.
-        rchrf = chrf_with_lang_check(pred_region.text, ref_text, lang_pair)
+        # v0.1.2: text_metric="comet-kiwi" substitutes the COMET-Kiwi-22 score
+        # (reference-free neural QE) in place of chrF. The composite formula
+        # treats both as scores in [0, 100].
+        if text_metric == "comet-kiwi":
+            rchrf = comet_scores_by_region.get(gt_region.region_id, 0.0)
+        else:
+            rchrf = chrf_with_lang_check(pred_region.text, ref_text, lang_pair)
         riou = bbox_iou(gt_region.bbox, pred_region.bbox)
         region_scores.append(
             RegionScore(
@@ -157,6 +196,7 @@ def score_submission(
     system: SystemManifest,
     per_pair_data: dict[LangPair, list[tuple[Annotation, DocumentSubmission]]],
     exclude_parser_failures: bool = False,
+    text_metric: str = "chrf",
 ) -> SubmissionResult:
     """Compose the full SubmissionResult from raw (annotation, submission) pairs.
 
@@ -167,11 +207,13 @@ def score_submission(
             the runner's parser-fallback (1-region empty placeholder) are dropped
             from per-pair and overall aggregation. Per-document scores still
             include them with parser_failure=True so the count remains visible.
+        text_metric: "chrf" (default) or "comet-kiwi". COMET-Kiwi requires
+            `unbabel-comet` installed in the Python environment.
     """
     per_doc: list[DocumentScore] = []
     for lang_pair, items in per_pair_data.items():
         for annotation, submission in items:
-            per_doc.append(score_document(annotation, submission, lang_pair))
+            per_doc.append(score_document(annotation, submission, lang_pair, text_metric=text_metric))
 
     if exclude_parser_failures:
         scoring_pool = [d for d in per_doc if not d.parser_failure]

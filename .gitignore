@@ -31,3 +31,6 @@ submissions/*/output/
 
 # Local result scratch
 results/*.local.json
+
+# COMET venv (see docs/comet-setup.md)
+.comet-env/

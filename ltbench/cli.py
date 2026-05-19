@@ -133,6 +133,15 @@ def score(
         "Useful for separating model quality from prompt/parser quality "
         "(v0.1.2 methodology fix #9).",
     ),
+    text_metric: str = typer.Option(
+        "chrf",
+        "--text-metric",
+        help="Text-quality metric for the chrF position in LTB-100. "
+        "'chrf' (default) is the v0.1.1 chrF₂ with language-detection gate. "
+        "'comet-kiwi' substitutes COMET-Kiwi-22 (reference-free neural QE, "
+        "Unbabel) — requires `unbabel-comet` installed. See "
+        "ltbench/metrics/comet.py for setup instructions.",
+    ),
 ) -> None:
     """Score a submission against the dataset; write a result JSON."""
     m = load_manifest(manifest)
@@ -161,7 +170,12 @@ def score(
             f"[yellow]Warning:[/yellow] skipped {skipped} submissions with unknown doc_id"
         )
 
-    result = score_submission(system, per_pair_data, exclude_parser_failures=exclude_parser_failures)  # type: ignore[arg-type]
+    result = score_submission(  # type: ignore[arg-type]
+        system,
+        per_pair_data,
+        exclude_parser_failures=exclude_parser_failures,
+        text_metric=text_metric,
+    )
 
     out_path = output or Path("results") / f"{system.system_name}.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
