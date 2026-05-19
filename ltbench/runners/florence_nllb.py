@@ -110,6 +110,7 @@ class FlorenceNllbRunner(Runner):
                 "pipeline": "florence-2-grounded-ocr -> nllb-200-translation",
             },
             hardware=self._actual_device,
+            system_type="end-to-end",
             notes=(
                 "End-to-end open-source product baseline. Florence-2 (MIT) extracts "
                 "text regions with bboxes; NLLB-200 (CC-BY-NC-4.0) translates per "

@@ -15,5 +15,7 @@
   "median_per_doc_runtime_seconds": 11.7,
   "cost_usd": 0.0,
   "submitter": "LaurentHenri Contributors",
-  "notes": "Open-source oracle-layout baseline: predicted bboxes are copied verbatim from the ground-truth annotation; text is translated by NLLB-200-distilled-600M. Mirrors deepl-text-oracle but uses local open weights and covers all 8 LTB language pairs (including en-th and en-ms which DeepL does not support). Full 8/8 coverage in 7.8 min on CPU at $0 cost. Within 7 LTB-100 points of DeepL on average; ahead of DeepL on en-zh (+0.9). For en-th and en-ms (no DeepL coverage), NLLB-200 is the only working oracle baseline. NLLB-200 license is CC-BY-NC-4.0 — research use only; for commercial product, swap to MADLAD-400 (Apache-2.0) or Helsinki-NLP/opus-mt models (CC-BY-4.0)."
+  "notes": "Open-source oracle-layout baseline: predicted bboxes are copied verbatim from the ground-truth annotation; text is translated by NLLB-200-distilled-600M. Mirrors deepl-text-oracle but uses local open weights and covers all 8 LTB language pairs (including en-th and en-ms which DeepL does not support). Full 8/8 coverage in 7.8 min on CPU at $0 cost. Within 7 LTB-100 points of DeepL on average; ahead of DeepL on en-zh (+0.9). For en-th and en-ms (no DeepL coverage), NLLB-200 is the only working oracle baseline. NLLB-200 license is CC-BY-NC-4.0 — research use only; for commercial product, swap to MADLAD-400 (Apache-2.0) or Helsinki-NLP/opus-mt models (CC-BY-4.0).",
+  "system_type": "oracle-layout",
+  "parser_failures": 0
 }

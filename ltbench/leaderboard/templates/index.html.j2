@@ -58,44 +58,89 @@
     <p class="lead">The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality. Composite score <strong>LTB-100</strong> combines chrF (text), layout IoU (visual), and reading-order Kendall tau.</p>
     <div class="meta">Generated {{ generated_at }} from LayoutTranslateBench v{{ version }}.</div>
 
+    <div class="card" style="background: rgba(255,200,90,0.06); border-left: 3px solid #f0a000; padding: 12px 16px; margin-bottom: 20px;">
+      <strong>Caveat — v0.1 sample size.</strong> All scores are computed on N=5 documents per language pair. The <em>LTB-100</em> cell shows
+      <code>point [95% CI]</code> via 1000-resample percentile bootstrap. The CI on N=5 is <em>wide</em> — small differences between systems are not
+      statistically significant. v0.2 will scale to N≥25 per pair.
+    </div>
+
+    <h2 style="margin: 24px 0 8px;">End-to-end systems</h2>
+    <p class="lead" style="margin-bottom: 12px;">Runners that produce their own bounding boxes — the realistic score.</p>
     <div class="card">
-      {% if rows %}
+      {% if end_to_end %}
       <table>
         <thead>
           <tr>
             <th class="num">#</th>
             <th>System</th>
-            <th class="num">LTB-100</th>
+            <th class="num">LTB-100 [95% CI]</th>
             <th class="num">chrF</th>
             <th class="num">Layout IoU</th>
             <th class="num">Reading-order τ</th>
             <th class="num">Coverage</th>
+            <th class="num">Parser fails</th>
             <th class="num">Median s/doc</th>
             <th class="num">Cost USD</th>
             <th>Hardware</th>
-            <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          {% for r in rows %}
+          {% for r in end_to_end %}
           <tr>
             <td class="num">{{ r.rank }}</td>
             <td><strong>{{ r.system_name }}</strong> <span class="badge">v{{ r.system_version }}</span></td>
-            <td class="num">{{ "%.2f"|format(r.ltb_100) }}</td>
+            <td class="num">{{ "%.2f"|format(r.ltb_100) }} <span style="color: var(--muted); font-size: 12px;">[{{ "%.1f"|format(r.ltb_100_ci_low) }}, {{ "%.1f"|format(r.ltb_100_ci_high) }}]</span></td>
             <td class="num">{{ "%.2f"|format(r.chrf) }}</td>
             <td class="num">{{ "%.4f"|format(r.layout_iou) }}</td>
             <td class="num">{{ "%.4f"|format(r.reading_order_tau) }}</td>
             <td class="num">{{ r.coverage }}</td>
+            <td class="num">{{ r.parser_failures if r.parser_failures else "—" }}</td>
             <td class="num">{{ ("%.2f"|format(r.median_runtime_s)) if r.median_runtime_s is not none else "—" }}</td>
             <td class="num">{{ ("$%.4f"|format(r.cost_usd)) if r.cost_usd is not none else "—" }}</td>
             <td>{{ r.hardware or "—" }}</td>
-            <td>{% if r.verified %}<span class="badge verified">verified</span>{% else %}<span class="badge">unverified</span>{% endif %}</td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
       {% else %}
-      <div class="empty">No submissions yet. See <a href="../docs/submission.html">submission guide</a> to be the first.</div>
+      <div class="empty">No end-to-end submissions yet. See <a href="../docs/submission.html">submission guide</a> to be the first.</div>
+      {% endif %}
+    </div>
+
+    <h2 style="margin: 32px 0 8px;">Oracle-layout reference <span class="badge" style="font-size: 11px; vertical-align: middle;">text-quality ceilings</span></h2>
+    <p class="lead" style="margin-bottom: 12px;">Runners given <em>ground-truth bounding boxes</em> as predictions — they only translate the text. These are <strong>upper bounds on text quality</strong>, not realistic end-to-end measurements of the underlying products. Use for comparing translation quality in isolation from layout extraction.</p>
+    <div class="card">
+      {% if oracle %}
+      <table>
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>System</th>
+            <th class="num">LTB-100 [95% CI]</th>
+            <th class="num">chrF</th>
+            <th class="num">Coverage</th>
+            <th class="num">Median s/doc</th>
+            <th class="num">Cost USD</th>
+            <th>Hardware</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in oracle %}
+          <tr>
+            <td class="num">{{ r.rank }}</td>
+            <td><strong>{{ r.system_name }}</strong> <span class="badge">v{{ r.system_version }}</span></td>
+            <td class="num">{{ "%.2f"|format(r.ltb_100) }} <span style="color: var(--muted); font-size: 12px;">[{{ "%.1f"|format(r.ltb_100_ci_low) }}, {{ "%.1f"|format(r.ltb_100_ci_high) }}]</span></td>
+            <td class="num">{{ "%.2f"|format(r.chrf) }}</td>
+            <td class="num">{{ r.coverage }}</td>
+            <td class="num">{{ ("%.2f"|format(r.median_runtime_s)) if r.median_runtime_s is not none else "—" }}</td>
+            <td class="num">{{ ("$%.4f"|format(r.cost_usd)) if r.cost_usd is not none else "—" }}</td>
+            <td>{{ r.hardware or "—" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <div class="empty">No oracle-layout submissions yet.</div>
       {% endif %}
     </div>
 

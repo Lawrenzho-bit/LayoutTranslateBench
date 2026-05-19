@@ -6,9 +6,10 @@ from datetime import datetime, timezone
 from statistics import mean
 
 from ltbench import LANG_PAIRS, LTB_WEIGHTS_V01
+from ltbench.metrics.bootstrap import bootstrap_ci
+from ltbench.metrics.language import chrf_with_lang_check
 from ltbench.metrics.layout import bbox_iou, match_regions
-from ltbench.metrics.reading_order import normalized_kendall_tau
-from ltbench.metrics.text import chrf
+from ltbench.metrics.reading_order import coverage_aware_tau
 from ltbench.schemas import (
     Annotation,
     DocumentScore,
@@ -76,7 +77,9 @@ def score_document(
             continue
 
         pred_region = pred_by_id[pid]
-        rchrf = chrf(pred_region.text, ref_text)
+        # v0.1.1: chrF is gated by language detection. Predictions in the wrong
+        # language are scored 0 regardless of character overlap.
+        rchrf = chrf_with_lang_check(pred_region.text, ref_text, lang_pair)
         riou = bbox_iou(gt_region.bbox, pred_region.bbox)
         region_scores.append(
             RegionScore(
@@ -91,11 +94,11 @@ def score_document(
         matched_source_orders.append(gt_region.reading_order)
         matched_pred_orders.append(pred_region.reading_order)
 
-    if len(matched_source_orders) >= 2:
-        tau = normalized_kendall_tau(matched_source_orders, matched_pred_orders)
-    else:
-        # 1 matched region: order is trivially preserved; 0 matched: full penalty
-        tau = 1.0 if matched_source_orders else 0.0
+    # v0.1.1: coverage-aware tau penalises partial-coverage predictions
+    # (e.g. a model returning 1 region out of 7 no longer gets tau=1.0).
+    tau = coverage_aware_tau(
+        matched_source_orders, matched_pred_orders, n_gt_regions=len(annotation.regions)
+    )
 
     return DocumentScore(
         doc_id=annotation.doc_id,
@@ -118,7 +121,12 @@ def aggregate_lang_pair(doc_scores: list[DocumentScore], lang_pair: LangPair) ->
             layout_iou=0.0,
             reading_order_tau=0.0,
             ltb_100=0.0,
+            ltb_100_ci_low=0.0,
+            ltb_100_ci_high=0.0,
         )
+    # v0.1.1: bootstrap CI on LTB-100 across the per-document scores in this pair.
+    # On N=5 (the v0.1 sample size) this CI is wide — that is the point.
+    _, ci_low, ci_high = bootstrap_ci([d.ltb_100 for d in pair_scores])
     return LangPairScore(
         lang_pair=lang_pair,
         n_docs=len(pair_scores),
@@ -126,6 +134,8 @@ def aggregate_lang_pair(doc_scores: list[DocumentScore], lang_pair: LangPair) ->
         layout_iou=mean(d.layout_iou for d in pair_scores),
         reading_order_tau=mean(d.reading_order_tau for d in pair_scores),
         ltb_100=mean(d.ltb_100 for d in pair_scores),
+        ltb_100_ci_low=ci_low,
+        ltb_100_ci_high=ci_high,
     )
 
 
@@ -152,13 +162,20 @@ def score_submission(
         overall_iou = mean(lps.layout_iou for lps in populated)
         overall_tau = mean(lps.reading_order_tau for lps in populated)
         overall_ltb = mean(lps.ltb_100 for lps in populated)
+        # v0.1.1: overall CI = bootstrap on per-document LTB-100 across ALL
+        # covered pairs (not the mean of per-pair CIs — that would understate
+        # variance).
+        _, overall_ci_low, overall_ci_high = bootstrap_ci([d.ltb_100 for d in per_doc])
     else:
         overall_chrf = overall_iou = overall_tau = overall_ltb = 0.0
+        overall_ci_low = overall_ci_high = 0.0
 
     return SubmissionResult(
         system=system,
         weights=dict(LTB_WEIGHTS_V01),
         overall_ltb_100=overall_ltb,
+        overall_ltb_100_ci_low=overall_ci_low,
+        overall_ltb_100_ci_high=overall_ci_high,
         overall_chrf=overall_chrf,
         overall_layout_iou=overall_iou,
         overall_reading_order_tau=overall_tau,

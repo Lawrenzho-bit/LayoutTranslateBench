@@ -28,6 +28,7 @@ class IdentityRunner(Runner):
             model_id_or_url=None,
             runner_config={"description": "returns source text and bboxes unchanged"},
             hardware="cpu",
+            system_type="end-to-end",
         )
 
     def translate(self, annotation: Annotation, lang_pair: LangPair) -> DocumentSubmission:

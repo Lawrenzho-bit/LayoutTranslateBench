@@ -58,3 +58,40 @@ def normalized_kendall_tau(source_order: list[int], predicted_order: list[int]) 
         return 1.0
     tau = _kendall_tau_b(source_order, predicted_order)
     return (tau + 1.0) / 2.0
+
+
+def coverage_aware_tau(
+    source_order: list[int],
+    predicted_order: list[int],
+    n_gt_regions: int,
+) -> float:
+    """Coverage-aware Kendall tau.
+
+    Addresses a v0.1 methodology issue: a system returning only 1 region out of
+    7 ground-truth regions gets normalized_kendall_tau = 1.0 (trivially "in
+    order" since there's only one). This artificially inflates the reading-
+    order score for partial-coverage runs.
+
+    Solution: scale by coverage ratio. A system matching n_matched regions out
+    of n_gt_regions multiplies its base tau by (n_matched / n_gt_regions).
+
+        coverage_aware_tau = base_tau × min(1.0, n_matched / n_gt_regions)
+
+    Args:
+        source_order: matched ground-truth reading-order indices.
+        predicted_order: matched predicted reading-order indices.
+        n_gt_regions: total ground-truth region count for this document.
+
+    Returns:
+        Coverage-aware tau in [0, 1].
+    """
+    if n_gt_regions <= 0:
+        return 0.0
+    n_matched = len(source_order)
+    base_tau: float
+    if n_matched < 2:
+        base_tau = 1.0 if n_matched == 1 else 0.0
+    else:
+        base_tau = normalized_kendall_tau(source_order, predicted_order)
+    coverage = min(1.0, n_matched / n_gt_regions)
+    return base_tau * coverage

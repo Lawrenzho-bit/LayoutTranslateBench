@@ -44,11 +44,20 @@ Per-region scores are aggregated to a per-document score, then averaged across a
 The composite score is a weighted linear combination of normalized metrics:
 
 ```
-LTB-100 (v0.1) = 100 × (0.50 × chrF/100 + 0.30 × IoU + 0.20 × τ)
-LTB-100 (v0.2) = 100 × (0.40 × chrF/100 + 0.25 × IoU + 0.15 × τ + 0.10 × OCR + 0.10 × LPIPS)
+LTB-100 (v0.1.1) = 100 × (0.50 × chrF/100 + 0.30 × IoU + 0.20 × τ)
+LTB-100 (v0.2)   = 100 × (0.40 × chrF/100 + 0.25 × IoU + 0.15 × τ + 0.10 × OCR + 0.10 × LPIPS)
 ```
 
-LTB-100 v0.1 is intentionally biased toward text quality (50%) because translation correctness remains the dominant signal; future versions will rebalance as the field matures.
+LTB-100 v0.1.1 is intentionally biased toward text quality (50%) because translation correctness remains the dominant signal; future versions will rebalance as the field matures.
+
+**v0.1.1 methodology corrections** (vs v0.1, applied to all four metrics above):
+
+- **chrF includes a language-detection penalty.** Predictions confidently not in the target language score 0 chrF for that region (fixes Latin-character-bleed-through which inflated the identity baseline in v0.1).
+- **τ is coverage-aware.** `τ_final = τ_norm × min(1.0, n_matched / n_gt_regions)` — single-region fallback predictions no longer get free τ=1.0 credit.
+- **All LTB-100 scores ship with bootstrap 95% CIs** (1000 resamples, seed 42).
+- **End-to-end and oracle-layout systems are segregated on the leaderboard.** Oracle systems are text-quality upper bounds, not realistic measurements.
+
+Full details in [`docs/methodology.md`](docs/methodology.md#language-detection-penalty-v011).
 
 ## Why not just OCR + translate + paste?
 

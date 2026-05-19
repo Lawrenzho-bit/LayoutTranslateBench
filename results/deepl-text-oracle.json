@@ -16,7 +16,9 @@
     "median_per_doc_runtime_seconds": 0.4,
     "cost_usd": 0.0,
     "submitter": "LaurentHenri Contributors",
-    "notes": "Oracle-layout baseline: predicted bboxes are copied verbatim from the ground-truth annotation. Covers 6 of 8 LTB v0.1 language pairs (en-es, en-de, en-zh, en-ar, en-ja, en-fr). en-th and en-ms are NOT supported by DeepL — they appear as n=0 on the leaderboard, surfacing a real commercial coverage gap in SE Asia and ASEAN markets. The true DeepL Documents API runner (operating on PDFs) is deferred to v0.2 because the v0.1 sample dataset is PNG-based. Total characters processed: ~7,000 across 30 doc x lang-pair batches, comfortably inside DeepL's free-tier 500k chars/mo quota."
+    "notes": "Oracle-layout baseline: predicted bboxes are copied verbatim from the ground-truth annotation. Covers 6 of 8 LTB v0.1 language pairs (en-es, en-de, en-zh, en-ar, en-ja, en-fr). en-th and en-ms are NOT supported by DeepL — they appear as n=0 on the leaderboard, surfacing a real commercial coverage gap in SE Asia and ASEAN markets. The true DeepL Documents API runner (operating on PDFs) is deferred to v0.2 because the v0.1 sample dataset is PNG-based. Total characters processed: ~7,000 across 30 doc x lang-pair batches, comfortably inside DeepL's free-tier 500k chars/mo quota.",
+    "system_type": "oracle-layout",
+    "parser_failures": 0
   },
   "benchmark_version": "0.1",
   "weights": {
@@ -24,34 +26,42 @@
     "layout_iou": 0.3,
     "reading_order_tau": 0.2
   },
-  "overall_ltb_100": 84.52230207070443,
-  "overall_chrf": 69.04460414140888,
+  "overall_ltb_100": 78.19921249111738,
+  "overall_ltb_100_ci_low": 75.15319774288899,
+  "overall_ltb_100_ci_high": 81.65930109022777,
+  "overall_chrf": 56.39842498223477,
   "overall_layout_iou": 0.9999999999999999,
   "overall_reading_order_tau": 1.0,
   "per_lang_pair": [
     {
       "lang_pair": "en-es",
       "n_docs": 5,
-      "chrf": 82.46178075466793,
+      "chrf": 54.847049188457355,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 91.23089037733396
+      "ltb_100": 77.42352459422867,
+      "ltb_100_ci_low": 68.47739705348621,
+      "ltb_100_ci_high": 84.49124109246479
     },
     {
       "lang_pair": "en-de",
       "n_docs": 5,
-      "chrf": 76.91231191895656,
+      "chrf": 57.829500625000506,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 88.45615595947828
+      "ltb_100": 78.91475031250025,
+      "ltb_100_ci_low": 71.75222977699816,
+      "ltb_100_ci_high": 85.98761835576275
     },
     {
       "lang_pair": "en-zh",
       "n_docs": 5,
-      "chrf": 42.32160157383995,
+      "chrf": 41.25794806779,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 71.16080078691996
+      "ltb_100": 70.62897403389499,
+      "ltb_100_ci_low": 68.16758122708089,
+      "ltb_100_ci_high": 73.14160948374203
     },
     {
       "lang_pair": "en-ar",
@@ -59,7 +69,9 @@
       "chrf": 74.21066723223959,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 87.1053336161198
+      "ltb_100": 87.1053336161198,
+      "ltb_100_ci_low": 82.71122601855855,
+      "ltb_100_ci_high": 91.91369553334182
     },
     {
       "lang_pair": "en-ja",
@@ -67,15 +79,19 @@
       "chrf": 59.18691851080777,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 79.59345925540387
+      "ltb_100": 79.59345925540387,
+      "ltb_100_ci_low": 75.38186326462906,
+      "ltb_100_ci_high": 84.00482113796559
     },
     {
       "lang_pair": "en-fr",
       "n_docs": 5,
-      "chrf": 79.17434485794146,
+      "chrf": 51.058466269113424,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 89.58717242897073
+      "ltb_100": 75.52923313455672,
+      "ltb_100_ci_low": 65.45811816828365,
+      "ltb_100_ci_high": 85.78005429677646
     },
     {
       "lang_pair": "en-th",
@@ -83,7 +99,9 @@
       "chrf": 0.0,
       "layout_iou": 0.0,
       "reading_order_tau": 0.0,
-      "ltb_100": 0.0
+      "ltb_100": 0.0,
+      "ltb_100_ci_low": 0.0,
+      "ltb_100_ci_high": 0.0
     },
     {
       "lang_pair": "en-ms",
@@ -91,7 +109,9 @@
       "chrf": 0.0,
       "layout_iou": 0.0,
       "reading_order_tau": 0.0,
-      "ltb_100": 0.0
+      "ltb_100": 0.0,
+      "ltb_100_ci_low": 0.0,
+      "ltb_100_ci_high": 0.0
     }
   ],
   "per_doc": [
@@ -358,10 +378,10 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-de",
-      "chrf": 99.99999999999999,
+      "chrf": 71.17117117117117,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 99.99999999999997,
+      "ltb_100": 85.58558558558558,
       "region_scores": [
         {
           "region_id": "r1",
@@ -371,7 +391,7 @@
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -383,7 +403,7 @@
         },
         {
           "region_id": "r4",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -410,10 +430,10 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-de",
-      "chrf": 61.05354872270894,
+      "chrf": 44.41421928402974,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 80.52677436135447,
+      "ltb_100": 72.20710964201487,
       "region_scores": [
         {
           "region_id": "r1",
@@ -423,7 +443,7 @@
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -435,7 +455,7 @@
         },
         {
           "region_id": "r4",
-          "chrf": 49.753964948112746,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -468,10 +488,10 @@
     {
       "doc_id": "doc_003",
       "lang_pair": "en-de",
-      "chrf": 82.4684743769361,
+      "chrf": 76.98454871773473,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 91.23423718846804,
+      "ltb_100": 88.49227435886735,
       "region_scores": [
         {
           "region_id": "r1",
@@ -481,13 +501,13 @@
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r3",
-          "chrf": 2.450980392156863,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -526,26 +546,26 @@
     {
       "doc_id": "doc_004",
       "lang_pair": "en-de",
-      "chrf": 95.56876055888918,
+      "chrf": 64.46126870221165,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 97.78438027944458,
+      "ltb_100": 82.23063435110582,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r3",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -578,10 +598,10 @@
     {
       "doc_id": "doc_005",
       "lang_pair": "en-de",
-      "chrf": 45.47077593624862,
+      "chrf": 32.11629524985525,
       "layout_iou": 0.9999999999999998,
       "reading_order_tau": 1.0,
-      "ltb_100": 72.73538796812431,
+      "ltb_100": 66.05814762492761,
       "region_scores": [
         {
           "region_id": "r1",
@@ -591,7 +611,7 @@
         },
         {
           "region_id": "r2",
-          "chrf": 8.333333333333336,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -603,7 +623,7 @@
         },
         {
           "region_id": "r4",
-          "chrf": 63.2253068176353,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -618,10 +638,10 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-es",
-      "chrf": 97.80702356789313,
+      "chrf": 68.9781947390643,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 98.90351178394656,
+      "ltb_100": 84.48909736953215,
       "region_scores": [
         {
           "region_id": "r1",
@@ -649,13 +669,13 @@
         },
         {
           "region_id": "r5",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r6",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -670,38 +690,38 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-es",
-      "chrf": 69.83931469067369,
+      "chrf": 19.40424582847766,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 84.91965734533684,
+      "ltb_100": 59.70212291423883,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r3",
-          "chrf": 85.63497374919889,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r4",
-          "chrf": 61.38977544296541,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 41.304879122965616,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -713,7 +733,7 @@
         },
         {
           "region_id": "r7",
-          "chrf": 24.189493583475777,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -728,10 +748,10 @@
     {
       "doc_id": "doc_003",
       "lang_pair": "en-es",
-      "chrf": 85.39195409895845,
+      "chrf": 74.68649156807732,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 92.69597704947923,
+      "ltb_100": 87.34324578403864,
       "region_scores": [
         {
           "region_id": "r1",
@@ -741,13 +761,13 @@
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r3",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -786,14 +806,14 @@
     {
       "doc_id": "doc_004",
       "lang_pair": "en-es",
-      "chrf": 89.51786214350201,
+      "chrf": 53.583275496302655,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 94.758931071751,
+      "ltb_100": 76.79163774815132,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -805,7 +825,7 @@
         },
         {
           "region_id": "r3",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -823,13 +843,13 @@
         },
         {
           "region_id": "r6",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r7",
-          "chrf": 74.09590503451024,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         }
@@ -838,10 +858,10 @@
     {
       "doc_id": "doc_005",
       "lang_pair": "en-es",
-      "chrf": 69.75274927231239,
+      "chrf": 57.58303831036484,
       "layout_iou": 0.9999999999999998,
       "reading_order_tau": 1.0,
-      "ltb_100": 84.87637463615619,
+      "ltb_100": 78.79151915518241,
       "region_scores": [
         {
           "region_id": "r1",
@@ -863,7 +883,7 @@
         },
         {
           "region_id": "r4",
-          "chrf": 65.71643919451672,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -878,10 +898,10 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-fr",
-      "chrf": 82.54785275033129,
+      "chrf": 33.37757021426579,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 91.27392637516563,
+      "ltb_100": 66.6887851071329,
       "region_scores": [
         {
           "region_id": "r1",
@@ -891,7 +911,7 @@
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -903,19 +923,19 @@
         },
         {
           "region_id": "r4",
-          "chrf": 91.5894412618746,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 49.52939383207988,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r6",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -930,10 +950,10 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-fr",
-      "chrf": 62.699067227173046,
+      "chrf": 20.623403095691717,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 81.34953361358652,
+      "ltb_100": 60.311701547845864,
       "region_scores": [
         {
           "region_id": "r1",
@@ -943,13 +963,13 @@
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r3",
-          "chrf": 23.78403106882909,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -961,25 +981,25 @@
         },
         {
           "region_id": "r5",
-          "chrf": 57.520005219516804,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r6",
-          "chrf": 24.060065045649008,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r7",
-          "chrf": 29.98765688700286,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r8",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         }
@@ -988,10 +1008,10 @@
     {
       "doc_id": "doc_003",
       "lang_pair": "en-fr",
-      "chrf": 92.40953767435815,
+      "chrf": 84.42161563208529,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 96.20476883717907,
+      "ltb_100": 92.21080781604265,
       "region_scores": [
         {
           "region_id": "r1",
@@ -1001,7 +1021,7 @@
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -1019,7 +1039,7 @@
         },
         {
           "region_id": "r5",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -1046,32 +1066,32 @@
     {
       "doc_id": "doc_004",
       "lang_pair": "en-fr",
-      "chrf": 86.12769733777525,
+      "chrf": 44.78217310345474,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 93.06384866888762,
+      "ltb_100": 72.39108655172737,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r3",
-          "chrf": 100.0,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
         {
           "region_id": "r4",
-          "chrf": 91.84565434565434,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -1089,7 +1109,7 @@
         },
         {
           "region_id": "r7",
-          "chrf": 46.93901178203459,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         }
@@ -1398,10 +1418,10 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-zh",
-      "chrf": 45.43260677031069,
+      "chrf": 42.9208400713729,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 72.71630338515533,
+      "ltb_100": 71.46042003568644,
       "region_scores": [
         {
           "region_id": "r1",
@@ -1411,7 +1431,7 @@
         },
         {
           "region_id": "r2",
-          "chrf": 17.425381473880975,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -1566,14 +1586,14 @@
     {
       "doc_id": "doc_004",
       "lang_pair": "en-zh",
-      "chrf": 37.14571989957629,
+      "chrf": 34.33921906826432,
       "layout_iou": 1.0,
       "reading_order_tau": 1.0,
-      "ltb_100": 68.57285994978814,
+      "ltb_100": 67.16960953413216,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 17.94991156693284,
+          "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
         },
@@ -1656,5 +1676,5 @@
       ]
     }
   ],
-  "scored_at": "2026-05-19T03:48:59+00:00"
+  "scored_at": "2026-05-19T09:03:39+00:00"
 }
