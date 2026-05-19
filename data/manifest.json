@@ -46,6 +46,51 @@
       "page_size": [800, 1100],
       "license": "CC-BY-4.0",
       "source_url": null
+    },
+    {
+      "doc_id": "doc_006",
+      "category": "gov-form",
+      "source_file": "sources/doc_006.png",
+      "annotation_file": "annotations/doc_006.json",
+      "page_size": [800, 600],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    },
+    {
+      "doc_id": "doc_007",
+      "category": "gov-form",
+      "source_file": "sources/doc_007.png",
+      "annotation_file": "annotations/doc_007.json",
+      "page_size": [800, 1100],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    },
+    {
+      "doc_id": "doc_008",
+      "category": "scientific-paper",
+      "source_file": "sources/doc_008.png",
+      "annotation_file": "annotations/doc_008.json",
+      "page_size": [800, 1100],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    },
+    {
+      "doc_id": "doc_009",
+      "category": "legal-contract",
+      "source_file": "sources/doc_009.png",
+      "annotation_file": "annotations/doc_009.json",
+      "page_size": [850, 1100],
+      "license": "CC-BY-4.0",
+      "source_url": null
+    },
+    {
+      "doc_id": "doc_010",
+      "category": "magazine-news",
+      "source_file": "sources/doc_010.png",
+      "annotation_file": "annotations/doc_010.json",
+      "page_size": [800, 1100],
+      "license": "CC-BY-4.0",
+      "source_url": null
     }
   ]
 }
