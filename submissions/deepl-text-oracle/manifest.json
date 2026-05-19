@@ -11,9 +11,9 @@
     "batched_text_per_call": true
   },
   "hardware": "api",
-  "total_runtime_seconds": 11.7,
+  "total_runtime_seconds": 15.3,
   "median_per_doc_runtime_seconds": 0.4,
   "cost_usd": 0.0,
   "submitter": "LaurentHenri Contributors",
-  "notes": "Oracle-layout baseline: predicted bboxes are copied verbatim from the ground-truth annotation. This measures DeepL's text-quality ceiling, NOT DeepL's end-to-end document-translation product. The true DeepL Documents API runner (operating on PDFs) is deferred to v0.2 because the v0.1 sample dataset is PNG-based. Total characters processed: ~6,000 across 25 doc x lang-pair batches, comfortably inside the DeepL free-tier 500k chars/mo quota."
+  "notes": "Oracle-layout baseline: predicted bboxes are copied verbatim from the ground-truth annotation. Covers 6 of 8 LTB v0.1 language pairs (en-es, en-de, en-zh, en-ar, en-ja, en-fr). en-th and en-ms are NOT supported by DeepL — they appear as n=0 on the leaderboard, surfacing a real commercial coverage gap in SE Asia and ASEAN markets. The true DeepL Documents API runner (operating on PDFs) is deferred to v0.2 because the v0.1 sample dataset is PNG-based. Total characters processed: ~7,000 across 30 doc x lang-pair batches, comfortably inside DeepL's free-tier 500k chars/mo quota."
 }
