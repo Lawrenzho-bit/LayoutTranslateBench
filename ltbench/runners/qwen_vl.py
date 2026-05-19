@@ -45,19 +45,34 @@ _LANG_NAMES: dict[LangPair, str] = {
 }
 
 
+_FEW_SHOT_BY_LANG: dict[str, str] = {
+    "Spanish": '"Hola mundo"',
+    "German": '"Hallo Welt"',
+    "Simplified Chinese": '"你好世界"',
+    "Arabic": '"مرحبا بالعالم"',
+    "Japanese": '"こんにちは世界"',
+}
+
+
 def _build_prompt(target_lang_name: str) -> str:
     """Construct the structured-output prompt asked of the VLM."""
+    example_translation = _FEW_SHOT_BY_LANG.get(target_lang_name, f'"<{target_lang_name}>"')
     return (
-        "You are looking at a document image. Identify every visible text region in the image. "
-        "For each region, output a JSON object with these fields:\n"
-        "  - region_id: a short identifier like r0, r1, r2 (assign sequentially in reading order)\n"
-        "  - bbox: [x, y, w, h] in pixels (top-left origin)\n"
-        "  - text: the translated text in " + target_lang_name + "\n"
-        "  - reading_order: 0-based integer (same as region_id index)\n\n"
-        "Translate every region — do not summarise, omit, or paraphrase. Preserve numbers, dates, "
-        "names, and codes verbatim where they would not be translated (proper nouns, registry "
-        "numbers, etc.). Reply with ONLY a JSON array of region objects, no prose, no Markdown "
-        "fences, no commentary."
+        f"TASK: Translate every text region in this document image into {target_lang_name}.\n\n"
+        f"OUTPUT FORMAT: A JSON array. Each element has:\n"
+        f'  - "region_id": short id like "r0", "r1", "r2", assigned in reading order\n'
+        f'  - "bbox": [x1, y1, x2, y2] in absolute pixels, top-left origin\n'
+        f'  - "text": the text translated into {target_lang_name}\n'
+        f'  - "reading_order": 0-based integer (same as the index in "r0", "r1", ...)\n\n'
+        f"CRITICAL RULES:\n"
+        f"  1. You MUST translate the text into {target_lang_name}. Do not return English. "
+        f"Do not return the source language unchanged.\n"
+        f"  2. Keep proper nouns (people's names, places, registry numbers, dates as digits) "
+        f"in their original form. Translate the surrounding labels and connective words.\n"
+        f"  3. Preserve every visible region — do not skip, merge, or summarise.\n"
+        f"  4. Reply with ONLY the JSON array. No prose. No code fences. No commentary.\n\n"
+        f"EXAMPLE (correct output for a region containing 'Hello world' at bbox [10,10,100,30]):\n"
+        f'  {{"region_id":"r0","bbox":[10,10,100,30],"text":{example_translation},"reading_order":0}}\n'
     )
 
 
@@ -84,22 +99,36 @@ def _extract_json_array(raw: str) -> list[dict[str, Any]]:
     return []
 
 
-def _normalise_bbox(bbox: Any) -> tuple[float, float, float, float] | None:
-    """Coerce a bbox-shaped value into (x, y, w, h). Returns None if uncoercible."""
+def _normalise_bbox(
+    bbox: Any, page_size: tuple[float, float] | None = None
+) -> tuple[float, float, float, float] | None:
+    """Coerce a bbox value into LTB's (x, y, w, h) form.
+
+    The prompt asks the model for [x1, y1, x2, y2]. Since Qwen-VL outputs in that
+    convention natively, we expect that form and convert it. If the third/fourth
+    values look like width/height instead (i.e. a < x or b < y, or a + x exceeds
+    a plausible page size), we accept them as-is.
+    """
     if not isinstance(bbox, (list, tuple)) or len(bbox) != 4:
         return None
     try:
         x, y, a, b = (float(v) for v in bbox)
     except (TypeError, ValueError):
         return None
-    # Accept either (x, y, w, h) or (x1, y1, x2, y2); detect by checking if a/b > x/y
-    if a > x and b > y and a < 4000 and b < 4000:
-        # Could be either. Heuristic: if "w/h" form, a and b are typically smaller than page size.
-        # For 800x1100 pages, both forms can be valid. Prefer (x, y, w, h) form (the LTB convention).
-        # If the values look like (x2, y2) (i.e., a > x and b > y AND a+b > some threshold), convert.
-        # Without more signal, assume the model followed instructions and returned (x, y, w, h).
-        pass
-    return (max(0.0, x), max(0.0, y), max(1.0, a), max(1.0, b))
+
+    # Heuristic: if a > x and b > y, treat as (x1, y1, x2, y2) and convert to (x, y, w, h).
+    # If the model returned width/height, x2/y2 would equal x+w / y+h which is still > x and > y
+    # for any positive w, h — so this heuristic always fires when valid. The opposite case
+    # (a < x or b < y) means it can only be width/height (or invalid). We accept either form.
+    if a > x and b > y:
+        w = a - x
+        h = b - y
+    else:
+        w = a
+        h = b
+
+    # Clamp to a sensible minimum so empty/invalid bboxes don't crash the IoU calc
+    return (max(0.0, x), max(0.0, y), max(1.0, w), max(1.0, h))
 
 
 class QwenVLRunner(Runner):
@@ -150,7 +179,7 @@ class QwenVLRunner(Runner):
             return
         try:
             import torch  # noqa: F401
-            from transformers import AutoModelForCausalLM, AutoProcessor
+            from transformers import AutoProcessor
         except ImportError as e:
             raise RuntimeError(
                 "transformers + torch are required for QwenVLRunner. "
@@ -158,6 +187,21 @@ class QwenVLRunner(Runner):
             ) from e
 
         import torch
+
+        # Qwen-VL family are vision-language models — use the right AutoModel class.
+        # AutoModelForImageTextToText is the canonical auto-class in transformers 5.x;
+        # AutoModelForVision2Seq is the older 4.x name. We try the new one first.
+        ModelClass = None
+        try:
+            from transformers import AutoModelForImageTextToText as ModelClass  # type: ignore
+        except ImportError:
+            try:
+                from transformers import AutoModelForVision2Seq as ModelClass  # type: ignore
+            except ImportError as e:
+                raise RuntimeError(
+                    "transformers must expose AutoModelForImageTextToText or "
+                    "AutoModelForVision2Seq to load Qwen-VL models."
+                ) from e
 
         if self.device is None:
             self.device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -172,7 +216,7 @@ class QwenVLRunner(Runner):
             torch_dtype = torch.float32
 
         self._processor = AutoProcessor.from_pretrained(self.model_id, trust_remote_code=True)
-        self._model = AutoModelForCausalLM.from_pretrained(
+        self._model = ModelClass.from_pretrained(
             self.model_id,
             trust_remote_code=True,
             torch_dtype=torch_dtype or "auto",
@@ -206,11 +250,13 @@ class QwenVLRunner(Runner):
         image_path = self._resolve_source_image(annotation)
         image = Image.open(image_path).convert("RGB")
 
+        # Build messages with the PIL Image inline — works with both qwen-vl-utils
+        # and recent transformers chat templates without filesystem URI dance.
         messages = [
             {
                 "role": "user",
                 "content": [
-                    {"type": "image", "image": image_path.as_uri()},
+                    {"type": "image", "image": image},
                     {"type": "text", "text": prompt},
                 ],
             }
@@ -219,12 +265,30 @@ class QwenVLRunner(Runner):
         text_prompt = self._processor.apply_chat_template(  # type: ignore[union-attr]
             messages, tokenize=False, add_generation_prompt=True
         )
-        inputs = self._processor(  # type: ignore[misc]
-            text=[text_prompt],
-            images=[image],
-            return_tensors="pt",
-            padding=True,
-        )
+
+        # Prefer qwen_vl_utils.process_vision_info if available; otherwise fall back
+        # to passing the image directly to the processor.
+        image_inputs: list[Any] = [image]
+        video_inputs: list[Any] | None = None
+        try:
+            from qwen_vl_utils import process_vision_info  # type: ignore
+
+            vi = process_vision_info(messages)
+            if isinstance(vi, tuple) and len(vi) >= 2:
+                image_inputs = vi[0] or [image]
+                video_inputs = vi[1] if len(vi) > 1 else None
+        except Exception:
+            pass
+
+        proc_kwargs: dict[str, Any] = {
+            "text": [text_prompt],
+            "images": image_inputs,
+            "return_tensors": "pt",
+            "padding": True,
+        }
+        if video_inputs:
+            proc_kwargs["videos"] = video_inputs
+        inputs = self._processor(**proc_kwargs)  # type: ignore[misc]
         if self._actual_device == "cuda":
             inputs = {k: v.cuda() for k, v in inputs.items()}
 

@@ -274,11 +274,20 @@ def run_qwen_vl(
     submission_dir: Path = typer.Option(Path("submissions/qwen-vl")),
     model_id: Optional[str] = typer.Option(
         None,
-        help="HuggingFace model id. Defaults to Qwen/Qwen2.5-VL-3B-Instruct or $LTB_QWEN_MODEL_ID.",
+        help="HuggingFace model id. Defaults to Qwen/Qwen3-VL-2B-Instruct or $LTB_QWEN_MODEL_ID.",
     ),
     device: Optional[str] = typer.Option(None, help="cuda | cpu (auto if unset)"),
     dtype: str = typer.Option("auto", help="auto | fp16 | bf16 | fp32"),
     max_new_tokens: int = typer.Option(2048),
+    lang_pairs: Optional[str] = typer.Option(
+        None,
+        help="Comma-separated subset of language pairs (default: all). "
+        "Example: --lang-pairs en-es,en-de",
+    ),
+    docs: Optional[str] = typer.Option(
+        None,
+        help="Comma-separated subset of doc_ids (default: all). Example: --docs doc_001,doc_002",
+    ),
 ) -> None:
     """Run a local Qwen-VL model against the dataset and write a submission.
 
@@ -295,6 +304,22 @@ def run_qwen_vl(
         data_root=data_root,
     )
 
+    selected_pairs = list(LANG_PAIRS)
+    if lang_pairs:
+        wanted = {p.strip() for p in lang_pairs.split(",") if p.strip()}
+        selected_pairs = [p for p in LANG_PAIRS if p in wanted]
+        if not selected_pairs:
+            console.print(f"[red]No valid language pairs in --lang-pairs {lang_pairs}[/red]")
+            raise typer.Exit(code=2)
+
+    selected_entries = list(m.entries)
+    if docs:
+        wanted_docs = {d.strip() for d in docs.split(",") if d.strip()}
+        selected_entries = [e for e in m.entries if e.doc_id in wanted_docs]
+        if not selected_entries:
+            console.print(f"[red]No matching doc_ids in --docs {docs}[/red]")
+            raise typer.Exit(code=2)
+
     submission_dir.mkdir(parents=True, exist_ok=True)
 
     console.print(f"[cyan]Loading model[/cyan] {runner.model_id} ...")
@@ -305,24 +330,24 @@ def run_qwen_vl(
     with sys_manifest_path.open("w", encoding="utf-8") as f:
         json.dump(runner.system_manifest().model_dump(), f, indent=2)
 
+    total = len(selected_pairs) * len(selected_entries)
     n_written = 0
     runtime_total = 0.0
-    for lang_pair in LANG_PAIRS:
+    for lang_pair in selected_pairs:
         path = submission_dir / f"{lang_pair}.jsonl"
         with path.open("w", encoding="utf-8") as f:
-            for entry in m.entries:
+            for entry in selected_entries:
                 ann = load_annotation(data_root / entry.annotation_file)
-                console.print(f"  [dim]{lang_pair} / {entry.doc_id}[/dim]", end="")
+                console.print(
+                    f"  [dim]({n_written + 1}/{total})[/dim] {lang_pair} / {entry.doc_id}",
+                    end="",
+                )
                 sub: DocumentSubmission = runner.translate(ann, lang_pair)  # type: ignore[arg-type]
                 f.write(sub.model_dump_json() + "\n")
                 n_written += 1
                 runtime_total += sub.runtime_seconds or 0.0
-                console.print(
-                    f" [green]→[/green] {len(sub.regions)} regions"
-                    f" ({sub.runtime_seconds:.1f}s)"
-                    if sub.runtime_seconds is not None
-                    else f" [green]→[/green] {len(sub.regions)} regions"
-                )
+                rt = f" ({sub.runtime_seconds:.1f}s)" if sub.runtime_seconds is not None else ""
+                console.print(f" [green]→[/green] {len(sub.regions)} regions{rt}")
     console.print(
         f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
         f" (total {runtime_total:.1f}s)"
