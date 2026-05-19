@@ -347,7 +347,7 @@ def run_qwen_vl(
                 n_written += 1
                 runtime_total += sub.runtime_seconds or 0.0
                 rt = f" ({sub.runtime_seconds:.1f}s)" if sub.runtime_seconds is not None else ""
-                console.print(f" [green]→[/green] {len(sub.regions)} regions{rt}")
+                console.print(f" [green]->[/green] {len(sub.regions)} regions{rt}")
     console.print(
         f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
         f" (total {runtime_total:.1f}s)"

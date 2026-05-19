@@ -1,0 +1,19 @@
+{
+  "system_name": "qwen3-vl-2b-instruct",
+  "system_version": "0.1.0",
+  "manifest_version": "0.1",
+  "model_id_or_url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+  "runner_config": {
+    "max_new_tokens": 2048,
+    "temperature": 0.0,
+    "dtype": "auto",
+    "prompt_style": "structured-json-with-few-shot",
+    "bbox_format_requested": "[x1,y1,x2,y2]"
+  },
+  "hardware": "cpu",
+  "total_runtime_seconds": 911.5,
+  "median_per_doc_runtime_seconds": 184.9,
+  "cost_usd": 0.0,
+  "submitter": "LaurentHenri Contributors",
+  "notes": "Partial run: en-es language pair only (5 documents, v0.1 sample). Bbox grounding from a 2B vision-language model without document-specific post-processing is unreliable — this row demonstrates the zero-shot ceiling for a small local VLM on layout-preserving translation. Full 5-pair x 200-doc coverage planned in v0.2 with larger models."
+}
