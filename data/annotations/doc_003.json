@@ -1,125 +1,221 @@
 {
   "doc_id": "doc_003",
-  "page_size": [850, 1100],
+  "page_size": [
+    850,
+    1100
+  ],
   "regions": [
     {
       "region_id": "r1",
-      "bbox": [100, 80, 650, 60],
+      "bbox": [
+        100,
+        80,
+        650,
+        60
+      ],
       "text": "On the asymptotic behavior of large language models",
       "reading_order": 0,
       "layout_class": "title",
-      "style": {"font_family": "serif", "size_hint": 22, "bold": true},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
       "references": {
         "en-es": "Sobre el comportamiento asintótico de los grandes modelos de lenguaje",
         "en-de": "Über das asymptotische Verhalten großer Sprachmodelle",
         "en-zh": "关于大型语言模型的渐近行为",
         "en-ar": "حول السلوك المقارب لنماذج اللغة الكبيرة",
-        "en-ja": "大規模言語モデルの漸近的振る舞いについて"
+        "en-ja": "大規模言語モデルの漸近的振る舞いについて",
+        "en-fr": "Sur le comportement asymptotique des grands modèles de langage",
+        "en-th": "ว่าด้วยพฤติกรรมเชิงเส้นโค้งของแบบจำลองภาษาขนาดใหญ่",
+        "en-ms": "Tentang Tingkah Laku Asimptotik Model Bahasa Besar"
       }
     },
     {
       "region_id": "r2",
-      "bbox": [100, 160, 650, 30],
+      "bbox": [
+        100,
+        160,
+        650,
+        30
+      ],
       "text": "Jane Smith, John Doe",
       "reading_order": 1,
       "layout_class": "paragraph",
-      "style": {"font_family": "serif", "size_hint": 14, "italic": true},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14,
+        "italic": true
+      },
       "references": {
         "en-es": "Jane Smith, John Doe",
         "en-de": "Jane Smith, John Doe",
         "en-zh": "简·史密斯, 约翰·多伊",
         "en-ar": "جين سميث، جون دو",
-        "en-ja": "ジェーン・スミス、ジョン・ドウ"
+        "en-ja": "ジェーン・スミス、ジョン・ドウ",
+        "en-fr": "Jane Smith, John Doe",
+        "en-th": "เจน สมิธ, จอห์น โด",
+        "en-ms": "Jane Smith, John Doe"
       }
     },
     {
       "region_id": "r3",
-      "bbox": [100, 230, 650, 30],
+      "bbox": [
+        100,
+        230,
+        650,
+        30
+      ],
       "text": "Abstract",
       "reading_order": 2,
       "layout_class": "title",
-      "style": {"font_family": "serif", "size_hint": 16, "bold": true},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 16,
+        "bold": true
+      },
       "references": {
         "en-es": "Resumen",
         "en-de": "Zusammenfassung",
         "en-zh": "摘要",
         "en-ar": "الملخص",
-        "en-ja": "要旨"
+        "en-ja": "要旨",
+        "en-fr": "Résumé",
+        "en-th": "บทคัดย่อ",
+        "en-ms": "Abstrak"
       }
     },
     {
       "region_id": "r4",
-      "bbox": [100, 270, 650, 100],
+      "bbox": [
+        100,
+        270,
+        650,
+        100
+      ],
       "text": "We study the scaling behavior of transformer-based language models as parameter count grows. Our results suggest a power-law relationship between loss and compute.",
       "reading_order": 3,
       "layout_class": "paragraph",
-      "style": {"font_family": "serif", "size_hint": 13},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
       "references": {
         "en-es": "Estudiamos el comportamiento de escala de los modelos de lenguaje basados en transformadores a medida que crece el número de parámetros. Nuestros resultados sugieren una relación de ley de potencias entre la pérdida y el cómputo.",
         "en-de": "Wir untersuchen das Skalierungsverhalten transformerbasierter Sprachmodelle bei wachsender Parameterzahl. Unsere Ergebnisse legen ein Potenzgesetz zwischen Verlust und Rechenaufwand nahe.",
         "en-zh": "我们研究基于Transformer的语言模型随参数数量增长的扩展行为。我们的结果表明损失与计算量之间存在幂律关系。",
         "en-ar": "ندرس سلوك التوسع في نماذج اللغة القائمة على المحولات مع نمو عدد المعاملات. تشير نتائجنا إلى وجود علاقة قانون قوة بين الخسارة والحساب.",
-        "en-ja": "本研究では、パラメータ数が増加するにつれてTransformerベースの言語モデルがどのようにスケールするかを調査する。結果は、損失と計算量の間にべき乗則が成立することを示唆している。"
+        "en-ja": "本研究では、パラメータ数が増加するにつれてTransformerベースの言語モデルがどのようにスケールするかを調査する。結果は、損失と計算量の間にべき乗則が成立することを示唆している。",
+        "en-fr": "Nous étudions le comportement de mise à l'échelle des modèles de langage basés sur les transformateurs à mesure que le nombre de paramètres augmente. Nos résultats suggèrent une relation de loi de puissance entre la perte et le calcul.",
+        "en-th": "เราศึกษาพฤติกรรมการขยายขนาดของแบบจำลองภาษาที่อิงทรานสฟอร์เมอร์เมื่อจำนวนพารามิเตอร์เพิ่มขึ้น ผลของเราบ่งชี้ความสัมพันธ์เชิงกฎกำลังระหว่างค่าสูญเสียกับการคำนวณ",
+        "en-ms": "Kami mengkaji tingkah laku penskalaan model bahasa berasaskan transformer apabila bilangan parameter bertambah. Keputusan kami mencadangkan hubungan hukum kuasa antara kehilangan dan pengiraan."
       }
     },
     {
       "region_id": "r5",
-      "bbox": [100, 400, 320, 30],
+      "bbox": [
+        100,
+        400,
+        320,
+        30
+      ],
       "text": "1. Introduction",
       "reading_order": 4,
       "layout_class": "title",
-      "style": {"font_family": "serif", "size_hint": 14, "bold": true},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14,
+        "bold": true
+      },
       "references": {
         "en-es": "1. Introducción",
         "en-de": "1. Einleitung",
         "en-zh": "1. 引言",
         "en-ar": "1. مقدمة",
-        "en-ja": "1. はじめに"
+        "en-ja": "1. はじめに",
+        "en-fr": "1. Introduction",
+        "en-th": "1. บทนำ",
+        "en-ms": "1. Pengenalan"
       }
     },
     {
       "region_id": "r6",
-      "bbox": [100, 440, 320, 280],
+      "bbox": [
+        100,
+        440,
+        320,
+        280
+      ],
       "text": "Recent work has shown that language model performance follows predictable scaling laws across orders of magnitude in compute.",
       "reading_order": 5,
       "layout_class": "two-column",
-      "style": {"font_family": "serif", "size_hint": 12},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 12
+      },
       "references": {
         "en-es": "Trabajos recientes han demostrado que el rendimiento de los modelos de lenguaje sigue leyes de escala predecibles a lo largo de órdenes de magnitud de cómputo.",
         "en-de": "Aktuelle Arbeiten haben gezeigt, dass die Leistung von Sprachmodellen über Größenordnungen des Rechenaufwands hinweg vorhersagbaren Skalierungsgesetzen folgt.",
         "en-zh": "最近的研究表明,语言模型的性能在多个数量级的计算量上遵循可预测的扩展规律。",
         "en-ar": "أظهرت الأعمال الأخيرة أن أداء نماذج اللغة يتبع قوانين توسع قابلة للتنبؤ عبر مراتب من الحساب.",
-        "en-ja": "近年の研究では、言語モデルの性能が計算量の数桁にわたって予測可能なスケーリング則に従うことが示されている。"
+        "en-ja": "近年の研究では、言語モデルの性能が計算量の数桁にわたって予測可能なスケーリング則に従うことが示されている。",
+        "en-fr": "Des travaux récents ont montré que la performance des modèles de langage suit des lois d'échelle prévisibles sur plusieurs ordres de grandeur de calcul.",
+        "en-th": "งานวิจัยล่าสุดแสดงให้เห็นว่าประสิทธิภาพของแบบจำลองภาษาเป็นไปตามกฎการปรับขนาดที่คาดเดาได้ในระดับของการคำนวณหลายลำดับขนาด",
+        "en-ms": "Kerja-kerja terkini telah menunjukkan bahawa prestasi model bahasa mengikut hukum penskalaan yang boleh diramal merentas beberapa peringkat magnitud pengiraan."
       }
     },
     {
       "region_id": "r7",
-      "bbox": [430, 440, 320, 280],
+      "bbox": [
+        430,
+        440,
+        320,
+        280
+      ],
       "text": "In this paper we extend these results to the trillion-parameter regime and examine whether the scaling exponent remains stable.",
       "reading_order": 6,
       "layout_class": "two-column",
-      "style": {"font_family": "serif", "size_hint": 12},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 12
+      },
       "references": {
         "en-es": "En este artículo ampliamos estos resultados al régimen de billones de parámetros y examinamos si el exponente de escala permanece estable.",
         "en-de": "In dieser Arbeit erweitern wir diese Ergebnisse auf den Billionen-Parameter-Bereich und untersuchen, ob der Skalierungsexponent stabil bleibt.",
         "en-zh": "本文将这些结果扩展到万亿参数范围,并检验扩展指数是否保持稳定。",
         "en-ar": "في هذه الورقة، نوسع هذه النتائج إلى نظام التريليون معامل ونفحص ما إذا كان أس التوسع يبقى مستقراً.",
-        "en-ja": "本稿では、これらの結果を兆パラメータ領域に拡張し、スケーリング指数が安定して保たれるかを検証する。"
+        "en-ja": "本稿では、これらの結果を兆パラメータ領域に拡張し、スケーリング指数が安定して保たれるかを検証する。",
+        "en-fr": "Dans cet article, nous étendons ces résultats au régime du trillion de paramètres et examinons si l'exposant d'échelle reste stable.",
+        "en-th": "ในบทความนี้ เราขยายผลเหล่านี้สู่ระบบล้านล้านพารามิเตอร์ และตรวจสอบว่าเลขชี้กำลังการขยายขนาดยังคงเสถียรหรือไม่",
+        "en-ms": "Dalam kertas ini, kami melanjutkan keputusan ini ke rejim trilion parameter dan mengkaji sama ada eksponen penskalaan kekal stabil."
       }
     },
     {
       "region_id": "r8",
-      "bbox": [100, 760, 650, 50],
+      "bbox": [
+        100,
+        760,
+        650,
+        50
+      ],
       "text": "Figure 1. Loss as a function of training compute (log-log).",
       "reading_order": 7,
       "layout_class": "caption",
-      "style": {"font_family": "serif", "size_hint": 11, "italic": true},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 11,
+        "italic": true
+      },
       "references": {
         "en-es": "Figura 1. Pérdida en función del cómputo de entrenamiento (log-log).",
         "en-de": "Abbildung 1. Verlust als Funktion des Trainings-Rechenaufwands (log-log).",
         "en-zh": "图1. 损失作为训练计算量的函数(对数-对数坐标)。",
         "en-ar": "الشكل 1. الخسارة كدالة لحساب التدريب (لوغ-لوغ).",
-        "en-ja": "図1. 訓練計算量の関数としての損失(両対数)。"
+        "en-ja": "図1. 訓練計算量の関数としての損失(両対数)。",
+        "en-fr": "Figure 1. Perte en fonction du calcul d'entraînement (log-log).",
+        "en-th": "รูปที่ 1. ค่าสูญเสียในฐานะฟังก์ชันของการคำนวณการฝึก (log-log).",
+        "en-ms": "Rajah 1. Kehilangan sebagai fungsi pengiraan latihan (log-log)."
       }
     }
   ]

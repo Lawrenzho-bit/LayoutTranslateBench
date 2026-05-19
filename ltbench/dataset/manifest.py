@@ -45,10 +45,12 @@ def load_submission(
     with manifest_path.open("r", encoding="utf-8") as f:
         system = SystemManifest.model_validate(json.load(f))
 
+    from ltbench import LANG_PAIRS  # avoid import cycle at module top
+
     per_pair: dict[LangPair, list[DocumentSubmission]] = {}
     for jsonl in sorted(submission_dir.glob("*.jsonl")):
         lang_pair = jsonl.stem
-        if lang_pair not in ("en-es", "en-de", "en-zh", "en-ar", "en-ja"):
+        if lang_pair not in LANG_PAIRS:
             continue
         docs: list[DocumentSubmission] = []
         with jsonl.open("r", encoding="utf-8") as f:

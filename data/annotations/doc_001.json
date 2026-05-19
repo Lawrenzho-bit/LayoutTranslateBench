@@ -1,110 +1,193 @@
 {
   "doc_id": "doc_001",
-  "page_size": [800, 1100],
+  "page_size": [
+    800,
+    1100
+  ],
   "regions": [
     {
       "region_id": "r1",
-      "bbox": [200, 60, 400, 60],
+      "bbox": [
+        200,
+        60,
+        400,
+        60
+      ],
       "text": "Certificate of Birth",
       "reading_order": 0,
       "layout_class": "title",
-      "style": {"font_family": "serif", "size_hint": 32, "color": "#000000", "bold": true},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 32,
+        "color": "#000000",
+        "bold": true
+      },
       "references": {
         "en-es": "Certificado de Nacimiento",
         "en-de": "Geburtsurkunde",
         "en-zh": "出生证明",
         "en-ar": "شهادة الميلاد",
-        "en-ja": "出生証明書"
+        "en-ja": "出生証明書",
+        "en-fr": "Acte de Naissance",
+        "en-th": "สูติบัตร",
+        "en-ms": "Sijil Kelahiran"
       }
     },
     {
       "region_id": "r2",
-      "bbox": [80, 200, 640, 40],
+      "bbox": [
+        80,
+        200,
+        640,
+        40
+      ],
       "text": "Name: Maria Garcia Lopez",
       "reading_order": 1,
       "layout_class": "paragraph",
-      "style": {"font_family": "serif", "size_hint": 18},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 18
+      },
       "references": {
         "en-es": "Nombre: María García López",
         "en-de": "Name: Maria Garcia Lopez",
         "en-zh": "姓名:玛丽亚·加西亚·洛佩兹",
         "en-ar": "الاسم: ماريا غارسيا لوبيز",
-        "en-ja": "氏名:マリア・ガルシア・ロペス"
+        "en-ja": "氏名:マリア・ガルシア・ロペス",
+        "en-fr": "Nom : Maria Garcia Lopez",
+        "en-th": "ชื่อ: Maria Garcia Lopez",
+        "en-ms": "Nama: Maria Garcia Lopez"
       }
     },
     {
       "region_id": "r3",
-      "bbox": [80, 260, 640, 40],
+      "bbox": [
+        80,
+        260,
+        640,
+        40
+      ],
       "text": "Date of Birth: 14 March 2018",
       "reading_order": 2,
       "layout_class": "paragraph",
-      "style": {"font_family": "serif", "size_hint": 18},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 18
+      },
       "references": {
         "en-es": "Fecha de nacimiento: 14 de marzo de 2018",
         "en-de": "Geburtsdatum: 14. März 2018",
         "en-zh": "出生日期:2018年3月14日",
         "en-ar": "تاريخ الميلاد: 14 مارس 2018",
-        "en-ja": "生年月日:2018年3月14日"
+        "en-ja": "生年月日:2018年3月14日",
+        "en-fr": "Date de Naissance : 14 mars 2018",
+        "en-th": "วันเกิด: 14 มีนาคม 2018",
+        "en-ms": "Tarikh Lahir: 14 Mac 2018"
       }
     },
     {
       "region_id": "r4",
-      "bbox": [80, 320, 640, 40],
+      "bbox": [
+        80,
+        320,
+        640,
+        40
+      ],
       "text": "Place of Birth: San Salvador, El Salvador",
       "reading_order": 3,
       "layout_class": "paragraph",
-      "style": {"font_family": "serif", "size_hint": 18},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 18
+      },
       "references": {
         "en-es": "Lugar de nacimiento: San Salvador, El Salvador",
         "en-de": "Geburtsort: San Salvador, El Salvador",
         "en-zh": "出生地:萨尔瓦多,圣萨尔瓦多",
         "en-ar": "مكان الميلاد: سان سلفادور، السلفادور",
-        "en-ja": "出生地:エルサルバドル、サンサルバドル"
+        "en-ja": "出生地:エルサルバドル、サンサルバドル",
+        "en-fr": "Lieu de Naissance : San Salvador, El Salvador",
+        "en-th": "สถานที่เกิด: ซานซัลวาดอร์, เอลซัลวาดอร์",
+        "en-ms": "Tempat Lahir: San Salvador, El Salvador"
       }
     },
     {
       "region_id": "r5",
-      "bbox": [80, 380, 640, 40],
+      "bbox": [
+        80,
+        380,
+        640,
+        40
+      ],
       "text": "Sex: Female",
       "reading_order": 4,
       "layout_class": "paragraph",
-      "style": {"font_family": "serif", "size_hint": 18},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 18
+      },
       "references": {
         "en-es": "Sexo: Femenino",
         "en-de": "Geschlecht: Weiblich",
         "en-zh": "性别:女",
         "en-ar": "الجنس: أنثى",
-        "en-ja": "性別:女性"
+        "en-ja": "性別:女性",
+        "en-fr": "Sexe : Féminin",
+        "en-th": "เพศ: หญิง",
+        "en-ms": "Jantina: Perempuan"
       }
     },
     {
       "region_id": "r6",
-      "bbox": [80, 440, 640, 40],
+      "bbox": [
+        80,
+        440,
+        640,
+        40
+      ],
       "text": "Registry Number: 2018-03-1487",
       "reading_order": 5,
       "layout_class": "paragraph",
-      "style": {"font_family": "mono", "size_hint": 16},
+      "style": {
+        "font_family": "mono",
+        "size_hint": 16
+      },
       "references": {
         "en-es": "Número de registro: 2018-03-1487",
         "en-de": "Registernummer: 2018-03-1487",
         "en-zh": "登记号:2018-03-1487",
         "en-ar": "رقم التسجيل: 2018-03-1487",
-        "en-ja": "登録番号:2018-03-1487"
+        "en-ja": "登録番号:2018-03-1487",
+        "en-fr": "Numéro de registre : 2018-03-1487",
+        "en-th": "หมายเลขทะเบียน: 2018-03-1487",
+        "en-ms": "Nombor Daftar: 2018-03-1487"
       }
     },
     {
       "region_id": "r7",
-      "bbox": [80, 980, 640, 40],
+      "bbox": [
+        80,
+        980,
+        640,
+        40
+      ],
       "text": "Issued in San Salvador on 1 April 2018",
       "reading_order": 6,
       "layout_class": "footer",
-      "style": {"font_family": "serif", "size_hint": 14, "italic": true},
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14,
+        "italic": true
+      },
       "references": {
         "en-es": "Emitido en San Salvador el 1 de abril de 2018",
         "en-de": "Ausgestellt in San Salvador am 1. April 2018",
         "en-zh": "于2018年4月1日在圣萨尔瓦多签发",
         "en-ar": "صدر في سان سلفادور بتاريخ 1 أبريل 2018",
-        "en-ja": "2018年4月1日サンサルバドルにて発行"
+        "en-ja": "2018年4月1日サンサルバドルにて発行",
+        "en-fr": "Délivré à San Salvador le 1er avril 2018",
+        "en-th": "ออกที่ซานซัลวาดอร์ เมื่อวันที่ 1 เมษายน 2018",
+        "en-ms": "Dikeluarkan di San Salvador pada 1 April 2018"
       }
     }
   ]

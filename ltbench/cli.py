@@ -409,10 +409,22 @@ def run_deepl(
     with sys_manifest_path.open("w", encoding="utf-8") as f:
         json.dump(runner.system_manifest().model_dump(), f, indent=2)
 
+    from ltbench.runners.deepl_text import UnsupportedLanguageError
+
     total = len(selected_pairs) * len(selected_entries)
     n_written = 0
+    skipped_unsupported: list[str] = []
     runtime_total = 0.0
     for lang_pair in selected_pairs:
+        # Skip language pairs DeepL doesn't support; record the gap so the
+        # submission shows them as n=0 on the leaderboard.
+        if not runner.supports(lang_pair):
+            skipped_unsupported.append(lang_pair)
+            console.print(
+                f"  [yellow]skip[/yellow] {lang_pair}: not supported by DeepL"
+            )
+            continue
+
         path = submission_dir / f"{lang_pair}.jsonl"
         with path.open("w", encoding="utf-8") as f:
             for entry in selected_entries:
@@ -421,7 +433,11 @@ def run_deepl(
                     f"  [dim]({n_written + 1}/{total})[/dim] {lang_pair} / {entry.doc_id}",
                     end="",
                 )
-                sub: DocumentSubmission = runner.translate(ann, lang_pair)  # type: ignore[arg-type]
+                try:
+                    sub: DocumentSubmission = runner.translate(ann, lang_pair)  # type: ignore[arg-type]
+                except UnsupportedLanguageError:
+                    console.print(" [yellow]skip[/yellow]")
+                    continue
                 f.write(sub.model_dump_json() + "\n")
                 n_written += 1
                 runtime_total += sub.runtime_seconds or 0.0
@@ -429,6 +445,13 @@ def run_deepl(
                 console.print(f" [green]->[/green] {len(sub.regions)} regions{rt}")
 
     runner.close()
+
+    if skipped_unsupported:
+        console.print(
+            f"[yellow]Note:[/yellow] DeepL did not support: "
+            f"{', '.join(skipped_unsupported)}. These pairs will appear as n=0 "
+            f"on the leaderboard — that's a real DeepL coverage gap, not a bug."
+        )
     console.print(
         f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
         f" (total {runtime_total:.1f}s)"
