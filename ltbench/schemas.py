@@ -6,7 +6,16 @@ from typing import Literal
 
 from pydantic import BaseModel, Field, field_validator
 
-LangPair = Literal["en-es", "en-de", "en-zh", "en-ar", "en-ja"]
+LangPair = Literal[
+    "en-es",
+    "en-de",
+    "en-zh",
+    "en-ar",
+    "en-ja",
+    "en-fr",
+    "en-th",
+    "en-ms",
+]
 LayoutClass = Literal[
     "header", "footer", "single-column", "two-column", "form-field",
     "table-cell", "caption", "stamp", "signature", "handwritten",

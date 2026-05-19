@@ -42,6 +42,9 @@ _LANG_NAMES: dict[LangPair, str] = {
     "en-zh": "Simplified Chinese",
     "en-ar": "Arabic",
     "en-ja": "Japanese",
+    "en-fr": "French",
+    "en-th": "Thai",
+    "en-ms": "Malay",
 }
 
 
@@ -51,6 +54,9 @@ _FEW_SHOT_BY_LANG: dict[str, str] = {
     "Simplified Chinese": '"你好世界"',
     "Arabic": '"مرحبا بالعالم"',
     "Japanese": '"こんにちは世界"',
+    "French": '"Bonjour le monde"',
+    "Thai": '"สวัสดีชาวโลก"',
+    "Malay": '"Helo dunia"',
 }
 
 

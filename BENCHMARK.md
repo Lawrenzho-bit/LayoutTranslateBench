@@ -9,7 +9,7 @@ Today's translation tools either translate **plain text** (DeepL, Google Transla
 - **Name:** LayoutTranslateBench (LTB)
 - **Version:** 0.1
 - **Documents:** 200 (target) — 10 categories × 20 documents
-- **Language pairs:** 5 — `en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`
+- **Language pairs:** 8 — `en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`, `en-fr`, `en-th`, `en-ms`
 - **License:** Code Apache-2.0, dataset CC-BY-4.0 (per-doc license recorded in manifest)
 - **Composite score:** LTB-100 (range 0–100, higher is better)
 - **Submission format:** One JSONL per (system × language pair); see `docs/submission.md`
@@ -74,15 +74,20 @@ This pipeline — what most current tools do — fails on at least four axes tha
 | Bank statements / tabular forms | 20 | Dense tables, alignment-sensitive |
 | Handwritten or mixed-media | 20 | The hard tier; tests OCR + translate jointly |
 
-## Language pairs and why these five
+## Language pairs and why these eight
 
 - **en→es** — highest-volume Latin pair; immigration, education, e-commerce
-- **en→de** — text expansion stress test (~30% longer)
+- **en→de** — text expansion stress test (~30% longer); DACH market
 - **en→zh** — script change + contraction stress test (~30–50% shorter)
 - **en→ar** — RTL stress test; mirrors layout; ligature-heavy
 - **en→ja** — mixed scripts (kanji + kana + Latin); optional vertical text
+- **en→fr** — France launch market; sworn-translation industry baseline; well-supported by commercial systems
+- **en→th** — Thai script; **DeepL does not support this pair** — exposes a commercial coverage gap relevant to the Southeast Asia market
+- **en→ms** — Bahasa Melayu; **DeepL does not support this pair** — ASEAN hub adjacency to Indonesian (270M speakers)
 
-Future versions may add `zh-en`, `es-en`, `de-en` (reverse), and additional pairs (`fr`, `hi`, `pt-br`, `ko`).
+The inclusion of `en→th` and `en→ms` is deliberate: both are commercially valuable language pairs that current state-of-the-art document-translation APIs (DeepL Documents, etc.) simply do not cover, making them a structural product opportunity that the benchmark surfaces empirically.
+
+Future versions may add `zh-en`, `es-en`, `de-en` (reverse), and additional pairs (`hi`, `pt-br`, `ko`, `vi`, `id`).
 
 ## Reproducibility
 

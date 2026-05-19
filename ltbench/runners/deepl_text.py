@@ -36,14 +36,26 @@ from ltbench.schemas import (
 FREE_TIER_ENDPOINT = "https://api-free.deepl.com/v2/translate"
 PRO_TIER_ENDPOINT = "https://api.deepl.com/v2/translate"
 
-# Map LTB language-pair codes to DeepL target-language codes
+# Map LTB language-pair codes to DeepL target-language codes.
+# DeepL (as of v0.1 release) supports: AR, BG, CS, DA, DE, EL, EN, ES, ET, FI,
+# FR, HU, ID, IT, JA, KO, LT, LV, NB, NL, PL, PT, RO, RU, SK, SL, SV, TR, UK, ZH.
+# Notably *unsupported*: Thai (TH), Malay (MS), Vietnamese (VI), Hindi (HI),
+# Bengali (BN), Swahili (SW), Filipino (TL). Those are explicit gaps in DeepL's
+# coverage and surface on the leaderboard as "n=0" for the affected pairs.
 _LANG_PAIR_TO_DEEPL: dict[LangPair, str] = {
     "en-es": "ES",
     "en-de": "DE",
     "en-zh": "ZH",  # Simplified Chinese (DeepL default)
     "en-ar": "AR",
     "en-ja": "JA",
+    "en-fr": "FR",
+    # en-th: not supported by DeepL — see UnsupportedLanguageError below
+    # en-ms: not supported by DeepL — see UnsupportedLanguageError below
 }
+
+
+class UnsupportedLanguageError(ValueError):
+    """Raised when a language pair is not in this runner's supported set."""
 
 
 class DeepLTextRunner(Runner):
@@ -150,10 +162,17 @@ class DeepLTextRunner(Runner):
                 raise
         raise RuntimeError(f"DeepL request failed after {self.max_retries} attempts") from last_err
 
+    def supports(self, lang_pair: LangPair) -> bool:
+        """Return True if DeepL covers this language pair."""
+        return lang_pair in _LANG_PAIR_TO_DEEPL
+
     def translate(self, annotation: Annotation, lang_pair: LangPair) -> DocumentSubmission:
         target_lang = _LANG_PAIR_TO_DEEPL.get(lang_pair)
         if target_lang is None:
-            raise ValueError(f"DeepL runner has no mapping for {lang_pair}")
+            raise UnsupportedLanguageError(
+                f"DeepL does not support {lang_pair}. See _LANG_PAIR_TO_DEEPL for the "
+                f"current supported set."
+            )
 
         texts = [r.text for r in annotation.regions]
         t0 = time.time()

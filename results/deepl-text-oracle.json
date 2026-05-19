@@ -68,6 +68,30 @@
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
       "ltb_100": 79.59345925540387
+    },
+    {
+      "lang_pair": "en-fr",
+      "n_docs": 0,
+      "chrf": 0.0,
+      "layout_iou": 0.0,
+      "reading_order_tau": 0.0,
+      "ltb_100": 0.0
+    },
+    {
+      "lang_pair": "en-th",
+      "n_docs": 0,
+      "chrf": 0.0,
+      "layout_iou": 0.0,
+      "reading_order_tau": 0.0,
+      "ltb_100": 0.0
+    },
+    {
+      "lang_pair": "en-ms",
+      "n_docs": 0,
+      "chrf": 0.0,
+      "layout_iou": 0.0,
+      "reading_order_tau": 0.0,
+      "ltb_100": 0.0
     }
   ],
   "per_doc": [
@@ -1372,5 +1396,5 @@
       ]
     }
   ],
-  "scored_at": "2026-05-19T03:27:37+00:00"
+  "scored_at": "2026-05-19T03:39:44+00:00"
 }
