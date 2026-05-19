@@ -100,3 +100,21 @@ The leaderboard prefers submissions with full reproducibility metadata: hardware
 ## Open-source runners welcome
 
 `ltbench/runners/` is the place to drop a public adapter. PRs adding adapters for new translation systems are welcome — the runner pattern means the same adapter can be used by anyone to re-score the system without re-implementing the integration.
+
+## Oracle-layout runners
+
+Some runners — like the bundled `deepl-text-oracle` — translate only the text and **copy the ground-truth bboxes verbatim** as predicted bboxes. This is intentional:
+
+- It measures the *upper bound on text quality* for a given translation system, isolated from layout-extraction failure.
+- It exposes the gap between a hypothetical "perfect-layout commercial MT" and real end-to-end systems.
+- It is **not** a fair comparison to a true end-to-end runner that has to extract its own bboxes — and the leaderboard flags oracle-layout systems so readers don't confuse them.
+
+If you submit a new oracle-layout runner, set `"oracle_layout": true` in your `runner_config` and explain the choice in `notes`. Run-time and cost still belong in the manifest as usual.
+
+## Built-in runners
+
+| Runner | CLI | Extras to install | What it measures |
+|---|---|---|---|
+| Identity baseline | `ltbench run-baseline` | (none) | Trivial lower bound — returns source text in source boxes |
+| Qwen-VL family | `ltbench run-qwen-vl` | `pip install -e ".[runners-qwen]"` | End-to-end zero-shot VLM (Qwen3-VL by default). Heavy install. |
+| DeepL Text + oracle layout | `ltbench run-deepl` | `pip install -e ".[runners-deepl]"` | Text-quality upper bound. Requires `DEEPL_API_KEY`. |

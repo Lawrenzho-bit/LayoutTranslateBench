@@ -32,6 +32,9 @@ dependencies = [
 runners = [
     "httpx>=0.27",
 ]
+runners-deepl = [
+    "httpx>=0.27",
+]
 runners-qwen = [
     "torch>=2.1",
     "transformers>=4.45",
