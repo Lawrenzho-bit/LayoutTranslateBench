@@ -126,6 +126,9 @@ class DocumentSubmission(BaseModel):
     runtime_seconds: float | None = None
 
 
+SystemType = Literal["end-to-end", "oracle-layout"]
+
+
 class SystemManifest(BaseModel):
     """Metadata about a submitted system. Saved as submissions/<system>/manifest.json."""
 
@@ -140,6 +143,17 @@ class SystemManifest(BaseModel):
     cost_usd: float | None = None
     submitter: str | None = None
     notes: str | None = None
+    # v0.1.1: system_type distinguishes runners that produce their own bounding
+    # boxes ("end-to-end") from those that substitute ground-truth bboxes as
+    # predictions ("oracle-layout"). Oracle-layout systems are upper bounds on
+    # text quality, not realistic end-to-end measurements; the leaderboard
+    # segregates them. Defaults to "end-to-end" for backwards compatibility.
+    system_type: SystemType = "end-to-end"
+    # v0.1.1: parser_failures counts documents where the runner fell back to a
+    # placeholder region because model output couldn't be parsed (e.g. Qwen-VL
+    # JSON parse failures). Separates model-quality failures from prompt /
+    # parser failures.
+    parser_failures: int = 0
 
 
 # ---------- Result schema (output of `ltbench score`) ----------
@@ -169,6 +183,11 @@ class LangPairScore(BaseModel):
     layout_iou: float
     reading_order_tau: float
     ltb_100: float
+    # v0.1.1: 95% bootstrap confidence interval on LTB-100 across the per-document
+    # scores in this pair. Wide CI = insufficient sample size. Defaults to 0/0 for
+    # backwards compatibility with v0.1 result files.
+    ltb_100_ci_low: float = 0.0
+    ltb_100_ci_high: float = 0.0
 
 
 class SubmissionResult(BaseModel):
@@ -178,6 +197,9 @@ class SubmissionResult(BaseModel):
     benchmark_version: str = "0.1"
     weights: dict[str, float]
     overall_ltb_100: float
+    # v0.1.1: 95% bootstrap CI on LTB-100 across all per-document scores.
+    overall_ltb_100_ci_low: float = 0.0
+    overall_ltb_100_ci_high: float = 0.0
     overall_chrf: float
     overall_layout_iou: float
     overall_reading_order_tau: float
@@ -194,10 +216,14 @@ class LeaderboardRow(BaseModel):
     system_name: str
     system_version: str
     ltb_100: float
+    ltb_100_ci_low: float = 0.0
+    ltb_100_ci_high: float = 0.0
     chrf: float
     layout_iou: float
     reading_order_tau: float
     coverage: str = "—"  # e.g. "6/8" — pairs with n_docs > 0 vs LTB pairs
+    system_type: SystemType = "end-to-end"
+    parser_failures: int = 0
     median_runtime_s: float | None = None
     cost_usd: float | None = None
     hardware: str | None = None

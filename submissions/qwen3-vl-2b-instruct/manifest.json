@@ -15,5 +15,7 @@
   "median_per_doc_runtime_seconds": 184.9,
   "cost_usd": 0.0,
   "submitter": "LaurentHenri Contributors",
-  "notes": "Full 8/8 coverage on the v0.1 sample dataset. 40 doc x lang-pair inferences total, ~2h 53min CPU wall time. Bbox grounding from a 2B vision-language model without document-specific post-processing remains unreliable on document layouts; this row demonstrates the zero-shot ceiling for a small local VLM on layout-preserving translation across all 8 LTB v0.1 language pairs (including en-th and en-ms which have no commercial competitor). doc_004 (business letter) intermittently triggers the model's JSON-output fallback (1 region returned instead of 7); doc_004 on en-th and en-ms returns 9 regions (over-segmentation). Full 5-pair x 200-doc coverage with grounding-tuned models planned in v0.2."
+  "notes": "Full 8/8 coverage on the v0.1 sample dataset. 40 doc x lang-pair inferences total, ~2h 53min CPU wall time. Bbox grounding from a 2B vision-language model without document-specific post-processing remains unreliable on document layouts; this row demonstrates the zero-shot ceiling for a small local VLM on layout-preserving translation across all 8 LTB v0.1 language pairs (including en-th and en-ms which have no commercial competitor). doc_004 (business letter) intermittently triggers the model's JSON-output fallback (1 region returned instead of 7); doc_004 on en-th and en-ms returns 9 regions (over-segmentation). Full 5-pair x 200-doc coverage with grounding-tuned models planned in v0.2.",
+  "system_type": "end-to-end",
+  "parser_failures": 5
 }

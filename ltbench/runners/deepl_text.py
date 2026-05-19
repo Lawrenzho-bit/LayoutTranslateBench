@@ -100,6 +100,7 @@ class DeepLTextRunner(Runner):
                 "max_retries": self.max_retries,
             },
             hardware="api",
+            system_type="oracle-layout",
             notes=(
                 "Oracle-layout baseline: predicted bboxes are copied verbatim from "
                 "the ground-truth annotation. This measures DeepL's text-quality "

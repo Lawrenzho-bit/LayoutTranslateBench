@@ -11,5 +11,7 @@
   "median_per_doc_runtime_seconds": null,
   "cost_usd": null,
   "submitter": null,
-  "notes": null
+  "notes": null,
+  "system_type": "end-to-end",
+  "parser_failures": 0
 }

@@ -100,6 +100,7 @@ class NllbTextRunner(Runner):
                 "covers_th_ms": True,
             },
             hardware=self._actual_device,
+            system_type="oracle-layout",
             notes=(
                 "Open-source oracle-layout baseline: predicted bboxes are copied "
                 "verbatim from the ground-truth annotation; text is translated by "

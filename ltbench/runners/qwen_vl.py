@@ -181,6 +181,8 @@ class QwenVLRunner(Runner):
                 "dtype": self.dtype,
             },
             hardware=self._actual_device,
+            system_type="end-to-end",
+            parser_failures=getattr(self, "_parser_failures", 0),
         )
 
     def _ensure_loaded(self) -> None:
@@ -340,7 +342,11 @@ class QwenVLRunner(Runner):
             )
 
         if not regions:
-            # Fall back to a single empty placeholder so scoring still runs
+            # Fall back to a single empty placeholder so scoring still runs.
+            # Track this as a parser_failure for v0.1.1 leaderboard reporting —
+            # separates "model couldn't translate" from "we couldn't parse the
+            # model's output". The fallback is structurally identifiable.
+            self._parser_failures = getattr(self, "_parser_failures", 0) + 1
             regions = [
                 PredictedRegion(
                     region_id="r0", bbox=(0.0, 0.0, 1.0, 1.0), text="", reading_order=0
