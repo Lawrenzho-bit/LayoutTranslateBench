@@ -174,6 +174,10 @@ class DocumentScore(BaseModel):
     reading_order_tau: float
     ltb_100: float
     region_scores: list[RegionScore]
+    # v0.1.2: True if this document's submission triggered the parser fallback
+    # (e.g. a runner returned a single placeholder region because model output
+    # couldn't be parsed). Set by the scorer based on submission shape.
+    parser_failure: bool = False
 
 
 class LangPairScore(BaseModel):

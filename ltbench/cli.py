@@ -125,6 +125,14 @@ def score(
         None,
         help="Where to write the result JSON. Default: results/<system-name>.json",
     ),
+    exclude_parser_failures: bool = typer.Option(
+        False,
+        "--exclude-parser-failures",
+        help="Drop documents that triggered the runner's parser fallback "
+        "(1-region empty placeholder) from per-pair and overall aggregation. "
+        "Useful for separating model quality from prompt/parser quality "
+        "(v0.1.2 methodology fix #9).",
+    ),
 ) -> None:
     """Score a submission against the dataset; write a result JSON."""
     m = load_manifest(manifest)
@@ -153,7 +161,7 @@ def score(
             f"[yellow]Warning:[/yellow] skipped {skipped} submissions with unknown doc_id"
         )
 
-    result = score_submission(system, per_pair_data)  # type: ignore[arg-type]
+    result = score_submission(system, per_pair_data, exclude_parser_failures=exclude_parser_failures)  # type: ignore[arg-type]
 
     out_path = output or Path("results") / f"{system.system_name}.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -628,6 +636,173 @@ def run_nllb(
         f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
         f" (total {runtime_total:.1f}s)"
     )
+
+
+@app.command(name="export-eval-prompts")
+def export_eval_prompts(
+    submissions: list[str] = typer.Option(
+        ..., "--submission", "-s", help="One or more submission names (under submissions/)."
+    ),
+    manifest: Path = typer.Option(Path("data/manifest.json")),
+    data_root: Path = typer.Option(Path("data")),
+    output: Path = typer.Option(Path("eval/da_prompts.csv")),
+    lang_pairs: Optional[str] = typer.Option(None, help="Filter to specific pairs."),
+) -> None:
+    """Export a CSV of rows for human raters to score (Direct Assessment 0–100).
+
+    One row per (system, doc, region) — including the source text, the
+    predicted translation, and the reference. Raters fill in `da_score`
+    (and optional `notes`) per row, then `ltbench import-judgments` ingests
+    the completed CSV. v0.1.2 methodology fix #10 infrastructure.
+    """
+    import csv
+
+    m = load_manifest(manifest)
+    annotations = {
+        entry.doc_id: load_annotation(data_root / entry.annotation_file) for entry in m.entries
+    }
+
+    selected_pairs = list(LANG_PAIRS)
+    if lang_pairs:
+        wanted = {p.strip() for p in lang_pairs.split(",") if p.strip()}
+        selected_pairs = [p for p in LANG_PAIRS if p in wanted]
+
+    output.parent.mkdir(parents=True, exist_ok=True)
+    n_rows = 0
+    with output.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(
+            [
+                "judgment_id",
+                "system_name",
+                "doc_id",
+                "lang_pair",
+                "region_id",
+                "source_text",
+                "predicted_text",
+                "reference_text",
+                "da_score",  # blank — for rater to fill in 0–100
+                "notes",  # blank — optional
+            ]
+        )
+        for sub_name in submissions:
+            sub_dir = Path("submissions") / sub_name
+            if not sub_dir.exists():
+                console.print(f"[yellow]Warn:[/yellow] {sub_dir} does not exist; skipping")
+                continue
+            for lang_pair in selected_pairs:
+                jsonl_path = sub_dir / f"{lang_pair}.jsonl"
+                if not jsonl_path.exists():
+                    continue
+                with jsonl_path.open("r", encoding="utf-8") as jf:
+                    for line in jf:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        sub = json.loads(line)
+                        doc_id = sub["doc_id"]
+                        ann = annotations.get(doc_id)
+                        if ann is None:
+                            continue
+                        gt_by_id = {r.region_id: r for r in ann.regions}
+                        for pred_region in sub["regions"]:
+                            gt = gt_by_id.get(pred_region["region_id"])
+                            if gt is None:
+                                continue
+                            ref_text = gt.references.get(lang_pair, "")
+                            writer.writerow(
+                                [
+                                    f"{sub_name}-{doc_id}-{lang_pair}-{pred_region['region_id']}",
+                                    sub_name,
+                                    doc_id,
+                                    lang_pair,
+                                    pred_region["region_id"],
+                                    gt.text,
+                                    pred_region.get("text", ""),
+                                    ref_text,
+                                    "",  # da_score
+                                    "",  # notes
+                                ]
+                            )
+                            n_rows += 1
+    console.print(f"[green]Wrote {n_rows} eval prompts[/green] -> {output}")
+    console.print(
+        "[dim]Raters: fill in da_score (0-100, Direct Assessment scale) and optional notes.[/dim]"
+    )
+
+
+@app.command(name="correlate-human")
+def correlate_human(
+    judgments_dir: Path = typer.Option(Path("data/human_judgments")),
+    results_dir: Path = typer.Option(Path("results")),
+    output: Optional[Path] = typer.Option(None, help="Optional JSON output path."),
+) -> None:
+    """Compute correlation between human DA scores and automatic LTB-100.
+
+    Reads all judgments under data/human_judgments/*/*.jsonl, aggregates by
+    cell, joins with per-document scores in results/*.json, and reports
+    Kendall τ + Pearson r per system.
+
+    No-op (prints a guidance message) if no judgments are found. v0.1.2
+    methodology fix #10 infrastructure.
+    """
+    from ltbench.human_eval import (
+        aggregate_per_cell,
+        extract_automatic_doc_scores_from_result,
+        kendall_tau_human_vs_auto,
+        load_judgments,
+    )
+
+    judgments = load_judgments(judgments_dir)
+    if not judgments:
+        console.print(
+            "[yellow]No human judgments found at "
+            f"{judgments_dir}.[/yellow]\n\n"
+            "Workflow:\n"
+            "  1. Run 'ltbench export-eval-prompts -s <system_name>' to export a CSV\n"
+            "  2. Have raters fill in da_score (0-100) per row\n"
+            "  3. Save completed JSONLs at "
+            f"{judgments_dir}/<rater_id>/<system>-<lang_pair>.jsonl\n"
+            "  4. Re-run this command."
+        )
+        raise typer.Exit(code=0)
+
+    human_per_cell = aggregate_per_cell(judgments)
+    console.print(f"[cyan]Loaded[/cyan] {len(judgments)} judgments across "
+                  f"{len(human_per_cell)} unique cells")
+
+    # Build automatic scores per system, then correlate per system
+    summary: dict[str, dict] = {}
+    for result_path in sorted(results_dir.glob("*.json")):
+        if result_path.name.endswith(".local.json"):
+            continue
+        with result_path.open("r", encoding="utf-8") as f:
+            r = json.load(f)
+        auto_scores = extract_automatic_doc_scores_from_result(r)
+        if not auto_scores:
+            continue
+        system_name = r["system"]["system_name"]
+        # Restrict to this system's judgments
+        sys_human = {k: v for k, v in human_per_cell.items() if k[0] == system_name}
+        if not sys_human:
+            continue
+        corr = kendall_tau_human_vs_auto(sys_human, auto_scores)
+        summary[system_name] = corr
+        console.print(
+            f"  [bold]{system_name}[/bold]: n={corr['n_pairs']} cells, "
+            f"τ_norm={corr['kendall_tau_norm']:.4f}, r={corr['pearson_r']:.4f}"
+        )
+
+    if not summary:
+        console.print("[yellow]No overlap between human judgments and automatic scores.[/yellow]")
+        raise typer.Exit(code=0)
+
+    if output is None:
+        output = results_dir / "human_correlation.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2)
+    console.print(f"[green]Wrote correlation summary[/green] -> {output}")
 
 
 def main() -> None:

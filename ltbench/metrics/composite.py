@@ -39,6 +39,19 @@ def _area(bbox: tuple[float, float, float, float]) -> float:
     return max(0.0, bbox[2]) * max(0.0, bbox[3])
 
 
+def _is_parser_fallback(submission: DocumentSubmission) -> bool:
+    """Detect the parser-fallback shape: a single region with empty text.
+
+    Runners that can't parse their model's output return a 1-region empty
+    placeholder so scoring still runs. This function identifies that shape so
+    the scorer can flag the document for the --exclude-parser-failures path.
+    """
+    if len(submission.regions) != 1:
+        return False
+    only = submission.regions[0]
+    return not only.text.strip()
+
+
 def score_document(
     annotation: Annotation,
     submission: DocumentSubmission,
@@ -108,6 +121,7 @@ def score_document(
         reading_order_tau=tau,
         ltb_100=ltb_100(weighted_chrf, weighted_iou, tau),
         region_scores=region_scores,
+        parser_failure=_is_parser_fallback(submission),
     )
 
 
@@ -142,19 +156,29 @@ def aggregate_lang_pair(doc_scores: list[DocumentScore], lang_pair: LangPair) ->
 def score_submission(
     system: SystemManifest,
     per_pair_data: dict[LangPair, list[tuple[Annotation, DocumentSubmission]]],
+    exclude_parser_failures: bool = False,
 ) -> SubmissionResult:
     """Compose the full SubmissionResult from raw (annotation, submission) pairs.
 
     Args:
         system: metadata about the submitting system.
         per_pair_data: mapping from language pair to list of (annotation, submission) tuples.
+        exclude_parser_failures: when True, documents whose submission triggered
+            the runner's parser-fallback (1-region empty placeholder) are dropped
+            from per-pair and overall aggregation. Per-document scores still
+            include them with parser_failure=True so the count remains visible.
     """
     per_doc: list[DocumentScore] = []
     for lang_pair, items in per_pair_data.items():
         for annotation, submission in items:
             per_doc.append(score_document(annotation, submission, lang_pair))
 
-    per_lang_pair = [aggregate_lang_pair(per_doc, lp) for lp in LANG_PAIRS]
+    if exclude_parser_failures:
+        scoring_pool = [d for d in per_doc if not d.parser_failure]
+    else:
+        scoring_pool = per_doc
+
+    per_lang_pair = [aggregate_lang_pair(scoring_pool, lp) for lp in LANG_PAIRS]
     # Overall = mean across language pairs that have at least one doc scored
     populated = [lps for lps in per_lang_pair if lps.n_docs > 0]
     if populated:
@@ -165,7 +189,7 @@ def score_submission(
         # v0.1.1: overall CI = bootstrap on per-document LTB-100 across ALL
         # covered pairs (not the mean of per-pair CIs — that would understate
         # variance).
-        _, overall_ci_low, overall_ci_high = bootstrap_ci([d.ltb_100 for d in per_doc])
+        _, overall_ci_low, overall_ci_high = bootstrap_ci([d.ltb_100 for d in scoring_pool])
     else:
         overall_chrf = overall_iou = overall_tau = overall_ltb = 0.0
         overall_ci_low = overall_ci_high = 0.0
