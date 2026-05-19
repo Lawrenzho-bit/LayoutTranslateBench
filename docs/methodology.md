@@ -120,6 +120,31 @@ Each LTB-100 score is reported with a **95% bootstrap percentile confidence inte
 
 The leaderboard displays scores as `point [CI low, CI high]`. On the v0.1 sample size (N=5 documents per language pair), these CIs are *wide* — that is the methodologically honest signal that **a 5-point gap between two systems is below the noise floor on this sample**. v0.2 will scale to N≥25 per pair, which should tighten CIs by roughly 2×.
 
+### Weight choice (v0.1.1 empirical ablation)
+
+The 50/30/20 weighting of (chrF, IoU, τ) in the LTB-100 composite is not arbitrary — it was empirically validated post-hoc against three alternatives: (40, 40, 20) balanced, (60, 20, 20) text-heavy, and (33, 33, 33) uniform.
+
+System rankings under all four weight schemes are **identical** (Kendall τ_norm = 1.0 between every pair of rankings), as computed by [`scripts/weight_ablation.py`](../scripts/weight_ablation.py). This means weight choice does not change leaderboard ordering on the four v0.1.1 systems. The 50/30/20 weights remain in production because they communicate the intended emphasis (text quality > layout > reading order) without being arbitrary in their effect.
+
+If a future system enters the leaderboard with chrF / IoU / τ in different relative magnitudes than current systems, the ablation should be re-run; if τ_norm drops below 0.95, the weights are doing real work and the methodology should validate them against human judgment.
+
+### Why this comparison is fair: DeepL Text API vs NLLB (v0.1.1)
+
+A reviewer might object that DeepL's *commercial product* (DeepL Documents) handles document context internally, whereas our runner sends each region to DeepL's Text API separately, stripping context. This would be unfair if we were comparing DeepL Documents to NLLB.
+
+We are not. The `deepl-text-oracle` runner uses DeepL's **Text API**, which is designed to be called per-string. The NLLB runner is similarly called per-region. Both systems receive the same per-region inputs, with the same ground-truth bounding boxes as a free oracle. The comparison is structurally symmetric.
+
+A separate `deepl-documents` runner (operating on PDFs end-to-end) is on the v0.2 roadmap. It will be reported as a distinct row from `deepl-text-oracle` because the inputs differ.
+
+### Remaining open methodology issues (v0.1.1)
+
+This methodology has known limitations beyond what v0.1.1 fixes. See [`methodology-roadmap.md`](methodology-roadmap.md) for the full critique-to-status table, but in brief:
+
+- chrF as the text metric has known weaknesses (paraphrase-blindness, adequacy-blindness). v0.2 will adopt COMET-Kiwi-22.
+- References are author-curated, single-translation. v0.2 will commission certified translators with multi-reference scoring.
+- No human evaluation correlation has been computed. v0.2 will add ~50 DA judgments to validate the automatic metric.
+- Sample size remains N=5 per pair. v0.2 will scale to N≥25 minimum.
+
 ### End-to-end vs oracle-layout systems (v0.1.1)
 
 A runner declares `system_type` in its manifest:

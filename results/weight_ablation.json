@@ -1,0 +1,110 @@
+{
+  "schemes": {
+    "50/30/20 (production)": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "40/40/20 (balanced)": [
+      0.4,
+      0.4,
+      0.2
+    ],
+    "60/20/20 (text-heavy)": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "33/33/33 (uniform)": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "cells": {
+    "deepl-text-oracle": {
+      "50/30/20 (production)": 78.19921249111738,
+      "40/40/20 (balanced)": 82.5593699928939,
+      "60/20/20 (text-heavy)": 73.83905498934087,
+      "33/33/33 (uniform)": 85.46614166074492
+    },
+    "identity-baseline": {
+      "50/30/20 (production)": 51.32384263325656,
+      "40/40/20 (balanced)": 61.05907410660525,
+      "60/20/20 (text-heavy)": 41.58861115990788,
+      "33/33/33 (uniform)": 67.54922842217103
+    },
+    "nllb-text-oracle-nllb-200-distilled-600m": {
+      "50/30/20 (production)": 72.12538169963075,
+      "40/40/20 (balanced)": 77.7003053597046,
+      "60/20/20 (text-heavy)": 66.5504580395569,
+      "33/33/33 (uniform)": 81.41692113308716
+    },
+    "qwen3-vl-2b-instruct": {
+      "50/30/20 (production)": 16.354124259941816,
+      "40/40/20 (balanced)": 16.48901237500514,
+      "60/20/20 (text-heavy)": 16.219236144878494,
+      "33/33/33 (uniform)": 25.298879360123326
+    }
+  },
+  "rankings": {
+    "50/30/20 (production)": [
+      "deepl-text-oracle",
+      "nllb-text-oracle-nllb-200-distilled-600m",
+      "identity-baseline",
+      "qwen3-vl-2b-instruct"
+    ],
+    "40/40/20 (balanced)": [
+      "deepl-text-oracle",
+      "nllb-text-oracle-nllb-200-distilled-600m",
+      "identity-baseline",
+      "qwen3-vl-2b-instruct"
+    ],
+    "60/20/20 (text-heavy)": [
+      "deepl-text-oracle",
+      "nllb-text-oracle-nllb-200-distilled-600m",
+      "identity-baseline",
+      "qwen3-vl-2b-instruct"
+    ],
+    "33/33/33 (uniform)": [
+      "deepl-text-oracle",
+      "nllb-text-oracle-nllb-200-distilled-600m",
+      "identity-baseline",
+      "qwen3-vl-2b-instruct"
+    ]
+  },
+  "pairwise_tau": [
+    {
+      "scheme_1": "50/30/20 (production)",
+      "scheme_2": "40/40/20 (balanced)",
+      "tau_norm": 1.0
+    },
+    {
+      "scheme_1": "50/30/20 (production)",
+      "scheme_2": "60/20/20 (text-heavy)",
+      "tau_norm": 1.0
+    },
+    {
+      "scheme_1": "50/30/20 (production)",
+      "scheme_2": "33/33/33 (uniform)",
+      "tau_norm": 1.0
+    },
+    {
+      "scheme_1": "40/40/20 (balanced)",
+      "scheme_2": "60/20/20 (text-heavy)",
+      "tau_norm": 1.0
+    },
+    {
+      "scheme_1": "40/40/20 (balanced)",
+      "scheme_2": "33/33/33 (uniform)",
+      "tau_norm": 1.0
+    },
+    {
+      "scheme_1": "60/20/20 (text-heavy)",
+      "scheme_2": "33/33/33 (uniform)",
+      "tau_norm": 1.0
+    }
+  ],
+  "min_tau": 1.0,
+  "verdict": "Rankings are stable across weight schemes (min \u03c4_norm = 1.0000). The 50/30/20 production weights are not doing methodologically significant work."
+}
