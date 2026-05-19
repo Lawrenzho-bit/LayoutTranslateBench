@@ -6,6 +6,7 @@ Commands:
     ltbench leaderboard            — regenerate the static leaderboard from results/
     ltbench run-baseline           — run the identity baseline against the dataset
     ltbench run-qwen-vl            — run a local Qwen-VL model against the dataset
+    ltbench run-deepl              — run the DeepL Text API runner (oracle layout)
     ltbench render                 — render annotation JSONs to PNG source images
     ltbench info                   — print weights, lang pairs, version
 """
@@ -348,6 +349,86 @@ def run_qwen_vl(
                 runtime_total += sub.runtime_seconds or 0.0
                 rt = f" ({sub.runtime_seconds:.1f}s)" if sub.runtime_seconds is not None else ""
                 console.print(f" [green]->[/green] {len(sub.regions)} regions{rt}")
+    console.print(
+        f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
+        f" (total {runtime_total:.1f}s)"
+    )
+
+
+@app.command(name="run-deepl")
+def run_deepl(
+    manifest: Path = typer.Option(Path("data/manifest.json")),
+    data_root: Path = typer.Option(Path("data")),
+    submission_dir: Path = typer.Option(Path("submissions/deepl-text-oracle")),
+    api_key: Optional[str] = typer.Option(
+        None,
+        help="DeepL API key. If unset, reads DEEPL_API_KEY env var.",
+    ),
+    pro: bool = typer.Option(False, help="Use Pro endpoint instead of free-tier."),
+    formality: Optional[str] = typer.Option(
+        None,
+        help="DeepL formality option (default / more / less). Only some target languages support it.",
+    ),
+    lang_pairs: Optional[str] = typer.Option(
+        None, help="Comma-separated subset of language pairs. Example: --lang-pairs en-es,en-de"
+    ),
+    docs: Optional[str] = typer.Option(
+        None, help="Comma-separated subset of doc_ids. Example: --docs doc_001,doc_002"
+    ),
+) -> None:
+    """Run the DeepL Text API runner (oracle-layout baseline).
+
+    Requires: pip install -e ".[runners-deepl]"
+
+    This is an oracle-layout runner: ground-truth bboxes are copied as predictions.
+    It measures DeepL's *text* quality assuming perfect layout extraction.
+    """
+    from ltbench.runners import get_deepl_text_runner
+
+    m = load_manifest(manifest)
+    runner = get_deepl_text_runner(api_key=api_key, free_tier=not pro, formality=formality)
+
+    selected_pairs = list(LANG_PAIRS)
+    if lang_pairs:
+        wanted = {p.strip() for p in lang_pairs.split(",") if p.strip()}
+        selected_pairs = [p for p in LANG_PAIRS if p in wanted]
+        if not selected_pairs:
+            console.print(f"[red]No valid language pairs in --lang-pairs {lang_pairs}[/red]")
+            raise typer.Exit(code=2)
+
+    selected_entries = list(m.entries)
+    if docs:
+        wanted_docs = {d.strip() for d in docs.split(",") if d.strip()}
+        selected_entries = [e for e in m.entries if e.doc_id in wanted_docs]
+        if not selected_entries:
+            console.print(f"[red]No matching doc_ids in --docs {docs}[/red]")
+            raise typer.Exit(code=2)
+
+    submission_dir.mkdir(parents=True, exist_ok=True)
+    sys_manifest_path = submission_dir / "manifest.json"
+    with sys_manifest_path.open("w", encoding="utf-8") as f:
+        json.dump(runner.system_manifest().model_dump(), f, indent=2)
+
+    total = len(selected_pairs) * len(selected_entries)
+    n_written = 0
+    runtime_total = 0.0
+    for lang_pair in selected_pairs:
+        path = submission_dir / f"{lang_pair}.jsonl"
+        with path.open("w", encoding="utf-8") as f:
+            for entry in selected_entries:
+                ann = load_annotation(data_root / entry.annotation_file)
+                console.print(
+                    f"  [dim]({n_written + 1}/{total})[/dim] {lang_pair} / {entry.doc_id}",
+                    end="",
+                )
+                sub: DocumentSubmission = runner.translate(ann, lang_pair)  # type: ignore[arg-type]
+                f.write(sub.model_dump_json() + "\n")
+                n_written += 1
+                runtime_total += sub.runtime_seconds or 0.0
+                rt = f" ({sub.runtime_seconds:.2f}s)" if sub.runtime_seconds is not None else ""
+                console.print(f" [green]->[/green] {len(sub.regions)} regions{rt}")
+
+    runner.close()
     console.print(
         f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
         f" (total {runtime_total:.1f}s)"
