@@ -117,12 +117,15 @@ class DeepLTextRunner(Runner):
             return []
 
         client = self._http()
-        # DeepL accepts repeated `text` fields for batched translation
-        data: list[tuple[str, str]] = [("text", t) for t in texts]
-        data.append(("source_lang", "EN"))
-        data.append(("target_lang", target_lang))
+        # DeepL accepts repeated `text` fields. httpx 0.28+ encodes a list value
+        # as repeated form fields (text=a&text=b&...), which is what we want.
+        data: dict[str, list[str] | str] = {
+            "text": texts,
+            "source_lang": "EN",
+            "target_lang": target_lang,
+        }
         if self.formality:
-            data.append(("formality", self.formality))
+            data["formality"] = self.formality
 
         headers = {"Authorization": f"DeepL-Auth-Key {self.api_key}"}
 
