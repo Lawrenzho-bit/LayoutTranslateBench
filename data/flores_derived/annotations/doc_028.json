@@ -1,0 +1,147 @@
+{
+  "doc_id": "doc_028",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/Iraq_Study_Group_Report:_Iraq_could_be_on_a_slide_towards_chaos",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Politics'."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "The Iraq Study Group presented its report at 12.00 GMT today.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "El Grupo de Estudio de Irak elevó hoy su informe a las 12:00 GMT.",
+        "en-de": "Die Studiengruppe zum Irak stellte heute um 12:00 Uhr GMT ihren Bericht vor.",
+        "en-zh": "伊拉克研究小组于格林尼治时间 (GMT) 今天 12 点提交了报告。",
+        "en-ar": "قدمت مجموعة دراسة العراق تقريرها في الساعة ١٢:٠٠ بتوقيت جرينتش اليوم.",
+        "en-ja": "イラク研究会は、本日12時GMTに報告書を公開しました。",
+        "en-fr": "Le groupe d’étude sur l’Irak a présenté son rapport aujourd’hui à 12 h GMT.",
+        "en-th": "วันนี้เมื่อเวลา 12.00 น. ตามเวลามาตรฐานสากล กลุ่ม Iraq Study Group ได้นำเสนอรายงานของพวกเขา",
+        "en-ms": "Kumpulan Kajian Iraq telah membentangkan laporan mereka pada pukul 12.00 GMT hari ini."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": "It warns No one can guarantee that any course of action in Iraq at this point will stop sectarian warfare, growing violence, or a slide toward chaos.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Advierte que nadie puede dar garantías de que alguna acción iraquí en este punto detendrá la lucha sectaria, la creciente violencia o una inclinación hacia el caos.",
+        "en-de": "Er warnt davor, dass niemand garantieren kann, dass irgendeine Vorgehensweise im Irak zu diesem Zeitpunkt die sektiererische Kriegsführung, die wachsende Gewalt oder ein Abgleiten ins Chaos stoppen wird.",
+        "en-zh": "报告警告称，没有人能保证目前在伊拉克采取的任何行动能够阻止宗派战争、不断增长的暴力或走向混乱。",
+        "en-ar": "يحذر من أنه لا أحد يمكنه ضمان أن أي مسار عمل في هذه اللحظة في العراق سيؤدي إلى وقف الحرب الطائفية أو العنف المتزايد أو الانحدار نحو الفوضى.",
+        "en-ja": "警告の内容は、現時点でイラクでどのような行動をとっても、宗派間抗争や暴力の拡大、あるいは混沌への滑落を阻止しうると保証できる者はいないというものでした。",
+        "en-fr": "Il avertit que personne ne peut garantir que toute action en Irak à ce stade mettra fin à la guerre sectaire, à la violence croissante ou au glissement vers le chaos.",
+        "en-th": "ข้อความเตือนว่าไม่มีใครรับประกันได้ว่า การดำเนินการใด ๆ ในอิรัก ณ ขณะนี้จะสามารถหยุดยั้งสงครามการแบ่งแยก ความรุนแรงที่กำลังเพิ่มมากขึ้น หรือการเข้าสู่ความโกลาหลได้",
+        "en-ms": "Ia memberi amaran bahawa Tiada siapa dapat menjamin apa-apa tindakan di Iraq pada ketika ini yang akan menghentikan peperangan pengikut, keganasan yang semakin meningkat atau ke arah kekacauan."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "The Report opens with plea for open debate and the formation of a consensus in the United States about the policy towards the Middle East.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "El informe comienza con un llamado a debate abierto y a formar un consenso en los Estados Unidos acerca de las políticas sobre el Oriente Medio. ",
+        "en-de": "Der Bericht fängt an mit der Bitte um einen offenen Diskurs und um Konsensbildung in den USA über eine Strategie für den Mittleren Osten.",
+        "en-zh": "该报告开篇呼吁美国就中东政策展开公开辩论并形成共识。",
+        "en-ar": "كما يبدأ هذا التقرير بدعوة لإجراء نقاش مفتوح، وتشكيل اتفاق جماعي في الرأي في الولايات المتحدة بشأن السياسة تجاه الشرق الأوسط.",
+        "en-ja": "報告書の冒頭は、公開討論と中東政策について米国内のコンセンサス形成を嘆願する一節で始まっています。",
+        "en-fr": "Le rapport s'ouvre par un appel à un débat ouvert et à la formation d'un consensus aux États-Unis sur la politique à l'égard du Moyen-Orient.",
+        "en-th": "รายงานฉบับนี้เริ่มต้นด้วยการร้องขอให้มีการอภิปรายอย่างเปิดเผยและให้มีการลงฉันทามติในสหรัฐอเมริกาเกี่ยวกับนโยบายที่มีต่อตะวันออกกลาง",
+        "en-ms": "Laporan berkenaan dibuka dengan permohonan untuk perdebatan terbuka dan pembentukan persepakatan di Amerika Syarikat berkenaan dasar menuju Timur Tengah."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "The Report is highly critical of almost every aspect of the present policy of the Executive towards Iraq and it urges an immediate change of direction.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "El informe es sumamente crítico con prácticamente cada aspecto de la política vigente del poder ejecutivo en Irak, y apela a un cambio inmediato de dirección.",
+        "en-de": "Der Bericht steht fast jedem Aspekt der gegenwärtigen Politik der Exekutive im Hinblick auf den Irak äußerst kritisch gegenüber und drängt auf einen sofortigen Richtungswechsel.",
+        "en-zh": "该报告对行政当局目前对伊拉克政策的几乎每一个方面都提出了严厉批评，并敦促立即改变方向。",
+        "en-ar": "ينتقد التقرير بشدة كل جوانب السياسة الحالية تقريباً للسلطة التنفيذية تجاه العراق، كما يحثّ على تغيير فوري في الاتجاه.",
+        "en-ja": "本報告書は、イラクに対する行政府の現在の政策のほぼすべての側面を強く批判し、即時の方向転換を促すものです。",
+        "en-fr": "Le rapport est très critique envers presque tous les aspects de la politique actuelle du gouvernement à l'égard de l'Irak et plaide vivement pour un changement de direction immédiat.",
+        "en-th": "รายงานฉบับนี้มีความสำคัญอย่างยิ่งต่อนโยบายปัจจุบันที่ผู้บริหารมีต่ออิรักในเกือบทุกแง่มุม อีกทั้งยังกระตุ้นให้เกิดการเปลี่ยนแปลงทิศทางได้ในทันที ",
+        "en-ms": "Laporan itu sangat kritikal terhadap hampir semua aspek polisi Eksekutif sedia ada terhadap Iraq dan ia mendesak perubahan hala tuju dengan serta-merta."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "First among its 78 recommendations is that a new diplomatic initiative should be taken before the end of this year to secure Iraq’s borders against hostile interventions and to re-establish diplomatic relations with its neighbors.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Contiene 78 recomendaciones, de las cuales la número uno es la adopción de una nueva iniciativa antes del final del año con el propósito de proteger las fronteras de Irak de operaciones hostiles y para restaurar los vínculos diplomáticos con sus vecinos.",
+        "en-de": "Die erste der 78 Empfehlungen ist, dass eine neue diplomatische Initiative vor Ende dieses Jahres ergriffen werden sollte, um die irakischen Grenzen gegenüber feindlichen Interventionen zu sichern und diplomatische Beziehungen mit seinen Nachbarn wiederherzustellen.",
+        "en-zh": "在这份报告的 78 项建议中，第一条建议是在今年年底之前采取新的外交行动，目的在于保护伊拉克的边界免受敌对势力的侵害，并与邻国重建外交关系。",
+        "en-ar": "أول ما تم ذكره بين ال78 توصية الخاصة بها هو أنه يجب اتخاذ مبادرة دبلوماسية قبل نهاية هذا العام لتأمين حدود العراق ضد التدخلات العدوانية ولإعادة تأسيس العلاقات الدبلوماسية مع جيرانها.",
+        "en-ja": "78ある提言うち最初に挙げられているのは、敵対的な介入に対してイラクの国境を確保し、近隣諸国との外交関係を再び確立するために、年内に新たな外交主導権を発揮するべきだというものです。",
+        "en-fr": "La première de ses 78 recommandations est qu'une nouvelle initiative diplomatique devrait être prise avant la fin de l'année pour sécuriser les frontières de l'Irak contre les interventions hostiles et afin de rétablir les relations diplomatiques avec ses voisins.",
+        "en-th": "ประการแรกในข้อเสนอแนะทั้ง 78 ข้อคือควรดำเนินการริเริ่มทางการทูตใหม่ก่อนสิ้นปีนี้ เพื่อรักษาพรมแดนของอิรักไม่ให้เกิดการแทรกแซงที่ไม่เป็นมิตร และเพื่อสร้างความสัมพันธ์อันดีทางการทูตกับเพื่อนบ้านอีกครั้ง",
+        "en-ms": "Pertama antara 78 cadangannya adalah inisiatif diplomatik baharu yang perlu diambil sebelum akhir tahun ini untuk mendapatkan sempadan Iraq terhadap campur tangan musuh dan untuk mewujudkan semula hubungan diplomatik dengan negara jiran."
+      }
+    }
+  ]
+}

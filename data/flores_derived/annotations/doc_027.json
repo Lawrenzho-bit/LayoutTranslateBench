@@ -1,0 +1,173 @@
+{
+  "doc_id": "doc_027",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/Scientists_find_dinosaur_feathers_preserved_in_amber",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'sciece'."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "This not only confirms that at least some dinosaurs had feathers, a theory already widespread, but provides details fossils generally cannot, such as color and three-dimensional arrangement.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "Además de confirmar que al menos algunos dinosaurios eran plumíferos, una teoría ya generalizada, también ofrece datos específicos que los fósiles por lo general no ofrecen, como su color y su estructura tridimensional.",
+        "en-de": "Dies bestätigt nicht nur, dass zumindest einige Dinosaurier Federn hatten, eine Theorie, die bereits weit verbreitet ist, sondern liefert auch Details, die Fossilien im Allgemeinen nicht liefern können, wie etwa Farbe und dreidimensionale Anordnung.",
+        "en-zh": "这不仅证实了至少有些恐龙有羽毛——这一理论已经广为流传——而且还提供了化石通常无法提供的细节，比如颜色和三维排列。",
+        "en-ar": "لا يؤكد الأمر فحسب أن بعض من الديناصورات على أقل تقدير كانت ذات ريش، وهي نظرية شائعة بالفعل، ولكنه يقدم أيضاً تفاصيل تعجز الأحفوريات عن تقديمها في العموم، كاللون والترتيب ثلاثيّ الأبعاد.",
+        "en-ja": "これは、少なくとも一部の恐竜が羽を持っていたことを確認するだけでなく、色や立体配置など、一般的には化石にはない詳細な点を伝えています。",
+        "en-fr": "Cela confirme non seulement qu'au moins certains dinosaures avaient des plumes, une théorie déjà très répandue, mais fournit des détails que les fossiles ne peuvent généralement pas fournir, comme la couleur et la disposition tridimensionnelle.",
+        "en-th": "สิ่งนี้ไม่เพียงแต่ยืนยันทฤษฎีที่แพร่หลายไปแล้วว่าไดโนเสาร์บางตัวก็มีขน แต่ยังให้รายละเอียดเพิ่มเติมที่ฟอสซิลทั่วไปไม่สามารถให้ได้อีกด้วย เช่น สีและการจัดเรียงแบบสามมิติ",
+        "en-ms": "Hal ini bukan sahaja mengesahkan bahawa dinosaur tertentu mempunyai bulu, satu teori yang sudah tersebar luas, tetapi menyediakan butir-butir khusus yang secara amnya tidak dapat diberi oleh fosil, misalnya warna dan penyusunan tiga dimensi."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": ". Scientists say this animal's plumage was chestnut-brown on top with a pale or carotenoid-colored underside.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Según los especialistas, este animal tiene un plumaje de color castaño en la zona superior y una tonalidad pálida o carotenoide en la parte de abajo.",
+        "en-de": "Wissenschaftler sagen, dass das Gefieder dieses Tieres auf der Oberseite kastanienbraun und auf der Unterseite hell- oder carotinoidfarben war.",
+        "en-zh": "科学家表示，这种动物的羽毛顶部为栗棕色，底部为浅色或胡萝卜色。",
+        "en-ar": "يقول العلماء أن ريش هذا الحيوان كان بنياً كستنائياً من الأعلى وجانبه السفلي شاحباً أو بلون الكاروتينات.",
+        "en-ja": ".科学者によると、この動物の羽毛は外側が栗色で内側が暖色系の色でした。",
+        "en-fr": "Les scientifiques disent que le plumage de cet animal était brun châtain sur le dessus et de couleur pâle ou caroténoïde sur le dessous.",
+        "en-th": "นักวิทยาศาสตร์กล่าวว่าขนของสัตว์ชนิดนี้มีสีน้ำตาลเหมือนผลเกาลัดที่ด้านบน และมีสีที่ซีดหรือสีเหมือนสารแคโรทีนที่ด้านล่าง",
+        "en-ms": ". Para saintis mengatakan bahawa bulu haiwan ini berwarna coklat perang di bahagian atas dengan bahagian bawah adalah pucat atau berwarna karotenoid."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "The find also grants insight into the evolution of feathers in birds.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Asimismo, el hallazgo permite comprender mejor la evolución de las plumas de las aves.",
+        "en-de": "Der Fund gewährt auch Einblicke in die Evolution von Federn bei Vögeln.",
+        "en-zh": "这一发现也有助于深入了解鸟类羽毛的进化。",
+        "en-ar": "يمنح الاكتشاف أيضاً نظرة على تطور الريش في الطيور.",
+        "en-ja": "この発見はまた、鳥類の羽毛の進化について探るための手がかりとなるものでした。",
+        "en-fr": "Cette découverte permet également de mieux comprendre l'évolution des plumes chez les oiseaux.",
+        "en-th": "การค้นพบเกี่ยวกับเรื่องดังกล่าวยังช่วยให้เห็นวิวัฒนาการของขนนกในเชิงลึกอีกด้วย",
+        "en-ms": "Kajian juga memberi wawasan tentang evolusi bulu pelepah pada burung."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "Because the dinosaur feathers do not have a well-developed shaft, called a rachis, but do have other features of feathers — barbs and barbules — the researchers inferred the rachis was likely a later evolutionary development that these other features.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Dado que el plumaje de los dinosaurios no tiene un eje bien desarrollado, denominado raquis, pero sí presenta otros rasgos de las plumas (cerdas y bárbulas), los investigadores llegaron a la conclusión de que es probable que el raquis sea el resultado de un desarrollo evolutivo posterior de estas otras características.",
+        "en-de": "Weil die Dinosaurierfedern keinen gut entwickelten Schaft besitzen, der Rachis genannt wird, aber andere Merkmale von Federn besitzen – Widerhaken und Barbules – schlossen die Forscher daraus, dass die Rachis vermutlich eine spätere evolutionäre Entwicklung war als diese anderen Merkmale.",
+        "en-zh": "恐龙的羽毛并没有发育良好的主干——这称为“羽轴”，但还是有羽毛的其他特征，比如羽枝和羽小枝，研究人员推断羽轴的进化可能比这些其他特征晚。",
+        "en-ar": "نظراً لأن ريش الديناصورات لا يحتوي محوراً متطوراً بالكامل، والذي يطلق عليه اسم \"محور النورة\"، ولكن لديهم خصائص أخرى للريش - كالقصيبات والقصيبات الصغرى - استنتج الباحثون أن محور النورة كان على الأرجح نشأة تطورية لاحقة لهذه الخصائص الأخرى.",
+        "en-ja": "恐竜の羽毛には羽軸と呼ばれる十分に発達した軸がないものの、他の羽毛の特徴である綿羽や小羽枝があることから、研究者らは羽軸はこうした他の特徴よりも後に起きた進化であった可能性が高いと推測しています。",
+        "en-fr": "Étant donné que les plumes de dinosaure n'ont pas une tige entièrement développée, que l'on appelle rachis, mais montrent cependant d'autres caractéristiques propres aux plumes – barbes et barbules – les chercheurs en ont déduit que le rachis était probablement un développement évolutif ultérieur à ces autres caractéristiques.",
+        "en-th": "เนื่องจากขนของไดโนเสาร์ไม่มีก้านที่พัฒนามาอย่างดีที่เรียกว่า rachis แต่มีคุณสมบัติอื่น ๆ ของขนนก เช่น ขนอุยและ เส้นขนย่อย นักวิจัยจึงสรุปว่า rachis น่าจะเป็นการวิวัฒนาการที่เกิดขึ้นภายหลังคุณสมบัติอื่น ๆ เหล่านี้",
+        "en-ms": "Oleh sebab bulu dinosaur tidak mempunyai batang yang tumbuh dengan baik, yang dipanggil rakis, tetapi mempunyai ciri-ciri bulu lain - duri dan barbul - penyelidik menyimpulkan bahawa rakis berkemungkinan satu perkembangan evolusi ciri-ciri lain ini yang datang kemudian."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "The feathers' structure suggests that they were not used in flight but rather for temperature regulation or display. The researchers suggested that, even though this is the tail of a young dinosaur, the sample shows adult plumage and not a chick's down.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "La estructura que presenta el plumaje sugiere que su función no estaba relacionada con el vuelo, sino que las usaban para regular la temperatura o como indicador de la misma. Los investigadores sostienen que, aunque se trata de la cola de un dinosaurio joven, la muestra analizada presenta rasgos del plumaje de un adulto y no de un polluelo.",
+        "en-de": "Die Struktur der Federn lässt vermuten, dass sie nicht zum Fliegen,, sondern eher zur Temperaturregulierung oder zum Herzeigen verwendet wurden. Die Forscher vermuteten, dass die Probe, obwohl es sich um den Schwanz eines jungen Dinosauriers handelt, das Gefieder eines Ausgewachsenen zeigt und nicht die Daunen eines Kükens.",
+        "en-zh": "羽毛的结构表明它们不是用来飞行的，而是用来调节温度或炫耀的。研究人员认为，尽管这是一只年轻恐龙的尾巴，但样本显示的是成熟的羽衣，而不是幼崽的羽毛。",
+        "en-ar": "تشير بنية الأجنحة إلى أنه لم يتم استخدامهم في الطيران بل لتنظيم درجة الحرارة أو للاستعراض. يقترح الباحثون أنه على الرغم من أن هذا الذيل يخص ديناصوراً صغيراً إلا أن العينة تظهر ريشاً بالغاً وليس مؤخرة كتكوت.",
+        "en-ja": "羽毛の構造から、飛行の目的ではなく、体温調節や視覚的効果に使用されていたと推測されます。研究者らは、これが若い恐竜の尾であるにもかかわらず、標本は大人の羽毛を示しており、ヒヨコの羽毛ではないことを示唆しました。",
+        "en-fr": "La structure des plumes suggère qu’elles n’étaient pas utilisées en vol mais plutôt pour la régulation ou l’affichage de la température. Les chercheurs ont suggéré que, même s’il s’agit de la queue d’un jeune dinosaure, l’échantillon montre un plumage d’adulte et non le duvet d’un poussin.",
+        "en-th": "โครงสร้างของขนแสดงให้เห็นว่าขนเหล่านี้ไม่ได้มีไว้สำหรับบิน แต่มีไว้เพื่อควบคุมอุณหภูมิหรือแค่ความสวยงามเสียมากกว่า นักวิจัยชี้ว่าแม้ว่านี่จะเป็นหางของไดโนเสาร์อายุน้อย แต่ตัวอย่างก็แสดงให้เห็นว่าเป็นขนนกที่โตเต็มวัยไม่ใช่ขนลูกเจี๊ยบ",
+        "en-ms": "Struktur bulu mencadangkan bahawa ia tidak digunakan untuk tujuan terbang tetapi lebih kepada pengawalan suhu atau untuk dipamerkan. Para penyelidik mencadangkan, walaupun ekor itu ekor dinosaur berusia muda, sample menunjukkan bulu adalah milik dewasa dan bukan yang muda."
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        50,
+        710,
+        700,
+        120
+      ],
+      "text": "The researchers suggested that, even though this is the tail of a young dinosaur, the sample shows adult plumage and not a chick's down.",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Las apreciaciones de los expertos fueron que, aun cuando se trata de la cola de un dinosaurio de corta edad, la muestra ilustra más el plumaje de un adulto que el de un polluelo. ",
+        "en-de": "Die Forscher behaupteten, dass, obwohl dies der Schwanz eines jungen Dinosauriers ist, die Probe das Gefieder eines Erwachsenen und keine Kükendaunen zeigt.",
+        "en-zh": "研究人员认为，尽管这是一只年轻恐龙的尾巴，但样本显示的是成年羽毛，而非雏龙的绒毛。",
+        "en-ar": "أشار الباحثون إلى أنه على الرغم من أن هذا ذيل ديناصور صغير، إلا أن العينة تُظهر ريش طائر بالغ وليس ريش كتكوت.",
+        "en-ja": "研究者らは、この標本が若い恐竜の尻尾であるにもかかわらず、ひなの羽毛ではなく大人の羽毛が生えていることを示唆している。",
+        "en-fr": "Les scientifiques précisent qu'il s'agit certes de la queue d'un dinosaure juvénile, mais l'échantillon révèle un plumage appartenant à un individu adulte, et non à un jeune.",
+        "en-th": "นักวิจัยกล่าวชี้ให้เห็นว่า แม้จะเป็นหางของไดโนเสาร์อายุไม่มาก แต่ตัวอย่างก็แสดงให้เห็นว่านี่เป็นขนของนกที่โตเต็มวัยแล้วไม่ใช่ขนของลูกเจี๊ยบ",
+        "en-ms": "Para penyelidik mencadangkan, walaupun itu ekor dinosaur yang muda, sampel berkenaan menunjukkan bulu dewasa dan bukan bulu halus anak ayam."
+      }
+    }
+  ]
+}

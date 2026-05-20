@@ -1,6 +1,6 @@
 {
   "benchmark": "LayoutTranslateBench",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "entries": [
     {
       "doc_id": "doc_001",
@@ -301,6 +301,126 @@
       ],
       "license": "Apache-2.0",
       "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_026",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_026.png",
+      "annotation_file": "flores_derived/annotations/doc_026.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_027",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_027.png",
+      "annotation_file": "flores_derived/annotations/doc_027.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_028",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_028.png",
+      "annotation_file": "flores_derived/annotations/doc_028.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_029",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_029.png",
+      "annotation_file": "flores_derived/annotations/doc_029.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_030",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_030.png",
+      "annotation_file": "flores_derived/annotations/doc_030.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_031",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_031.png",
+      "annotation_file": "flores_derived/annotations/doc_031.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_032",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_032.png",
+      "annotation_file": "flores_derived/annotations/doc_032.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_033",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_033.png",
+      "annotation_file": "flores_derived/annotations/doc_033.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_034",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_034.png",
+      "annotation_file": "flores_derived/annotations/doc_034.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_035",
+      "category": "magazine-news",
+      "source_file": "flores_derived/sources/doc_035.png",
+      "annotation_file": "flores_derived/annotations/doc_035.json",
+      "page_size": [
+        800,
+        1100
+      ],
+      "license": "CC-BY-SA-4.0",
+      "source_url": "https://github.com/facebookresearch/flores"
     }
   ]
 }

@@ -1,0 +1,147 @@
+{
+  "doc_id": "doc_034",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/Noted_stamp_engraver_Czeslaw_Slania_dies_at_83",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Culture'."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "In 1956 Słania moved to Sweden, where three years later he began work for the Swedish Post Office and became their chief engraver.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "En 1956, Słania se trasladó a Suecia, donde, después de tres años, consiguió un empleo en la oficina postal sueca y allí se convirtió en Chief engraver.",
+        "en-de": "1956 ging Słania nach Schweden, wo er drei Jahre später anfing, im Büro der Schwedischen Post zu arbeiten und er wurde dort der leitende Graveur.",
+        "en-zh": "1956 年，斯拉尼亚（Słania）搬到了瑞典。三年后他开始在瑞典邮局上班，成为首席邮票雕刻师。",
+        "en-ar": "في سنة 1956 انتقل سلانيا إلى السويد حيث بدأ العمل مع مكتب البريد السويدي بعد ثلاث سنوات، ثم أصبح المسؤول عن تصميم ونقش القطع النقدية.",
+        "en-ja": "1956年にスウェーデンに移住したスワニアは、3年後にスウェーデン郵便局で働き始め、その主任彫版工となりました。",
+        "en-fr": "En 1956, Słania s'est installé en Suède, où trois ans plus tard, il a commencé à travailler pour la poste suédoise pour en devenir le graveur en chef.",
+        "en-th": "ในปี พ.ศ. 2499 Słania ย้ายไปอยู่ที่สวีเดน โดยเริ่มทำงานให้กับที่ทำการไปรษณีย์สวีเดนใน 3 ปีต่อมา จนได้กลายเป็นหัวหน้าช่างแกะสลัก",
+        "en-ms": "Pada tahun 1956 Słania telah berpindah ke Sweden, lalu tiga tahun kemudiannya dia mula bekerja dengan Pejabat Pos Sweden dan menjadi ketua pengukir."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": "He produced over 1,000 stamps for Sweden and 28 other countries.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "La cantidad de sellos que confeccionó, tanto para Suecia como para otras 28 naciones, supera las mil unidades.",
+        "en-de": "Er stellte über 1.000 Briefmarken für Schweden und 28 weitere Länder her.",
+        "en-zh": "他曾为瑞典和其他 28 个国家/地区制作过 1000 多版邮票。",
+        "en-ar": "أصدر أكثر من 1,000 طابع للسويد و28 دولة أخرى.",
+        "en-ja": "スウェーデンをはじめとする28カ国の切手を1,000枚以上制作した。",
+        "en-fr": "Il a produit plus de 1000 timbres pour la Suède et 28 autres pays.",
+        "en-th": "เขาผลิตแสตมป์มากกว่า 1,000 ดวงให้กับสวีเดนและประเทศอื่น ๆ อีก 28 ประเทศ",
+        "en-ms": "Beliau menghasilkan lebih 1,000 stem untuk Sweden dan 28 negara lain."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "His work is of such recognized quality and detail that he is one of the very few \"household names\" among philatelists. Some specialize in collecting his work alone.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "La calidad y el nivel de detalle de su labor son tan reconocidos que se ha vuelto uno de los pocos «nombres familiares» entre los filatelistas. Hay personas que se especializan en recopilar su obra.",
+        "en-de": "Die Qualität und Präzision seiner Arbeit werden so hoch geschätzt, dass sein Name zu den sehr wenigen allgemein bekannten Namen im Bereich der Philatelie zählt. Manche Sammler sind ausschließlich auf seine Arbeit spezialisiert.",
+        "en-zh": "他的作品极具辨识度，拥有高质量和丰富的细节，这也使得他成为了极少数在集邮人士中“家喻户晓”的人物之一。有些人专门收集他的作品。",
+        "en-ar": "تتميز أعماله بجودة وتفاصيل مميزة لدرجة جعلته أحد \"الأسماء المعروفة\" القليلة للغاية بين هواة جمع الطوابع. تخصص البعض في جمع أعماله فقط.",
+        "en-ja": "彼の作品は、その質の高さと詳細さが評価され、切手収集家の中では数少ない「有名人」の1人です。彼の作品だけを専門とする収集家もいるほどです。",
+        "en-fr": "Son travail est d'une telle qualité et d'un tel niveau de détail qu'il est l'un des rares philatélistes bien connus du « grand public ». Certains collectionneurs consacrent leur attention uniquement à ses œuvres.",
+        "en-th": "ผลงานของเขามีคุณภาพและรายละเอียดซึ่งเป็นที่ยอมรับจนทำให้เขาเป็นหนึ่งใน \"ผู้มีชื่อเสียง\" เพียงไม่กี่คนในหมู่นักสะสมสแตมป์ บางคนมีความเชี่ยวชาญในการเก็บสะสมเพียงผลงานของเขาเท่านั้น ",
+        "en-ms": "Hasil karya beliau mempunyai kualiti dan perincian yang sangat dikenali sehingga beliau merupakan seorang yang termasyhur antara ahli filatel. Ada beberapa yang menjadi pakar dalam mengumpulkan hasil karyanya sahaja."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "His 1,000th stamp was the magnificent \"Great Deeds by Swedish Kings\" by David Klöcker Ehrenstrahl in 2000, which is listed in the Guinness Book of World Records.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Incluido en el libro Guinness de los récords mundiales, su milésimo sello fue el formidable «Hazañas memorables de los reyes suecos» (David Klöcker Ehrenstrahl, año 2000).",
+        "en-de": "Seine tausendste Briefmarke, aus dem Jahr 2000,  zeigt das prächtige Gemälde „Rühmliche Heldentaten schwedischer Könige“ von David Klöcker Ehrenstrahl und ist im Guinness-Buch der Rekorde verzeichnet.",
+        "en-zh": "“他在 2000 年制作的第 1000 张邮票取材自大卫·克洛克·埃伦斯特拉尔的名画《瑞典国王的伟大功绩》，并因此入选《吉尼斯世界纪录大全》。”",
+        "en-ar": "كان طابعه رقم 1000 \"الأعمال العظيمة التي قام بها الملوك السويديون\" من قبل ديفيد كلوكر إهرنشترال في سنة 2000، والتي تم إدراجها في موسوعة غينيس للأرقام القياسية العالمية.",
+        "en-ja": "彼の1,000枚目の切手は、デビッド・クレッカー・エーレンストラールが2000年に発行した素晴らしい「スウェーデン国王たちの偉業」でギネスブックにも掲載されています。",
+        "en-fr": "Son millième timbre a été le magnifique « Great Deeds by Swedish Kings » de David Klöcker Ehrenstrahl en 2000, qui figure dans le Livre Guinness des records.",
+        "en-th": "แสตมป์ดวงที่ 1,000 ของเขาเป็นภาพอันสง่างามของ \"การกระทำอันยิ่งใหญ่โดยกษัตริย์สวีเดน\" ฝีมือ ดาวิด คล็อกเคอร์ เอห์เรนสตราห์ลในปี 2000 ซึ่งได้รับการบันทึกไว้ในกินเนสส์บุ๊กออฟเวิลด์เรกคอร์ด ",
+        "en-ms": "Setem ke-1,000nya adalah setem “Great Deeds by Swedish Kings” yang mengagumkan oleh David Klöcker Ehrenstrahl pada tahun 2000, yang disenaraikan dalam Guinness Book of World Records."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "He was also engaged in engraving banknotes for many countries, recent examples of his work including the Prime Ministerial portraits on the front of the new Canadian $5 and $100 bills.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Además, tuvo participación en al grabado de billetes para muchos estados, siendo los ejemplos más recientes de su labor los retratos del primer ministro visibles en el anverso de los nuevos billetes de 5 y 100 dólares canadienses.",
+        "en-de": "Er war auch am Stechen von Geldscheinen für viele Länder beteiligt. Aktuelle Beispiele seiner Arbeit schließen die Premierministerportraits auf der Vorderseite der kanadischen 5- und 100-Dollarnoten ein.",
+        "en-zh": "他还参与了许多国家的纸币雕版制作，近期作品包括加拿大新版 5 元和 100 元纸币正面的总理肖像。",
+        "en-ar": "كان يعمل أيضاً في نقش الأوراق النقدية للعديد من البلدان، ومن الأمثلة الحديثة على عمله صور رئيس الوزراء على واجهة الأوراق النقدية الجديدة من فئة 5 دولارات و 100 دولار.",
+        "en-ja": "彼は多くの国で紙幣の製作にも携わっており、最近では、カナダの新5ドル紙幣と新100ドル紙幣の表に描かれた首相の肖像画などがその一例です。",
+        "en-fr": "Il a également gravé des billets de banque pour de nombreux pays. Parmi les exemples récents de son travail, on peut citer les portraits du Premier ministre au recto des nouveaux billets canadiens de 5 et 100 dollars.",
+        "en-th": "เขายังมีส่วนร่วมในการแกะสลักธนบัตรให้กับหลายประเทศอีกด้วย ตัวอย่างผลงานล่าสุดของเขาได้แก่ ภาพนายกรัฐมนตรีที่ด้านหน้าของธนบัตรใหม่ชนิดราคา 5 และ 100 ดอลลาร์แคนาดา",
+        "en-ms": "Beliau juga diupah untuk mengukir wang kertas untuk berbagai negara, contoh terbaru hasil kerjanya termasuk potret Perdana Menteri pada bahagian depan wang kertas Kanada $5 dan $100."
+      }
+    }
+  ]
+}

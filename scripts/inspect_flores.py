@@ -38,8 +38,17 @@ def main() -> int:
     samples = {}
     for lang_short, flores_code in LTB_TO_FLORES.items():
         try:
-            # FLORES-200 schema: load by lang code, single 'sentence' column
-            ds = load_dataset("facebook/flores", flores_code, split="devtest")
+            # FLORES-200 schema: load by lang code, single 'sentence' column.
+            # facebook/flores has a legacy script loader; try trust_remote_code first,
+            # fall back to the openlanguagedata/flores_plus mirror (script-free).
+            try:
+                ds = load_dataset(
+                    "facebook/flores", flores_code, split="devtest", trust_remote_code=True
+                )
+            except Exception:
+                ds = load_dataset(
+                    "openlanguagedata/flores_plus", flores_code, split="devtest"
+                )
         except Exception as exc:
             print(f"  FAIL {lang_short} ({flores_code}): {exc}")
             continue
