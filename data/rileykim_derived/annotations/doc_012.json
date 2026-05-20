@@ -1,0 +1,225 @@
+{
+  "doc_id": "doc_012",
+  "page_size": [
+    1600,
+    2032
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_00002",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        254,
+        436,
+        1030,
+        42
+      ],
+      "text": "PinnacleTM Acetabular Cup System - Milestones and Accomplishments.",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ピナクルTM寛骨臼カップシステム - マイルストーンと業績。"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        247,
+        509,
+        127,
+        32
+      ],
+      "text": "Milestone",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "マイルストーン"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        1110,
+        509,
+        65,
+        32
+      ],
+      "text": "Date",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "日付"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        285,
+        558,
+        448,
+        31
+      ],
+      "text": "Internal Project Core Team chartered.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "内部プロジェクトコアチームが設立されました。"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        1110,
+        556,
+        126,
+        178
+      ],
+      "text": "July 1999 Sept. 1999 May 2000 July 2000",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "1999年7月 1999年9月 2000年5月 2000年7月"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        248,
+        606,
+        1039,
+        617
+      ],
+      "text": "Sept. 1999 . Initial surgeon design meeting. May 2000 Received FDA clearance for metal shell and poly liner. July 2000 First clinical evaluation surgery of Pinnacle cup. . Introductory launch meetings held with sales organization Sept/Nov 2000 . Nov. 2000 First launch phase to expanded surgeon base. Received FDA clearance for 28mm & 36mm metal inserts. Nov/Dec 2000 . Achieved first million dollars of sales for Pinnacle system. Jan. 2001 . Received confirmation of successful test results for ceramic inserts. Feb. 2001 March 2001 First metal-on-metal (28mm) case performed using Pinnacle. . March 2001 Achieved first million dollar sales month. First implantation of 36mm metal insert. April 2001 Achieved first $2M sales month. June 2001 . 36mm Marathon liners introduced on scheduled. July 2001",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "初回の外科医デザイン会議。金属シェルとポリライナーのFDA承認を取得。ピナクルカップの初の臨床評価手術。販売組織との導入会議を2000年9月/11月に開催。拡大された外科医基盤への初の発売フェーズ。2000年11月。28mmおよび36mmの金属インサートのFDA承認を取得。2000年11月/12月。ピナクルシステムの初の100万ドルの売上を達成。2001年1月。セラミックインサートの成功した試験結果の確認を受け取る。2001年2月。ピナクルを使用した初の金属対金属（28mm）ケースを実施。2001年3月。初の100万ドルの売上月を達成。2001年3月。36mm金属インサートの初の移植。2001年4月。初の200万ドルの売上月を達成。2001年6月。36mmマラソンライナーを予定通り導入。2001年7月。"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        271,
+        1239,
+        465,
+        35
+      ],
+      "text": "Introduction of Pinnacle lipped liners.",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ピナクルリップライナーの紹介。"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        1118,
+        1242,
+        111,
+        26
+      ],
+      "text": "Nov 2001",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "2001年11月"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        250,
+        1330,
+        302,
+        34
+      ],
+      "text": "Operations achievements:",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "業務の成果:"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        295,
+        1384,
+        964,
+        246
+      ],
+      "text": "Successfully appropriated, purchased, installed, and performed verification on 12 . pieces of new CNC machinery. Developed extensive tracking system to meet and exceed planned launches. . Created manufacturing cell to produce shells and liners with positive impact on productivity. Reduction in scrap rate over last six months from ~1 1% to currently ~ 3.5%.",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "新しいCNC機械の部品。計画された立ち上げを達成し、超えるための広範な追跡システムを開発。生産性に良い影響を与えるシェルとライナーを製造するための製造セルを作成。過去6か月間のスクラップ率を約11%から現在約3.5%に削減。"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        572,
+        299,
+        401,
+        39
+      ],
+      "text": "Special Recognition Award",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "特別表彰賞"
+      }
+    }
+  ]
+}

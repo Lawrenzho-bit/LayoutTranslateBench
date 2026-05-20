@@ -118,7 +118,7 @@ Weights are intentionally biased toward text quality (50%) — translation corre
 
 Each LTB-100 score is reported with a **95% bootstrap percentile confidence interval** — 1000 resamples with replacement from the per-document scores, fixed seed (42) for reproducibility.
 
-The leaderboard displays scores as `point [CI low, CI high]`. On the v0.1 sample size (N=5 documents per language pair), these CIs are *wide* — that is the methodologically honest signal that **a 5-point gap between two systems is below the noise floor on this sample**. v0.2 will scale to N≥25 per pair, which should tighten CIs by roughly 2×.
+The leaderboard displays scores as `point [CI low, CI high]`. As of v0.1.4 the sample is N=10 author-curated docs per pair plus the rileykim expansion (N=17 for en-zh, N=18 for en-ja). CIs are still *wide* on the 6 pairs at N=10 — that is the methodologically honest signal that **a 5-point gap between two systems is below the noise floor at this sample size**. v0.2 will scale all pairs to N≥25, which should tighten CIs by roughly 2×.
 
 ### Weight choice (v0.1.1 empirical ablation)
 
@@ -141,9 +141,9 @@ A separate `deepl-documents` runner (operating on PDFs end-to-end) is on the v0.
 This methodology has known limitations beyond what v0.1.1 fixes. See [`methodology-roadmap.md`](methodology-roadmap.md) for the full critique-to-status table, but in brief:
 
 - chrF as the text metric has known weaknesses (paraphrase-blindness, adequacy-blindness). v0.2 will adopt COMET-Kiwi-22.
-- References are author-curated, single-translation. v0.2 will commission certified translators with multi-reference scoring.
+- References are author-curated single-translation for docs 001–010 and ml-curated (from rileykim/multilingual-document) for docs 011–025. v0.2 will commission certified translators with multi-reference scoring.
 - No human evaluation correlation has been computed. v0.2 will add ~50 DA judgments to validate the automatic metric.
-- Sample size remains N=5 per pair. v0.2 will scale to N≥25 minimum.
+- Sample size is N=10 author-curated per pair, supplemented by 15 rileykim-derived docs on en-ja (+8) and en-zh (+7). The other 6 pairs remain at N=10 and are the binding constraint on CI width. v0.2 will scale all pairs to N≥25 minimum.
 
 ### End-to-end vs oracle-layout systems (v0.1.1)
 

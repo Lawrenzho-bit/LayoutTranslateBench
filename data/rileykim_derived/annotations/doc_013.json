@@ -1,0 +1,339 @@
+{
+  "doc_id": "doc_013",
+  "page_size": [
+    1600,
+    2057
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_00003",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        154,
+        263,
+        1137,
+        142
+      ],
+      "text": "To attend meeting of Committee on Medical Education, Purpose: Council on Foods and Nutrition, A.M.A. New Orleans, La. January 19, 1961",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "目的:1961年1月19日にルイジアナ州ニューオーリンズで開催されるA.M.A.の医療教育委員会、食品と栄養評議会の会議に出席するため。"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        162,
+        472,
+        843,
+        36
+      ],
+      "text": "Air Travel - St. Louis to New Orleans & return",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "航空旅行 - セントルイスからニューオーリンズへの往復"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        1218,
+        471,
+        111,
+        33
+      ],
+      "text": "$88.50",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "$88.50"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        161,
+        542,
+        91,
+        29
+      ],
+      "text": "Hotel",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ホテル"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        1257,
+        540,
+        70,
+        32
+      ],
+      "text": "8.44",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "8.44"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        154,
+        612,
+        97,
+        29
+      ],
+      "text": "Meals",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "食事"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        1236,
+        610,
+        94,
+        31
+      ],
+      "text": "11.50",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "11.50"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        157,
+        682,
+        73,
+        27
+      ],
+      "text": "Taxi",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "タクシー"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        1235,
+        680,
+        96,
+        31
+      ],
+      "text": "16.30",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "16時30分"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        108,
+        752,
+        183,
+        30
+      ],
+      "text": "Gratuities",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "チップ"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        1247,
+        750,
+        101,
+        35
+      ],
+      "text": "6.20",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "6.20"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        887,
+        819,
+        443,
+        35
+      ],
+      "text": "Total $130.94",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "合計$130.94"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        849,
+        993,
+        608,
+        173
+      ],
+      "text": "Robert E. Shank, M.D. Department of Preventive Medicine Washington University School of Medicine Euclid Ave. & Kingshighway St. Louis 10, Missouri",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "予防医学部 ワシントン大学医学部 ユークリッド通り & キングスハイウェイ セントルイス 10, ミズーリ州"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        162,
+        1235,
+        816,
+        173
+      ],
+      "text": "* Taxi Fares - Home (Kirkwood, Mo. to St. Louis Airport) New Orleans - Airport to the Royal Orleans New Orleans - Hotel to Airport St. Louis Airport to Home",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "* タクシー料金 - 自宅（カークウッド、ミズーリ州からセントルイス空港）ニューオーリンズ - 空港からロイヤルオーリンズ ニューオーリンズ - ホテルから空港 セントルイス空港から自宅"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        1180,
+        1270,
+        111,
+        171
+      ],
+      "text": "4. 15 4.30 3.60 4.25 $16.30",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "4. 15 4.30 3.60 4.25 $16.30"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        373,
+        2022,
+        852,
+        31
+      ],
+      "text": "Source. nitips.7/www.industrydocuments.ucsi. edu/docs/TKg10227",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ソース。nitips.7/www.industrydocuments.ucsi.edu/docs/TKg10227"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        1315,
+        46,
+        192,
+        82
+      ],
+      "text": "1/ 23 / 61",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "1961年1月23日"
+      }
+    }
+  ]
+}

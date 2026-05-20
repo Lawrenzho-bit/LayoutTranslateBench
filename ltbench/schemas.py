@@ -26,6 +26,14 @@ Category = Literal[
     "certificate", "gov-form", "legal-contract", "scientific-paper",
     "slide", "receipt-invoice", "business-letter", "magazine-news",
     "bank-statement", "handwritten-mixed",
+    # v0.1.4: heterogeneous OCR-source documents (e.g. rileykim/multilingual-document).
+    # Used when the source dataset does not provide a fine-grained document-type label.
+    "ocr-document",
+]
+ReferenceGrade = Literal[
+    "author-curated",         # competent native-speaker non-professional (v0.1, v0.1.3)
+    "ml-curated",              # ML-system output reviewed/published as references (v0.1.4 rileykim)
+    "certified-translator",   # industry-grade certified translator (v0.2 target)
 ]
 
 
@@ -60,12 +68,28 @@ class Region(BaseModel):
         return v
 
 
+class Provenance(BaseModel):
+    """v0.1.4: optional provenance metadata for documents imported from external sources.
+
+    Author-curated docs (v0.1, v0.1.3) leave this field absent; rileykim-derived
+    and any future external-source docs populate it so downstream consumers can
+    filter by reference quality grade.
+    """
+
+    source: str  # e.g. "author-curated", "rileykim/multilingual-document"
+    source_image_id: str | None = None  # original id within the source dataset
+    license: str = "CC-BY-4.0"
+    grade: ReferenceGrade = "author-curated"
+    notes: str | None = None
+
+
 class Annotation(BaseModel):
     """Per-document ground-truth annotation."""
 
     doc_id: str
     page_size: tuple[float, float]  # (width, height) in pixels
     regions: list[Region]
+    provenance: Provenance | None = None  # v0.1.4
 
     @field_validator("regions")
     @classmethod

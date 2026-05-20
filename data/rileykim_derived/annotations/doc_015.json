@@ -1,0 +1,339 @@
+{
+  "doc_id": "doc_015",
+  "page_size": [
+    1600,
+    646
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_00023",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        59,
+        43,
+        103,
+        30
+      ],
+      "text": "UNIVERSITY REFERENCE",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "大学推薦状"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        247,
+        40,
+        534,
+        40
+      ],
+      "text": "VENDOR'S INVOICE / PURPOSE OF PAYMENT PURPOSE . DATE INVOICE NO. AMOUNT CODE",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ベンダーの請求書 / 支払い目的 日付 目的 . コード 請求書番号 金額"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        871,
+        45,
+        128,
+        34
+      ],
+      "text": "DISCOUNT OR ADJUSTMENT",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "割引または調整"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        1104,
+        50,
+        57,
+        19
+      ],
+      "text": "TOTAL",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "合計"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        1308,
+        51,
+        178,
+        19
+      ],
+      "text": "ACCOUNT NUMBER",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "口座番号"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        46,
+        120,
+        159,
+        31
+      ],
+      "text": "9,068,560",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "9,068,560"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        431,
+        126,
+        93,
+        24
+      ],
+      "text": "HONOR",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "名誉"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        707,
+        127,
+        109,
+        26
+      ],
+      "text": "350.00",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "350.00"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        1077,
+        129,
+        108,
+        27
+      ],
+      "text": "350.00",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "350.00"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        1256,
+        130,
+        322,
+        37
+      ],
+      "text": "8,020,156 5,442,502",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "8,020,156 5,442,502"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        192,
+        309,
+        355,
+        41
+      ],
+      "text": "PICK UP C RAJKOVICH",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ピックアップ C ライコビッチ"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        71,
+        432,
+        158,
+        64
+      ],
+      "text": "* S - SCHOLARSHIP - FELLOWSHIP ST - STIPEND SL - STUDENT LOAN",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "* S - 奨学金 - フェローシップ ST - 奨励金 SL - 学生ローン"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        334,
+        426,
+        246,
+        95
+      ],
+      "text": "TE - TRAVEL EXPENSE TA - TRAVEL ADVANCE 99 - FORM 1099 PAYMENTS HONORARIUM E PROFESSIONAL FEE CASUAL SERVICES",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "旅費 - 旅費前渡金 99 - フォーム1099支払い 謝礼金 プロフェッショナル料金 臨時サービス"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        754,
+        432,
+        272,
+        65
+      ],
+      "text": "TR - TUITION REFUNDS PR - PETTY CASH REIMBURSEMENT AD - ADVANCE PAYMENT TO VENDOR SA - SALARY ADVANCE",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "授業料返金 - 小口現金払い戻し - 仕入先への前払い - 給料前払い"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        1228,
+        431,
+        239,
+        48
+      ],
+      "text": "SR - SPECIAL RECORD REPLACEMENT CHECK SECURITY DEPOSIT REFUND",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "SR - 特別記録交換チェック保証金返金"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        115,
+        591,
+        190,
+        19
+      ],
+      "text": "FORM 12-003 50M 4-75",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "フォーム 12-003 50M 4-75"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        671,
+        589,
+        247,
+        22
+      ],
+      "text": "Wayne State University - ACCOUNTING OFFICE DETROIT, MICHIGAN 48202",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "デトロイト、ミシガン 48202"
+      }
+    }
+  ]
+}

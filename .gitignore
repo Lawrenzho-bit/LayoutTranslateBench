@@ -34,3 +34,5 @@ results/*.local.json
 
 # COMET venv (see docs/comet-setup.md)
 .comet-env/
+# HF dataset import venv (see scripts/import_rileykim.py)
+.hf-env/
