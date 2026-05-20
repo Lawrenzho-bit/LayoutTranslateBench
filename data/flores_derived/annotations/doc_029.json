@@ -1,0 +1,147 @@
+{
+  "doc_id": "doc_029",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/Dark_matter_lacks_extra_gravitational_force",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Research'."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "The work done was mostly theoretical, but the program was written to simulate observations made of the Sagittarius galaxy.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "Si bien se trató de un trabajo eminentemente teórico, el programa se redactó con la finalidad de simular las observaciones realizadas a la galaxia de Sagitario.",
+        "en-de": "Die Arbeit war größtenteils theoretischer Natur, doch das Programm wurde geschrieben, um Beobachtungen zu simulieren, die von der Sagittarius-Galaxie gemacht wurden.",
+        "en-zh": "完成的工作大多是理论性的，但编写程序的目的，是为了模拟对人马座星系的观测。",
+        "en-ar": "وتم الشغل المنجز نظرياً في معظمه، ولكن البرنامج كُتب لمحاكاة الملاحظات التي لٌوحظت عن مجرة القوس.",
+        "en-ja": "内容はほとんどが理論的なものでしたが、書かれたプログラムは射手座銀河で実施した観測を模擬するものでした。",
+        "en-fr": "Le travail effectué était principalement théorique, mais le programme a été écrit pour simuler les observations faites de la galaxie du Sagittaire.",
+        "en-th": "งานที่ทำเสร็จแล้วส่วนใหญ่เป็นไปตามทฤษฎี แต่โปรแกรมนี้เขียนขึ้นเพื่อจำลองการเฝ้าสังเกตกาแล็กซีซาจิททาเรียส",
+        "en-ms": "Kerja yang dilakukan kebanyakannya secara teori, namun program tersebut ditulis untuk mensimulasi pemerhatian yang dibuat ke atas galaksi Sagittarius."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": "The effect the team was looking for would be caused by tidal forces between the galaxy's dark matter and the Milky Way's dark matter.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Serían las fuerzas de marea entre la materia oscura presente en la galaxia y la de la Vía Láctea lo que provocaría el efecto esperado por el grupo de científicos.",
+        "en-de": "Der Effekt, nach dem das Team suchte, würde von Gezeitenkräften zwischen der dunklen Materie der Galaxie und der dunklen Materie der Milchstraße verursacht werden.",
+        "en-zh": "该团队正在寻找的效应可能是由星系暗物质和银河系暗物质之间的潮汐力引起的。",
+        "en-ar": "كان التأثير الذي بحث عنه الفريق قد تسببه قوىً مدّية جذريّة بين المادة المعتمة بالمجرّة والمادة المعتمة بمجرّة درب التبّانة.",
+        "en-ja": "このチームが求めていた効果は、銀河系の暗黒物質と天の川の暗黒物質の間で働く潮汐力による作用だったのでしょう。",
+        "en-fr": "L’effet que l’équipe recherchait serait causé par les forces de marée entre la matière noire de la galaxie et la matière noire de la Voie lactée.",
+        "en-th": "ผลกระทบที่ทีมต้องการน่าจะเกิดจากแรงไทดัลระหว่างสสารมืดของกาแล็กซีและสสารมืดของทางช้างเผือก",
+        "en-ms": "Kesan yang dicari pasukan adalah disebabkan oleh daya pasang surut di antara jirim gelap galaksi dan jirim gelap Milky Way."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "Just like the moon exerts a pull on the earth, causing tides, so does the Milky Way exert a force on the Sagittarius galaxy.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "La Vía Láctea influeye en la galaxia de Sagitario del mismo modo en que la luna ejerce una fuerza de atracción sobre nuestro planeta y causa las mareas.",
+        "en-de": "Genau wie der Mond die Erde anzieht und die Gezeiten verursacht, übt auch die Milchstraße Anziehungskräfte auf die Sagittarius-Galaxie aus.",
+        "en-zh": "就像月球对地球施加拉力，引起潮汐一样，银河系也对人马座星系施加着作用力。",
+        "en-ar": "تمامًا مثلما يجذب القمر الأرض فيتسبب في حدوث المد والجزر، تجذب مجرة درب التبانة مجرة الرامي.",
+        "en-ja": "月の引力で地球に潮の満ち引きが起きるように、天の川は射手座銀河にも力を及ぼしています。",
+        "en-fr": "Tout comme la lune exerce une traction sur la terre, provoquant des marées, la Voie lactée exerce une force sur la galaxie du Sagittaire.",
+        "en-th": "ทางช้างเผือกส่งพลังดึงกาแล็กซีซาจิทาเรียสเข้าหา เช่นเดียวกับที่ดวงจันทร์ออกแรงดึงโลกจนทำให้เกิดกระแสน้ำ",
+        "en-ms": "Sama seperti bulan yang mengenakan daya tarikan pada bumi lalu menyebabkan pasang surut air, begitu juga Bima Sakti yang mengenakan daya ke atas galaksi Sagittarius."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "The scientists were able to conclude that the dark matter affect other dark matter in the same way regular matter does.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Los expertos llegaron a la conclusión de que las materias oscuras se afectan entre sí al igual que lo hace la materia regular.",
+        "en-de": "Die Wissenschaftler kamen zu dem Schluss, dass die dunkle Materie auf andere dunkle Materie in der gleichen Weise wirkt wie normale Materie.",
+        "en-zh": "科学家们可以得出结论，暗物质对其他暗物质的影响方式与普通物质相同。",
+        "en-ar": "تمّكن العلماء من استنتاج أن المادة الداكنة تؤثر على المادة الداكنة الأخرى بنفس الطريقة التي تؤثر بها المادة الطبيعية.",
+        "en-ja": "科学者たちは、暗黒物質は、通常の物質と同じように他の暗黒物質にも影響を与えていると結論づけました。",
+        "en-fr": "Les scientifiques ont pu conclure que la matière noire affecte les autres matières noires de la même manière que la matière normale.",
+        "en-th": "นักวิทยาศาสตร์สามารถสรุปได้ว่าสสารมืดมีผลกระทบต่อสสารมืดอื่น ๆ ในลักษณะเดียวกับสสารปกตินั่นเอง",
+        "en-ms": "Para saintis dapat menyimpulkan bahawa jirim gelap menjejaskan jirim gelap yang lain dalam cara yang sama dengan jirim biasa."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "This theory says that most dark matter around a galaxy is located around a galaxy in a kind of halo, and is made of lots of small particles.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Esta teoría sostiene que la mayor parte de la materia oscura que rodea a una galaxia se sitúa en torno a esta en una clase de halo y se compone por numerosas partículas pequeñas.",
+        "en-de": "Diese Theorie besagt, dass sich der größte Teil der dunklen Materie in einer Art Halo um eine Galaxie befindet und aus vielen kleinen Partikeln besteht.",
+        "en-zh": "该理论认为，一个星系周围的大多数暗物质都处在星系周围的某种光环中，由许多小粒子组成。",
+        "en-ar": "توضح تلك النظرية أن معظم المادة المظلمة حول مجرةٍ ما تقع حولها فيما يشبه الهالة، ويكونها جسيمات صغيرة في أعداد كبيرة.",
+        "en-ja": "この理論によると、銀河の周りにある暗黒物質のほとんどは、一種のハローのように銀河を取り巻き、たくさんの小粒子でできていると言われています。",
+        "en-fr": "Selon cette théorie, la majeure partie de la matière noire autour d’une galaxie se trouve dans une sorte de halo, et est constituée d’un grand nombre de petites particules.",
+        "en-th": "ทฤษฎีนี้กล่าวว่า สสารมืดรอบกาแล็กซี่หนึ่งนั้นตั้งอยู่รอบกาแล็กซี่หนึ่งในแบบรัศมี และเกิดขึ้นจากอนุภาคขนาดเล็กเป็นจำนวนมาก",
+        "en-ms": "Teori ini mengatakan bahawa perkara gelap di seluruh galaksi yang terletak di sekitar galaksi dalam sejenis halo, dan diperbuat daripada banyak zarah kecil."
+      }
+    }
+  ]
+}

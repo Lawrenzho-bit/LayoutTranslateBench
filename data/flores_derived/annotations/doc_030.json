@@ -1,0 +1,147 @@
+{
+  "doc_id": "doc_030",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/Extremely_drug-resistant_tuberculosis_strain_emerges_in_South_Africa",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Health'."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "Dr. Tony Moll discovered the Extremely Drug Resistant Tuberculosis (XDR-TB) in the South African region KwaZulu-Natal.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "La tuberculosis extremadamente resistente (XDR-TB) fue detectada por primera vez por el Dr. Tony Moll en área sudafricana de Zululandia.",
+        "en-de": "Die extrem-arzneimittelresistente Tuberkulose (XDR-TB) wurde von Dr. Tony Moll in der südafrikanischen Region KwaZulu-Natal entdeckt.",
+        "en-zh": "托尼·莫尔博士在南非夸祖鲁-纳塔尔省发现了这种广泛耐药结核病 (XDR-TB)。",
+        "en-ar": "اكتشفَ د. توني مول مرضَ السّل شديد المقاومةِ للأدويةِ أو ما بعرف ب (XDR-TB) في منطقةِ كوازولوناتال في جنوب إفريقيا.",
+        "en-ja": "トニー・モール博士は、南アフリカのクワズールー・ナタール地方で、極度薬剤耐性結核（XDR-TB）を発見しました。",
+        "en-fr": "Le Dr Tony Moll a découvert la tuberculose multirésistante (TB-MR) dans la région sud-africaine du KwaZulu-Natal.",
+        "en-th": "ดร. โทนี่ มอลล์ค้นพบเชื้อวัณโรคที่ดื้อยาอย่างสุดขีด (XDR-TB) ในภูมิภาค KwaZulu-Natal ของแอฟริกาใต้",
+        "en-ms": "Dr. Tony Moll menemui Batuk Kering Sangat Tahan Ubat (XDR-TB) di wilayah KwaZulu-Natal di Afrika Selatan."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": "In an interview, he said the new variant was \"very highly troubling and alarming because of the very high fatality rate.\"",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Durante una entrevista, señaló que la nueva variante generaba «mucha preocupación y alarma, dada su elevada tasa de mortalidad».",
+        "en-de": "\"In einem Interview sagte er, die neue Variante sei „äußerst beunruhigend und alarmierend aufgrund der sehr hohen Sterblichkeitsrate.\"\"\"",
+        "en-zh": "他在一次采访中表示，这个新变种“非常令人不安和担忧，因为它的致死率非常高。”",
+        "en-ar": "لقد قال في مقابلة أن شكل البكتيريا المتغير الجديد \"مثير للقلق ومروّع للغاية بسبب معدل الوفيات المرتفع جداً.\"",
+        "en-ja": "インタビューで彼は新しい変異体について「極めて致死率が高い厄介なものであり、憂慮すべきものである」と述べました。",
+        "en-fr": "\"Dans une interview, il a déclaré que la nouvelle mutation était \"\"très troublante et alarmante en raison du taux de mortalité très élevé\"\".\"",
+        "en-th": "ในการให้สัมภาษณ์ครั้งหนึ่ง เขากล่าวว่าความผันแปรใหม่นี้ \"น่าตกใจและรบกวนจิตใจอย่างยิ่งเนื่องจากอัตราการเสียชีวิตที่สูงมาก\"",
+        "en-ms": "Dalam sebuah temuduga, beliau mengatakan bahawa varian baru “sangat membimbangkan dan menakutkan disebabkan kadar kematian yang tinggi.” "
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "Some patients might have contracted the bug in the hospital, Dr. Moll thinks, and at least two were hospital health workers.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "El doctor Moll cree que algunos pacientes podrían haber contraído el virus dentro del hospital y que al menos dos de los infectados eran trabajadores de salud de ese nosocomio.",
+        "en-de": "Einige Patienten haben sich möglicherweise im Krankenhaus mit dem Erreger angesteckt, meint Dr. Moll, und mindestens zwei waren medizinische Krankenhausangestellte.",
+        "en-zh": "莫尔 (Moll) 博士认为，有些病人可能是在医院感染了病菌，而且至少有两名病人是医院的医护人员。",
+        "en-ar": "يعتقد د. مول أن بعض المرضى من بينهم اثنين من العاملين بالمستشفى يحتمل أن يكونوا قد أصيبوا بالفيروس داخل المستشفى.",
+        "en-ja": "モル博士は、何人かの患者が病院内で感染したのではないかと推測し、少なくとも2人は病院の医療従事者であったと考えています。",
+        "en-fr": "Certains patients auraient contracté le virus à l’hôpital, selon le Dr Moll, et au moins deux d’entre eux faisaient partie du personnel de l’hôpital.",
+        "en-th": "ดร.มอลล์คาดว่าผู้ป่วยบางรายอาจติดเชื้อจากที่โรงพยาบาล โดยมีเจ้าหน้าที่สาธารณสุขของโรงพยาบาลอย่างน้อยสองคน",
+        "en-ms": "Beberapa pesakit mungkin telah dijangkiti kuman itu di hospital tersebut, fikir Dr Moll, dan sekurang-kurangnya dua orang merupakan pekerja kesihatan di hospital."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "In one year's time, an infected person may infect 10 to 15 close contacts.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "En un año, un infectado puede contagiar a entre 10 y 15 personas con las que haya tenido contacto estrecho.",
+        "en-de": "Innerhalb eines Jahres kann eine infizierte Person 10 bis 15 enge Kontakte infizieren.",
+        "en-zh": "一年内，一个感染者可能会感染 10 至 15 名密切接触者。",
+        "en-ar": "خلال عام واحد، قد يصيب الشخص المُصاب ما بين 10 إلى 15 من المختلطين القرباء.",
+        "en-ja": "1人の感染者が1年後に10～15人の濃厚接触者に感染させる可能性があります。",
+        "en-fr": "Sur une période d'un an, une personne infectée peut infecter 10 à 15 contacts proches.",
+        "en-th": "ในเวลาหนึ่งปี ผู้ติดเชื้ออาจทำให้ผู้สัมผัสใกล้ชิดติดเชื้อ 10 ถึง 15 ราย",
+        "en-ms": "Dalam jangka masa setahun, orang yang dijangkiti boleh menjangkiti 10 hingga 15 orang kenalan rapat."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "However, the percentage of XDR-TB in the entire group of people with tuberculosis still seems to be low; 6,000 of the total 330,000 people infected at any particular moment in South Africa.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "De todas formas, el porcentaje de XDR-TB en el grupo total de enfermos de tuberculosis aún parece ser reducido: 6000 de un total de 333 000 individuos infectados en un momento particular en Sudáfrica.",
+        "en-de": "Trotzdem ist der Anteil an XDR-TB in der gesamten Gruppe der Leute mit Tuberkulose offenbar dennoch gering; 6.000 der insgesamt 330.000 Leute, die in Südafrika zu einem bestimmten Zeitpunkt angesteckt sind.",
+        "en-zh": "然而，广泛耐药结核病在整个结核病患者群体中所占的比例似乎仍然很低；在南非，在任意特定时刻，总计 33 万人中只有 6000 人感染。",
+        "en-ar": "مع ذلك، فإن النسبة المئوية لمرض السلّ شديد المقاومة للأدوية في إجمالي مجموعة المصابين بالسلّ ما تزال مُنخفضة؛ حيث يُصاب 6000 من إجمالي 330000 شخص في أي لحظة محددة بجنوب إفريقيا.",
+        "en-ja": "しかし、結核患者全体に占めるXDR-TBの割合はまだ低いようで、こうしている間にも南アフリカでは33万人のうち6,000人が感染している。",
+        "en-fr": "Cependant, le pourcentage de TB-UR dans l’ensemble du groupe de personnes atteintes de tuberculose semble encore faible ; 6 000 personnes sur un total de 330 000 ont été infectées à un moment donné en Afrique du Sud.",
+        "en-th": "อย่างไรก็ดี กลุ่มผู้ป่วยวัณโรคทั้งหมดยังดูจะมีค่าร้อยละของ XDR-TB ต่ำอยู่คือนับเป็นจำนวน 6,000 รายจากทั้งหมด 330,000 รายผู้ติดเชื้อในเวลาใดเวลาหนึ่งในแอฟริกาใต้",
+        "en-ms": "Walau bagaimanapun, peratusan XDR-TB dalam kesemua kumpulan penghidap tuberkulosis masih rendah; 6,000 dari kesemua 330,000 orang yang terjejas di dalam pada satu-satu masa Afrika Selatan."
+      }
+    }
+  ]
+}

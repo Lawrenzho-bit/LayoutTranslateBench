@@ -1,0 +1,757 @@
+{
+  "doc_id": "doc_025",
+  "page_size": [
+    1600,
+    2173
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_37667",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        234,
+        220,
+        360,
+        30
+      ],
+      "text": "World Congress of Gynecological",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "世界妇科大会"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        653,
+        222,
+        625,
+        28
+      ],
+      "text": "This is a very well focussed meeting. When one has a new",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "这是一个非常专注的会议。当一个人有新的"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        232,
+        268,
+        154,
+        29
+      ],
+      "text": "Endocrinology",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "内分泌学"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        649,
+        270,
+        669,
+        75
+      ],
+      "text": "progestin to introduce, this is certainly one of the meetings to attend. The level of science is usually good and the number of",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "孕激素介绍，这当然是值得参加的会议之一。科学水平通常很高，而且参会人数也较多。"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        231,
+        313,
+        316,
+        31
+      ],
+      "text": "September, Wroclaw, Poland",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "九月，波兰弗罗茨瓦夫"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        647,
+        360,
+        378,
+        30
+      ],
+      "text": "delegates is likely to be 1200-1500",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "代表人数可能为1200-1500"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        232,
+        425,
+        354,
+        30
+      ],
+      "text": "The North American Menopause",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "北美的更年期"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        652,
+        426,
+        716,
+        29
+      ],
+      "text": "This is usually a slightly disappointing meeting and is not very well",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "这通常是一个稍微令人失望的会议，而且进行得不是很好。"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        230,
+        472,
+        198,
+        75
+      ],
+      "text": "Society (NAMS) October, Chicago",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "社会（NAMS）十月，芝加哥"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        652,
+        476,
+        709,
+        28
+      ],
+      "text": "attended. If it is important to spread the Totelle message across the",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "参加了。如果传播Totelle信息很重要的话"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        650,
+        519,
+        645,
+        31
+      ],
+      "text": "USA, however, Wyeth should be represented at this meeting",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "然而，美国的惠氏应该出席这次会议。"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        234,
+        585,
+        366,
+        27
+      ],
+      "text": "American Society of Reproductive",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "美国生殖学会"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        654,
+        582,
+        703,
+        33
+      ],
+      "text": "This meeting is always well attended - there will probably be 5000",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "这次会议总是有很多人参加——可能将有5000人出席。"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        230,
+        632,
+        106,
+        25
+      ],
+      "text": "Medicine",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "药物"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        645,
+        632,
+        113,
+        27
+      ],
+      "text": "delegates",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "代表"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        230,
+        678,
+        173,
+        27
+      ],
+      "text": "October, Seattle",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "十月，西雅图"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        232,
+        742,
+        48,
+        22
+      ],
+      "text": "2003",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "二零零三"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        228,
+        806,
+        78,
+        27
+      ],
+      "text": "ACOG",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "美国妇产科医师学会"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        650,
+        805,
+        113,
+        27
+      ],
+      "text": "See above",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "见上文"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        233,
+        867,
+        278,
+        32
+      ],
+      "text": "6th European Congress on",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "第六届欧洲大会"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        656,
+        867,
+        662,
+        34
+      ],
+      "text": "This is a good meeting - and Trimegestone should certainly be",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "这是一个很好的会议 - 特里美司酮当然应该"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        231,
+        920,
+        131,
+        23
+      ],
+      "text": "Menopause",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "更年期"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        646,
+        921,
+        181,
+        23
+      ],
+      "text": "represented at it",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "在其中代表"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        233,
+        964,
+        170,
+        26
+      ],
+      "text": "May, Bucharest",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "五月，布加勒斯特"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        230,
+        1029,
+        89,
+        25
+      ],
+      "text": "ESHRE",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "欧洲人类生殖与胚胎学会"
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        650,
+        1029,
+        114,
+        26
+      ],
+      "text": "See above",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "见上文"
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        228,
+        1076,
+        48,
+        24
+      ],
+      "text": "July",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "七月"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        228,
+        1140,
+        82,
+        25
+      ],
+      "text": "NAMS",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "纳姆斯"
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        653,
+        1139,
+        115,
+        27
+      ],
+      "text": "See above",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "见上文"
+      }
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        230,
+        1203,
+        247,
+        29
+      ],
+      "text": "FIGO World Congress",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "FIGO世界大会"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        654,
+        1204,
+        691,
+        30
+      ],
+      "text": "This is a good meeting, especially if Wyeth has market ambitions",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "这是一个很好的会议，特别是如果惠氏有市场雄心的话。"
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        229,
+        1248,
+        188,
+        30
+      ],
+      "text": "September, Chile",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "九月，智利"
+      }
+    },
+    {
+      "region_id": "r33",
+      "bbox": [
+        649,
+        1250,
+        716,
+        169
+      ],
+      "text": "in South America. Because of the location, attendance may be lower than in previous years. Typically, FIGO Congresses attract 7000-8000 genuine delegates, so under 5000 might be expected for Chile",
+      "reading_order": 32,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "在南美洲。由于地理位置的原因，参会人数可能会比往年少。通常，FIGO大会能吸引7000到8000名真正的代表，所以对于智利来说，可能预期不到5000人。"
+      }
+    },
+    {
+      "region_id": "r34",
+      "bbox": [
+        234,
+        1455,
+        363,
+        31
+      ],
+      "text": "World Congress of Gynecological",
+      "reading_order": 33,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "世界妇科大会"
+      }
+    },
+    {
+      "region_id": "r35",
+      "bbox": [
+        652,
+        1455,
+        111,
+        28
+      ],
+      "text": "See above",
+      "reading_order": 34,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "见上文"
+      }
+    },
+    {
+      "region_id": "r36",
+      "bbox": [
+        229,
+        1503,
+        164,
+        29
+      ],
+      "text": "Endocrinology",
+      "reading_order": 35,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "内分泌学"
+      }
+    },
+    {
+      "region_id": "r37",
+      "bbox": [
+        233,
+        1551,
+        226,
+        26
+      ],
+      "text": "December, Florence?",
+      "reading_order": 36,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "十二月，佛罗伦萨？"
+      }
+    },
+    {
+      "region_id": "r38",
+      "bbox": [
+        469,
+        1923,
+        650,
+        30
+      ],
+      "text": "THE PARTHENON PUBLISHING GROUP",
+      "reading_order": 37,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "帕特农出版集团"
+      }
+    },
+    {
+      "region_id": "r39",
+      "bbox": [
+        1338,
+        2072,
+        241,
+        28
+      ],
+      "text": "WINNR201-009566",
+      "reading_order": 38,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "WINNR201-009566  \n\n（注：这段文字看起来像是一个编号或代码，没有实际的语义内容，因此直接保持原样。）"
+      }
+    }
+  ]
+}

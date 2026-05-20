@@ -99,9 +99,14 @@ def verify(
             errors.append(
                 f"doc_id mismatch: manifest={entry.doc_id}, annotation={ann.doc_id}"
             )
+        # v0.1.4: partial reference coverage is permitted for docs imported from
+        # external sources (ml-curated / certified-translator). Author-curated
+        # docs still require references in all 8 LTB pairs as a quality contract.
+        grade = ann.provenance.grade if ann.provenance else "author-curated"
+        require_full_coverage = grade == "author-curated"
         for region in ann.regions:
             missing = [lp for lp in LANG_PAIRS if lp not in region.references]
-            if missing:
+            if missing and require_full_coverage:
                 errors.append(
                     f"{entry.doc_id}/{region.region_id}: missing references {missing}"
                 )
@@ -133,6 +138,15 @@ def score(
         "Useful for separating model quality from prompt/parser quality "
         "(v0.1.2 methodology fix #9).",
     ),
+    text_metric: str = typer.Option(
+        "chrf",
+        "--text-metric",
+        help="Text-quality metric for the chrF position in LTB-100. "
+        "'chrf' (default) is the v0.1.1 chrF₂ with language-detection gate. "
+        "'comet-kiwi' substitutes COMET-Kiwi-22 (reference-free neural QE, "
+        "Unbabel) — requires `unbabel-comet` installed. See "
+        "ltbench/metrics/comet.py for setup instructions.",
+    ),
 ) -> None:
     """Score a submission against the dataset; write a result JSON."""
     m = load_manifest(manifest)
@@ -144,14 +158,23 @@ def score(
     system, per_pair = load_submission(submission)
 
     # Build per-pair (annotation, submission) tuples; warn on doc_id mismatches
+    # v0.1.4: filter out (doc, pair) combinations where the annotation has no
+    # reference text in that pair. This is necessary because v0.1.4 introduces
+    # partial-coverage docs (rileykim-derived) that cover only one LTB pair.
     per_pair_data: dict[str, list[tuple]] = {}
     skipped = 0
+    skipped_no_ref = 0
     for lang_pair, docs in per_pair.items():
         paired: list[tuple] = []
         for doc_sub in docs:
             ann = annotations.get(doc_sub.doc_id)
             if ann is None:
                 skipped += 1
+                continue
+            # Drop if annotation has no reference for this pair (partial coverage)
+            has_ref = any(lang_pair in r.references for r in ann.regions)
+            if not has_ref:
+                skipped_no_ref += 1
                 continue
             paired.append((ann, doc_sub))
         per_pair_data[lang_pair] = paired
@@ -160,8 +183,18 @@ def score(
         console.print(
             f"[yellow]Warning:[/yellow] skipped {skipped} submissions with unknown doc_id"
         )
+    if skipped_no_ref:
+        console.print(
+            f"[yellow]Note:[/yellow] dropped {skipped_no_ref} (doc, pair) pairs lacking references "
+            f"(expected for v0.1.4 partial-coverage docs)"
+        )
 
-    result = score_submission(system, per_pair_data, exclude_parser_failures=exclude_parser_failures)  # type: ignore[arg-type]
+    result = score_submission(  # type: ignore[arg-type]
+        system,
+        per_pair_data,
+        exclude_parser_failures=exclude_parser_failures,
+        text_metric=text_metric,
+    )
 
     out_path = output or Path("results") / f"{system.system_name}.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)

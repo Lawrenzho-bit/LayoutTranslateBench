@@ -1,0 +1,643 @@
+{
+  "doc_id": "doc_018",
+  "page_size": [
+    1600,
+    1184
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_00063",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        1485,
+        29,
+        24,
+        15
+      ],
+      "text": "67",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "67"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        552,
+        60,
+        545,
+        21
+      ],
+      "text": "THE ROCKEFELLER UNIVERSITY ACCOUNTING SYSTEM REPORT",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ロックフェラー大学会計システム報告書"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        1201,
+        60,
+        91,
+        19
+      ],
+      "text": "PAGE 001",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ページ 001"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        1385,
+        59,
+        78,
+        24
+      ],
+      "text": "RECEIVED",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "受領済み"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        415,
+        114,
+        131,
+        19
+      ],
+      "text": "DR LUSHBOUGH",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ドクター・ラッシュボウ"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        681,
+        114,
+        177,
+        19
+      ],
+      "text": "CITIZENS CMMSION",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "市民委員会"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        956,
+        113,
+        164,
+        21
+      ],
+      "text": "ACCOUNT 0-11099",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "アカウント 0-11099"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        1363,
+        101,
+        115,
+        25
+      ],
+      "text": "FEB 5 1974",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "1974年2月5日"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        659,
+        148,
+        257,
+        22
+      ],
+      "text": "SUMMARY REPORT FOR 01/74",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "01/74の概要報告書"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        1355,
+        142,
+        126,
+        27
+      ],
+      "text": "C. H. Lushbough",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "C. H. ラッシュボウ"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        138,
+        203,
+        43,
+        35
+      ],
+      "text": "ACCT CTL",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "会計管理"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        200,
+        218,
+        125,
+        20
+      ],
+      "text": "DESCRIPTION",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "説明"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        573,
+        203,
+        35,
+        33
+      ],
+      "text": "REF NO .",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "REF NO ."
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        649,
+        201,
+        151,
+        38
+      ],
+      "text": "TRANS IDENTIFICATION",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "トランス識別"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        488,
+        219,
+        49,
+        18
+      ],
+      "text": "DATE",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "日付"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        890,
+        218,
+        88,
+        20
+      ],
+      "text": "PREVIOUS",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "以前"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        1061,
+        202,
+        76,
+        35
+      ],
+      "text": "CURRENT MONTH",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "今月"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        1244,
+        202,
+        76,
+        36
+      ],
+      "text": "TOTAL TO DATE",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "これまでの合計"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        139,
+        255,
+        30,
+        17
+      ],
+      "text": "110",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "110"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        224,
+        255,
+        55,
+        16
+      ],
+      "text": "TOTAL",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "合計"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        880,
+        254,
+        97,
+        21
+      ],
+      "text": "2, 523. 29-",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "2,523.29-"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        1072,
+        253,
+        175,
+        375
+      ],
+      "text": "2, 029.57 Office 33.84 25,50 33.00 13.54 6. 33 13 . 17 8 . 82 2, 523. 29- 5. 84 128.98 4 . 46 30,25 POM 6. 88 70. 00 51.00 * 8. 54 - alice 1 . 20 9 . 45 2, 029.57-",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "2,029.57 33.84 オフィス 25,50 33.00 13.54 6.33 13.17 8.82 2,523.29- 5.84 128.98 4.46 30,25 POM 6.88 70.00 51.00 * 8.54 - 1.20 アリス 9.45 2,029.57-"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        1286,
+        255,
+        73,
+        18
+      ],
+      "text": "493.72-",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "493.72-"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        138,
+        289,
+        280,
+        338
+      ],
+      "text": "I DUPLICATION XEROX 130 2 DUPLICATION XEROX 3 DUPLICATION XEROX 4TSF- TEL INST CHGS SSTOCK 6METERED POSTAGE 7STOCK SCITIZ COMMSN SCI LAW 9 METERED POSTAGE OTELEPHONE CHARGES /STOCK 12LEA + FEBIGER 13METERED POSTAGE 14 XEROX ISR WISSLER 16DANA R 17PETTY CASH 18 STOCK TOTAL 130",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "130 I 複製 ゼロックス 2 複製 ゼロックス 3 複製 ゼロックス 4 TSF- TEL INST CHGS SSTOCK 6 計量郵便 7 ストック SCITIZ COMMSN SCI LAW 9 計量郵便 O 電話料金 /ストック 12 LEA + FEBIGER 13 計量郵便 14 ゼロックス ISR WISSLER 16 DANA R 17 小口現金 18 ストック 130 合計"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        488,
+        290,
+        478,
+        339
+      ],
+      "text": "01/03 301248 60-000774 01/03 301275 60-000774 01/03 301277 60-000774 01/07 014248 60-000784 01/08 009160 60-000789 01/10 000000 60-000796 01/10 009379 60-000798 01/16 30-031259 01/17 000000 60-000833 01/23 000000 60-000853 01/23 010215 60-000858 01/25 015855 40-926258 Smith somian 01728 000000 60-000887 160-000897 01/29 010361 01/29 000000 60-000909 01/30 30-031546 01/31 000000 60-000928 01/31 010713 60-000933 2, 523.29",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "01/03 301248 60-000774 01/03 301275 60-000774 01/03 301277 60-000774 01/07 014248 60-000784 01/08 009160 60-000789 01/10 000000 60-000796 01/10 009379 60-000798 01/16 30-031259 01/17 000000 60-000833 01/23 000000 60-000853 01/23 010215 60-000858 01/25 015855 40-926258 Smith somian 01728 000000 60-000887 01/29 010361 160-000897 01/29 000000 60-000909 01/30 30-031546 01/31 000000 60-000928 01/31 010713 60-000933 2, 523.29"
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        1287,
+        322,
+        259,
+        27
+      ],
+      "text": "43 credit being moved",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "43クレジットが移動される"
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        1284,
+        607,
+        65,
+        20
+      ],
+      "text": "493. 72",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "493. 72"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        180,
+        661,
+        228,
+        20
+      ],
+      "text": "# # # ACCOUNT TOTAL # #",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "アカウント合計"
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        925,
+        663,
+        43,
+        17
+      ],
+      "text": "0. 00",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "0. 00"
+      }
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        1117,
+        662,
+        43,
+        18
+      ],
+      "text": "0. 00",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "0. 00"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        1308,
+        662,
+        45,
+        17
+      ],
+      "text": "0.00",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "0.00"
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        882,
+        730,
+        58,
+        17
+      ],
+      "text": "OFFICE",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "オフィス"
+      }
+    },
+    {
+      "region_id": "r33",
+      "bbox": [
+        1077,
+        774,
+        356,
+        78
+      ],
+      "text": "Publication Purchases - $ 30.25 418101 office $ 148126",
+      "reading_order": 32,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "出版物購入 - $30.25 オフィス 418101 $148126"
+      }
+    }
+  ]
+}

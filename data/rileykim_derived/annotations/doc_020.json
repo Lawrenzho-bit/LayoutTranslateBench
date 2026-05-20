@@ -1,0 +1,301 @@
+{
+  "doc_id": "doc_020",
+  "page_size": [
+    1600,
+    2032
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_37635",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        632,
+        244,
+        315,
+        30
+      ],
+      "text": "BIOGRAPHICAL SKETCH",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "生平简介"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        185,
+        272,
+        1170,
+        290
+      ],
+      "text": "(Give the following information for all professional personnel listed on page 3, beginning with the Principal Investigator. Use continuation pages and follow the same general format for each person.) NAME TITLE BIRTHDATE (Ma, Day, Yr.) Engle, Patricia L. Developmental Psychologist 1 Dec. , 1944 PLACE OF BIRTH (City, State, Country) PRESENT NATIONALITY (If non-U.S. citizen, SEX indicate kind of visa and expiration date) Philadelphia, Penna,, U. S.A. U. S.A. Male X Female EDUCATION (Begin with baccalaureate training and include postdoctoral) INSTITUTION AND LOCATION YEAR DEGREE SCIENTIFIC CONFERRED FIELD",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "（提供第3页列出的所有专业人员的信息，从首席研究员开始。使用连续页，并为每个人遵循相同的通用格式。）姓名 职称 出生日期（月、日、年）Engle, Patricia L. 发展心理学家 12月1日, 1944 出生地（城市、州、国家）当前国籍（如果是非美国公民，请注明签证类型及到期日）费城, 宾夕法尼亚, 美国 美国 男 □ 女 √ 教育背景（从学士学位开始，包括博士后）机构及所在地 年份 学位 授予的科学领域"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        183,
+        584,
+        674,
+        63
+      ],
+      "text": "Wellesley College, Wellesley, Mass. B. A. Stanford University, Stanford, Cal. Ph . D.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "韦尔斯利学院，马萨诸塞州韦尔斯利。文学士。斯坦福大学，加利福尼亚州斯坦福。哲学博士。"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        936,
+        588,
+        71,
+        58
+      ],
+      "text": "1966 1971",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "1966 1971"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        1099,
+        589,
+        290,
+        91
+      ],
+      "text": "Psychology Child Devel./Educ- ational Psychology",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "心理学 儿童发展/教育心理学"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        193,
+        694,
+        83,
+        31
+      ],
+      "text": "HONORS",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "荣誉"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        184,
+        745,
+        805,
+        35
+      ],
+      "text": "Research Traineeship Grant Wellesley Scholarship.",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "研究培训金韦尔斯利奖学金"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        184,
+        806,
+        276,
+        26
+      ],
+      "text": "MAJOR RESEARCH INTEREST",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "主要研究兴趣"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        758,
+        806,
+        470,
+        75
+      ],
+      "text": "ROLE IN PROPOSED PROJECT Developmental Psychologist.",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "拟议项目中的角色：发展心理学家"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        182,
+        847,
+        343,
+        28
+      ],
+      "text": "Cognitive Development",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "认知发展"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        182,
+        1171,
+        1205,
+        46
+      ],
+      "text": "RSARormostrepresentativepublications,Donotexceed3pagesforeachindividual.)",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "RSAR对于最具代表性的出版物，每个人不超过3页。"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        196,
+        1252,
+        260,
+        27
+      ],
+      "text": "1973 to Present:",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "1973年至今："
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        189,
+        1284,
+        1172,
+        60
+      ],
+      "text": "Developmental Psychologist, Division of Human Development, INCAP, Guate-mala.",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "发展心理学家，人类发展部，INCAP，危地马拉。"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        194,
+        1501,
+        1088,
+        62
+      ],
+      "text": "1969-1970: Palo Alto Unified School District, Palo Alto, California. Research",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "1969-1970：加利福尼亚州帕洛阿尔托市帕洛阿尔托联合学区。研究"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        191,
+        1623,
+        1053,
+        63
+      ],
+      "text": "Stanford Research Institute, Menlo Park,California. Consultant,Projeet Follow Through.",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "斯坦福研究所，门洛帕克，加利福尼亚。顾问，项目跟进。"
+      }
+    }
+  ]
+}

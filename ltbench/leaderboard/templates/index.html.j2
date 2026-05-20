@@ -58,23 +58,33 @@
     <p class="lead">The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality. Composite score <strong>LTB-100</strong> combines chrF (text), layout IoU (visual), and reading-order Kendall tau.</p>
     <div class="meta">Generated {{ generated_at }} from LayoutTranslateBench v{{ version }}.</div>
 
-    <div class="card" style="background: rgba(255,200,90,0.06); border-left: 3px solid #f0a000; padding: 12px 16px; margin-bottom: 20px;">
-      <strong>Caveat — v0.1 sample size.</strong> All scores are computed on N=5 documents per language pair. The <em>LTB-100</em> cell shows
-      <code>point [95% CI]</code> via 1000-resample percentile bootstrap. The CI on N=5 is <em>wide</em> — small differences between systems are not
-      statistically significant. v0.2 will scale to N≥25 per pair.
+    <div class="card" style="background: rgba(255,200,90,0.06); border-left: 3px solid #f0a000; padding: 12px 16px; margin-bottom: 12px;">
+      <strong>Sample size — v0.1.5.</strong> Per-pair counts: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms (10 author-curated + 10 FLORES-200), N=28 for en-ja (+8 rileykim), N=27 for en-zh (+7 rileykim).
+      The <em>LTB-100</em> cell shows <code>point [95% CI]</code> via 1000-resample percentile bootstrap. CIs at N=20 are roughly √2× tighter than v0.1.3's N=10. v0.2 will scale to N≥25 author-curated per pair.
     </div>
 
-    <h2 style="margin: 24px 0 8px;">End-to-end systems</h2>
-    <p class="lead" style="margin-bottom: 12px;">Runners that produce their own bounding boxes — the realistic score.</p>
+    <div class="card" style="background: rgba(124,183,255,0.06); border-left: 3px solid #7cb7ff; padding: 12px 16px; margin-bottom: 20px;">
+      <strong>Two metrics shown.</strong> <em>chrF</em> (character-level F-score, fast, deterministic) and <em>COMET-Kiwi-22</em> (reference-free neural QE, slower but better correlated with human judgment). Rankings can differ — paraphrasing systems often score lower on chrF than on COMET.
+    </div>
+
+    {% set tables = [
+      ('chrF_e2e',   'End-to-end systems — chrF',         'Runners that produce their own bounding boxes — the realistic score.', chrf_end_to_end, 'chrF'),
+      ('chrF_oracle','Oracle-layout reference — chrF',    'Runners given ground-truth bounding boxes; text-quality ceiling only.', chrf_oracle,     'chrF'),
+      ('comet_e2e',  'End-to-end systems — COMET-Kiwi',   'Same systems scored with reference-free COMET-Kiwi-22.',                 comet_end_to_end,'COMET-Kiwi'),
+      ('comet_oracle','Oracle-layout reference — COMET-Kiwi','Same systems, oracle-layout, COMET-Kiwi.',                            comet_oracle,    'COMET-Kiwi'),
+    ] %}
+    {% for tid, title, blurb, rows, metric_col in tables %}
+    <h2 style="margin: 24px 0 8px;">{{ title }}</h2>
+    <p class="lead" style="margin-bottom: 12px;">{{ blurb }}</p>
     <div class="card">
-      {% if end_to_end %}
+      {% if rows %}
       <table>
         <thead>
           <tr>
             <th class="num">#</th>
             <th>System</th>
             <th class="num">LTB-100 [95% CI]</th>
-            <th class="num">chrF</th>
+            <th class="num">{{ metric_col }}</th>
             <th class="num">Layout IoU</th>
             <th class="num">Reading-order τ</th>
             <th class="num">Coverage</th>
@@ -85,7 +95,7 @@
           </tr>
         </thead>
         <tbody>
-          {% for r in end_to_end %}
+          {% for r in rows %}
           <tr>
             <td class="num">{{ r.rank }}</td>
             <td><strong>{{ r.system_name }}</strong> <span class="badge">v{{ r.system_version }}</span></td>
@@ -103,46 +113,10 @@
         </tbody>
       </table>
       {% else %}
-      <div class="empty">No end-to-end submissions yet. See <a href="../docs/submission.html">submission guide</a> to be the first.</div>
+      <div class="empty">No submissions in this category yet.</div>
       {% endif %}
     </div>
-
-    <h2 style="margin: 32px 0 8px;">Oracle-layout reference <span class="badge" style="font-size: 11px; vertical-align: middle;">text-quality ceilings</span></h2>
-    <p class="lead" style="margin-bottom: 12px;">Runners given <em>ground-truth bounding boxes</em> as predictions — they only translate the text. These are <strong>upper bounds on text quality</strong>, not realistic end-to-end measurements of the underlying products. Use for comparing translation quality in isolation from layout extraction.</p>
-    <div class="card">
-      {% if oracle %}
-      <table>
-        <thead>
-          <tr>
-            <th class="num">#</th>
-            <th>System</th>
-            <th class="num">LTB-100 [95% CI]</th>
-            <th class="num">chrF</th>
-            <th class="num">Coverage</th>
-            <th class="num">Median s/doc</th>
-            <th class="num">Cost USD</th>
-            <th>Hardware</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for r in oracle %}
-          <tr>
-            <td class="num">{{ r.rank }}</td>
-            <td><strong>{{ r.system_name }}</strong> <span class="badge">v{{ r.system_version }}</span></td>
-            <td class="num">{{ "%.2f"|format(r.ltb_100) }} <span style="color: var(--muted); font-size: 12px;">[{{ "%.1f"|format(r.ltb_100_ci_low) }}, {{ "%.1f"|format(r.ltb_100_ci_high) }}]</span></td>
-            <td class="num">{{ "%.2f"|format(r.chrf) }}</td>
-            <td class="num">{{ r.coverage }}</td>
-            <td class="num">{{ ("%.2f"|format(r.median_runtime_s)) if r.median_runtime_s is not none else "—" }}</td>
-            <td class="num">{{ ("$%.4f"|format(r.cost_usd)) if r.cost_usd is not none else "—" }}</td>
-            <td>{{ r.hardware or "—" }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      {% else %}
-      <div class="empty">No oracle-layout submissions yet.</div>
-      {% endif %}
-    </div>
+    {% endfor %}
 
     <div class="links">
       <a href="../BENCHMARK.html">Specification</a>

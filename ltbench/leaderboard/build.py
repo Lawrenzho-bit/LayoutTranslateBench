@@ -15,6 +15,7 @@ _TEMPLATE_DIR = Path(__file__).parent / "templates"
 
 
 def _load_results(results_dir: Path) -> list[SubmissionResult]:
+    """Load all canonical *.json results. Snapshots go in results/snapshots/."""
     results: list[SubmissionResult] = []
     for path in sorted(results_dir.glob("*.json")):
         if path.name.endswith(".local.json"):
@@ -25,6 +26,32 @@ def _load_results(results_dir: Path) -> list[SubmissionResult]:
         except Exception as e:
             print(f"[warn] could not load {path}: {e}")
     return results
+
+
+def _load_results_split_by_metric(
+    results_dir: Path,
+) -> tuple[list[SubmissionResult], list[SubmissionResult]]:
+    """Return (chrF results, COMET-Kiwi results) using filename convention.
+
+    Convention: <system>.json is the chrF scoring; <system>.comet.json is the
+    COMET-Kiwi scoring. Snapshots in results/snapshots/ are ignored.
+    """
+    chrf_results: list[SubmissionResult] = []
+    comet_results: list[SubmissionResult] = []
+    for path in sorted(results_dir.glob("*.json")):
+        if path.name.endswith(".local.json"):
+            continue
+        try:
+            with path.open("r", encoding="utf-8") as f:
+                result = SubmissionResult.model_validate(json.load(f))
+        except Exception as e:
+            print(f"[warn] could not load {path}: {e}")
+            continue
+        if path.name.endswith(".comet.json"):
+            comet_results.append(result)
+        else:
+            chrf_results.append(result)
+    return chrf_results, comet_results
 
 
 def _rank(results: list[SubmissionResult]) -> list[LeaderboardRow]:
@@ -91,27 +118,20 @@ def _format_row_row(r: LeaderboardRow) -> str:
     )
 
 
-def _render_markdown(rows: list[LeaderboardRow], generated_at: str) -> str:
+def _render_section(
+    rows: list[LeaderboardRow],
+    *,
+    metric_label: str,
+    metric_col_header: str,
+) -> list[str]:
+    """Render the two-tier table (end-to-end + oracle-layout) for a single metric."""
     end_to_end, oracle = _split_by_type(rows)
-    n_caveat = (
-        "**Caveat — v0.1 sample size.** All scores are computed on N=5 documents per "
-        "language pair. Reported LTB-100 cell shows `point [95% CI low, CI high]` "
-        "via 1000-resample percentile bootstrap. The CI on N=5 is *wide* — small "
-        "differences between systems are not statistically significant. v0.2 will "
-        "scale the dataset to N≥25 per pair."
-    )
-    lines = [
-        "# LayoutTranslateBench Leaderboard",
-        "",
-        f"_Generated {generated_at} from LayoutTranslateBench v{__version__}._",
-        "",
-        n_caveat,
-        "",
-        "## End-to-end systems",
+    lines: list[str] = [
+        f"## End-to-end systems ({metric_label})",
         "",
         "*These runners produce their own bounding boxes. This is the realistic real-world score.*",
         "",
-        "| Rank | System | LTB-100 [95% CI] | chrF | Layout IoU | Reading-order τ | Coverage | Median runtime (s/doc) | Cost (USD) | Hardware |",
+        f"| Rank | System | LTB-100 [95% CI] | {metric_col_header} | Layout IoU | Reading-order τ | Coverage | Median runtime (s/doc) | Cost (USD) | Hardware |",
         "|---:|:---|:---|---:|---:|---:|:---:|---:|---:|:---|",
     ]
     if not end_to_end:
@@ -121,14 +141,12 @@ def _render_markdown(rows: list[LeaderboardRow], generated_at: str) -> str:
 
     lines += [
         "",
-        "## Oracle-layout reference (text-quality ceilings)",
+        f"## Oracle-layout reference ({metric_label})",
         "",
-        "*These runners are given **ground-truth bounding boxes** as predictions and only "
-        "translate the text. They are upper bounds on text-quality, **not** realistic "
-        "end-to-end measurements of the underlying products. Use for comparing translation "
-        "quality in isolation from layout-extraction quality.*",
+        "*Given **ground-truth bounding boxes** as predictions; only the text is translated. "
+        "These are upper bounds on text-quality, **not** realistic end-to-end measurements.*",
         "",
-        "| Rank | System | LTB-100 [95% CI] | chrF | Layout IoU | Reading-order τ | Coverage | Median runtime (s/doc) | Cost (USD) | Hardware |",
+        f"| Rank | System | LTB-100 [95% CI] | {metric_col_header} | Layout IoU | Reading-order τ | Coverage | Median runtime (s/doc) | Cost (USD) | Hardware |",
         "|---:|:---|:---|---:|---:|---:|:---:|---:|---:|:---|",
     ]
     if not oracle:
@@ -136,7 +154,57 @@ def _render_markdown(rows: list[LeaderboardRow], generated_at: str) -> str:
     for r in oracle:
         lines.append(_format_row_row(r))
 
+    return lines
+
+
+def _render_markdown(
+    chrf_rows: list[LeaderboardRow],
+    comet_rows: list[LeaderboardRow],
+    generated_at: str,
+) -> str:
+    n_caveat = (
+        "**Sample size — v0.1.5.** Per-pair counts: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms "
+        "(10 author-curated + 10 FLORES-200), N=28 for en-ja (+8 rileykim), N=27 for en-zh "
+        "(+7 rileykim). LTB-100 cell shows `point [95% CI low, CI high]` via 1000-resample "
+        "percentile bootstrap. CIs at N=20 are roughly √2× tighter than v0.1.3's N=10."
+    )
+    metric_caveat = (
+        "**Metric.** Two parallel leaderboards are shown — **chrF** (character-level F-score, "
+        "fast, deterministic, paraphrase-blind) and **COMET-Kiwi-22** (reference-free neural "
+        "MT quality estimation, slower but more correlated with human judgment). System "
+        "rankings can differ between metrics, especially for systems that paraphrase well."
+    )
+    lines = [
+        "# LayoutTranslateBench Leaderboard",
+        "",
+        f"_Generated {generated_at} from LayoutTranslateBench v{__version__}._",
+        "",
+        n_caveat,
+        "",
+        metric_caveat,
+        "",
+        "---",
+        "",
+        "# Leaderboard A — chrF",
+        "",
+    ]
+    lines.extend(_render_section(chrf_rows, metric_label="chrF", metric_col_header="chrF"))
+
     lines += [
+        "",
+        "---",
+        "",
+        "# Leaderboard B — COMET-Kiwi-22",
+        "",
+        "*COMET-Kiwi is reference-free; the per-region chrF column shown above is replaced by "
+        "the COMET-Kiwi score (also in [0, 100], higher = better).*",
+        "",
+    ]
+    lines.extend(_render_section(comet_rows, metric_label="COMET-Kiwi", metric_col_header="COMET-Kiwi"))
+
+    lines += [
+        "",
+        "---",
         "",
         "See [BENCHMARK.md](BENCHMARK.md) for the spec and [docs/submission.md](docs/submission.md) to submit.",
         "",
@@ -150,9 +218,11 @@ def build_leaderboard(
     leaderboard_md: Path | None = None,
 ) -> int:
     """Build leaderboard HTML + (optional) Markdown mirror. Returns row count."""
-    results = _load_results(results_dir)
-    rows = _rank(results)
-    end_to_end, oracle = _split_by_type(rows)
+    chrf_results, comet_results = _load_results_split_by_metric(results_dir)
+    chrf_rows = _rank(chrf_results)
+    comet_rows = _rank(comet_results)
+    chrf_e2e, chrf_oracle = _split_by_type(chrf_rows)
+    comet_e2e, comet_oracle = _split_by_type(comet_rows)
     generated_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -162,15 +232,22 @@ def build_leaderboard(
     )
     template = env.get_template("index.html.j2")
     html = template.render(
-        rows=rows,
-        end_to_end=end_to_end,
-        oracle=oracle,
+        # Backwards-compatible names: end_to_end / oracle default to the chrF view
+        rows=chrf_rows + comet_rows,
+        end_to_end=chrf_e2e,
+        oracle=chrf_oracle,
+        chrf_end_to_end=chrf_e2e,
+        chrf_oracle=chrf_oracle,
+        comet_end_to_end=comet_e2e,
+        comet_oracle=comet_oracle,
         generated_at=generated_at,
         version=__version__,
     )
     (output_dir / "index.html").write_text(html, encoding="utf-8")
 
     if leaderboard_md is not None:
-        leaderboard_md.write_text(_render_markdown(rows, generated_at), encoding="utf-8")
+        leaderboard_md.write_text(
+            _render_markdown(chrf_rows, comet_rows, generated_at), encoding="utf-8"
+        )
 
-    return len(rows)
+    return len(chrf_rows) + len(comet_rows)

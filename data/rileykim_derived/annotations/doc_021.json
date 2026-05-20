@@ -1,0 +1,111 @@
+{
+  "doc_id": "doc_021",
+  "page_size": [
+    310,
+    587
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_37640",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        0,
+        13,
+        277,
+        59
+      ],
+      "text": "U.S. has more college-educatedimmigrants than other economicallyadvanced countries",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "美国的大学教育程度移民比其他经济发达国家多。"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        0,
+        78,
+        277,
+        32
+      ],
+      "text": "Number qf immigrants ages 25 and older with apostsecondary diploma or degree, in millions, 2015",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "25岁及以上的移民中拥有中学后文凭或学位的人数，以百万计，2015年"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        0,
+        498,
+        273,
+        38
+      ],
+      "text": "Source: Country censuses and surveys. See Methodology forcomplete list of data sources and years. See Appendix B foradditional advanced economies.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "来源：各国的人口普查和调查。有关数据来源和年份的完整列表，请参见方法论。更多先进经济体请参见附录B。"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        0,
+        537,
+        264,
+        13
+      ],
+      "text": "“Majority of U.S. Public Supports High-Skilled Immigration*",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "大多数美国公众支持高技能移民"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        0,
+        557,
+        116,
+        12
+      ],
+      "text": "PEWRESEARCH CENTER",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "皮尤研究中心"
+      }
+    }
+  ]
+}

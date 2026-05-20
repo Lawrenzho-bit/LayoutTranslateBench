@@ -31,3 +31,10 @@ submissions/*/output/
 
 # Local result scratch
 results/*.local.json
+
+# COMET venv (see docs/comet-setup.md)
+.comet-env/
+# HF dataset import venv (see scripts/import_rileykim.py)
+.hf-env/
+# FLORES-200 tarball + extracted dataset (see scripts/compose_flores_docs.py)
+.flores-tmp/

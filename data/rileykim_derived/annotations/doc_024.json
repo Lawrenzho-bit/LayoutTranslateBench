@@ -1,0 +1,206 @@
+{
+  "doc_id": "doc_024",
+  "page_size": [
+    1600,
+    2104
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_37657",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        264,
+        412,
+        184,
+        40
+      ],
+      "text": "Action Steps:",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "行动步骤："
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        264,
+        484,
+        1016,
+        68
+      ],
+      "text": ". Please interpret this directive in its broadest sense to prevent the deletion or destruction of any recorded information and data relating in any way to Actos.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "请以最广泛的意义来解读此指令，以防止删除或破坏任何与Actos有关的记录信息和数据。"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        262,
+        584,
+        992,
+        69
+      ],
+      "text": ". Please take steps immediately to preserve such documents and data within your department.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "请立即采取措施保存你部门内的此类文件和数据。"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        262,
+        686,
+        1025,
+        36
+      ],
+      "text": ". Please distribute this memo to members of your group and advise them of the",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "请将此备忘录分发给您的小组成员，并告知他们"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        725,
+        781,
+        98,
+        28
+      ],
+      "text": "★★*★",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "★★*★"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        257,
+        851,
+        1005,
+        69
+      ],
+      "text": "If you have any questions regarding the impiementation of this directive, pleasecontact me.",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "如果您对本指令的实施有任何疑问，请联系我。"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        266,
+        993,
+        441,
+        114
+      ],
+      "text": "Marlene Chulas",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "马琳·丘拉斯"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        94,
+        1999,
+        600,
+        39
+      ],
+      "text": "Confidential -Subject to Protective Order",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "保密 - 遵守保护令"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        356,
+        2061,
+        888,
+        41
+      ],
+      "text": "Source: https://www.indupt5309cg0002ts.ucsf.edu/docs/sqjf0226",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "来源：https://www.indupt5309cg0002ts.ucsf.edu/docs/sqjf0226"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        264,
+        280,
+        169,
+        69
+      ],
+      "text": "July 19, 2002 Page 2",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "2002年7月19日 第2页"
+      }
+    }
+  ]
+}
