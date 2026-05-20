@@ -165,7 +165,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_002",
@@ -223,7 +224,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_003",
@@ -281,7 +283,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_004",
@@ -333,7 +336,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_005",
@@ -373,7 +377,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_001",
@@ -425,7 +430,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_002",
@@ -483,7 +489,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_003",
@@ -541,7 +548,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_004",
@@ -593,7 +601,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_005",
@@ -633,7 +642,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_001",
@@ -685,7 +695,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_002",
@@ -743,7 +754,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_003",
@@ -801,7 +813,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_004",
@@ -853,7 +866,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_005",
@@ -893,7 +907,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_001",
@@ -945,7 +960,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_002",
@@ -1003,7 +1019,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_003",
@@ -1061,7 +1078,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_004",
@@ -1113,7 +1131,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_005",
@@ -1153,7 +1172,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_001",
@@ -1205,7 +1225,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_002",
@@ -1263,7 +1284,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_003",
@@ -1321,7 +1343,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_004",
@@ -1373,7 +1396,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_005",
@@ -1413,7 +1437,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_001",
@@ -1465,7 +1490,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_002",
@@ -1523,7 +1549,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_003",
@@ -1581,7 +1608,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_004",
@@ -1633,7 +1661,8 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     },
     {
       "doc_id": "doc_005",
@@ -1673,8 +1702,9 @@
           "layout_iou": 1.0,
           "matched": true
         }
-      ]
+      ],
+      "parser_failure": false
     }
   ],
-  "scored_at": "2026-05-19T09:03:39+00:00"
+  "scored_at": "2026-05-20T06:18:07+00:00"
 }

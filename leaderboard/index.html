@@ -56,15 +56,20 @@
   <main>
     <h1>LayoutTranslateBench Leaderboard</h1>
     <p class="lead">The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality. Composite score <strong>LTB-100</strong> combines chrF (text), layout IoU (visual), and reading-order Kendall tau.</p>
-    <div class="meta">Generated 2026-05-19T09:05:00+00:00 from LayoutTranslateBench v0.1.0.</div>
+    <div class="meta">Generated 2026-05-20T06:25:32+00:00 from LayoutTranslateBench v0.1.0.</div>
 
-    <div class="card" style="background: rgba(255,200,90,0.06); border-left: 3px solid #f0a000; padding: 12px 16px; margin-bottom: 20px;">
-      <strong>Caveat — v0.1 sample size.</strong> All scores are computed on N=5 documents per language pair. The <em>LTB-100</em> cell shows
-      <code>point [95% CI]</code> via 1000-resample percentile bootstrap. The CI on N=5 is <em>wide</em> — small differences between systems are not
-      statistically significant. v0.2 will scale to N≥25 per pair.
+    <div class="card" style="background: rgba(255,200,90,0.06); border-left: 3px solid #f0a000; padding: 12px 16px; margin-bottom: 12px;">
+      <strong>Sample size — v0.1.5.</strong> Per-pair counts: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms (10 author-curated + 10 FLORES-200), N=28 for en-ja (+8 rileykim), N=27 for en-zh (+7 rileykim).
+      The <em>LTB-100</em> cell shows <code>point [95% CI]</code> via 1000-resample percentile bootstrap. CIs at N=20 are roughly √2× tighter than v0.1.3's N=10. v0.2 will scale to N≥25 author-curated per pair.
     </div>
 
-    <h2 style="margin: 24px 0 8px;">End-to-end systems</h2>
+    <div class="card" style="background: rgba(124,183,255,0.06); border-left: 3px solid #7cb7ff; padding: 12px 16px; margin-bottom: 20px;">
+      <strong>Two metrics shown.</strong> <em>chrF</em> (character-level F-score, fast, deterministic) and <em>COMET-Kiwi-22</em> (reference-free neural QE, slower but better correlated with human judgment). Rankings can differ — paraphrasing systems often score lower on chrF than on COMET.
+    </div>
+
+    
+    
+    <h2 style="margin: 24px 0 8px;">End-to-end systems — chrF</h2>
     <p class="lead" style="margin-bottom: 12px;">Runners that produce their own bounding boxes — the realistic score.</p>
     <div class="card">
       
@@ -89,8 +94,8 @@
           <tr>
             <td class="num">1</td>
             <td><strong>identity-baseline</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">51.32 <span style="color: var(--muted); font-size: 12px;">[50.7, 52.1]</span></td>
-            <td class="num">2.65</td>
+            <td class="num">50.51 <span style="color: var(--muted); font-size: 12px;">[50.3, 50.8]</span></td>
+            <td class="num">1.01</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
             <td class="num">8/8</td>
@@ -118,9 +123,9 @@
       </table>
       
     </div>
-
-    <h2 style="margin: 32px 0 8px;">Oracle-layout reference <span class="badge" style="font-size: 11px; vertical-align: middle;">text-quality ceilings</span></h2>
-    <p class="lead" style="margin-bottom: 12px;">Runners given <em>ground-truth bounding boxes</em> as predictions — they only translate the text. These are <strong>upper bounds on text quality</strong>, not realistic end-to-end measurements of the underlying products. Use for comparing translation quality in isolation from layout extraction.</p>
+    
+    <h2 style="margin: 24px 0 8px;">Oracle-layout reference — chrF</h2>
+    <p class="lead" style="margin-bottom: 12px;">Runners given ground-truth bounding boxes; text-quality ceiling only.</p>
     <div class="card">
       
       <table>
@@ -130,7 +135,10 @@
             <th>System</th>
             <th class="num">LTB-100 [95% CI]</th>
             <th class="num">chrF</th>
+            <th class="num">Layout IoU</th>
+            <th class="num">Reading-order τ</th>
             <th class="num">Coverage</th>
+            <th class="num">Parser fails</th>
             <th class="num">Median s/doc</th>
             <th class="num">Cost USD</th>
             <th>Hardware</th>
@@ -143,7 +151,10 @@
             <td><strong>deepl-text-oracle</strong> <span class="badge">v0.1.0</span></td>
             <td class="num">78.20 <span style="color: var(--muted); font-size: 12px;">[75.2, 81.7]</span></td>
             <td class="num">56.40</td>
+            <td class="num">1.0000</td>
+            <td class="num">1.0000</td>
             <td class="num">6/8</td>
+            <td class="num">—</td>
             <td class="num">0.40</td>
             <td class="num">$0.0000</td>
             <td>api</td>
@@ -152,10 +163,68 @@
           <tr>
             <td class="num">2</td>
             <td><strong>nllb-text-oracle-nllb-200-distilled-600m</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">72.13 <span style="color: var(--muted); font-size: 12px;">[69.2, 75.0]</span></td>
-            <td class="num">44.25</td>
+            <td class="num">75.82 <span style="color: var(--muted); font-size: 12px;">[73.7, 76.4]</span></td>
+            <td class="num">51.63</td>
+            <td class="num">1.0000</td>
+            <td class="num">1.0000</td>
             <td class="num">8/8</td>
-            <td class="num">11.70</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td>cpu</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+    
+    <h2 style="margin: 24px 0 8px;">End-to-end systems — COMET-Kiwi</h2>
+    <p class="lead" style="margin-bottom: 12px;">Same systems scored with reference-free COMET-Kiwi-22.</p>
+    <div class="card">
+      
+      <table>
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>System</th>
+            <th class="num">LTB-100 [95% CI]</th>
+            <th class="num">COMET-Kiwi</th>
+            <th class="num">Layout IoU</th>
+            <th class="num">Reading-order τ</th>
+            <th class="num">Coverage</th>
+            <th class="num">Parser fails</th>
+            <th class="num">Median s/doc</th>
+            <th class="num">Cost USD</th>
+            <th>Hardware</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="num">1</td>
+            <td><strong>identity-baseline</strong> <span class="badge">v0.1.0</span></td>
+            <td class="num">50.58 <span style="color: var(--muted); font-size: 12px;">[50.4, 50.9]</span></td>
+            <td class="num">1.16</td>
+            <td class="num">1.0000</td>
+            <td class="num">1.0000</td>
+            <td class="num">8/8</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td>cpu</td>
+          </tr>
+          
+          <tr>
+            <td class="num">2</td>
+            <td><strong>qwen3-vl-2b-instruct</strong> <span class="badge">v0.1.0</span></td>
+            <td class="num">22.79 <span style="color: var(--muted); font-size: 12px;">[18.6, 27.1]</span></td>
+            <td class="num">15.46</td>
+            <td class="num">0.0395</td>
+            <td class="num">0.6935</td>
+            <td class="num">8/8</td>
+            <td class="num">5</td>
+            <td class="num">184.90</td>
             <td class="num">$0.0000</td>
             <td>cpu</td>
           </tr>
@@ -164,6 +233,62 @@
       </table>
       
     </div>
+    
+    <h2 style="margin: 24px 0 8px;">Oracle-layout reference — COMET-Kiwi</h2>
+    <p class="lead" style="margin-bottom: 12px;">Same systems, oracle-layout, COMET-Kiwi.</p>
+    <div class="card">
+      
+      <table>
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>System</th>
+            <th class="num">LTB-100 [95% CI]</th>
+            <th class="num">COMET-Kiwi</th>
+            <th class="num">Layout IoU</th>
+            <th class="num">Reading-order τ</th>
+            <th class="num">Coverage</th>
+            <th class="num">Parser fails</th>
+            <th class="num">Median s/doc</th>
+            <th class="num">Cost USD</th>
+            <th>Hardware</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="num">1</td>
+            <td><strong>nllb-text-oracle-nllb-200-distilled-600m</strong> <span class="badge">v0.1.0</span></td>
+            <td class="num">88.01 <span style="color: var(--muted); font-size: 12px;">[87.0, 88.9]</span></td>
+            <td class="num">76.01</td>
+            <td class="num">1.0000</td>
+            <td class="num">1.0000</td>
+            <td class="num">8/8</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td>cpu</td>
+          </tr>
+          
+          <tr>
+            <td class="num">2</td>
+            <td><strong>deepl-text-oracle</strong> <span class="badge">v0.1.0</span></td>
+            <td class="num">84.89 <span style="color: var(--muted); font-size: 12px;">[81.4, 88.0]</span></td>
+            <td class="num">69.77</td>
+            <td class="num">1.0000</td>
+            <td class="num">1.0000</td>
+            <td class="num">6/8</td>
+            <td class="num">—</td>
+            <td class="num">0.40</td>
+            <td class="num">$0.0000</td>
+            <td>api</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    </div>
+    
 
     <div class="links">
       <a href="../BENCHMARK.html">Specification</a>
