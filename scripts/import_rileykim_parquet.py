@@ -62,7 +62,65 @@ def xyxy_to_xywh(bbox: list[float]) -> list[int]:
     ]
 
 
-def build_regions_from_merge_ocr(merge_ocr_arr) -> list[dict]:
+# v0.1.6.4: ingest-time script validation. Skip ref additions whose tgt_text
+# script does not match the expected script for the LTB target language.
+# Mirrors scripts/validate_extension_refs.py.
+_EXPECTED_SCRIPT_AT_INGEST = {
+    "en-es": "latin", "en-de": "latin", "en-fr": "latin", "en-vi": "latin",
+    "en-id": "latin", "en-ms": "latin", "en-uz": "latin",
+    "en-zh": "han", "en-zh-tw": "han",
+    "en-ru": "cyrillic", "en-kk": "cyrillic",
+    "en-ar": "arabic", "en-ur": "arabic",
+    "en-ko": "hangul",
+    "en-th": "thai",
+    "en-ja": "japanese",
+}
+
+
+def _char_script_at_ingest(cp: int) -> str | None:
+    if cp < 256 and chr(cp).isalpha():
+        return "latin"
+    if 0x0400 <= cp <= 0x04FF:
+        return "cyrillic"
+    if 0xAC00 <= cp <= 0xD7AF or 0x1100 <= cp <= 0x11FF or 0x3130 <= cp <= 0x318F:
+        return "hangul"
+    if 0x0600 <= cp <= 0x06FF or 0x0750 <= cp <= 0x077F or 0xFB50 <= cp <= 0xFDFF or 0xFE70 <= cp <= 0xFEFF:
+        return "arabic"
+    if 0x4E00 <= cp <= 0x9FFF or 0x3400 <= cp <= 0x4DBF:
+        return "han"
+    if 0x3040 <= cp <= 0x309F or 0x30A0 <= cp <= 0x30FF:
+        return "japanese"
+    if 0x0E00 <= cp <= 0x0E7F:
+        return "thai"
+    return None
+
+
+def _script_matches(text: str, expected: str, min_fraction: float = 0.5) -> bool:
+    n_alpha = 0
+    n_match = 0
+    for ch in text:
+        script = _char_script_at_ingest(ord(ch))
+        if script is None:
+            continue
+        n_alpha += 1
+        if expected == "japanese" and script in ("japanese", "han"):
+            n_match += 1
+        elif script == expected:
+            n_match += 1
+    if n_alpha == 0:
+        return True  # fail-open on no alpha
+    return (n_match / n_alpha) >= min_fraction
+
+
+def build_regions_from_merge_ocr(merge_ocr_arr, ltb_pair: str | None = None) -> list[dict]:
+    """Build LTB regions from rileykim merge_ocr entries.
+
+    v0.1.6.4: when ltb_pair is provided, validate each tgt_text against the
+    expected script for that pair and skip refs that fail validation. This
+    catches rileykim's labeling bugs (e.g. en-ru rows with Chinese tgt_text).
+    """
+    expected_script = _EXPECTED_SCRIPT_AT_INGEST.get(ltb_pair) if ltb_pair else None
+    n_filtered = 0
     regions: list[dict] = []
     for idx, seg in enumerate(merge_ocr_arr):
         box = list(seg["box"])
@@ -80,9 +138,14 @@ def build_regions_from_merge_ocr(merge_ocr_arr) -> list[dict]:
             "references": {},
         }
         if tgt_text:
-            # ltb_pair attached later by caller (so we know the mapping)
-            region["_tgt_text"] = tgt_text
+            # Validate script before attaching
+            if expected_script is None or _script_matches(tgt_text, expected_script):
+                region["_tgt_text"] = tgt_text
+            else:
+                n_filtered += 1
         regions.append(region)
+    if n_filtered:
+        print(f"    (script-filter dropped {n_filtered} region refs for pair={ltb_pair})")
     return regions
 
 
@@ -139,7 +202,7 @@ def main() -> int:
                 continue
 
             merge_ocr = row.get("merge_ocr") or []
-            regions = build_regions_from_merge_ocr(merge_ocr)
+            regions = build_regions_from_merge_ocr(merge_ocr, ltb_pair=ltb_pair)
             if not regions:
                 continue
             # Attach translations under the LTB pair

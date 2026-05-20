@@ -9,7 +9,7 @@
     "source_image_id": "patimt_08227",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 4 en-ko region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -27,9 +27,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "보낸 사람:워싱턴 대학교 Lindell & Skinker BoulevardsSt.Louis 3O, Missouri"
-      }
+      "references": {}
     },
     {
       "region_id": "r2",
@@ -46,9 +44,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "받는 사람:AF 부동산 관리자St.Louis Contrct Monagement District1ll4Market StreetSt.Louis 1,Missouri"
-      }
+      "references": {}
     },
     {
       "region_id": "r3",
@@ -236,9 +232,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "Centrituge VE3425 헤드 ML/240 CO F CO OHH 쉴드 15 ML/302 쉴드 100 ML/ 341 다중 캐리어 #354 트러니언 링 #310 A. S. Aloe"
-      }
+      "references": {}
     },
     {
       "region_id": "r13",
@@ -407,9 +401,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "M. M. Huntsinger 감사관"
-      }
+      "references": {}
     },
     {
       "region_id": "r22",

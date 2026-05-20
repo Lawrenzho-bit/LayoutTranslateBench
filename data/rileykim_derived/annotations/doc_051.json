@@ -9,7 +9,7 @@
     "source_image_id": "patimt_03915",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 8 en-uz region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -27,9 +27,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-uz": "帐户名："
-      }
+      "references": {}
     },
     {
       "region_id": "r2",
@@ -46,9 +44,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-uz": "代金券总金额：27,250.00  请求人："
-      }
+      "references": {}
     },
     {
       "region_id": "r3",
@@ -65,9 +61,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-uz": "日期："
-      }
+      "references": {}
     },
     {
       "region_id": "r4",
@@ -84,9 +78,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-uz": "7-15-98\n\n（注：日期“7-15-98”直接翻译为中文通常是“7-15-98”，但如果按照中国常用的日期格式，可以理解为1998年7月15日。根据上下文需求选择合适的表达方式。如果需要转换成中文格式，则为“1998年7月15日”。） \n\n仅提供翻译结果的话就是：“7-15-98” 如果需要更符合中文习惯的表达，请告知。"
-      }
+      "references": {}
     },
     {
       "region_id": "r5",
@@ -103,9 +95,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-uz": "# 单位 28890 56830"
-      }
+      "references": {}
     },
     {
       "region_id": "r6",
@@ -122,9 +112,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-uz": "费率"
-      }
+      "references": {}
     },
     {
       "region_id": "r7",
@@ -141,9 +129,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-uz": "总数"
-      }
+      "references": {}
     },
     {
       "region_id": "r8",
@@ -160,9 +146,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-uz": "H/H - TPS 代码（描述）30 对 红色 30 对 红色 对 红色 对 红色 对 红色"
-      }
+      "references": {}
     },
     {
       "region_id": "r9",

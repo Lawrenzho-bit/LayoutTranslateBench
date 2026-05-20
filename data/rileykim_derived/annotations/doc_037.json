@@ -9,7 +9,7 @@
     "source_image_id": "patimt_36373",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 21 en-ru region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -27,9 +27,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "确认码请求"
-      }
+      "references": {}
     },
     {
       "region_id": "r2",
@@ -46,9 +44,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "致：Joe Leinster, RJR\n来自：Joyce Bagby, TBM\n日期：1995年4月20日"
-      }
+      "references": {}
     },
     {
       "region_id": "r3",
@@ -65,9 +61,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "RJR计划编号：501556"
-      }
+      "references": {}
     },
     {
       "region_id": "r4",
@@ -84,9 +78,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "品牌：WINSTON\n标题：Winston Select EW 调查 #2\n描述：Winston Select EW 调查 #2 数据录入/执行公司：Targetbase Marketing，M/A/R/C 集团旗下公司"
-      }
+      "references": {}
     },
     {
       "region_id": "r6",
@@ -103,9 +95,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "发行量：15,000\n预计响应率：40%\n预计响应者数量：6,000\n分发日期：1995年5月6日\n条形码贴纸寄给：Joe Leinster"
-      }
+      "references": {}
     },
     {
       "region_id": "r7",
@@ -122,9 +112,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "有效期：1995年9月30日"
-      }
+      "references": {}
     },
     {
       "region_id": "r8",
@@ -141,9 +129,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "M/A/R/C码分配：J79 批次码分配：21500-21599"
-      }
+      "references": {}
     },
     {
       "region_id": "r9",
@@ -160,9 +146,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "明信片"
-      }
+      "references": {}
     },
     {
       "region_id": "r10",
@@ -179,9 +163,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "X BRC* 0 CRC\n\n翻译为中文：X BRC* 0 循环冗余校验码\n\n注：CRC 是“循环冗余校验码”的缩写，在技术语境中通常直接使用英文缩写。如果需要完全翻译，可以按照上述翻译；若保持专业术语，则可保留CRC不变。"
-      }
+      "references": {}
     },
     {
       "region_id": "r11",
@@ -198,9 +180,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "格式：（见附件）"
-      }
+      "references": {}
     },
     {
       "region_id": "r12",
@@ -217,9 +197,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "信封/双折或三折"
-      }
+      "references": {}
     },
     {
       "region_id": "r13",
@@ -236,9 +214,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "欧布雷 欧创"
-      }
+      "references": {}
     },
     {
       "region_id": "r14",
@@ -255,9 +231,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "邮政许可编号：381"
-      }
+      "references": {}
     },
     {
       "region_id": "r15",
@@ -274,9 +248,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "地址：请寄至J79部门 选择小组"
-      }
+      "references": {}
     },
     {
       "region_id": "r16",
@@ -293,9 +265,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "邮政信箱834044，理查森，德克萨斯州75083-9724"
-      }
+      "references": {}
     },
     {
       "region_id": "r17",
@@ -312,9 +282,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "如果退回的邮件是商务回复，请将前50份样本发送给我们在达拉斯办公室的Vanessa Dickerson。"
-      }
+      "references": {}
     },
     {
       "region_id": "r18",
@@ -331,9 +299,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "附件"
-      }
+      "references": {}
     },
     {
       "region_id": "r19",
@@ -350,9 +316,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "抄送：Karen Giddens, RJR；Suzi Hicks, RJR；TARGETBIEMＲAETIIRAETI Paul Knouse, RJR；报告人：Teresa Witner, RJRH；* Brandt Conner, LHC-Lintas RH1 11 *t3tF\n\n注：原文中的“TARGETBIEMＲAETIIRAETI”和“*t3tF”可能是拼写错误或特殊代码，因此在翻译时保持原样。"
-      }
+      "references": {}
     },
     {
       "region_id": "r20",
@@ -369,9 +333,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "吉尔·奇斯姆，TBM罗宾·雷特威，TBM黛比·鲁道夫，TBM帕蒂·斯科特，TBM格温·沃尔特斯，TBM"
-      }
+      "references": {}
     },
     {
       "region_id": "r21",
@@ -388,9 +350,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "来源：https://www.industrydocuments.ucsf.edu/docs/qtgc0003"
-      }
+      "references": {}
     },
     {
       "region_id": "r22",
@@ -407,9 +367,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "目标数据库营销"
-      }
+      "references": {}
     }
   ]
 }

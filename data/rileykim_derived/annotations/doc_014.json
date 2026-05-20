@@ -9,7 +9,7 @@
     "source_image_id": "patimt_00012",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 1 en-ja region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -84,9 +84,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ja": "8:00 Registration, \"C\" Street Entrance"
-      }
+      "references": {}
     },
     {
       "region_id": "r5",

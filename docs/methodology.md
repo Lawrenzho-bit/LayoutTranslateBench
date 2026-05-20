@@ -129,6 +129,24 @@ Per-pair counts: N=20 for the 6 CORE non-overlap pairs, N=28 for en-ja, N=27 for
 
 The benchmark distinguishes **CORE pairs** (`ltbench.CORE_LANG_PAIRS`, 8 pairs, suitable for headline LTB-100 reporting) from **EXTENSION pairs** (8 more pairs, suitable for testing per-pair coverage of large multilingual systems but at sample sizes that don't support tight ranking).
 
+### Reference-script validation (v0.1.6.4 dataset-quality fix)
+
+While investigating the en-uz / en-ru COMET-Kiwi anomaly (both NLLB and opus-mt scored ~1.3 — essentially zero), spot-checking revealed that **the rileykim source dataset has labeling bugs**: many region-level `tgt_text` entries claim to be in one language but are actually in another script entirely.
+
+Examples found:
+- doc_036, 037, 038 (claimed `en-ru`): refs are in Simplified Chinese, not Russian (`农用化学品` = "agrochemicals" in Chinese)
+- doc_051 region 0 (claimed `en-uz`): `帐户名：` (Chinese, not Uzbek)
+- Various partial corruptions across en-ja, en-zh, en-ko, en-kk, en-zh-tw
+
+The v0.1.6.4 mitigation (`scripts/validate_extension_refs.py`) detects script-mismatched refs region-by-region and drops them from the annotation files. The doc itself stays — it's still useful as layout-fidelity ground truth — but the scorer's partial-coverage filter ensures it's no longer counted in the affected pair's per-pair average.
+
+**Impact**:
+- Dropped 103 region refs across the v0.1.4+v0.1.6 rileykim subset
+- en-ru lost all 42 region refs (3 docs × ~14 regions average) → en-ru coverage drops to 0 docs
+- Smaller bites taken out of en-ja, en-zh, en-ko, en-vi, en-ur, en-uz, en-kk, en-zh-tw, en-id
+
+**Methodology note**: every external dataset source LTB adopts should run through this script-validation pass at ingest. The validator is integrated into the v0.1.6.4 release; future rileykim or other multilingual-corpus integrations should call it before manifest-update.
+
 ### Per-pair MT-quality variance (v0.1.6.2 finding)
 
 The opus-mt vs NLLB-200 head-to-head on the v0.1.6 dataset surfaced a useful methodological signal: **per-pair MT quality is highly uneven**, especially among smaller per-language Marian-family models.

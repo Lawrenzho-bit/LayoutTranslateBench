@@ -9,7 +9,7 @@
     "source_image_id": "patimt_08254",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 5 en-ko region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -27,9 +27,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "19Z6CBADUATE 전염병학 여름 세션"
-      }
+      "references": {}
     },
     {
       "region_id": "r2",
@@ -103,9 +101,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "1. 이름MargaretAnnDanielsonFirstMiddleLast"
-      }
+      "references": {}
     },
     {
       "region_id": "r6",
@@ -122,9 +118,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "2.정확한 직함_감독자3.학과 의료통계&역학4.Empioyer_Mayo Clinic5.OfficePhone282-251l，ext.2979"
-      }
+      "references": {}
     },
     {
       "region_id": "r7",
@@ -236,9 +230,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "7. 집 주소 3939 - 18th Ave N.W., Rochester, Minnesota No. 스트리트 시티"
-      }
+      "references": {}
     },
     {
       "region_id": "r13",
@@ -388,9 +380,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ko": "학교전공학위연도Rochester Junior College생물학1968-1971University of Minnesota생물학1971-1972"
-      }
+      "references": {}
     },
     {
       "region_id": "r21",

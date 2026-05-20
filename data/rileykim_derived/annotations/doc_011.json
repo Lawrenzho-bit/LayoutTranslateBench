@@ -9,7 +9,7 @@
     "source_image_id": "patimt_00000",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 2 en-ja region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -141,9 +141,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ja": "N: 8019"
-      }
+      "references": {}
     },
     {
       "region_id": "r8",
@@ -312,9 +310,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ja": "TWA 0158343-105763/4"
-      }
+      "references": {}
     },
     {
       "region_id": "r17",

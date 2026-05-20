@@ -1,14 +1,25 @@
-"""Helsinki-NLP/opus-mt Text runner — Apache-2.0 oracle-layout baseline.
+"""Marian-family per-pair MT runner — open-source oracle-layout baseline.
 
 Why this matters for LTB:
   - NLLB-200 is CC-BY-NC-4.0 (research-only). A product cannot ship it.
-  - opus-mt models are mostly Apache-2.0 (with en-de and en-ko on CC-BY-4.0).
-    Both license families permit commercial use; this runner is the
-    "commercial-safe open-source MT" entry on the leaderboard.
-  - Per-pair models (~300MB each) — small, fast on CPU, load-on-demand.
+  - Per-pair Marian models from Helsinki-NLP/opus-mt are mostly Apache-2.0
+    (with en-de and en-ko on CC-BY-4.0). They permit commercial use.
+  - This runner is the "commercial-safe open-source MT" entry on the
+    leaderboard.
 
-Coverage: all 16 LTB pairs via 14 distinct models. Some pairs use router
-models with a `>>lang_code<<` prefix token prepended to the source text:
+Naming note: the system is still called "opus-mt-text-oracle" because the
+Helsinki-NLP/opus-mt family supplies 15 of the 16 pair models. v0.1.6.4
+swapped one slot (en-ja) to `staka/fugumt-en-ja` — same Marian
+architecture, dedicated Japanese model, BLEU 32.7 on Tatoeba JP-test —
+because opus-mt-en-jap is Bible-uedin trained and produces gibberish on
+modern documents. License for fugumt is CC-BY-SA-4.0 (share-alike): fine
+for benchmark scoring (we don't redistribute the predictions) but
+downstream products that re-distribute fugumt's outputs must keep them
+under CC-BY-SA-4.0.
+
+Coverage: all 16 LTB pairs via 14 distinct Marian models. Some pairs use
+multi-target router models with a `>>lang_code<<` prefix token prepended
+to the source text:
   - en-th -> opus-mt-en-mul + ">>tha<<"
   - en-ms -> opus-mt-en-poz + ">>zsm_Latn<<"
   - en-uz -> opus-mt-en-trk + ">>uzb_Latn<<"
@@ -41,7 +52,11 @@ _LANG_PAIR_TO_OPUS: dict[LangPair, tuple[str, Optional[str]]] = {
     "en-de": ("Helsinki-NLP/opus-mt-en-de", None),  # CC-BY-4.0
     "en-zh": ("Helsinki-NLP/opus-mt-en-zh", ">>cmn_Hans<<"),
     "en-ar": ("Helsinki-NLP/opus-mt-en-ar", ">>ara<<"),
-    "en-ja": ("Helsinki-NLP/opus-mt-en-jap", None),  # note: 'jap' suffix
+    # v0.1.6.4: swapped from Helsinki-NLP/opus-mt-en-jap (Bible-uedin trained,
+    # produces gibberish on modern docs, COMET-Kiwi=36.94 on LTB) to
+    # staka/fugumt-en-ja (Marian-arch, JP-specific, BLEU 32.7 on Tatoeba).
+    # License: CC-BY-SA-4.0 (share-alike).
+    "en-ja": ("staka/fugumt-en-ja", None),
     "en-fr": ("Helsinki-NLP/opus-mt-en-fr", None),
     "en-th": ("Helsinki-NLP/opus-mt-en-mul", ">>tha<<"),
     "en-ms": ("Helsinki-NLP/opus-mt-en-poz", ">>zsm_Latn<<"),

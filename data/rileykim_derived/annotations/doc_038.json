@@ -9,7 +9,7 @@
     "source_image_id": "patimt_30528",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 8 en-ru region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -27,9 +27,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "D.T./MM.N\n\n注：这里的\"D.T./MM.N\"看起来像是某种缩写或代码，没有明确的上下文很难给出准确翻译。如果\"D.T.\"和\"MM.N\"有特定含义，请提供更多信息以便更准确地翻译。不过，根据字面意思直译的话，可以保持原样不变，因为在中文中可能没有直接对应的表达方式。"
-      }
+      "references": {}
     },
     {
       "region_id": "r2",
@@ -46,9 +44,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "J.H. 费舍尔先生 A.S.S.B.T.P/0.B. 538 的秘书兼司库"
-      }
+      "references": {}
     },
     {
       "region_id": "r3",
@@ -65,9 +61,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "科林斯堡（科罗拉多州）（美国）"
-      }
+      "references": {}
     },
     {
       "region_id": "r4",
@@ -84,9 +78,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "亲爱的吉姆，"
-      }
+      "references": {}
     },
     {
       "region_id": "r5",
@@ -103,9 +95,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "感谢您12月6日的来信。在联系了我的朋友，也就是糖业制造商后，我将回答您的问题。"
-      }
+      "references": {}
     },
     {
       "region_id": "r6",
@@ -122,9 +112,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "行程"
-      }
+      "references": {}
     },
     {
       "region_id": "r7",
@@ -141,9 +129,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "从巴黎出发，抵达纽约。在纽约过夜。- 5月4日星期日：在纽约过夜 - 5月5日星期一：从纽约出发，抵达丹佛。在丹佛过夜。Jim fischer 到 Hatel - 5月6日星期二：参观科罗拉多工厂，可能 - 5月7日星期三：游览好地。- 5月8日星期四：晚上出发前往德克萨斯州阿马里洛。在阿马里洛过夜。- 5月9日星期五：参观德克萨斯州赫里福德糖厂。- 5月10日星期六：从阿马里洛出发，中午前抵达凤凰城。- 5月11日星期日：大峡谷。- 5月12日星期一：参观钱德勒工厂。- 5月13日星期二：从凤凰城出发，在埃尔森特罗过夜。- 5月14日星期三：参观布劳利工厂。- 5月15日星期四：从布劳利到曼特卡或萨利纳斯的行程。- 5月16日星期五：参观曼特卡或斯普雷克尔斯。- 5月17日星期六：参观旧金山。- 5月18日星期日.../. .."
-      }
+      "references": {}
     },
     {
       "region_id": "r8",
@@ -160,9 +146,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "来源：https://www.industrydocuments.ucsf.edu/docs/ylyv0228"
-      }
+      "references": {}
     }
   ]
 }

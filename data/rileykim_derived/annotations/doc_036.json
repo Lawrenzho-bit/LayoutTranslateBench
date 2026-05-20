@@ -9,7 +9,7 @@
     "source_image_id": "patimt_35243",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 13 en-ru region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -27,9 +27,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "农用化学品"
-      }
+      "references": {}
     },
     {
       "region_id": "r2",
@@ -46,9 +44,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "在此背景下，最重要的项目是一个关于各国农用化学品使用、待定以及完全注册情况的数据库。该项目目前正在开发中。这些努力背后的原因是ADI（每日允许摄入量）在监管MRLs（最大残留限量）中所起的作用。这一目标已经通过几个途径来实现：(a) 农用化学品销售量（SIGMA数据库）；(b) 农民使用的程度——UNITAB的一项调查显示使用模式有明显变化，实际使用的CPA数量出奇地少；(c) 目前可获得的毒理学评估摘要（I.T.I.C.）。"
-      }
+      "references": {}
     },
     {
       "region_id": "r3",
@@ -65,9 +61,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "叶片生产和认证"
-      }
+      "references": {}
     },
     {
       "region_id": "r4",
@@ -84,9 +78,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "一个经过深思熟虑的认证程序被ACAC视为本章最重要的议题。实现有意义认证的基本原则包括：(a) 仅使用标签和注册过的农用化学品；(b) 与当地种植者协会或团体进行有效沟通；(c) 有可能在种植者层面开展活动；以及 (d) 获得烟草商的支持。"
-      }
+      "references": {}
     },
     {
       "region_id": "r5",
@@ -103,9 +95,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "向阿根廷烟农分发了一本信息手册，以彩色且易于理解的方式展示了“应该做”和“不应该做”的事项。这可以作为为其他市场（东欧、土耳其）类似手册的模板。在这方面，与CORESTA良好农业实践小组的合作将具有价值。"
-      }
+      "references": {}
     },
     {
       "region_id": "r6",
@@ -122,9 +112,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "监管问题"
-      }
+      "references": {}
     },
     {
       "region_id": "r7",
@@ -141,9 +129,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "在此背景下，最重要的问题是全球范围内的烟草监管最大残留限量（MRL）清单。一些国家已经存在这样的草案清单。然而，由于该领域的快速发展，这些清单从来都不是全面的。"
-      }
+      "references": {}
     },
     {
       "region_id": "r8",
@@ -160,9 +146,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "就MRLs的科学意义进行了讨论，因为这些数值更多地属于政治范畴，尽管有一定的科学背景。它们在现实中的对应物是根据良好农业规范（GAP）使用农药后产生的残留物，后者被称为“GRLs”（指导残留限量）。"
-      }
+      "references": {}
     },
     {
       "region_id": "r9",
@@ -179,9 +163,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "转基因烟草"
-      }
+      "references": {}
     },
     {
       "region_id": "r10",
@@ -198,9 +180,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "ACAC已经接管了处理GM烟草情况的责任。委员会的目标是全面了解最近的发展情况。ACAC将继续让CORESTA了解该领域的最新进展。ACAC支持通过一个特别工作组开发用于检测和确定转基因生物的定量方法。"
-      }
+      "references": {}
     },
     {
       "region_id": "r11",
@@ -217,9 +197,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "人类吸烟行为委员会报告"
-      }
+      "references": {}
     },
     {
       "region_id": "r12",
@@ -236,9 +214,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "委员会主席理查德·贝克报告了该委员会的工作进展，其工作已接近完成：关于赔偿的审查已于1999年底在一份科学期刊上发表，并由格哈德·谢勒作为小组间论文在1999年的两次研究小组会议上进行了介绍。"
-      }
+      "references": {}
     },
     {
       "region_id": "r13",
@@ -255,9 +231,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ru": "关于通风口堵塞的审查已经完成，目前正在提交给科学期刊发表。"
-      }
+      "references": {}
     }
   ]
 }

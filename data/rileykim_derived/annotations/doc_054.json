@@ -9,7 +9,7 @@
     "source_image_id": "patimt_48604",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 12 en-kk region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -27,9 +27,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "ITC的食品业务：创造消费者喜悦"
-      }
+      "references": {}
     },
     {
       "region_id": "r2",
@@ -46,9 +44,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "董事会和委员会 ........................................"
-      }
+      "references": {}
     },
     {
       "region_id": "r3",
@@ -65,9 +61,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "公司治理报告"
-      }
+      "references": {}
     },
     {
       "region_id": "r4",
@@ -84,9 +78,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "十"
-      }
+      "references": {}
     },
     {
       "region_id": "r5",
@@ -103,9 +95,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "股东信息"
-      }
+      "references": {}
     },
     {
       "region_id": "r6",
@@ -122,9 +112,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "董事报告与管理层讨论及分析"
-      }
+      "references": {}
     },
     {
       "region_id": "r7",
@@ -141,9 +129,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "三十六"
-      }
+      "references": {}
     },
     {
       "region_id": "r8",
@@ -160,9 +146,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "审计合规证书"
-      }
+      "references": {}
     },
     {
       "region_id": "r9",
@@ -179,9 +163,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "七十八"
-      }
+      "references": {}
     },
     {
       "region_id": "r10",
@@ -198,9 +180,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "GEO和CFO认证......"
-      }
+      "references": {}
     },
     {
       "region_id": "r11",
@@ -217,9 +197,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "资产负债表 ...."
-      }
+      "references": {}
     },
     {
       "region_id": "r12",
@@ -236,9 +214,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-kk": "八十"
-      }
+      "references": {}
     },
     {
       "region_id": "r13",

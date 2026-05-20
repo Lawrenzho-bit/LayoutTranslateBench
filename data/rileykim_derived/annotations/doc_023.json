@@ -9,7 +9,7 @@
     "source_image_id": "patimt_37650",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 3 en-zh region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -464,9 +464,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh": "200份Eclipse烟草小册子"
-      }
+      "references": {}
     },
     {
       "region_id": "r25",
@@ -673,9 +671,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh": "第三方预付，Bill R.J. Reynolds，PO Box 2959，温斯顿-塞勒姆，北卡罗来纳州 27102"
-      }
+      "references": {}
     },
     {
       "region_id": "r36",
@@ -730,9 +726,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh": "RJRT表2367-WML6/6/95"
-      }
+      "references": {}
     }
   ]
 }

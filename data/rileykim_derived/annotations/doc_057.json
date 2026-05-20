@@ -9,7 +9,7 @@
     "source_image_id": "patimt_06893",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 8 en-zh-tw region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -350,9 +350,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh-tw": "53.6 ab 51.1 abc 48.0 bc 54.5 ab 54-2 ab 51.1 abc 50-9 abc 50.9 abc 46-4 c 56.5 a"
-      }
+      "references": {}
     },
     {
       "region_id": "r19",
@@ -388,9 +386,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh-tw": "57.4 ab 51.1 b 52.7 b 55.1 ab 54.9 ab 52.7 b 55.3 ab 53.6 ab 54.9 ab 57.6 a"
-      }
+      "references": {}
     },
     {
       "region_id": "r21",
@@ -483,9 +479,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh-tw": "0到10 bc 20 c"
-      }
+      "references": {}
     },
     {
       "region_id": "r26",
@@ -559,9 +553,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh-tw": "0到9b 31 d"
-      }
+      "references": {}
     },
     {
       "region_id": "r30",
@@ -616,9 +608,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh-tw": "0到21，c 40 d"
-      }
+      "references": {}
     },
     {
       "region_id": "r33",
@@ -654,9 +644,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh-tw": "50的76 abc 88 a"
-      }
+      "references": {}
     },
     {
       "region_id": "r35",
@@ -673,9 +661,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh-tw": "44 c 55 abc 64 a"
-      }
+      "references": {}
     },
     {
       "region_id": "r36",
@@ -768,9 +754,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-zh-tw": "0 a"
-      }
+      "references": {}
     },
     {
       "region_id": "r41",
