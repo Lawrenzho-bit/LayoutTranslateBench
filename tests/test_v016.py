@@ -15,7 +15,6 @@ from pathlib import Path
 from ltbench import CORE_LANG_PAIRS, LANG_PAIRS
 from ltbench.metrics.language import is_target_language
 from ltbench.runners.nllb_text import _LANG_PAIR_TO_NLLB
-from ltbench.schemas import LangPair
 
 
 def _repo_root() -> Path:
