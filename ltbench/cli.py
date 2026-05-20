@@ -734,7 +734,7 @@ def run_opus_mt(
             raise typer.Exit(code=2)
 
     submission_dir.mkdir(parents=True, exist_ok=True)
-    console.print(f"[cyan]Loading[/cyan] Helsinki-NLP/opus-mt-* (on demand) ...")
+    console.print("[cyan]Loading[/cyan] Helsinki-NLP/opus-mt-* (on demand) ...")
     runner._ensure_loaded()
     console.print(f"[green]Device: {runner._actual_device}.[/green]")
 
