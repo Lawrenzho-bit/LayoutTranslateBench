@@ -1,0 +1,147 @@
+{
+  "doc_id": "doc_035",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/Crossing_guard_killed_by_truck_in_Glasgow,_Scotland",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Accident'."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "After the accident occurred, Gibson was transported to a hospital but died shortly afterwards.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "Después del accidente, trasladaron a Gibson a un hospital, pero falleció al poco tiempo.",
+        "en-de": "Nach dem Unfall wurde Gibson in ein Krankenhaus gebracht, er verstarb jedoch kurz darauf.",
+        "en-zh": "事故发生后，吉布森被送往医院，但很快就一命呜呼。",
+        "en-ar": "بعد وقوع الحادث، نُقل \"جبسون\" إلى المستشفى، لكنه توفي بعدها بفترة قصيرة.",
+        "en-ja": "事故発生後、ギブソン氏は病院に搬送されましたが、その後まもなく死亡しました。",
+        "en-fr": "Suite à l’accident, Gibson a été transporté à l’hôpital, mais a succombé immédiatement après.",
+        "en-th": "หลังจากเกิดอุบัติเหตุ กิ๊บสันถูกนำส่งโรงพยาบาลทว่าหลังจากนั้นไม่นานก็เสียชีวิต",
+        "en-ms": "Selepas kemalangan berlaku, Gibson dibawa ke hospital tetapi meninggal dunia tidak lama kemudian."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": "The truck driver, who is aged 64, was not injured in the crash.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "El conductor del camión, de 64 años, salió ileso del accidente.",
+        "en-de": "Der LKW-Fahrer, der 64 Jahre alt ist, wurde bei dem Unfall nicht verletzt.",
+        "en-zh": "这位 64 岁的卡车司机在车祸中没有受伤。",
+        "en-ar": "لم يُصب سائق الشاحنة البالغ من العمر 64 عاماً في حادث التحطم.",
+        "en-ja": "トラックの運転手は64歳でしたが、この事故で怪我はありませんでした。",
+        "en-fr": "Le chauffeur du camion, âgé de 64 ans, n’a pas été blessé dans l’accident.",
+        "en-th": "คนขับรถบรรทุกวัย 64 ปีไม่ได้รับบาดเจ็บจากอุบัติเหตุชนกันในครั้งนี้",
+        "en-ms": "Pemandu lori tersebut yang berusia 64 tahun tidak cedera dalam kemalangan itu."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "The vehicle itself was taken away from the scene of the accident at approximately 1200 GMT on the same day.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Retiraron el vehículo del lugar del siniestro alrededor de las 12:00 GMT del mismo día.",
+        "en-de": "Das Fahrzeug selbst wurde vom Unfallort ungefähr um 12:00 Uhr GMT am selben Tag weggebracht.",
+        "en-zh": "当天，格林尼治时间 (GMT) 约 12 时许，该车辆被拖离事故现场。",
+        "en-ar": "أُبعدت العربة من مكان الحادثة في الساعة 12:00 تقريباً بتوقيت جرينتش في نفس يوم وقوعها.",
+        "en-ja": "車両自体は同日のグリニッジ標準時12:00頃に事故現場から持ち去られました。",
+        "en-fr": "Le véhicule lui-même a été enlevé du lieu de l'accident vers 12 h 00 GMT le même jour.",
+        "en-th": "มีการนำยานพาหนะดังกล่าวออกจากที่เกิดเหตุในเวลาประมาณ 12.00 น. เวลามาตรฐานกรีนิช ในวันเดียวกันนั้น",
+        "en-ms": "Kenderaan itu dialihkan dari tempat kejadian kemalangan pada kira-kira jam 1200 GMT pada hari yang sama."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "A person working in a garage near where the accident occurred said: \"There were children waiting to cross the road and they were all screaming and crying.\"",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Un empleado de un garaje cercano al lugar del accidente afirmó: «Había niños esperando para cruzar la calle, y todos gritaban y lloraban».",
+        "en-de": "Eine Person, die in einer Werkstatt in der Nähe des Unfallortes arbeitete, sagte: „Es gab Kinder, die darauf warteten, die Straße zu überqueren, und alle schrien und weinten.“",
+        "en-zh": "一名在事故发生地附近的车库立的工作人员说：“孩子们正等着过马路，并且都在大声尖叫，哭个不停。”",
+        "en-ar": "وصرح شخصٌ يعمل في مرآبٍ قريب من مكان وقوع الحادث: \"كان هناك أطفالٌ ينتظرون عبور الشارع وكلهم كانوا يصرخون ويبكون\".",
+        "en-ja": "事故現場近くの車庫で働いていた男性は、「道を渡ろうと待っている子供たちがみんな泣き叫んでいた。」と語りました。",
+        "en-fr": "Un employé d'un garage proche du lieu de l’accident a déclaré : « il y avait des enfants qui cherchaient à traverser la route, et qui criaient et pleuraient. »",
+        "en-th": "คนที่ทำงานอยู่ในอู่ซ่อมรถใกล้กับที่เกิดอุบัติเหตุกล่าวว่า: \"มีเด็ก ๆ กำลังรอข้ามถนนอยู่ เด็กเหล่านั้นทั้งกรีดร้องและร่ำไห้\"",
+        "en-ms": "Seorang pekerja di garaj berhampiran tempat kemalangan itu berkata: “Terdapat kanak-kanak yang menunggu untuk menyeberang jalan yang menjerit dan menangis.” "
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "They all ran back from where the accident had happened.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Todos volvieron corriendo desde el lugar del accidente. ",
+        "en-de": "Sie alle rannten zurück vom Unfallort.",
+        "en-zh": "他们都从事故发生的地方跑了回来。",
+        "en-ar": "فرّ جميعهم عائدين من حيث وقعت الحادثة.",
+        "en-ja": "全員が事故現場から逃げ帰りました。",
+        "en-fr": "Ils sont tous revenus en courant de l’endroit où l’accident s’était produit.",
+        "en-th": "พวกเขาทุกคนวิ่งกลับมาจากจุดที่เกิดอุบัติเหตุ",
+        "en-ms": "Mereka semua berlari kembali di mana kemalangan itu telah berlaku."
+      }
+    }
+  ]
+}

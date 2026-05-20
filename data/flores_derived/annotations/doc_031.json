@@ -1,0 +1,147 @@
+{
+  "doc_id": "doc_031",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/Burning_debris_from_satellites_spotted_over_several_US_cities",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: ''."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "The satellites, both of which weighed in excess of 1,000 pounds, and traveling at approximately 17,500 miles per hour, collided 491 miles above the Earth.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "Los satélites, cuyo peso superaba las 1000 libras y que se desplazaban a cerca de 17 500 millas por hora, colisionaron a 491 millas por encima de la Tierra.",
+        "en-de": "Die Satelliten, die beide mehr als 1.000 Pfund wogen, kollidierten 491 Meilen über der Erde bei einer ungefähren Fluggeschwindigkeit von 17.500 Meilen pro Stunde.",
+        "en-zh": "这两颗都超过 1,000 磅的卫星以每小时 17,500 英里的速度飞行，在距离地球 491 英里的上空相撞。",
+        "en-ar": "كان هناك قمران يزن كلاً منهما ما يزيد عن 1000 رطل، ويسيران بسرعة ما يقرب من 17500 ميل/الساعة، اصطدما فوق الأرض بارتفاع 491 ميلاً.",
+        "en-ja": "重さが1,000ポンドを超え、時速約17,500マイルで移動していた人工衛星は、地球の上空491マイルのところで衝突しました。",
+        "en-fr": "Les satellites, qui pesaient tous les deux plus de 450 kg et se déplaçaient à environ 28000 km/h, sont entrés en collision à 790 km au-dessus de la Terre.",
+        "en-th": "ดาวเทียมซึ่งมีน้ำหนักเกิน 1,000 ปอนด์ และเดินทางด้วยความเร็วราว 17,500 ไมล์ต่อชั่วโมงทั้งสองดวงเกิดการชนปะทะกันที่ระยะ 491 ไมล์เหนือพื้นโลก",
+        "en-ms": "Kedua-dua satelit yang mempunyai jumlah berat lebih dari 1,000 paun, dan bergerak kira-kira 17,500 batu per jam, berlanggar antara satu sama lain 491 batu di atas Bumi."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": "Scientists say the explosion caused by the collision was massive.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Según los expertos, la explosión que generó la colisión fue masiva.",
+        "en-de": "Wissenschaftler sagen, dass die Explosion, die durch den Zusammenstoß bewirkt wurde, gewaltig war.",
+        "en-zh": "科学家表示，这次碰撞引起的爆炸规模巨大。",
+        "en-ar": "يقول العلماء إن الانفجار الناجم عن الاصطدام كان مهولاً.",
+        "en-ja": "科学者によると、この衝突による爆発は大規模なものでした。",
+        "en-fr": "Les scientifiques affirment que l'explosion causée par la collision a été massive.",
+        "en-th": "นักวิทยาศาสตร์กล่าวว่าแรงระเบิดที่เกิดจากการชนนั้นมหาศาล",
+        "en-ms": "Para saintis berkata bahawa letupan yang disebabkan oleh perlanggaran tersebut adalah sangat besar."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "They are still trying to determine just how large the crash was and how the Earth will be affected.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Aún intentan establecer cuán importante fue el impacto y de qué modo afectará al planeta.",
+        "en-de": "Sie versuchen immer noch herauszufinden, wie umfangreich der Zusammenstoß war und wie die Erde davon beeinträchtigt werden wird.",
+        "en-zh": "他们仍在努力确定这次撞击的规模以及对地球的影响。",
+        "en-ar": "ما زالوا يحاولون تحديد حجم التصادم وكيف ستتأثر الأرض.",
+        "en-ja": "彼らは、衝突がどのくらいの規模で、地球がどのような影響を受けるのかについて現在も調査しています。",
+        "en-fr": "On essaie encore de déterminer quelle a été l'ampleur de l'accident et comment la Terre sera affectée.",
+        "en-th": "พวกเขายังคงพยายามหาข้อสรุปว่าการชนครั้งนี้มีขนาดใหญ่แค่ไหนและจะส่งผลกระทบต่อโลกอย่างไรบ้าง",
+        "en-ms": "Mereka masih sedang cuba menentukan betapa besarnya kemalangan berkenaan dan bagaimana bumi akan terjejas."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "The United States Strategic Command of the U.S. Department of Defense office is tracking the debris.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "El Comando Estratégico de EE. UU., que depende de la oficina del Departamento de Defensa, realiza un rastreo de los restos.",
+        "en-de": "Das Strategische Kommando des Verteidigungsministeriums der Vereinigten Staaten macht die Trümmer ausfindig.",
+        "en-zh": "美国国防部战略司令部正在追踪残骸。",
+        "en-ar": "تقوم القيادة الإستراتيجية الأمريكية لمكتب وزارة الدفاع الأمريكية بتعقب الأنقاض.",
+        "en-ja": "米国防総省事務所の米戦略司令部がこのデブリを追跡しています。",
+        "en-fr": "Le commandement stratégique du bureau du département de la défense des États-Unis suit les débris.",
+        "en-th": "หน่วยบัญชาการยุทธศาสตร์ของกระทรวงกลาโหมสหรัฐอเมริกากำลังติดตามเศษซากชิ้นส่วน",
+        "en-ms": "Kawalan Strategik Amerika Syarikat dari pejabat Pertahanan A.S. sedang menjejaki serpihan."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "The result of plotting analysis will be posted to a public website.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "El resultado del análisis de rastreo se dará a conocer en un sitio web de acceso libre.",
+        "en-de": "Das Ergebnis der Plotting-Analyse wird auf einer öffentlichen Website publiziert.",
+        "en-zh": "绘图分析的结果将发布在公网上。",
+        "en-ar": "ستُنشر نتيجة التحليل البياني على موقع إلكتروني متاح للعامة.",
+        "en-ja": "プロット分析の結果は、公開サイトに掲載される予定です。",
+        "en-fr": "Le résultat de l'analyse du tracé sera publié sur un site Web public.",
+        "en-th": "จะมีการโพสต์ผลวิเคราะห์การพล็อตกราฟในเว็บไซต์สาธารณะ",
+        "en-ms": "Keputusan memplotkan analisis akan dipaparkan pada laman sesawang umum."
+      }
+    }
+  ]
+}

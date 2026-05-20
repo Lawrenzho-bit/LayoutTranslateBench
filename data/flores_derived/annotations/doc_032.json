@@ -1,0 +1,147 @@
+{
+  "doc_id": "doc_032",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/Doctor_to_be_charged_after_mother%27s_death_in_Ohio",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Crime and Law'."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "A doctor who worked at Children's Hospital of Pittsburgh, Pennsylvania will be charged with aggravated murder after her mother was found dead in the trunk of her car Wednesday, authorities in Ohio say.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "Las autoridades de Ohio informaron que se acusará de homicidio agravado a un médico que trabajó en el hospital para niños de Pittsburgh, Pensilvania, después de que se encontrara el cadáver de su madre en el maletero de su auto el día miércoles.",
+        "en-de": "Eine Ärztin, die im Kinderkrankenhaus von Pittsburgh (Pennsylvania) tätig war, wird wegen schweren Mordes angeklagt, nachdem ihre tote Mutter am Mittwoch im Kofferraum ihres Autos entdeckt wurde, sagen Behörden in Ohio.",
+        "en-zh": "俄亥俄州当局表示，因星期三于一名医生的汽车后备箱中发现其母尸体，这位在宾夕法尼亚州匹兹堡儿童医院工作的医生将面临情节严重的谋杀罪指控。",
+        "en-ar": "بحسب السلطات في أوهايو فإن طبيبةً قد عملت في مستشفى الأطفال في بيتسبرغ في ولاية بنسلفانيا، ستتهمُ بجريمةِ القتل المتعمد بعد أن عُثِرَ على أمها ميتة في صندوق سيارتها يوم الأربعاء.",
+        "en-ja": "ペンシルベニア州ピッツバーグの小児病院で働いていた医師は、水曜日に母親が車のトランクで死んでいるのが発見された後、加重殺人で起訴される予定であるとオハイオ州の当局は述べています。",
+        "en-fr": "Un médecin exerçant à l'hôpital pour enfants de Pittsburgh, en Pennsylvanie, a été accusé de meurtre avec circonstances aggravantes après que sa mère ait été retrouvée morte dans le coffre de sa voiture mercredi, selon les autorités de l'Ohio.",
+        "en-th": "เจ้าหน้าที่ในรัฐโอไฮโอกล่าวว่า แพทย์ผู้ปฏิบัติงานที่โรงพยาบาลเด็กเมืองพิตต์สเบิร์กในรัฐเพนซิลเวเนียรายหนึ่งจะถูกตั้งข้อหาคดีฆาตกรรม หลังจากที่มีการพบร่างไร้วิญญาณของมารดาในท้ายรถของเธอเองเมื่อวันพุธที่ผ่านมา",
+        "en-ms": "Seorang doktor yang bekerja di Hospital Kanak-kanak Pittsburgh, Pennsylvania akan didakwa untuk pembunuhan secara kejam selepas ibunya ditemui mati di dalam but keretanya pada hari Rabu, menurut pihak berkuasa di Ohio."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": "Dr. Malar Balasubramanian, 29, was found in Blue Ash, Ohio, a suburb approximately 15 miles north of Cincinnati lying on the ground beside the road in a T-shirt and underwear in an apparently heavily medicated state.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "La doctora Malar Balasubramanian, de 29 años, fue hallada en Blue Ash, Ohio, un suburbio ubicado a unas 15 millas al norte de Cincinnati, recostada sobre el suelo al lado de la carretera, vistiendo una remera y ropa interior, y en aparente estado de a sobremedicación.",
+        "en-de": "Dr. Malar Balasubramanian, 29, wurde in Blue Ash, Ohio, einem Vorort etwa 15 Meilen nördlich von Cincinnati, am Boden neben der Straße liegend in T-Shirt und Unterwäsche gefunden, scheinbar unter starkem Medikamenteneinfluss.",
+        "en-zh": "29 岁的 Malar Balasubramanian 医生在俄亥俄州辛辛那提市以北约 15 英里的郊区布鲁艾施被发现，她被找到时身穿 T 恤衫和内裤，躺在路边的地上，看上去服用了大量药物。",
+        "en-ar": "تم العثور على الدكتور مالار بالاسوبرامانيان -29 عاماً- في بلو آش، أوهايو، وهي ضاحية على بعد حوالي 15 ميلاً شمال سينسيناتي ملقاة على الأرض بجانب الطريق في قميص وملابس داخلية في حالة شديدة تحت تأثير الأدوية على ما يبدو.",
+        "en-ja": "マラー・バラスブラマニアン博士（29歳）は、シンシナティの郊外、北約15マイルのオハイオ州ブルーアッシュで遺体となって発見され、道路脇の地面にＴシャツと下着姿で横たわる姿は明らかに薬漬けの状態でした。",
+        "en-fr": "Le Dr Malar Balasubramanian, 29 ans, a été trouvé allongé sur le sol au bord de la route, à Blue Ash, dans l'Ohio, une banlieue située à environ 15 miles au nord de Cincinnati. Il était en T-shirt et en sous-vêtements, dans un état apparemment très médicamenté.",
+        "en-th": "ดร. Malar Balasubramanian วัย 29 ปี ถูกพบใน Blue Ash รัฐโอไฮโอ ซึ่งเป็นชานเมืองที่อยู่ห่างจากทางเหนือของซินซินนาติประมาณ 15 ไมล์ ขณะนอนอยู่บนพื้นข้างถนนโดยสวมเสื้อยืดและกางเกงชั้นใน ในสภาพที่ดูเหมือนอัดยามาอย่างหนัก",
+        "en-ms": "Dr. Malar Balasubramanian, 29, ditemui di Blue Ash, Ohio, pinggir bandar kira-kira 15 batu ke utara Cincinnati berbaring di atas tanah di tepi jalan berbaju T-shirt dan seluar dalam dengan keadaan yang mempunyai banyak ubat."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "She directed officers to her black Oldsmobile Intrigue which was 500 feet away.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Guio a los oficiales hasta su Oldsmobile Intrigue negro, que se encontraba a 500 pies del lugar.",
+        "en-de": "Sie führte die Offiziere zu ihrem schwarzen Oldsmobile Intrigue, das 500 Fuß entfernt war.",
+        "en-zh": "她向军官们指示往她的黑色奥兹莫比尔“激情”轿车查看，这辆车停在 500 英尺远的地方。",
+        "en-ar": "وجهتْ الضباط إلى سيارتها السوداء من طراز Oldsmobile Intrigue التي كانت تقع على بعد 500 قدم.",
+        "en-ja": "彼女は500フィート離れたところに駐車してあった黒いオールズモビル・イントリーグまで警官を案内した。",
+        "en-fr": "Elle a dirigé les officiers vers son Oldsmobile Intrigue noire qui se trouvait à 500 pieds de là.",
+        "en-th": "เธอพาเจ้าหน้าที่ตำรวจไปที่รถโอลด์สโมบิล อินทริก สีดำของเธอซึ่งจอดห่างออกไป 500 ฟุต",
+        "en-ms": "Dia mengarahkan pegawai ke kenderaannya, Oldsmobile Intrigue berwarna hitam yang terletak 500 kaki dari situ."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "There, they found the body of Saroja Balasubramanian, 53, covered with blood-stained blankets.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Allí descubrieron el cadáver de Saroja Balasubramanian, de 53 años, tapado con mantas teñidas con sangre.",
+        "en-de": "Dort fand man die Leiche von Saroja Balasubramanian, 53, unter blutverschmierten Decken.",
+        "en-zh": "在那里，他们发现了 53 岁的萨罗贾·巴拉苏布拉曼尼亚的尸体，盖着血迹斑斑的毯子。",
+        "en-ar": "وهناك وجدوا جثة ساروجا بالاسوبرامانيان، 53 عاماً، مغطاة ببطانيات ملطخة بالدماء.",
+        "en-ja": "そこにあったのは、血まみれの毛布に覆われたサロジャ・バラスブラマニアンさん（53歳）の遺体でした。",
+        "en-fr": "Là, ils ont trouvé le corps de Saroja Balasubramanian, 53 ans, couvert de couvertures tachées de sang.",
+        "en-th": "ณ ที่นั้น พวกเขาพบร่างของ Saroja Balasubramanian วัย 53 ปีซึ่งมีผ้าห่มเปื้อนเลือดปกคลุมอยู่",
+        "en-ms": "Di sana, mereka menemui mayat Saroja Balasubramanian, 53, yang ditutup dengan selimut berlumuran darah."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "Police said that the body appeared to have been there for about a day.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "La policía manifestó que el cadáver parecía haber estado allí alrededor de un día.",
+        "en-de": "Die Polizei sagte, der Körper schien seit etwa einem Tag dort gelegen zu haben.",
+        "en-zh": "警方说，尸体看上去在那里放了一天左右。",
+        "en-ar": "وقالت الشرطة إن الجثة بدت وكأنها كانت هناك منذ يوم تقريباً.",
+        "en-ja": "警察によると、その遺体は1日ほど前からそこにあったという。",
+        "en-fr": "La police a déclaré qu’il semblerait que le corps se trouvait là depuis un jour environ.",
+        "en-th": "ตำรวจกล่าวว่า ดูเหมือนศพจะอยู่ตรงนั้นมาประมาณหนึ่งวันแล้ว",
+        "en-ms": "Polis mengatakan bahawa mayat itu telah berada di sana selama satu hari."
+      }
+    }
+  ]
+}

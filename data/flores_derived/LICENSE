@@ -1,0 +1,35 @@
+FLORES-200-DERIVED DATA — CREATIVE COMMONS ATTRIBUTION-SHAREALIKE 4.0 INTERNATIONAL LICENSE
+============================================================================================
+
+The annotation files and rendered source PNGs in this directory
+(data/flores_derived/) are derivative works of the FLORES-200 dataset
+released by Meta AI Research under the Creative Commons Attribution-
+ShareAlike 4.0 International License (CC-BY-SA-4.0).
+
+Original source dataset:
+  FLORES-200: A Multi-Way Parallel Corpus
+  Released by Meta AI Research as part of the No Language Left Behind project
+  Repository: https://github.com/facebookresearch/flores
+  Release: https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz
+  License: CC-BY-SA-4.0
+  Citation: see CITATION.cff in the LTB repository root
+
+What this means for downstream users:
+
+  1. ATTRIBUTION — You must credit FLORES-200 and LayoutTranslateBench
+     when redistributing these files.
+  2. SHARE-ALIKE — Derivative works of these files must be released
+     under CC-BY-SA-4.0 (or a compatible later version). You may NOT
+     re-license these specific files under a different license.
+  3. SCOPE — This requirement applies ONLY to files in this directory
+     (data/flores_derived/). The LayoutTranslateBench *core* dataset
+     (data/annotations/*.json, data/sources/*.png, and v0.1.4 docs in
+     data/rileykim_derived/) is released under CC-BY-4.0 / Apache-2.0
+     respectively and is unaffected by this share-alike requirement.
+
+The full text of CC-BY-SA-4.0 is available at:
+  https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Source sentences are drawn from the FLORES-200 devtest split. Reference
+translations are professionally produced and are recorded in each
+annotation file's `provenance.grade` field as `"certified-translator"`.

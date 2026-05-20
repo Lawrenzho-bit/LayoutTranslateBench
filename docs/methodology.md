@@ -118,7 +118,13 @@ Weights are intentionally biased toward text quality (50%) — translation corre
 
 Each LTB-100 score is reported with a **95% bootstrap percentile confidence interval** — 1000 resamples with replacement from the per-document scores, fixed seed (42) for reproducibility.
 
-The leaderboard displays scores as `point [CI low, CI high]`. As of v0.1.4 the sample is N=10 author-curated docs per pair plus the rileykim expansion (N=17 for en-zh, N=18 for en-ja). CIs are still *wide* on the 6 pairs at N=10 — that is the methodologically honest signal that **a 5-point gap between two systems is below the noise floor at this sample size**. v0.2 will scale all pairs to N≥25, which should tighten CIs by roughly 2×.
+The leaderboard displays scores as `point [CI low, CI high]`. As of v0.1.5 the sample composition is:
+
+- v0.1.3 author-curated: N=10 per pair (all 8 pairs)
+- v0.1.4 rileykim ml-curated: +8 en-ja, +7 en-zh
+- v0.1.5 FLORES certified-translator: +10 per pair (all 8 pairs)
+
+So **per-pair counts are now N=20 for the 6 non-overlap pairs**, N=28 for en-ja, and N=27 for en-zh. CIs should be roughly √2× tighter than at v0.1.3's N=10. v0.2 will further scale to N≥25 author-curated per pair plus replace author-curated docs 001–010 with certified-translator references for a 2-reference multi-ref scoring scheme.
 
 ### Weight choice (v0.1.1 empirical ablation)
 
@@ -140,10 +146,14 @@ A separate `deepl-documents` runner (operating on PDFs end-to-end) is on the v0.
 
 This methodology has known limitations beyond what v0.1.1 fixes. See [`methodology-roadmap.md`](methodology-roadmap.md) for the full critique-to-status table, but in brief:
 
-- chrF as the text metric has known weaknesses (paraphrase-blindness, adequacy-blindness). v0.2 will adopt COMET-Kiwi-22.
-- References are author-curated single-translation for docs 001–010 and ml-curated (from rileykim/multilingual-document) for docs 011–025. v0.2 will commission certified translators with multi-reference scoring.
+- chrF as the text metric has known weaknesses (paraphrase-blindness, adequacy-blindness). COMET-Kiwi-22 is supported (`ltbench score --text-metric comet-kiwi`); v0.2 will make it the leaderboard default.
+- Reference quality is mixed by doc, fully transparent in each annotation's `provenance.grade` field:
+  - docs 001–010: **author-curated** (single translation, native-speaker non-professional level)
+  - docs 011–025: **ml-curated** (rileykim/multilingual-document, Apache-2.0)
+  - **docs 026–035: certified-translator** (FLORES-200, CC-BY-SA-4.0)
+  v0.2 will extend certified-translator coverage to all docs and add 2-reference multi-ref scoring.
 - No human evaluation correlation has been computed. v0.2 will add ~50 DA judgments to validate the automatic metric.
-- Sample size is N=10 author-curated per pair, supplemented by 15 rileykim-derived docs on en-ja (+8) and en-zh (+7). The other 6 pairs remain at N=10 and are the binding constraint on CI width. v0.2 will scale all pairs to N≥25 minimum.
+- Sample size is N=20 for the 6 non-overlap pairs (10 author + 10 FLORES), N=28 for en-ja, N=27 for en-zh. v0.2 will scale to N≥25 author-curated per pair *and* keep the FLORES + rileykim expansions.
 
 ### End-to-end vs oracle-layout systems (v0.1.1)
 

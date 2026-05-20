@@ -7,11 +7,16 @@ This directory holds the LTB dataset: the manifest, ground-truth annotations, an
 ```
 data/
 ├── manifest.json                      # Index of all documents (one entry per doc_id)
-├── annotations/                       # Author-curated annotations (v0.1, v0.1.3)
-├── sources/                           # Author-rendered page PNGs (v0.1, v0.1.3)
-└── rileykim_derived/                  # v0.1.4 expansion (Apache-2.0 source)
-    ├── annotations/                   # Annotations derived from rileykim/multilingual-document
-    └── sources/                       # Real-world OCR'd document images (downsampled <=1600px)
+├── annotations/                       # Author-curated annotations (v0.1, v0.1.3) — CC-BY-4.0
+├── sources/                           # Author-rendered page PNGs (v0.1, v0.1.3) — CC-BY-4.0
+├── rileykim_derived/                  # v0.1.4 expansion — Apache-2.0
+│   ├── annotations/                   # rileykim/multilingual-document derivatives
+│   └── sources/                       # Real-world OCR'd document images (downsampled <=1600px)
+└── flores_derived/                    # v0.1.5 expansion — CC-BY-SA-4.0
+    ├── LICENSE                        # Share-alike clause (FLORES-200 derivative)
+    ├── README.md                      # FLORES-derived documentation
+    ├── annotations/                   # FLORES-200 derivatives w/ certified-translator refs
+    └── sources/                       # Author-rendered synthetic layouts of FLORES sentences
 ```
 
 ## Manifest schema
@@ -43,7 +48,7 @@ All 10 v0.1.3 documents have:
 - Bounding-box annotations across 5–8 text regions per doc
 - Reference translations in 8 language pairs (`en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`, `en-fr`, `en-th`, `en-ms`)
 
-### v0.1.4 — rileykim/multilingual-document expansion (this release)
+### v0.1.4 — rileykim/multilingual-document expansion
 
 15 additional documents imported from [`rileykim/multilingual-document`](https://huggingface.co/datasets/rileykim/multilingual-document) (Apache-2.0):
 - **8 docs (doc_011–doc_018)** with `en-ja` references
@@ -56,16 +61,32 @@ These docs differ from v0.1.3 in three ways:
 
 Use case: the v0.1.4 expansion is layout-fidelity / reading-order ground truth on real document images, with reference translations for the two LTB pairs that overlap with rileykim. Use them to stress-test runners on real (not synthetic) document scans. Scoring against rileykim references should be reported with the "ml-curated" provenance caveat — see provenance table below.
 
+### v0.1.5 — FLORES-200 expansion (this release): **first industry-grade references**
+
+10 synthetic documents (doc_026–doc_035) composed from [FLORES-200](https://github.com/facebookresearch/flores) devtest sentences. **Each doc has references in all 8 LTB pairs, produced by professional translators** as part of the No Language Left Behind project. See `data/flores_derived/README.md` for full details.
+
+These are the **first certified-translator-grade references in LTB**. The v0.2 roadmap originally planned to commission certified translators at ~€10–25k for all docs; FLORES integration delivers part of that quality upgrade without budget, by reusing existing professional translations under the CC-BY-SA-4.0 share-alike license.
+
+- License segregation: `data/flores_derived/` is **CC-BY-SA-4.0** (share-alike), separated from the LTB core (CC-BY-4.0) to avoid contamination
+- Composition: 5–6 consecutive sentences per article from FLORES devtest, single-column layout, first sentence as title
+- Source articles are Wikinews, diverse topics (business, science, politics, health, crime, culture, etc.)
+- Coverage: **all 8 LTB pairs in every FLORES doc**
+
 ### Reference-translation provenance
 
-| Version | Provenance | Quality grade |
-|---|---|---|
-| v0.1 (docs 001–005) | Author-curated | Comparable to a competent native-speaker non-professional translator |
-| v0.1.3 (docs 006–010) | Author-curated, same standard as v0.1 | Same as above |
-| **v0.1.4 (docs 011–025)** | **rileykim/multilingual-document, Apache-2.0** | **ml-curated** (ML-system output published as references; lower than author-curated for stylistic fluency, but real-world image source) |
-| v0.2 (target Q3 2026) | Certified-translator, 2 references per pair | Industry-grade |
+| Version | Doc range | Provenance | Quality grade |
+|---|---|---|---|
+| v0.1 | docs 001–005 | Author-curated | Comparable to a competent native-speaker non-professional translator |
+| v0.1.3 | docs 006–010 | Author-curated, same standard as v0.1 | Same as above |
+| v0.1.4 | docs 011–025 | rileykim/multilingual-document (Apache-2.0) | ml-curated (ML output published as references) |
+| **v0.1.5** | **docs 026–035** | **FLORES-200 (CC-BY-SA-4.0)** | **certified-translator** (industry-grade, NLLB project) |
+| v0.2 target | all docs | Certified-translator, 2 references per pair | Industry-grade, multi-reference |
 
-References on docs 001–010 are **not certified-translator outputs**. References on docs 011–025 are **ml-curated** (provenance recorded in each annotation file's `provenance` block). Results computed against them should be reported with the appropriate caveat. v0.2 will introduce certified translations once the dataset-curation budget is secured (~€10–25k; see `docs/methodology-roadmap.md`).
+References on docs 001–010 are author-curated. References on docs 011–025 are ml-curated. **References on docs 026–035 are certified-translator-grade** (the same quality that LTB v0.2 was targeting). v0.2 will extend the certified-translator coverage to all 8 LTB pairs across all 35+ docs.
+
+When reporting LTB results, segment by reference grade where relevant:
+- **`overall_ltb_100`** — averages across all available references
+- **Certified-subset score** — restrict to docs 026–035 for the most reliable signal (industry-grade refs, all 8 pairs)
 
 ### Why these 5 new docs
 

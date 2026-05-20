@@ -1,0 +1,147 @@
+{
+  "doc_id": "doc_033",
+  "page_size": [
+    800,
+    1100
+  ],
+  "provenance": {
+    "source": "facebook/flores-200",
+    "source_image_id": "https://en.wikinews.org/wiki/India_struggles_with_encephalitis_outbreak",
+    "license": "CC-BY-SA-4.0",
+    "grade": "certified-translator",
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Health'."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        50,
+        60,
+        700,
+        70
+      ],
+      "text": "The first cases of the disease this season were reported in late July.",
+      "reading_order": 0,
+      "layout_class": "title",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 22,
+        "bold": true
+      },
+      "references": {
+        "en-es": "Los primeros casos de la enfermedad durante esta temporada se registraron hacia fines de julio.",
+        "en-de": "Die ersten Fälle der Krankheit dieser Saison wurden Ende Juli gemeldet.",
+        "en-zh": "7 月下旬报告了本季节的第一批病例。",
+        "en-ar": "تم الإعلان عن أول حالات المرض هذا الموسم في نهاية شهر تموز.",
+        "en-ja": "今シーズン最初の発病例が報告されたのは7月下旬でした。",
+        "en-fr": "Les premiers cas de cette maladie saisonnière ont été déclarés fin juillet.",
+        "en-th": "มีรายงานเกี่ยวกับผู้ป่วยโรคนี้รายแรก ๆ ในฤดูกาลนี้ในปลายเดือนกรกฎาคม",
+        "en-ms": "Kes-kes pertama penyakit berkenaan untuk musim ini dilapor dalam akhir bulan Julai."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        50,
+        150,
+        700,
+        120
+      ],
+      "text": "The disease is carried by pigs, which then migrates to humans through mosquitos.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Los cerdos son los portadores de la enfermedad, que luego migra a los humanos mediante los mosquitos.",
+        "en-de": "Die Krankheit wird von Schweinen übertragen und wandert dann durch Mücken zum Menschen.",
+        "en-zh": "猪携带该疾病，然后通过蚊子传染给人类。",
+        "en-ar": "يتم نقل المرض من خلال الخنازير، والذي ينتقل بعد ذلك إلى البشر من خلال البعوض.",
+        "en-ja": "この病気は豚によって運ばれ、その後、蚊を媒介にして人間に感染します。",
+        "en-fr": "Les porcs sont porteurs de la maladie, qui est ensuite transmise à l'homme par les moustiques.",
+        "en-th": "โรคนี้มีสุกรเป็นพาหะซึ่งถ่ายทอดสู่มนุษย์หลังจากนั้นผ่านทางยุง",
+        "en-ms": "Penyakit tersebut dibawa babi, yang kemudian berpindah ke manusia melalui nyamuk."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        50,
+        290,
+        700,
+        120
+      ],
+      "text": "The outbreak has prompted the Indian government to undertake such measures as deployment of pig catchers in seriously affected areas, distributing thousands of mosquito curtains and spraying pesticides.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "El brote ha conducido a las autoridades de la India a adoptar medidas como el despliegue de cazadores de cerdos, la entrega entre la población de miles de cortinas antimosquitos y la utilización de pesticidas en las zonas más afectadas.",
+        "en-de": "Der Ausbruch der Krankheit veranlasste die indische Regierung dazu, in stark betroffenen Gebieten Schweinefänger zu beauftragen, tausende Moskitonetze zu verteilen sowie Pflanzenschutzmittel zu versprühen.",
+        "en-zh": "这场疫情促使印度政府采取一些措施，比如在严重感染地区放置捕猪器、派发数千个蚊帐并喷洒杀虫剂。",
+        "en-ar": "حضّ انتشار الوباء الحكومة الهندية على أن تتخذ إجراءات كنشر من يصطاد الخنازير في المناطق المصابة بشدة وكذلك أن توزع آلاف من ستائر البعوض وأن ترش مبيدات حشرية.",
+        "en-ja": "この大流行により、インド政府は深刻な影響を受けた地域への豚捕獲員の配置、数千張の蚊帳の配布、殺虫剤の散布などの措置をとりました。",
+        "en-fr": "L’épidémie a incité le gouvernement indien à prendre des mesures telles que le déploiement de collecteurs de porcs dans les zones gravement touchées, la distribution de milliers de moustiquaires et la pulvérisation de pesticides.",
+        "en-th": "การแพร่ระบาดกระตุ้นให้รัฐบาลอินเดียดำเนินมาตรการต่าง ๆ เช่น ติดตั้งเครื่องมือดักจับหมูในพื้นที่ที่ได้รับผลกระทบขั้นร้ายแรง แจกมุ้งหลายพันผืน และฉีดพ่นยาฆ่าแมลง",
+        "en-ms": "Wabak itu telah menggesa kerajaan India untuk mengambil tindakan seperti menghantar penangkap babi di kawasan yang terjejas secara serius, mengedar beribu-ribu langsir anti-nyamuk dan menyembur racun perosak."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        50,
+        430,
+        700,
+        120
+      ],
+      "text": "Several million vials of encephalitis vaccine have also been promised by the government, which will help prepare health agencies for next year.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Las autoridades también han garantizado varios millones de viales de la vacuna para luchar contra la encefalitis, lo que permitirá a las empresas sanitarias prepararse para el próximo año.",
+        "en-de": "Die Regierung hat auch mehrere Millionen Fläschchen Impfstoff gegen Gehirnentzündung versprochen, die helfen werden, die Gesundheitsämter für das nächste Jahr zu wappnen.",
+        "en-zh": "政府还承诺提供数百万剂脑炎疫苗，这将有助于医疗机构为明年做好准备。",
+        "en-ar": "ووعدت الحكومة بتوفير عدة ملايين من قنينات لقاح التهاب الدماغ، مما سيساعد في استعداد الوكالات الصحية للعام القادم.",
+        "en-ja": "数百万本の脳炎ワクチンも政府から約束されており、来年に向けて保健機関の準備に役立ちます。",
+        "en-fr": "Plusieurs millions de flacons de vaccin contre l'encéphalite ont également été promis par le gouvernement, ce qui aidera à préparer les agences sanitaires pour l'année prochaine.",
+        "en-th": "รัฐบาลยังสัญญาอีกด้วยว่าจะมีวัคซีนไข้สมองอักเสบหลายล้านขวดซึ่งจะช่วยเตรียมความพร้อมให้หน่วยงานด้านสุขภาพสำหรับปีหน้า",
+        "en-ms": "Berjuta botol vaksin ensefalitis telah dijanjikan oleh pihak kerajaan, yang dapat membantu dalam persediaan agensi kesihatan untuk tahun depan."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        50,
+        570,
+        700,
+        120
+      ],
+      "text": "Plans for vaccines to be delivered to the historically most affected areas this year were delayed due to lack of funds and low prioritisation relative to other diseases.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 14
+      },
+      "references": {
+        "en-es": "Este año, la escasez de recursos monetarios y la poca priorización, comparado con otras enfermedades, han provocado demoras en la ejecución de los planes de entrega de la vacuna en las regiones históricamente más vulnerables.",
+        "en-de": "Pläne für Impfstoffe, die in diesem Jahr in die historisch am stärksten betroffenen Gebiete geliefert werden sollten, verzögerten sich aufgrund fehlender Mittel und niedriger Prioritätensetzung im Vergleich zu anderen Krankheiten.",
+        "en-zh": "由于缺乏资金，且与其他疾病相比优先级较低，今年向历史上疫情最严重的地区提供疫苗的计划被推迟了。",
+        "en-ar": "تم تأجيل خطط توصيل اللقاحات إلى المناطق الأكثر تضرراً على مر التاريخ هذا العام بسبب نقص التمويل وتحديد أولوية منخفضة للمرض بالنسبة للأمراض الأخرى.",
+        "en-ja": "今年、歴史的に最も被害が甚大だった地域にワクチンを届けるという計画でしたが、資金不足と他の疾病に比べて優先順位が低いという理由で遅れていました。",
+        "en-fr": "Les plans de livraison de vaccins dans les zones historiquement les plus touchées cette année ont été retardés en raison du manque de fonds et de la faible priorité accordée à ces maladies par rapport à d’autres.",
+        "en-th": "เกิดความล่าช้าในแผนการจัดส่งวัคซีนไปยังพื้นที่ที่ได้รับผลกระทบมากที่สุดเป็นประวัติการณ์ในปีนี้ เนื่องจากไม่มีเงินทุนและอยู่ในลำดับความสำคัญต่ำเมื่อเทียบกับโรคอื่น ๆ",
+        "en-ms": "Rancangan untuk menghantar vaksin ke tempat-tempat yang paling terjejas teruk tahun ini terlewat disebabkan kekurangan dana dan kurang keutamaan berbanding kepada penyakit lain."
+      }
+    }
+  ]
+}
