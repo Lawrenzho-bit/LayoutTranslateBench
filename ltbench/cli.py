@@ -683,6 +683,105 @@ def run_nllb(
     )
 
 
+@app.command(name="run-opus-mt")
+def run_opus_mt(
+    manifest: Path = typer.Option(Path("data/manifest.json")),
+    data_root: Path = typer.Option(Path("data")),
+    submission_dir: Path = typer.Option(Path("submissions/opus-mt-text-oracle")),
+    device: Optional[str] = typer.Option(None, help="cuda | cpu (auto if unset)"),
+    num_beams: int = typer.Option(4),
+    batch_size: int = typer.Option(8),
+    lang_pairs: Optional[str] = typer.Option(
+        None, help="Comma-separated subset of language pairs."
+    ),
+    docs: Optional[str] = typer.Option(None, help="Comma-separated subset of doc_ids."),
+    skip_no_ref: bool = typer.Option(
+        True,
+        help="Skip (doc, pair) combinations whose annotation has no reference for the "
+        "target language pair. Default True; set --no-skip-no-ref to translate every "
+        "combination.",
+    ),
+) -> None:
+    """Run the Helsinki-NLP/opus-mt Text runner (oracle layout, Apache-2.0 MT).
+
+    Requires: pip install -e ".[runners-nllb]" (same deps: torch+transformers+sentencepiece).
+
+    Covers all 16 LTB pairs via 14 distinct per-language opus-mt models, with
+    prefix-token routing for en-th / en-ms / en-uz / en-kk / en-zh / en-zh-tw / en-ar.
+    Models are loaded on demand and cached; total RAM ~4GB if you run all 16.
+    """
+    from ltbench.runners import get_opus_mt_text_runner
+
+    m = load_manifest(manifest)
+    runner = get_opus_mt_text_runner(
+        device=device, num_beams=num_beams, batch_size=batch_size
+    )
+
+    selected_pairs = list(LANG_PAIRS)
+    if lang_pairs:
+        wanted = {p.strip() for p in lang_pairs.split(",") if p.strip()}
+        selected_pairs = [p for p in LANG_PAIRS if p in wanted]
+        if not selected_pairs:
+            console.print(f"[red]No valid language pairs in --lang-pairs {lang_pairs}[/red]")
+            raise typer.Exit(code=2)
+
+    selected_entries = list(m.entries)
+    if docs:
+        wanted_docs = {d.strip() for d in docs.split(",") if d.strip()}
+        selected_entries = [e for e in m.entries if e.doc_id in wanted_docs]
+        if not selected_entries:
+            console.print(f"[red]No matching doc_ids in --docs {docs}[/red]")
+            raise typer.Exit(code=2)
+
+    submission_dir.mkdir(parents=True, exist_ok=True)
+    console.print(f"[cyan]Loading[/cyan] Helsinki-NLP/opus-mt-* (on demand) ...")
+    runner._ensure_loaded()
+    console.print(f"[green]Device: {runner._actual_device}.[/green]")
+
+    sys_manifest_path = submission_dir / "manifest.json"
+    with sys_manifest_path.open("w", encoding="utf-8") as f:
+        json.dump(runner.system_manifest().model_dump(), f, indent=2)
+
+    total = len(selected_pairs) * len(selected_entries)
+    n_written = 0
+    n_skipped = 0
+    runtime_total = 0.0
+    for lang_pair in selected_pairs:
+        path = submission_dir / f"{lang_pair}.jsonl"
+        with path.open("w", encoding="utf-8") as f:
+            for entry in selected_entries:
+                ann = load_annotation(data_root / entry.annotation_file)
+                if skip_no_ref and not any(
+                    lang_pair in r.references for r in ann.regions
+                ):
+                    n_skipped += 1
+                    n_written += 1
+                    continue
+                console.print(
+                    f"  [dim]({n_written + 1}/{total})[/dim] {lang_pair} / {entry.doc_id}",
+                    end="",
+                )
+                sub: DocumentSubmission = runner.translate(ann, lang_pair)  # type: ignore[arg-type]
+                f.write(sub.model_dump_json() + "\n")
+                n_written += 1
+                runtime_total += sub.runtime_seconds or 0.0
+                rt = (
+                    f" ({sub.runtime_seconds:.1f}s)" if sub.runtime_seconds is not None else ""
+                )
+                console.print(f" [green]->[/green] {len(sub.regions)} regions{rt}")
+
+    if n_skipped:
+        console.print(
+            f"[yellow]Skipped {n_skipped} (doc, pair) combinations lacking references "
+            f"(use --no-skip-no-ref to translate anyway).[/yellow]"
+        )
+    runner.close()
+    console.print(
+        f"[green]Wrote {n_written - n_skipped} submissions[/green] to {submission_dir}"
+        f" (total {runtime_total:.1f}s)"
+    )
+
+
 @app.command(name="export-eval-prompts")
 def export_eval_prompts(
     submissions: list[str] = typer.Option(

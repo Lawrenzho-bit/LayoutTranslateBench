@@ -1,6 +1,6 @@
 # LayoutTranslateBench Leaderboard
 
-_Generated 2026-05-20T08:30:04+00:00 from LayoutTranslateBench v0.1.0._
+_Generated 2026-05-20T09:58:03+00:00 from LayoutTranslateBench v0.1.0._
 
 **Sample size — v0.1.5.** Per-pair counts: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms (10 author-curated + 10 FLORES-200), N=28 for en-ja (+8 rileykim), N=27 for en-zh (+7 rileykim). LTB-100 cell shows `point [95% CI low, CI high]` via 1000-resample percentile bootstrap. CIs at N=20 are roughly √2× tighter than v0.1.3's N=10.
 
@@ -27,6 +27,7 @@ _Generated 2026-05-20T08:30:04+00:00 from LayoutTranslateBench v0.1.0._
 |---:|:---|:---|---:|---:|---:|:---:|---:|---:|:---|
 | 1 | deepl-text-oracle v0.1.0 | 78.20 [75.2, 81.7] | 56.40 | 1.0000 | 1.0000 | 6/16 | 0.40 | $0.0000 | api |
 | 2 | nllb-text-oracle-nllb-200-distilled-600m v0.1.0 | 73.85 [72.5, 75.2] | 41.02 | 1.0000 | 1.0000 | 16/16 | — | — | cpu |
+| 3 | opus-mt-text-oracle v0.1.0 | 68.34 [66.5, 70.1] | 28.42 | 1.0000 | 1.0000 | 16/16 | — | — | cpu |
 
 ---
 
@@ -51,6 +52,7 @@ _Generated 2026-05-20T08:30:04+00:00 from LayoutTranslateBench v0.1.0._
 |---:|:---|:---|---:|---:|---:|:---:|---:|---:|:---|
 | 1 | nllb-text-oracle-nllb-200-distilled-600m v0.1.0 | 86.77 [85.6, 87.9] | 65.78 | 1.0000 | 1.0000 | 16/16 | — | — | cpu |
 | 2 | deepl-text-oracle v0.1.0 | 84.89 [81.4, 88.0] | 69.77 | 1.0000 | 1.0000 | 6/16 | 0.40 | $0.0000 | api |
+| 3 | opus-mt-text-oracle v0.1.0 | 79.64 [78.0, 81.3] | 49.31 | 1.0000 | 1.0000 | 16/16 | — | — | cpu |
 
 ---
 
