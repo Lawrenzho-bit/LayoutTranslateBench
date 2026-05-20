@@ -1,6 +1,6 @@
 # LayoutTranslateBench
 
-> The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality. 200 documents, 8 language pairs (en-es, en-de, en-zh, en-ar, en-ja, en-fr, en-th, en-ms), single composite score LTB-100. Open code (Apache-2.0) and open dataset (CC-BY-4.0). Notably: en-th and en-ms are NOT supported by DeepL — exposed as commercial coverage gaps by the benchmark.
+> The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality. 200 documents, 16 language pairs (core 8: en-es, en-de, en-zh, en-ar, en-ja, en-fr, en-th, en-ms; v0.1.6 extension: en-ru, en-ko, en-vi, en-id, en-ur, en-uz, en-kk, en-zh-tw), single composite score LTB-100. Open code (Apache-2.0) and open dataset (CC-BY-4.0). Notably: en-th and en-ms are NOT supported by DeepL — exposed as commercial coverage gaps by the benchmark.
 
 LayoutTranslateBench (LTB) evaluates translation systems on documents — not plain text. Each document is annotated with text regions (bounding boxes, reading order, style hints) and reference translations. Submissions report both the translated text AND where the translated text was placed in the rendered output, so LTB can score translation quality (chrF), layout fidelity (IoU), and reading-order preservation (Kendall tau) simultaneously.
 

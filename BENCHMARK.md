@@ -9,7 +9,7 @@ Today's translation tools either translate **plain text** (DeepL, Google Transla
 - **Name:** LayoutTranslateBench (LTB)
 - **Version:** 0.1
 - **Documents:** 200 (target) — 10 categories × 20 documents
-- **Language pairs:** 8 — `en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`, `en-fr`, `en-th`, `en-ms`
+- **Language pairs:** 16 — `en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`, `en-fr`, `en-th`, `en-ms` (core 8) + `en-ru`, `en-ko`, `en-vi`, `en-id`, `en-ur`, `en-uz`, `en-kk`, `en-zh-tw` (v0.1.6 extension)
 - **License:** Code Apache-2.0, dataset CC-BY-4.0 (per-doc license recorded in manifest)
 - **Composite score:** LTB-100 (range 0–100, higher is better)
 - **Submission format:** One JSONL per (system × language pair); see `docs/submission.md`
@@ -83,20 +83,33 @@ This pipeline — what most current tools do — fails on at least four axes tha
 | Bank statements / tabular forms | 20 | Dense tables, alignment-sensitive |
 | Handwritten or mixed-media | 20 | The hard tier; tests OCR + translate jointly |
 
-## Language pairs and why these eight
+## Language pairs
+
+### Core 8 (v0.1)
 
 - **en→es** — highest-volume Latin pair; immigration, education, e-commerce
 - **en→de** — text expansion stress test (~30% longer); DACH market
-- **en→zh** — script change + contraction stress test (~30–50% shorter)
+- **en→zh** — script change + contraction stress test (~30–50% shorter); Simplified Chinese
 - **en→ar** — RTL stress test; mirrors layout; ligature-heavy
 - **en→ja** — mixed scripts (kanji + kana + Latin); optional vertical text
 - **en→fr** — France launch market; sworn-translation industry baseline; well-supported by commercial systems
 - **en→th** — Thai script; **DeepL does not support this pair** — exposes a commercial coverage gap relevant to the Southeast Asia market
 - **en→ms** — Bahasa Melayu; **DeepL does not support this pair** — ASEAN hub adjacency to Indonesian (270M speakers)
 
-The inclusion of `en→th` and `en→ms` is deliberate: both are commercially valuable language pairs that current state-of-the-art document-translation APIs (DeepL Documents, etc.) simply do not cover, making them a structural product opportunity that the benchmark surfaces empirically.
+### Extension 8 (v0.1.6)
 
-Future versions may add `zh-en`, `es-en`, `de-en` (reverse), and additional pairs (`hi`, `pt-br`, `ko`, `vi`, `id`).
+- **en→ru** — Cyrillic; largest European language by population; high CIS demand
+- **en→ko** — Hangul; South Korean tech/media markets
+- **en→vi** — Latin script; Vietnam; Southeast Asia expansion
+- **en→id** — Latin script; Indonesian (270M speakers); overlaps en→ms audience
+- **en→ur** — Arabic-family script; Pakistan; distinct from Modern Standard Arabic
+- **en→uz** — Latin script (post-2018 reform); Uzbekistan; Central Asia
+- **en→kk** — Cyrillic; Kazakhstan; Central Asia; underserved in commercial MT
+- **en→zh-tw** — Traditional Chinese; Taiwan / Hong Kong / diaspora; distinct from Simplified
+
+**Coverage note (v0.1.6.4):** The rileykim/multilingual-document ingest revealed labeling bugs in some rows where `en-ru` rows carried Chinese-script `tgt_text`. After script-validation cleanup, `en-ru` has 0 scored documents (the docs are retained for layout testing). All other extension pairs retain ≥ 1 doc each.
+
+Future versions may add reverse directions (`zh-en`, `es-en`, `de-en`) and additional pairs (`hi`, `pt-br`, `sw`).
 
 ## Reproducibility
 

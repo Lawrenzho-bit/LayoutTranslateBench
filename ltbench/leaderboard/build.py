@@ -163,10 +163,12 @@ def _render_markdown(
     generated_at: str,
 ) -> str:
     n_caveat = (
-        "**Sample size — v0.1.5.** Per-pair counts: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms "
-        "(10 author-curated + 10 FLORES-200), N=28 for en-ja (+8 rileykim), N=27 for en-zh "
-        "(+7 rileykim). LTB-100 cell shows `point [95% CI low, CI high]` via 1000-resample "
-        "percentile bootstrap. CIs at N=20 are roughly √2× tighter than v0.1.3's N=10."
+        "**Sample size — v0.1.6.** Core 8 pairs: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms, "
+        "N=28 for en-ja, N=27 for en-zh. Extension 8 pairs (v0.1.6): N=3 each for "
+        "en-ko/en-vi/en-id/en-ur/en-uz/en-kk/en-zh-tw; N=0 for en-ru (rileykim labeling bug "
+        "removed all refs at v0.1.6.4 script-validation). "
+        "LTB-100 cell shows `point [95% CI low, CI high]` via 1000-resample percentile bootstrap. "
+        "Coverage column shows pairs with ≥1 scored doc."
     )
     metric_caveat = (
         "**Metric.** Two parallel leaderboards are shown — **chrF** (character-level F-score, "
