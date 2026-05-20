@@ -1,0 +1,263 @@
+{
+  "doc_id": "doc_059",
+  "page_size": [
+    811,
+    1059
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_48806",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        80,
+        90,
+        493,
+        19
+      ],
+      "text": "2-0rder of Appearances,l955 Requirements Hearing,ll-9-5l",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "2-出現順序,1955年聽證會要求,11-9-51"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        38,
+        140,
+        139,
+        21
+      ],
+      "text": "10R.E.James",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "10R.E.詹姆斯"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        42,
+        225,
+        126,
+        21
+      ],
+      "text": "Jeff Kibre",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "傑夫·基布雷"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        357,
+        142,
+        350,
+        70
+      ],
+      "text": "President, International Council of Sugar Workers and Allied Industries Union 484 New Brotherhood Building Kansas City 1, Kansas",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "國際糖業工人及盟友工會484分會主席，新兄弟會大樓，堪薩斯城1號，堪薩斯州"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        357,
+        227,
+        384,
+        86
+      ],
+      "text": "Washington Representative International Longshoremen's & \" arehousemen's Union 930 F Street, N. . Washington, D. C.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "華盛頓代表國際碼頭工人與倉庫工人聯合會 930 F街，N.W. 華盛頓特區"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        359,
+        328,
+        299,
+        36
+      ],
+      "text": "Cuban Sugar Stabilization Institute Agramonte 465, Havana, Cuba",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "古巴糖業穩定研究所，阿格拉蒙特465號，哈瓦那，古巴"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        359,
+        379,
+        389,
+        35
+      ],
+      "text": "Chairman, United States Cuban Sugar Council 910 17th St., N. W., Washington, D. C.",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "美國古巴糖業理事會主席，華盛頓特區西北17街910號"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        357,
+        430,
+        191,
+        35
+      ],
+      "text": "Industrial Users Group Washington, D. C.",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "工業用戶組 華盛頓特區"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        356,
+        481,
+        351,
+        69
+      ],
+      "text": "Chairman, Special Sugar Committee American Bottlers of Carbonated Beverages 1126 16th Street, N. W. Washington, D. C.",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "主席，特別糖業委員會 美國碳酸飲料裝瓶商 16街西北1126號 華盛頓特區"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        356,
+        566,
+        306,
+        52
+      ],
+      "text": "Counsel American Bakers Association 1317 F St., N. W., Washington, D. C.",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "美國烘焙協會顧問 1317 F街西北，華盛頓特區"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        357,
+        634,
+        323,
+        52
+      ],
+      "text": "Executive Secretary International Assn. of Ice Cream Mfrs. Washington 6, D. C.",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "國際冰淇淋製造商協會執行秘書 華盛頓特區"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        356,
+        701,
+        257,
+        53
+      ],
+      "text": "National Confectioners' Assoc. 1028 Connecticut Ave., N.W. Washington, D. C.",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "全國糖果協會。地址：美國華盛頓特區西北康涅狄格大道1028號。"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        40,
+        308,
+        203,
+        434
+      ],
+      "text": "Dr.Arturo M.Manas Lawrence A. Crosby、Joseph M。Creed-Wilbur H.GlennJoseph M. CreedRobert C.HibbeneJames Mack",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "阿圖羅·M·馬納斯博士、勞倫斯·A·克羅斯比、約瑟夫·M·克里德-威爾伯·H·格倫、約瑟夫·M·克里德、羅伯特·C·希本內、詹姆斯·麥克"
+      }
+    }
+  ]
+}

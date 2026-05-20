@@ -1,0 +1,149 @@
+{
+  "doc_id": "doc_045",
+  "page_size": [
+    1600,
+    2122
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_07307",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        681,
+        284,
+        220,
+        37
+      ],
+      "text": "FEBRUARY 2002",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Februari 2002"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        253,
+        327,
+        41,
+        113
+      ],
+      "text": "1 2 3",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "1 2 3\n\n(Catatan: Angka dalam bahasa China biasanya tetap sama dan tidak diterjemahkan. Jika perlu diubah menjadi angka China, adalah: satu dua tiga)"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        260,
+        486,
+        30,
+        35
+      ],
+      "text": "5",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "5"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        328,
+        494,
+        994,
+        237
+      ],
+      "text": "Check company bulletin board for job openings listed on Job Awareness System. Attend Employee Meeting held by CEO - discussion of year-end results and goals for coming year. Attend lunchtime presentation by Nana Mensah (RJR board member) in honor of Black History Month. He will discuss role of minorities in business.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Periksa papan pengumuman perusahaan untuk lowongan pekerjaan yang tercantum pada sistem kesadaran kerja. Menghadiri rapat staf yang diselenggarakan oleh CEO untuk membahas hasil akhir tahun dan tujuan untuk tahun mendatang. Bergabunglah bersama kami untuk presentasi siang hari dalam rangka Bulan Sejarah Hitam oleh Nana Mensah (Anggota Dewan RJR), yang akan membahas peran minoritas dalam bisnis."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        268,
+        577,
+        12,
+        30
+      ],
+      "text": "6",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "6"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        253,
+        735,
+        1057,
+        1095
+      ],
+      "text": "8 9 Leave for training on cigarette-packing machinery in Bologna, Italy. 10 11 12 13 14 15 All-employee performance bonus check to arrive. Deposit in credit union account . 16 Return from Italy. 17 Volunteer at Big Brothers/Big Sisters bowl-a-thon to raise money for agency on behalf of company's Volunteer Steering Committee. 18 19 Visit display on contributions of African-American employees in manufacturing for Black History Month. 20 21 Attend 2-day Diversity Awareness Workshop (taught in-house). 22D iversity Awareness Workshop (second day 23 24 25A ttend brain-storming session on arrangements for upcoming annual stock holders meeting to be held in-house in April. 26A trend Employee Awards luncheon - CEO to recognize winners and discuss business. 27 28R ead Caravan (bi-monthly company magazine covering brand activities, business goal, etc.).",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "8 9 Pergi ke Bologna, Italia untuk mengikuti pelatihan mesin pengemasan rokok. 10 11 12 13 14 15 Cek bonus kinerja seluruh karyawan akan tiba. Setor ke rekening credit union. 16 Kembali dari Italia. 17 Berpartisipasi dalam maraton bowling Big Brothers/Big Sisters atas nama Komite Pengarah Relawan perusahaan untuk mengumpulkan dana bagi organisasi. 18 19 Rayakan Bulan Sejarah Kulit Hitam dengan pameran kontribusi pekerja Afrika-Amerika di bidang manufaktur. 20 21 Hadiri lokakarya kesadaran keberagaman selama dua hari (diajarkan secara internal). 22 Lokakarya Kesadaran Keberagaman (Hari ke-2). 23 24 25 Berpartisipasi dalam sesi brainstorming mengenai pengaturan RUPS mendatang yang akan diadakan secara internal pada bulan April. 26 Makan Siang Pengakuan Karyawan - CEO akan memberikan penghargaan kepada penerima penghargaan dan mendiskusikan bisnis. 27 28 Baca Caravan (majalah perusahaan dua bulanan yang meliput acara merek, tujuan bisnis, dan banyak lagi)."
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        69,
+        41,
+        270,
+        27
+      ],
+      "text": "100 Best Calendar.doc",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "100 Kalender Terbaik.doc"
+      }
+    }
+  ]
+}

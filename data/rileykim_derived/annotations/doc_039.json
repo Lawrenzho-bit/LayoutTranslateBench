@@ -1,0 +1,472 @@
+{
+  "doc_id": "doc_039",
+  "page_size": [
+    1600,
+    2049
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_08227",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        242,
+        281,
+        582,
+        93
+      ],
+      "text": "From:WASHINGTON UNIVERSITYLindell & Skinker BoulevardsSt.Louis 3O,Missouri",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "보낸 사람:워싱턴 대학교 Lindell & Skinker BoulevardsSt.Louis 3O, Missouri"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        248,
+        402,
+        727,
+        122
+      ],
+      "text": "To:AF Property AdministratorSt.Louis Contrct Monagement District1ll4Market StreetSt.Louis 1,Missouri",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "받는 사람:AF 부동산 관리자St.Louis Contrct Monagement District1ll4Market StreetSt.Louis 1,Missouri"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        246,
+        583,
+        456,
+        31
+      ],
+      "text": "ContractNo.DA-49-007-MD-1024",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "계약번호 DA-49-007-MD-1024"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        248,
+        702,
+        768,
+        35
+      ],
+      "text": "Covering Period January 1, 1963 to January 31, 1963",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "적용기간 1963년 1월 1일 ~ 1963년 1월 31일"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        248,
+        767,
+        110,
+        27
+      ],
+      "text": "Quanity",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "수량"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        400,
+        766,
+        350,
+        29
+      ],
+      "text": "Nomenclature and Vendor",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "명명법 및 공급업체"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        878,
+        762,
+        136,
+        31
+      ],
+      "text": "Unit Cost",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "단가"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        1147,
+        761,
+        154,
+        33
+      ],
+      "text": "Total Cost",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "총 비용"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        287,
+        822,
+        501,
+        180
+      ],
+      "text": "Head ML#277 Cups, ML#384 HHNEH Multiple Carriers#1021 Multispeed Attachment //103 Head /295 A. S. Aloe",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "헤드 ML#277 컵, ML#384 HHNEH 다중 캐리어#1021 다중 속도 부착 //103 헤드/295 A. S. 알로에"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        907,
+        822,
+        101,
+        149
+      ],
+      "text": "71.05 62.72 57 .82 230.30 98.00",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "71.05 62.72 57 .82 230.30 98.00"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        1192,
+        940,
+        94,
+        31
+      ],
+      "text": "519.89",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "519.89"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        286,
+        1030,
+        447,
+        214
+      ],
+      "text": "Centrituge VE3425 Head ML/240 CO F CO OHH Shields 15 ML/302 Shields 100 ML/ 341 Multiple Carriers #354 Trunnion Rings #310 A. S. Aloe",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "Centrituge VE3425 헤드 ML/240 CO F CO OHH 쉴드 15 ML/302 쉴드 100 ML/ 341 다중 캐리어 #354 트러니언 링 #310 A. S. Aloe"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        907,
+        1031,
+        101,
+        186
+      ],
+      "text": "743.82 42.63 24.32 23.52 14.80 17.62",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "743.82 42.63 24.32 23.52 14.80 17.62"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        1190,
+        1178,
+        97,
+        39
+      ],
+      "text": "866.71",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "866.71"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        397,
+        1271,
+        368,
+        61
+      ],
+      "text": "Spectrophotometer #13400 A. S. Aloe",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "분광 광도계 #13400 A.S. 알로에"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        1165,
+        1270,
+        127,
+        36
+      ],
+      "text": "3,234.00",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "3,234.00"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        289,
+        1361,
+        25,
+        31
+      ],
+      "text": "1",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "1"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        388,
+        1362,
+        312,
+        63
+      ],
+      "text": "Heating Mantle #M116 A. S. Aloe",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "가열 맨틀 #M116 A.S. 알로에"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        1207,
+        1359,
+        82,
+        38
+      ],
+      "text": "51.45",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "51.45"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        1136,
+        1420,
+        153,
+        38
+      ],
+      "text": "4 4, 672.05",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "4 4, 672.05"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        845,
+        1572,
+        246,
+        63
+      ],
+      "text": "M. M. Huntsinger Comptroller",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "M. M. Huntsinger 감사관"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        248,
+        1723,
+        454,
+        91
+      ],
+      "text": "cc: Property Administrator (2) Project Director Business Office",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "참조: 자산 관리자(2) 프로젝트 디렉터 비즈니스 사무실"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        848,
+        1754,
+        245,
+        60
+      ],
+      "text": "Robert Shank Project Director",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "로버트 생크 프로젝트 디렉터"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        846,
+        1842,
+        200,
+        33
+      ],
+      "text": "March 5, 1963",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "1963년 3월 5일"
+      }
+    }
+  ]
+}

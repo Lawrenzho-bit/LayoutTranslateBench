@@ -118,13 +118,16 @@ Weights are intentionally biased toward text quality (50%) — translation corre
 
 Each LTB-100 score is reported with a **95% bootstrap percentile confidence interval** — 1000 resamples with replacement from the per-document scores, fixed seed (42) for reproducibility.
 
-The leaderboard displays scores as `point [CI low, CI high]`. As of v0.1.5 the sample composition is:
+The leaderboard displays scores as `point [CI low, CI high]`. As of v0.1.6 the sample composition is:
 
-- v0.1.3 author-curated: N=10 per pair (all 8 pairs)
+- v0.1.3 author-curated: N=10 per CORE pair (all 8 CORE pairs)
 - v0.1.4 rileykim ml-curated: +8 en-ja, +7 en-zh
-- v0.1.5 FLORES certified-translator: +10 per pair (all 8 pairs)
+- v0.1.5 FLORES certified-translator: +10 per CORE pair (all 8 CORE pairs)
+- **v0.1.6 rileykim extension**: 3 docs each for 8 NEW pairs (en-ru, en-ko, en-vi, en-id, en-ur, en-uz, en-kk, en-zh-tw)
 
-So **per-pair counts are now N=20 for the 6 non-overlap pairs**, N=28 for en-ja, and N=27 for en-zh. CIs should be roughly √2× tighter than at v0.1.3's N=10. v0.2 will further scale to N≥25 author-curated per pair plus replace author-curated docs 001–010 with certified-translator references for a 2-reference multi-ref scoring scheme.
+Per-pair counts: N=20 for the 6 CORE non-overlap pairs, N=28 for en-ja, N=27 for en-zh, and N=3 for each of the 8 EXTENSION pairs. CIs on the EXTENSION pairs are deliberately wide — these are coverage proofs, not benchmark-quality samples. v0.2 will scale all 16 pairs to N≥25 and replace author-curated refs with certified-translator multi-references.
+
+The benchmark distinguishes **CORE pairs** (`ltbench.CORE_LANG_PAIRS`, 8 pairs, suitable for headline LTB-100 reporting) from **EXTENSION pairs** (8 more pairs, suitable for testing per-pair coverage of large multilingual systems but at sample sizes that don't support tight ranking).
 
 ### Weight choice (v0.1.1 empirical ablation)
 

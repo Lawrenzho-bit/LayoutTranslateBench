@@ -1,0 +1,320 @@
+{
+  "doc_id": "doc_044",
+  "page_size": [
+    1600,
+    2070
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_34878",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        389,
+        254,
+        503,
+        99
+      ],
+      "text": "I.Recife,Pernambuco,BrazilArrived 15 August 1965Departed ll September 1965",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "1. Recife, bang Pernambuco, Brazil\nNgày đến: 15/08/1965\nNgày khởi hành: 11/09/1965"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        393,
+        389,
+        319,
+        30
+      ],
+      "text": "I. Purpose of visit:",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Mục đích chuyến thăm:"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        458,
+        454,
+        1013,
+        133
+      ],
+      "text": "To assist in the initiation of two studies designed to determinethe effectiveness in a human population of the vitamin Aenrichment of dired skim milk as presently employed in Food forPeace programs.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Hỗ trợ bắt đầu hai nghiên cứu được thiết kế để xác định tính hiệu quả của sữa bột gầy có bổ sung vitamin A hiện đang được sử dụng trong chương trình Thực phẩm vì Hòa bình ở người."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        393,
+        623,
+        380,
+        31
+      ],
+      "text": "III. Personnel contacted:",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "3. Người liên hệ:"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        523,
+        689,
+        472,
+        102
+      ],
+      "text": "Prof. Nelson ChavesDirector,Institute of NutritionUniversity of Recife",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Giáo sư Nelson Chavez\nGiám đốc Viện Nghiên cứu Dinh dưỡng\nĐại học Recife"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        526,
+        827,
+        377,
+        35
+      ],
+      "text": "Prof. Fernando Figueira",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Giáo sư Fernando Figueira"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        528,
+        894,
+        542,
+        35
+      ],
+      "text": "University of Recife Medical School",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Đại học Y khoa Recife"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        525,
+        964,
+        420,
+        34
+      ],
+      "text": "Pernambuco Hospital, IMIP",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Bệnh viện Pernambuco, IMIP"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        526,
+        1135,
+        99,
+        28
+      ],
+      "text": "USAID",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "USAID"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        523,
+        1235,
+        342,
+        134
+      ],
+      "text": "Mr.William BairChief,Food for PeaceUSAIDRecife,Brazil",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Ông William Bell\nGiám đốc Cục Thực phẩm Hòa bình\nUSAID\nRecife, Brazil"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        390,
+        1405,
+        466,
+        31
+      ],
+      "text": "IV. Conferences or Interviews",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "4. Gặp gỡ hoặc phỏng vấn"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        454,
+        1473,
+        1081,
+        134
+      ],
+      "text": "The mission of this trip required a number of meetings with theBrazilians who will conduct these projects. A summary of the finalproject protocol and the progress achieved to date is being prepared byDr. Reynolds.",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Nhiệm vụ của chuyến đi đòi hỏi phải gặp nhiều người Brazil, những người sẽ thực hiện dự án. Tiến sĩ Reynolds đang chuẩn bị bản tóm tắt thỏa thuận dự án cuối cùng và tiến độ đạt được cho đến nay."
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        847,
+        170,
+        226,
+        33
+      ],
+      "text": "TRIP REPORT",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "báo cáo chuyến đi"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        1149,
+        154,
+        174,
+        49
+      ],
+      "text": "( Bounce )",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "(tung lên)"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        81,
+        1896,
+        80,
+        33
+      ],
+      "text": "XERO COPY",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "không sao chép"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        1054,
+        1913,
+        58,
+        20
+      ],
+      "text": "COPY",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "sao chép"
+      }
+    }
+  ]
+}

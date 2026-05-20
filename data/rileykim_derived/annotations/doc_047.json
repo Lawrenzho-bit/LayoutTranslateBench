@@ -1,0 +1,149 @@
+{
+  "doc_id": "doc_047",
+  "page_size": [
+    1600,
+    1200
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_07003",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        93,
+        34,
+        1051,
+        62
+      ],
+      "text": "Main Terms of TERP Settlement Proposal",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Syarat-syarat Utama Usulan Penyelesaian TERP"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        138,
+        186,
+        1305,
+        105
+      ],
+      "text": "Settlement effective at closing of a jointly approved strategictransaction",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Transaksi strategis yang disetujui oleh kedua belah pihak berlaku efektif pada saat penutupan"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        141,
+        328,
+        1128,
+        54
+      ],
+      "text": "TERP shareholders participate ratably in transaction- After transaction, regardless of form, S UNE and all pre-transactionshareholders receive equal value per share- SUNE makes a one-time payment in a negotiated amount(in cash orkind) to adjust for the unpaid Minimum Quarterly Distributions due toclass A shareholders under TERP LLC agreement.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Pemegang saham TERP berpartisipasi dalam transaksi secara pro-rata - apa pun bentuk transaksinya, S UNE dan semua pemegang saham sebelum transaksi menerima nilai per saham yang sama setelah transaksi - SUNE membayar kepada pemegang saham Kelas A jumlah yang dinegosiasikan satu kali (tunai atau bentuk lainnya) berdasarkan Perjanjian TERP LLC untuk mengkompensasi distribusi triwulanan minimum yang belum dibayar."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        136,
+        669,
+        937,
+        52
+      ],
+      "text": "Intercompany claims stipulated and settled",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Penyediaan dan penyelesaian klaim antar perusahaan"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        142,
+        728,
+        1260,
+        198
+      ],
+      "text": "- TERP administrative claim for amounts that SUNE was obligated toreimburse under sponsorship arrangements post-petition- All other TERP claims would be unsecured pre-petition claims;recoupmentwaived",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "- Klaim administratif TERP terkait jumlah yang harus dibayar SUNE berdasarkan perjanjian sponsorship setelah permohonan\n- Semua klaim TERP lainnya akan diperlakukan sebagai klaim tanpa jaminan pra-petisi; hak set-off dikesampingkan"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        1448,
+        1067,
+        72,
+        21
+      ],
+      "text": "POWER",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "listrik"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        1439,
+        1114,
+        82,
+        10
+      ],
+      "text": "SunEdson company",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Perusahaan Sun Edson"
+      }
+    }
+  ]
+}

@@ -7,6 +7,7 @@ from typing import Literal
 from pydantic import BaseModel, Field, field_validator
 
 LangPair = Literal[
+    # Core 8 (v0.1)
     "en-es",
     "en-de",
     "en-zh",
@@ -15,6 +16,15 @@ LangPair = Literal[
     "en-fr",
     "en-th",
     "en-ms",
+    # v0.1.6 extension (rileykim-sourced)
+    "en-ru",
+    "en-ko",
+    "en-vi",
+    "en-id",
+    "en-ur",
+    "en-uz",
+    "en-kk",
+    "en-zh-tw",
 ]
 LayoutClass = Literal[
     "header", "footer", "single-column", "two-column", "form-field",

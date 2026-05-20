@@ -43,7 +43,10 @@ from ltbench.schemas import (
 DEFAULT_NLLB_MODEL = "facebook/nllb-200-distilled-600M"
 
 # NLLB language codes (BCP-47-style with script). Source: NLLB-200 paper.
+# NLLB-200 supports all 200+ languages natively; the mapping below covers
+# every LTB pair, including the v0.1.6 extension pairs.
 _LANG_PAIR_TO_NLLB: dict[LangPair, str] = {
+    # Core 8 (v0.1)
     "en-es": "spa_Latn",
     "en-de": "deu_Latn",
     "en-zh": "zho_Hans",  # Simplified Chinese
@@ -52,6 +55,15 @@ _LANG_PAIR_TO_NLLB: dict[LangPair, str] = {
     "en-fr": "fra_Latn",
     "en-th": "tha_Thai",
     "en-ms": "zsm_Latn",  # Standard Malay
+    # v0.1.6 extension pairs
+    "en-ru": "rus_Cyrl",  # Russian
+    "en-ko": "kor_Hang",  # Korean (Hangul)
+    "en-vi": "vie_Latn",  # Vietnamese
+    "en-id": "ind_Latn",  # Indonesian
+    "en-ur": "urd_Arab",  # Urdu
+    "en-uz": "uzn_Latn",  # Uzbek (Northern, Latin)
+    "en-kk": "kaz_Cyrl",  # Kazakh
+    "en-zh-tw": "zho_Hant",  # Traditional Chinese
 }
 
 

@@ -1,0 +1,624 @@
+{
+  "doc_id": "doc_051",
+  "page_size": [
+    1600,
+    2122
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_03915",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        682,
+        252,
+        217,
+        32
+      ],
+      "text": "ACCOUNTNAME:",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "帐户名："
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        159,
+        308,
+        472,
+        129
+      ],
+      "text": "TOTAL AMOUNT OF VOUCHER: 27 250.00 REQUESTED BY:",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "代金券总金额：27,250.00  请求人："
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        977,
+        403,
+        81,
+        31
+      ],
+      "text": "DATE:",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "日期："
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        1096,
+        391,
+        131,
+        46
+      ],
+      "text": "7-15-98",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "7-15-98\n\n（注：日期“7-15-98”直接翻译为中文通常是“7-15-98”，但如果按照中国常用的日期格式，可以理解为1998年7月15日。根据上下文需求选择合适的表达方式。如果需要转换成中文格式，则为“1998年7月15日”。） \n\n仅提供翻译结果的话就是：“7-15-98” 如果需要更符合中文习惯的表达，请告知。"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        174,
+        549,
+        150,
+        118
+      ],
+      "text": "# UNITS 28890 56830",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "# 单位 28890 56830"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        384,
+        550,
+        60,
+        27
+      ],
+      "text": "RATE",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "费率"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        558,
+        548,
+        75,
+        27
+      ],
+      "text": "TOTAL",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "总数"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        813,
+        548,
+        385,
+        236
+      ],
+      "text": "H/H - TPS CODE (DESCRIPTION) 30 PR. RED 30 PR. RED PR. RED PR. RED PR. RED",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "H/H - TPS 代码（描述）30 对 红色 30 对 红色 对 红色 对 红色 对 红色"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        379,
+        593,
+        67,
+        76
+      ],
+      "text": ". 30 :30",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "30:30"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        523,
+        622,
+        228,
+        168
+      ],
+      "text": "17,049.00 -WIN SAL 1245.00 |DOR 789.00 MON",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "17,049.00 - Ish haqi 1245.00 | Oyiga 789.00 chegirmalar"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        202,
+        707,
+        115,
+        89
+      ],
+      "text": "4150 2430",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "4150 2430\n\nUshbu matn \"4150 2430\" raqamlardan iborat bo'lganidan beri, bu xitoy tilida bir xil bo'lib qolmoqda. Raqamlar universal bo'lib, ingliz va xitoy tillarida arab tilida raqamli tizimdan foydalanadigan tillar o'rtasida tarjima qilinganda o'zgarmaydi. Agar siz ushbu raqamlarni so'zma-so'z yoki aniq kontekst bo'lsa (manzillar, xurmo va boshqalar kabi) bo'lsa, batafsil ma'lumot bering."
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        380,
+        712,
+        71,
+        76
+      ],
+      "text": ". 30 . 30",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "O'ttiz. o'ttizda"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        693,
+        920,
+        567,
+        71
+      ],
+      "text": "\"Discounting applies toward retail accrual base first, then GAP",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Birinchi navbatda chegirmalar chakana hisob-kitoblarga, keyin bo'sh joylarga nisbatan qo'llaniladi"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        209,
+        1091,
+        84,
+        27
+      ],
+      "text": "# UNITS",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "# birlik"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        381,
+        1090,
+        66,
+        26
+      ],
+      "text": "RATE",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Baholamoq"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        561,
+        1088,
+        73,
+        27
+      ],
+      "text": "TOTAL",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "jami"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        693,
+        1122,
+        342,
+        144
+      ],
+      "text": "RJR MATCH PORTION ONLY RAC CAM RJRMATCH RAC WIN RJRMATCH RAC SAL RJRMATCH",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "RJR Uchinchi qismida faqat RJR Match RJR musobaqasi RJR Match RJ RJ RJ RJ RJ RJ RJ RJ RJ RJ RJ RJ RJ RJ RJ RJ RJ M uchrashuv"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        390,
+        1157,
+        55,
+        67
+      ],
+      "text": "$1.0 $1.00",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "1.0 1.00"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        390,
+        1241,
+        56,
+        25
+      ],
+      "text": "$1.00",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "$ 1.00"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        690,
+        1313,
+        388,
+        75
+      ],
+      "text": "RETAIL MATCH PORTION ONLY RAC RETAIL MATCH",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Chakana mos keladigan chakana stend bo'limi faqat"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        390,
+        1362,
+        59,
+        25
+      ],
+      "text": "$1.00",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "$ 1.00"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        279,
+        1450,
+        282,
+        33
+      ],
+      "text": "UPDATE ACTIVITY?",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Yangi hodisani yangilashmi?"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        780,
+        1447,
+        61,
+        35
+      ],
+      "text": "YES",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "ha"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        1055,
+        1447,
+        64,
+        35
+      ],
+      "text": "*NO",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "* Yo'q"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        342,
+        1502,
+        638,
+        34
+      ],
+      "text": "*Do not update activity if based on input of retail/sales rep.",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "* Chakana savdo / sotishdan tushgan mablag'ni kiritish bo'yicha tadbirlarni yangilamang."
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        267,
+        1558,
+        1197,
+        42
+      ],
+      "text": "IF YES, CHECK OFF ONE METHOD OF SPREADING ACTIVITY WITHIN CHAIN-ID #QZ丝-XX -XX",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Agar rozi bo'lsangiz, iltimos, Cassi-Xx-Xx -xx-dagi faoliyatni tarqatish usulini tekshiring."
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        503,
+        1603,
+        470,
+        99
+      ],
+      "text": "Spread activity equally among all accountsSpread activity based upon volume %Spread activity using BPE template",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Faoliyatni barcha hisobvaraqlarga taqsimlash hajmiga qarab taqsimlash BPE shablonlaridan foydalanish uchun faoliyatni taqsimlash bo'yicha faoliyatni taqsimlash"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        170,
+        1740,
+        232,
+        27
+      ],
+      "text": "TPSEXPLANATION:",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "TPS tushuntirish:"
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        578,
+        1717,
+        891,
+        95
+      ],
+      "text": "BAR & Ceiling Buydown payment FOR peered 4-12-98 Thre 5:30-98",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Bar & Shife Teer uchrashuvi uchun 15: 30-98"
+      }
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        182,
+        1930,
+        203,
+        28
+      ],
+      "text": "ROU to complete:",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "To'liq rou"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        496,
+        1924,
+        193,
+        65
+      ],
+      "text": "Voucher # Date Requested:",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Voucher raqami so'rovi:"
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        714,
+        111,
+        405,
+        35
+      ],
+      "text": "CHAIN VOUCHER REQUEST",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "zanjirli vaucher so'rovi"
+      }
+    }
+  ]
+}

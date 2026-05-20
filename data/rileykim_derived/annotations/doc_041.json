@@ -1,0 +1,491 @@
+{
+  "doc_id": "doc_041",
+  "page_size": [
+    1600,
+    2039
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_08254",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        87,
+        98,
+        1298,
+        45
+      ],
+      "text": "19Z6CBADUATE SUMMER SESSION IN EPIDEMIOLOGY",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "19Z6CBADUATE 전염병학 여름 세션"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        98,
+        175,
+        1126,
+        56
+      ],
+      "text": "MAY 121976APPLICATION FOR ADMISSION",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "1976.05.05입학신청"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        73,
+        246,
+        915,
+        68
+      ],
+      "text": "SchoolofPublicHealthJune 20-July10,1976Epidemiology",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "공중보건대학1976년 6월 20일 ~ 7월 10일역학"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        55,
+        326,
+        354,
+        35
+      ],
+      "text": "NOTE:PRINT USING INK",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "참고: 잉크를 사용하여 인쇄"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        66,
+        384,
+        1397,
+        58
+      ],
+      "text": "1. NameMargaretAnnDanielsonFirstMiddleLast",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "1. 이름MargaretAnnDanielsonFirstMiddleLast"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        62,
+        459,
+        1409,
+        96
+      ],
+      "text": "2.Exact Title_Supervisor3.Department Medical Statistics&Epidemiology4.Empioyer_Mayo Clinic5.OfficePhone282-251l，ext.2979",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "2.정확한 직함_감독자3.학과 의료통계&역학4.Empioyer_Mayo Clinic5.OfficePhone282-251l，ext.2979"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        67,
+        582,
+        316,
+        52
+      ],
+      "text": "6. Office Address _200 No .",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "6. 사무실 주소 _200 No."
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        418,
+        581,
+        282,
+        56
+      ],
+      "text": "First Street S. W. Street",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "퍼스트 스트리트 S. W. 스트리트"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        824,
+        584,
+        166,
+        52
+      ],
+      "text": "Rochester, City",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "로체스터, 도시"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        1037,
+        585,
+        190,
+        52
+      ],
+      "text": "Minnesota State",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "미네소타 주"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        1294,
+        582,
+        115,
+        52
+      ],
+      "text": "55901 Zip",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "55901 우편번호"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        67,
+        652,
+        978,
+        56
+      ],
+      "text": "7. Home Address 3939 - 18th Ave N. W. , Rochester , Minnesota No . Street City",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "7. 집 주소 3939 - 18th Ave N.W., Rochester, Minnesota No. 스트리트 시티"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        1294,
+        650,
+        79,
+        25
+      ],
+      "text": "55901",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "55901"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        1180,
+        687,
+        55,
+        22
+      ],
+      "text": "State",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "상태"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        1374,
+        688,
+        29,
+        23
+      ],
+      "text": "Zip",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "지퍼"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        67,
+        726,
+        1391,
+        35
+      ],
+      "text": "8.HomePhone_288-41689.SexFemale10.Date of Birth_2-14-47",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "8.집전화_288-41689.성별여성10.생년월일_2-14-47"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        56,
+        791,
+        303,
+        33
+      ],
+      "text": "11.Teaching Activities",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "11.교육활동"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        46,
+        802,
+        1430,
+        168
+      ],
+      "text": "Types ofHoursSchool or AgencySubjectStudentsPer Year",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "수업시간학교 또는 기관과목학생수연간"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        50,
+        994,
+        663,
+        36
+      ],
+      "text": "12. College, University,and Professional Education",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "12. 대학, 대학 및 전문 교육"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        50,
+        1046,
+        1419,
+        177
+      ],
+      "text": "SchoolMajorDegreeYearRochester Junior CollegeBiology1968- 1971University of MinnesotaBiology1971-1972",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "학교전공학위연도Rochester Junior College생물학1968-1971University of Minnesota생물학1971-1972"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        52,
+        1254,
+        728,
+        35
+      ],
+      "text": "13.Professional Experience (Start with Present Position)",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "13. 전문적 경험 (현재 위치에서 시작)"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        45,
+        1304,
+        1426,
+        245
+      ],
+      "text": "EmployerPositionDutyNo. of YearsMayo ClinicSupervisorAssist with clinicalresearchUniversity of MinnesotaComputer Programmer_Computer ProgrammerMayo CiinicMedical AbstractorAbstract Clinicaldata from patients chart14. Have you had any graduate level courses in statistics?YesXNo",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "고용주직위직무No. 수년간Mayo Clinic 감독자임상 연구 지원미네소타 대학교컴퓨터 프로그래머_컴퓨터 프로그래머Mayo Cinic의학 요약자환자 차트의 임상 데이터 요약14. 대학원 수준의 통계학 강좌가 있나요?예X아니오"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        49,
+        1573,
+        1420,
+        129
+      ],
+      "text": "Course TitleHoursSchoolYearTakenIntroductory StatisticsI-3 creditsUofM at Mayo1973Introductory Statistics II 3 creditsU of M at Mayo1974",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "강좌 제목시간학교연도입문 통계I-3학점 Mayo1973의 M대학 입문 통계 II 3학점 Mayo1974의 M대학"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        49,
+        1727,
+        1182,
+        36
+      ],
+      "text": "15. Have you had any graduate level courses in epidemiology?Yes.X_No",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "15. 역학에 관한 대학원 과정을 이수한 적이 있습니까?네.X_아니오"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        56,
+        1787,
+        1370,
+        77
+      ],
+      "text": "Course TitleHoursSchoo!Year TakenPrinciples of Epidemiology3CreditsU of M at Mayo1973",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "강좌 제목시간학교!수강 연도역학 원리3학점Mayo1973에서 M의 U"
+      }
+    }
+  ]
+}

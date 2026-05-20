@@ -1,0 +1,358 @@
+{
+  "doc_id": "doc_050",
+  "page_size": [
+    1600,
+    2122
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_37410",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        346,
+        227,
+        922,
+        51
+      ],
+      "text": "MIDDLE EAST TOBACCO ASSOCIATION LIMITED",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "متوسطِ اعلٰی مُعاشیاتیompany"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        507,
+        297,
+        484,
+        68
+      ],
+      "text": "PO Box 16e66, Jebal Ali, Dubat, U,AE.Tel: (971-) 4-815707 Fax (971-)4-815187",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "پوسٹس رجسٹری بوختا 16E66، جیب علی آریبی، دبئی، متحدہ عربستان۔ فون: (971-) 4-815707 فکس: (971-) 4-815187"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        259,
+        397,
+        395,
+        46
+      ],
+      "text": "Pacslmlle Transmission",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "پکس میل ٹرانسمیشن"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        261,
+        570,
+        91,
+        34
+      ],
+      "text": "DATE",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "تاریخ"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        612,
+        570,
+        165,
+        39
+      ],
+      "text": "july 24, 1995",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "1995 جون 24"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        261,
+        644,
+        44,
+        35
+      ],
+      "text": "TO",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "آتا ہے"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        610,
+        644,
+        598,
+        76
+      ],
+      "text": "Mike O'Bryan FAX NO: 0041-22-7030686 RJ Reynolds, Geneva",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "ماک آر اوبرین، فکسڈ لائن نمبر: 0041-22-7030686 RJ رینارڈ، ژیشو"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        262,
+        761,
+        93,
+        30
+      ],
+      "text": "FROM",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "سے"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        613,
+        761,
+        181,
+        71
+      ],
+      "text": "Charles Hay META, Dubai",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "چارلس ہی Meta، دبئی"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        264,
+        870,
+        205,
+        37
+      ],
+      "text": "TOTAL PAGES",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "کل صفحات"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        611,
+        872,
+        315,
+        42
+      ],
+      "text": "15 (Including this Page)",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "15 (اس صفحے سمیت)"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        263,
+        982,
+        147,
+        37
+      ],
+      "text": "Dear Mike,",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "پ్రియ کا مائک"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        265,
+        1052,
+        742,
+        45
+      ],
+      "text": "SubjectDRAFT GULF STANDARDS",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "بحرانی معیار"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        265,
+        1167,
+        176,
+        38
+      ],
+      "text": "As disc ussed.",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "جیسے کہ گفتگو میں بتایا گیا ہے۔"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        529,
+        18,
+        127,
+        29
+      ],
+      "text": "METR",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "میٹ"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        422,
+        1966,
+        812,
+        34
+      ],
+      "text": "For any queries regarding this message, please call (971.) 4-815707",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "اس خبر کے بارے میں کوئی بھی سوال پوچھنے کیلئے براہ کرم (971.) 4-815707 پر رابطہ کریں۔"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        777,
+        0,
+        108,
+        23
+      ],
+      "text": "RJRGVA",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "RJRGVA یہ لفظی مجموعہ براہ راست اردو میں ترجمہ نہیں کر سکتا ہے، کیونکہ یہ کسی مخصوص اصطلاح یا مختصر عبارت کا منظرہ دیتا ہے۔ اگر یہ کسی مخصوص شعبے کی اصطلاح یا مختصر عبارت ہے، تو براہ کرم مزید متن فراہم کریں تاکہ اسے درست ترجمہ کیا جا سکے۔ اگر اس کا کوئی خاص معانی نہیں ہے، تو اسے وہی رکھا جائے گا: RJRGVA."
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        1097,
+        19,
+        107,
+        26
+      ],
+      "text": "666 P01",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ur": "666 P01"
+      }
+    }
+  ]
+}

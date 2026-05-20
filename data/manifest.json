@@ -1,6 +1,6 @@
 {
   "benchmark": "LayoutTranslateBench",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "entries": [
     {
       "doc_id": "doc_001",
@@ -421,6 +421,294 @@
       ],
       "license": "CC-BY-SA-4.0",
       "source_url": "https://github.com/facebookresearch/flores"
+    },
+    {
+      "doc_id": "doc_036",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_036.png",
+      "annotation_file": "rileykim_derived/annotations/doc_036.json",
+      "page_size": [
+        1600,
+        2122
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_037",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_037.png",
+      "annotation_file": "rileykim_derived/annotations/doc_037.json",
+      "page_size": [
+        1600,
+        2122
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_038",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_038.png",
+      "annotation_file": "rileykim_derived/annotations/doc_038.json",
+      "page_size": [
+        1600,
+        2069
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_039",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_039.png",
+      "annotation_file": "rileykim_derived/annotations/doc_039.json",
+      "page_size": [
+        1600,
+        2049
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_040",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_040.png",
+      "annotation_file": "rileykim_derived/annotations/doc_040.json",
+      "page_size": [
+        1600,
+        2122
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_041",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_041.png",
+      "annotation_file": "rileykim_derived/annotations/doc_041.json",
+      "page_size": [
+        1600,
+        2039
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_042",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_042.png",
+      "annotation_file": "rileykim_derived/annotations/doc_042.json",
+      "page_size": [
+        1600,
+        2122
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_043",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_043.png",
+      "annotation_file": "rileykim_derived/annotations/doc_043.json",
+      "page_size": [
+        1600,
+        2039
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_044",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_044.png",
+      "annotation_file": "rileykim_derived/annotations/doc_044.json",
+      "page_size": [
+        1600,
+        2070
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_045",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_045.png",
+      "annotation_file": "rileykim_derived/annotations/doc_045.json",
+      "page_size": [
+        1600,
+        2122
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_046",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_046.png",
+      "annotation_file": "rileykim_derived/annotations/doc_046.json",
+      "page_size": [
+        1600,
+        2070
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_047",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_047.png",
+      "annotation_file": "rileykim_derived/annotations/doc_047.json",
+      "page_size": [
+        1600,
+        1200
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_048",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_048.png",
+      "annotation_file": "rileykim_derived/annotations/doc_048.json",
+      "page_size": [
+        1600,
+        2046
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_049",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_049.png",
+      "annotation_file": "rileykim_derived/annotations/doc_049.json",
+      "page_size": [
+        1600,
+        2037
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_050",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_050.png",
+      "annotation_file": "rileykim_derived/annotations/doc_050.json",
+      "page_size": [
+        1600,
+        2122
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_051",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_051.png",
+      "annotation_file": "rileykim_derived/annotations/doc_051.json",
+      "page_size": [
+        1600,
+        2122
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_052",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_052.png",
+      "annotation_file": "rileykim_derived/annotations/doc_052.json",
+      "page_size": [
+        1122,
+        1848
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_053",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_053.png",
+      "annotation_file": "rileykim_derived/annotations/doc_053.json",
+      "page_size": [
+        1600,
+        2070
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_054",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_054.png",
+      "annotation_file": "rileykim_derived/annotations/doc_054.json",
+      "page_size": [
+        1600,
+        2264
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_055",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_055.png",
+      "annotation_file": "rileykim_derived/annotations/doc_055.json",
+      "page_size": [
+        1600,
+        2129
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_056",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_056.png",
+      "annotation_file": "rileykim_derived/annotations/doc_056.json",
+      "page_size": [
+        1600,
+        2043
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_057",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_057.png",
+      "annotation_file": "rileykim_derived/annotations/doc_057.json",
+      "page_size": [
+        1600,
+        1202
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_058",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_058.png",
+      "annotation_file": "rileykim_derived/annotations/doc_058.json",
+      "page_size": [
+        1600,
+        2764
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
+    },
+    {
+      "doc_id": "doc_059",
+      "category": "ocr-document",
+      "source_file": "rileykim_derived/sources/doc_059.png",
+      "annotation_file": "rileykim_derived/annotations/doc_059.json",
+      "page_size": [
+        811,
+        1059
+      ],
+      "license": "Apache-2.0",
+      "source_url": "https://huggingface.co/datasets/rileykim/multilingual-document"
     }
   ]
 }

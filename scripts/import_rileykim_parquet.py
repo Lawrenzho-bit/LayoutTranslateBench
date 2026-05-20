@@ -25,8 +25,18 @@ CACHE_ROOT = Path(
 )
 
 LTB_PAIR_MAP = {
+    # Direct overlaps with LTB v0.1.5 (core 8 pairs)
     "en-ja": "en-ja",
     "en-zh-cn": "en-zh",
+    # v0.1.6 extension pairs
+    "en-ru": "en-ru",
+    "en-ko": "en-ko",
+    "en-vi": "en-vi",
+    "en-id": "en-id",
+    "en-ur": "en-ur",
+    "en-uz": "en-uz",
+    "en-kk": "en-kk",
+    "en-zh-tw": "en-zh-tw",
 }
 
 
@@ -219,7 +229,10 @@ def main() -> int:
         manifest_path = args.data_dir / "manifest.json"
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         manifest["entries"].extend(new_manifest_entries)
-        manifest["version"] = "0.1.4"
+        # Use the highest version we've ever set as a floor (don't downgrade)
+        prev_version = manifest.get("version", "0.1.0")
+        target_version = "0.1.6"
+        manifest["version"] = max(prev_version, target_version)
         manifest_path.write_text(
             json.dumps(manifest, ensure_ascii=False, indent=2),
             encoding="utf-8",

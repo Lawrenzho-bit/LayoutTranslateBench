@@ -101,11 +101,14 @@ def test_build_leaderboard_html_contains_coverage(tmp_path: Path):
 
     html = (output_dir / "index.html").read_text(encoding="utf-8")
     assert "Coverage" in html
-    assert "2/8" in html  # this system covers 2 pairs out of 8
+    # v0.1.6: pair set extended to 16; coverage denominator changed accordingly.
+    from ltbench import LANG_PAIRS
+    expected_coverage = f"2/{len(LANG_PAIRS)}"
+    assert expected_coverage in html
 
     md = md_path.read_text(encoding="utf-8")
     assert "Coverage" in md
-    assert "2/8" in md
+    assert expected_coverage in md
 
 
 if __name__ == "__main__":
