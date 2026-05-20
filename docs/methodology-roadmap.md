@@ -2,18 +2,18 @@
 
 This document tracks methodology critiques against LTB and their status. The benchmark is a research artifact; methodology is expected to improve with each release. This file is the public, honest record of what's been fixed and what remains.
 
-## Status as of v0.1.6.4
+## Status as of v0.1.7
 
 | # | Critique | Status | Notes |
 |---|---|:---:|---|
-| 1 | Sample size N=5 statistically meaningless | ✅ Largely fixed (v0.1.5) | Core 8 pairs: N=20 (en-es/de/ar/fr/th/ms), N=27 (en-zh), N=28 (en-ja). Extension 8 (v0.1.6): N=3 each except en-ru=0. Industry-grade FLORES-200 refs back the core. |
+| 1 | Sample size N=5 statistically meaningless | ✅ Largely fixed (v0.1.7) | Core 8: N=20 (en-es/de/ar/fr/th/ms), N=27 (en-zh), N=28 (en-ja). Extension 8 (v0.1.7): N=10 for en-ru (certified-only); N=13 each for en-ko/vi/id/ur/uz/kk/zh-tw (10 certified-FLORES + 3 ml-curated rileykim). Industry-grade FLORES-200 refs back every pair. |
 | 2 | Identity baseline = chrF Latin-bleed artifact | ✅ Fixed (v0.1.1) | Language-detection gate ([methodology.md](methodology.md#language-detection-penalty-v011)) |
 | 3 | chrF wrong text metric (paraphrase / adequacy blind) | ✅ Fixed (v0.1.2 round-2) | COMET-Kiwi-22 ships as a second leaderboard, run on all systems. See [docs/comet-setup.md](comet-setup.md). |
 | 4 | Oracle vs end-to-end conflation in headline scores | ✅ Fixed (v0.1.1) | Separate leaderboard tables |
 | 5 | DeepL doc-context unfairness | ✅ Clarified (v0.1.1) | Both DeepL Text API and NLLB are per-region; this is a fair comparison. DeepL Documents (with context) is a v0.2 runner. |
 | 6 | Composite weights 50/30/20 unvalidated | ✅ Empirically defended (v0.1.1) | Weight ablation script shows ranking stable (τ_norm = 1.0) across (50/30/20), (40/40/20), (60/20/20), (33/33/33). See [results/weight_ablation.json](../results/weight_ablation.json). |
 | 7 | Kendall τ partial-coverage hole | ✅ Fixed (v0.1.1) | Coverage-aware τ ([methodology.md](methodology.md#coverage-aware-%CF%84-v011)) |
-| 8 | Single author-curated reference | ⚠️ Partially addressed (v0.1.5) | FLORES-200 adds industry-grade refs alongside the author-curated set for core 8. Still single-ref per region — multi-ref scoring deferred to v0.2. |
+| 8 | Single author-curated reference | ⚠️ Partially addressed (v0.1.5 + v0.1.7) | FLORES-200 adds industry-grade refs alongside the author-curated set; v0.1.7 extends FLORES coverage to all 16 LTB pairs. Still single-ref per region — multi-ref scoring deferred to v0.2. |
 | 9 | Qwen-VL parser/model conflation | ✅ Fixed (v0.1.2) | `--exclude-parser-failures` flag on `ltbench score`. With-failures = 16.35; restricted = 18.67. |
 | 10 | No human evaluation correlation | ⚠️ Infrastructure shipped (v0.1.2) | `ltbench.human_eval` module + `ltbench export-eval-prompts` + `ltbench correlate-human` CLI commands. Collecting judgments still requires paid raters (v0.2). |
 | 11 | Reference corruption on mined refs (rileykim) | ✅ Fixed (v0.1.6.4) | Script-validation gate at ingest + post-hoc `scripts/validate_extension_refs.py`. Refs whose tgt-text script doesn't match the expected target-language script are dropped. Surfaced en-ru rileykim rows were Chinese-tgt-text — en-ru dropped to N=0. |
@@ -56,6 +56,8 @@ Nine critiques fully fixed (#1, #2, #3, #4, #6, #7, #9, #11, #12), one clarified
 **v0.1.6.3 shipped:** Methodology note documenting opus-mt vs NLLB per-pair quality variance (competitive on European pairs, dramatically weaker on Asian / Central Asian).
 
 **v0.1.6.4 shipped:** fugumt en-ja swap (replaced opus-mt-en-jap with staka/fugumt-en-ja); ingest-time and post-hoc script validation drops rileykim refs whose `tgt_text` script doesn't match expected. After cleanup, en-ru has N=0; other extension pairs retain ≥1.
+
+**v0.1.7 shipped:** FLORES-200 extension-pair refs (`scripts/add_flores_extension_refs.py`) back-fill the 10 FLORES-derived docs (doc_026–doc_035) with certified-translator refs for all 8 v0.1.6 extension pairs. Closes the en-ru gap (0 → 10 docs) and upgrades the 7 surviving extension pairs from ml-curated rileykim refs to a mix of certified-FLORES + ml-curated-rileykim (13 docs each). Now every LTB pair has at least 10 certified-translator-grade reference documents. NOTE: leaderboard scores remain at v0.1.6 numbers until systems are re-run against the new refs — that's a separate scoring milestone.
 
 **v0.2 (next, requires budget):**
 - Extension pair coverage to N≥10 each (certified or industry-grade refs)

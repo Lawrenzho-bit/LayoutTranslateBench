@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Crossing_guard_killed_by_truck_in_Glasgow,_Scotland",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Accident'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Accident'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "事故発生後、ギブソン氏は病院に搬送されましたが、その後まもなく死亡しました。",
         "en-fr": "Suite à l’accident, Gibson a été transporté à l’hôpital, mais a succombé immédiatement après.",
         "en-th": "หลังจากเกิดอุบัติเหตุ กิ๊บสันถูกนำส่งโรงพยาบาลทว่าหลังจากนั้นไม่นานก็เสียชีวิต",
-        "en-ms": "Selepas kemalangan berlaku, Gibson dibawa ke hospital tetapi meninggal dunia tidak lama kemudian."
+        "en-ms": "Selepas kemalangan berlaku, Gibson dibawa ke hospital tetapi meninggal dunia tidak lama kemudian.",
+        "en-ru": "После несчастного случая Гибсон был доставлен в больницу, но вскоре скончался.",
+        "en-ko": "사건 발생 이후, 깁슨(Gibson)은 병원으로 이송되었으나 얼마 후 숨을 거뒀다.",
+        "en-vi": "Sau khi xảy ra tai nạn, Gibson đã được đưa vào bệnh viện nhưng mất không lâu sau đó.",
+        "en-id": "Setelah terjadi kecelakaan itu, Gibson dibawa ke rumah sakit tetapi tak lama kemudian meninggal.",
+        "en-ur": "حادثہ ہونے کے بعد، گبسن کو ایک ہسپتال تک پہنچایا گیا مگر وہ کُچھ دیر بعد ہی مرگیا۔",
+        "en-uz": "Hodisa yuz berganidan so'ng Gibson shifoxonaga yetkazilgan, biroq ko'p o'tmay olamdan o'tgan.",
+        "en-kk": "Апаттан соң Гибсон ауруханаға жеткізілді, бірақ аз уақыт өтпей қайтыс болды.",
+        "en-zh-tw": "意外發生後，吉布森被送往醫院，但不久後便身亡。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "トラックの運転手は64歳でしたが、この事故で怪我はありませんでした。",
         "en-fr": "Le chauffeur du camion, âgé de 64 ans, n’a pas été blessé dans l’accident.",
         "en-th": "คนขับรถบรรทุกวัย 64 ปีไม่ได้รับบาดเจ็บจากอุบัติเหตุชนกันในครั้งนี้",
-        "en-ms": "Pemandu lori tersebut yang berusia 64 tahun tidak cedera dalam kemalangan itu."
+        "en-ms": "Pemandu lori tersebut yang berusia 64 tahun tidak cedera dalam kemalangan itu.",
+        "en-ru": "64-летний водитель грузовика в аварии не пострадал.",
+        "en-ko": "64세인 트럭 운전수는 충돌 사고에서 부상을 입지 않았습니다.",
+        "en-vi": "Người lái xe tải, đã 64 tuổi, không bị thương trong vụ đụng xe.",
+        "en-id": "Sopir truk, yang berusia 64 tahun, tidak terluka dalam kecelakaan itu.",
+        "en-ur": "64 سالہ ٹرک ڈرائیور کو اس تصادم کے دوران کوئی چوٹ نہیں آئی تھی۔",
+        "en-uz": "64 yoshli yuk mashinasi haydovchisi halokatda jarohatlanmadi.",
+        "en-kk": "Апатта 64 жастағы жүк көлігінің жүргізушісі жарақат алған жоқ.",
+        "en-zh-tw": "64 歲的卡車司機沒有在車禍中受傷。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "車両自体は同日のグリニッジ標準時12:00頃に事故現場から持ち去られました。",
         "en-fr": "Le véhicule lui-même a été enlevé du lieu de l'accident vers 12 h 00 GMT le même jour.",
         "en-th": "มีการนำยานพาหนะดังกล่าวออกจากที่เกิดเหตุในเวลาประมาณ 12.00 น. เวลามาตรฐานกรีนิช ในวันเดียวกันนั้น",
-        "en-ms": "Kenderaan itu dialihkan dari tempat kejadian kemalangan pada kira-kira jam 1200 GMT pada hari yang sama."
+        "en-ms": "Kenderaan itu dialihkan dari tempat kejadian kemalangan pada kira-kira jam 1200 GMT pada hari yang sama.",
+        "en-ru": "Сам автомобиль убрали с места происшествия в тот же день примерно в 12:00 по Гринвичу.",
+        "en-ko": "해당 차량은 같은 날 그리니치 표준시로 대략 12시에 사고 현장에서 옮겨졌습니다.",
+        "en-vi": "Chiếc xe đã được đưa đi khỏi hiện trường tai nạn vào khoảng 12:00 giờ GMT cùng ngày hôm đó.",
+        "en-id": "Kendaraan itu sendiri diambil dari tempat kecelakaan sekitar pukul 12.00 GMT di hari yang sama.",
+        "en-ur": "جائے حادثہ سے اسی دن تقریبا 1200 GMT پر گاڑی ہی ہٹالی گئی تھی۔",
+        "en-uz": "Avtoulovning o'zi o'sha kuni hodisa joyidan taxminan soat 12:00 GMT da olib ketilgan.",
+        "en-kk": "Көліктің өзі сол күні шамамен 12:00 GMT уақытында апат орнынан әкетілген.",
+        "en-zh-tw": "車輛本身已在當天格林威治標準時間約 12:00 時自事故現場移除。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "事故現場近くの車庫で働いていた男性は、「道を渡ろうと待っている子供たちがみんな泣き叫んでいた。」と語りました。",
         "en-fr": "Un employé d'un garage proche du lieu de l’accident a déclaré : « il y avait des enfants qui cherchaient à traverser la route, et qui criaient et pleuraient. »",
         "en-th": "คนที่ทำงานอยู่ในอู่ซ่อมรถใกล้กับที่เกิดอุบัติเหตุกล่าวว่า: \"มีเด็ก ๆ กำลังรอข้ามถนนอยู่ เด็กเหล่านั้นทั้งกรีดร้องและร่ำไห้\"",
-        "en-ms": "Seorang pekerja di garaj berhampiran tempat kemalangan itu berkata: “Terdapat kanak-kanak yang menunggu untuk menyeberang jalan yang menjerit dan menangis.” "
+        "en-ms": "Seorang pekerja di garaj berhampiran tempat kemalangan itu berkata: “Terdapat kanak-kanak yang menunggu untuk menyeberang jalan yang menjerit dan menangis.” ",
+        "en-ru": "Человек, работающий в гараже недалеко от того места, где произошла авария, сказал: \"Там стояли дети, которые ждали, чтобы перейти дорогу. Все они кричали и плакали.",
+        "en-ko": "\"사고 지점 인근 한 정비소에서 근무하는 한 사람은 \"\"길을 건너려고 기다리던 아이들이 모두 비명을 지르며 울고 불고 난리였어요\"\"라고 말했다.\"",
+        "en-vi": "Một người làm việc ở một ga-ra gần nơi tai nạn xảy ra cho biết: “Có nhiều trẻ em đang chờ qua đường và các em đều la hét và khóc.”",
+        "en-id": "\"Orang yang bekerja di garasi dekat lokasi kecelakaan terjadi mengatakan: \"Ada anak-anak yang menunggu untuk menyeberang jalan dan mereka semua berteriak dan menangis.\"",
+        "en-ur": "ایک آدمی نے کہا جو کہ قریبی ایک گیراج میں کام کرتا ہے جہاں یہ حادثہ پیش آیا، \"بچے سڑک پار کرنے کا انتظار کر رہے تھے اور وہ سارے چیخ اور رو رہے تھے۔\"",
+        "en-uz": "Ko'ngilsiz hodisa yuz bergan joy yaqinidagi garajda ishlayotgan kishi: \"U yerda yo'lni kesib o'tmoqchi bo'layotgan bolalar bor edi va ularning barchasi qichqirib yig'layotgandi\" deb aytdi.",
+        "en-kk": "Маңайында апат орын алған гаражда жұмыс істеп жатқан адам былай деді: «Балалар жолдан өтуді күтіп тұрған, олардың барлығы айқайлады және жылады».",
+        "en-zh-tw": "在意外發生地點旁的車庫工作的人說：「當時那裡有一些孩子在等著過馬路，他們全都在尖叫和哭泣。」"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "全員が事故現場から逃げ帰りました。",
         "en-fr": "Ils sont tous revenus en courant de l’endroit où l’accident s’était produit.",
         "en-th": "พวกเขาทุกคนวิ่งกลับมาจากจุดที่เกิดอุบัติเหตุ",
-        "en-ms": "Mereka semua berlari kembali di mana kemalangan itu telah berlaku."
+        "en-ms": "Mereka semua berlari kembali di mana kemalangan itu telah berlaku.",
+        "en-ru": "Все отбежали от места, в котором произошла авария.",
+        "en-ko": "그들은 모두 사고 현장으로 달려갔다.",
+        "en-vi": "Tất cả mọi người đều chạy ra từ phía xảy ra tai nạn.",
+        "en-id": "Mereka semua lari dari tempat kecelakaan itu terjadi.",
+        "en-ur": "جائے حادثہ سے وہ سب واپس بھاگ گئے۔",
+        "en-uz": "Ularning hammasi baxtsiz hodisa yuz bergan yerdan orqaga qarab qochishdi.",
+        "en-kk": "Олардың барлығы сәтсіз жағдай орын алған жерден артқа қарай жүгірді.",
+        "en-zh-tw": "他們全都從事故發生的地點跑回來。"
       }
     }
   ]

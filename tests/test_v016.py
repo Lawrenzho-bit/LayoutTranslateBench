@@ -112,14 +112,16 @@ def test_rileykim_extension_docs_have_provenance():
 
 def test_real_v016_manifest_per_pair_counts():
     """At v0.1.6 with rileykim extension and v0.1.6.4 script-validation cleanup,
-    per-pair coverage shifts: en-ru has 0 docs after cleanup (the rileykim
-    en-ru rows had Chinese-script refs); other extension pairs retain >= 1
-    doc each. Core 8 pairs retain their v0.1.5 targets."""
+    extension pairs retained only the rileykim coverage (N=3 each, en-ru=0).
+    v0.1.7 enriches the 10 FLORES-derived docs with certified-translator refs
+    for all 8 extension pairs, so all extension pairs now have N >= 10
+    (en-ru: 10, others: 13). Core 8 pairs retain their v0.1.5 targets."""
     manifest_path = _repo_root() / "data" / "manifest.json"
     if not manifest_path.exists():
         return
     payload = json.loads(manifest_path.read_text(encoding="utf-8"))
-    if not payload.get("version", "").startswith("0.1.6"):
+    version = payload.get("version", "")
+    if not version.startswith("0.1.6") and not version.startswith("0.1.7"):
         return
     data_root = manifest_path.parent
     pair_counts: dict[str, int] = {}
@@ -133,21 +135,37 @@ def test_real_v016_manifest_per_pair_counts():
             doc_pairs.update(region["references"].keys())
         for p in doc_pairs:
             pair_counts[p] = pair_counts.get(p, 0) + 1
-    # v0.1.6.4: en-ru lost all 3 docs after script-validation removed the
-    # mislabeled rileykim refs. Other extension pairs retain partial coverage.
-    # Allow >=0 for en-ru, >=1 for others.
-    surviving_extension_pairs = ("en-ko", "en-vi", "en-id", "en-ur", "en-uz", "en-kk", "en-zh-tw")
-    for pair in surviving_extension_pairs:
-        assert pair_counts.get(pair, 0) >= 1, (
-            f"{pair} should have >= 1 doc after v0.1.6.4 cleanup, got {pair_counts.get(pair, 0)}"
-        )
-    # en-ru is expected to be zero after cleanup
-    assert pair_counts.get("en-ru", 0) == 0, (
-        f"en-ru should be 0 after v0.1.6.4 cleanup (rileykim refs were all "
-        f"Chinese), got {pair_counts.get('en-ru', 0)}"
-    )
+
     # Core 8 pairs should still meet v0.1.5 targets (20 for non-overlap, 27+ for ja/zh)
     for pair in ("en-es", "en-de", "en-ar", "en-fr", "en-th", "en-ms"):
         assert pair_counts.get(pair, 0) >= 20
     assert pair_counts.get("en-ja", 0) >= 28
     assert pair_counts.get("en-zh", 0) >= 27
+
+    if version.startswith("0.1.7"):
+        # FLORES extension refs landed: en-ru >= 10, other extension pairs
+        # (rileykim + FLORES combined) >= 13.
+        assert pair_counts.get("en-ru", 0) >= 10, (
+            f"en-ru should have >= 10 docs after v0.1.7 FLORES enrichment, "
+            f"got {pair_counts.get('en-ru', 0)}"
+        )
+        for pair in ("en-ko", "en-vi", "en-id", "en-ur", "en-uz", "en-kk", "en-zh-tw"):
+            assert pair_counts.get(pair, 0) >= 10, (
+                f"{pair} should have >= 10 docs after v0.1.7 (3 rileykim + "
+                f"10 FLORES), got {pair_counts.get(pair, 0)}"
+            )
+    else:
+        # v0.1.6.x: en-ru lost all 3 docs after script-validation removed the
+        # mislabeled rileykim refs. Other extension pairs retain partial coverage.
+        surviving_extension_pairs = (
+            "en-ko", "en-vi", "en-id", "en-ur", "en-uz", "en-kk", "en-zh-tw"
+        )
+        for pair in surviving_extension_pairs:
+            assert pair_counts.get(pair, 0) >= 1, (
+                f"{pair} should have >= 1 doc after v0.1.6.4 cleanup, "
+                f"got {pair_counts.get(pair, 0)}"
+            )
+        assert pair_counts.get("en-ru", 0) == 0, (
+            f"en-ru should be 0 after v0.1.6.4 cleanup (rileykim refs were "
+            f"all Chinese), got {pair_counts.get('en-ru', 0)}"
+        )

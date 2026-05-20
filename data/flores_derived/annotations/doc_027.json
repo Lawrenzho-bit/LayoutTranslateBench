@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Scientists_find_dinosaur_feathers_preserved_in_amber",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'sciece'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'sciece'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "これは、少なくとも一部の恐竜が羽を持っていたことを確認するだけでなく、色や立体配置など、一般的には化石にはない詳細な点を伝えています。",
         "en-fr": "Cela confirme non seulement qu'au moins certains dinosaures avaient des plumes, une théorie déjà très répandue, mais fournit des détails que les fossiles ne peuvent généralement pas fournir, comme la couleur et la disposition tridimensionnelle.",
         "en-th": "สิ่งนี้ไม่เพียงแต่ยืนยันทฤษฎีที่แพร่หลายไปแล้วว่าไดโนเสาร์บางตัวก็มีขน แต่ยังให้รายละเอียดเพิ่มเติมที่ฟอสซิลทั่วไปไม่สามารถให้ได้อีกด้วย เช่น สีและการจัดเรียงแบบสามมิติ",
-        "en-ms": "Hal ini bukan sahaja mengesahkan bahawa dinosaur tertentu mempunyai bulu, satu teori yang sudah tersebar luas, tetapi menyediakan butir-butir khusus yang secara amnya tidak dapat diberi oleh fosil, misalnya warna dan penyusunan tiga dimensi."
+        "en-ms": "Hal ini bukan sahaja mengesahkan bahawa dinosaur tertentu mempunyai bulu, satu teori yang sudah tersebar luas, tetapi menyediakan butir-butir khusus yang secara amnya tidak dapat diberi oleh fosil, misalnya warna dan penyusunan tiga dimensi.",
+        "en-ru": "Это не только подтверждает, что, по крайней мере, у некоторых динозавров были перья, что является уже широко распространённой теорией, но и предоставляет детали, которые обычно нельзя получить из окаменелых остатков, такие как цвет и трехмерную структуру.",
+        "en-ko": "이것은 적어도, 이미 널리 알려진 이론인, 몇몇 공룡들이 깃털을 가지고 있었다는 것을 확인 시켜 줄 뿐만 아니라, 색깔과 3차원 배열과 같이 일반적으로 화석만으론 부족한 세부적인 사항들을 제공한다.",
+        "en-vi": "Điều này không chỉ khẳng định một giả thuyết đã nhiều người biết đến là ít nhất có một số loài khủng long có lông vũ, mà còn cung cấp những thông tin chi tiết mà hóa thạch không thể chỉ ra, chẳng hạn như màu sắc hay cấu trúc 3 chiều.",
+        "en-id": "Hal ini tidak hanya mengonfirmasi bahwa setidaknya beberapa dinosaurus berbulu, teori yang sudah menyebar luas, tetapi juga dapat memberikan detail yang biasanya tidak dapat diberikan oleh fosil, seperti warna dan susunan tiga dimensi.",
+        "en-ur": "اس سے نہ صرف اس بات کی تصدیق ہوتی ہے کہ کم از کم کچھ ڈایناسوروں کے پنکھ ہوتے تھے، یہ نظریہ پہلے ہی سے بڑے پیمانے پر عام ہے، لیکن اس سے وہ تفصیلات بھی فراہم ہوتی ہیں جو کہ فوصل عام طور پر نہیں دے سکتیں، جیسے رنگ اور سہ جہتی ترتیب۔",
+        "en-uz": "Bu faqat allaqachon keng tarqalgan nazariya — hech bo'lmaganda ayrim dinozavrlarda tuk bo'lganini tasdiqlabgina qolmay, balki rangli va uch o'lchamli joylashuv kabi odatda qoldiqlar berolmaydigan tafsilotlarni taqdim etadi.",
+        "en-kk": "Бұл кемінде кейбір динозаврлардың қауырсындары болған деген кеңінен тарап кеткен теорияны растап қана қоймайды, ал сонымен бірге қазбалар негізінен бере алмайтын түс пен үш өлшемді орналасу сияқты мәліметтерді береді.",
+        "en-zh-tw": "這不僅證明了一個廣泛流傳的理論，認為至少某些恐龍有羽毛，也提供了大部分化石無法提供的細節，例如顏色和立體組成方式。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": ".科学者によると、この動物の羽毛は外側が栗色で内側が暖色系の色でした。",
         "en-fr": "Les scientifiques disent que le plumage de cet animal était brun châtain sur le dessus et de couleur pâle ou caroténoïde sur le dessous.",
         "en-th": "นักวิทยาศาสตร์กล่าวว่าขนของสัตว์ชนิดนี้มีสีน้ำตาลเหมือนผลเกาลัดที่ด้านบน และมีสีที่ซีดหรือสีเหมือนสารแคโรทีนที่ด้านล่าง",
-        "en-ms": ". Para saintis mengatakan bahawa bulu haiwan ini berwarna coklat perang di bahagian atas dengan bahagian bawah adalah pucat atau berwarna karotenoid."
+        "en-ms": ". Para saintis mengatakan bahawa bulu haiwan ini berwarna coklat perang di bahagian atas dengan bahagian bawah adalah pucat atau berwarna karotenoid.",
+        "en-ru": "Учёные говорят, что оперение этого животного было сверху каштаново-коричневого цвета, а снизу — либо бледным, либо имело каротиноидную пигментацию.",
+        "en-ko": ". 과학자들은 이 공룡 깃털의 윗쪽이 진갈색이고 아랫쪽은 희거나 노란빛이었다고 밝혔다.",
+        "en-vi": "Các nhà khoa học cho rằng bộ lông của loài này có màu nâu hạt dẻ phía trên và màu xanh xám hoặc vàng/cam bên dưới.",
+        "en-id": "Ilmuwan mengatakan bulu hewan ini berwarna cokelat seperti kastanye di bagian atas dengan bagian bawah berwarna pucat atau karotenoid.",
+        "en-ur": "سائنس دانوں کا کہنا ہے کہ اس جانور کا پلمج (پَر) اوپر پیلے پن کے ساتھ شاہبلوت بھورا تھا یا نیچے کروٹینائڈ رنگ کا تھا۔",
+        "en-uz": ". Olimlarning aytishicha, mazkur hayvonning ustki patlari kashtan-jigarrang, pastkilari esa och yoki karatenoid rangda bo'lgan.",
+        "en-kk": "Ғалымдар бұл жануардың қауырсыны үстінде сарғылт қоңыр, астында бозарған немесе каротеноид түсті болған дейді.",
+        "en-zh-tw": "科學家說這種動物的羽毛外層是栗棕色，內層是泛白的顏色或胡蘿蔔色。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "この発見はまた、鳥類の羽毛の進化について探るための手がかりとなるものでした。",
         "en-fr": "Cette découverte permet également de mieux comprendre l'évolution des plumes chez les oiseaux.",
         "en-th": "การค้นพบเกี่ยวกับเรื่องดังกล่าวยังช่วยให้เห็นวิวัฒนาการของขนนกในเชิงลึกอีกด้วย",
-        "en-ms": "Kajian juga memberi wawasan tentang evolusi bulu pelepah pada burung."
+        "en-ms": "Kajian juga memberi wawasan tentang evolusi bulu pelepah pada burung.",
+        "en-ru": "Находка также позволяет ознакомиться с эволюцией перьев у птиц.",
+        "en-ko": "그러한 발견은 또한 조류에 있어서 깃털의 진화에 대한 통찰을 제공한다.",
+        "en-vi": "Phát hiện này cũng mang đến một cái nhìn sâu sắc cho sự tiến hóa đối với lông vũ của các loài chim.",
+        "en-id": "Penemuan ini juga memberikan wawasan tentang evolusi bulu pada burung.",
+        "en-ur": "یہ تحقیق پرندوں میں پروں کے ارتقاء کا ادراک بھی فراہم کرتی ہے۔",
+        "en-uz": "Topilma qushlardagi patlar evolyutsiyasi to'g'risida ham tushuncha beradi.",
+        "en-kk": "Сондай-ақ бұл ашу құстар қауырсындарының эволюциясына көрініс береді.",
+        "en-zh-tw": "該發現也為鳥類羽毛的進化提供深入的見解。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "恐竜の羽毛には羽軸と呼ばれる十分に発達した軸がないものの、他の羽毛の特徴である綿羽や小羽枝があることから、研究者らは羽軸はこうした他の特徴よりも後に起きた進化であった可能性が高いと推測しています。",
         "en-fr": "Étant donné que les plumes de dinosaure n'ont pas une tige entièrement développée, que l'on appelle rachis, mais montrent cependant d'autres caractéristiques propres aux plumes – barbes et barbules – les chercheurs en ont déduit que le rachis était probablement un développement évolutif ultérieur à ces autres caractéristiques.",
         "en-th": "เนื่องจากขนของไดโนเสาร์ไม่มีก้านที่พัฒนามาอย่างดีที่เรียกว่า rachis แต่มีคุณสมบัติอื่น ๆ ของขนนก เช่น ขนอุยและ เส้นขนย่อย นักวิจัยจึงสรุปว่า rachis น่าจะเป็นการวิวัฒนาการที่เกิดขึ้นภายหลังคุณสมบัติอื่น ๆ เหล่านี้",
-        "en-ms": "Oleh sebab bulu dinosaur tidak mempunyai batang yang tumbuh dengan baik, yang dipanggil rakis, tetapi mempunyai ciri-ciri bulu lain - duri dan barbul - penyelidik menyimpulkan bahawa rakis berkemungkinan satu perkembangan evolusi ciri-ciri lain ini yang datang kemudian."
+        "en-ms": "Oleh sebab bulu dinosaur tidak mempunyai batang yang tumbuh dengan baik, yang dipanggil rakis, tetapi mempunyai ciri-ciri bulu lain - duri dan barbul - penyelidik menyimpulkan bahawa rakis berkemungkinan satu perkembangan evolusi ciri-ciri lain ini yang datang kemudian.",
+        "en-ru": "Так как у перьев динозавров отсутствует хорошо развитый стержень, называемый рахисом, но все же имеются другие отличительные черты — бородки и бородочки — исследователи пришли к выводу, что рахис, скорее всего, появился позднее путем эволюционного развития других отличительных черт.",
+        "en-ko": "공룡 깃털은 우축이라고 불리는 잘 발달된 깃대가 없지만 미늘과 작은 깃가지 같은 다른 특징적인 깃털을 가지고 있으며 연구자들은 이런 다른 특징들이 나중에 진화하여 우축으로 발전했을 것이라고 추측했습니다.",
+        "en-vi": "\"Bởi vì lông vũ của khủng long không có thân lông phát triển tốt được gọi là thân ống lông nhưng lại có các đặc điểm khác của lông vũ - tơ và lông tơ - nên các nhà nghiên cứu cho rằng thân ống lông có thể là sự phát triển tiến hóa sau này với những đặc điểm khác này.\"",
+        "en-id": "Karena bulu dinosaurus tidak memiliki batang yang berkembang dengan baik, yang disebut rachis, tetapi memiliki ciri yang lain â€” duri dan barbule â€” peneliti berkesimpulan bahwa rachis mungkin merupakan perkembangan evolusi lebih akhir dibanding ciri-ciri lainnya.",
+        "en-ur": "کیونکہ ڈائنا سور کی پنکھ میں اچھی طرح سے تیار شدہ شافٹ نہیں ہوتا، جس کو ڈنڈی کہا جاتا ہے، تاہم وہ پنکھ کی دوسری خصوصیات رکھتی ہیں - ذیلی ڈنڈی اور نوک - محققین نے یہ نتیجہ اخذ کیا کہ ڈنڈی میں بعد میں دیگر خصوصیات کے ارتقائی نشو نما کا امکان تھا۔",
+        "en-uz": "Dinozavrlarning patlarida raxis deb ataluvchi yaxshi shakllangan pat o'zagi mavjud bo'lmagani, biroq patlarning boshqa xususiyatlari — soqolcha va tukchalarga ega bo'lgani bois tadqiqotchilar, hoynahoy, raxis boshqa xususiyatlarga qaraganda kechroq paydo bo'lgan evolyutsion rivojlanish, degan xulosaga kelishdi.",
+        "en-kk": "Динозавр қауырсынында рахис деп аталатын жақсы дамыған білік жоқ, бірақ қауырсынның басқа ерекшеліктері бар — кертіктер мен шоқша сақалдар — зерттеушілер рахис туралы олардың кейінірек эволюциялық болған деген қорытындыға келді.",
+        "en-zh-tw": "因為恐龍的羽毛缺乏發展健全的軸，所謂羽軸，但確實存在其他羽毛特性，即羽枝與羽小枝，因此研究者推論，這些其他特性後來很可能就進化成了羽軸。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "羽毛の構造から、飛行の目的ではなく、体温調節や視覚的効果に使用されていたと推測されます。研究者らは、これが若い恐竜の尾であるにもかかわらず、標本は大人の羽毛を示しており、ヒヨコの羽毛ではないことを示唆しました。",
         "en-fr": "La structure des plumes suggère qu’elles n’étaient pas utilisées en vol mais plutôt pour la régulation ou l’affichage de la température. Les chercheurs ont suggéré que, même s’il s’agit de la queue d’un jeune dinosaure, l’échantillon montre un plumage d’adulte et non le duvet d’un poussin.",
         "en-th": "โครงสร้างของขนแสดงให้เห็นว่าขนเหล่านี้ไม่ได้มีไว้สำหรับบิน แต่มีไว้เพื่อควบคุมอุณหภูมิหรือแค่ความสวยงามเสียมากกว่า นักวิจัยชี้ว่าแม้ว่านี่จะเป็นหางของไดโนเสาร์อายุน้อย แต่ตัวอย่างก็แสดงให้เห็นว่าเป็นขนนกที่โตเต็มวัยไม่ใช่ขนลูกเจี๊ยบ",
-        "en-ms": "Struktur bulu mencadangkan bahawa ia tidak digunakan untuk tujuan terbang tetapi lebih kepada pengawalan suhu atau untuk dipamerkan. Para penyelidik mencadangkan, walaupun ekor itu ekor dinosaur berusia muda, sample menunjukkan bulu adalah milik dewasa dan bukan yang muda."
+        "en-ms": "Struktur bulu mencadangkan bahawa ia tidak digunakan untuk tujuan terbang tetapi lebih kepada pengawalan suhu atau untuk dipamerkan. Para penyelidik mencadangkan, walaupun ekor itu ekor dinosaur berusia muda, sample menunjukkan bulu adalah milik dewasa dan bukan yang muda.",
+        "en-ru": "Структура перьев наводит на мысль, что они не использовались для полёта, а скорее для регуляции температуры и демонстрирования. Исследователи предположили, что хотя это и хвост молодого динозавра, но в образце представлено взрослое оперение, а не пух цыплёнка.",
+        "en-ko": "깃털의 구조는 비행 용이 아니라 체온 조절이나 과시용으로 쓰였음을 암시한다. 연구원들은 어린 공룡의 꼬리에서 나온 샘플을 조사하니 유아의 솜털이 아닌 성인 공룡의 깃털이라고 이야기하였다.",
+        "en-vi": "Cấu trúc của lông vũ gợi ý rằng bộ lông này không dùng để bay mà để kiểm soát nhiệt độ cơ thể hoặc để khoe mẽ. Các nhà nghiên cứu cho rằng, mặc dù đây là đuôi của một con khủng long non, mẫu vật thể hiện một bộ lông trưởng thành chứ không phải là lông tơ.",
+        "en-id": "Struktur bulu menunjukkan bahwa bulu tersebut tidak digunakan untuk terbang, melainkan untuk pengaturan suhu atau penampilan. Para peneliti berpendapat, meskipun ini adalah ekor anak dinosaurus, sampelnya menunjukkan bulu burung dewasa, bukan bulu anak ayam.",
+        "en-ur": "پروں کی ساخت سے لگتا ہے کہ وہ پرواز کے لیے استعمال نہیں ہُوئے بلکہ درجہءِ حرارت کی گردش یا اظہار کے لیے استعمال ہُوئے ہیں۔ محققین نے یہ تجویز دی کہ حالانکہ یہ ایک کم عُمر ڈائنوسار کی دُم ہے، نمونہ بالغ پروں کو ظاہر کرتا ہے اور ایک چُوزے کے اندرونی باریک پروں کو نہیں دِکھاتا۔",
+        "en-uz": "Patlarning tuzilishi shuni ko'rsatadiki, ulardan uchish uchun emas, balki haroratni nazorat qilish yoxud ko'z-ko'z qilish maqsadida foydalanilgan. Tadqiqotchilar fikricha, bu yosh dinozavrning dumi bo'lsa ham, namuna jo'janing patini emas, balki voyaga yetganning tuklarini ko'rsatadi.",
+        "en-kk": "Қауырсынның құрылымына сүйенсек, оның ұшудан гөрі, температураны реттеу мен көрсетудегі рөлі орасан зор. Зертеушілердің пікірі бойынша, бұл жас динозаврдың құйрығы болған жағдайда да, үлгі оның балапанның мамық қауырсыны емес, ересек қауырсындану екенін көрсетеді.",
+        "en-zh-tw": "這些羽毛的結構顯示它們不是用來飛行而是用來調節溫度或展示的。研究人員表示，即使這是年輕恐龍的尾巴，該樣本也顯示其為成熟羽毛而非幼雛絨毛。"
       }
     },
     {
@@ -166,7 +206,15 @@
         "en-ja": "研究者らは、この標本が若い恐竜の尻尾であるにもかかわらず、ひなの羽毛ではなく大人の羽毛が生えていることを示唆している。",
         "en-fr": "Les scientifiques précisent qu'il s'agit certes de la queue d'un dinosaure juvénile, mais l'échantillon révèle un plumage appartenant à un individu adulte, et non à un jeune.",
         "en-th": "นักวิจัยกล่าวชี้ให้เห็นว่า แม้จะเป็นหางของไดโนเสาร์อายุไม่มาก แต่ตัวอย่างก็แสดงให้เห็นว่านี่เป็นขนของนกที่โตเต็มวัยแล้วไม่ใช่ขนของลูกเจี๊ยบ",
-        "en-ms": "Para penyelidik mencadangkan, walaupun itu ekor dinosaur yang muda, sampel berkenaan menunjukkan bulu dewasa dan bukan bulu halus anak ayam."
+        "en-ms": "Para penyelidik mencadangkan, walaupun itu ekor dinosaur yang muda, sampel berkenaan menunjukkan bulu dewasa dan bukan bulu halus anak ayam.",
+        "en-ru": "Исследователи предположили, что, несмотря на то, что это хвост молодого динозавра, данный образец имеет оперение взрослой особи, а не пух цыплёнка.",
+        "en-ko": "이것은 젊은 공룡의 꼬리이지만, 샘플을 보면 어린 개체의 솜털이 아닌 성체의 깃털임을 알 수 있다고 연구진은 말합니다.",
+        "en-vi": "Các nhà nghiên cứu cho rằng, mặc dù đây là đuôi của một con khủng long non, mẫu thử cho thấy bộ lông chim của con trưởng thành và không phải là lông của một con gà.",
+        "en-id": "Para peneliti berpendapat, meskipun ini adalah ekor anak dinosaurus, sampel memperlihatkan bulu burung dewasa, bukan bulu anak ayam.",
+        "en-ur": "محققین نے تجویز دی کہ حالانکہ یہ ایک کم عُمر ڈائنوسار کی دُم ہے، نمونہ بالغ پر دکھاتا ہے اور ایک چُوزے کے باریک پر نہیں۔",
+        "en-uz": "Tadqiqotchilar fikricha, garchi ushbu yosh dinozavrning dumi bo'lsa-da, namuna jo'janing patlarini emas, balki katta turning tukini ko'rsatadi.",
+        "en-kk": "Зерттеушілер бұл жас динозаврдың құйрығы болса да, үлгі бойынша бұл балапанның емес, ересек құстың қауырсыны екенін көрсетеді.",
+        "en-zh-tw": "研究人員認為，儘管這是一頭年輕恐龍的尾巴，但樣本中的羽毛已完全發育，而不是年幼動物的新生毛。"
       }
     }
   ]

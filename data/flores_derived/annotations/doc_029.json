@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Dark_matter_lacks_extra_gravitational_force",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Research'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Research'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "内容はほとんどが理論的なものでしたが、書かれたプログラムは射手座銀河で実施した観測を模擬するものでした。",
         "en-fr": "Le travail effectué était principalement théorique, mais le programme a été écrit pour simuler les observations faites de la galaxie du Sagittaire.",
         "en-th": "งานที่ทำเสร็จแล้วส่วนใหญ่เป็นไปตามทฤษฎี แต่โปรแกรมนี้เขียนขึ้นเพื่อจำลองการเฝ้าสังเกตกาแล็กซีซาจิททาเรียส",
-        "en-ms": "Kerja yang dilakukan kebanyakannya secara teori, namun program tersebut ditulis untuk mensimulasi pemerhatian yang dibuat ke atas galaksi Sagittarius."
+        "en-ms": "Kerja yang dilakukan kebanyakannya secara teori, namun program tersebut ditulis untuk mensimulasi pemerhatian yang dibuat ke atas galaksi Sagittarius.",
+        "en-ru": "Проведенная работа была в основном теоретической, но программа была написана для имитации наблюдений галактики в Стрельце.",
+        "en-ko": "비록 대부분 이론에 의존하긴 해도 프로그램은 궁수자리 은하 관측을 시뮬레이션하도록 짜여 있습니다.",
+        "en-vi": "Công việc hoàn thành chủ yếu là lý thuyết, nhưng chương trình được viết ra để mô phỏng sự quan sát của thiên hà Nhân Mã.",
+        "en-id": "Pekerjaan yang dilakukan sebagian besar bersifat teoretis, tetapi program ini ditulis untuk menyimulasikan pengamatan yang dilakukan terhadap galaksi Sagitarius.",
+        "en-ur": "انجام دیے گئے زیادہ تر کام نظریاتی تھے، لیکن یہ پروگرام برج قوس کی کہکشاں سے بنے مشاہدات کے معیاری نمونہ کیلئے تحریر کیا گیا تھا۔",
+        "en-uz": "Bajarilgan ishlarning aksariyati nazariy edi, biroq dastur o'qotar galaktikasidagi kuzatuvlarni simulyatsiya qilish uchun yozilgan edi.",
+        "en-kk": "Жасалған жұмыс көбіне теориялық болды, бірақ Мерген галактикасына қатысты жасалатын бақылауларды симуляциялау үшін бағдарлама жазылды.",
+        "en-zh-tw": "目前所做的研究主要都是理論上的，但此計畫的目的在於模擬對人馬座星系所做的觀察。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "このチームが求めていた効果は、銀河系の暗黒物質と天の川の暗黒物質の間で働く潮汐力による作用だったのでしょう。",
         "en-fr": "L’effet que l’équipe recherchait serait causé par les forces de marée entre la matière noire de la galaxie et la matière noire de la Voie lactée.",
         "en-th": "ผลกระทบที่ทีมต้องการน่าจะเกิดจากแรงไทดัลระหว่างสสารมืดของกาแล็กซีและสสารมืดของทางช้างเผือก",
-        "en-ms": "Kesan yang dicari pasukan adalah disebabkan oleh daya pasang surut di antara jirim gelap galaksi dan jirim gelap Milky Way."
+        "en-ms": "Kesan yang dicari pasukan adalah disebabkan oleh daya pasang surut di antara jirim gelap galaksi dan jirim gelap Milky Way.",
+        "en-ru": "Эффект, который искала команда, может быть вызван приливными силами между тёмной материей галактики и тёмной материей Млечного Пути.",
+        "en-ko": "팀이 찾고 있던 효과는 은하계의 암흑물질과 은하수의 암흑물질 사이의 기조력에 의해 발생했을 수 있습니다.",
+        "en-vi": "Hiệu ứng mà đội đang tìm kiếm sẽ tạo ra bởi lực hút thủy triều giữa vật chất đen của thiên hà và vật chất đen của Dải Ngân Hà.",
+        "en-id": "Efek yang dicari oleh tim akan disebabkan oleh gaya pasang surut antara materi gelap galaksi dan materi gelap Bima Sakti.",
+        "en-ur": "وہ اثرات جس کی ٹیم کو تلاش تھی وہ کہکشاں کے ڈارک میٹر اور ملکی وے کے ڈارک میٹر کے درمیان مدو جزری اثرات کی وجہ سے پیدا ہو رہے ہوں گے۔",
+        "en-uz": "Jamoa qidirgan effektga galaktikaning qorong'i materiyasi va Somon yo'lining qorong'i materiyasi o'rtasidagi to'lqin kuchlari sabab bo'ladi.",
+        "en-kk": "Топ іздеген әсерге галактиканың күңгірт материясы мен Құс жолы галактикасының күңгірт материясының арасындағы толқын күштері әсер етуі мүмкін.",
+        "en-zh-tw": "該團隊想觀察到的效應，是由此星系與銀河各自之暗物質交互影響潮汐的結果"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "月の引力で地球に潮の満ち引きが起きるように、天の川は射手座銀河にも力を及ぼしています。",
         "en-fr": "Tout comme la lune exerce une traction sur la terre, provoquant des marées, la Voie lactée exerce une force sur la galaxie du Sagittaire.",
         "en-th": "ทางช้างเผือกส่งพลังดึงกาแล็กซีซาจิทาเรียสเข้าหา เช่นเดียวกับที่ดวงจันทร์ออกแรงดึงโลกจนทำให้เกิดกระแสน้ำ",
-        "en-ms": "Sama seperti bulan yang mengenakan daya tarikan pada bumi lalu menyebabkan pasang surut air, begitu juga Bima Sakti yang mengenakan daya ke atas galaksi Sagittarius."
+        "en-ms": "Sama seperti bulan yang mengenakan daya tarikan pada bumi lalu menyebabkan pasang surut air, begitu juga Bima Sakti yang mengenakan daya ke atas galaksi Sagittarius.",
+        "en-ru": "Так же, как Луна притягивает Землю, при этом вызывая приливы, так и Млечный Путь воздействует на галактику в Стрельце.",
+        "en-ko": "달이 지구에 당기는 힘을 발휘하여 조수를 일으키듯이, 은하수도 궁수자리 은하계에 힘을 발휘한다.",
+        "en-vi": "Tương tự như mặt trăng tác động lực hấp dẫn lên trái đất và gây ra thủy triều, Dải Ngân hà cũng tác động lực lên thiên hà Nhân Mã.",
+        "en-id": "Layaknya pasang surut yang terjadi akibat bulan menarik bumi, Bima Sakti memberi galaksi Sagitarius gaya.",
+        "en-ur": "جس طرح سے چاند زمین پر کشش ڈالتا ہے جس سے جوار بھاٹا پیدا ہوتا ہے، اسی طرح سے ملکی وے برج قوس کہکشاں پر طاقت ڈالتی ہے۔",
+        "en-uz": "Xuddi oy to'lqinlarni yuzaga keltirgan holda yerga tortish kuchi bilan ta'sir ko'rsatgani kabi Somon yo'li ham Qavs galaktikasiga kuch bilan ta'sir qiladi.",
+        "en-kk": "Дәл ай жерді тартып, судың көтерілуіне әкелетіндей, Құс жолы да Мерген галактикасына күш түсіреді.",
+        "en-zh-tw": "正如同月亮對地球的引力造成潮汐一樣，銀河系也對射手座星系施加了作用力。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "科学者たちは、暗黒物質は、通常の物質と同じように他の暗黒物質にも影響を与えていると結論づけました。",
         "en-fr": "Les scientifiques ont pu conclure que la matière noire affecte les autres matières noires de la même manière que la matière normale.",
         "en-th": "นักวิทยาศาสตร์สามารถสรุปได้ว่าสสารมืดมีผลกระทบต่อสสารมืดอื่น ๆ ในลักษณะเดียวกับสสารปกตินั่นเอง",
-        "en-ms": "Para saintis dapat menyimpulkan bahawa jirim gelap menjejaskan jirim gelap yang lain dalam cara yang sama dengan jirim biasa."
+        "en-ms": "Para saintis dapat menyimpulkan bahawa jirim gelap menjejaskan jirim gelap yang lain dalam cara yang sama dengan jirim biasa.",
+        "en-ru": "Ученые смогли сделать вывод, что темная материя воздействует на другую темную материю так же, как и в случае с обычной материей.",
+        "en-ko": "과학자들은 암흑물질이 일반 물질과 같은 방식으로 다른 암흑물질에 영향을 준다고 결론지었습니다.",
+        "en-vi": "Các nhà khoa học đã có thể kết luận rằng vật chất tối ảnh hưởng tới vật chất tối khác giống như tính chất của vật chất thông thường.",
+        "en-id": "Para ilmuwan dapat menyimpulkan bahwa materi gelap mempengaruhi materi gelap lainnya dengan cara yang sama seperti materi biasa.",
+        "en-ur": "سائنس داں اس نتیجہ پر پہنچ پائے تھے کہ ڈارک میٹر دوسرے ڈارک میٹر پر اسی طرح اثر انداز ہوتے ہیں جس طرح عام میٹر ڈالتے ہیں۔",
+        "en-uz": "Olimlar qora materiya boshqa qora materiyaga xuddi odatiy materiya ta'sir qilgani kabi ta'sir ko'rsatadi, degan xulosaga kelishdi.",
+        "en-kk": "Ғалымдар қара материя басқа қара материяға қарапайым материя сияқты әсер етеді деп тұжырымдай алды.",
+        "en-zh-tw": "科學家能斷定暗物質用與一般物質相同的方式影響其他暗物質。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "この理論によると、銀河の周りにある暗黒物質のほとんどは、一種のハローのように銀河を取り巻き、たくさんの小粒子でできていると言われています。",
         "en-fr": "Selon cette théorie, la majeure partie de la matière noire autour d’une galaxie se trouve dans une sorte de halo, et est constituée d’un grand nombre de petites particules.",
         "en-th": "ทฤษฎีนี้กล่าวว่า สสารมืดรอบกาแล็กซี่หนึ่งนั้นตั้งอยู่รอบกาแล็กซี่หนึ่งในแบบรัศมี และเกิดขึ้นจากอนุภาคขนาดเล็กเป็นจำนวนมาก",
-        "en-ms": "Teori ini mengatakan bahawa perkara gelap di seluruh galaksi yang terletak di sekitar galaksi dalam sejenis halo, dan diperbuat daripada banyak zarah kecil."
+        "en-ms": "Teori ini mengatakan bahawa perkara gelap di seluruh galaksi yang terletak di sekitar galaksi dalam sejenis halo, dan diperbuat daripada banyak zarah kecil.",
+        "en-ru": "Согласно этой теории, значительная часть темной материи вокруг Галактики располагается в виде ореола и состоит из большого количества мелких частиц.",
+        "en-ko": "이 이론에 따르면 은하계 주변 암흑물질의 대부분은 마치 후광처럼 은하계 주위에 자리 잡고 있으며, 대량의 작은 입자들로 구성되어 있다.",
+        "en-vi": "Lý thuyết này cho rằng hầu hết các vật chất đen quanh một thiên hà nằm quanh một thiên hà trong một quầng và được tạo thành từ nhiều hạt nhỏ.",
+        "en-id": "Teori ini mengatakan bahwa sebagian besar materi gelap di sekitar galaksi terletak di sekitar galaksi dalam bentuk lingkaran cahaya, dan terbuat dari banyak partikel kecil.",
+        "en-ur": "اس نظریے کے مطابق کہکشاں کے اردگرد موجود زیادہ تر سیاہ مادہ ایک ہالے کی شکل میں کہکشاں کے اردگرد موجود ہے، اور یہ بہت سے چھوٹے ذرات پر مشتمل ہے۔",
+        "en-uz": "Mazkur nazariyaga ko'ra, galaktika atrofidagi qora materiyaning aksariyati galaktika atrofida chambar shaklida joylashgan va juda ko'p mayda zarralardan tashkil topgan.",
+        "en-kk": "Бұл теорияда галактиканың айналасындағы қараңғы материяның көп бөлігі галактиканың айналасында гало сияқты орналасқан және көптеген шағын бөлшектерден тұрады делінген.",
+        "en-zh-tw": "該理論聲稱一個銀河系周圍的暗物質大多會形成一種暈圈，且是由許多微粒所組成。"
       }
     }
   ]

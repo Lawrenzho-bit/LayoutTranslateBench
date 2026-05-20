@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Noted_stamp_engraver_Czeslaw_Slania_dies_at_83",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Culture'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Culture'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "1956年にスウェーデンに移住したスワニアは、3年後にスウェーデン郵便局で働き始め、その主任彫版工となりました。",
         "en-fr": "En 1956, Słania s'est installé en Suède, où trois ans plus tard, il a commencé à travailler pour la poste suédoise pour en devenir le graveur en chef.",
         "en-th": "ในปี พ.ศ. 2499 Słania ย้ายไปอยู่ที่สวีเดน โดยเริ่มทำงานให้กับที่ทำการไปรษณีย์สวีเดนใน 3 ปีต่อมา จนได้กลายเป็นหัวหน้าช่างแกะสลัก",
-        "en-ms": "Pada tahun 1956 Słania telah berpindah ke Sweden, lalu tiga tahun kemudiannya dia mula bekerja dengan Pejabat Pos Sweden dan menjadi ketua pengukir."
+        "en-ms": "Pada tahun 1956 Słania telah berpindah ke Sweden, lalu tiga tahun kemudiannya dia mula bekerja dengan Pejabat Pos Sweden dan menjadi ketua pengukir.",
+        "en-ru": "В 1956 году Сланя переехал в Швецию, где три года спустя начал работать на Шведскую почтовую компанию, и стал их главным гравировщиком.",
+        "en-ko": "슬라니아는 1956년에 스웨덴으로 이주하였습니다. 그로부터 3년 뒤, 그는 스웨덴 우체국에서 일하기 시작하여 우체국 수석 조각공이 되었습니다.",
+        "en-vi": "Vào năm 1956, Slania chuyển đến Thụy Điển, nơi mà sau đó ba năm, anh bắt đầu làm việc cho Bưu điện Thụy Điển và trở thành thợ khắc chính tại đó.",
+        "en-id": "Pada tahun 1956, SÅ‚ania pindah ke Swedia, di sana tiga tahun kemudian dia mulai bekerja untuk Kantor Pos Swedia dan menjadi pengukir utama di sana.",
+        "en-ur": "1956 میں سلانیہ سویڈن منتقل ہوگئے جہاں انہوں نے تین سال بعد سویڈش پوسٹ آفس کیلئے کام شروع کیا اور ان کی چیف کندہ کار بن گئے۔",
+        "en-uz": "Slaniya 1956-yil Shvetsiyaga ko'chib o'tib, uch yildan keyin Shvetsiya pochtasida ishlay boshladi va u yerning bosh naqqoshiga aylandi.",
+        "en-kk": "1956 жылы Слания Швецияға көшті, онда үш жылданк кейін ол Швецияның поштасында жұмыс істей бастады және олардың басты нақышшысына айналды.",
+        "en-zh-tw": "斯拉尼亞於 1956 年搬到了瑞典。三年後，他開始為瑞典郵政局工作，並成為了他們的首席雕刻師。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "スウェーデンをはじめとする28カ国の切手を1,000枚以上制作した。",
         "en-fr": "Il a produit plus de 1000 timbres pour la Suède et 28 autres pays.",
         "en-th": "เขาผลิตแสตมป์มากกว่า 1,000 ดวงให้กับสวีเดนและประเทศอื่น ๆ อีก 28 ประเทศ",
-        "en-ms": "Beliau menghasilkan lebih 1,000 stem untuk Sweden dan 28 negara lain."
+        "en-ms": "Beliau menghasilkan lebih 1,000 stem untuk Sweden dan 28 negara lain.",
+        "en-ru": "Он создал более 1000 марок для Швеции и 28 других стран.",
+        "en-ko": "그는 스웨덴과 다른 28개국을 위해 1,000개 이상의 우표를 제작했다.",
+        "en-vi": "Ông ấy đã sản xuất hơn 1.000 con tem cho Thụy Điển và 28 quốc gia khác.",
+        "en-id": "Dia membuat lebih dari 1.000 prangko untuk Swedia dan 28 negara lainnya.",
+        "en-ur": "انہوں نے سویڈن اور دیگر 28 ممالک کیلئے 1000 اسٹیمپ تیار کیے۔",
+        "en-uz": "U Shvetsiya va boshqa 28 davlat uchun mingdan ortiq markalar ishlab chiqargan.",
+        "en-kk": "Ол Швецияға және басқа да 28 елге 1000-нан астам таңба белгісін шығарды.",
+        "en-zh-tw": "他為瑞典和其他 28 個國家製作了一千多枚郵票。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "彼の作品は、その質の高さと詳細さが評価され、切手収集家の中では数少ない「有名人」の1人です。彼の作品だけを専門とする収集家もいるほどです。",
         "en-fr": "Son travail est d'une telle qualité et d'un tel niveau de détail qu'il est l'un des rares philatélistes bien connus du « grand public ». Certains collectionneurs consacrent leur attention uniquement à ses œuvres.",
         "en-th": "ผลงานของเขามีคุณภาพและรายละเอียดซึ่งเป็นที่ยอมรับจนทำให้เขาเป็นหนึ่งใน \"ผู้มีชื่อเสียง\" เพียงไม่กี่คนในหมู่นักสะสมสแตมป์ บางคนมีความเชี่ยวชาญในการเก็บสะสมเพียงผลงานของเขาเท่านั้น ",
-        "en-ms": "Hasil karya beliau mempunyai kualiti dan perincian yang sangat dikenali sehingga beliau merupakan seorang yang termasyhur antara ahli filatel. Ada beberapa yang menjadi pakar dalam mengumpulkan hasil karyanya sahaja."
+        "en-ms": "Hasil karya beliau mempunyai kualiti dan perincian yang sangat dikenali sehingga beliau merupakan seorang yang termasyhur antara ahli filatel. Ada beberapa yang menjadi pakar dalam mengumpulkan hasil karyanya sahaja.",
+        "en-ru": "Его работы настолько известны своим качеством и детализацией, что он является одним из немногих \"нарицательных имён\" среди филателистов. Некоторые специализируются только на коллекционировании его работ.",
+        "en-ko": "\"그의 작품은 높은 품질과 세밀하기로 정평이 나 있고 그는 도장 파는 사람 중 정말 몇 되지 않는 \"\"누구나 아는 이름\"\"의 소유자이다. 그의 작품만을 전문으로 수집하는 사람들도 있다.   \"",
+        "en-vi": "Tác phẩm của ông có phẩm chất và chi tiết được tán dương đến mức ông là một trong số rất ít \"tên tuổi lớn\" nổi bật trong giới sưu tầm tem. Một số nhà sưu tập chỉ chuyên sưu tầm tác phẩm của ông.",
+        "en-id": "\"Karyanya memiliki kualitas dan detail yang diakui bahwa dia adalah salah satu dari sedikit \"nama rumah tangga\" di kalangan filatelis. Beberapa mengkhususkan diri mengoleksi karyanya saja.\"",
+        "en-ur": "ان کا کام اس قدر تفصیلی اور تسلیم شدہ معیار کے مطابق ہے کہ وہ ٹکٹ اندوزوں کے درمیان صرف چند \"گھریلو ناموں\" میں سے ایک ہیں۔ کچھ لوگ صرف ان کے کاموں کو جمع کرنے میں اختصاص رکھتے ہیں۔",
+        "en-uz": "Uning ishi shunchalik tan olingan sifatga ega va batafsilki, u filatelistlar orasidagi juda kam sonli \"mashhur nomlardan\" biridir. Ba'zilar faqat uning ishini kolleksiya qiladi.",
+        "en-kk": "Оның жұмысы соншалықты танылған сапалы және егжей-тегжейлі болғандықтан, филателистер арасында өте аз «үй иелері атауларының » бірі болып есептеледі. Кейбіреулер өзінің жұмысын жалғыздықта жинауға маманданған.",
+        "en-zh-tw": "他的作品擁有如此高辨識度的品質和細節，這使他成為集郵家之間極少數「家喻戶曉」的人物之一。有些集郵家甚至只蒐集他的作品。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "彼の1,000枚目の切手は、デビッド・クレッカー・エーレンストラールが2000年に発行した素晴らしい「スウェーデン国王たちの偉業」でギネスブックにも掲載されています。",
         "en-fr": "Son millième timbre a été le magnifique « Great Deeds by Swedish Kings » de David Klöcker Ehrenstrahl en 2000, qui figure dans le Livre Guinness des records.",
         "en-th": "แสตมป์ดวงที่ 1,000 ของเขาเป็นภาพอันสง่างามของ \"การกระทำอันยิ่งใหญ่โดยกษัตริย์สวีเดน\" ฝีมือ ดาวิด คล็อกเคอร์ เอห์เรนสตราห์ลในปี 2000 ซึ่งได้รับการบันทึกไว้ในกินเนสส์บุ๊กออฟเวิลด์เรกคอร์ด ",
-        "en-ms": "Setem ke-1,000nya adalah setem “Great Deeds by Swedish Kings” yang mengagumkan oleh David Klöcker Ehrenstrahl pada tahun 2000, yang disenaraikan dalam Guinness Book of World Records."
+        "en-ms": "Setem ke-1,000nya adalah setem “Great Deeds by Swedish Kings” yang mengagumkan oleh David Klöcker Ehrenstrahl pada tahun 2000, yang disenaraikan dalam Guinness Book of World Records.",
+        "en-ru": "Его великолепная тысячная марка 2000-го  года воспроизводит \"Великие деяния шведских королей\" Давида-Клёккера Эрнестраля, она внесена в книгу мировых рекордов Гиннеса.",
+        "en-ko": "그의 1,000번째 도장은 2000년에 다비드 클뢰커 에렌슈트랄의 장대한 작품인 '스웨덴 역대 왕의 위업'을 새긴 것이다. 그리고 이는 기네스 세계 기록에 등재되어 있다.",
+        "en-vi": "Con tem thứ 1.000 của anh ấy là bức tranh tráng lệ \"Chứng thư Vĩ đại của các Vị vua Thụy Điển\" của David Klöcker Ehrenstrahl năm 2000, được liệt kê trong Sách Kỷ lục Guinness Thế giới.",
+        "en-id": "\"Perangko ke-1000-nya adalah \"Karya Besar Raja Swedia\" oleh David KlÃ¶cker Ehrenstrahl di tahun 2000, yang terdaftar di Buku Rekor Dunia Guinness.\"",
+        "en-ur": "اس کا 1،000واں عظیم الشان اسٹامپ تھا ”سویڈش بادشاہوں کے عظیم کارنامے“ جسے ڈاویڈ کلوکر اہرنستراہی نے 2000ء میں تخلیق کیا اور جو گینیس بک آف ورلڈ رکارڈس میں شامل ہے۔",
+        "en-uz": "Uning 1000-markasi 2000-yilda David Klyoker Erenstrahl tomonidan yaratilgan, Dunyo rekordlari Ginnes kitobiga kiritilgan ulug'vor \"Shved shohlariningbuyuk ishlari\" bo'lgan edi.",
+        "en-kk": "Оның 1000-шы маркасы 2000 жылы Дэвид Клокер Эренстраль жасаған «Швед корольдарының тамаша ерліктері» деген сәулетті маркасы болатын. Ол Гиннес әлемдік рекордтары кітабына енді.",
+        "en-zh-tw": "他所雕刻的第 1,000 款郵票是大衛·科洛克·埃倫斯特拉爾 (David Klöcker Ehrenstrahl) 2000 年的畫作──壯麗的《 瑞典國王偉大事蹟》，該作品被收錄於金氏世界紀錄中。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "彼は多くの国で紙幣の製作にも携わっており、最近では、カナダの新5ドル紙幣と新100ドル紙幣の表に描かれた首相の肖像画などがその一例です。",
         "en-fr": "Il a également gravé des billets de banque pour de nombreux pays. Parmi les exemples récents de son travail, on peut citer les portraits du Premier ministre au recto des nouveaux billets canadiens de 5 et 100 dollars.",
         "en-th": "เขายังมีส่วนร่วมในการแกะสลักธนบัตรให้กับหลายประเทศอีกด้วย ตัวอย่างผลงานล่าสุดของเขาได้แก่ ภาพนายกรัฐมนตรีที่ด้านหน้าของธนบัตรใหม่ชนิดราคา 5 และ 100 ดอลลาร์แคนาดา",
-        "en-ms": "Beliau juga diupah untuk mengukir wang kertas untuk berbagai negara, contoh terbaru hasil kerjanya termasuk potret Perdana Menteri pada bahagian depan wang kertas Kanada $5 dan $100."
+        "en-ms": "Beliau juga diupah untuk mengukir wang kertas untuk berbagai negara, contoh terbaru hasil kerjanya termasuk potret Perdana Menteri pada bahagian depan wang kertas Kanada $5 dan $100.",
+        "en-ru": "Кроме того, он занимался гравюрным оттиском банкнот для многих стран. Недавние примеры его работ — портреты премьер-министра на лицевой стороне новых банкнот Канады номиналом 5 и 100 долларов.",
+        "en-ko": "그는 또한 다른 국가들의 지폐를 새기는 일에도 참여했는데, 최근 캐나다에서 나온 새 5달러와 100달러 지폐 전면에 나온 총리의 초상화가 그의 작품이다.",
+        "en-vi": "Ông ta cũng tham gia vào việc khắc các loại tiền giấy cho nhiều quốc gia những ví dụ gần đây về công việc của ông ấy bao gồm chân dung Thủ tướng trên mặt trước của tờ 5 đô la Canada và 100 đô la Canada mới.",
+        "en-id": "Dia juga terlibat dalam pengukiran uang kertas untuk banyak negara, contoh karyanya yang terbaru termasuk potret Perdana Menteri di bagian depan uang kertas $5 dan $100 Kanada yang baru.",
+        "en-ur": "وہ بہت سے ممالک کے لئے بینک نوٹ کی کندہ کاری میں بھی مصروف تھا، اس کے کام کی حالیہ مثالوں میں سے کینیڈا کے نئے 5$ اور 100$ کے نوٹوں کے سامنے والے حصے پر وزیر اعظم کی تصویر بنانا شامل ہے-",
+        "en-uz": "Shuningdek, u ko'p davlatlar uchun kupyuralar yaratish bilan shug'ullangan, Kanadaning yangi 5$ va 100$ lik kupyuralari old tomonidagi bosh vazir suratlari uning so'nggi ishlaridan namunalar sirasiga kiradi.",
+        "en-kk": "Сондай-ақ ол көп елдердің банкнота басу қалыптарын нақыштауға қатысты. Оның жақындағы жұмыс мысалдарына Канаданың жаңа $5 және $100 банкноталарындағы премьер-министр портреттері кіреді.",
+        "en-zh-tw": "他也參與許多國家的紙鈔雕刻工作，近期作品包括加拿大 5 元及 100 元新鈔上的總理肖像。"
       }
     }
   ]

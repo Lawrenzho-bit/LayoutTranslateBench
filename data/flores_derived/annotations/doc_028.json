@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Iraq_Study_Group_Report:_Iraq_could_be_on_a_slide_towards_chaos",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Politics'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Politics'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "イラク研究会は、本日12時GMTに報告書を公開しました。",
         "en-fr": "Le groupe d’étude sur l’Irak a présenté son rapport aujourd’hui à 12 h GMT.",
         "en-th": "วันนี้เมื่อเวลา 12.00 น. ตามเวลามาตรฐานสากล กลุ่ม Iraq Study Group ได้นำเสนอรายงานของพวกเขา",
-        "en-ms": "Kumpulan Kajian Iraq telah membentangkan laporan mereka pada pukul 12.00 GMT hari ini."
+        "en-ms": "Kumpulan Kajian Iraq telah membentangkan laporan mereka pada pukul 12.00 GMT hari ini.",
+        "en-ru": "Сегодня в 12:00 по Гринвичу группа по изучению Ирака представила свой доклад.",
+        "en-ko": "이라크 스터디 그룹은 오늘 12시 GMT(그리치니 표준시)에 리포트를 발표했다.",
+        "en-vi": "Nhóm Nghiên cứu Iraq đã trình báo cáo của nhóm vào lúc 12 giờ, giờ GMT, hôm nay.",
+        "en-id": "Kelompok Studi Irak mempresentasikan laporannya pada pukul 12.00 GMT hari ini.",
+        "en-ur": "عراق اسٹڈی گروپ نے اپنی رپورٹ آج 12:00 جی ایم ٹی پر پیش کر دی۔",
+        "en-uz": "Iroqni o'rganish guruhi bugun soat 12:00 GMT da o'z hisobotini taqdim etdi.",
+        "en-kk": "Иракты зерттеу тобы өз есебін бүгін GMT бойынша сағат 12:00-де ұсынады.",
+        "en-zh-tw": "伊拉克研究小組在今天格林威治標準時間 12 點提出報告。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "警告の内容は、現時点でイラクでどのような行動をとっても、宗派間抗争や暴力の拡大、あるいは混沌への滑落を阻止しうると保証できる者はいないというものでした。",
         "en-fr": "Il avertit que personne ne peut garantir que toute action en Irak à ce stade mettra fin à la guerre sectaire, à la violence croissante ou au glissement vers le chaos.",
         "en-th": "ข้อความเตือนว่าไม่มีใครรับประกันได้ว่า การดำเนินการใด ๆ ในอิรัก ณ ขณะนี้จะสามารถหยุดยั้งสงครามการแบ่งแยก ความรุนแรงที่กำลังเพิ่มมากขึ้น หรือการเข้าสู่ความโกลาหลได้",
-        "en-ms": "Ia memberi amaran bahawa Tiada siapa dapat menjamin apa-apa tindakan di Iraq pada ketika ini yang akan menghentikan peperangan pengikut, keganasan yang semakin meningkat atau ke arah kekacauan."
+        "en-ms": "Ia memberi amaran bahawa Tiada siapa dapat menjamin apa-apa tindakan di Iraq pada ketika ini yang akan menghentikan peperangan pengikut, keganasan yang semakin meningkat atau ke arah kekacauan.",
+        "en-ru": "Он предупреждает: \"Никто не может гарантировать, что какой-либо план действий в Ираке в текущей ситуации сможет остановить религиозную войну, растущее насилие или надвигающийся хаос\".",
+        "en-ko": "이 시점에서 이라크의 행동이 종파적인 전쟁이나 폭력이 증가하는 것, 혹은 혼돈의 상태를 막을 수 있다는 데에 보장은 없다.",
+        "en-vi": "Nhóm này cảnh báo Không ai có thể bảo đảm rằng bất cứ một hành động nào ở Iraq vào thời điểm này sẽ giúp chấm dứt chiến tranh phe phái, sự gia tăng bạo lực, hay sự lún sâu vào tình thế hỗn loạn.",
+        "en-id": "Ia memperingatkan bahwa tidak ada yang bisa menjamin bahwa tindakan apa pun di Irak saat ini mampu menghentikan perang antarkelompok, meningkatnya kekerasan, atau menghindari kekacauan.",
+        "en-ur": "نقطہ پر اس نے خبردار کیا کہ کوئی بھی گارنٹی نہیں دے سکتا کہ عراق میں اس نقطہ پر کوئی بھی خُطۃ عمل طائفی جنگ، متنامی عُنف، یا عام خلفشار کو روک سکتا ہے۔",
+        "en-uz": "Bu mazkur holatda Iroqdagi hech bir harakat mazhablararo qurolli kurashni, oshib borayotgan zo'ravonlikni yoxud tartibsizlik sari siljishni to'xtatishga hech kim kafolat bermasligidan ogohlantiradi.",
+        "en-kk": "Ол қазіргі уақыттағы Ирактағы ешбір әрекет бағыты секталардың соғысын, өсіп жатқан қатыгездікті немесе хаосқа қарай төмендеуді тоқтататынына кепілдік бермейді деп ескертеді.",
+        "en-zh-tw": "它警告說，沒人能保證此時在伊拉克採取的任何行動方針將阻止宗派戰爭、持續成長的暴力或陷入混亂。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "報告書の冒頭は、公開討論と中東政策について米国内のコンセンサス形成を嘆願する一節で始まっています。",
         "en-fr": "Le rapport s'ouvre par un appel à un débat ouvert et à la formation d'un consensus aux États-Unis sur la politique à l'égard du Moyen-Orient.",
         "en-th": "รายงานฉบับนี้เริ่มต้นด้วยการร้องขอให้มีการอภิปรายอย่างเปิดเผยและให้มีการลงฉันทามติในสหรัฐอเมริกาเกี่ยวกับนโยบายที่มีต่อตะวันออกกลาง",
-        "en-ms": "Laporan berkenaan dibuka dengan permohonan untuk perdebatan terbuka dan pembentukan persepakatan di Amerika Syarikat berkenaan dasar menuju Timur Tengah."
+        "en-ms": "Laporan berkenaan dibuka dengan permohonan untuk perdebatan terbuka dan pembentukan persepakatan di Amerika Syarikat berkenaan dasar menuju Timur Tengah.",
+        "en-ru": "Доклад открывается призывом к проведению открытых обсуждений и формированию консенсуса в Соединённых Штатах насчёт политики в отношении Ближнего Востока.",
+        "en-ko": "보고서는 미국의 중동 정책에 관해 공개 토론과 의견 일치 형성에 대한 탄원으로 시작한다.",
+        "en-vi": "Bản báo cáo mở đầu bằng lời biện hộ cho cuộc tranh luận mở và tạo lập sự đồng thuận của Hoa Kỳ về chính sách đối với Trung Đông.",
+        "en-id": "Laporan tersebut dibuka dengan permohonan untuk debat terbuka dan pembentukan konsensus di Amerika Serikat tentang kebijakan terhadap Timur Tengah.",
+        "en-ur": "اس رپورٹ کا آغاز مشرق وسطی کے تئیں پالیسی کے بارے میں ریاستہائے متحدہ میں کھلی بحث اور اتفاق رائے کے قیام کی اپیل کے ساتھ ہوا ہے۔",
+        "en-uz": "Hisobot Yaqin Sharqqa nisbatan siyosat haqida AQSHda umumiy kelishuvni shakllantirish hamda ochiq muhokama uchun da'vo bilan ochiladi.",
+        "en-kk": "Баяндама ашық пікірталастар мен АҚШ-та Таяу Шығыстағы саясат туралы келісімге келуді шақырудан басталды.",
+        "en-zh-tw": "此報告開頭先請求美國針對中東政策進行公開辯論並形成共識。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "本報告書は、イラクに対する行政府の現在の政策のほぼすべての側面を強く批判し、即時の方向転換を促すものです。",
         "en-fr": "Le rapport est très critique envers presque tous les aspects de la politique actuelle du gouvernement à l'égard de l'Irak et plaide vivement pour un changement de direction immédiat.",
         "en-th": "รายงานฉบับนี้มีความสำคัญอย่างยิ่งต่อนโยบายปัจจุบันที่ผู้บริหารมีต่ออิรักในเกือบทุกแง่มุม อีกทั้งยังกระตุ้นให้เกิดการเปลี่ยนแปลงทิศทางได้ในทันที ",
-        "en-ms": "Laporan itu sangat kritikal terhadap hampir semua aspek polisi Eksekutif sedia ada terhadap Iraq dan ia mendesak perubahan hala tuju dengan serta-merta."
+        "en-ms": "Laporan itu sangat kritikal terhadap hampir semua aspek polisi Eksekutif sedia ada terhadap Iraq dan ia mendesak perubahan hala tuju dengan serta-merta.",
+        "en-ru": "В докладе содержится резкая критика почти каждого аспекта нынешней политики исполнительной власти в отношении Ирака и настоятельный призыв к незамедлительной смене курса.",
+        "en-ko": "보고서는 행정부의 현재 이라크 정책에 대해 거의 모든 측면에서 매우 비판적이며 즉각적인 방향 변경을 촉구합니다.",
+        "en-vi": "Bản Báo cáo chỉ trích nặng nề hầu như tất cả mọi khía cạnh trong chính sách hiện hành mà cơ quan hành pháp dành cho Iraq và kêu gọi sự chuyển hướng ngay lập tức.",
+        "en-id": "Laporan tersebut mengkritik tajam hampir setiap aspek kebijakan Eksekutif saat ini terhadap Irak dan mendesak perubahan arah kebijakan secepatnya.",
+        "en-ur": "یہ رپورٹ عراق کی سمت ایگزیکٹیو کی پالیسی کے ہر پہلو پر نکتہ چیں ہے اور وہ فوری طور سے جہت کی تبدیلی پر زور دیتی ہے۔",
+        "en-uz": "Hisobot Iroqqa nisbatan Ijroiya siyosatining deyarli har bir jihatini qattiq tanqid ostiga oladi va zudlik bilan yo'nalishni o'zgartirishga undaydi.",
+        "en-kk": "Бұл есеп жетекшінің Иракқа қатысты ағымдағы саясатының әрбір аспектісін қатты сынайды және бағытты дереу өзгертуге шақырады.",
+        "en-zh-tw": "此報告大力抨擊了行政機構現行對伊拉克政策的幾乎所有面向，並強烈主張立即改變方向。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "78ある提言うち最初に挙げられているのは、敵対的な介入に対してイラクの国境を確保し、近隣諸国との外交関係を再び確立するために、年内に新たな外交主導権を発揮するべきだというものです。",
         "en-fr": "La première de ses 78 recommandations est qu'une nouvelle initiative diplomatique devrait être prise avant la fin de l'année pour sécuriser les frontières de l'Irak contre les interventions hostiles et afin de rétablir les relations diplomatiques avec ses voisins.",
         "en-th": "ประการแรกในข้อเสนอแนะทั้ง 78 ข้อคือควรดำเนินการริเริ่มทางการทูตใหม่ก่อนสิ้นปีนี้ เพื่อรักษาพรมแดนของอิรักไม่ให้เกิดการแทรกแซงที่ไม่เป็นมิตร และเพื่อสร้างความสัมพันธ์อันดีทางการทูตกับเพื่อนบ้านอีกครั้ง",
-        "en-ms": "Pertama antara 78 cadangannya adalah inisiatif diplomatik baharu yang perlu diambil sebelum akhir tahun ini untuk mendapatkan sempadan Iraq terhadap campur tangan musuh dan untuk mewujudkan semula hubungan diplomatik dengan negara jiran."
+        "en-ms": "Pertama antara 78 cadangannya adalah inisiatif diplomatik baharu yang perlu diambil sebelum akhir tahun ini untuk mendapatkan sempadan Iraq terhadap campur tangan musuh dan untuk mewujudkan semula hubungan diplomatik dengan negara jiran.",
+        "en-ru": "Первой среди 78 рекомендаций является то, что следует реализовать новую дипломатическую инициативу до конца этого года для укрепления иракских границ, чтобы не допустить враждебного вмешательства, а также для возобновления дипломатических отношений с соседями.",
+        "en-ko": "우선 78개 권고안 중 하나는 이라크의 적대적 개입에 대비하여 국경을 확보하고 이웃 국가들과의 외교 관계를 재정립하기 위해 올해 말이 되기 전에 새로운 외교 정책을 취해야 한다는 것입니다.",
+        "en-vi": "Đứng đầu trong 78 khuyến nghị là nên đưa ra sáng kiến ngoại giao mới trước khi kết thúc năm nay để củng cố biên giới Iraq chống lại các can thiệp thù địch và tái thiết lập quan hệ ngoại giao với các nước láng giềng.",
+        "en-id": "Yang pertama dari 78 rekomendasi adalah inisiatif diplomatik baru harus diadakan sebelum akhir tahun untuk mengamankan perbatasan Irak dari intervensi musuh dan menjalin ulang relasi diplomatik dengan tetangganya.",
+        "en-ur": "اس کی 78 سفارشات میں سے پہلی یہ ہے کہ دشمنوں کی مداخلتوں سے عراق کی سرحدوں کو محفوظ بنانے اور اپنے پڑوسیوں سے دوبارہ سفارتی تعلقات قائم کرنے کے لئے اس سال کے اختتام سے قبل ایک نیا سفارتی اقدام کیا جائے",
+        "en-uz": "Uning 78 tavsiyasidan birinchisi shuki, shu yil oxiriga qadar Iroq chegaralarini tajovuzlardan himoya qilish va qo'shnilar bilan diplomatik aloqalarni qayta tiklashga oid yangi diplomatik choralarni boshlash lozim.",
+        "en-kk": "Оның 78 ұсынысының біріншісі — Ирактың шекарасын дұшпандық араласудан қорғау және көршілерімен дипломатиялық қатынастарды қайта орнату үшін осы жылдың соңына дейін  жаңа дипломатиялық бастама қолға алынуы керек.",
+        "en-zh-tw": "在其中 78 個建議，第一個就是應在今年年底前採行新的外交措施，以保護伊拉克的邊境免受敵國侵擾，並重建與其鄰國的外交關係。"
       }
     }
   ]

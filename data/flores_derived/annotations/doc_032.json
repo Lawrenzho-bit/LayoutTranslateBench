@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Doctor_to_be_charged_after_mother%27s_death_in_Ohio",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Crime and Law'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Crime and Law'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "ペンシルベニア州ピッツバーグの小児病院で働いていた医師は、水曜日に母親が車のトランクで死んでいるのが発見された後、加重殺人で起訴される予定であるとオハイオ州の当局は述べています。",
         "en-fr": "Un médecin exerçant à l'hôpital pour enfants de Pittsburgh, en Pennsylvanie, a été accusé de meurtre avec circonstances aggravantes après que sa mère ait été retrouvée morte dans le coffre de sa voiture mercredi, selon les autorités de l'Ohio.",
         "en-th": "เจ้าหน้าที่ในรัฐโอไฮโอกล่าวว่า แพทย์ผู้ปฏิบัติงานที่โรงพยาบาลเด็กเมืองพิตต์สเบิร์กในรัฐเพนซิลเวเนียรายหนึ่งจะถูกตั้งข้อหาคดีฆาตกรรม หลังจากที่มีการพบร่างไร้วิญญาณของมารดาในท้ายรถของเธอเองเมื่อวันพุธที่ผ่านมา",
-        "en-ms": "Seorang doktor yang bekerja di Hospital Kanak-kanak Pittsburgh, Pennsylvania akan didakwa untuk pembunuhan secara kejam selepas ibunya ditemui mati di dalam but keretanya pada hari Rabu, menurut pihak berkuasa di Ohio."
+        "en-ms": "Seorang doktor yang bekerja di Hospital Kanak-kanak Pittsburgh, Pennsylvania akan didakwa untuk pembunuhan secara kejam selepas ibunya ditemui mati di dalam but keretanya pada hari Rabu, menurut pihak berkuasa di Ohio.",
+        "en-ru": "Обвинение в убийстве при отягчающих обстоятельствах будет предъявлено врачу, которая работала в Детской больнице Питтсбурга, Пенсильвания, после того как в среду ее мать нашли мертвой в багажнике ее автомобиля, сообщают власти Огайо.",
+        "en-ko": "펜실베이니아주 피츠버그 아동 병원에서 근무했던 한 의사의 어머니가 수요일 해당 의사의 차량 트렁크에서 숨진 채 발견되자 해당 의사를 가중 살인 혐의로 기소할 것이라고 오하이오주 당국이 밝혔습니다.",
+        "en-vi": "Một bác sĩ làm việc tại Bệnh viện Nhi Pittsburgh, Pennsylvania sẽ bị buộc tội giết người nghiêm trọng sau khi mẹ cô ta được tìm thấy đã chết trong cốp xe hơi của cô ta vào ngày thứ Tư, cơ quan thẩm quyền ở Ohio cho biết.",
+        "en-id": "Seorang dokter yang bekerja di Rumah Sakit Anak di Pittsburgh, Pennsylvania akan didakwa atas pembunuhan disengaja setelah ibunya ditemukan meninggal dalam bagasi mobilnya pada hari Rabu, sebut pihak berwajib Ohio.",
+        "en-ur": "اوہایو کے حکام کا کہنا ہے کہ پٹسبرگ، پین سلوانیا میں بچوں کے اسپتال میں کام کرنے والی ایک ڈاکٹر پر ان کی ماں کے اپنی کار کے ٹرنک میں مردہ پائے جانے کے بعد بدھ کے دن قتلِ عمد کا الزام عائد کیا جائے گا۔",
+        "en-uz": "Pensilvaniya shtati Pittsburg shahridagi bolalar shifoxonasida ishlagan shifokor chorshanba kuni onasi uning avtomobili yukxonasidan o'lik holda topilgandan keyin, og'irlashtiruvchi holatlarda qotillik sodir etishda ayblanmoqda, deb xabar beradi Ogayo shtati rasmiylari.",
+        "en-kk": "Пенсильвания штатының Питтсбург қаласындағы балалар ауруханасында жұмыс істеген дәрігерге анасы өз көлігінің жүксалғышында өлген күйде табылғаннан кейін ауырлататын мән-жайлар бар кісі өлтіруді жасады деп айыпталады, деп хабарлады Огайо штатының билігі.",
+        "en-zh-tw": "俄亥俄州有關當局週三表示，一名在賓州匹玆堡兒童醫院工作的醫師，在被發現她母親死於她後車箱中後，將被控加重謀殺罪。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "マラー・バラスブラマニアン博士（29歳）は、シンシナティの郊外、北約15マイルのオハイオ州ブルーアッシュで遺体となって発見され、道路脇の地面にＴシャツと下着姿で横たわる姿は明らかに薬漬けの状態でした。",
         "en-fr": "Le Dr Malar Balasubramanian, 29 ans, a été trouvé allongé sur le sol au bord de la route, à Blue Ash, dans l'Ohio, une banlieue située à environ 15 miles au nord de Cincinnati. Il était en T-shirt et en sous-vêtements, dans un état apparemment très médicamenté.",
         "en-th": "ดร. Malar Balasubramanian วัย 29 ปี ถูกพบใน Blue Ash รัฐโอไฮโอ ซึ่งเป็นชานเมืองที่อยู่ห่างจากทางเหนือของซินซินนาติประมาณ 15 ไมล์ ขณะนอนอยู่บนพื้นข้างถนนโดยสวมเสื้อยืดและกางเกงชั้นใน ในสภาพที่ดูเหมือนอัดยามาอย่างหนัก",
-        "en-ms": "Dr. Malar Balasubramanian, 29, ditemui di Blue Ash, Ohio, pinggir bandar kira-kira 15 batu ke utara Cincinnati berbaring di atas tanah di tepi jalan berbaju T-shirt dan seluar dalam dengan keadaan yang mempunyai banyak ubat."
+        "en-ms": "Dr. Malar Balasubramanian, 29, ditemui di Blue Ash, Ohio, pinggir bandar kira-kira 15 batu ke utara Cincinnati berbaring di atas tanah di tepi jalan berbaju T-shirt dan seluar dalam dengan keadaan yang mempunyai banyak ubat.",
+        "en-ru": "Доктора Малар Баласубраманиан, 29 лет, нашли в Блю-Эше (штат Огайо), пригороде примерно в 15 милях к северу от Цинциннати. Он лежал на земле рядом с дорогой в футболке и нижнем белье и, по-видимому, в состоянии сильного наркотического опьянения.",
+        "en-ko": "29세의 말라라 발라수브라마니아 박사는 신시내티에서 북쪽으로 약 15마일 떨어진 교외 지역인 오하이오주 블루 애쉬에서 도로 옆 바닥에 누워 티셔츠와 속옷만 입은 채 약물에 취한 상태로 발견되었습니다.",
+        "en-vi": "Bác sĩ Malar Balasubramanian, 29 tuổi, được phát hiện nằm trên mặt đất ven đường trong trang phục áo thun và đồ lót nồng nặc thuốc ở Blue Ash, một vùng ngoại ô cách Cincinnati 15 dặm về phía bắc.",
+        "en-id": "Dr. Malar Balasubramanian, 29 tahun, ditemukan di Blue Ash, Ohio, wilayah pedesaan berjarak sekitar 15 mil ke utara Cincinnati. Dia terbaring di tanah pinggir jalanan mengenakan kaos dan pakaian dalam dengan kondisi mengonsumsi obat berat.",
+        "en-ur": "29 سالہ ڈاکٹر ملار بالا سبرامنیم اوہایو کے سنسناٹی سے تقریبا 15 میل شمالی مضافات میں واقع بلو ایش میں پائی گئی تھی، وہ سڑک کنارے زمین پر ٹی شرٹ اور انڈر ویئر میں انتہائی نشہ کی حالت میں پڑی ملی تھی۔",
+        "en-uz": "29 yoshli doktor Malar Balasubramanian aftidan, dorilar bilan kuchli muolaja qilingan holatda, futbolka va ichki kiyimda yo'l yoqasida yotgan holda Sinsinnatidan taxminan 15 mil shimolda joylashgan Ogayo shtatidagi Blu-Eshdan topilgan.",
+        "en-kk": "29 жасар д-р Малар Баласубраманиан, Цинциннатиден шамамен 15 миля солтүстікке қарай орналасқан Огайо, Блю Эште табылды. Ол жолдың бойында жерде футболкада және ішкиімде жатты. Ол көп дәрі ішкен күйде болып көрінді.",
+        "en-zh-tw": "29 歲的馬拉·巴拉蘇布拉曼尼安 (Malar Balasubramanian) 醫生在俄亥俄州的布魯艾施（辛辛那提以北約 15 英里的郊區）被發現，她穿著 T 恤和內衣躺在路邊的地上，顯然攝入了大量的藥物。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "彼女は500フィート離れたところに駐車してあった黒いオールズモビル・イントリーグまで警官を案内した。",
         "en-fr": "Elle a dirigé les officiers vers son Oldsmobile Intrigue noire qui se trouvait à 500 pieds de là.",
         "en-th": "เธอพาเจ้าหน้าที่ตำรวจไปที่รถโอลด์สโมบิล อินทริก สีดำของเธอซึ่งจอดห่างออกไป 500 ฟุต",
-        "en-ms": "Dia mengarahkan pegawai ke kenderaannya, Oldsmobile Intrigue berwarna hitam yang terletak 500 kaki dari situ."
+        "en-ms": "Dia mengarahkan pegawai ke kenderaannya, Oldsmobile Intrigue berwarna hitam yang terletak 500 kaki dari situ.",
+        "en-ru": "Она отправила офицеров в свой чёрный Олдсмобиль Интрига, который находился в 500 футах.",
+        "en-ko": "그녀는 경관들에게 150미터 떨어져 있는 그녀의 검은색 올즈모빌 인트리그를 가리켰다.",
+        "en-vi": "Cô ấy chỉ cảnh sát tới chiếc xe Oldsmobile Intrigue màu đen cách đó 500 foot.",
+        "en-id": "Ia mengarahkan para petugas ke Oldsmobile Intrigue berwarna hitam miliknya yang berjarak 152 meter.",
+        "en-ur": "اس نے افسروں کو اپنی کالی Oldsmobile Intrigue کی سمت بلایا جو 500 فٹ کی دوری پر تھی۔",
+        "en-uz": "U zobitlarni o'zining 500 dut uzoqda joylashgan qora rangli Oldsmobile Intrigue mashinasi tomon yo'naltirdi.",
+        "en-kk": "Ол полиция қызметкерлеріне өзінің 500 фут жерде тұрған қара түсті Oldsmobile Intrigue көлігін көрсетті.",
+        "en-zh-tw": "她指引警官前往 500 英尺外的黑色奧茲摩比 Intrigue 轎車。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "そこにあったのは、血まみれの毛布に覆われたサロジャ・バラスブラマニアンさん（53歳）の遺体でした。",
         "en-fr": "Là, ils ont trouvé le corps de Saroja Balasubramanian, 53 ans, couvert de couvertures tachées de sang.",
         "en-th": "ณ ที่นั้น พวกเขาพบร่างของ Saroja Balasubramanian วัย 53 ปีซึ่งมีผ้าห่มเปื้อนเลือดปกคลุมอยู่",
-        "en-ms": "Di sana, mereka menemui mayat Saroja Balasubramanian, 53, yang ditutup dengan selimut berlumuran darah."
+        "en-ms": "Di sana, mereka menemui mayat Saroja Balasubramanian, 53, yang ditutup dengan selimut berlumuran darah.",
+        "en-ru": "Там они нашли тело 53-летнего Сароджи Баласубраманиана, покрытое окровавленными одеялами.",
+        "en-ko": "그곳에서 그들은 피 묻은 담요로 덮인 53세의 사로자 발라스브라마니안 (Saroja Balasubramanian)의 사체를 발견했습니다.",
+        "en-vi": "Tại đây, họ tìm thấm thi thể của Saroja Balasubramanian, 53 tuổi, được trùm bằng những chiếc mền dính máu.",
+        "en-id": "Di sana, mereka menemukan jasad Saroja Balasubramanian, 53 tahun, yang ditutupi selimut dengan bercak darah.",
+        "en-ur": "وہاں انہوں نے 53 سالہ سروجا بالاسبرامنیم کی لاش پائی جو خون آلود کمبلوں سے ڈھکی ہوئی تھی۔",
+        "en-uz": "Ular u yerda 53 yoshli Saroja Balasubramanianning qonga bulg'angan yopinchiqlar bilan o'ralgan jasadini topishdi.",
+        "en-kk": "Онда олар қанмен былғанған көрпелер жабылған 53 жасар Сароджа Баласубраманианның мәйітін тапты.",
+        "en-zh-tw": "他們在那裏發現了薩羅雅·巴拉蘇布拉馬尼安的遺體，53 歲的她身上蓋著沾了血跡的毯子。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "警察によると、その遺体は1日ほど前からそこにあったという。",
         "en-fr": "La police a déclaré qu’il semblerait que le corps se trouvait là depuis un jour environ.",
         "en-th": "ตำรวจกล่าวว่า ดูเหมือนศพจะอยู่ตรงนั้นมาประมาณหนึ่งวันแล้ว",
-        "en-ms": "Polis mengatakan bahawa mayat itu telah berada di sana selama satu hari."
+        "en-ms": "Polis mengatakan bahawa mayat itu telah berada di sana selama satu hari.",
+        "en-ru": "Полиция сказала, что тело, скорее всего, находилось там около дня.",
+        "en-ko": "경찰은 시체가 하루 정도 있었던 것으로 보인다고 말했습니다.",
+        "en-vi": "Cảnh sát cho biết thi thể nạn nhận đã ở đó được khoảng một ngày.",
+        "en-id": "Polisi mengatakan bahwa mayat itu sudah satu hari berada di tempat tersebut.",
+        "en-ur": "پولیس نے کہا کہ لگتا ہے کہ لاش تقریباً ایک دن سے وہاں پر ہے۔",
+        "en-uz": "Politsiya jasad u yerda taxminan bir kundan beri yotganligini aniqlanganligini aytdi.",
+        "en-kk": "Полиция дене онда шамамен бір күн болғанын айтты.",
+        "en-zh-tw": "警方說，屍體看起來已擺在那裡 1 天左右。"
       }
     }
   ]

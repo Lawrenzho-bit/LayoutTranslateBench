@@ -32,8 +32,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from render_samples import render_annotation  # noqa: E402
 
 # Map LTB pair codes -> FLORES-200 language file basenames
+# v0.1.7: extended from 8 to 16 pairs so every FLORES doc carries
+# certified-translator refs for the full LTB pair set.
 LTB_TO_FLORES_FILE = {
     "en": "eng_Latn",
+    # Core 8
     "en-es": "spa_Latn",
     "en-de": "deu_Latn",
     "en-zh": "zho_Hans",
@@ -42,6 +45,15 @@ LTB_TO_FLORES_FILE = {
     "en-fr": "fra_Latn",
     "en-th": "tha_Thai",
     "en-ms": "zsm_Latn",
+    # v0.1.6 extension 8
+    "en-ru": "rus_Cyrl",
+    "en-ko": "kor_Hang",
+    "en-vi": "vie_Latn",
+    "en-id": "ind_Latn",
+    "en-ur": "urd_Arab",
+    "en-uz": "uzn_Latn",  # Northern Uzbek (Latin script, post-2018 reform)
+    "en-kk": "kaz_Cyrl",
+    "en-zh-tw": "zho_Hant",
 }
 
 

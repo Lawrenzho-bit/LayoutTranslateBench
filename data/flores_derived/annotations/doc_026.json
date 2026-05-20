@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Amazon_to_buy_smart_doorbell_startup_Ring",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'business'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'business'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "RingのCEOであるジェイミー・スミノフは以前に、玄関の呼び出し音がガレージにある自分店から聞こえなかったことから事業を始めたと述べました。",
         "en-fr": "Auparavant, le PDG de Ring, Jamie Siminoff, a fait remarquer qu'il a lancé l'entreprise lorsque la sonnette de sa porte d'entrée n'était pas audible depuis son magasin dans son garage.",
         "en-th": "ก่อนหน้านี้ Jamie Siminoff ประธานบริหารของ Ring กล่าวว่า บริษัทได้เริ่มต้นขึ้นเมื่อตอนที่เขาไม่สามารถได้ยินเสียงกริ่งหน้าประตูของเขาจากห้องทำงานในโรงรถได้",
-        "en-ms": "Sebelum ini, CEO Ring, Jamie Siminoff, mengatakan syarikat itu bermula apabila loceng pintu beliau tidak dapat didengar dari kedai dalam garajnya."
+        "en-ms": "Sebelum ini, CEO Ring, Jamie Siminoff, mengatakan syarikat itu bermula apabila loceng pintu beliau tidak dapat didengar dari kedai dalam garajnya.",
+        "en-ru": "Ранее генеральный директор Ring Джейми Симинофф отметил, что эта компания началась с того, что он не слышал дверного звонка в мастерской своего гаража.",
+        "en-ko": "링의 CEO인 제이미 시미노프 (Jamie Siminoff)는 차고에 있던 그의 숍에서 초인종 소리를 들을 수 없었을 때 회사를 시작했다고 말했습니다.",
+        "en-vi": "Trước đây, giám đốc điều hành của Ring, Jamie Siminoff, đã phát biểu rằng công ty ra đời khi ông không nghe tiếng chuông cửa khi đang khi ở trong gara.",
+        "en-id": "Sebelumnya, CEO Ring, Jamie Siminoff, berkomentar bahwa perusahaan tersebut bermula saat bel rumahnya tidak terdengar dari tokonya yang berada di garasi.",
+        "en-ur": "اس سے قبل رِنگ کے سی ای او جیمی سمیناف نے تبصرہ کیا تھا کہ کمپنی اس وقت شروع کی گئی تھی جب ان کے دروازے کی گھنٹی ان کی دکان سے گیرج میں نہیں سنائی دیتی تھی۔",
+        "en-uz": "Oldin Ring kompaniyasining bosh direktori Jeymi Siminoff kompaniya o'z garajidagi ustaxonadan eshik qo'ng'irog'i eshitilmaganidan keyin boshlanganini qayd etgandi.",
+        "en-kk": "Бұған дейін Ring компаниясының бас директоры Джейми Симинофф компания жұмысын бастағанда, оның гаражындағы есік қоңырауы болмағанын айтты.",
+        "en-zh-tw": "在此之前，鈴響公司的執行長傑米·西米諾夫曾說過他之所以創立該公司，是因為他在自家車庫改裝的店面聽不到前門的按鈴聲。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "彼はWi-Fiで鳴るドアベルを作ったそうです。",
         "en-fr": "Il dit avoir conçu une sonnette de porte Wi-Fi.",
         "en-th": "เขาบอกว่าได้สร้างกริ่งประตู WiFi ขึ้นมา",
-        "en-ms": "Dia menghasilkan loceng pintu WiFi, katanya."
+        "en-ms": "Dia menghasilkan loceng pintu WiFi, katanya.",
+        "en-ru": "Он сказал, что создал дверной звонок, работающий от WiFi.",
+        "en-ko": "그는 무선 도어벨(Wi-Fi doorbell)을 만들었다고 말했다.",
+        "en-vi": "Ông đã lắp môt chuông cửa WiFi, ông cho biết.",
+        "en-id": "Ia melakukan pembuatan bel pintu dengan teknologi WiFi, katanya.",
+        "en-ur": "اس نے کہا کہ اس نے ایک وائی فائی ڈور بیل اختراع کیا ہے۔",
+        "en-uz": "U WiFi eshik qo'ng'irog'ini yasadi, dedi u.",
+        "en-kk": "Ол Wi-Fi есік қоңырауын жасағанын айтты.",
+        "en-zh-tw": "他說他做了一個無線網路門鈴。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "シミノフ氏は、2013年にシャークタンクのエピソードに出演した後、番組委員会が資金提供を辞退した後に売上が急激に伸びたと述べています。",
         "en-fr": "M. Siminoff a déclaré que les ventes ont augmenté après son apparition en 2013 dans un épisode de Shark Tank où le panel de la série a refusé de financer la start-up.",
         "en-th": "ซิมินอฟฟ์กล่าวว่า ยอดขายพุ่งทะยานขึ้นหลังจากที่เขาไปปรากฏตัวในตอนหนึ่งของรายการชาร์คแทงค์เมื่อปี 2013 แล้วคณะกรรมการในรายการปฏิเสธที่จะให้เงินลงทุนกับบริษัทสตาร์ทอัพนี้",
-        "en-ms": "Siminoff mengatakan bahawa jualan telah meningkat setelah penampilan beliau pada tahun 2013 dalam sebuah episod Shark Tank di mana panel rancangan tersebut menolak untuk membiayai permulaannya."
+        "en-ms": "Siminoff mengatakan bahawa jualan telah meningkat setelah penampilan beliau pada tahun 2013 dalam sebuah episod Shark Tank di mana panel rancangan tersebut menolak untuk membiayai permulaannya.",
+        "en-ru": "Симинофф сказал, что продажи выросли после его появления в выпуске шоу \"Shark Tank\" в 2013 году, где члены жюри отказались финансировать его стартап.",
+        "en-ko": "Siminoff는 2013년, 쇼 출연자가 스타트업의 자금 지원을 거절했었던 Shark Tank 에피소드에 출연한 이후 매출이 증가했다고 말했습니다.",
+        "en-vi": "Siminoff cho biết doanh số tăng sau sự xuất hiện của mình vào năm 2013 trong một tập Shark Tank khi hội đồng giám khảo chương trình đã từ chối tài trợ cho công ty khởi nghiệp.",
+        "en-id": "Siminoff mengatakan penjualan meningkat setelah ia muncul di episode Shark Tank 2013, ketika panel acara tersebut menolak membiayai perusahaan rintisan.",
+        "en-ur": "سیمینوف نے کہا کہ اس کے 2013 کی شارک ٹینک والی قسط میں ظاہر ہونے کے بعد فروخت میں اضافہ ہوا جہاں شو کے پینل نے آغاز کے لیے فنڈ دینے سے انکار کر دیا تھا۔",
+        "en-uz": "Siminoffning aytishicha, shou komissiyasi startapni moliyalashtirishni rad etganidan keyin 2013-yili \"Shark Tank\" epizodidagi ko'rinishidan so'ng savdo hajmi oshib ketgan.",
+        "en-kk": "Симиновтың айтуынша, 2013 жылы оның Shark Tank шоуының эпизодында түскеннен кейін сатылымдар айтарлықтай өсті. Ол эпизодта шоудың талқылау тобы оны стартабын қаржыландырудан бас тартқан еді.",
+        "en-zh-tw": "西米諾夫表示當他 2013 年在《創業鯊魚幫》節目上露面後，銷售額提高了，當時節目評審拒絕投資這個新創公司。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "2017年後半にシミノフ氏はテレビショッピング「QVC」に出演しました。",
         "en-fr": "Fin 2017, Siminoff est apparu sur la chaîne de télé-achat QVC.",
         "en-th": "ในปลายปี 2017 ซิมินอฟฟ์ได้ปรากฏตัวในช่องโทรทัศน์ QVC สำหรับชอปปิง",
-        "en-ms": "Pada akhir 2017, Siminoff muncul pada saluran televisyen membeli-belah QVC."
+        "en-ms": "Pada akhir 2017, Siminoff muncul pada saluran televisyen membeli-belah QVC.",
+        "en-ru": "В конце 2017 года Симинофф появился на торговом телеканале QVC.",
+        "en-ko": "2017년 말, 시미노프는 쇼핑 텔레비젼 채널인 QVC에 출연했다.",
+        "en-vi": "Vào cuối năm 2017, Siminoff xuất hiện trên kênh truyền hình mua sắm QVC.",
+        "en-id": "Di akhir tahun 2017, Siminoff muncul di saluran televisi belanja QVC.",
+        "en-ur": "2017 کے آخر میں سمینوف خرید و فروخت کے ٹی وی چینل کيو وی سی پر حاضر ہوئے۔",
+        "en-uz": "2017-yilning oxirida Siminoff QVC xaridlar telekanalida ko'rinish berdi.",
+        "en-kk": "2017 жылдың аяғында Симинофф QVC шоппинг телеарнасында көрінді.",
+        "en-zh-tw": "在 2017 年末，西米諾夫出現在 QVC 購物頻道 上。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "Ringはまた、競合するセキュリティ企業であるADTとの訴訟で和解しました。",
         "en-fr": "Ring a également réglé un procès avec une entreprise de sécurité concurrente, l'ADT Corporation.",
         "en-th": "ริงยังได้ดำเนินการระงับข้อพิพาทกับบริษัทรักษาความปลอดภัย ADT Corporation ซึ่งเป็นคู่แข่งอีกด้วย",
-        "en-ms": "Ring turut mencapai satu penyelesaian tuntutan mahkamah dengan syarikat keselamatan pesaing, ADT Corporation."
+        "en-ms": "Ring turut mencapai satu penyelesaian tuntutan mahkamah dengan syarikat keselamatan pesaing, ADT Corporation.",
+        "en-ru": "Кроме того, Ring урегулировала судебный процесс с конкурентами, охранной фирмой ADT Corporation.",
+        "en-ko": "Ring은 경쟁 보안회사인 ADT 사와의 소송 또한 합의를 보았다.",
+        "en-vi": "Ring cũng đã dàn xếp một vụ kiện với một công ty an ninh đối thủ là ADT Corporation.",
+        "en-id": "Ring juga menyelesaikan sebuah tuntutan hukum terhadap perusahaan keamanan saingan, ADT Corporation.",
+        "en-ur": "Ring نے مسابق سیکیورٹی کمپنی ADT Corporation کے ساتھ اپنے قانونی دعوے کا تسویہ بھی کر لیا۔",
+        "en-uz": "Ring xavfsizlik bo'yicha raqobatchi kompaniyasi – ADT korporatsiyasi bilan ham nizoni hal qildi.",
+        "en-kk": "Сонымен бірге Ring компаниясы бәсекелес ADT Corporation қауіпсіздік компаниясымен сот ісін бііңғай мәмілеге келтірді.",
+        "en-zh-tw": "Ring 也與保安產業的競爭對手 ADT 公司達成訴訟和解。"
       }
     }
   ]
