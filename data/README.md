@@ -72,11 +72,21 @@ These are the **first certified-translator-grade references in LTB**. The v0.2 r
 - Source articles are Wikinews, diverse topics (business, science, politics, health, crime, culture, etc.)
 - Coverage: **all 8 LTB pairs in every FLORES doc**
 
-### v0.1.6 — 16-pair coverage (this release)
+### v0.1.6 — 16-pair coverage
 
-`LANG_PAIRS` extended from 8 to 16 pairs by adding rileykim's 8 net-new languages: **en-ru, en-ko, en-vi, en-id, en-ur, en-uz, en-kk, en-zh-tw**. Each new pair gets **3 docs** (doc_036–doc_059) imported from `rileykim/multilingual-document` (Apache-2.0). Note that the new pairs have rileykim coverage *only* — author-curated docs (001–010) and FLORES-derived docs (026–035) cover the core 8 pairs as defined in `ltbench.CORE_LANG_PAIRS`.
+`LANG_PAIRS` extended from 8 to 16 pairs by adding rileykim's 8 net-new languages: **en-ru, en-ko, en-vi, en-id, en-ur, en-uz, en-kk, en-zh-tw**. Each new pair gets **3 docs** (doc_036–doc_059) imported from `rileykim/multilingual-document` (Apache-2.0). v0.1.6.4 ingest-time + post-hoc script-validation dropped mislabeled refs (rileykim's en-ru rows were actually Chinese), so the surviving per-pair coverage from rileykim is 3 docs each except en-ru = 0.
 
-The `verify` command and the scoring pipeline both respect this split: author-curated / certified-translator docs are only required to cover `CORE_LANG_PAIRS`, never the full extended set.
+### v0.1.7 — certified-translator coverage for all 16 pairs (this release)
+
+`scripts/add_flores_extension_refs.py` enriches the 10 FLORES-derived docs (doc_026–doc_035) with v0.1.6 extension-pair references — also certified-translator-grade, from the same FLORES-200 source. Effect:
+
+| Pair | v0.1.6.4 | v0.1.7 |
+|---|---:|---:|
+| en-ru | 0 | **10** (FLORES only — rileykim en-ru rows dropped by script-validation) |
+| en-ko, en-vi, en-id, en-ur, en-uz, en-kk, en-zh-tw | 3 | **13** each (10 FLORES + 3 rileykim) |
+| Core 8 pairs | 20–28 | unchanged |
+
+Every LTB pair now has at least 10 certified-translator reference documents. The author-curated / certified split documented below still applies: `CORE_LANG_PAIRS` is the required coverage set for author-curated docs; the extension pairs are required only where the doc actually carries them.
 
 ### Reference-translation provenance
 
@@ -87,6 +97,7 @@ The `verify` command and the scoring pipeline both respect this split: author-cu
 | v0.1.4 | docs 011–025 | rileykim/multilingual-document (Apache-2.0) | ml-curated (ML output published as references) |
 | v0.1.5 | docs 026–035 | FLORES-200 (CC-BY-SA-4.0) | certified-translator (industry-grade, NLLB project) |
 | **v0.1.6** | **docs 036–059** | **rileykim/multilingual-document (Apache-2.0), 3 docs each for 8 net-new pairs** | **ml-curated** |
+| **v0.1.7** | **docs 026–035 (refs only)** | **FLORES-200 (CC-BY-SA-4.0), extension 8 pairs back-filled** | **certified-translator** |
 | v0.2 target | all docs | Certified-translator, 2 references per pair | Industry-grade, multi-reference |
 
 References on docs 001–010 are author-curated. References on docs 011–025 are ml-curated. **References on docs 026–035 are certified-translator-grade** (the same quality that LTB v0.2 was targeting). v0.2 will extend the certified-translator coverage to all 8 LTB pairs across all 35+ docs.

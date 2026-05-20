@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Extremely_drug-resistant_tuberculosis_strain_emerges_in_South_Africa",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Health'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Health'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "トニー・モール博士は、南アフリカのクワズールー・ナタール地方で、極度薬剤耐性結核（XDR-TB）を発見しました。",
         "en-fr": "Le Dr Tony Moll a découvert la tuberculose multirésistante (TB-MR) dans la région sud-africaine du KwaZulu-Natal.",
         "en-th": "ดร. โทนี่ มอลล์ค้นพบเชื้อวัณโรคที่ดื้อยาอย่างสุดขีด (XDR-TB) ในภูมิภาค KwaZulu-Natal ของแอฟริกาใต้",
-        "en-ms": "Dr. Tony Moll menemui Batuk Kering Sangat Tahan Ubat (XDR-TB) di wilayah KwaZulu-Natal di Afrika Selatan."
+        "en-ms": "Dr. Tony Moll menemui Batuk Kering Sangat Tahan Ubat (XDR-TB) di wilayah KwaZulu-Natal di Afrika Selatan.",
+        "en-ru": "В ходе исследований в южноафриканском регионе Квазулу-Натал доктору Тони Моллу (Tony Moll ) удалось обнаружить туберкулез с исключительно высокой устойчивостью к лекарствам (XDR-TB).",
+        "en-ko": "토니 몰 박사는 남아공 지역인 콰줄루나탈에서 XDR-TB(약물 내성 결핵)를 발견했습니다.",
+        "en-vi": "Bác sĩ Tony Moll đã phát hiện ra Bệnh lao Siêu Kháng thuốc (XDR-TB) tại khu vực KwaZulu-Natal, Nam Phi.",
+        "en-id": "Dr. Tony Moll menemukan TBC yang Sangat Tahan terhadap Obat (XDR-TB) di wilayah KwaZulu-Natal, Afrika Selatan.",
+        "en-ur": "ڈاکٹر ٹونی مول نے جنوبی افریقی خطے کوازولو نتال میں ایکسٹریم ڈرگ رزسٹنٹ ٹیوبرکلوسز (XDR-TB) کو دریافت کیا۔",
+        "en-uz": "Janubiy Afrikaning KvaZulu-Natal viloyatida shifokor Toni Moll dori vositasiga o'ta bardoshli sil kasalligini (XDR-TB) aniqladi.",
+        "en-kk": "Доктор Тони Молл Оңтүстік Африканың КваЗулу-Наталь аймағында дәрі-дәрмекке өте төзімді туберкулезді (XDR-TB) тапты.",
+        "en-zh-tw": "東尼·摩爾醫師 (Tony Moll) 在南非誇祖魯-納塔爾省發現了極具抗藥性的結核病（XDR-TB）。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "インタビューで彼は新しい変異体について「極めて致死率が高い厄介なものであり、憂慮すべきものである」と述べました。",
         "en-fr": "\"Dans une interview, il a déclaré que la nouvelle mutation était \"\"très troublante et alarmante en raison du taux de mortalité très élevé\"\".\"",
         "en-th": "ในการให้สัมภาษณ์ครั้งหนึ่ง เขากล่าวว่าความผันแปรใหม่นี้ \"น่าตกใจและรบกวนจิตใจอย่างยิ่งเนื่องจากอัตราการเสียชีวิตที่สูงมาก\"",
-        "en-ms": "Dalam sebuah temuduga, beliau mengatakan bahawa varian baru “sangat membimbangkan dan menakutkan disebabkan kadar kematian yang tinggi.” "
+        "en-ms": "Dalam sebuah temuduga, beliau mengatakan bahawa varian baru “sangat membimbangkan dan menakutkan disebabkan kadar kematian yang tinggi.” ",
+        "en-ru": "В интервью он сказал, что новый штамм \"вызывает очень большие опасения, так как он приводит к очень высокому уровню смертности\".",
+        "en-ko": "그는 인터뷰에서 새로운 변종이 '치명률이 무척 높아 아주 대처하기 어려우며 두렵다고 언급했다.",
+        "en-vi": "Trong một cuộc phỏng vấn, ông ấy nói rằng biến thể mới “có mức độ đáng lo ngại và đáng báo động rất cao do có tỷ lệ gây thương vong rất cao.”",
+        "en-id": "\"Dalam sebuah wawancara, dia mengatakan varian baru itu \"sangat mengganggu dan mengkhawatirkan karena tingkat kematiannya yang sangat tinggi.\"",
+        "en-ur": "ایک انٹرویو میں، انہوں نے کہا کہ نئی شکل \"بہت زیادہ پریشان کن ہے اور ہلاکت کی شرح بہت زیادہ ہونے کی وجہ سے زیادہ خطرناک ہے۔\"",
+        "en-uz": "Intervyuda u yangi tur \"juda yuqori o'lim darajasi tufayli juda xavotirli va qo'rqinchli bo'lganligini\" aytdi.",
+        "en-kk": "Сұхбатта ол вирустың жаңа түрі \"өлім деңгейінің өте жоғары болуы себебінен алаңдаушылық туғызатынын\" айтты.",
+        "en-zh-tw": "他在一次訪問中表示，新的變異株「有極高的致死率，因此非常令人不安和恐慌」。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "モル博士は、何人かの患者が病院内で感染したのではないかと推測し、少なくとも2人は病院の医療従事者であったと考えています。",
         "en-fr": "Certains patients auraient contracté le virus à l’hôpital, selon le Dr Moll, et au moins deux d’entre eux faisaient partie du personnel de l’hôpital.",
         "en-th": "ดร.มอลล์คาดว่าผู้ป่วยบางรายอาจติดเชื้อจากที่โรงพยาบาล โดยมีเจ้าหน้าที่สาธารณสุขของโรงพยาบาลอย่างน้อยสองคน",
-        "en-ms": "Beberapa pesakit mungkin telah dijangkiti kuman itu di hospital tersebut, fikir Dr Moll, dan sekurang-kurangnya dua orang merupakan pekerja kesihatan di hospital."
+        "en-ms": "Beberapa pesakit mungkin telah dijangkiti kuman itu di hospital tersebut, fikir Dr Moll, dan sekurang-kurangnya dua orang merupakan pekerja kesihatan di hospital.",
+        "en-ru": "Некоторые пациенты могли заразиться в больнице, думает доктор Молл, и по крайней мере двое были работниками здравоохранения в больнице.",
+        "en-ko": "Moll 박사는 일부 환자가 병원에서 질병에 감염되었을 수 있다고 생각하며, 그중 적어도 2명은 건강한 병원 근로자였을 것으로 생각했습니다.",
+        "en-vi": "Bác sĩ Moll nghĩ rằng một số bệnh nhân có thể đã bị lây rệp ở bệnh viện và ít nhất hai người là nhân viên y tế trong bệnh viện.",
+        "en-id": "Sebagian pasien kemungkinan ketularan penyakit itu di rumah sakit, menurut perkiraan Dr. Moll, dan paling sedikit dua orang adalah petugas kesehatan di rumah sakit.",
+        "en-ur": "ڈاکٹر مول اور اسپتال کے کم سے کم دو عملے کو لگتا ہے کہ ہوسکتا ہے کچھ مریض بگ کی ضد آگئے ہوں۔",
+        "en-uz": "Doktor Mollning fikriga ko'ra, bir nechta bemorlar shifoxonada kasallikni yuqtirgan bo'lishlari mumkin va eng kamida ulardan ikkitasi shifoxonadagi sog'liqni saqlash xodimlari bo'lgan.",
+        "en-kk": "Доктор Молл кейбір науқастар вирусты ауруханада жұқтырған болуы мүмкін деп ойлайды, кемінде екеуі аурухананың медициналық қызметкерлері болған.",
+        "en-zh-tw": "莫爾醫生認為有些病人可能是在醫院中感染上病菌，且至少有兩個病例為醫護人員。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "1人の感染者が1年後に10～15人の濃厚接触者に感染させる可能性があります。",
         "en-fr": "Sur une période d'un an, une personne infectée peut infecter 10 à 15 contacts proches.",
         "en-th": "ในเวลาหนึ่งปี ผู้ติดเชื้ออาจทำให้ผู้สัมผัสใกล้ชิดติดเชื้อ 10 ถึง 15 ราย",
-        "en-ms": "Dalam jangka masa setahun, orang yang dijangkiti boleh menjangkiti 10 hingga 15 orang kenalan rapat."
+        "en-ms": "Dalam jangka masa setahun, orang yang dijangkiti boleh menjangkiti 10 hingga 15 orang kenalan rapat.",
+        "en-ru": "За один год инфицированный человек может заразить от 10 до 15 человек при близком контакте.",
+        "en-ko": "1년이라는 시간 동안, 감염자 1명이 밀접 접촉자 10명에서 15명을 감염시킬 가능성이 있습니다.",
+        "en-vi": "Trong vòng một năm thì một người nhiễm bệnh có thể truyền cho 10 đến 15 người tiếp xúc gần.",
+        "en-id": "Dalam kurun waktu setahun, seseorang yang terinfeksi dapat menularkan 10 sampai 15 kontak jarak dekat.",
+        "en-ur": "ایک سال کی مدت میں ایک متاثرہ شخص قریب میں رہنے والے 10 سے 15 افراد کو متاثر کرسکتا ہے۔",
+        "en-uz": "Kasallangan kishi bir yil ichida 10–15 ga yaqin odamga yuqtirishi mumkin.",
+        "en-kk": "Бір жыл ішінде ауру жұқтырған адам 10-15 жақын байланысқан адамға ауру жұқтыруы мүмкін.",
+        "en-zh-tw": "一名受感染者在一年內可能會感染 10 到 15 名親密接觸者。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "しかし、結核患者全体に占めるXDR-TBの割合はまだ低いようで、こうしている間にも南アフリカでは33万人のうち6,000人が感染している。",
         "en-fr": "Cependant, le pourcentage de TB-UR dans l’ensemble du groupe de personnes atteintes de tuberculose semble encore faible ; 6 000 personnes sur un total de 330 000 ont été infectées à un moment donné en Afrique du Sud.",
         "en-th": "อย่างไรก็ดี กลุ่มผู้ป่วยวัณโรคทั้งหมดยังดูจะมีค่าร้อยละของ XDR-TB ต่ำอยู่คือนับเป็นจำนวน 6,000 รายจากทั้งหมด 330,000 รายผู้ติดเชื้อในเวลาใดเวลาหนึ่งในแอฟริกาใต้",
-        "en-ms": "Walau bagaimanapun, peratusan XDR-TB dalam kesemua kumpulan penghidap tuberkulosis masih rendah; 6,000 dari kesemua 330,000 orang yang terjejas di dalam pada satu-satu masa Afrika Selatan."
+        "en-ms": "Walau bagaimanapun, peratusan XDR-TB dalam kesemua kumpulan penghidap tuberkulosis masih rendah; 6,000 dari kesemua 330,000 orang yang terjejas di dalam pada satu-satu masa Afrika Selatan.",
+        "en-ru": "Однако, процент людей с туберкулёзом с множественной лекарственной устойчивостью в целой группе больных туберкулезом все еще кажется низким; 6000 от общего числа 330 000 зараженных в данный конкретный момент в ЮАР.",
+        "en-ko": "그러나 전체 결핵 환자 중 XDR-TB가 있는 비율은 그리 높지 않은 듯합니다. 어느 특정 순간에 남아프리카에서 결핵에 걸린 환자가 330,000명이라고 할 때, 6,000명 정도가 XDR-TB가 있는 수준입니다.",
+        "en-vi": "Tuy nhiên, dường như tỷ lệ XDR-TB trong tổng số người mắc bệnh lao vẫn còn ở mức thấp; chỉ có 6.000 trong tổng số 330.000 người bị nhiễm bệnh tại một thời điểm cụ thể bất kỳ tại Nam Phi.",
+        "en-id": "Namun, persentase XDR-TB di seluruh kelompok penderita tuberkulosis tampaknya masih rendah; 6.000 dari total 330.000 orang yang terinfeksi pada jangka waktu tertentu di Afrika Selatan.",
+        "en-ur": "البتہ، تپِ دق کے حامل افراد کے پورے گروپ میں XDR-TB کی شرح فی الوقت جنوبی افریقہ میں کسی بھی مخصوص مدت کے دوران؛ مجموعی طور پر کل 330,000 انفیکشن زدہ افراد میں سے 6,000 کے ساتھ اب بھی کم معلوم ہوتی ہے۔",
+        "en-uz": "Ammo sil kasalligi bilan xastalangan odamlarning butun guruhida XDR-TB ulushi hali ham past ko'rinadi; Janubiy Afrikada istalgan muayyan lahzada jami 330 000 kishidan 6000 nafari kasallangan.",
+        "en-kk": "Алайда туберкулезбен ауыратын адамдардың бүкіл тобындағы XDR-ТБ пайызы әлі де төмен болып көрінеді; Оңтүстік Африкада әрбір сәтте жалпы 330 000 адамның 6 мыңы ауру жұқтырады.",
+        "en-zh-tw": "然而，在整體結核病患者群當中，罹患廣泛抗藥性結核菌者，比率似乎仍非常低；在南非，任何特定時刻中，每 33 萬人有 6 千人受到感染。"
       }
     }
   ]

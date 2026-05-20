@@ -46,21 +46,29 @@ def test_flores_docs_carry_certified_translator_grade():
         assert "facebook/flores" in ann.provenance.source
 
 
-def test_flores_docs_have_all_8_ltb_pairs():
-    """FLORES coverage = all 8 LTB pairs in every region of every FLORES doc."""
+def test_flores_docs_have_all_ltb_pairs():
+    """FLORES coverage:
+      - v0.1.5 ships refs for the core 8 LTB pairs on every region of every doc.
+      - v0.1.7 enriches with the v0.1.6 extension 8 pairs, so the full 16 are
+        present on every region.
+    This test accepts both — the core 8 are required, the extension 8 is
+    optional (its presence reflects v0.1.7+ data)."""
     root = _repo_root()
     flores_ann_dir = root / "data" / "flores_derived" / "annotations"
     if not flores_ann_dir.exists():
         return
-    expected_pairs = {"en-es", "en-de", "en-zh", "en-ar", "en-ja", "en-fr", "en-th", "en-ms"}
+    core_pairs = {"en-es", "en-de", "en-zh", "en-ar", "en-ja", "en-fr", "en-th", "en-ms"}
+    extension_pairs = {"en-ru", "en-ko", "en-vi", "en-id", "en-ur", "en-uz", "en-kk", "en-zh-tw"}
+    valid_supersets = (core_pairs, core_pairs | extension_pairs)
     for ann_path in sorted(flores_ann_dir.glob("doc_*.json")):
         ann = Annotation.model_validate(
             json.loads(ann_path.read_text(encoding="utf-8"))
         )
         for region in ann.regions:
-            assert set(region.references.keys()) == expected_pairs, (
+            ref_set = set(region.references.keys())
+            assert ref_set in valid_supersets, (
                 f"{ann_path.name}/{region.region_id} pair set was "
-                f"{set(region.references.keys())}, expected {expected_pairs}"
+                f"{ref_set}, expected either core 8 or core+extension 16"
             )
 
 

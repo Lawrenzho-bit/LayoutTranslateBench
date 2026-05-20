@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/Burning_debris_from_satellites_spotted_over_several_US_cities",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: ''."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: ''. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "重さが1,000ポンドを超え、時速約17,500マイルで移動していた人工衛星は、地球の上空491マイルのところで衝突しました。",
         "en-fr": "Les satellites, qui pesaient tous les deux plus de 450 kg et se déplaçaient à environ 28000 km/h, sont entrés en collision à 790 km au-dessus de la Terre.",
         "en-th": "ดาวเทียมซึ่งมีน้ำหนักเกิน 1,000 ปอนด์ และเดินทางด้วยความเร็วราว 17,500 ไมล์ต่อชั่วโมงทั้งสองดวงเกิดการชนปะทะกันที่ระยะ 491 ไมล์เหนือพื้นโลก",
-        "en-ms": "Kedua-dua satelit yang mempunyai jumlah berat lebih dari 1,000 paun, dan bergerak kira-kira 17,500 batu per jam, berlanggar antara satu sama lain 491 batu di atas Bumi."
+        "en-ms": "Kedua-dua satelit yang mempunyai jumlah berat lebih dari 1,000 paun, dan bergerak kira-kira 17,500 batu per jam, berlanggar antara satu sama lain 491 batu di atas Bumi.",
+        "en-ru": "Спутники, каждый из которых был тяжелее 1 000 фунтов и перемещался со скоростью приблизительно 17 500 миль в час, столкнулись на высоте 491 мили над поверхностью Земли.",
+        "en-ko": "무게가 1,000파운드를 초과하고 시속 약 17,500마일로 이동하던 이 두 위성이 지구 상공 491마일에서 충돌했습니다.",
+        "en-vi": "Cả hai vệ tinh này, đều nặng hơn 1.000 pound, và di chuyển với vận tốc xấp xỉ 17.500 dặm trên giờ, va chạm với nhau ở khoảng cách 491 dặm so với Trái Đất.",
+        "en-id": "Satelit, yang keduanya memiliki berat lebih dari 1.000 pon, dan bergerak dengan kecepatan sekitar 17.500 mil per jam, bertabrakan 491 mil di atas Bumi.",
+        "en-ur": "1,000 سے زیادہ وزنی دو سٹیلائٹ جو تقریبا 17,500 میل فی گھنٹہ کی رفتار سے سفر کر رہے تھےخلاء میں 491 میل اوپر ٹکرا گئے۔",
+        "en-uz": "Ikkalasining og'irligi 1000 funtdan ko'proq bo'lgan hamda soatiga 17 500 mil atrofida tezlikda harakatlanayotgan sputniklar Yerdan 491 mil yuqorida to'qnashdi.",
+        "en-kk": "Екеуінің де салмағы 1000 фунттан асатын және шамамен 17 500 миля/сағат жылдамдықпен қозғалатын жерсеріктер жерден 491 миля биіктікте соқтығысты.",
+        "en-zh-tw": "兩顆人造衛星重量都超過一千磅，並以每小時 17,500 英里左右的速度移動。它們在地球上方 491 英里處相撞。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "科学者によると、この衝突による爆発は大規模なものでした。",
         "en-fr": "Les scientifiques affirment que l'explosion causée par la collision a été massive.",
         "en-th": "นักวิทยาศาสตร์กล่าวว่าแรงระเบิดที่เกิดจากการชนนั้นมหาศาล",
-        "en-ms": "Para saintis berkata bahawa letupan yang disebabkan oleh perlanggaran tersebut adalah sangat besar."
+        "en-ms": "Para saintis berkata bahawa letupan yang disebabkan oleh perlanggaran tersebut adalah sangat besar.",
+        "en-ru": "Учёные говорят, что взрыв, вызванный столкновением, был очень мощным.",
+        "en-ko": "과학자들은 충돌로 인한 폭발이 거대했다고 말한다.",
+        "en-vi": "Các nhà khoa học cho biết vụ va chạm đã gây ra vụ nổ rất lớn.",
+        "en-id": "Ilmuwan mengatakan bahwa ledakan yang disebabkan oleh tumbukan masif sekali.",
+        "en-ur": "سائنسدان کہتے ہیں کہ تصادم کے باعث ہونے والا دھماکہ بہت بڑا تھا۔",
+        "en-uz": "Olimlar to'qnashuv oqibatida sodir bo'lgan portlash ulkan bo'lganini aytadi.",
+        "en-kk": "Ғалымдардың айтуынша қақтығысудан орын алған жарылыс өте үлкен болған.",
+        "en-zh-tw": "科學家說相撞造成的爆炸力道非常可觀。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "彼らは、衝突がどのくらいの規模で、地球がどのような影響を受けるのかについて現在も調査しています。",
         "en-fr": "On essaie encore de déterminer quelle a été l'ampleur de l'accident et comment la Terre sera affectée.",
         "en-th": "พวกเขายังคงพยายามหาข้อสรุปว่าการชนครั้งนี้มีขนาดใหญ่แค่ไหนและจะส่งผลกระทบต่อโลกอย่างไรบ้าง",
-        "en-ms": "Mereka masih sedang cuba menentukan betapa besarnya kemalangan berkenaan dan bagaimana bumi akan terjejas."
+        "en-ms": "Mereka masih sedang cuba menentukan betapa besarnya kemalangan berkenaan dan bagaimana bumi akan terjejas.",
+        "en-ru": "Они по-прежнему стараются определить, насколько большим было столкновение и как пострадает Земля.",
+        "en-ko": "그들은 여전히 충돌의 크기와 지구가 어떤 영향을 받을 것인지에 대해 연구 중이다.",
+        "en-vi": "Họ vẫn đang cố gắng xác định vụ va chạm sẽ lớn cỡ nào và Trái Đất sẽ bị ảnh hưởng thế nào.",
+        "en-id": "Mereka masih berusaha menentukan seberapa besar hantaman tersebut dan dampaknya terhadap bumi.",
+        "en-ur": "وہ لوگ اب بھی اس بات کا تعین کرنے کی کوشش کر رہے ہیں یہ ٹکر کتنی تیز تھی اور اس کے زمین پر کس طرح اثر ہوگا۔",
+        "en-uz": "Ular hali ham halokat qanchalik ulkan bo'lganligi va Yerga qanday ta'sir qilishini aniqlashga harakat qilishmoqda.",
+        "en-kk": "Олар осы күнге дейін апат қаншалықты күшті болғанын және Жерге әсері қалай болатынын анықтауға тырысуда.",
+        "en-zh-tw": "他們仍在試著判斷撞擊的規模以及對地球的影響。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "米国防総省事務所の米戦略司令部がこのデブリを追跡しています。",
         "en-fr": "Le commandement stratégique du bureau du département de la défense des États-Unis suit les débris.",
         "en-th": "หน่วยบัญชาการยุทธศาสตร์ของกระทรวงกลาโหมสหรัฐอเมริกากำลังติดตามเศษซากชิ้นส่วน",
-        "en-ms": "Kawalan Strategik Amerika Syarikat dari pejabat Pertahanan A.S. sedang menjejaki serpihan."
+        "en-ms": "Kawalan Strategik Amerika Syarikat dari pejabat Pertahanan A.S. sedang menjejaki serpihan.",
+        "en-ru": "Стратегическое командование Министерства обороны США ведёт поиск обломков.",
+        "en-ko": "미 국방부의 전략사령부가 잔해를 추적 중에 있다.",
+        "en-vi": "Bộ Tư Lệnh Chiến Lược Hoa Kỳ thuộc Bộ Quốc Phòng Hoa Kỳ đang theo dõi mảnh vỡ.",
+        "en-id": "Komando Strategi Amerika Serikat dari kantor Departemen Pertahanan AS sedang mengawasi puing-puing.",
+        "en-ur": "امریکی محکمہ دفاع کے دفتر کا امریکی اسٹریٹجک کمانڈ ملبہ تلاش کر رہا ہے۔",
+        "en-uz": "AQSH Mudofaa vazirligi idorasining AQSH strategik qo'mondonligi vayronalarni kuzatyapti.",
+        "en-kk": "АҚШ Қорғаныс министрлігінің АҚШ стратегиялық командасы қоқыстарды бақылауда.",
+        "en-zh-tw": "美國國防部戰略司令部正在追蹤殘骸。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "プロット分析の結果は、公開サイトに掲載される予定です。",
         "en-fr": "Le résultat de l'analyse du tracé sera publié sur un site Web public.",
         "en-th": "จะมีการโพสต์ผลวิเคราะห์การพล็อตกราฟในเว็บไซต์สาธารณะ",
-        "en-ms": "Keputusan memplotkan analisis akan dipaparkan pada laman sesawang umum."
+        "en-ms": "Keputusan memplotkan analisis akan dipaparkan pada laman sesawang umum.",
+        "en-ru": "Результаты анализа графиков будут размещены на общедоступном сайте.",
+        "en-ko": "도표화된 분석 결과가 공개 웹사이트에 게시될 예정입니다.",
+        "en-vi": "Kết quả phân tích đồ thị sẽ được đăng lên một trang web công cộng.",
+        "en-id": "Hasil analisis grafik akan dikirim ke situs web publik.",
+        "en-ur": "سازشی تجزیے کے نتائج عوامی ویب سائٹ پر ڈال دیئے جائیں گے۔",
+        "en-uz": "Chizma tahlil natijasi ommabop veb-saytga joylashtiriladi.",
+        "en-kk": "Графикті талдау нәтижесі жалпы веб-сайтқа жарияланады.",
+        "en-zh-tw": "分析圖將公佈在一個公開網站上。"
       }
     }
   ]

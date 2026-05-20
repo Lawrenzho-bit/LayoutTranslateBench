@@ -1,6 +1,8 @@
-# FLORES-200-Derived LTB Documents (v0.1.5)
+# FLORES-200-Derived LTB Documents (v0.1.5 + v0.1.7 enrichment)
 
 This directory contains **10 synthetic LTB documents (doc_026–doc_035)** composed from FLORES-200 devtest sentences. These are the **first industry-grade-reference documents in LTB** — references are professionally translated, recorded as `provenance.grade: "certified-translator"`.
+
+**v0.1.7 update:** every region now carries references for all **16 LTB pairs**. The original v0.1.5 build covered the core 8; `scripts/add_flores_extension_refs.py` back-filled the v0.1.6 extension 8 (`en-ru`, `en-ko`, `en-vi`, `en-id`, `en-ur`, `en-uz`, `en-kk`, `en-zh-tw`) by matching English region text to `eng_Latn.devtest` and looking up the parallel translation in each extension-pair FLORES file. This closes the `en-ru = 0 docs` gap from v0.1.6.4 and upgrades all 7 surviving extension pairs from ml-curated rileykim refs to certified-translator FLORES refs.
 
 ## Why these documents matter
 
@@ -19,7 +21,7 @@ Each doc is built from one Wikinews article in FLORES-200's devtest split:
 2. Pick the first 10 articles with ≥ 5 consecutive sentences
 3. Take the first ≤ 6 sentences as document regions: sentence 0 becomes the title, sentences 1–5 become paragraphs
 4. Layout: single-column, top-down, author-determined bboxes
-5. References: pull the parallel FLORES-200 translations for our 8 LTB target languages (`spa_Latn`, `deu_Latn`, `zho_Hans`, `arb_Arab`, `jpn_Jpan`, `fra_Latn`, `tha_Thai`, `zsm_Latn`)
+5. References: pull the parallel FLORES-200 translations for all 16 LTB target languages — core 8 (`spa_Latn`, `deu_Latn`, `zho_Hans`, `arb_Arab`, `jpn_Jpan`, `fra_Latn`, `tha_Thai`, `zsm_Latn`) and v0.1.6 extension 8 (`rus_Cyrl`, `kor_Hang`, `vie_Latn`, `ind_Latn`, `urd_Arab`, `uzn_Latn`, `kaz_Cyrl`, `zho_Hant`)
 
 ## License segregation
 

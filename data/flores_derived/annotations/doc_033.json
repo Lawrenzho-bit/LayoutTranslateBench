@@ -9,7 +9,7 @@
     "source_image_id": "https://en.wikinews.org/wiki/India_struggles_with_encephalitis_outbreak",
     "license": "CC-BY-SA-4.0",
     "grade": "certified-translator",
-    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Health'."
+    "notes": "Reference translations are from FLORES-200 (Wikinews / Wikipedia source sentences, professionally translated). License is CC-BY-SA-4.0 (share-alike) — this annotation must be redistributed under CC-BY-SA-4.0. Article topic: 'Health'. [v0.1.7: enriched with 8 v0.1.6 extension-pair refs from FLORES-200]"
   },
   "regions": [
     {
@@ -36,7 +36,15 @@
         "en-ja": "今シーズン最初の発病例が報告されたのは7月下旬でした。",
         "en-fr": "Les premiers cas de cette maladie saisonnière ont été déclarés fin juillet.",
         "en-th": "มีรายงานเกี่ยวกับผู้ป่วยโรคนี้รายแรก ๆ ในฤดูกาลนี้ในปลายเดือนกรกฎาคม",
-        "en-ms": "Kes-kes pertama penyakit berkenaan untuk musim ini dilapor dalam akhir bulan Julai."
+        "en-ms": "Kes-kes pertama penyakit berkenaan untuk musim ini dilapor dalam akhir bulan Julai.",
+        "en-ru": "О первых случаях заболевания в этом сезоне было сообщено в июле.",
+        "en-ko": "이번 시즌의 첫 발병 사례는 7월 말에 보고되었습니다.",
+        "en-vi": "Những trường hợp mắc bệnh đầu tiên mùa này được cho là xuất hiện vào cuối tháng Bảy.",
+        "en-id": "Musim ini, kasus pertama penyakit ini dilaporkan pada akhir Juli.",
+        "en-ur": "اس موسم میں بیماری کے اولین کیسز جولائی کے اواخر میں رپورٹ ہوئے۔",
+        "en-uz": "Bu mavsumdagi dastlabki kasallik holatlari haqida iyul oyining oxirida xabar qilindi.",
+        "en-kk": "Бұл маусымдағы аурудың бірінші жағдайлары туралы шілденің соңына қарай хабарланды.",
+        "en-zh-tw": "本季該疾病的首個案例是在七月底上報的。"
       }
     },
     {
@@ -62,7 +70,15 @@
         "en-ja": "この病気は豚によって運ばれ、その後、蚊を媒介にして人間に感染します。",
         "en-fr": "Les porcs sont porteurs de la maladie, qui est ensuite transmise à l'homme par les moustiques.",
         "en-th": "โรคนี้มีสุกรเป็นพาหะซึ่งถ่ายทอดสู่มนุษย์หลังจากนั้นผ่านทางยุง",
-        "en-ms": "Penyakit tersebut dibawa babi, yang kemudian berpindah ke manusia melalui nyamuk."
+        "en-ms": "Penyakit tersebut dibawa babi, yang kemudian berpindah ke manusia melalui nyamuk.",
+        "en-ru": "Переносчиками являются свиньи, от которых через комаров болезнь затем передаётся человеку.",
+        "en-ko": "이 병은 돼지에 의해 옮겨진 다음, 모기를 통해 인간에게 옮겨집니다.",
+        "en-vi": "Căn bệnh được truyền trên lợn, sau đó di trú sang người thông qua muỗi.",
+        "en-id": "Penyakit dibawa oleh babi, kemudian berpindah ke manusia lewat nyamuk.",
+        "en-ur": "یہ مرض پہلے سور میں پیدا ہوتا ہے پھر مچھر اس کو انسانوں کو منتقل کرتے ہیں۔",
+        "en-uz": "Mazkur kasallikni cho'chqalar tashiydi, keyinchalik chivinlar orqali insonlarga o'tadi.",
+        "en-kk": "Бұл ауру шошқаларда болады, содан кейін ол масалар арқылы адамдарға өтеді.",
+        "en-zh-tw": "這種疾病存在於豬身上，然後透過蚊子傳播給人類。"
       }
     },
     {
@@ -88,7 +104,15 @@
         "en-ja": "この大流行により、インド政府は深刻な影響を受けた地域への豚捕獲員の配置、数千張の蚊帳の配布、殺虫剤の散布などの措置をとりました。",
         "en-fr": "L’épidémie a incité le gouvernement indien à prendre des mesures telles que le déploiement de collecteurs de porcs dans les zones gravement touchées, la distribution de milliers de moustiquaires et la pulvérisation de pesticides.",
         "en-th": "การแพร่ระบาดกระตุ้นให้รัฐบาลอินเดียดำเนินมาตรการต่าง ๆ เช่น ติดตั้งเครื่องมือดักจับหมูในพื้นที่ที่ได้รับผลกระทบขั้นร้ายแรง แจกมุ้งหลายพันผืน และฉีดพ่นยาฆ่าแมลง",
-        "en-ms": "Wabak itu telah menggesa kerajaan India untuk mengambil tindakan seperti menghantar penangkap babi di kawasan yang terjejas secara serius, mengedar beribu-ribu langsir anti-nyamuk dan menyembur racun perosak."
+        "en-ms": "Wabak itu telah menggesa kerajaan India untuk mengambil tindakan seperti menghantar penangkap babi di kawasan yang terjejas secara serius, mengedar beribu-ribu langsir anti-nyamuk dan menyembur racun perosak.",
+        "en-ru": "Эта вспышка побудила индийское правительство принять такие меры, как установка ловушек для свиней в серьёзно пострадавших районах, раздача тысяч противомоскитных занавесок и распыление пестицидов.",
+        "en-ko": "이번 발병으로 인도 정부는 심각한 피해를 입은 지역에 돼지 포획꾼을 파견하고, 모기장 수천 장을 배급했으며 살충제를 살포하는 등의 조치를 취했다.",
+        "en-vi": "Đợt bùng phát thúc giục chính phủ Ấn Độ tiến hành các biện pháp như triển khai dụng cụ bắt lợn tại các khu vực bị ảnh hưởng nghiêm trọng, phân phát hàng nghìn màn chống muỗi và bình xịt côn trùng.",
+        "en-id": "Wabah tersebut telah mendorong pemerintah India untuk mengambil tindakan seperti penempatan penangkap babi di daerah yang terkena dampak serius, mendistribusikan ribuan tirai nyamuk dan menyemprotkan pestisida.",
+        "en-ur": "اس پھوٹ نے بھارتی سرکار کو اس پر آمادہ کیا کہ وہ ایسے اقدامات کرے جیسے شدید متاثرہ علاقوں میں سور پکڑنے والوں کو تعینات کرنا، ہزاروں مچھردانیوں کی تقسیم اور کیڑے مار دوائیں اسپرے کرنا۔",
+        "en-uz": "Epidemiya Hindiston hukumatini jiddiy zararlangan hududlarga cho'chqa tutuvchilarni joylashtirish, minglab chivinga qarshi pardalarni tarqatish hamda pestitsidlarni sepish singari chora-tadbirlar ko'rishga undadi.",
+        "en-kk": "Ауру Үндістан үкіметін қатты зардап шеккен аудандарға шошқа етін орналастыру, мыңдаған москит перделерін тарату және пестицидтерді бүрку сияқты шаралар қабылдауға итермеледі.",
+        "en-zh-tw": "疫情促使印度政府採取一些措施，比方在重災區部署捕豬隊、分發大量蚊帳以及噴灑殺蟲劑。"
       }
     },
     {
@@ -114,7 +138,15 @@
         "en-ja": "数百万本の脳炎ワクチンも政府から約束されており、来年に向けて保健機関の準備に役立ちます。",
         "en-fr": "Plusieurs millions de flacons de vaccin contre l'encéphalite ont également été promis par le gouvernement, ce qui aidera à préparer les agences sanitaires pour l'année prochaine.",
         "en-th": "รัฐบาลยังสัญญาอีกด้วยว่าจะมีวัคซีนไข้สมองอักเสบหลายล้านขวดซึ่งจะช่วยเตรียมความพร้อมให้หน่วยงานด้านสุขภาพสำหรับปีหน้า",
-        "en-ms": "Berjuta botol vaksin ensefalitis telah dijanjikan oleh pihak kerajaan, yang dapat membantu dalam persediaan agensi kesihatan untuk tahun depan."
+        "en-ms": "Berjuta botol vaksin ensefalitis telah dijanjikan oleh pihak kerajaan, yang dapat membantu dalam persediaan agensi kesihatan untuk tahun depan.",
+        "en-ru": "Правительство также пообещало несколько миллионов ампул вакцины против энцефалита, которые помогут подготовить учреждения здравоохранения к следующему году.",
+        "en-ko": "정부에서 수백만 개의 뇌염 백신의 전달하기로도 약속한 만큼 내년 보건 기관들의 준비에 큰 도움이 될 것이다.",
+        "en-vi": "Chính phủ cũng đã hứa sẽ cung cấp vài triệu liều vắc-xin viêm não để giúp các cơ quan y tế chuẩn bị sẵn sàng cho năm tới.",
+        "en-id": "Beberapa juta ampul vaksin encephalitis telah dijanjikan oleh pemerintah, yang akan membantu persiapan lembaga kesehatan tahun depan.",
+        "en-ur": "حکومت نے انسیفلائٹس کے کئی ملین ویکسن بنانے کا وعدہ کیا ہے، جو اگلے سال کی تیاری میں ہیلتھ ایجنسیوں کی مدد کریں گے۔",
+        "en-uz": "Hukumat tomonidan ensefalitga qarshi bir necha million shisha vaksina va'da qilingan va bu sog'liqni saqlash agentliklarini keyingi yilga tayyorlashga yordam beradi.",
+        "en-kk": "Сондай-ақ үкімет энцефалит вакцинасының бірнеше миллион құтысын уәде етті. Бұл денсаулық сақтау агенттіктерін келесі жылға дайындауға көмектеседі.",
+        "en-zh-tw": "政府也承諾生產數百萬支腦炎疫苗，此舉將幫助衛生單位做好準備因應明年的疫情。"
       }
     },
     {
@@ -140,7 +172,15 @@
         "en-ja": "今年、歴史的に最も被害が甚大だった地域にワクチンを届けるという計画でしたが、資金不足と他の疾病に比べて優先順位が低いという理由で遅れていました。",
         "en-fr": "Les plans de livraison de vaccins dans les zones historiquement les plus touchées cette année ont été retardés en raison du manque de fonds et de la faible priorité accordée à ces maladies par rapport à d’autres.",
         "en-th": "เกิดความล่าช้าในแผนการจัดส่งวัคซีนไปยังพื้นที่ที่ได้รับผลกระทบมากที่สุดเป็นประวัติการณ์ในปีนี้ เนื่องจากไม่มีเงินทุนและอยู่ในลำดับความสำคัญต่ำเมื่อเทียบกับโรคอื่น ๆ",
-        "en-ms": "Rancangan untuk menghantar vaksin ke tempat-tempat yang paling terjejas teruk tahun ini terlewat disebabkan kekurangan dana dan kurang keutamaan berbanding kepada penyakit lain."
+        "en-ms": "Rancangan untuk menghantar vaksin ke tempat-tempat yang paling terjejas teruk tahun ini terlewat disebabkan kekurangan dana dan kurang keutamaan berbanding kepada penyakit lain.",
+        "en-ru": "Планы по доставке вакцин в исторически наиболее пострадавшие районы в этом году были отложены из-за недостатка средств и низкой приоритетности по сравнению с другими заболеваниями.",
+        "en-ko": "올해 역사상 가장 타격이 심한 지역에 백신을 전달하기 위한 계획이 자금 부족과 다른 질병에 비해 낮은 우선순위로 인해 연기되었습니다.",
+        "en-vi": "Kế hoạch phân phối vắc-xin trong năm nay đến những khu vực từng bị ảnh hưởng nặng nề nhất trước đây đã bị hoãn lại vì thiếu kinh phí và không được ưu tiên so với những bệnh khác.",
+        "en-id": "Rencana pengiriman vaksin ke daerah yang secara historis paling terkena dampak tahun ini ditunda karena kekurangan dana dan rendahnya prioritas jika dibandingkan dengan penyakit lain.",
+        "en-ur": "اس سال تاریخی طور پر سب سے زیادہ متاثرہ علاقوں میں فنڈ کی کمی اور دیگر بیماریوں کی بنسبت ترجیحات میں کمی کے باعث ٹیکے پہنچانے کے منصوبے میں تاخیر ہوئی ہے۔",
+        "en-uz": "Tarixiy jihatdan eng ko'p zararlangan hududlarga vaksinalar yetkazib berish bo'yicha rejalar bu yil mablag' yetishmasligi va boshqa kasalliklarga nisbatan ahamiyat past bo'lganligi sababli kechiktirildi.",
+        "en-kk": "Қаражаттардың болмауына және басқа ауруларға қатысты басымдығын төмен қойғандықтан, осы жылы тарихи ең көп әсер етілген аумақтарға вакциналарды жеткізу жоспарлары кейінге қалдырылды.",
+        "en-zh-tw": "由於缺乏資金且相對其他疾病的優先順序較低，今年運送疫苗到史上受感染最嚴重地區的計劃因而延遲。"
       }
     }
   ]
