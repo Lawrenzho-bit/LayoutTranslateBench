@@ -1,0 +1,415 @@
+{
+  "doc_id": "doc_037",
+  "page_size": [
+    1600,
+    2122
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_36373",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        580,
+        83,
+        382,
+        107
+      ],
+      "text": "CONFIRMATIONM/A/R/C Code Request",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "确认码请求"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        437,
+        219,
+        359,
+        119
+      ],
+      "text": "To:Joe Leinster, RJRFrom : Joyce Bagby, TBMDate :04/20/95",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "致：Joe Leinster, RJR\n来自：Joyce Bagby, TBM\n日期：1995年4月20日"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        285,
+        384,
+        886,
+        45
+      ],
+      "text": "RJR Program #: 501556",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "RJR计划编号：501556"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        286,
+        383,
+        584,
+        148
+      ],
+      "text": "Brand :WINSTONTitle：Winston Select EW Survey #2Description : Winston Select EW Survey #2 Fulfillment/Data Entry At : Targetbase Marketing, A M/A/R/C Group Company",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "品牌：WINSTON\n标题：Winston Select EW 调查 #2\n描述：Winston Select EW 调查 #2 数据录入/执行公司：Targetbase Marketing，M/A/R/C 集团旗下公司"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        286,
+        667,
+        410,
+        300
+      ],
+      "text": "Circulation Qty :15,000Est.Response %:40%Est. Responders :6,000Distribution Drop Date : 6/5/95Bar Code Slick To : Joe Leinster",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "发行量：15,000\n预计响应率：40%\n预计响应者数量：6,000\n分发日期：1995年5月6日\n条形码贴纸寄给：Joe Leinster"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        881,
+        867,
+        288,
+        36
+      ],
+      "text": "Expiration Date: 9/30/95",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "有效期：1995年9月30日"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        453,
+        1032,
+        489,
+        87
+      ],
+      "text": "M/A/R/C Code Assigned : J79 Batch Code Assigned : 21500-21599",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "M/A/R/C码分配：J79 批次码分配：21500-21599"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        617,
+        1146,
+        117,
+        28
+      ],
+      "text": "Postcard :",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "明信片"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        846,
+        1141,
+        298,
+        45
+      ],
+      "text": "X BRC* 0 CRC",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "X BRC* 0 CRC\n\n翻译为中文：X BRC* 0 循环冗余校验码\n\n注：CRC 是“循环冗余校验码”的缩写，在技术语境中通常直接使用英文缩写。如果需要完全翻译，可以按照上述翻译；若保持专业术语，则可保留CRC不变。"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        463,
+        1197,
+        114,
+        46
+      ],
+      "text": "Format : (see attached)",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "格式：（见附件）"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        619,
+        1227,
+        149,
+        56
+      ],
+      "text": "Envelope/ Bi or Tri Fold :",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "信封/双折或三折"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        844,
+        1239,
+        299,
+        42
+      ],
+      "text": "O BRE O CRE",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "欧布雷 欧创"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        461,
+        1316,
+        241,
+        41
+      ],
+      "text": "Postal Permit # : 381",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "邮政许可编号：381"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        459,
+        1384,
+        374,
+        93
+      ],
+      "text": "Address : ATTN DEPT J79 SELECT PANEL",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "地址：请寄至J79部门 选择小组"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        595,
+        1498,
+        449,
+        88
+      ],
+      "text": "PO BOX 834044 . . RICHARDSON TX 75083-9724",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "邮政信箱834044，理查森，德克萨斯州75083-9724"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        182,
+        1638,
+        1282,
+        36
+      ],
+      "text": "*If the return mailpiece is abusinessreply,please sendthe first50samples to VanessaDickerson inour Dals Office.",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "如果退回的邮件是商务回复，请将前50份样本发送给我们在达拉斯办公室的Vanessa Dickerson。"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        193,
+        1693,
+        123,
+        29
+      ],
+      "text": "Attachment",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "附件"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        45,
+        1745,
+        709,
+        317
+      ],
+      "text": "cc:Karen Giddens, RJRSuzi Hicks, RJRＴARGETBIEMＲAETIIRAETI Paul Knouse, RJRR.1; RETREPORTIr ki Teresa Witner, RJRH.* Brandt Conner, LHC-Lintas RH1 11 *t3tF",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "抄送：Karen Giddens, RJR；Suzi Hicks, RJR；TARGETBIEMＲAETIIRAETI Paul Knouse, RJR；报告人：Teresa Witner, RJRH；* Brandt Conner, LHC-Lintas RH1 11 *t3tF\n\n注：原文中的“TARGETBIEMＲAETIIRAETI”和“*t3tF”可能是拼写错误或特殊代码，因此在翻译时保持原样。"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        925,
+        1776,
+        306,
+        211
+      ],
+      "text": "Jill Chism, TBMRobin Rettew, TBMDebbie Rudolph, TBMPatty Scott, TBMGwen Walters, TBM",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "吉尔·奇斯姆，TBM罗宾·雷特威，TBM黛比·鲁道夫，TBM帕蒂·斯科特，TBM格温·沃尔特斯，TBM"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        121,
+        2080,
+        1131,
+        42
+      ],
+      "text": "Source: https://www.industrydocuments.ucsf.edu/docs/qtgc0003",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "来源：https://www.industrydocuments.ucsf.edu/docs/qtgc0003"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        132,
+        122,
+        270,
+        113
+      ],
+      "text": "Targetbase MARKETING",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ru": "目标数据库营销"
+      }
+    }
+  ]
+}

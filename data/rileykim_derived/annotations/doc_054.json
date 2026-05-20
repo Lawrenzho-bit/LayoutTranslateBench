@@ -1,0 +1,548 @@
+{
+  "doc_id": "doc_054",
+  "page_size": [
+    1600,
+    2264
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_48604",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        190,
+        543,
+        616,
+        31
+      ],
+      "text": "ITC's Foods Business :Creating Consumer Delight",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "ITC的食品业务：创造消费者喜悦"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        192,
+        603,
+        904,
+        33
+      ],
+      "text": "Board of Directors and Committees ........................................",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "董事会和委员会 ........................................"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        193,
+        661,
+        409,
+        29
+      ],
+      "text": "Report on Corporate Governance",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "公司治理报告"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        1102,
+        662,
+        35,
+        22
+      ],
+      "text": "10",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "十"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        186,
+        717,
+        312,
+        32
+      ],
+      "text": "Shareholder Information .",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "股东信息"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        188,
+        777,
+        780,
+        30
+      ],
+      "text": "Report of the Directors & Management Discussion and Analysis .",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "董事报告与管理层讨论及分析"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        1097,
+        780,
+        41,
+        23
+      ],
+      "text": "36",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "三十六"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        189,
+        832,
+        491,
+        34
+      ],
+      "text": "Certificate of Compliance from Auditors",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "审计合规证书"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        1101,
+        837,
+        39,
+        24
+      ],
+      "text": "78",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "七十八"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        191,
+        891,
+        368,
+        36
+      ],
+      "text": "GEO and CFO Certification ....",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "GEO和CFO认证......"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        190,
+        949,
+        280,
+        39
+      ],
+      "text": "Balance Sheet ....",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "资产负债表 ...."
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        1094,
+        951,
+        41,
+        23
+      ],
+      "text": "80",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "八十"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        1085,
+        1009,
+        53,
+        23
+      ],
+      "text": "81",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "81"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        190,
+        1062,
+        329,
+        40
+      ],
+      "text": "Cash Flow Statement.",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Ақша қаражаттарының қозғалысы туралы есеп."
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        1102,
+        1121,
+        35,
+        26
+      ],
+      "text": "83",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "83"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        192,
+        1181,
+        296,
+        31
+      ],
+      "text": "Report of the Auditors .",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Аудиторлардың есебі."
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        195,
+        1237,
+        578,
+        31
+      ],
+      "text": "Guide to Subsidiaries/Joint Ventures/Associates",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Еншілес ұйымдарға / бірлескен кәсіпорындарға / қауымдасқан компанияларға нұсқаулық"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        196,
+        1296,
+        418,
+        27
+      ],
+      "text": "Consolidated Financial Statements",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Шоғырландырылған қаржылық есептілік"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        1098,
+        1296,
+        39,
+        24
+      ],
+      "text": "29",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "29"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        184,
+        1353,
+        283,
+        31
+      ],
+      "text": "Ten Years at a Glance",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Он жыл бір қарағанда"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        1091,
+        1352,
+        45,
+        29
+      ],
+      "text": "176",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "176"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        191,
+        1412,
+        257,
+        33
+      ],
+      "text": "Financial Highlights",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Қаржылық көрсеткіштер"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        196,
+        1469,
+        381,
+        33
+      ],
+      "text": "Business Update : ITC Infotech",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Бизнесті жаңарту: ITC Infotech"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        652,
+        1720,
+        241,
+        76
+      ],
+      "text": "VISION",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Көру"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        1061,
+        1715,
+        295,
+        87
+      ],
+      "text": "MISSION",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Іссапар"
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        621,
+        1865,
+        346,
+        275
+      ],
+      "text": "Sustain IC s position as one of Tindia's most valuable corporations through world class performance. creating growing value for the Indian econoing and the Company stakeholders",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "ССЖ-ны Дүниежүзілік класта орындау арқылы Тиндианың ең құнды корпорацияларының бірі болып табылады. Үнді эконині мен компанияның мүдделі тараптары үшін өсіп келе жатқан құндылықты құру"
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        1031,
+        1869,
+        271,
+        61
+      ],
+      "text": "To enhance the wealth generating",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Байлықты арттыру"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        1027,
+        1990,
+        308,
+        157
+      ],
+      "text": "in a globalising environment delivering superior and sustainable stakeholder value",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Мүдделі тараптардың жоғары және тұрақты құнын жеткізетін жаһанданатын ортада"
+      }
+    }
+  ]
+}

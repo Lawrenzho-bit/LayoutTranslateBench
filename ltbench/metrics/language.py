@@ -22,6 +22,7 @@ from __future__ import annotations
 # Each set contains all codes that should be considered "in target language"
 # for that pair.
 _TARGET_CODES: dict[str, frozenset[str]] = {
+    # Core 8 (v0.1)
     "en-es": frozenset({"es"}),
     "en-de": frozenset({"de"}),
     "en-zh": frozenset({"zh-cn", "zh-tw"}),
@@ -30,6 +31,15 @@ _TARGET_CODES: dict[str, frozenset[str]] = {
     "en-fr": frozenset({"fr"}),
     "en-th": frozenset({"th"}),
     "en-ms": frozenset({"ms", "id"}),  # Malay / Indonesian are mutually intelligible
+    # v0.1.6 extension pairs
+    "en-ru": frozenset({"ru"}),
+    "en-ko": frozenset({"ko"}),
+    "en-vi": frozenset({"vi"}),
+    "en-id": frozenset({"id", "ms"}),  # see note above for ms
+    "en-ur": frozenset({"ur"}),
+    "en-uz": frozenset({"uz"}),  # langdetect 1.0+ has 'uz' (Latin); pre-2018-reform Cyrillic falls back open
+    "en-kk": frozenset({"kk"}),
+    "en-zh-tw": frozenset({"zh-tw", "zh-cn"}),  # both Han scripts; langdetect cannot reliably split
 }
 
 
@@ -60,6 +70,27 @@ _SCRIPT_RANGES: dict[str, list[tuple[int, int]]] = {
     ],
     "en-th": [
         (0x0E00, 0x0E7F),  # Thai
+    ],
+    # v0.1.6 extension pairs with distinctive scripts
+    "en-ko": [
+        (0xAC00, 0xD7AF),  # Hangul Syllables
+        (0x1100, 0x11FF),  # Hangul Jamo
+        (0x3130, 0x318F),  # Hangul Compatibility Jamo
+    ],
+    "en-ru": [
+        (0x0400, 0x04FF),  # Cyrillic
+    ],
+    "en-kk": [
+        (0x0400, 0x04FF),  # Cyrillic (Kazakh uses Cyrillic letters + a few extensions)
+    ],
+    "en-ur": [
+        (0x0600, 0x06FF),  # Arabic (Urdu uses Perso-Arabic)
+        (0x0750, 0x077F),  # Arabic Supplement
+        (0xFB50, 0xFDFF),  # Arabic Presentation Forms-A
+    ],
+    "en-zh-tw": [
+        (0x4E00, 0x9FFF),  # CJK Unified Ideographs (same block as Simplified)
+        (0x3400, 0x4DBF),  # CJK Ext A
     ],
 }
 

@@ -100,13 +100,19 @@ def verify(
                 f"doc_id mismatch: manifest={entry.doc_id}, annotation={ann.doc_id}"
             )
         # v0.1.4: partial reference coverage is permitted for docs imported from
-        # external sources (ml-curated / certified-translator). Author-curated
-        # docs still require references in all 8 LTB pairs as a quality contract.
+        # external sources (ml-curated). Author-curated and certified-translator
+        # docs are required to cover the core 8 LTB pairs only — they are NOT
+        # expected to cover the v0.1.6 rileykim extension pairs (en-ru, en-ko, etc).
+        # v0.1.6: the coverage requirement uses CORE_LANG_PAIRS, not the full
+        # extended LANG_PAIRS, so extending the pair set doesn't retroactively
+        # break older docs.
+        from ltbench import CORE_LANG_PAIRS
         grade = ann.provenance.grade if ann.provenance else "author-curated"
-        require_full_coverage = grade == "author-curated"
+        require_full_coverage = grade in {"author-curated", "certified-translator"}
+        coverage_target = CORE_LANG_PAIRS if require_full_coverage else ()
         for region in ann.regions:
-            missing = [lp for lp in LANG_PAIRS if lp not in region.references]
-            if missing and require_full_coverage:
+            missing = [lp for lp in coverage_target if lp not in region.references]
+            if missing:
                 errors.append(
                     f"{entry.doc_id}/{region.region_id}: missing references {missing}"
                 )

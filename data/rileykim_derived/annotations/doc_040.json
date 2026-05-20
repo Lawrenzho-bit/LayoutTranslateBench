@@ -1,0 +1,453 @@
+{
+  "doc_id": "doc_040",
+  "page_size": [
+    1600,
+    2122
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_08231",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        300,
+        490,
+        1028,
+        119
+      ],
+      "text": "HAROLD LEVINSON ASSOCIATES TRADE SHOW PREBOOK -- MARCH 20, 1996",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "HAROLD LEVINSON ASSOCIATES 무역 박람회 사전 예약 -- 1996년 3월 20일"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        235,
+        666,
+        1153,
+        61
+      ],
+      "text": "RETAIL PROMOTION ONLY--CARTON OUTLETS",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "소매 판촉에만 해당 - 상자 판매점"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        666,
+        788,
+        291,
+        73
+      ],
+      "text": "WINSTON",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "윈스턴"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        273,
+        969,
+        1047,
+        188
+      ],
+      "text": "THE FOLLOWING PRODUCT WILL BE BLACKLINED AND STICKERED AT$.25 OFF A PACK/S2.50 OFF CARTON, AND SHIPPED IN A SPECIALDISPLAY WITH ADVERTISING. THIS PROMOTION IS A SPECLAL TRADESHOW PROMOTION AND SHOULD NOT BE PLACED IN RJR REGULARDISPLAYS. A SPECIAL DISPLAY WILL BE SHIPPED WITH THE PRODUCT.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "다음 제품은 검은색으로 표시되고 스티커가 붙어 $0.25 팩/S2.50 오프 카톤이며 광고와 함께 특별 디스플레이에 배송됩니다. 이 프로모션은 특별한 무역 박람회 프로모션이므로 RJR 정규 디스플레이에 게재되어서는 안 됩니다. 특별 디스플레이가 제품과 함께 배송됩니다."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        426,
+        1230,
+        60,
+        26
+      ],
+      "text": "1880",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "1880년"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        552,
+        1228,
+        232,
+        32
+      ],
+      "text": "WINSTON KING",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "윈스턴 킹"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        1042,
+        1229,
+        33,
+        30
+      ],
+      "text": "10",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "10"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        423,
+        1307,
+        64,
+        28
+      ],
+      "text": "1877",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "1877년"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        551,
+        1304,
+        218,
+        32
+      ],
+      "text": "WINSTON BOX",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "윈스턴 박스"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        1032,
+        1305,
+        47,
+        32
+      ],
+      "text": "3",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "3"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        424,
+        1382,
+        60,
+        29
+      ],
+      "text": "1212",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "1212"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        554,
+        1379,
+        194,
+        34
+      ],
+      "text": "WINSTON 100",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "윈스턴 100"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        1037,
+        1380,
+        45,
+        38
+      ],
+      "text": "2",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "2"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        423,
+        1457,
+        66,
+        32
+      ],
+      "text": "1879",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "1879년"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        548,
+        1455,
+        278,
+        36
+      ],
+      "text": "WINSTON LT KING",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "윈스턴 LT 킹"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        1043,
+        1457,
+        32,
+        31
+      ],
+      "text": "5",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "5"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        720,
+        1531,
+        105,
+        35
+      ],
+      "text": "TOTAL",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "총"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        1041,
+        1536,
+        32,
+        28
+      ],
+      "text": "20",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "20"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        187,
+        1634,
+        1104,
+        146
+      ],
+      "text": "YOUR RJR REP WILL CONTACT YOURSTORE TO PAY FOR THE BUYDOWN",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "귀하의 RJR 담당자가 귀하의 매장에 연락하여 구매 비용을 지불할 것입니다."
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        456,
+        1848,
+        713,
+        64
+      ],
+      "text": "CITYSTATE",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "도시국가"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        335,
+        2077,
+        937,
+        45
+      ],
+      "text": "Source: https://www.industrydocuments.ucsf.edu/docs/hxmn0000",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "출처: https://www.industrydocuments.ucsf.edu/docs/hxmn0000"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        194,
+        373,
+        239,
+        31
+      ],
+      "text": "AUTHORIZED BY",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "승인자:"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        1428,
+        1679,
+        27,
+        181
+      ],
+      "text": "51853 1385",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ko": "51853 1385"
+      }
+    }
+  ]
+}
