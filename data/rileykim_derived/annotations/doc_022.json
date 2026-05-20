@@ -1,0 +1,320 @@
+{
+  "doc_id": "doc_022",
+  "page_size": [
+    1600,
+    2122
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_37642",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        200,
+        142,
+        887,
+        74
+      ],
+      "text": "Mar 14, 1997, 11:03:52 Accession Packing List, Order: 106630",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "Mar 14, 1997, 11:03:52 Accession Packing List, Order: 106630"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        1313,
+        141,
+        95,
+        38
+      ],
+      "text": "Page 1",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "第1页"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        210,
+        236,
+        78,
+        34
+      ],
+      "text": "From:",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "来自："
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        333,
+        302,
+        662,
+        130
+      ],
+      "text": "Crop Science Department Oxford Tobacco Research Station P.O. Box 1555 Oxford, North Carolina, United States, 27565",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "作物科学系 牛津烟草研究站 邮政信箱1555 牛津，北卡罗来纳州，美国，27565"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        209,
+        455,
+        878,
+        196
+      ],
+      "text": "Ship to:Wennuan LiuR J Reynolds Tobacco Co.Agricultural Sciences DivisionBowman Gray Technical CenterWinton-Salem, North Carolina, United States, 27102",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "寄往：刘温馨 R J 雷诺烟草公司农业科学部鲍曼·格雷技术中心温斯顿-塞勒姆，北卡罗来纳州，美国，27102"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        216,
+        674,
+        219,
+        36
+      ],
+      "text": "Item Accession",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "项目存取"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        565,
+        678,
+        133,
+        35
+      ],
+      "text": "Inventory",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "库存"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        936,
+        677,
+        149,
+        33
+      ],
+      "text": "Plant name",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "植物名称"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        1200,
+        678,
+        195,
+        29
+      ],
+      "text": "Amount Rest",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "剩余金额"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        209,
+        770,
+        270,
+        34
+      ],
+      "text": "Nicotiana tabacum",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "烟草"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        374,
+        833,
+        110,
+        190
+      ],
+      "text": "112313 116071 511342 511343 551326 564065",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "112313 116071 511342 511343 551326 564065\n\n这些数字没有特定的中文翻译，如果需要转换成中文数字形式，请告知。例如：十一万二千三百一十三等。但根据您的要求，我仅提供直译结果，即保持原样不变。如果您有其他需求或上下文，请进一步说明。"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        887,
+        769,
+        664,
+        257
+      ],
+      "text": "high B-W. 3 , 18 - Duvatriene . TI 321 TI 698 HI BURLEY 21 LI BURLEY 21 KY 171 SD LN KY 171 25 ct",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "高B-W。3，18-杜瓦三烯。TI 321 TI 698 HI BURLEY 21 LI BURLEY 21 KY 171 SD LN KY 171 25 ct"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        245,
+        837,
+        95,
+        180
+      ],
+      "text": "5 PI 6 PI 1 PI 2 PI PI 3 PI",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "5π 6π 1π 2π π 3π"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        564,
+        990,
+        230,
+        35
+      ],
+      "text": "NSSL 264151 51",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "NSSL 264151 51\n\n（注：这段文本看起来像是代码或编号，没有明确的语言意义，因此直接翻译可能不适用。如果需要根据上下文进行解释，请提供更多信息。不过，按照指示，这里直接保留原样。）"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        217,
+        1051,
+        721,
+        40
+      ],
+      "text": "Total ordered: 6, # shipped: 6, # not shipped: 0",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "总共订购：6，已发货：6，未发货：0"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        289,
+        1113,
+        1096,
+        102
+      ],
+      "text": "This germplasm is being freely distributed. Reciprocal exchange will beappreciated under \"mutually agreed terms\" of the Convention on BiologicalDiversity.",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "该种质资源正在免费分发。根据《生物多样性公约》的“相互商定的条件”，我们非常欢迎互惠交换。"
+      }
+    }
+  ]
+}

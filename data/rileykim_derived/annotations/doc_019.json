@@ -1,0 +1,149 @@
+{
+  "doc_id": "doc_019",
+  "page_size": [
+    1600,
+    2042
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_37610",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        708,
+        222,
+        736,
+        260
+      ],
+      "text": "Statement of Income,Expenses,Grants &Foundation Principal",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "收入、支出、拨款与基金本金报表"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        1072,
+        500,
+        359,
+        31
+      ],
+      "text": "YearendedDecember31,1974",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "年终于1974年12月31日"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        380,
+        813,
+        495,
+        116
+      ],
+      "text": "Income: Dividends on common stock of Kaiser Industries Corporation Interest",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "收入：凯撒工业公司普通股的股息 利息"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        1140,
+        871,
+        141,
+        93
+      ],
+      "text": "$ 1,879,153 141,456 2,020,609",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "$ 1,879,153 141,456 2,020,609\n$ 1,879,153 141,456 2,020,609\n\n（注：此处的数字直接翻译为中文通常不会改变其形式，但如果需要将其完全转换成中文表述，则可以表示为：一百八十七万九千一百五十三美元 十四万一千四百五十六 二百零二万六百零九） \n\n根据您的要求，我仅提供翻译结果而不做额外解释：\n一百八十七万九千一百五十三美元 十四万一千四百五十六 二百零二万六百零九"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        377,
+        971,
+        710,
+        391
+      ],
+      "text": "Expenses : Administrative expenses 258,537 Excise tax on investment income (Note D) 80,300 Income available for grants Grants authorized in 1974 (Note A) Refund of prior year's grant (Note A) Excess of income over expenses and grants Addition to foundation principal- contributions received Net increase in foundation principal Foundation principal at January 1, 1974 Foundation principal at December 31, 1974",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "支出：管理费用 258,537 投资收入的消费税（注D） 80,300 可用于拨款的收入 1974年授权的拨款（注A） 退还上一年度的拨款（注A） 收入超过支出和拨款的部分 基金本金增加-收到的捐款 基金本金净增加 1974年1月1日的基金本金 1974年12月31日的基金本金"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        1158,
+        1031,
+        126,
+        159
+      ],
+      "text": "338,837 1,681,772 (1,477,050 6,126 210,848",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "338,837 1,681,772 (1,477,050 6,126 210,848) \n\n翻译为：\n\n338,837 1,681,772 (1,477,050 6,126 210,848)\n\n注：这里的数字没有具体含义，因此直接按照原样保留。如果有具体的上下文，请提供以便更准确地翻译。"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        1141,
+        1227,
+        142,
+        131
+      ],
+      "text": "748 211,596 92,285,929 $92,497,525",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "748 211,596 92,285,929 $92,497,525\n\n翻译为：\n\n748 211,596 92,285,929 $92,497,525\n\n（注：这里的数字和货币符号在中文中通常保持原样，不需要转换。）"
+      }
+    }
+  ]
+}

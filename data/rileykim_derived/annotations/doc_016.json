@@ -1,0 +1,453 @@
+{
+  "doc_id": "doc_016",
+  "page_size": [
+    1600,
+    2092
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_00031",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        551,
+        198,
+        466,
+        52
+      ],
+      "text": "WATER ANALYSIS",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "水質分析"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        6,
+        350,
+        280,
+        46
+      ],
+      "text": "-................Sterling..",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "スターリング"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        379,
+        352,
+        109,
+        31
+      ],
+      "text": ".Factory",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "工場"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        1252,
+        347,
+        320,
+        35
+      ],
+      "text": "July. I..19_64.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "7月。私..19_64。"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        21,
+        429,
+        258,
+        62
+      ],
+      "text": "Kind of Water : Description of Sample :",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "水の種類：サンプルの説明："
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        362,
+        420,
+        874,
+        67
+      ],
+      "text": "White Sugar Centrifugal Wash Water Campaign average of samples taken three times a week .",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "白糖遠心洗浄水キャンペーン、週に3回採取されたサンプルの平均。"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        28,
+        623,
+        197,
+        28
+      ],
+      "text": "Source of Water :",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "水源"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        361,
+        613,
+        398,
+        33
+      ],
+      "text": "Drips from third effect.",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "第三効果からの滴下。"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        328,
+        820,
+        137,
+        27
+      ],
+      "text": "ANALYSIS",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "分析"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        982,
+        818,
+        577,
+        67
+      ],
+      "text": "HYPOTHETICAL COMBINATIONS Parts Per Million",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "仮想組み合わせ 百万分率"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        612,
+        857,
+        159,
+        24
+      ],
+      "text": "Parts Per Million",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "百万分率"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        29,
+        915,
+        185,
+        276
+      ],
+      "text": "Silica Iron Calcium Magnesium Sodium Chlorine Sulfuric Acid Carbonic Acid Phosphoric Acid",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "シリカ 鉄 カルシウム マグネシウム ナトリウム 塩素 硫酸 炭酸 リン酸"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        292,
+        911,
+        52,
+        153
+      ],
+      "text": "SiO2 Fe Ca Mg Na",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "SiO2 Fe Ca Mg Na"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        827,
+        908,
+        387,
+        446
+      ],
+      "text": "Silica SiO2 Sodium Chloride NaC NazSO4 Sodium Sulfate Sodium Carbonate NazCOs Sodium Phosphate Nag PO4 Magnesium Chloride MgCl2 Magnesium Sulfate MgSO4 Magnesium Carbonate MgCO: Magnesium Phosphate Mg3 (PO4)2 Calcium Sulfate CaSO4 Calcium Carbonate CaCOa Cag (PO4)2 Calcium Phosphate Ferrous Carbonate FeCO3 Fe3 (PO4)2 Ferrous Phosphate",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "シリカ SiO2 塩化ナトリウム NaCl 硫酸ナトリウム Na2SO4 炭酸ナトリウム Na2CO3 リン酸ナトリウム Na3PO4 塩化マグネシウム MgCl2 硫酸マグネシウム MgSO4 炭酸マグネシウム MgCO3 リン酸マグネシウム Mg3(PO4)2 硫酸カルシウム CaSO4 炭酸カルシウム CaCO3 リン酸カルシウム Ca3(PO4)2 炭酸鉄 FeCO3 リン酸鉄 Fe3(PO4)2"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        293,
+        1100,
+        50,
+        92
+      ],
+      "text": "SO4 CO3 PO4",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "硫酸塩 炭酸塩 リン酸塩"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        35,
+        1482,
+        392,
+        33
+      ],
+      "text": "Organic and Volatile (by difference)",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "有機および揮発性（差異による）"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        831,
+        1477,
+        387,
+        28
+      ],
+      "text": "Organic and Volatile (by difference)",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "有機物および揮発性物質（差分による）"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        119,
+        1535,
+        473,
+        68
+      ],
+      "text": "TOTAL DISSOLVED SOLIDS AT 105. C PH",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "105°Cにおける総溶解固形物のpH"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        690,
+        1530,
+        87,
+        74
+      ],
+      "text": "29.92 8.3",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "29.92 8.3"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        919,
+        1531,
+        469,
+        32
+      ],
+      "text": "TOTAL DISSOLVED SOLIDS AT 105. C",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "105°Cでの総溶解固形物"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        1448,
+        1530,
+        104,
+        33
+      ],
+      "text": "29.92",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "29.92"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        610,
+        1895,
+        360,
+        60
+      ],
+      "text": "CENTRIFUGAL WASH WATER -5-",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "遠心洗浄水 -5-"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        36,
+        1783,
+        231,
+        145
+      ],
+      "text": "COPIES TO General Chemist Dist. Supt. District Engineer Superintendent Laboratory",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "コピー先: 一般化学者、地区監督、地区技師、監督者、研究所"
+      }
+    }
+  ]
+}

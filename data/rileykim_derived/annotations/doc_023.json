@@ -1,0 +1,738 @@
+{
+  "doc_id": "doc_023",
+  "page_size": [
+    1600,
+    2122
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_37650",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        64,
+        112,
+        802,
+        56
+      ],
+      "text": "STRAIGHT BILL OF LADING - SHORT FORM- Original - Not NegotiableRECErVED,subject totheciassficationandtariffs ineffectonthedateofissueofthis OriginalBillof Lading",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "直达提单 - 简式 - 正本 - 不可转让收到，受此正本提单出具日期生效的分类和费率条款约束"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        62,
+        209,
+        499,
+        33
+      ],
+      "text": "CARRIER: Super Transport (404) 627-4450",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "承运人：超级运输 (404) 627-4450"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        58,
+        265,
+        650,
+        43
+      ],
+      "text": "FROM: R. J. Reynolds Tobacco Company",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "来自：雷诺烟草公司"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        633,
+        324,
+        211,
+        60
+      ],
+      "text": "(770) 360-7082 Alpharetta",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "(770) 360-7082 阿尔法利塔"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        167,
+        358,
+        234,
+        26
+      ],
+      "text": "1222 North Point Mail\"",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "1222北点邮件"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        1044,
+        354,
+        35,
+        22
+      ],
+      "text": "GA",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "GA翻译成中文是：GA（这个词在没有具体上下文的情况下，通常保持原样，因为它可能代表不同的含义，如“General Agreement”或作为缩写等。如果GA有特定的含义，请提供更多信息以便准确翻译。）"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        1177,
+        355,
+        72,
+        24
+      ],
+      "text": "30022",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "30022"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        59,
+        402,
+        1296,
+        147
+      ],
+      "text": "chassification or tariff is this a motor carier shipmenttnsptofddbgetyedcfeland.",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "分类或关税，这是否属于汽车承运货物运输。"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        61,
+        575,
+        121,
+        22
+      ],
+      "text": "COSIGNED TO",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "共同签署"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        214,
+        600,
+        490,
+        26
+      ],
+      "text": "GATX - Building C Attention: RA# 71-25901",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "GATX - C楼 注意：参考编号71-25901"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        63,
+        632,
+        120,
+        25
+      ],
+      "text": "DESTINATION",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "目的地"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        212,
+        657,
+        450,
+        31
+      ],
+      "text": "916 Baltimore Road, Advance, NC 27006",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "916 巴尔的摩路，先进市，北卡罗来纳州 27006"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        65,
+        690,
+        54,
+        25
+      ],
+      "text": "ROUT",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "路由"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        66,
+        750,
+        320,
+        61
+      ],
+      "text": "DELIVERING CARRIER Super Transport",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "承运商 超级运输"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        842,
+        748,
+        110,
+        26
+      ],
+      "text": "CAR INITIALS",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "汽车首字母缩写"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        1054,
+        749,
+        72,
+        25
+      ],
+      "text": "CAR NO",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "车号"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        77,
+        850,
+        62,
+        21
+      ],
+      "text": "No. Pkgs.",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "包裹数量"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        167,
+        841,
+        60,
+        39
+      ],
+      "text": "Kind of Packag",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "包装种类"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        292,
+        847,
+        460,
+        25
+      ],
+      "text": "DESCRIPTION OF ARTICLES, SPECIAL MARKS AND EXCEPTIONS",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "物品描述、特殊标记和例外情况"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        887,
+        838,
+        76,
+        25
+      ],
+      "text": "WEIGHT",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "重量"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        853,
+        836,
+        232,
+        43
+      ],
+      "text": "Rate per (Subject to Correction) 100 Lbe",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "每100磅的费率（有待更正）"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        1120,
+        838,
+        216,
+        67
+      ],
+      "text": "If charges are to be prepaid write or stamp here, \"To be Prepaid\".",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "如果费用需要预付，请在此书写或盖章“预付”。"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        102,
+        908,
+        33,
+        24
+      ],
+      "text": "127",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "127"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        178,
+        900,
+        375,
+        33
+      ],
+      "text": "200 Eclipse Tobacco Brochures",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "200份Eclipse烟草小册子"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        1112,
+        926,
+        230,
+        31
+      ],
+      "text": "TO BE PREPAID",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "预付"
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        103,
+        967,
+        27,
+        24
+      ],
+      "text": "27",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "二十七"
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        181,
+        963,
+        37,
+        28
+      ],
+      "text": "200",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "200"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        247,
+        960,
+        419,
+        34
+      ],
+      "text": "Eclipse Brochures (Help Child Say No)",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "日食宣传册（帮助孩子说不）"
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        108,
+        1023,
+        20,
+        23
+      ],
+      "text": "6",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "6"
+      }
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        172,
+        1020,
+        513,
+        34
+      ],
+      "text": "1000 Eclipse Brochures (Reduce Underage...)",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "1000份Eclipse手册（减少未成年...）"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        1103,
+        1006,
+        254,
+        58
+      ],
+      "text": "Received $ to apply in prepayme prepayment of the charges on the property described herson.",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "收到款项用于预付上述赫尔森描述的物业费用。"
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        1169,
+        1116,
+        130,
+        20
+      ],
+      "text": "Agent or Cashier",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "代理人或收银员"
+      }
+    },
+    {
+      "region_id": "r33",
+      "bbox": [
+        1112,
+        1191,
+        27,
+        16
+      ],
+      "text": "Per",
+      "reading_order": 32,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "每"
+      }
+    },
+    {
+      "region_id": "r34",
+      "bbox": [
+        1103,
+        1216,
+        240,
+        43
+      ],
+      "text": "soBpelmousse eley emBuds our) only the amount prepaid. )",
+      "reading_order": 33,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "所以Bpelmousse eley emBuds我们的)仅预付金额。 \n\n请注意，原文中的\"Bpelmousse eley emBuds\"似乎不是英文，因此在翻译时保持了原样。如果有特定含义或需要进一步解释，请提供更多信息。"
+      }
+    },
+    {
+      "region_id": "r35",
+      "bbox": [
+        249,
+        1685,
+        525,
+        61
+      ],
+      "text": "3rd Party Pre-Paid, Bill R.J. Reyolds, PO Box 2959, Winston-Salem, NC 27102",
+      "reading_order": 34,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "第三方预付，Bill R.J. Reynolds，PO Box 2959，温斯顿-塞勒姆，北卡罗来纳州 27102"
+      }
+    },
+    {
+      "region_id": "r36",
+      "bbox": [
+        83,
+        1744,
+        67,
+        61
+      ],
+      "text": "TOTAL 160",
+      "reading_order": 35,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "总计160"
+      }
+    },
+    {
+      "region_id": "r37",
+      "bbox": [
+        898,
+        1744,
+        66,
+        25
+      ],
+      "text": "TOTAL",
+      "reading_order": 36,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "总数"
+      }
+    },
+    {
+      "region_id": "r38",
+      "bbox": [
+        73,
+        1908,
+        527,
+        59
+      ],
+      "text": "RJRTForm2367-WML6/6/95",
+      "reading_order": 37,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh": "RJRT表2367-WML6/6/95"
+      }
+    }
+  ]
+}

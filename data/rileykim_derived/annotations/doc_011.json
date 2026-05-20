@@ -1,0 +1,377 @@
+{
+  "doc_id": "doc_011",
+  "page_size": [
+    1600,
+    2024
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_00000",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        1218,
+        30,
+        248,
+        148
+      ],
+      "text": "Oct. 1 - 2 , 1979 Chicago AMA",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "1979年10月1日 - 2日 シカゴ AMA"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        85,
+        404,
+        301,
+        34
+      ],
+      "text": "Phone: 212-522-1400",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "電話: 212-522-1400"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        1306,
+        445,
+        109,
+        33
+      ],
+      "text": "INVOICE",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "請求書"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        88,
+        476,
+        258,
+        48
+      ],
+      "text": "AIRLINE AND STEAMSHIP RESERVATIONS",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "航空会社および蒸気船の予約"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        110,
+        548,
+        217,
+        24
+      ],
+      "text": "TOURS AND CRUISES",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ツアーとクルーズ"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        496,
+        494,
+        623,
+        160
+      ],
+      "text": "Heights Travel Service Inc. HOTEL ST. GEORGE 67 CLARK STREET BROOKLYN, NEW YORK 11201",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ハイツ旅行サービス株式会社 ホテルセントジョージ 67 クラークストリート ブルックリン, ニューヨーク 11201"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        1255,
+        527,
+        214,
+        46
+      ],
+      "text": "N: 8019",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "N: 8019"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        113,
+        595,
+        207,
+        48
+      ],
+      "text": "HOTEL AND RESORT ACCOMODATIONS",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "ホテルとリゾートの宿泊施設"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        144,
+        706,
+        34,
+        26
+      ],
+      "text": "To",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "宛て"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        1146,
+        711,
+        375,
+        190
+      ],
+      "text": "Sept. 26, -1979 PLEASE RETURN DUPLICATE WITH PAYMENT - KINDLY MAKE ALL CHECKS PAYABLE TO THE ORDER OF THE FIRM. THANK YOU",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "1979年9月26日 支払いと共に複写を返送してください - 小切手はすべて会社宛にお支払いください。ありがとうございます。"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        226,
+        735,
+        549,
+        94
+      ],
+      "text": "The Nutrition Foundation, Inc. 489 Fifth Avenue New York, NY 10017",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "栄養財団株式会社 489 フィフスアベニュー ニューヨーク, NY 10017"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        176,
+        944,
+        293,
+        27
+      ],
+      "text": "TRANSPORTATION FOR:",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "輸送先:"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        226,
+        970,
+        810,
+        270
+      ],
+      "text": "TRANSPORTATION FOR: Dr. W. Darby (returned to Heights 9/27)79 ) New York /St. Louis/Memphis/Nashville/Chicago# Montreal /New York Sept. 28, 1979 Oct 1-2 : Amit may Chicago montreal Oct 3: Amer. Acad Paduataxis",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "Dr. W. ダービー (9月27日にハイツに戻る)79 ) ニューヨーク /セントルイス/メンフィス/ナッシュビル/シカゴ# モントリオール /ニューヨーク 1979年9月28日 シカゴ 10月1-2日 : アミット メイ モントリオール 10月3日: アメリカ学会 パデュアタクシス"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        1137,
+        1127,
+        85,
+        91
+      ],
+      "text": "447 - 201 24 6",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "447 - 201 24 6"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        1254,
+        1132,
+        45,
+        83
+      ],
+      "text": "36 00 3",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "36 00 3"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        224,
+        1269,
+        370,
+        39
+      ],
+      "text": "TWA 0158343-105763/4",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "TWA 0158343-105763/4"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        177,
+        1458,
+        465,
+        62
+      ],
+      "text": "In accordance with carriers regulations payment is appreciated within '7 days of billing date.",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "運送業者の規定に従い、請求日から7日以内の支払いをお願いいたします。"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        678,
+        1559,
+        245,
+        39
+      ],
+      "text": "\"Your Travel Agent\"",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "あなたの旅行代理店"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        1340,
+        1575,
+        146,
+        29
+      ],
+      "text": "ORIGINAL",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-ja": "オリジナル"
+      }
+    }
+  ]
+}
