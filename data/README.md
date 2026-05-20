@@ -72,6 +72,12 @@ These are the **first certified-translator-grade references in LTB**. The v0.2 r
 - Source articles are Wikinews, diverse topics (business, science, politics, health, crime, culture, etc.)
 - Coverage: **all 8 LTB pairs in every FLORES doc**
 
+### v0.1.6 — 16-pair coverage (this release)
+
+`LANG_PAIRS` extended from 8 to 16 pairs by adding rileykim's 8 net-new languages: **en-ru, en-ko, en-vi, en-id, en-ur, en-uz, en-kk, en-zh-tw**. Each new pair gets **3 docs** (doc_036–doc_059) imported from `rileykim/multilingual-document` (Apache-2.0). Note that the new pairs have rileykim coverage *only* — author-curated docs (001–010) and FLORES-derived docs (026–035) cover the core 8 pairs as defined in `ltbench.CORE_LANG_PAIRS`.
+
+The `verify` command and the scoring pipeline both respect this split: author-curated / certified-translator docs are only required to cover `CORE_LANG_PAIRS`, never the full extended set.
+
 ### Reference-translation provenance
 
 | Version | Doc range | Provenance | Quality grade |
@@ -79,7 +85,8 @@ These are the **first certified-translator-grade references in LTB**. The v0.2 r
 | v0.1 | docs 001–005 | Author-curated | Comparable to a competent native-speaker non-professional translator |
 | v0.1.3 | docs 006–010 | Author-curated, same standard as v0.1 | Same as above |
 | v0.1.4 | docs 011–025 | rileykim/multilingual-document (Apache-2.0) | ml-curated (ML output published as references) |
-| **v0.1.5** | **docs 026–035** | **FLORES-200 (CC-BY-SA-4.0)** | **certified-translator** (industry-grade, NLLB project) |
+| v0.1.5 | docs 026–035 | FLORES-200 (CC-BY-SA-4.0) | certified-translator (industry-grade, NLLB project) |
+| **v0.1.6** | **docs 036–059** | **rileykim/multilingual-document (Apache-2.0), 3 docs each for 8 net-new pairs** | **ml-curated** |
 | v0.2 target | all docs | Certified-translator, 2 references per pair | Industry-grade, multi-reference |
 
 References on docs 001–010 are author-curated. References on docs 011–025 are ml-curated. **References on docs 026–035 are certified-translator-grade** (the same quality that LTB v0.2 was targeting). v0.2 will extend the certified-translator coverage to all 8 LTB pairs across all 35+ docs.

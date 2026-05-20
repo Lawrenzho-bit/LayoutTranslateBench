@@ -13,7 +13,7 @@ Today's translation tools either translate plain text well (DeepL, Google Transl
 
 ## TL;DR
 
-- **200 documents** across 10 categories, 8 language pairs (`en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`, `en-fr`, `en-th`, `en-ms`)
+- **200 documents** across 10 categories, 16 language pairs (`en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`, `en-fr`, `en-th`, `en-ms`, `en-ru`, `en-ko`, `en-vi`, `en-id`, `en-ur`, `en-uz`, `en-kk`, `en-zh-tw`)
 - **Single composite score** — LTB-100 — combining text quality (chrF), layout IoU, and reading-order Kendall τ
 - **Open code (Apache-2.0)** and **open dataset (CC-BY-4.0)**
 - **Leaderboard** updated on every accepted submission, with held-out split rotated quarterly

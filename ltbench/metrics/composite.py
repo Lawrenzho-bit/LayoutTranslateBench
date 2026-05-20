@@ -233,17 +233,29 @@ def score_submission(
         scoring_pool = per_doc
 
     per_lang_pair = [aggregate_lang_pair(scoring_pool, lp) for lp in LANG_PAIRS]
-    # Overall = mean across language pairs that have at least one doc scored
+    # v0.1.6: previously, overall_ltb was a macro-mean (per-pair) while the CI
+    # was a micro-bootstrap (per-doc) — these can diverge significantly when
+    # per-pair coverage is imbalanced (e.g. 20 core-pair docs vs 3 extension-pair
+    # docs each). The fix: both the point estimate and the CI are now computed
+    # from the same per-doc population via bootstrap. The point is the bootstrap
+    # mean (which equals the arithmetic per-doc mean within rounding); the CI is
+    # the 95% percentile interval. Per-pair LTB-100 values are still reported
+    # individually in per_lang_pair[*].ltb_100 for diagnostic use.
     populated = [lps for lps in per_lang_pair if lps.n_docs > 0]
     if populated:
+        # Per-pair component scores remain macro-averaged (one number per pair,
+        # equally weighted) — these answer "average quality per language."
         overall_chrf = mean(lps.chrf for lps in populated)
         overall_iou = mean(lps.layout_iou for lps in populated)
         overall_tau = mean(lps.reading_order_tau for lps in populated)
-        overall_ltb = mean(lps.ltb_100 for lps in populated)
-        # v0.1.1: overall CI = bootstrap on per-document LTB-100 across ALL
-        # covered pairs (not the mean of per-pair CIs — that would understate
-        # variance).
-        _, overall_ci_low, overall_ci_high = bootstrap_ci([d.ltb_100 for d in scoring_pool])
+        # Overall LTB-100 + CI: both from per-doc bootstrap. Consistent under
+        # imbalanced sampling and answers "expected quality per document."
+        per_doc_scores = [d.ltb_100 for d in scoring_pool]
+        if per_doc_scores:
+            overall_ltb, overall_ci_low, overall_ci_high = bootstrap_ci(per_doc_scores)
+        else:
+            overall_ltb = mean(lps.ltb_100 for lps in populated)
+            overall_ci_low = overall_ci_high = 0.0
     else:
         overall_chrf = overall_iou = overall_tau = overall_ltb = 0.0
         overall_ci_low = overall_ci_high = 0.0

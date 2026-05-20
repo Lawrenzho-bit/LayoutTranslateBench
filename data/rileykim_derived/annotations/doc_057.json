@@ -1,0 +1,874 @@
+{
+  "doc_id": "doc_057",
+  "page_size": [
+    1600,
+    1202
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_06893",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 8 en-zh-tw region refs due to script mismatch]"
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        201,
+        478,
+        162,
+        19
+      ],
+      "text": "Herbicide treatment",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "除草劑處理"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        464,
+        478,
+        147,
+        37
+      ],
+      "text": "Pre-thinning stand ( reduction)",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "預疏伐林分（減薄）"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        1170,
+        496,
+        160,
+        18
+      ],
+      "text": "Root yield (tons/ha)",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "根產量（噸/公頃）"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        746,
+        495,
+        201,
+        21
+      ],
+      "text": "Growth suppressiont (%)",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "生長抑制(%)"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        1188,
+        532,
+        46,
+        18
+      ],
+      "text": "2-leaf",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "2葉"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        165,
+        515,
+        244,
+        37
+      ],
+      "text": "Ethofumesate Desmedipham (kg/ha) (kg/ha)",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "乙氧氟草醚 二甲戊靈 (千克/公頃) (千克/公頃)"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        870,
+        532,
+        55,
+        20
+      ],
+      "text": "4-leaf",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "四葉"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        963,
+        534,
+        43,
+        16
+      ],
+      "text": "6-leaf",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "6葉"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        1071,
+        533,
+        92,
+        20
+      ],
+      "text": "Cotyledons",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "子葉"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        1278,
+        534,
+        45,
+        16
+      ],
+      "text": "4-leaf",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "4葉"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        1364,
+        534,
+        49,
+        16
+      ],
+      "text": "6-leaf",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "6葉"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        456,
+        532,
+        156,
+        20
+      ],
+      "text": "Cotyledons 2-leaf",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "子葉2片"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        668,
+        532,
+        91,
+        21
+      ],
+      "text": "Cotyledons",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "子葉"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        786,
+        534,
+        45,
+        16
+      ],
+      "text": "2-leaf",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "2葉"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        971,
+        574,
+        27,
+        30
+      ],
+      "text": "0 a 6 a",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0到6"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        1188,
+        569,
+        51,
+        202
+      ],
+      "text": "50.9 a 49.5 a 49.1 a 53.1 a 50.9 a 50.4 a 19-3 a 50-2 a 51.3 a 52.4 a",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "50.9 到 49.5 到 49.1 到 53.1 到 50.9 到 50.4 到 19-3 到 50-2 到 51.3 到 52.4"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        786,
+        569,
+        56,
+        114
+      ],
+      "text": "47 bc 57 ab 66 a 47 bc 55 abc 61 a",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "47公元前57公元後66年A47公元前55年ABC61年A"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        1085,
+        568,
+        69,
+        204
+      ],
+      "text": "53.6 ab 51.1 abc 48.0 bc 54.5 ab 54-2 ab 51.1 abc 50-9 abc 50.9 abc 46-4 c 56.5 a",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        1275,
+        570,
+        56,
+        203
+      ],
+      "text": "56.7 a 56.7 a 49.8 a 53.6 a 53.3 a 53.8 a 52.7 a 57.1 a 49-8 a 57.6 a",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "56.7 a 56.7 a 49.8 a 53.6 a 53.3 a 53.8 a 52.7 a 57.1 a 49-8 a 57.6 a\n\n注：這裡的“a”沒有明確的含義，所以在翻譯時保持不變。如果“a”有特定含義，請提供更多信息以便準確翻譯。"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        1355,
+        570,
+        69,
+        203
+      ],
+      "text": "57.4 ab 51.1 b 52.7 b 55.1 ab 54.9 ab 52.7 b 55.3 ab 53.6 ab 54.9 ab 57.6 a",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        869,
+        571,
+        45,
+        114
+      ],
+      "text": "7 bc 16 al 21 a 15 ab 14 ab 26 a",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "7 bc 16 al 21 a 15 ab 14 ab 26 a\n\n這段文字看起來像是某種編碼或特定格式的信息，直接翻譯成中文可能無法保留其原始意義。如果需要逐字翻譯的話，可以譯為：\n\n7 bc 16 鋁 21 一 15 ab 14 ab 26 一\n\n但請注意，這樣的翻譯可能並不准確，因為“bc”、“ab”等可能是特定代碼或縮寫。如果你有具體的上下文或者這些字母和數字代表的含義，請提供更多信息以便更準確地翻譯。"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        200,
+        572,
+        38,
+        112
+      ],
+      "text": "1.12 1-12 1.12 1.68 1.68 1-68",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "1.12 1-12 1.12 1.68 1.68 1-68  \n1.12 1-12 1.12 1.68 1.68 1-68\n\n請注意，這裡的數字和短劃線直接翻譯成了中文，但實際上它們在中英文中的表示方法是一樣的。如果你指的是將這些數字按照某種特定的格式或上下文進行翻譯，請提供更多的信息。如果只是簡單的數字轉換，則保持原樣即可。"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        332,
+        570,
+        37,
+        52
+      ],
+      "text": "0.56 0.84 1.12",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0.56 0.84 1.12\n\n這些數字已經是通用的阿拉伯數字表示法，在中文中也直接使用這種形式，不需要轉換。但如果需要將它們讀出來，則可以翻譯為：\n\n零點五六 零點八四 一點一二"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        478,
+        574,
+        40,
+        48
+      ],
+      "text": "0 a 8 b 20 c",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0 a 8 b 20 c\n\n（注：這裡的字母和數字在中文中通常不進行翻譯，保持原樣。如果需要具體的上下文解釋，請提供更多信息。）"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        567,
+        572,
+        43,
+        48
+      ],
+      "text": "0 a 10 bc 20 c",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        693,
+        571,
+        56,
+        111
+      ],
+      "text": "50 e 67 bcd 79 ab 57 de 64 cd 86 a",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "50和67 bcd 79 ab 57 de 64 cd 86 a\n\n請注意，這裡的“bcd”、“ab”、“de”、“cd”以及最後的“a”看起來像是字母或代碼，並沒有直接對應的中文翻譯。如果這些是特定術語或有特別含義，請提供更多信息以便更準確地翻譯。根據常規情況，我將它們保持原樣。如果你希望對這些部分進行不同處理，請告知。"
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        567,
+        634,
+        45,
+        48
+      ],
+      "text": "Q a 10 bc 11 bc",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "Q a 10 bc 11 bc\n\n（注：此句似乎為字母與數字的組合，並無實際語義，故直譯如下）\nQ a 十 bc 十一 bc"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        333,
+        632,
+        39,
+        51
+      ],
+      "text": "0.56 0.84 1. 12",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0.56 0.84 1. 12"
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        476,
+        634,
+        41,
+        48
+      ],
+      "text": "0 a 9b 31 d",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        966,
+        651,
+        28,
+        33
+      ],
+      "text": "1 12",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "1 12\n\n一 十二"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        962,
+        695,
+        36,
+        49
+      ],
+      "text": "6 a 9 a 10 a",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "6到9到10"
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        477,
+        694,
+        38,
+        49
+      ],
+      "text": "0 a 21 c 40 d",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r33",
+      "bbox": [
+        567,
+        695,
+        39,
+        49
+      ],
+      "text": "0 a 0 a 19 c",
+      "reading_order": 32,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0 a 0 a 19 c\n\n由於原文是“0 a 0 a 19 c”，這看起來像是一串數字和字母的組合，沒有明確的意義，因此直接翻譯為中文可能不改變其形式。如果需要按照字面意思直譯，可以譯作：“零 a 零 a 十九 c”。但請注意，這種翻譯方式可能並不適用於所有上下文。根據具體語境，該字符串可能需要不同的處理方式。若需保留原樣，則可直接使用“0 a 0 a 19 c”。請確認是否需要進一步的幫助或有特定的上下文需求。"
+      }
+    },
+    {
+      "region_id": "r34",
+      "bbox": [
+        690,
+        693,
+        58,
+        52
+      ],
+      "text": "50 de 76 abc 88 a",
+      "reading_order": 33,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r35",
+      "bbox": [
+        786,
+        693,
+        51,
+        52
+      ],
+      "text": "44 c 55 abc 64 a",
+      "reading_order": 34,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r36",
+      "bbox": [
+        871,
+        695,
+        40,
+        49
+      ],
+      "text": "14 ab 5 a 21 a",
+      "reading_order": 35,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "14乘以5加21等於a"
+      }
+    },
+    {
+      "region_id": "r37",
+      "bbox": [
+        198,
+        694,
+        40,
+        50
+      ],
+      "text": "2.24 2-24 2.24",
+      "reading_order": 36,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "2.24 2-24 2.24"
+      }
+    },
+    {
+      "region_id": "r38",
+      "bbox": [
+        334,
+        693,
+        36,
+        50
+      ],
+      "text": "0.56 0.84 1-12",
+      "reading_order": 37,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0.56 0.84 1-12"
+      }
+    },
+    {
+      "region_id": "r39",
+      "bbox": [
+        971,
+        756,
+        25,
+        13
+      ],
+      "text": "Q a",
+      "reading_order": 38,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "Q a\n\n（注：此為原文直譯，但\"Q a\"在中文中沒有具體意義。若需更具意義的翻譯，請提供更多的上下文信息。）"
+      }
+    },
+    {
+      "region_id": "r40",
+      "bbox": [
+        571,
+        756,
+        26,
+        12
+      ],
+      "text": "0 a",
+      "reading_order": 39,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r41",
+      "bbox": [
+        699,
+        755,
+        26,
+        15
+      ],
+      "text": "of",
+      "reading_order": 40,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "的"
+      }
+    },
+    {
+      "region_id": "r42",
+      "bbox": [
+        797,
+        754,
+        27,
+        15
+      ],
+      "text": "0 d",
+      "reading_order": 41,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0天"
+      }
+    },
+    {
+      "region_id": "r43",
+      "bbox": [
+        880,
+        756,
+        24,
+        11
+      ],
+      "text": "O c",
+      "reading_order": 42,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "O c\n\n注：原文\"O c\"看起來像是不完整的句子或縮寫，直接翻譯為中文可能沒有意義。如果有更多上下文或具體含義，請提供更多信息以便準確翻譯。"
+      }
+    },
+    {
+      "region_id": "r44",
+      "bbox": [
+        198,
+        756,
+        35,
+        14
+      ],
+      "text": "0.00",
+      "reading_order": 43,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0.00"
+      }
+    },
+    {
+      "region_id": "r45",
+      "bbox": [
+        329,
+        756,
+        33,
+        16
+      ],
+      "text": "0.00",
+      "reading_order": 44,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "0.00"
+      }
+    },
+    {
+      "region_id": "r46",
+      "bbox": [
+        1464,
+        142,
+        21,
+        40
+      ],
+      "text": "252",
+      "reading_order": 45,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "252"
+      }
+    }
+  ]
+}

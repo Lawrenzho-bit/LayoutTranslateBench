@@ -9,7 +9,7 @@
     "source_image_id": "patimt_00063",
     "license": "Apache-2.0",
     "grade": "ml-curated",
-    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data."
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ML-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 3 en-ja region refs due to script mismatch]"
   },
   "regions": [
     {
@@ -255,9 +255,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ja": "REF NO ."
-      }
+      "references": {}
     },
     {
       "region_id": "r14",
@@ -464,9 +462,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ja": "130 I 複製 ゼロックス 2 複製 ゼロックス 3 複製 ゼロックス 4 TSF- TEL INST CHGS SSTOCK 6 計量郵便 7 ストック SCITIZ COMMSN SCI LAW 9 計量郵便 O 電話料金 /ストック 12 LEA + FEBIGER 13 計量郵便 14 ゼロックス ISR WISSLER 16 DANA R 17 小口現金 18 ストック 130 合計"
-      }
+      "references": {}
     },
     {
       "region_id": "r25",
@@ -483,9 +479,7 @@
         "font_family": "serif",
         "size_hint": 13
       },
-      "references": {
-        "en-ja": "01/03 301248 60-000774 01/03 301275 60-000774 01/03 301277 60-000774 01/07 014248 60-000784 01/08 009160 60-000789 01/10 000000 60-000796 01/10 009379 60-000798 01/16 30-031259 01/17 000000 60-000833 01/23 000000 60-000853 01/23 010215 60-000858 01/25 015855 40-926258 Smith somian 01728 000000 60-000887 01/29 010361 160-000897 01/29 000000 60-000909 01/30 30-031546 01/31 000000 60-000928 01/31 010713 60-000933 2, 523.29"
-      }
+      "references": {}
     },
     {
       "region_id": "r26",

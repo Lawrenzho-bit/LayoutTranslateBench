@@ -1,0 +1,152 @@
+{
+  "doc_id": "doc_038",
+  "page_size": [
+    1600,
+    2069
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_30528",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 8 en-ru region refs due to script mismatch]"
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        184,
+        551,
+        171,
+        35
+      ],
+      "text": "D.T./MM.N",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        880,
+        600,
+        337,
+        131
+      ],
+      "text": "Monsieur J.H. FISCHER Secretary-Treasurer of the A. S. S. B. T. P/0.B. 538",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        881,
+        751,
+        354,
+        71
+      ],
+      "text": "FORT COLLINS (Colorado ) (ETATS UNIS)",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        348,
+        896,
+        139,
+        32
+      ],
+      "text": "Dear Jim,",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        350,
+        932,
+        1168,
+        80
+      ],
+      "text": "Thank you for your lettee of December 6th.After contacting my friends,the sugar manufacturers,I am answering to your questions.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        355,
+        1047,
+        139,
+        32
+      ],
+      "text": "ITINERARY",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        363,
+        1064,
+        1137,
+        886
+      ],
+      "text": ": Departure from PARIS , arrival in NEW YORK. Night in NEW YORK. - Sunday, May 4th : Night in NEW YORK - Monday, May 5th : Departure from NEW YORK , arrival in DENVER. Night in DENVER. Jim fischer to Hatel - Tuesday, May 6th Visit of the Colorado factories and possibly - Wednesday, May 7th : goodlands. - Thursday, May 8 Th : Departure in the evening for AMARILLO, Texas. Night in AMARILLO. - Friday, May 9th : Visit of the Hereford, Texas, sugar factory. - Saturday, May 10th : Departure from AMARILLO, arrival in PHOENIX before noon. . Sunday, May 11th : Grand Canyon. - Monday, May 12th : Visit of the Chandler factory. - Tuesday, May 13th : Departure from PHOENIX, night in EL CENTRO. - Wednesday, May 14th : Visit of the Brawley factory. - Thursday, May 15th : Trip from Brawley to MANTECA or SALINAS. - Friday, May 16th : Visit of MANTECA or SPRECKELS. - Saturday, May 17th : Visit of SAN FRANCISCO. - Bundledlay, May 18th . . . ./. ..",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        348,
+        2023,
+        907,
+        41
+      ],
+      "text": "Source: https://www.industrydocuments.ucsf.edu/docs/ylyv0228",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    }
+  ]
+}

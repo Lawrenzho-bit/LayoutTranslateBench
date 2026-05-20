@@ -1,0 +1,624 @@
+{
+  "doc_id": "doc_055",
+  "page_size": [
+    1600,
+    2129
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_48613",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        236,
+        158,
+        94,
+        23
+      ],
+      "text": "PROJECT",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Жоба"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        551,
+        159,
+        517,
+        28
+      ],
+      "text": "TARGET DATE CURRENT STATUS / COMMENTS",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Мақсатты күн Ағымдағы күй / Пікірлер"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        1148,
+        157,
+        153,
+        27
+      ],
+      "text": "NEXT ACTION",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Келесі әрекет"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        231,
+        248,
+        262,
+        24
+      ],
+      "text": "SUPPORTINGACTIVITIES",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Қолдау қызметі"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        230,
+        281,
+        230,
+        25
+      ],
+      "text": "Preclinical lecture slides",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Клиникалық дәріс слайдтары"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        553,
+        282,
+        92,
+        25
+      ],
+      "text": "Mid 1999",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "1999 жылдың ортасы"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        736,
+        282,
+        368,
+        82
+      ],
+      "text": "Outline of slides submitted for approval 02.02.99 Outline submitted for approval 02.02.99.",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "02.02.99 бекітуге ұсынылған слайдтардың құрылымы 02.02.99 бекітуге ұсынылды."
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        1153,
+        282,
+        200,
+        24
+      ],
+      "text": "Slides being prepared",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Слайдтар дайындалады"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        227,
+        339,
+        217,
+        49
+      ],
+      "text": "Preclinical Physician's Monograph No. 1",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "№1 Монографиялық дәрігердің монографиясы"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        553,
+        339,
+        99,
+        22
+      ],
+      "text": "Mid 1999",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "1999 жылдың ортасы"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        1151,
+        339,
+        293,
+        52
+      ],
+      "text": "First draft being prepared based on the preclinical papers.",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Алғашқы жобалар нақты құжаттар негізінде дайындалуда."
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        237,
+        454,
+        199,
+        26
+      ],
+      "text": "YOKOHAMA, JAPAN",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Йокохама, Жапония"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        236,
+        523,
+        214,
+        24
+      ],
+      "text": "Posters to be submitted",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Постерлер жіберіледі"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        554,
+        523,
+        340,
+        25
+      ],
+      "text": "Abstracts submitted: 15th April 1999",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Тезистер ұсынылған: 1999 жылғы 15 сәуір"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        613,
+        564,
+        857,
+        142
+      ],
+      "text": "P2(1) Poster 1 In vivo progestomimetic activity of a novel progestin, trimegestone P2(1) Poster 2 novel progestin, trimegestone on hormonal steroid receptor binding in vitro, and on hormonal steroid activity in vivo",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "P2 (1) Poster 1 Poster 1-ші постер, Trimegestone P2 (1) Poster 2 Poster 2 Poster Poster 2 роман, тримегестон, in vitro-да және in vivo-да гормоналды стероидты белсенділік бойынша"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        615,
+        722,
+        832,
+        77
+      ],
+      "text": "P2(3) Poster 1 Pharmacokinetics of trimegestone in the rat and cynomolgus monkey following single- and repeat-dose administration",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "P2 (3) Poster 1 Постер 1 Рат-роустардағы тримесцестонның фармацокинетикасы және сықырлау маймылдары және дозаланған кезде"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        617,
+        812,
+        765,
+        52
+      ],
+      "text": "P2(3) Poster 2 Tissue distribution and excretion of trimegestone in the rat and cynomolgus monkey",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "P2 (3) Poster 2-еге тіндердің таралуы және егеуқұйрықтағы және циномолгус маймылының үстіңгі жағы"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        614,
+        879,
+        823,
+        101
+      ],
+      "text": "P2(4) Poster 1 cokinetics of estradiol and trimegestone in postmenopausal women after multiple administration of 2mg E2 once a day for 14 days followed by 2mg E2/0.5mg trimegestone once a day for 14 days",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "P2 (4) Постерадиолдың және TrimMeausal әйелдеріндегі 1 кокинетиктер және постменопаузалық әйелдерде күніне 2 мг E2 бір рет 14 күнге бір рет 14 күнге бір рет 2 мг e2 / 0,5mg Trimegestone"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        615,
+        995,
+        818,
+        79
+      ],
+      "text": "P2(4) Poster 2 Bioequivalence and bioavailability of combined trimegestone and 178-estradiol tablet in postmenopausal volunteers and the effect of food on bioavailability of the combined tablet",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "P2 (4) Постер 2 биоэкривень және біріктірілген тримегестон мен биожетімділігі постменопаузалық еріктілердегі 178-Estradiol планшеті және біріктірілген планшеттің биожетімділігіне әсері"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        231,
+        1085,
+        291,
+        117
+      ],
+      "text": "Marcel Hellings has asked Dr Al-Azzawi to present the following posters at Yokohama: 8 abstracts submitted 15.04.99",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Marcel Tellings Доктор-Айзаувиден Йокохамада келесі постерлерді ұсынуды сұрады: 8 реферат 15.04.99"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        617,
+        1088,
+        860,
+        52
+      ],
+      "text": "Dose ranging study of trimegestone in cyclical HRT in postmenopausal women. The changes in lipoprotein profile",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Постменопаузалық әйелдердегі циклдік HRT-де тримегестоннан бастап тримегестоннан зерттеу. Липопротеин профиліндегі өзгерістер"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        615,
+        1154,
+        821,
+        49
+      ],
+      "text": "The expression of caspase-3 in the endometrium of postmenopausal women treated with trimegestone-based hormone replacement therapy compared to the natural cycle",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Постменопаузалық әйелдердің эндометриядағы 3-ші «Каспаз» сөзі табиғи циклмен салыстырғанда тримегестон негізіндегі гормонды алмастыратын терапиямен емделді"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        617,
+        1218,
+        849,
+        53
+      ],
+      "text": "The effect of the change of the dose of sequential trimegestone-based HRT on the pattern of bleeding in postmenopausal women: 6 months extension of a dose ranging study",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Тримитті тримитондық HRT дозасының өзгеруінің постменопаузалық әйелдердегі қан кету үлгісіндегі әсерінің әсері: 6 ай дозаны кеңейту"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        614,
+        1285,
+        814,
+        117
+      ],
+      "text": "The prevalence of apoptosis in the endometrium of postmenopausal women treated with trimegestone-based hormone replacement therapy compared to the natural cycle Morphometric study of endometrial blood vessels in trimegestone-based hormone replacement therapy compared to the natural cycle",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Тримменопаузалық әйелдердің эндометриядағы эндометриядағы апоптоздың таралуы табиғи циклмен салыстырғанда тримегестон негізіндегі гормонмен гормондарды ауыстыру терапиясының табиғи циклімен салыстырғанда тримежестонға негізделген гормондарды алмастыратын терапиямен емделді"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        615,
+        1418,
+        855,
+        51
+      ],
+      "text": "The influence of uterine structural abnormalities on the pattern of bleeding in postmenopausal women treated with trimegestone-based HRT",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Желдің құрылымдық ауытқуларының постменопайсальды әйелдердегі қан кету үлгіндегі әсері, тримежестонға негізделген HRT-мен емделген"
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        618,
+        1483,
+        822,
+        79
+      ],
+      "text": "Linear discriminant analysis of the endometrial histomorphometry of trimegestone-based sequential hormone replacement therapy in comparison to the endometrium of the natural cycle",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Тримегестонмен негізделген гормондарды алмастыратын гормондарды алмастыратын эндометриялық гистометриялық гистоморфометрияға табиғи циклдің эндометриясымен салыстырғанда эндометриялық гистоморфометриясының сызықтық дискриминальды талдауы"
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        610,
+        1575,
+        853,
+        49
+      ],
+      "text": "The endometrial expression of Bcl-2 and Bax in postmenopausal women treated with sequential trimegestone-based hormone replacement therapy, compated to the natural cycle",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Постменопаузалық әйелдердегі BCL-2 және BAX эндометриялық өрнегі табиғи циклмен жасалған дәйекті тригестонға негізделген гормонға негізделген гормонмен емделеді"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        227,
+        1641,
+        150,
+        23
+      ],
+      "text": "Advisory Board",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Консультативтік кеңес"
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        556,
+        1641,
+        854,
+        26
+      ],
+      "text": "A meeting is to be arranged for representatives from Wyeth and HMR and experts in the field",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Дүниежүзі және ХМР өкілдеріне және даладағы сарапшылардың өкілдеріне кездесу ұйымдастырылуы керек"
+      }
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        232,
+        1679,
+        103,
+        26
+      ],
+      "text": "Symposium",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Симпозиум"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        557,
+        1681,
+        262,
+        25
+      ],
+      "text": "No Symposium is to be held.",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Симпозиум өткізілмейді."
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        18,
+        2065,
+        69,
+        25
+      ],
+      "text": "Order",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Бұйрық"
+      }
+    }
+  ]
+}

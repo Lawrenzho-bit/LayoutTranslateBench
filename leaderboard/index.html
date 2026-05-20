@@ -56,7 +56,7 @@
   <main>
     <h1>LayoutTranslateBench Leaderboard</h1>
     <p class="lead">The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality. Composite score <strong>LTB-100</strong> combines chrF (text), layout IoU (visual), and reading-order Kendall tau.</p>
-    <div class="meta">Generated 2026-05-20T06:25:32+00:00 from LayoutTranslateBench v0.1.0.</div>
+    <div class="meta">Generated 2026-05-20T16:15:08+00:00 from LayoutTranslateBench v0.1.0.</div>
 
     <div class="card" style="background: rgba(255,200,90,0.06); border-left: 3px solid #f0a000; padding: 12px 16px; margin-bottom: 12px;">
       <strong>Sample size — v0.1.5.</strong> Per-pair counts: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms (10 author-curated + 10 FLORES-200), N=28 for en-ja (+8 rileykim), N=27 for en-zh (+7 rileykim).
@@ -94,11 +94,11 @@
           <tr>
             <td class="num">1</td>
             <td><strong>identity-baseline</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">50.51 <span style="color: var(--muted); font-size: 12px;">[50.3, 50.8]</span></td>
-            <td class="num">1.01</td>
+            <td class="num">50.53 <span style="color: var(--muted); font-size: 12px;">[50.3, 50.8]</span></td>
+            <td class="num">1.12</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">8/8</td>
+            <td class="num">15/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
@@ -112,7 +112,7 @@
             <td class="num">2.60</td>
             <td class="num">0.0395</td>
             <td class="num">0.6935</td>
-            <td class="num">8/8</td>
+            <td class="num">8/16</td>
             <td class="num">5</td>
             <td class="num">184.90</td>
             <td class="num">$0.0000</td>
@@ -153,7 +153,7 @@
             <td class="num">56.40</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">6/8</td>
+            <td class="num">6/16</td>
             <td class="num">—</td>
             <td class="num">0.40</td>
             <td class="num">$0.0000</td>
@@ -163,11 +163,25 @@
           <tr>
             <td class="num">2</td>
             <td><strong>nllb-text-oracle-nllb-200-distilled-600m</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">75.82 <span style="color: var(--muted); font-size: 12px;">[73.7, 76.4]</span></td>
-            <td class="num">51.63</td>
+            <td class="num">74.02 <span style="color: var(--muted); font-size: 12px;">[72.7, 75.4]</span></td>
+            <td class="num">42.87</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">8/8</td>
+            <td class="num">15/16</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td>cpu</td>
+          </tr>
+          
+          <tr>
+            <td class="num">3</td>
+            <td><strong>opus-mt-text-oracle</strong> <span class="badge">v0.1.0</span></td>
+            <td class="num">69.16 <span style="color: var(--muted); font-size: 12px;">[67.6, 70.9]</span></td>
+            <td class="num">30.95</td>
+            <td class="num">1.0000</td>
+            <td class="num">1.0000</td>
+            <td class="num">15/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
@@ -204,11 +218,11 @@
           <tr>
             <td class="num">1</td>
             <td><strong>identity-baseline</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">50.58 <span style="color: var(--muted); font-size: 12px;">[50.4, 50.9]</span></td>
-            <td class="num">1.16</td>
+            <td class="num">50.66 <span style="color: var(--muted); font-size: 12px;">[50.4, 51.0]</span></td>
+            <td class="num">1.70</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">8/8</td>
+            <td class="num">15/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
@@ -222,7 +236,7 @@
             <td class="num">15.46</td>
             <td class="num">0.0395</td>
             <td class="num">0.6935</td>
-            <td class="num">8/8</td>
+            <td class="num">8/16</td>
             <td class="num">5</td>
             <td class="num">184.90</td>
             <td class="num">$0.0000</td>
@@ -259,11 +273,11 @@
           <tr>
             <td class="num">1</td>
             <td><strong>nllb-text-oracle-nllb-200-distilled-600m</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">88.01 <span style="color: var(--muted); font-size: 12px;">[87.0, 88.9]</span></td>
-            <td class="num">76.01</td>
+            <td class="num">86.95 <span style="color: var(--muted); font-size: 12px;">[85.8, 88.0]</span></td>
+            <td class="num">66.81</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">8/8</td>
+            <td class="num">15/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
@@ -277,11 +291,25 @@
             <td class="num">69.77</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">6/8</td>
+            <td class="num">6/16</td>
             <td class="num">—</td>
             <td class="num">0.40</td>
             <td class="num">$0.0000</td>
             <td>api</td>
+          </tr>
+          
+          <tr>
+            <td class="num">3</td>
+            <td><strong>opus-mt-text-oracle</strong> <span class="badge">v0.1.0</span></td>
+            <td class="num">80.46 <span style="color: var(--muted); font-size: 12px;">[78.9, 82.1]</span></td>
+            <td class="num">49.77</td>
+            <td class="num">1.0000</td>
+            <td class="num">1.0000</td>
+            <td class="num">15/16</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td>cpu</td>
           </tr>
           
         </tbody>

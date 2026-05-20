@@ -1,0 +1,396 @@
+{
+  "doc_id": "doc_042",
+  "page_size": [
+    1600,
+    2122
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_34865",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        216,
+        311,
+        155,
+        35
+      ],
+      "text": "July 24,2000",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "24 tháng 7 năm 2000"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        219,
+        419,
+        187,
+        65
+      ],
+      "text": "Carolyn Marsh Po Box 185",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Caroline Marsh, bưu điện 185."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        217,
+        557,
+        1143,
+        106
+      ],
+      "text": "Per your request, attached is a Name Change Form. In order to change your name on our mail listpleasc complete the form, make changes in the Box provided and include a copy of an officialidentification showing your new name and address (driver's license, sporting license, or state ID).",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Theo yêu cầu của anh, hãy gắn một mẫu đổi tên. Để thay đổi hồ sơ tên của chúng tôi trong danh sách gửi thư, vui lòng điền vào mẫu này, với những sửa đổi trong hộp đã cung cấp, và kèm theo bản sao của giấy phép chính thức (bằng lái xe, bằng lái xe, bằng lái hay chứng minh thư trạng thái) hiển thị tên và địa chỉ mới của bạn."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        209,
+        697,
+        1112,
+        73
+      ],
+      "text": "Your name, address, and date of birth on the verification form MUST match your official",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Tên, địa chỉ và ngày sinh của anh phải có trên mẫu đơn xác thực."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        255,
+        866,
+        147,
+        32
+      ],
+      "text": "208001 160",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "20801 160"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        851,
+        834,
+        423,
+        116
+      ],
+      "text": "Please print changes below: Carolyn Burlingame Name",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "In thay đổi bên dưới: Tên của Carolyn Burlingame"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        256,
+        943,
+        303,
+        111
+      ],
+      "text": "Carolyn Marsh Po Box 185 Black Hawk, CO 80422",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Caroline Marsh, P.O. Box 185, Black Eagle, Colorado 80422."
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        846,
+        979,
+        142,
+        28
+      ],
+      "text": "Street Address",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Địa chỉ nhà"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        853,
+        1038,
+        191,
+        26
+      ],
+      "text": "City/State/Zip Code",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Comment"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        259,
+        1145,
+        925,
+        81
+      ],
+      "text": "What is your Birthdate?! !_Q !(2 Today's Date? O _1 190 (required) (month) (day) (year) \"month) (day) (year)",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Ngày sinh của cô là gì? Hôm nay là bao nhiêu tháng rồi? 1190 (ngày) (ngày) (năm) (ngày) (năm)"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        260,
+        1254,
+        1113,
+        86
+      ],
+      "text": "I certify that I am a smoker; that I am 21 years of age or older; and that I want to receive offers, premiums, coupons, or free cigarettes that may be sent to me in the mail. I understand that giving false information in order to accept these offers may constitute a violation of law.",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Tôi khẳng định rằng tôi hút thuốc; tôi 21 tuổi hoặc lớn hơn; và tôi muốn nhận được những lợi ích, quà tặng, phiếu giảm giá hoặc thuốc lá miễn phí gửi cho tôi qua bưu điện. Tôi hiểu rằng sự cung cấp thông tin sai để chấp nhận những ưu tiên này có thể là một sự xúc phạm."
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        256,
+        1369,
+        211,
+        29
+      ],
+      "text": "Signature (required)",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Chữ ký"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        540,
+        1400,
+        52,
+        29
+      ],
+      "text": "(Nrsi)",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "(Nrsi) Cho Trung Quốc:\n\nGhi chú rằng, vì \"Nrsi\" có vẻ là một từ độc quyền hoặc viết tắt, giải thích được cung cấp ở đây không có ngữ cảnh cụ thể. Nếu có ý nghĩa cụ thể hoặc từ chuyên môn nào đó trong một lĩnh vực nào đó, xin vui lòng cung cấp thêm thông tin để dịch chính xác."
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        839,
+        1396,
+        137,
+        30
+      ],
+      "text": "middle initial)",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Tên viết tắt giữa"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        1220,
+        1394,
+        49,
+        28
+      ],
+      "text": "\"last)",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Cuối cùng."
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        887,
+        1501,
+        149,
+        33
+      ],
+      "text": "STATE OF",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Trạng thái"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        746,
+        1521,
+        623,
+        138
+      ],
+      "text": "COLORADO DRIVER LICENSE ADULT 92-144-1784 * * * * * * * * * * * * * * * *",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Colorado lái xe bằng lái người lớn 92 - 144 - 184 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        561,
+        1875,
+        533,
+        60
+      ],
+      "text": "Offer Restricted to Smokers 21 Years of Age or Older. No Copies or Facsimiles of This Form Will be Accepted.",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Lợi ích này chỉ dành cho những người hút thuốc ở tuổi 21 hoặc hơn. Không chấp nhận bản sao của mẫu này."
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        679,
+        2005,
+        313,
+        38
+      ],
+      "text": "\"We work for smokers.\"",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Chúng tôi làm việc cho những người hút thuốc."
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        1166,
+        369,
+        236,
+        29
+      ],
+      "text": "Consumer Relations",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Quan hệ tiêu dùng"
+      }
+    }
+  ]
+}

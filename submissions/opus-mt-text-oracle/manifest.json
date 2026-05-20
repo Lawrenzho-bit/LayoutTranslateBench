@@ -1,0 +1,23 @@
+{
+  "system_name": "opus-mt-text-oracle",
+  "system_version": "0.1.0",
+  "manifest_version": "0.1",
+  "model_id_or_url": "https://huggingface.co/Helsinki-NLP",
+  "runner_config": {
+    "max_new_tokens": 256,
+    "num_beams": 4,
+    "batch_size": 8,
+    "oracle_layout": true,
+    "covers_th_ms": true,
+    "covers_16_pairs": true,
+    "commercial_safe": true
+  },
+  "hardware": "cpu",
+  "total_runtime_seconds": null,
+  "median_per_doc_runtime_seconds": null,
+  "cost_usd": null,
+  "submitter": null,
+  "notes": "Open-source commercial-safe oracle-layout baseline: predicted bboxes are copied verbatim from the ground-truth annotation; text is translated by Helsinki-NLP/opus-mt-* per-pair models. All 16 LTB pairs covered via 14 distinct models. License: mostly Apache-2.0; en-de and en-ko use CC-BY-4.0 (TC-big). Both permit commercial use with attribution \u2014 this is the ship-able open-source MT path that NLLB-200 (CC-BY-NC-4.0) is not. PER-PAIR QUALITY IS UNEVEN (v0.1.6.2 finding): opus-mt is competitive with NLLB-200-600M on European pairs (en-es / -de / -fr / -ar / -zh / -ru within ~3 COMET-Kiwi points) but dramatically weaker on Asian / Central Asian pairs (en-ja -41, en-ms -43, en-ko -40, en-kk -34, en-ur -35, en-vi -28 vs NLLB on the same data). en-uz scores near 0 in both \u2014 likely a ref-quality issue on those rileykim docs. Use opus-mt for European-market product builds; use NLLB (research) or DeepL (paid commercial) for Asian markets.",
+  "system_type": "oracle-layout",
+  "parser_failures": 0
+}

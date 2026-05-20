@@ -9,8 +9,8 @@ abstract: >-
   combined into a single composite score LTB-100.
 authors:
   - name: "LayoutTranslateBench Contributors"
-version: "0.1.0"
-date-released: "2026-05-18"
+version: "0.1.6"
+date-released: "2026-05-20"
 license: "Apache-2.0"
 keywords:
   - benchmark
@@ -28,5 +28,5 @@ preferred-citation:
   authors:
     - name: "LayoutTranslateBench Contributors"
   year: 2026
-  version: "0.1.0"
+  version: "0.1.6"
   url: "https://github.com/Lawrenzho-bit/LayoutTranslateBench"

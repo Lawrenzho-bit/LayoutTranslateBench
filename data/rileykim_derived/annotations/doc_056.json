@@ -1,0 +1,637 @@
+{
+  "doc_id": "doc_056",
+  "page_size": [
+    1600,
+    2043
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_48616",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 3 en-kk region refs due to script mismatch]"
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        405,
+        328,
+        36,
+        23
+      ],
+      "text": "Age",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Фасыр"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        934,
+        329,
+        77,
+        24
+      ],
+      "text": "years",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "жылға"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        392,
+        367,
+        218,
+        75
+      ],
+      "text": "Blood Pressure Weight",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Қан қысымының салмағы"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        931,
+        374,
+        88,
+        25
+      ],
+      "text": "mm Hg",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "мм HG"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        932,
+        420,
+        96,
+        70
+      ],
+      "text": "pounds kg/m",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "фунт кг / м"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        382,
+        457,
+        364,
+        345
+      ],
+      "text": "Body Mass Index Cholesterol Triglyceride Alpha Cholesterol (HDL) Beta Cholesterol (LDL) VLDL Cholesterol Thiocyanate Uric Acid",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Дене массасының индексі Холестерин Холестерин Альесестерид Альфа Холестерин (HDL) бета холестерині (LDL) VLDL холестерині"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        934,
+        505,
+        79,
+        29
+      ],
+      "text": "mg / d1",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "мг / д1"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        932,
+        550,
+        80,
+        29
+      ],
+      "text": "mg/d1",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "мг / д1"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        933,
+        594,
+        81,
+        29
+      ],
+      "text": "mg /d1",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "мг / д1"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        934,
+        641,
+        79,
+        28
+      ],
+      "text": "mg / d1",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "мг / д1"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        934,
+        686,
+        80,
+        28
+      ],
+      "text": "mg / d1",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "мг / д1"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        934,
+        733,
+        206,
+        28
+      ],
+      "text": "u moles/liter",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        934,
+        776,
+        80,
+        28
+      ],
+      "text": "mg / dl",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "мг / дл"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        389,
+        820,
+        148,
+        28
+      ],
+      "text": "Potassium",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Калий"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        928,
+        823,
+        133,
+        163
+      ],
+      "text": "meq/1 mg / d1 U/1. 30 C mg/dl",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "meq / 1 мг / д1 у / 1. 30 C мг / дл"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        398,
+        865,
+        154,
+        29
+      ],
+      "text": "Creatinine",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Креатинин"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        394,
+        910,
+        66,
+        25
+      ],
+      "text": "SGOT",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Кгот"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        394,
+        958,
+        107,
+        25
+      ],
+      "text": "Glucose",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Глюкоза"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        393,
+        1001,
+        142,
+        29
+      ],
+      "text": "Thyroxine",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Тироксин"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        934,
+        1001,
+        83,
+        30
+      ],
+      "text": "ug/dl",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        390,
+        1045,
+        264,
+        29
+      ],
+      "text": "Exercise Duration",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Жаттығу ұзақтығы"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        935,
+        1049,
+        105,
+        26
+      ],
+      "text": "minutes",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "минуттар"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        391,
+        1090,
+        212,
+        74
+      ],
+      "text": "Total Calories Protein",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Жалпы калория ақуызы"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        930,
+        1092,
+        189,
+        28
+      ],
+      "text": "Kilocalories",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Килоцарьерлер"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        933,
+        1136,
+        428,
+        304
+      ],
+      "text": "% of total calories or grams % of total calories or grams %% of total calories, or grams % of total calories or grams % of total calories or grams of total calories or grams of total calories or grams",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "жалпы калориялардың жалпы калорияларының немесе жалпы калориялардың% немесе жалпы калориялардың% грамм немесе жалпы калориялардың жалпы калорияларының жалпы калорияларының жалпы калорияларының немесе жалпы калориялардың жалпы калорияларының жалпы калорияларының немесе грамм грамм грамм"
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        391,
+        1179,
+        181,
+        30
+      ],
+      "text": "Carbohydrate",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Көмірсулар"
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        390,
+        1227,
+        113,
+        27
+      ],
+      "text": "Alcohol",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Алкоголь"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        392,
+        1271,
+        50,
+        27
+      ],
+      "text": "Fat",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Семіз"
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        389,
+        1316,
+        325,
+        29
+      ],
+      "text": "Saturated Fatty Acids",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Қаныққан май қышқылдары"
+      }
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        388,
+        1361,
+        421,
+        31
+      ],
+      "text": "Monounsaturated Fatty Acids",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Майлы қышқылдар"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        390,
+        1452,
+        294,
+        71
+      ],
+      "text": "Dietary Cholesterol Expired Air CO",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "Диеталық холестерин Мерзімі өткен әуе Co"
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        934,
+        1458,
+        56,
+        23
+      ],
+      "text": "mom.",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-kk": "анасы."
+      }
+    },
+    {
+      "region_id": "r33",
+      "bbox": [
+        934,
+        1500,
+        62,
+        24
+      ],
+      "text": "ppm.",
+      "reading_order": 32,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    }
+  ]
+}

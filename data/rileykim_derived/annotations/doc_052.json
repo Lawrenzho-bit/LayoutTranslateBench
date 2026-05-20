@@ -1,0 +1,833 @@
+{
+  "doc_id": "doc_052",
+  "page_size": [
+    1122,
+    1848
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_04080",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        56,
+        229,
+        1005,
+        45
+      ],
+      "text": "Withhespreadof-1anceraseenrablehaneverenedpptteepialpatnandgiresourcesavailableduringthisdifficulttimeHere’swhattheAmericanCancerSocietyisdoingrightnowtohelp:",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Sarcer tarqalishi bilan, hozirda bemorlarga va ularning oilalariga yordam berish uchun har qachongidan ham muhimdir. Amerikaning saraton jamiyati hozirda Amerika saraton jamiyati yaqinlashmoqda:"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        192,
+        322,
+        226,
+        34
+      ],
+      "text": "INFORMATION",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "ma'lumot"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        86,
+        374,
+        438,
+        46
+      ],
+      "text": "We're continually sharing vitalinformation and guidanceto keep patients safe and informed.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Biz bemorlarni xavfsiz va xabardor qilish uchun biz doimo muhim ma'lumotlarni va yo'l-yo'riqlarni baham ko'ramiz."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        129,
+        592,
+        39,
+        16
+      ],
+      "text": "Hub:",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "xab"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        96,
+        613,
+        107,
+        61
+      ],
+      "text": "Coronavirus, COVID-19, and Cancer",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Koronavirus, Obid-19 va saraton kasalligi"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        267,
+        592,
+        79,
+        39
+      ],
+      "text": "Article: \"Common",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Maqola: \"Umumiy\""
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        243,
+        635,
+        127,
+        62
+      ],
+      "text": "Questions about the Coronavirus Outbreak\"",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Koronavirus tarqalish haqida savollar"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        425,
+        592,
+        75,
+        17
+      ],
+      "text": "Podcast:",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Podkast:"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        398,
+        613,
+        134,
+        109
+      ],
+      "text": "What CancerPatients andCaregivers Needto Know AboutCOVID-19",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Sarce-19 haqida saraton kasalxonasi va parvarishchilar bilan tanishishlari kerak"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        217,
+        782,
+        176,
+        34
+      ],
+      "text": "ADVOCACY",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "himoya qilmoq"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        102,
+        834,
+        407,
+        67
+      ],
+      "text": "ACSCAN is working tirelessly to continue to advanceour cancer-fighting mission through public policyduring these trying times.",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Accan jamoatchilik siyosati orqali saratonga qarshi vazifalarni, ayniqsa, bu qiyin paytlarda davom ettirishni davom ettirish uchun tinimsiz ishlamoqda."
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        136,
+        930,
+        27,
+        13
+      ],
+      "text": "C--",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "C--"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        233,
+        921,
+        275,
+        67
+      ],
+      "text": "Online Days ofAction:Volunteers contacting legislatorsinsupport of state priorities",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Onlayn harakat kuni: IJTIMERLAR HAQIDA ISHLAB CHIQARILGAN QONUNChILIKLARI"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        236,
+        1026,
+        160,
+        20
+      ],
+      "text": "Stimulus Packages:",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Stimulus paketi:"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        236,
+        1050,
+        285,
+        64
+      ],
+      "text": "Ensuring the patient community andnonprofit sectorareincluded,i.e.taxrelief for charitable organizations",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Bemor guruhlari va nomunosib sektorni xayriya tashkilotlari uchun soliq imtiyozlari kabi ta'minlaydi"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        236,
+        1152,
+        146,
+        20
+      ],
+      "text": "Policy Provisions:",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Siyosat shartlari:"
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        233,
+        1173,
+        292,
+        155
+      ],
+      "text": "Critical funding for access to care,including funding for communityhealth centers,increased federalMedicaid match to provide expandedhealth coverage for nation's mostvulnerable,and guaranteed coverageforCOVID-19 testing",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Kimga parvarishlash, shu jumladan jamoatchilik sog'liqni saqlash markazlarini moliyalashtirishni tanqidiylashtirish, Federal Medical Money-dagi mamlakatning sog'lomlashtirishni kengaytirish va Obid-19 sinovini kafolatlash uchun kengaytirish uchun kuchaytirish"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        104,
+        1616,
+        404,
+        90
+      ],
+      "text": "As always,lifesaving cancerresearch continues,aiming to find more-and better-treatments,uncover factors thatmay cause cancer,andimprovecancer patients'quality of life.",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Har doimgidek, hayotni tejaydigan saraton kasalligi ko'proq va yaxshiroq muolajalar topishda davom etmoqda, saraton kasalligiga olib kelishi mumkin bo'lgan omillar va saraton kasalligi bilan og'rigan bemorlarga hayot sifatini oshirishda davom etmoqda."
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        649,
+        402,
+        332,
+        44
+      ],
+      "text": "1-800-227-2345 and LiveChat80%of calls in March were CoviD-19 related",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "1-800-227-2345 va jonli chat, mart oyida qo'ng'iroqlarning 80 foizi Oxirgilar bilan bog'liq."
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        650,
+        1566,
+        31,
+        18
+      ],
+      "text": "80%",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "80%"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        736,
+        293,
+        163,
+        29
+      ],
+      "text": "PATIENT &",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "bemor va"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        681,
+        325,
+        268,
+        28
+      ],
+      "text": "FAMILY SERVICES",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Uy xizmatlari"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        725,
+        380,
+        179,
+        20
+      ],
+      "text": "24/7CancerHelpline:",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "24/7 saraton ishonch telefoni:"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        656,
+        476,
+        318,
+        65
+      ],
+      "text": "Reach To RecoveryPeer-to-peer breast cancer support is stillavailable,nowloo% phone-based",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Qulf-peer-peer ko'krak bezi saratonini qo'llab-quvvatlash hali ham mavjud va endi butunlay telefon orqali amalga oshiriladi"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        697,
+        570,
+        236,
+        68
+      ],
+      "text": "Ongoing SupportGroupsCancer Survivors Network andSpringboard Beyond Cancer",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Saratondan tashqari qo'llab-quvvatlash guruhlari va saratondan tashqari trampleydlar - bu to'g'ri ot va odatda tarjima qilinmaydi)"
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        728,
+        669,
+        180,
+        65
+      ],
+      "text": "Cancer.orgComprehensive cancerinformation",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Saraton.org Entection Cacuterate axborotini taqdim etadi"
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        718,
+        764,
+        202,
+        66
+      ],
+      "text": "Personal Health ManagerTrack diagnosis andtreatment",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Sog'liqni saqlashni diagnostika va davolash"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        729,
+        860,
+        175,
+        66
+      ],
+      "text": "Tender Loving CareHelp with appearance-related side effects",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Rahm-shafqatli parvarish tashqi ko'rinishga bog'liq yon ta'sirlarni boshqarishga yordam beradi"
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        218,
+        1398,
+        176,
+        34
+      ],
+      "text": "RESEARCH",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Izlanish"
+      }
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        729,
+        957,
+        169,
+        20
+      ],
+      "text": "Caregiver Resources",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Hamshiralik resurslari"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        698,
+        980,
+        235,
+        44
+      ],
+      "text": "Caregiver Resource Guide andCaregiver Support Video Series",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Karleworber Resurs qo'llanmasi va Karegiver video seriyasini qo'llab-quvvatlaydi"
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        694,
+        1064,
+        243,
+        45
+      ],
+      "text": "Patient NavigationHospital-based patient services",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Bemor navigatsiyasidagi bemorga kasalxonada"
+      }
+    },
+    {
+      "region_id": "r33",
+      "bbox": [
+        702,
+        1149,
+        226,
+        65
+      ],
+      "text": "Cancer InformationVideosPrevention to treatmentand more",
+      "reading_order": 32,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Saraton haqida ma'lumotni profilaktikadan davolash va boshqa"
+      }
+    },
+    {
+      "region_id": "r34",
+      "bbox": [
+        646,
+        1266,
+        335,
+        34
+      ],
+      "text": "COVID-19RESPONSE",
+      "reading_order": 33,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "OFID-19 javobi"
+      }
+    },
+    {
+      "region_id": "r35",
+      "bbox": [
+        632,
+        1318,
+        364,
+        46
+      ],
+      "text": "As COviD-19 shifts the needs of cancer patientsand communities, we're responding.",
+      "reading_order": 34,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "19 ta Obid-19 sifatida saraton kasalligi bilan bemorlar va jamoalar ehtiyojlarini o'zgartiradi, biz javob beramiz."
+      }
+    },
+    {
+      "region_id": "r36",
+      "bbox": [
+        746,
+        1393,
+        248,
+        44
+      ],
+      "text": "COVID-19 Hope Lodge Fund:Housing for health care workers",
+      "reading_order": 35,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Ohid-19 Tinchlik jamg'armasi: tibbiyot xodimlari uchun turar joy"
+      }
+    },
+    {
+      "region_id": "r37",
+      "bbox": [
+        745,
+        1477,
+        275,
+        47
+      ],
+      "text": "Updated information and guidancefor cancer patients",
+      "reading_order": 36,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Yangilangan saraton kasalligi bo'yicha ma'lumot va yo'l-yo'riq"
+      }
+    },
+    {
+      "region_id": "r38",
+      "bbox": [
+        745,
+        1565,
+        247,
+        47
+      ],
+      "text": "Reduced isolation through 24/7Helpline video conferencing",
+      "reading_order": 37,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "24/7 Xotinline video konferentsiyalari bilan izolyatsiya hislarini kamaytiring"
+      }
+    },
+    {
+      "region_id": "r39",
+      "bbox": [
+        745,
+        1653,
+        252,
+        47
+      ],
+      "text": "Advocacy for cancer communitythrough public policy",
+      "reading_order": 38,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Davlat siyosati orqali saratonjamiyatni targ'ib qilish"
+      }
+    },
+    {
+      "region_id": "r40",
+      "bbox": [
+        182,
+        60,
+        395,
+        138
+      ],
+      "text": "COVID-19 CANCER RESOURCES CANCER HASN'T STOPPED. So neither have we.",
+      "reading_order": 39,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Saraton resurslari saratoni to'xtamaydi. Shunday qilib, biz ham to'xtamadik."
+      }
+    },
+    {
+      "region_id": "r41",
+      "bbox": [
+        772,
+        97,
+        91,
+        28
+      ],
+      "text": "Cancer Action Network",
+      "reading_order": 40,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Saraton harakati tarmog'i"
+      }
+    },
+    {
+      "region_id": "r42",
+      "bbox": [
+        934,
+        87,
+        97,
+        56
+      ],
+      "text": "American Cancer Society",
+      "reading_order": 41,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Amerika saraton jamiyati"
+      }
+    },
+    {
+      "region_id": "r43",
+      "bbox": [
+        789,
+        145,
+        32,
+        13
+      ],
+      "text": "Socety",
+      "reading_order": 42,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "jamiyat"
+      }
+    }
+  ]
+}

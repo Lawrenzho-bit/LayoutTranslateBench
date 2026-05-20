@@ -1,0 +1,622 @@
+{
+  "doc_id": "doc_043",
+  "page_size": [
+    1600,
+    2039
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_34870",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 1 en-vi region refs due to script mismatch]"
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        399,
+        334,
+        102,
+        30
+      ],
+      "text": "Budget",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Ngân sách"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        698,
+        334,
+        88,
+        29
+      ],
+      "text": "Stime",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Thịt bò."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        851,
+        334,
+        104,
+        32
+      ],
+      "text": "Salary",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Thương lượng"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        1105,
+        331,
+        94,
+        30
+      ],
+      "text": "Benif.",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Benji."
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        1274,
+        333,
+        82,
+        29
+      ],
+      "text": "Total",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Tổng"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        107,
+        411,
+        334,
+        33
+      ],
+      "text": "Conference Organizers",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Tổ chức hội nghị"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        181,
+        470,
+        267,
+        158
+      ],
+      "text": "Rita Bestrum Ann Sorenson Ray Seltser Grace Ostenso Secretary (9 mos)",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Rita Bestrum Ann Sorenson, Ray Sert, Grace Ostenso, Bộ trưởng (9 tháng)"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        701,
+        473,
+        116,
+        90
+      ],
+      "text": "10 days 10 days 5 days",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "10 ngày, 10 ngày, 5 ngày"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        856,
+        471,
+        158,
+        86
+      ],
+      "text": "0. (USDA) RCDA ooo",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Name"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        700,
+        597,
+        52,
+        25
+      ],
+      "text": "30%",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "30%"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        855,
+        597,
+        67,
+        26
+      ],
+      "text": "3000",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "3000."
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        1109,
+        593,
+        50,
+        30
+      ],
+      "text": "750",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "750"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        1279,
+        597,
+        63,
+        26
+      ],
+      "text": "3750",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "350.\n\nThông thường, hình vẽ được diễn đạt bằng tiếng Ả Rập, nhưng nếu cần đổi sang tiếng Trung Quốc, thì đó là “3750 độ C. Theo yêu cầu của ông, chỉ có dịch trực tiếp được đưa ra ở đây."
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        103,
+        690,
+        360,
+        30
+      ],
+      "text": "Conference Facillities:",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Cơ sở hội nghị:"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        169,
+        753,
+        797,
+        216
+      ],
+      "text": "(Univ. of Pittsburg Conf. Center?)(150 particapants) Rental of hall 3 days @ $ Audio Visual aid services Conference Coordinator salary Registration (Incl. personel & packets) Refreshments (2 breaks per day) Hotel arrangements.",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Cho thuê phòng hội nghị trong 3 ngày."
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        1073,
+        937,
+        163,
+        31
+      ],
+      "text": "appr. 2000",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        96,
+        1016,
+        542,
+        97
+      ],
+      "text": "Supplies Postage & mailing fees Phone, office supplies, misc.",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Điện thoại, đồ dùng văn phòng, đồ linh tinh."
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        1107,
+        1048,
+        50,
+        57
+      ],
+      "text": "500 500",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "500"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        1275,
+        1079,
+        65,
+        27
+      ],
+      "text": "1000",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Một ngàn."
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        96,
+        1189,
+        622,
+        33
+      ],
+      "text": "Conference organizers Travel & Per deim",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Những người tổ chức hội nghị đi lại và hàng ngày"
+      }
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        176,
+        1251,
+        818,
+        96
+      ],
+      "text": "2 @ 3 trips + conference = ($156 air fare x 3) for 2 person ($1000) for 10 days per deim $50/day x 10 days x 2 ($1000)",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "2 @ 3 Chuyến đi + các cuộc họp = 2. (US$ 136 độ cao x 3) 2 (US$ 1000) mỗi ngày cho phép 50/ngày x 10 ngày x 2 (US$ 1000)"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        1273,
+        1313,
+        66,
+        28
+      ],
+      "text": "2000",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Hai ngàn."
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        91,
+        1420,
+        492,
+        34
+      ],
+      "text": "Conference Participants (Total)",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Những người tham gia hội nghị (total)"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        168,
+        1479,
+        748,
+        98
+      ],
+      "text": "Paid Participants (Travel & per diem) (3 days) 20 academia (US) @ $350 25 Foreign @ 1200/participant",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "@ info: credit"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        1084,
+        1512,
+        107,
+        63
+      ],
+      "text": "-7,000 30,000",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "- 7.000, 30,000.\n\nÂm 70, 30,000."
+      }
+    },
+    {
+      "region_id": "r26",
+      "bbox": [
+        1270,
+        1571,
+        113,
+        37
+      ],
+      "text": "37,000",
+      "reading_order": 25,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "37.000 đô."
+      }
+    },
+    {
+      "region_id": "r27",
+      "bbox": [
+        167,
+        1639,
+        627,
+        128
+      ],
+      "text": "Publication Costs 1000 copies for 700 pages proceedings pre conference abstracts programs",
+      "reading_order": 26,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Chi phí xuất bản: 1.000 bản tóm tắt trước và tính toán các chương trình nghị sự"
+      }
+    },
+    {
+      "region_id": "r28",
+      "bbox": [
+        1103,
+        1668,
+        79,
+        93
+      ],
+      "text": "3,500 1,000 500",
+      "reading_order": 27,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "3.500 500\n\nNhững con số sau đây đã được dịch sang tiếng Hoa:\n\n3.500, 1000, 500."
+      }
+    },
+    {
+      "region_id": "r29",
+      "bbox": [
+        1303,
+        1738,
+        88,
+        24
+      ],
+      "text": "5000",
+      "reading_order": 28,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Năm ngàn."
+      }
+    },
+    {
+      "region_id": "r30",
+      "bbox": [
+        1084,
+        1830,
+        84,
+        25
+      ],
+      "text": "Total",
+      "reading_order": 29,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Tổng"
+      }
+    },
+    {
+      "region_id": "r31",
+      "bbox": [
+        960,
+        1824,
+        418,
+        106
+      ],
+      "text": "48, 750 + conf. cent costs= 2,000 50, 750",
+      "reading_order": 30,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "48, 750 + Trung tâm hội nghị = 2.000 50 750"
+      }
+    },
+    {
+      "region_id": "r32",
+      "bbox": [
+        224,
+        1880,
+        439,
+        44
+      ],
+      "text": "(Conf. cost roughly $50,000)",
+      "reading_order": 31,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-vi": "Chi phí cho cuộc họp là khoảng 50.000 đô la"
+      }
+    }
+  ]
+}

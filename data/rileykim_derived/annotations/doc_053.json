@@ -1,0 +1,225 @@
+{
+  "doc_id": "doc_053",
+  "page_size": [
+    1600,
+    2070
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_01710",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        299,
+        179,
+        307,
+        34
+      ],
+      "text": "Review and Comment:",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Sharh va sharhlar:"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        242,
+        242,
+        1239,
+        178
+      ],
+      "text": "It is important that screening be done in an open and transparent way and that the bestavailable information be used. When screening for thousands of chemicals, EPA may not have access to all available information. The process should provide an opportunity for review andcomment on initial rankings and an opportunity to submit additional relevant data and informationto update proposed rankings with improved information.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Skrining ochiq va shaffof uslubda o'tkazilishi va mavjud bo'lgan eng yaxshi ma'lumotlarni ishlatish juda muhimdir. Minglab kimyoviy moddalarni skriningidan so'ng, EPA mavjud barcha ma'lumotlarga ega bo'lmasligi mumkin. Jarayon taklif etilayotgan ma'lumotlarga ega bo'lgan reyting reytingini yangilash uchun qo'shimcha ma'lumotlarni va qo'shimcha ma'lumotlarni va ma'lumotlarni taqdim etish imkoniyatini taqdim etishi kerak."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        243,
+        445,
+        402,
+        38
+      ],
+      "text": "II Second Tier Considerations:",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Ikkinchi darajadagi mulohazalar:"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        242,
+        516,
+        1181,
+        144
+      ],
+      "text": "After the initial screening, some substances within individual priority groupings mayrequire further rank ordering, particularly where a large number of chemicals are in the samepriority group. Listed below are the types of information that will be useful to consider in thisSecond Tier rank ordering:",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Dastlabki skriningidan so'ng, ma'lum bir ustuvor guruhlardagi moddalar keyingi ustuvor guruhda ko'plab kimyoviy moddalar mavjud bo'lgan joyda ustuvorlashtirishni talab qilishi mumkin. Ushbu ikkinchi darajali reytingda ko'rib chiqilgan ma'lumotlar turlari quyidagilardir:"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        296,
+        686,
+        655,
+        38
+      ],
+      "text": "Biomonitoring/Environmental Monitoring Data:",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Biologik monitoring / atrof-muhit monitoringi to'g'risidagi ma'lumotlar:"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        239,
+        750,
+        1215,
+        395
+      ],
+      "text": "Mere detection of chemicals in humans or the environment, i.e.,\"found in biomonitoring(CDC),found in water (NCOD), and found in air\", while providing an indication of exposure,does not provide a useful criterion for exposure potential because almost any industrial orcommercial chemical could be detected at trace levels, given increasingly sensitive analyticalmethods.Therefore, detection alone primarily reflects only the fact that a specific chemical was included in a measurement program. This criterion will also tend to bias the prioritization of chemicals for which well-established analytical methods are available. Consequently, thiscriterion is not used in the initial prioritization scheme. However, within a particular priority grouping,reliable monitoring information should be considered for Second Tier rank orderingwithin a quantitative process that assesses if the data is above a level of concern (i.e., places it ina risk context).",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Havoda topilgan suvda joylashgan suvda (NCOD) topilganida, odamlar uchun kimyoviy yoki atrof-muhitda kimyoviy moddalar mavjudligini aniqlash, deyarli har qanday inologik monitoring (CDC). Shu sababli, individual ravishda aniqlash, birinchi navbatda faqat ma'lum kimyoviy o'lchov rejasiga kiritilganligini aks ettiradi. Ushbu standart shuningdek, analitik usullar mavjud bo'lgan kimyoviy moddalarni ustuvor ahamiyatga etishga moyildir. Shuning uchun ushbu mezon dastlabki ustuvorlashtirish sxemasida ishlatilmadi. Biroq, maxsus ustuvor guruhlarda, ishonchli monitoring ma'lumotlari ko'rib chiqilishi kerak va ma'lumotlarning darajasi (I.E. xavf ostida bo'lgan kontekstda joylashtirilgan) ustuvorlashtirishning ikkinchi darajali miqdoridagi miqdoriy jarayonga nisbatan baholanishi kerak."
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        291,
+        1182,
+        373,
+        36
+      ],
+      "text": "Use in Children's Products:",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Bolalar mahsulotlarida foydalanish uchun:"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        233,
+        1244,
+        1208,
+        181
+      ],
+      "text": "Protection of childrens' health is a top priority and, in the initial ranking, child-specificproducts are captured under general consumer products and all consumer products are weightedequally. The specific IUR reporting of information on chemical use in products intended forchildren would be considered further within a particular priority grouping for Second Tier rankordering, noting the following points:",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Bolalar salomatligini himoya qilish ustuvor ahamiyat kasb etadi va dastlabki reytingda, bolalar muayyan mahsulotlari umumiy iste'mol tovarlari ostida tasniflanadi va barcha iste'mol tovarlari teng darajada og'ir. Bolalarda foydalanish uchun mo'ljallangan mahsulotlardagi kimyoviy moddalardan foydalanish bo'yicha maxsus ma'lumotlarning xabarlariga ko'ra, reytingning ikkinchi darajali ikkinchi darajali guruhlari bo'yicha ko'rib chiqiladi:"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        234,
+        1429,
+        1185,
+        75
+      ],
+      "text": "·the IUR definition is based upon use in a child specific product rather than child specific exposurepotential (see below). Without knowing a specific product type,it is difficult to understand if",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "IR ning ta'rifi bolalarning o'ziga xos ta'sir salohiyatiga emas, balki muayyan bolalar mahsulotlarida foydalanishga asoslanadi (quyida qarang). Ma'lum bir mahsulot turini bilmasdan, buni tushunish qiyin"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        232,
+        1606,
+        1195,
+        107
+      ],
+      "text": "chemical substance or mixture is used in or on a product that is specifically intended for use by children age 14 or younger. A chemical substance or mixture is intended for use by children when the submitter answers \"yes\" to at least on of the following questions for the product into which the submitter's chemical substance or mixture is incorporated: 1) Is the product commonly recognized (i.e., by a reasonable person) as being intended for children age 14 or younger?",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "Kimyoviy modda yoki aralashma 14 yosh yoki undan kichik bolalar tomonidan foydalanish uchun mo'ljallangan mahsulotdan foydalaniladi yoki boshqariladi. Kimyoviy modda yoki aralashmada kimyoviy moddalar yoki aralashmani o'z ichiga olgan mahsulotning \"Ha\" deb e'lon qilinganida, u odatda (I.E.) 14 yoshdan kichik yoki yosh bolalar uchun mo'ljallangan mahsulotlar uchun mo'ljallangan deb hisoblanadimi?"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        237,
+        1737,
+        262,
+        28
+      ],
+      "text": "by children age 14 or younger?",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-uz": "14 yosh yoki undan kichik bolalar tomonidanmi?"
+      }
+    }
+  ]
+}

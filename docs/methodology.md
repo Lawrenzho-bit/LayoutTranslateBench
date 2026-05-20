@@ -118,13 +118,70 @@ Weights are intentionally biased toward text quality (50%) — translation corre
 
 Each LTB-100 score is reported with a **95% bootstrap percentile confidence interval** — 1000 resamples with replacement from the per-document scores, fixed seed (42) for reproducibility.
 
-The leaderboard displays scores as `point [CI low, CI high]`. As of v0.1.5 the sample composition is:
+The leaderboard displays scores as `point [CI low, CI high]`. As of v0.1.6 the sample composition is:
 
-- v0.1.3 author-curated: N=10 per pair (all 8 pairs)
+- v0.1.3 author-curated: N=10 per CORE pair (all 8 CORE pairs)
 - v0.1.4 rileykim ml-curated: +8 en-ja, +7 en-zh
-- v0.1.5 FLORES certified-translator: +10 per pair (all 8 pairs)
+- v0.1.5 FLORES certified-translator: +10 per CORE pair (all 8 CORE pairs)
+- **v0.1.6 rileykim extension**: 3 docs each for 8 NEW pairs (en-ru, en-ko, en-vi, en-id, en-ur, en-uz, en-kk, en-zh-tw)
 
-So **per-pair counts are now N=20 for the 6 non-overlap pairs**, N=28 for en-ja, and N=27 for en-zh. CIs should be roughly √2× tighter than at v0.1.3's N=10. v0.2 will further scale to N≥25 author-curated per pair plus replace author-curated docs 001–010 with certified-translator references for a 2-reference multi-ref scoring scheme.
+Per-pair counts: N=20 for the 6 CORE non-overlap pairs, N=28 for en-ja, N=27 for en-zh, and N=3 for each of the 8 EXTENSION pairs. CIs on the EXTENSION pairs are deliberately wide — these are coverage proofs, not benchmark-quality samples. v0.2 will scale all 16 pairs to N≥25 and replace author-curated refs with certified-translator multi-references.
+
+The benchmark distinguishes **CORE pairs** (`ltbench.CORE_LANG_PAIRS`, 8 pairs, suitable for headline LTB-100 reporting) from **EXTENSION pairs** (8 more pairs, suitable for testing per-pair coverage of large multilingual systems but at sample sizes that don't support tight ranking).
+
+### Reference-script validation (v0.1.6.4 dataset-quality fix)
+
+While investigating the en-uz / en-ru COMET-Kiwi anomaly (both NLLB and opus-mt scored ~1.3 — essentially zero), spot-checking revealed that **the rileykim source dataset has labeling bugs**: many region-level `tgt_text` entries claim to be in one language but are actually in another script entirely.
+
+Examples found:
+- doc_036, 037, 038 (claimed `en-ru`): refs are in Simplified Chinese, not Russian (`农用化学品` = "agrochemicals" in Chinese)
+- doc_051 region 0 (claimed `en-uz`): `帐户名：` (Chinese, not Uzbek)
+- Various partial corruptions across en-ja, en-zh, en-ko, en-kk, en-zh-tw
+
+The v0.1.6.4 mitigation (`scripts/validate_extension_refs.py`) detects script-mismatched refs region-by-region and drops them from the annotation files. The doc itself stays — it's still useful as layout-fidelity ground truth — but the scorer's partial-coverage filter ensures it's no longer counted in the affected pair's per-pair average.
+
+**Impact**:
+- Dropped 103 region refs across the v0.1.4+v0.1.6 rileykim subset
+- en-ru lost all 42 region refs (3 docs × ~14 regions average) → en-ru coverage drops to 0 docs
+- Smaller bites taken out of en-ja, en-zh, en-ko, en-vi, en-ur, en-uz, en-kk, en-zh-tw, en-id
+
+**Methodology note**: every external dataset source LTB adopts should run through this script-validation pass at ingest. The validator is integrated into the v0.1.6.4 release; future rileykim or other multilingual-corpus integrations should call it before manifest-update.
+
+### Per-pair MT-quality variance (v0.1.6.2 finding)
+
+The opus-mt vs NLLB-200 head-to-head on the v0.1.6 dataset surfaced a useful methodological signal: **per-pair MT quality is highly uneven**, especially among smaller per-language Marian-family models.
+
+Helsinki-NLP/opus-mt comes in two flavors:
+- *Single-target* per-pair models (en-es, en-de, en-fr, en-ru, etc.) — generally Apache-2.0 and competitive
+- *Multi-target router* models (en-mul, en-poz, en-trk) — Apache-2.0 but trained over many target languages with a prefix-token interface; quality varies by target
+
+On COMET-Kiwi-22 over the v0.1.6 N=59 dataset:
+
+| Pair | opus-mt | NLLB-200-600M | Δ (NLLB - opus) | Note |
+|---|---|---|---|---|
+| en-es | 76.07 | 77.19 | +1.12 | comparable |
+| en-de | 76.42 | 74.70 | -1.72 | **opus-mt wins** |
+| en-fr | 76.53 | 77.16 | +0.63 | comparable |
+| en-ar | 79.37 | 79.39 | +0.02 | comparable |
+| en-zh | 72.54 | 73.66 | +1.12 | comparable |
+| en-ru | 53.19 | 50.28 | -2.91 | **opus-mt wins** |
+| en-ja | 36.94 | 78.09 | +41.15 | opus-mt collapses (Bible-uedin trained) |
+| en-ms | 28.36 | 71.92 | +43.56 | poz-router weak on Standard Malay |
+| en-ko | 15.83 | 55.75 | +39.92 | TC-big surprisingly weak |
+| en-vi | 40.12 | 68.10 | +27.99 | |
+| en-id | 47.70 | 70.06 | +22.35 | |
+| en-ur | 42.48 | 78.30 | +35.81 | |
+| en-kk | 42.37 | 76.98 | +34.61 | |
+| en-uz | 1.24 | 1.36 | +0.13 | both broken; likely ref-quality issue |
+| en-zh-tw | 38.53 | 43.52 | +4.99 | both struggle on Traditional Han |
+| en-th | 61.27 | 75.99 | +14.72 | mul-router weak |
+
+Implications for downstream consumers:
+- **European-market products** can ship opus-mt as the open-source MT default (Apache-2.0, performance within ~3 points of NLLB on en-es/-de/-fr/-ar/-zh/-ru)
+- **Asian-market products** need NLLB-200 (CC-BY-NC-4.0, research-only) or a paid commercial API; opus-mt's per-language models on those pairs are below the noise floor
+- **The benchmark is doing its job**: it surfaces these per-pair quality gaps that single-number macro-averages would have hidden
+
+This is the kind of finding LTB is designed to enable. Future v0.2 work should investigate whether per-language fine-tuned alternatives (e.g. `staka/fugumt-en-ja`, language-specific Marian variants) close the gap on the weak pairs.
 
 ### Weight choice (v0.1.1 empirical ablation)
 

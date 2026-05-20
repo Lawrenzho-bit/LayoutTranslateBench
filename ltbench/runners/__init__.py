@@ -10,6 +10,7 @@ __all__ = [
     "get_deepl_text_runner",
     "get_florence_nllb_runner",
     "get_nllb_text_runner",
+    "get_opus_mt_text_runner",
 ]
 
 
@@ -44,3 +45,16 @@ def get_nllb_text_runner(**kwargs):
     from ltbench.runners.nllb_text import NllbTextRunner
 
     return NllbTextRunner(**kwargs)
+
+
+def get_opus_mt_text_runner(**kwargs):
+    """Lazy import so transformers + torch are only loaded when used.
+
+    Helsinki-NLP/opus-mt-* per-pair MT models. Apache-2.0 (mostly) — the
+    commercial-safe open-source MT entry on the leaderboard. Covers all
+    16 LTB pairs via 13 distinct models with prefix-token routing for
+    multi-target heads (en-th, en-ms, en-uz, en-kk, en-zh-tw).
+    """
+    from ltbench.runners.opus_mt_text import OpusMtTextRunner
+
+    return OpusMtTextRunner(**kwargs)

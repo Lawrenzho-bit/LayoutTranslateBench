@@ -1,0 +1,489 @@
+{
+  "doc_id": "doc_058",
+  "page_size": [
+    1600,
+    2764
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_06818",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data. [v0.1.6.4: dropped 1 en-zh-tw region refs due to script mismatch]"
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        136,
+        143,
+        753,
+        99
+      ],
+      "text": "U.S.DEPARTMENT OF HEALTH，EDUCATION，AND WELFARESocial and Rchabilitation ServiceChildren's BureauTable /",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "美國衛生、教育和福利部社會和康復服務兒童局表格/"
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        302,
+        263,
+        1121,
+        126
+      ],
+      "text": "Number of Live Births, Maternal Deaths from Toxemias of Pregnancy (642),Puerperal Eclampsia (685), Other Forms of Puerperal Toxemia (685), andMortality Rate: United States, Percapita Income Group of States (l963-65),andState,196l-65.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "活產數、妊娠毒血症導致的孕產婦死亡（642）、產褥期子癇（685）、其他形式的產褥期毒血症（685）以及死亡率：美國，各州人均收入組（1963-65年），以及各州，1961-65年。"
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        188,
+        401,
+        1223,
+        91
+      ],
+      "text": "(By place of residence. Cause categories are those of the Seventh Revision of the",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "（按居住地。死因類別為第七次修訂的）"
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        198,
+        430,
+        1185,
+        67
+      ],
+      "text": "International Classification of Diseases, Injuries and Causes of Death, W.H. O., Geneva, 1957. Rate is per 100,000 live births).",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "國際疾病、傷害和死因分類，世界衛生組織，日內瓦，1957年。 （率以每10萬活產為單位）"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        200,
+        517,
+        349,
+        117
+      ],
+      "text": "Per capita income Group 1953-1905 and State",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "人均收入組1953-1905和國家"
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        821,
+        541,
+        250,
+        93
+      ],
+      "text": "No. of Maternal deaths from Spe- cified causes?/",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "特定原因導致的孕產婦死亡人數？"
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        1107,
+        537,
+        395,
+        92
+      ],
+      "text": "Rate per Ratio of 100,000 State rate to Live Births U. S. (100)",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "每10萬人中的比率與活產率之比 美國 (100)"
+      }
+    },
+    {
+      "region_id": "r8",
+      "bbox": [
+        603,
+        575,
+        169,
+        57
+      ],
+      "text": "Number of Live Births",
+      "reading_order": 7,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "活產數量"
+      }
+    },
+    {
+      "region_id": "r9",
+      "bbox": [
+        248,
+        667,
+        271,
+        61
+      ],
+      "text": "United States. . . . . High (17 ) .. . . . .",
+      "reading_order": 8,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "美國......高（17）......"
+      }
+    },
+    {
+      "region_id": "r10",
+      "bbox": [
+        620,
+        661,
+        167,
+        1639
+      ],
+      "text": "20, 321, 556 9, 823, 620 98, 134 45, 726 280, 570 56, 864 1, 872,062 1, 759,652 657, 108 1, 123, 758 37, 232 545,516 383,902 897, 444 87, 076 300, 756 80, 332 1, 065, 434 532, 044 6,195, 244 176, 014 1, 111, 644 207, 980 456,082 227, 116 451, 746 398, 728 38,004 288, 800 68, 742 159,692 78 , 856 182, 160 567, 380 123, 816 476,1:94 1, 181, 990 4, 302, 692 75, 718 44, 220 242, 872 109, 464 138,092 75, 242 494, 326 81, 065 428, 264 338, 706 532, 654 179 , 782 395, 490 382, 278 202, 462 296, 174",
+      "reading_order": 9,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "20,321,556 九百八十二萬三千六百二十 九十八萬一千三百四十四 十五萬七千二百六 二十八萬零五百七十 五萬六千八百六十四 一百八十七萬二千零六十二 一百七十五萬九千六百五十二 六十五萬七千一百零八 一百一十二萬三千七百五十八 三萬七千二百三十二 五十四萬五千五百一十六 三十八萬三千九百零二 八十九萬七千四百四十四 八萬七千零七十六 三十萬零七百五十六 八萬零三百三十二 一百零六萬五千四百三十四 五十三萬二千零四十四 六百一十九萬五千二百四十四 一十七萬六千零一十四 一百一十一萬一千六百四十四 二十萬七千九百八十 四十五萬六千零八十二 二十二萬七千一百一十六 四十五萬一千七百四十六 三十九萬八千七百二十八 三萬八千零四 二十八萬八千八百 一萬六千七百四十二 一十五萬九千六百九十二 七萬八千八百五十六 一十八萬二千一百六十 五十六萬七千三百八十 一十二萬三千八百一十六 四十七萬六千一百九十四 一百一十八萬一千九百九十 四百三十二萬六千九百二 十七萬五千七百一十八 四萬四千二百二十 二十四萬二千八百七十二 十萬九千四百六十四 十三萬八千零九十二 七萬五千二百四十二 四十九萬四千三百二十六 八萬一千零六十五 四十二萬八千二百六十四 三十三萬八千七百零六 五十三萬二千六百五十四 十七萬九千七百八十二 三十九萬五千四百九十 三十八萬二千二百七十八 二十萬二千四百六十二 二十九萬六千一百七十四"
+      }
+    },
+    {
+      "region_id": "r11",
+      "bbox": [
+        872,
+        660,
+        87,
+        73
+      ],
+      "text": "1, 254 377",
+      "reading_order": 10,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "1，254 377"
+      }
+    },
+    {
+      "region_id": "r12",
+      "bbox": [
+        1130,
+        660,
+        73,
+        301
+      ],
+      "text": "6.2 3.8 5 . 1 4 .4 3.2 3.5 3.0 4.5 5 .2 4 .",
+      "reading_order": 11,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "6.2 3.8 5 . 1 4 .4 3.2 3.5 3.0 4.5 5 .2 4"
+      }
+    },
+    {
+      "region_id": "r13",
+      "bbox": [
+        1346,
+        658,
+        62,
+        247
+      ],
+      "text": "100. 61 82 71 52 56 48 73",
+      "reading_order": 12,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "100. 61 82 71 52 56 48 73\n\n（注：這些數字在翻譯時通常保持不變，因為它們是通用的數字表示法。如果你是指將這些數字轉換成中文大寫或小寫形式，請進一步說明。） \n\n如果需要轉換為中文數字，可以這樣：\n一百。 六十一 八十二 七十一 五十二 五十六 四十八 七十三"
+      }
+    },
+    {
+      "region_id": "r14",
+      "bbox": [
+        199,
+        728,
+        385,
+        1580
+      ],
+      "text": "District of Columbia. .. . . Nevada. . ... Connecticut . .. Delaware. .. California. New York . . . New Jersey . .. Illinois. . Alaska. . . .. Massachusetts. Maryland . . . .. Michigan. .. Hawaii . .. Washington . . .. Rhode Island. . Ohio . . . . . . . . Indiana . . . . . ... . . Middle (17) . ... Oregon . . . . . . Pennsylvania. Colorado . . . . . Wisconsin. . Kansas . . . Missouri . . Minnesota. . Wyoming . . . Iowa . . . New Hampshire. Nebraska.. Montana . . . . . Arizona . . . . . . . Florida. . . Utah . . ... Virginia. .. Texas . . . . . . . Low (17 ) ..... . ... Idaho . .... . Vermont . . Oklahoma. . Maine . . . .. New Mexico . . ... North Dakota. .. Georgia..... South Dakota. Louisiana. . Kentucky .. ... North Carolina. West Virginia. Tennessee . . Alabama . . . Arkansas . . . . ... . . . . South Carolina . . . . . . . . .",
+      "reading_order": 13,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "哥倫比亞特區......內華達......康涅狄格......特拉華......加利福尼亞......紐約......新澤西......伊利諾伊......阿拉斯加......馬薩諸塞......馬里蘭......密歇根......夏威夷......華盛頓......羅得島......俄亥俄......印第安納......中等（17）......俄勒岡......賓夕法尼亞......科羅拉多......威斯康星......堪薩斯......密蘇里......明尼蘇達......懷俄明......愛荷華......新罕布什爾......內布拉斯加......蒙大拿......亞利桑那......佛羅里達......猶他......弗吉尼亞......德克薩斯......低（17）......愛達荷......佛蒙特......俄克拉荷馬......緬因......新墨西哥......北達科他......佐治亞......南達科他......路易斯安那......肯塔基......北卡羅來納......西弗吉尼亞......田納西......阿拉巴馬......阿肯色......南卡羅來納"
+      }
+    },
+    {
+      "region_id": "r15",
+      "bbox": [
+        917,
+        811,
+        47,
+        150
+      ],
+      "text": "2 57 80 34 50",
+      "reading_order": 14,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "2 57 80 34 50\n\n這組數字翻譯成中文是：二 五十七 八十 三十四 五十"
+      }
+    },
+    {
+      "region_id": "r16",
+      "bbox": [
+        1360,
+        931,
+        44,
+        67
+      ],
+      "text": "72 . . .",
+      "reading_order": 15,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "72 ..."
+      }
+    },
+    {
+      "region_id": "r17",
+      "bbox": [
+        921,
+        994,
+        46,
+        119
+      ],
+      "text": "18 18 36 2",
+      "reading_order": 16,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "18 18 36 2"
+      }
+    },
+    {
+      "region_id": "r18",
+      "bbox": [
+        911,
+        1131,
+        59,
+        558
+      ],
+      "text": "ON - 28 27 365 3 52 10 10 10 27 12 1 10 7 7 1 16 42",
+      "reading_order": 17,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "開 - 28 27 365 3 52 10 10 10 27 12 1 10 7 7 1 16 42"
+      }
+    },
+    {
+      "region_id": "r19",
+      "bbox": [
+        1368,
+        1196,
+        38,
+        40
+      ],
+      "text": "82",
+      "reading_order": 18,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "82\n\n（注：數字“82”在中文中通常直接使用阿拉伯數字表示，如果需要大寫或特定場合下的中文表達，則為“八十二”。根據上下文，這裡直接翻譯為“82”。）"
+      }
+    },
+    {
+      "region_id": "r20",
+      "bbox": [
+        1131,
+        984,
+        285,
+        1345
+      ],
+      "text": "5.1. OWNWOFNFFLUMNNNNFFW 27 77 35 IFNGOOFNON OOH 71 97 48 42 56 165 71 21 8 .8 142 7.4 119 3 .2 52 8.8 142 9 .4 152 11.9 192 6.6 106 2. 37 73 2.7 44 8.0 129 1.3. 21 12 .7 205 2.5 40 7 . 121 8. 14:4 12.4 200 8.3 134 11.1 179 16.5 266 9.4 152 20.3 327 30.2 1,87",
+      "reading_order": 19,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {}
+    },
+    {
+      "region_id": "r21",
+      "bbox": [
+        911,
+        1725,
+        54,
+        120
+      ],
+      "text": "42 111 512 5",
+      "reading_order": 20,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "42 111 512 5  \n\n（注：這些數字在中文里通常保持原樣，但如果需要逐字翻譯的話，可以寫作：四十二 一百一十一 五百一十二 五） \n\n根據上下文需求選擇最合適的表達方式。如果不需要特別轉換，直接使用阿拉伯數字也是完全可以接受的。"
+      }
+    },
+    {
+      "region_id": "r22",
+      "bbox": [
+        922,
+        1874,
+        48,
+        32
+      ],
+      "text": "11",
+      "reading_order": 21,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "11\n\n（注：數字11在中文里通常直接使用阿拉伯數字表示，如果需要中文大寫，則為“十一”）"
+      }
+    },
+    {
+      "region_id": "r23",
+      "bbox": [
+        918,
+        2061,
+        54,
+        119
+      ],
+      "text": "32 30 66 15",
+      "reading_order": 22,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "32 30 66 15  \n\n請注意，您提供的“32 30 66 15”是數字序列，並沒有特定的語言屬性，因此在中文中也是同樣的表示方式。如果這些數字代表某種特定含義（例如日期、代碼等），請提供更多的上下文信息以便於更準確的翻譯或解釋。"
+      }
+    },
+    {
+      "region_id": "r24",
+      "bbox": [
+        919,
+        2208,
+        50,
+        119
+      ],
+      "text": "63 19 60 86",
+      "reading_order": 23,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "63 19 60 86\n\n這組數字直接翻譯成中文是：\n六十三 十九 六十 八十六\n\n請注意，如果這些數字代表特定含義（如日期、代碼等），可能需要根據具體上下文調整翻譯方式。這裡按照簡單的數值進行了翻譯。"
+      }
+    },
+    {
+      "region_id": "r25",
+      "bbox": [
+        1092,
+        141,
+        304,
+        30
+      ],
+      "text": "Division of Research",
+      "reading_order": 24,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-zh-tw": "研究部"
+      }
+    }
+  ]
+}

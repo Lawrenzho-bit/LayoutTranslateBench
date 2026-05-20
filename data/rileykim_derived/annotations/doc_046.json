@@ -1,0 +1,149 @@
+{
+  "doc_id": "doc_046",
+  "page_size": [
+    1600,
+    2070
+  ],
+  "provenance": {
+    "source": "rileykim/multilingual-document",
+    "source_image_id": "patimt_48596",
+    "license": "Apache-2.0",
+    "grade": "ml-curated",
+    "notes": "Reference translations are from rileykim/multilingual-document; quality is ml-curated (not certified-translator). Treat as v0.1.4 expansion data."
+  },
+  "regions": [
+    {
+      "region_id": "r1",
+      "bbox": [
+        219,
+        129,
+        1261,
+        430
+      ],
+      "text": "To address preliminary“insufficient\" information findings, an additional“iterative\" step might also be useful. Such a step might allow the Agency time to pursue different avenues for informationbefore automatically defaulting to a high priority designation based on a finding of\"insufficient\" information to designate a candidate as a low priority. EPA's preamble discussion of the sufficiency or insufficiency of information to designate high or low priorities for risk evaluations is conclusoryat best.8 EPA provides litle indication how it will decide whether the available information it hasor can gather is sufficient or not; and what it will take to be considered“sufficient.\" EPA mustprovide greater clarity here, as well as for purposes of EPA's determination of the need for newinformation and its use of Section 4 in priority setting. ACC's comments on the proposed riskevaluation rule provide a definition of\"suffciency of information\"that might be adaptable to the prioritization context.19 ACC urges EPA to better explain the application of this concept more fullyin the prioritization process rule.",
+      "reading_order": 0,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Untuk mengatasi temuan awal yang “kurangnya informasi”, mungkin berguna juga untuk menambahkan langkah “berulang”. Langkah seperti ini akan memberikan waktu bagi lembaga-lembaga tersebut untuk memperoleh informasi melalui cara-cara yang berbeda, dibandingkan secara otomatis memberikan prioritas tinggi kepada kandidat ketika ditemukan “informasi yang tidak mencukupi”. Pembahasan EPA dalam pembukaannya mengenai apakah informasi tersebut cukup untuk menetapkan penilaian risiko berprioritas tinggi atau rendah adalah hal yang paling meyakinkan. EPA hanya memberikan sedikit indikasi mengenai bagaimana mereka akan memutuskan apakah informasi yang dimiliki atau dapat dikumpulkan sudah mencukupi; dan apa yang dianggap \"cukup\". EPA harus memberikan kejelasan yang lebih besar di sini, juga untuk tujuan EPA dalam menentukan kebutuhan informasi baru dan penggunaannya dalam penetapan prioritas di Bagian 4. Komentar ACC mengenai usulan aturan penilaian risiko memberikan definisi \"kecukupan informasi\", yang mungkin dapat diterapkan dalam konteks penentuan prioritas. ACC mendesak EPA untuk menjelaskan lebih lengkap penerapan konsep ini pada aturan proses penentuan prioritas."
+      }
+    },
+    {
+      "region_id": "r2",
+      "bbox": [
+        219,
+        588,
+        1262,
+        251
+      ],
+      "text": "Finally, the Section 4“statement of needs\" requirement must be met if EPA concludes it can'tprioritize without the development of new information. Overall, information gathering andinformation development at any stage in the prioritization process should use tiered and iterativeprocesses for greater efficiencies, for meeting animal welfare requirements, and for meeting statutory deadlines. Integration of hazard, use and exposure information in a risk-based screen isalso essential to prioritization which Congress intended would be a risk-based screening process, nota risk evaluation.",
+      "reading_order": 1,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Terakhir, jika EPA menentukan bahwa pembuatan prioritas tidak mungkin dilakukan tanpa pengembangan informasi baru, persyaratan Pernyataan Kebutuhan Bagian 4 harus dipenuhi. Secara keseluruhan, pada setiap tahap proses penentuan prioritas, pengumpulan informasi dan pengembangan informasi harus menggunakan proses yang berlapis dan berulang untuk meningkatkan efisiensi, memenuhi persyaratan kesejahteraan hewan, dan memenuhi tenggat waktu yang ditetapkan undang-undang. Mengintegrasikan informasi bahaya, penggunaan, dan paparan dalam penyaringan berbasis risiko juga diperlukan untuk pembuatan prioritas, dan anggota Kongres bermaksud agar hal ini menjadi proses penyaringan berbasis risiko dan bukan penilaian risiko."
+      }
+    },
+    {
+      "region_id": "r3",
+      "bbox": [
+        219,
+        865,
+        1159,
+        249
+      ],
+      "text": "RECOMMENDATION: EPA should use tiered, iterative approaches to informationgathering/development in the prioritization process rule. EPA should also carefullydelineate the requirements imposed on EPA to make determinations of need for new information in prioritization and statements of need for risk evaluations, as required by Section 4 of TSCA. EPA must also integrate hazard, use and exposure information in itsprioritization risk based screening process.",
+      "reading_order": 2,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Rekomendasi: EPA harus mengadopsi pendekatan berlapis dan berulang dalam mengumpulkan/mengembangkan informasi untuk aturan proses penentuan prioritas. EPA juga harus secara hati-hati mendefinisikan persyaratan bagi EPA untuk mengidentifikasi informasi baru yang diperlukan dalam pembuatan prioritas dan pernyataan kebutuhan penilaian risiko yang diwajibkan berdasarkan TSCA Bagian 4. EPA juga harus mengintegrasikan informasi bahaya, penggunaan, dan paparan ke dalam proses penyaringan berbasis risiko."
+      }
+    },
+    {
+      "region_id": "r4",
+      "bbox": [
+        228,
+        1167,
+        1111,
+        39
+      ],
+      "text": "C. The Importance of Transparency in Prioritization Cannot Be Over-Emphasized",
+      "reading_order": 3,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "C. Pentingnya transparansi prioritas tidak dapat dilebih-lebihkan"
+      }
+    },
+    {
+      "region_id": "r5",
+      "bbox": [
+        222,
+        1231,
+        1222,
+        179
+      ],
+      "text": "As discussed above, there are many questions that the Agency must answer in its final ruleconcerning the specific steps of the prioritization process. Many of these steps also raisetransparency issues. One of the most fundamental transparency issues that the Agency needs toaddress in the prioritization process is adequate notice to manufacturers and processors at criticalpoints in the process.",
+      "reading_order": 4,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Seperti disebutkan di atas, lembaga tersebut harus menjawab banyak pertanyaan dalam peraturan akhirnya mengenai langkah-langkah spesifik dalam proses penentuan prioritas. Banyak dari langkah-langkah ini juga menimbulkan masalah transparansi. Salah satu permasalahan transparansi paling mendasar yang perlu ditangani oleh lembaga ini dalam proses pembuatan prioritas adalah memberikan pemberitahuan yang memadai kepada produsen dan pengolah pada poin-poin penting dalam proses tersebut."
+      }
+    },
+    {
+      "region_id": "r6",
+      "bbox": [
+        220,
+        1438,
+        1256,
+        324
+      ],
+      "text": "While it may be obvious that EPA would provide notice and request for comment/input once achemical is in a“pool\"or narrowed to be included in a“batch\"to be prioritized,the Agency shouldalso provide earlier notice about what groups of active chemicals in commerce from which it plans to identify potential candidates for prioritization. The Agency should also explain the methodology it will use to narrow and refine the pool of candidates. With each pool of candidates, the Agencyshould explain how it applied its methodology to narrow that pool and how it plans to“batch\" themfor efficient prioritization screening. The Agency should be clear about the number of chemicals itwill address in each“batch\" and how much time it will provide to gather information about achemical in a batch.",
+      "reading_order": 5,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Meskipun jelas bahwa EPA akan memberikan pemberitahuan dan meminta komentar/masukan ketika bahan kimia memasuki “kumpulan” atau dipersempit menjadi “batch” untuk diprioritaskan, badan tersebut juga harus memberikan pemberitahuan terlebih dahulu dari kelompok bahan kimia mana yang digunakan dalam perdagangan yang direncanakan untuk mengidentifikasi kandidat potensial untuk diprioritaskan. Badan tersebut juga harus menjelaskan metode yang akan digunakan untuk mempersempit dan menyempurnakan bidang kandidat zat. Untuk setiap kelompok calon bahan, lembaga tersebut harus menjelaskan bagaimana mereka menerapkan metodenya untuk mempersempit kelompok bahan tersebut dan bagaimana mereka bermaksud melakukan \"pengelompokan\" bahan-bahan tersebut untuk penyaringan prioritas yang efisien. Badan tersebut harus mengklarifikasi berapa banyak bahan kimia yang akan diproses dalam setiap “batch” dan berapa lama waktu yang diberikan untuk mengumpulkan informasi tentang bahan kimia dalam satu batch."
+      }
+    },
+    {
+      "region_id": "r7",
+      "bbox": [
+        178,
+        1865,
+        1023,
+        24
+      ],
+      "text": "science, considering the weight of the scientific evidence to make a reasoned and transparent fit-for-purpose determination",
+      "reading_order": 6,
+      "layout_class": "paragraph",
+      "style": {
+        "font_family": "serif",
+        "size_hint": 13
+      },
+      "references": {
+        "en-id": "Sains, membuat penilaian kesesuaian tujuan yang masuk akal dan transparan berdasarkan bukti ilmiah"
+      }
+    }
+  ]
+}
