@@ -38,3 +38,6 @@ results/*.local.json
 .hf-env/
 # FLORES-200 tarball + extracted dataset (see scripts/compose_flores_docs.py)
 .flores-tmp/
+
+# Claude Code local working directory (scheduled-tasks lock, etc.)
+.claude/
