@@ -112,7 +112,16 @@ class OpusMtTextRunner(Runner):
                 "mostly Apache-2.0; en-de and en-ko use CC-BY-4.0 (TC-big). "
                 "Both permit commercial use with attribution — this is the "
                 "ship-able open-source MT path that NLLB-200 (CC-BY-NC-4.0) "
-                "is not."
+                "is not. "
+                "PER-PAIR QUALITY IS UNEVEN (v0.1.6.2 finding): opus-mt is "
+                "competitive with NLLB-200-600M on European pairs (en-es / "
+                "-de / -fr / -ar / -zh / -ru within ~3 COMET-Kiwi points) "
+                "but dramatically weaker on Asian / Central Asian pairs "
+                "(en-ja -41, en-ms -43, en-ko -40, en-kk -34, en-ur -35, "
+                "en-vi -28 vs NLLB on the same data). en-uz scores near 0 "
+                "in both — likely a ref-quality issue on those rileykim "
+                "docs. Use opus-mt for European-market product builds; use "
+                "NLLB (research) or DeepL (paid commercial) for Asian markets."
             ),
         )
 

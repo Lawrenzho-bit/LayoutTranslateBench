@@ -129,6 +129,42 @@ Per-pair counts: N=20 for the 6 CORE non-overlap pairs, N=28 for en-ja, N=27 for
 
 The benchmark distinguishes **CORE pairs** (`ltbench.CORE_LANG_PAIRS`, 8 pairs, suitable for headline LTB-100 reporting) from **EXTENSION pairs** (8 more pairs, suitable for testing per-pair coverage of large multilingual systems but at sample sizes that don't support tight ranking).
 
+### Per-pair MT-quality variance (v0.1.6.2 finding)
+
+The opus-mt vs NLLB-200 head-to-head on the v0.1.6 dataset surfaced a useful methodological signal: **per-pair MT quality is highly uneven**, especially among smaller per-language Marian-family models.
+
+Helsinki-NLP/opus-mt comes in two flavors:
+- *Single-target* per-pair models (en-es, en-de, en-fr, en-ru, etc.) — generally Apache-2.0 and competitive
+- *Multi-target router* models (en-mul, en-poz, en-trk) — Apache-2.0 but trained over many target languages with a prefix-token interface; quality varies by target
+
+On COMET-Kiwi-22 over the v0.1.6 N=59 dataset:
+
+| Pair | opus-mt | NLLB-200-600M | Δ (NLLB - opus) | Note |
+|---|---|---|---|---|
+| en-es | 76.07 | 77.19 | +1.12 | comparable |
+| en-de | 76.42 | 74.70 | -1.72 | **opus-mt wins** |
+| en-fr | 76.53 | 77.16 | +0.63 | comparable |
+| en-ar | 79.37 | 79.39 | +0.02 | comparable |
+| en-zh | 72.54 | 73.66 | +1.12 | comparable |
+| en-ru | 53.19 | 50.28 | -2.91 | **opus-mt wins** |
+| en-ja | 36.94 | 78.09 | +41.15 | opus-mt collapses (Bible-uedin trained) |
+| en-ms | 28.36 | 71.92 | +43.56 | poz-router weak on Standard Malay |
+| en-ko | 15.83 | 55.75 | +39.92 | TC-big surprisingly weak |
+| en-vi | 40.12 | 68.10 | +27.99 | |
+| en-id | 47.70 | 70.06 | +22.35 | |
+| en-ur | 42.48 | 78.30 | +35.81 | |
+| en-kk | 42.37 | 76.98 | +34.61 | |
+| en-uz | 1.24 | 1.36 | +0.13 | both broken; likely ref-quality issue |
+| en-zh-tw | 38.53 | 43.52 | +4.99 | both struggle on Traditional Han |
+| en-th | 61.27 | 75.99 | +14.72 | mul-router weak |
+
+Implications for downstream consumers:
+- **European-market products** can ship opus-mt as the open-source MT default (Apache-2.0, performance within ~3 points of NLLB on en-es/-de/-fr/-ar/-zh/-ru)
+- **Asian-market products** need NLLB-200 (CC-BY-NC-4.0, research-only) or a paid commercial API; opus-mt's per-language models on those pairs are below the noise floor
+- **The benchmark is doing its job**: it surfaces these per-pair quality gaps that single-number macro-averages would have hidden
+
+This is the kind of finding LTB is designed to enable. Future v0.2 work should investigate whether per-language fine-tuned alternatives (e.g. `staka/fugumt-en-ja`, language-specific Marian variants) close the gap on the weak pairs.
+
 ### Weight choice (v0.1.1 empirical ablation)
 
 The 50/30/20 weighting of (chrF, IoU, τ) in the LTB-100 composite is not arbitrary — it was empirically validated post-hoc against three alternatives: (40, 40, 20) balanced, (60, 20, 20) text-heavy, and (33, 33, 33) uniform.
