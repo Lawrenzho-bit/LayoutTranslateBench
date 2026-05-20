@@ -612,6 +612,12 @@ def run_nllb(
     batch_size: int = typer.Option(8),
     lang_pairs: Optional[str] = typer.Option(None),
     docs: Optional[str] = typer.Option(None),
+    skip_no_ref: bool = typer.Option(
+        True,
+        help="Skip (doc, pair) combinations whose annotation has no reference for the "
+        "target language pair. Default True; set --no-skip-no-ref to translate every "
+        "combination regardless.",
+    ),
 ) -> None:
     """Run the NLLB-200 Text runner (oracle layout, open-source MT).
 

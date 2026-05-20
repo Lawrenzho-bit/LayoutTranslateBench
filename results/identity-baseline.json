@@ -22,7 +22,7 @@
     "layout_iou": 0.3,
     "reading_order_tau": 0.2
   },
-  "overall_ltb_100": 50.54069836857632,
+  "overall_ltb_100": 50.53679959019633,
   "overall_ltb_100_ci_low": 50.32039414731904,
   "overall_ltb_100_ci_high": 50.7879334807365,
   "overall_chrf": 1.0813967371526567,
@@ -13049,5 +13049,5 @@
       "parser_failure": false
     }
   ],
-  "scored_at": "2026-05-20T07:43:13+00:00"
+  "scored_at": "2026-05-20T08:29:24+00:00"
 }
