@@ -2,7 +2,7 @@
 
 This document tracks methodology critiques against LTB and their status. The benchmark is a research artifact; methodology is expected to improve with each release. This file is the public, honest record of what's been fixed and what remains.
 
-## Status as of v0.1.7
+## Status as of v0.1.7.1
 
 | # | Critique | Status | Notes |
 |---|---|:---:|---|
@@ -20,17 +20,17 @@ This document tracks methodology critiques against LTB and their status. The ben
 | 12 | Open-source MT licensing (NLLB CC-BY-NC) | ✅ Fixed (v0.1.6.2) | Helsinki-NLP/opus-mt runner ships commercial-safe MT at 16/16 coverage (Apache-2.0 / CC-BY-4.0). |
 | 13 | Per-pair quality variance for open MT | ✅ Documented (v0.1.6.3) | opus-mt is competitive with NLLB on European pairs, dramatically weaker on Asian / Central Asian. Per-pair gaps recorded in [methodology.md](methodology.md). |
 
-Nine critiques fully fixed (#1, #2, #3, #4, #6, #7, #9, #11, #12), one clarified (#5), two mitigated (#8, #10-data, #10-infrastructure shipped), one documented (#13). No critiques remain truly open at v0.1.6.4 — v0.2 work (#8 multi-ref, #10 human eval, plus visual-fidelity / OCR round-trip metrics) is funded scope, not methodology debt.
+Nine critiques fully fixed (#1, #2, #3, #4, #6, #7, #9, #11, #12), one clarified (#5), two mitigated (#8, #10-data, #10-infrastructure shipped), one documented (#13). No critiques remain truly open at v0.1.7.1 — v0.2 work (#8 multi-ref, #10 human eval, plus visual-fidelity / OCR round-trip metrics) is funded scope, not methodology debt.
 
 ## What blocks the remaining items
 
 | Item | What's needed | Cost | Effort |
 |---|---|---|---|
-| #8 Multi-reference + certified translators | 2–3 certified translators producing 1 reference each for 200 docs × 16 pairs | ~€20k–50k | Calendar weeks |
+| #8 Multi-reference + certified translators | 2–3 certified translators producing 1 reference each for 59 docs × 16 pairs | ~€20k–50k | Calendar weeks |
 | #10 Human evaluation (data) | 5 raters × ~50 DA judgments × 4–5 systems = ~1000 judgments | ~€2k–5k via Mechanical Turk / Prolific, or €5k–10k via certified translators | Calendar weeks |
-| Extension pair coverage to N≥10 | Curate / certify additional refs on en-ru, en-ko, en-vi, en-id, en-ur, en-uz, en-kk, en-zh-tw (currently N≤3 each, N=0 en-ru) | ~€8k–15k | Calendar weeks |
 | Visual fidelity (v0.2) | LPIPS implementation on non-text regions of rendered output | $0 | ~1 week engineering |
 | OCR round-trip (v0.2) | Tesseract / PaddleOCR on rendered output, compare to predicted text | $0 | ~1 week engineering |
+| DeepL coverage expansion | Run DeepL on remaining 10 pairs; ~$5 API cost | ~$5 | 1 hour |
 
 ## Sequencing
 
@@ -57,15 +57,22 @@ Nine critiques fully fixed (#1, #2, #3, #4, #6, #7, #9, #11, #12), one clarified
 
 **v0.1.6.4 shipped:** fugumt en-ja swap (replaced opus-mt-en-jap with staka/fugumt-en-ja); ingest-time and post-hoc script validation drops rileykim refs whose `tgt_text` script doesn't match expected. After cleanup, en-ru has N=0; other extension pairs retain ≥1.
 
-**v0.1.7 shipped:** FLORES-200 extension-pair refs (`scripts/add_flores_extension_refs.py`) back-fill the 10 FLORES-derived docs (doc_026–doc_035) with certified-translator refs for all 8 v0.1.6 extension pairs. Closes the en-ru gap (0 → 10 docs) and upgrades the 7 surviving extension pairs from ml-curated rileykim refs to a mix of certified-FLORES + ml-curated-rileykim (13 docs each). Now every LTB pair has at least 10 certified-translator-grade reference documents. NOTE: leaderboard scores remain at v0.1.6 numbers until systems are re-run against the new refs — that's a separate scoring milestone.
+**v0.1.7 shipped:** FLORES-200 extension-pair refs (`scripts/add_flores_extension_refs.py`) back-fill the 10 FLORES-derived docs (doc_026–doc_035) with certified-translator refs for all 8 v0.1.6 extension pairs. Closes the en-ru gap (0 → 10 docs) and upgrades the 7 surviving extension pairs from ml-curated rileykim refs to a mix of certified-FLORES + ml-curated-rileykim (13 docs each). Now every LTB pair has at least 10 certified-translator-grade reference documents.
 
-**v0.2 (next, requires budget):**
-- Extension pair coverage to N≥10 each (certified or industry-grade refs)
-- Multi-reference scoring (2 references per doc on the core 8, certified-translator quality)
-- COMET-Kiwi as the primary metric (chrF retained as secondary)
-- DA / SQM human evaluation on 50 doc-pair outputs across 4+ systems
-- LPIPS visual-fidelity metric (10% weight) + OCR round-trip metric (10% weight)
-- Held-out split rotation (20% private, refreshed quarterly)
+**v0.1.7.1 shipped:** All systems re-scored against v0.1.7 certified-translator FLORES refs. NLLB and opus-mt re-run for all 8 extension pairs (101 actual translations each, `skip_no_ref` guard, 16/16 coverage). COMET-Kiwi-22 re-scored for all four systems. Fixed `skip_no_ref` bug in `run_nllb` (parameter declared but not applied in loop body). Leaderboard B staleness warning removed.
+
+Key v0.1.7.1 findings:
+- **chrF (oracle-layout):** NLLB 73.71, opus-mt 68.60 (both 16/16)
+- **COMET-Kiwi (oracle-layout):** NLLB 86.51, DeepL 84.89, opus-mt 79.35 (NLLB/opus-mt now 16/16)
+- **en-uz structural zero confirmed:** NLLB chrF 0.07 / opus-mt chrF 0.04; COMET 0.31 — Uzbek-Latin unsupported at 600M-class scale
+- **chrF–COMET gap largest for non-Latin pairs:** NLLB en-kk COMET 83.5 vs chrF 52.2 (+31 pts), en-th COMET 76.0 vs chrF 45.2 (+31 pts), en-ko COMET 77.8 vs chrF 36.9 (+41 pts) — validates dual-metric benchmark design
+
+**v0.2 (next):**
+- LPIPS visual-fidelity metric (10% weight) + OCR round-trip metric (10% weight) — engineering only, no budget
+- Held-out split rotation (20% private, refreshed quarterly) — engineering only
+- DeepL coverage expansion to all 16 pairs (currently 6/16) — ~$5 API cost
+- Multi-reference scoring (2 references per doc on the core 8, certified-translator quality) — requires budget
+- DA / SQM human evaluation on 50 doc-pair outputs across 4+ systems — requires budget
 
 ## Why this is published openly
 
