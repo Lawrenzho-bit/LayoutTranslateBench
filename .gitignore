@@ -41,3 +41,6 @@ results/*.local.json
 
 # Claude Code local working directory (scheduled-tasks lock, etc.)
 .claude/
+
+# Runner log scratch files
+*_run.log
