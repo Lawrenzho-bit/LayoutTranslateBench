@@ -22,10 +22,10 @@
     "layout_iou": 0.3,
     "reading_order_tau": 0.2
   },
-  "overall_ltb_100": 50.531509091149275,
-  "overall_ltb_100_ci_low": 50.319015718667046,
-  "overall_ltb_100_ci_high": 50.79679178080975,
-  "overall_chrf": 1.1152469592504564,
+  "overall_ltb_100": 50.37744848501905,
+  "overall_ltb_100_ci_low": 50.22978279935009,
+  "overall_ltb_100_ci_high": 50.56870265248782,
+  "overall_chrf": 0.6235887957458179,
   "overall_layout_iou": 0.9999999999999999,
   "overall_reading_order_tau": 1.0,
   "per_lang_pair": [
@@ -111,47 +111,47 @@
     },
     {
       "lang_pair": "en-ru",
-      "n_docs": 0,
+      "n_docs": 10,
       "chrf": 0.0,
-      "layout_iou": 0.0,
-      "reading_order_tau": 0.0,
-      "ltb_100": 0.0,
-      "ltb_100_ci_low": 0.0,
-      "ltb_100_ci_high": 0.0
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "ltb_100_ci_low": 49.99999999999999,
+      "ltb_100_ci_high": 49.99999999999999
     },
     {
       "lang_pair": "en-ko",
-      "n_docs": 3,
-      "chrf": 4.042501734469762,
-      "layout_iou": 1.0,
+      "n_docs": 13,
+      "chrf": 0.9328850156468681,
+      "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 52.02125086723488,
-      "ltb_100_ci_low": 50.12871470236117,
-      "ltb_100_ci_high": 54.832248019368144
+      "ltb_100": 50.46644250782343,
+      "ltb_100_ci_low": 49.99999999999999,
+      "ltb_100_ci_high": 51.28479413985039
     },
     {
       "lang_pair": "en-vi",
-      "n_docs": 3,
-      "chrf": 0.5404589368610536,
-      "layout_iou": 1.0,
+      "n_docs": 13,
+      "chrf": 0.12472129312178161,
+      "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 50.27022946843053,
-      "ltb_100_ci_low": 50.0,
-      "ltb_100_ci_high": 50.562942888174724
+      "ltb_100": 50.06236064656088,
+      "ltb_100_ci_low": 49.99999999999999,
+      "ltb_100_ci_high": 50.16802459221215
     },
     {
       "lang_pair": "en-id",
-      "n_docs": 3,
-      "chrf": 0.03554020559113985,
+      "n_docs": 13,
+      "chrf": 0.008201585905647658,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 50.017770102795566,
+      "ltb_100": 50.00410079295282,
       "ltb_100_ci_low": 49.99999999999999,
-      "ltb_100_ci_high": 50.05331030838672
+      "ltb_100_ci_high": 50.01230237885847
     },
     {
       "lang_pair": "en-ur",
-      "n_docs": 3,
+      "n_docs": 13,
       "chrf": 0.0,
       "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
@@ -161,33 +161,33 @@
     },
     {
       "lang_pair": "en-uz",
-      "n_docs": 3,
-      "chrf": 0.31252749393599355,
-      "layout_iou": 1.0,
+      "n_docs": 13,
+      "chrf": 0.07212172936984466,
+      "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 50.156263746968,
+      "ltb_100": 50.03606086468492,
       "ltb_100_ci_low": 49.99999999999999,
-      "ltb_100_ci_high": 50.382193677480494
+      "ltb_100_ci_high": 50.101521243022184
     },
     {
       "lang_pair": "en-kk",
-      "n_docs": 3,
-      "chrf": 0.3715038806697501,
-      "layout_iou": 1.0,
+      "n_docs": 13,
+      "chrf": 0.08573166476994233,
+      "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 50.185751940334875,
-      "ltb_100_ci_low": 50.01801482502497,
-      "ltb_100_ci_high": 50.510058779313795
+      "ltb_100": 50.04286583238497,
+      "ltb_100_ci_low": 49.99999999999999,
+      "ltb_100_ci_high": 50.12272216958901
     },
     {
       "lang_pair": "en-zh-tw",
-      "n_docs": 3,
-      "chrf": 3.4741365023431885,
-      "layout_iou": 1.0,
+      "n_docs": 13,
+      "chrf": 0.8017238082330435,
+      "layout_iou": 0.9999999999999999,
       "reading_order_tau": 1.0,
-      "ltb_100": 51.73706825117159,
+      "ltb_100": 50.40086190411652,
       "ltb_100_ci_low": 49.99999999999999,
-      "ltb_100_ci_high": 53.1833805734316
+      "ltb_100_ci_high": 50.97950171490202
     }
   ],
   "per_doc": [
@@ -4000,6 +4000,422 @@
       "parser_failure": false
     },
     {
+      "doc_id": "doc_026",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_027",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_028",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_029",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_030",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_031",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_032",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_033",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_034",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_035",
+      "lang_pair": "en-id",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
       "doc_id": "doc_045",
       "lang_pair": "en-id",
       "chrf": 0.10662061677341955,
@@ -6189,6 +6605,422 @@
       "parser_failure": false
     },
     {
+      "doc_id": "doc_026",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_027",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_028",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_029",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_030",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_031",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_032",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_033",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_034",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_035",
+      "lang_pair": "en-kk",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
       "doc_id": "doc_054",
       "lang_pair": "en-kk",
       "chrf": 1.0201175586275801,
@@ -6772,6 +7604,422 @@
         },
         {
           "region_id": "r33",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_026",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_027",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_028",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_029",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_030",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_031",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_032",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_033",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_034",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_035",
+      "lang_pair": "en-ko",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
           "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
@@ -8197,6 +9445,422 @@
       "parser_failure": false
     },
     {
+      "doc_id": "doc_026",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_027",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_028",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_029",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_030",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_031",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_032",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_033",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_034",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_035",
+      "lang_pair": "en-ru",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
       "doc_id": "doc_001",
       "lang_pair": "en-th",
       "chrf": 0.0,
@@ -9149,6 +10813,422 @@
       "parser_failure": false
     },
     {
+      "doc_id": "doc_026",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_027",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_028",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_029",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_030",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_031",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_032",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_033",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_034",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_035",
+      "lang_pair": "en-ur",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
       "doc_id": "doc_048",
       "lang_pair": "en-ur",
       "chrf": 0.0,
@@ -9420,6 +11500,422 @@
         },
         {
           "region_id": "r18",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_026",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_027",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_028",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_029",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_030",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_031",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_032",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_033",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_034",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_035",
+      "lang_pair": "en-uz",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
           "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
@@ -9977,6 +12473,422 @@
       "parser_failure": false
     },
     {
+      "doc_id": "doc_026",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_027",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_028",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_029",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_030",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_031",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_032",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_033",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_034",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_035",
+      "lang_pair": "en-vi",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
       "doc_id": "doc_042",
       "lang_pair": "en-vi",
       "chrf": 0.49549103423370505,
@@ -10410,6 +13322,422 @@
         },
         {
           "region_id": "r16",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_026",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_027",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r6",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_028",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_029",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_030",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_031",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_032",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_033",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_034",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        }
+      ],
+      "parser_failure": false
+    },
+    {
+      "doc_id": "doc_035",
+      "lang_pair": "en-zh-tw",
+      "chrf": 0.0,
+      "layout_iou": 0.9999999999999999,
+      "reading_order_tau": 1.0,
+      "ltb_100": 49.99999999999999,
+      "region_scores": [
+        {
+          "region_id": "r1",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r2",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r3",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r4",
+          "chrf": 0.0,
+          "layout_iou": 1.0,
+          "matched": true
+        },
+        {
+          "region_id": "r5",
           "chrf": 0.0,
           "layout_iou": 1.0,
           "matched": true
@@ -12764,5 +16092,5 @@
       "parser_failure": false
     }
   ],
-  "scored_at": "2026-05-20T11:44:28+00:00"
+  "scored_at": "2026-05-20T16:46:48+00:00"
 }

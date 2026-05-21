@@ -657,12 +657,19 @@ def run_nllb(
 
     total = len(selected_pairs) * len(selected_entries)
     n_written = 0
+    n_skipped = 0
     runtime_total = 0.0
     for lang_pair in selected_pairs:
         path = submission_dir / f"{lang_pair}.jsonl"
         with path.open("w", encoding="utf-8") as f:
             for entry in selected_entries:
                 ann = load_annotation(data_root / entry.annotation_file)
+                if skip_no_ref and not any(
+                    lang_pair in r.references for r in ann.regions
+                ):
+                    n_skipped += 1
+                    n_written += 1
+                    continue
                 console.print(
                     f"  [dim]({n_written + 1}/{total})[/dim] {lang_pair} / {entry.doc_id}",
                     end="",
@@ -677,9 +684,10 @@ def run_nllb(
                 console.print(f" [green]->[/green] {len(sub.regions)} regions{rt}")
 
     runner.close()
+    n_actual = n_written - n_skipped
     console.print(
-        f"[green]Wrote {n_written} submissions[/green] to {submission_dir}"
-        f" (total {runtime_total:.1f}s)"
+        f"[green]Wrote {n_actual} submissions[/green] to {submission_dir}"
+        f" (skipped {n_skipped} no-ref combos; total {runtime_total:.1f}s)"
     )
 
 
