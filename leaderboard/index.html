@@ -65,7 +65,7 @@
     </div>
 
     <div class="card" style="background: rgba(124,183,255,0.06); border-left: 3px solid #7cb7ff; padding: 12px 16px; margin-bottom: 20px;">
-      <strong>Two metrics shown.</strong> <em>chrF</em> (character-level F-score, fast, deterministic) and <em>COMET-Kiwi-22</em> (reference-free neural QE, slower but better correlated with human judgment). Rankings can differ — paraphrasing systems often score lower on chrF than on COMET. ⚠️ COMET-Kiwi scores below are from v0.1.6 data; re-score against v0.1.7 is pending.
+      <strong>Two metrics shown.</strong> <em>chrF</em> (character-level F-score, fast, deterministic) and <em>COMET-Kiwi-22</em> (reference-free neural QE, slower but better correlated with human judgment). Rankings can differ — the chrF–COMET gap is largest for non-Latin extension pairs (e.g. NLLB en-kk: COMET 83.5 vs chrF 52.2), validating dual-metric design. Both leaderboards reflect v0.1.7 data.
     </div>
 
 
@@ -196,7 +196,6 @@
 
     <h2 style="margin: 24px 0 8px;">End-to-end systems — COMET-Kiwi</h2>
     <p class="lead" style="margin-bottom: 12px;">Same systems scored with reference-free COMET-Kiwi-22.</p>
-    <p class="stale-note">⚠️ Scores below are from v0.1.6 data (N≤3 for extension pairs). COMET-Kiwi re-score against v0.1.7 is pending.</p>
     <div class="card">
 
       <table>
@@ -220,11 +219,11 @@
           <tr>
             <td class="num">1</td>
             <td><strong>identity-baseline</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">50.66 <span style="color: var(--muted); font-size: 12px;">[50.4, 51.0]</span></td>
-            <td class="num">1.70</td>
+            <td class="num">50.47 <span style="color: var(--muted); font-size: 12px;">[50.3, 50.7]</span></td>
+            <td class="num">0.81</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">15/16</td>
+            <td class="num">16/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
@@ -252,7 +251,6 @@
 
     <h2 style="margin: 24px 0 8px;">Oracle-layout reference — COMET-Kiwi</h2>
     <p class="lead" style="margin-bottom: 12px;">Same systems, oracle-layout, COMET-Kiwi.</p>
-    <p class="stale-note">⚠️ Scores below are from v0.1.6 data (N≤3 for extension pairs). COMET-Kiwi re-score against v0.1.7 is pending.</p>
     <div class="card">
 
       <table>
@@ -276,11 +274,11 @@
           <tr>
             <td class="num">1</td>
             <td><strong>nllb-text-oracle</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">86.95 <span style="color: var(--muted); font-size: 12px;">[85.8, 88.0]</span></td>
-            <td class="num">66.81</td>
+            <td class="num">86.51 <span style="color: var(--muted); font-size: 12px;">[85.3, 87.7]</span></td>
+            <td class="num">72.15</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">15/16</td>
+            <td class="num">16/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
@@ -304,11 +302,11 @@
           <tr>
             <td class="num">3</td>
             <td><strong>opus-mt-text-oracle</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">80.46 <span style="color: var(--muted); font-size: 12px;">[78.9, 82.1]</span></td>
-            <td class="num">49.77</td>
+            <td class="num">79.35 <span style="color: var(--muted); font-size: 12px;">[77.9, 80.8]</span></td>
+            <td class="num">57.36</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">15/16</td>
+            <td class="num">16/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>

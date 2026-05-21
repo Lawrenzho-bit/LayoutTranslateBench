@@ -6,7 +6,7 @@ _Generated 2026-05-21 from LayoutTranslateBench v0.1.7._
 
 **Metric.** Two parallel leaderboards are shown — **chrF** (character-level F-score, fast, deterministic, paraphrase-blind) and **COMET-Kiwi-22** (reference-free neural MT quality estimation, slower but more correlated with human judgment). System rankings can differ between metrics, especially for systems that paraphrase well.
 
-**Note — COMET-Kiwi-22 (Leaderboard B)** scores are from v0.1.6 data (pending re-score against v0.1.7 refs); treat rankings as approximate until the COMET-Kiwi re-run lands.
+**Note — COMET-Kiwi-22 (Leaderboard B)** scores are from v0.1.7 data (same run as chrF above; COMET-Kiwi is reference-free so it re-runs against all 16 pairs). Notable finding: COMET–chrF gap is largest for non-Latin extension pairs (e.g. NLLB en-kk: COMET 83.5 vs chrF 52.2), validating dual-metric design.
 
 ---
 
@@ -35,8 +35,6 @@ _Generated 2026-05-21 from LayoutTranslateBench v0.1.7._
 
 # Leaderboard B — COMET-Kiwi-22
 
-_⚠️ Scores below are from v0.1.6 data (N≤3 for extension pairs). COMET-Kiwi re-score against v0.1.7 is pending._
-
 *COMET-Kiwi is reference-free; the per-region chrF column shown above is replaced by the COMET-Kiwi score (also in [0, 100], higher = better).*
 
 ## End-to-end systems (COMET-Kiwi)
@@ -45,7 +43,7 @@ _⚠️ Scores below are from v0.1.6 data (N≤3 for extension pairs). COMET-Kiw
 
 | Rank | System | LTB-100 [95% CI] | COMET-Kiwi | Layout IoU | Reading-order τ | Coverage | Median runtime (s/doc) | Cost (USD) | Hardware |
 |---:|:---|:---|---:|---:|---:|:---:|---:|---:|:---|
-| 1 | identity-baseline v0.1.0 | 50.66 [50.4, 51.0] | 1.70 | 1.0000 | 1.0000 | 15/16 | — | — | cpu |
+| 1 | identity-baseline v0.1.0 | 50.47 [50.3, 50.7] | 0.81 | 1.0000 | 1.0000 | 16/16 | — | — | cpu |
 | 2 | qwen3-vl-2b-instruct v0.1.0 | 22.79 [18.6, 27.1] | 15.46 | 0.0395 | 0.6935 | 8/16 | 184.90 | $0.0000 | cpu |
 
 ## Oracle-layout reference (COMET-Kiwi)
@@ -54,9 +52,9 @@ _⚠️ Scores below are from v0.1.6 data (N≤3 for extension pairs). COMET-Kiw
 
 | Rank | System | LTB-100 [95% CI] | COMET-Kiwi | Layout IoU | Reading-order τ | Coverage | Median runtime (s/doc) | Cost (USD) | Hardware |
 |---:|:---|:---|---:|---:|---:|:---:|---:|---:|:---|
-| 1 | nllb-text-oracle v0.1.0 | 86.95 [85.8, 88.0] | 66.81 | 1.0000 | 1.0000 | 15/16 | — | — | cpu |
+| 1 | nllb-text-oracle v0.1.0 | 86.51 [85.3, 87.7] | 72.15 | 1.0000 | 1.0000 | 16/16 | — | — | cpu |
 | 2 | deepl-text-oracle v0.1.0 | 84.89 [81.4, 88.0] | 69.77 | 1.0000 | 1.0000 | 6/16 | 0.40 | $0.0000 | api |
-| 3 | opus-mt-text-oracle v0.1.0 | 80.46 [78.9, 82.1] | 49.77 | 1.0000 | 1.0000 | 15/16 | — | — | cpu |
+| 3 | opus-mt-text-oracle v0.1.0 | 79.35 [77.9, 80.8] | 57.36 | 1.0000 | 1.0000 | 16/16 | — | — | cpu |
 
 ---
 
