@@ -13,11 +13,25 @@ Today's translation tools either translate plain text well (DeepL, Google Transl
 
 ## TL;DR
 
-- **200 documents** across 10 categories, 16 language pairs (`en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`, `en-fr`, `en-th`, `en-ms`, `en-ru`, `en-ko`, `en-vi`, `en-id`, `en-ur`, `en-uz`, `en-kk`, `en-zh-tw`)
-- **Single composite score** — LTB-100 — combining text quality (chrF), layout IoU, and reading-order Kendall τ
-- **Open code (Apache-2.0)** and **open dataset (CC-BY-4.0)**
-- **Leaderboard** updated on every accepted submission, with held-out split rotated quarterly
+- **59 documents** across 9 categories (v0.1.7; v0.2 scales to 200+)
+- **16 language pairs** — `en-es`, `en-de`, `en-zh`, `en-ar`, `en-ja`, `en-fr`, `en-th`, `en-ms`, `en-ru`, `en-ko`, `en-vi`, `en-id`, `en-ur`, `en-uz`, `en-kk`, `en-zh-tw`
+- **Single composite score** — LTB-100 — combining chrF (text quality), layout IoU, and reading-order Kendall τ
+- **Dual metric leaderboard** — chrF (fast, deterministic) + COMET-Kiwi-22 (neural, reference-free)
+- **Open code (Apache-2.0)** and **open dataset (CC-BY-4.0 / CC-BY-SA-4.0 per entry)**
 - **Reproducibility-first** — every submission records runtime, cost, hardware, and config
+
+## Current results (v0.1.7.1 · chrF · oracle-layout)
+
+| System | LTB-100 [95% CI] | chrF | Coverage |
+|:---|:---|---:|:---:|
+| DeepL Text API | 78.20 [75.2, 81.7] | 56.40 | 6/16 |
+| NLLB-200-distilled-600M | 73.71 [72.5, 74.9] | 47.61 | 16/16 |
+| Helsinki-NLP/opus-mt | 68.60 [67.1, 70.0] | 37.26 | 16/16 |
+| identity-baseline | 50.38 [50.2, 50.6] | 0.62 | 16/16 |
+
+**Full leaderboard** (including COMET-Kiwi-22): [lawrenzho-bit.github.io/LayoutTranslateBench/leaderboard/](https://lawrenzho-bit.github.io/LayoutTranslateBench/leaderboard/)
+
+Key finding: NLLB is the best open-weight system at full 16/16 pair coverage. opus-mt is competitive on European pairs and commercial-safe (Apache-2.0), but effectively fails en-ko (chrF 2.6) and en-uz (chrF 0.04). The COMET-Kiwi–chrF gap is largest for non-Latin scripts (NLLB en-kk: COMET 83.5 vs chrF 52.2), validating the dual-metric design.
 
 ## Why this benchmark exists
 
@@ -36,10 +50,10 @@ Requires Python 3.10+. Core scoring runs CPU-only with no heavyweight ML depende
 ## Quick start
 
 ```bash
-# Verify the included sample dataset
+# Verify the dataset
 ltbench verify
 
-# Score the identity baseline (returns source text unchanged) on the sample
+# Score the identity baseline (returns source text unchanged)
 ltbench score --submission submissions/identity-baseline --output results/identity-baseline.json
 
 # Rebuild the leaderboard HTML
@@ -50,19 +64,21 @@ ltbench leaderboard
 
 ```
 document-parser/
-├── BENCHMARK.md              # The spec — the citeable artifact
+├── BENCHMARK.md              # Benchmark spec — the citeable artifact
 ├── LEADERBOARD.md            # Current results (mirror of leaderboard/index.html)
 ├── llms.txt                  # GEO root file for LLM crawlers
 ├── ltbench/                  # Python package
 │   ├── schemas.py            # Pydantic models for manifest, annotation, submission
-│   ├── metrics/              # chrF, layout IoU, reading-order Kendall τ, composite
-│   ├── runners/              # System adapters (identity, deepl, google, qwen, ...)
+│   ├── metrics/              # chrF, layout IoU, reading-order τ, COMET-Kiwi, composite
+│   ├── runners/              # System adapters (identity, deepl, nllb, opus-mt, ...)
 │   ├── dataset/              # Manifest loader and validator
 │   ├── leaderboard/          # Static HTML generator
 │   └── cli.py                # ltbench command
 ├── data/
-│   ├── manifest.json         # The 200-doc index (v0.1 ships 5 samples)
-│   └── annotations/          # Per-doc ground-truth JSON files
+│   ├── manifest.json         # 59-doc index (v0.1.7)
+│   ├── annotations/          # Author-curated ground-truth JSONs (doc_001–025)
+│   ├── flores_derived/       # FLORES-200 derived docs + CC-BY-SA-4.0 LICENSE
+│   └── rileykim_derived/     # ML-curated expansion docs (Apache-2.0)
 ├── submissions/              # System submissions (one subdir per system)
 ├── results/                  # Scored result JSONs (input to leaderboard)
 ├── leaderboard/              # Generated static site
@@ -75,18 +91,20 @@ document-parser/
 LTB-100 (v0.1) = 100 × ( 0.50 × chrF/100  +  0.30 × IoU  +  0.20 × Kendall-τ )
 ```
 
-- **chrF** — character-level F-score (F₂, n-grams 1..6) of predicted vs reference translation, per region, area-weighted
+- **chrF** — character-level F-score (F₂, n-grams 1..6) of predicted vs reference translation, per region, area-weighted; language-detection gate prevents Latin-bleed on non-Latin targets
 - **Layout IoU** — mean intersection-over-union of predicted vs ground-truth bounding boxes
-- **Kendall τ** — normalized to [0, 1], measures how well the system preserves source reading order
+- **Kendall τ** — coverage-aware, normalized to [0, 1]; measures how well the system preserves source reading order
 
-Full details in [docs/methodology.md](docs/methodology.md).
+Optional second metric: **COMET-Kiwi-22** (reference-free neural QE) substitutes for chrF, producing a parallel leaderboard. Rankings differ most on non-Latin pairs. See [docs/comet-setup.md](docs/comet-setup.md).
+
+Full details: [docs/methodology.md](docs/methodology.md) · [docs/methodology-roadmap.md](docs/methodology-roadmap.md).
 
 ## Submit a system
 
 1. Run your system over `data/manifest.json` to produce one JSONL per language pair.
 2. Put them in `submissions/<your-system-name>/`.
 3. `ltbench score --submission submissions/<your-system-name>` produces a result JSON.
-4. Open a PR with the JSON. We re-score against the held-out split and update the leaderboard.
+4. Open a PR with the result JSON and submission directory.
 
 Full guide: [docs/submission.md](docs/submission.md).
 
@@ -102,7 +120,7 @@ Full guide: [docs/submission.md](docs/submission.md).
 ## License
 
 - **Code** — Apache-2.0 ([LICENSE](LICENSE))
-- **Dataset** — CC-BY-4.0 ([DATASET_LICENSE](DATASET_LICENSE)); individual document licenses recorded per entry in `data/manifest.json`
+- **Dataset** — CC-BY-4.0 for author-curated and rileykim-derived docs; CC-BY-SA-4.0 for FLORES-derived docs ([data/flores_derived/LICENSE](data/flores_derived/LICENSE)). Licenses recorded per entry in `data/manifest.json`.
 
 ## Citation
 
