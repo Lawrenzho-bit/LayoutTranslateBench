@@ -25,7 +25,7 @@
     "license": "https://www.apache.org/licenses/LICENSE-2.0",
     "creator": {"@type": "Organization", "name": "LayoutTranslateBench Contributors"},
     "keywords": ["document translation", "layout preservation", "OCR", "benchmark", "localization"],
-    "version": "0.1.0"
+    "version": "0.1.7"
   }
   </script>
   <style>
@@ -50,29 +50,30 @@
     .links { margin-top: 28px; color: var(--muted); }
     .links a { color: var(--accent); margin-right: 16px; }
     .empty { padding: 24px; text-align:center; color: var(--muted); }
+    .stale-note { color: var(--muted); font-size: 13px; font-style: italic; margin: 8px 0 16px; }
   </style>
 </head>
 <body>
   <main>
     <h1>LayoutTranslateBench Leaderboard</h1>
     <p class="lead">The first public benchmark for document translation that scores layout fidelity and reading order alongside translation quality. Composite score <strong>LTB-100</strong> combines chrF (text), layout IoU (visual), and reading-order Kendall tau.</p>
-    <div class="meta">Generated 2026-05-20T16:15:08+00:00 from LayoutTranslateBench v0.1.0.</div>
+    <div class="meta">Generated 2026-05-21 from LayoutTranslateBench v0.1.7.</div>
 
     <div class="card" style="background: rgba(255,200,90,0.06); border-left: 3px solid #f0a000; padding: 12px 16px; margin-bottom: 12px;">
-      <strong>Sample size — v0.1.5.</strong> Per-pair counts: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms (10 author-curated + 10 FLORES-200), N=28 for en-ja (+8 rileykim), N=27 for en-zh (+7 rileykim).
-      The <em>LTB-100</em> cell shows <code>point [95% CI]</code> via 1000-resample percentile bootstrap. CIs at N=20 are roughly √2× tighter than v0.1.3's N=10. v0.2 will scale to N≥25 author-curated per pair.
+      <strong>Sample size — v0.1.7.</strong> Core 8 pairs: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms, N=28 for en-ja, N=27 for en-zh. Extension 8 pairs: N=10 for en-ru (FLORES-200 certified-translator refs only), N=13 for en-ko/en-vi/en-id/en-ur/en-uz/en-kk/en-zh-tw (3 rileykim + 10 FLORES). All 16 pairs now covered.
+      The <em>LTB-100</em> cell shows <code>point [95% CI]</code> via 1000-resample percentile bootstrap (seed 42).
     </div>
 
     <div class="card" style="background: rgba(124,183,255,0.06); border-left: 3px solid #7cb7ff; padding: 12px 16px; margin-bottom: 20px;">
-      <strong>Two metrics shown.</strong> <em>chrF</em> (character-level F-score, fast, deterministic) and <em>COMET-Kiwi-22</em> (reference-free neural QE, slower but better correlated with human judgment). Rankings can differ — paraphrasing systems often score lower on chrF than on COMET.
+      <strong>Two metrics shown.</strong> <em>chrF</em> (character-level F-score, fast, deterministic) and <em>COMET-Kiwi-22</em> (reference-free neural QE, slower but better correlated with human judgment). Rankings can differ — paraphrasing systems often score lower on chrF than on COMET. ⚠️ COMET-Kiwi scores below are from v0.1.6 data; re-score against v0.1.7 is pending.
     </div>
 
-    
-    
+
+
     <h2 style="margin: 24px 0 8px;">End-to-end systems — chrF</h2>
     <p class="lead" style="margin-bottom: 12px;">Runners that produce their own bounding boxes — the realistic score.</p>
     <div class="card">
-      
+
       <table>
         <thead>
           <tr>
@@ -90,21 +91,21 @@
           </tr>
         </thead>
         <tbody>
-          
+
           <tr>
             <td class="num">1</td>
             <td><strong>identity-baseline</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">50.53 <span style="color: var(--muted); font-size: 12px;">[50.3, 50.8]</span></td>
-            <td class="num">1.12</td>
+            <td class="num">50.38 <span style="color: var(--muted); font-size: 12px;">[50.2, 50.6]</span></td>
+            <td class="num">0.62</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">15/16</td>
+            <td class="num">16/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td>cpu</td>
           </tr>
-          
+
           <tr>
             <td class="num">2</td>
             <td><strong>qwen3-vl-2b-instruct</strong> <span class="badge">v0.1.0</span></td>
@@ -118,16 +119,16 @@
             <td class="num">$0.0000</td>
             <td>cpu</td>
           </tr>
-          
+
         </tbody>
       </table>
-      
+
     </div>
-    
+
     <h2 style="margin: 24px 0 8px;">Oracle-layout reference — chrF</h2>
     <p class="lead" style="margin-bottom: 12px;">Runners given ground-truth bounding boxes; text-quality ceiling only.</p>
     <div class="card">
-      
+
       <table>
         <thead>
           <tr>
@@ -145,7 +146,7 @@
           </tr>
         </thead>
         <tbody>
-          
+
           <tr>
             <td class="num">1</td>
             <td><strong>deepl-text-oracle</strong> <span class="badge">v0.1.0</span></td>
@@ -159,44 +160,45 @@
             <td class="num">$0.0000</td>
             <td>api</td>
           </tr>
-          
+
           <tr>
             <td class="num">2</td>
-            <td><strong>nllb-text-oracle-nllb-200-distilled-600m</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">74.02 <span style="color: var(--muted); font-size: 12px;">[72.7, 75.4]</span></td>
-            <td class="num">42.87</td>
+            <td><strong>nllb-text-oracle</strong> <span class="badge">v0.1.0</span></td>
+            <td class="num">73.71 <span style="color: var(--muted); font-size: 12px;">[72.5, 74.9]</span></td>
+            <td class="num">47.61</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">15/16</td>
+            <td class="num">16/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td>cpu</td>
           </tr>
-          
+
           <tr>
             <td class="num">3</td>
             <td><strong>opus-mt-text-oracle</strong> <span class="badge">v0.1.0</span></td>
-            <td class="num">69.16 <span style="color: var(--muted); font-size: 12px;">[67.6, 70.9]</span></td>
-            <td class="num">30.95</td>
+            <td class="num">68.60 <span style="color: var(--muted); font-size: 12px;">[67.1, 70.0]</span></td>
+            <td class="num">37.26</td>
             <td class="num">1.0000</td>
             <td class="num">1.0000</td>
-            <td class="num">15/16</td>
+            <td class="num">16/16</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
             <td>cpu</td>
           </tr>
-          
+
         </tbody>
       </table>
-      
+
     </div>
-    
+
     <h2 style="margin: 24px 0 8px;">End-to-end systems — COMET-Kiwi</h2>
     <p class="lead" style="margin-bottom: 12px;">Same systems scored with reference-free COMET-Kiwi-22.</p>
+    <p class="stale-note">⚠️ Scores below are from v0.1.6 data (N≤3 for extension pairs). COMET-Kiwi re-score against v0.1.7 is pending.</p>
     <div class="card">
-      
+
       <table>
         <thead>
           <tr>
@@ -214,7 +216,7 @@
           </tr>
         </thead>
         <tbody>
-          
+
           <tr>
             <td class="num">1</td>
             <td><strong>identity-baseline</strong> <span class="badge">v0.1.0</span></td>
@@ -228,7 +230,7 @@
             <td class="num">—</td>
             <td>cpu</td>
           </tr>
-          
+
           <tr>
             <td class="num">2</td>
             <td><strong>qwen3-vl-2b-instruct</strong> <span class="badge">v0.1.0</span></td>
@@ -242,16 +244,17 @@
             <td class="num">$0.0000</td>
             <td>cpu</td>
           </tr>
-          
+
         </tbody>
       </table>
-      
+
     </div>
-    
+
     <h2 style="margin: 24px 0 8px;">Oracle-layout reference — COMET-Kiwi</h2>
     <p class="lead" style="margin-bottom: 12px;">Same systems, oracle-layout, COMET-Kiwi.</p>
+    <p class="stale-note">⚠️ Scores below are from v0.1.6 data (N≤3 for extension pairs). COMET-Kiwi re-score against v0.1.7 is pending.</p>
     <div class="card">
-      
+
       <table>
         <thead>
           <tr>
@@ -269,10 +272,10 @@
           </tr>
         </thead>
         <tbody>
-          
+
           <tr>
             <td class="num">1</td>
-            <td><strong>nllb-text-oracle-nllb-200-distilled-600m</strong> <span class="badge">v0.1.0</span></td>
+            <td><strong>nllb-text-oracle</strong> <span class="badge">v0.1.0</span></td>
             <td class="num">86.95 <span style="color: var(--muted); font-size: 12px;">[85.8, 88.0]</span></td>
             <td class="num">66.81</td>
             <td class="num">1.0000</td>
@@ -283,7 +286,7 @@
             <td class="num">—</td>
             <td>cpu</td>
           </tr>
-          
+
           <tr>
             <td class="num">2</td>
             <td><strong>deepl-text-oracle</strong> <span class="badge">v0.1.0</span></td>
@@ -297,7 +300,7 @@
             <td class="num">$0.0000</td>
             <td>api</td>
           </tr>
-          
+
           <tr>
             <td class="num">3</td>
             <td><strong>opus-mt-text-oracle</strong> <span class="badge">v0.1.0</span></td>
@@ -311,12 +314,12 @@
             <td class="num">—</td>
             <td>cpu</td>
           </tr>
-          
+
         </tbody>
       </table>
-      
+
     </div>
-    
+
 
     <div class="links">
       <a href="../BENCHMARK.html">Specification</a>
