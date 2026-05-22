@@ -1,6 +1,6 @@
 {
   "system": {
-    "system_name": "nllb-text-oracle-nllb-200-distilled-600m",
+    "system_name": "nllb-text-oracle",
     "system_version": "0.1.0",
     "manifest_version": "0.1",
     "model_id_or_url": "https://huggingface.co/facebook/nllb-200-distilled-600M",

@@ -91,9 +91,9 @@ class FlorenceNllbRunner(Runner):
 
     @property
     def name(self) -> str:  # type: ignore[override]  # noqa: F811
-        florence_id = self.florence_model.split("/")[-1].lower()
-        nllb_id = self.nllb_model.split("/")[-1].lower()
-        return f"florence-nllb-{florence_id}-{nllb_id}"
+        # Fixed short name. The Florence-2 / NLLB-200 model IDs are recorded
+        # separately in model_id_or_url, so no verbose suffix is needed here.
+        return "florence-nllb"
 
     def system_manifest(self) -> SystemManifest:
         return SystemManifest(
@@ -150,7 +150,8 @@ class FlorenceNllbRunner(Runner):
             self.florence_model, trust_remote_code=True
         )
         self._florence_model = AutoModelForCausalLM.from_pretrained(
-            self.florence_model, trust_remote_code=True, torch_dtype=torch_dtype
+            self.florence_model, trust_remote_code=True, torch_dtype=torch_dtype,
+            attn_implementation="eager"
         ).to(self.device)
         self._florence_model.eval()
 
@@ -190,6 +191,7 @@ class FlorenceNllbRunner(Runner):
                 max_new_tokens=1024,
                 num_beams=3,
                 do_sample=False,
+                use_cache=False,
             )
         generated_text = self._florence_processor.batch_decode(  # type: ignore[union-attr]
             generated_ids, skip_special_tokens=False
@@ -273,7 +275,7 @@ class FlorenceNllbRunner(Runner):
             translated = self._nllb_translate(src_text, target_code)
             predicted_regions.append(
                 PredictedRegion(
-                    region_id=f"r{idx}",
+                    region_id=f"p{idx}",
                     bbox=bbox,
                     text=translated,
                     reading_order=idx,
@@ -284,7 +286,7 @@ class FlorenceNllbRunner(Runner):
             # Fallback so scoring doesn't crash
             predicted_regions = [
                 PredictedRegion(
-                    region_id="r0", bbox=(0.0, 0.0, 1.0, 1.0), text="", reading_order=0
+                    region_id="p0", bbox=(0.0, 0.0, 1.0, 1.0), text="", reading_order=0
                 )
             ]
 

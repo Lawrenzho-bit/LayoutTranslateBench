@@ -66,10 +66,10 @@ def _build_prompt(target_lang_name: str) -> str:
     return (
         f"TASK: Translate every text region in this document image into {target_lang_name}.\n\n"
         f"OUTPUT FORMAT: A JSON array. Each element has:\n"
-        f'  - "region_id": short id like "r0", "r1", "r2", assigned in reading order\n'
+        f'  - "region_id": short id like "p0", "p1", "p2", assigned in reading order\n'
         f'  - "bbox": [x1, y1, x2, y2] in absolute pixels, top-left origin\n'
         f'  - "text": the text translated into {target_lang_name}\n'
-        f'  - "reading_order": 0-based integer (same as the index in "r0", "r1", ...)\n\n'
+        f'  - "reading_order": 0-based integer (same as the index in "p0", "p1", ...)\n\n'
         f"CRITICAL RULES:\n"
         f"  1. You MUST translate the text into {target_lang_name}. Do not return English. "
         f"Do not return the source language unchanged.\n"
@@ -78,7 +78,7 @@ def _build_prompt(target_lang_name: str) -> str:
         f"  3. Preserve every visible region — do not skip, merge, or summarise.\n"
         f"  4. Reply with ONLY the JSON array. No prose. No code fences. No commentary.\n\n"
         f"EXAMPLE (correct output for a region containing 'Hello world' at bbox [10,10,100,30]):\n"
-        f'  {{"region_id":"r0","bbox":[10,10,100,30],"text":{example_translation},"reading_order":0}}\n'
+        f'  {{"region_id":"p0","bbox":[10,10,100,30],"text":{example_translation},"reading_order":0}}\n'
     )
 
 
@@ -333,7 +333,7 @@ class QwenVLRunner(Runner):
             text = str(r.get("text", "")).strip()
             if not text:
                 continue
-            region_id = str(r.get("region_id") or f"r{idx}")
+            region_id = f"p{idx}"  # position-indexed: end-to-end runners must not assume GT ids
             reading_order = int(r.get("reading_order", idx))
             regions.append(
                 PredictedRegion(
@@ -349,7 +349,7 @@ class QwenVLRunner(Runner):
             self._parser_failures = getattr(self, "_parser_failures", 0) + 1
             regions = [
                 PredictedRegion(
-                    region_id="r0", bbox=(0.0, 0.0, 1.0, 1.0), text="", reading_order=0
+                    region_id="p0", bbox=(0.0, 0.0, 1.0, 1.0), text="", reading_order=0
                 )
             ]
 

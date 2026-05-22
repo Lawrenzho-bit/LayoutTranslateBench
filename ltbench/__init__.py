@@ -1,6 +1,6 @@
 """LayoutTranslateBench — benchmark for document translation with layout preservation."""
 
-__version__ = "0.1.0"
+__version__ = "0.1.7.2"
 
 LANG_PAIRS: tuple[str, ...] = (
     # Core 8 pairs (v0.1) — used by author-curated docs 001–010 and FLORES docs 026–035
