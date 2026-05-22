@@ -96,8 +96,9 @@ class NllbTextRunner(Runner):
 
     @property
     def name(self) -> str:  # type: ignore[override]  # noqa: F811
-        slug = self.nllb_model.split("/")[-1].lower()
-        return f"nllb-text-oracle-{slug}"
+        # Fixed short name. The NLLB-200 model ID is recorded separately in
+        # model_id_or_url, so no verbose suffix is needed here.
+        return "nllb-text-oracle"
 
     def system_manifest(self) -> SystemManifest:
         return SystemManifest(

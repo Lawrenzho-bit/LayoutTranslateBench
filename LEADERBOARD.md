@@ -1,12 +1,10 @@
 # LayoutTranslateBench Leaderboard
 
-_Generated 2026-05-21 from LayoutTranslateBench v0.1.7._
+_Generated 2026-05-22T05:19:47+00:00 from LayoutTranslateBench v0.1.0._
 
-**Sample size — v0.1.7.** Core 8 pairs: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms, N=28 for en-ja, N=27 for en-zh. Extension 8 pairs (v0.1.7): N=10 for en-ru (FLORES-200 only; rileykim refs removed at v0.1.6.4), N=13 for en-ko/en-vi/en-id/en-ur/en-uz/en-kk/en-zh-tw (3 rileykim + 10 FLORES). All 16 pairs now covered. LTB-100 cell shows `point [95% CI low, CI high]` via 1000-resample percentile bootstrap (seed 42).
+**Sample size — v0.1.6.** Core 8 pairs: N=20 for en-es/en-de/en-ar/en-fr/en-th/en-ms, N=28 for en-ja, N=27 for en-zh. Extension 8 pairs (v0.1.6): N=3 each for en-ko/en-vi/en-id/en-ur/en-uz/en-kk/en-zh-tw; N=0 for en-ru (rileykim labeling bug removed all refs at v0.1.6.4 script-validation). LTB-100 cell shows `point [95% CI low, CI high]` via 1000-resample percentile bootstrap. Coverage column shows pairs with ≥1 scored doc.
 
 **Metric.** Two parallel leaderboards are shown — **chrF** (character-level F-score, fast, deterministic, paraphrase-blind) and **COMET-Kiwi-22** (reference-free neural MT quality estimation, slower but more correlated with human judgment). System rankings can differ between metrics, especially for systems that paraphrase well.
-
-**Note — COMET-Kiwi-22 (Leaderboard B)** scores are from v0.1.7 data (same run as chrF above; COMET-Kiwi is reference-free so it re-runs against all 16 pairs). Notable finding: COMET–chrF gap is largest for non-Latin extension pairs (e.g. NLLB en-kk: COMET 83.5 vs chrF 52.2), validating dual-metric design.
 
 ---
 
