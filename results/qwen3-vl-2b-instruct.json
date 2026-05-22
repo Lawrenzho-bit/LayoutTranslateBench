@@ -26,92 +26,92 @@
     "layout_iou": 0.3,
     "reading_order_tau": 0.2
   },
-  "overall_ltb_100": 16.354124259941816,
-  "overall_ltb_100_ci_low": 14.006793571745046,
-  "overall_ltb_100_ci_high": 18.57384363438499,
-  "overall_chrf": 2.599771322011241,
-  "overall_layout_iou": 0.039486524726444566,
-  "overall_reading_order_tau": 0.6934821428571428,
+  "overall_ltb_100": 14.82118207617448,
+  "overall_ltb_100_ci_low": 12.115419409274846,
+  "overall_ltb_100_ci_high": 17.40178046086394,
+  "overall_chrf": 5.125673338618073,
+  "overall_layout_iou": 0.1083734183240862,
+  "overall_reading_order_tau": 0.45035714285714284,
   "per_lang_pair": [
     {
       "lang_pair": "en-es",
       "n_docs": 5,
-      "chrf": 3.694908247570007,
-      "layout_iou": 0.04424509168415852,
-      "reading_order_tau": 0.6064285714285714,
-      "ltb_100": 15.303378302881189,
-      "ltb_100_ci_low": 6.266561147833286,
-      "ltb_100_ci_high": 22.539743031249518
+      "chrf": 9.886281912991116,
+      "layout_iou": 0.10767406260164883,
+      "reading_order_tau": 0.4342857142857143,
+      "ltb_100": 16.85907712025931,
+      "ltb_100_ci_low": 6.433979002740452,
+      "ltb_100_ci_high": 26.3586285815657
     },
     {
       "lang_pair": "en-de",
       "n_docs": 5,
-      "chrf": 1.3893139912370165,
-      "layout_iou": 0.040569669944186176,
-      "reading_order_tau": 0.6314285714285715,
-      "ltb_100": 14.540318522515523,
-      "ltb_100_ci_low": 7.306721500353271,
-      "ltb_100_ci_high": 20.385596400442793
+      "chrf": 1.711878100855151,
+      "layout_iou": 0.11330946373017362,
+      "reading_order_tau": 0.48428571428571426,
+      "ltb_100": 13.94093724804707,
+      "ltb_100_ci_low": 7.023935737364671,
+      "ltb_100_ci_high": 19.91312687788537
     },
     {
       "lang_pair": "en-zh",
       "n_docs": 5,
-      "chrf": 1.092958162033095,
-      "layout_iou": 0.03463185549902724,
-      "reading_order_tau": 0.6064285714285714,
-      "ltb_100": 13.714006174558795,
-      "ltb_100_ci_low": 6.176103595925229,
-      "ltb_100_ci_high": 19.76413316315459
+      "chrf": 4.472952665771696,
+      "layout_iou": 0.09658828207735844,
+      "reading_order_tau": 0.4057142857142857,
+      "ltb_100": 13.248410509492315,
+      "ltb_100_ci_low": 5.730014734482866,
+      "ltb_100_ci_high": 19.169844825735066
     },
     {
       "lang_pair": "en-ar",
       "n_docs": 5,
-      "chrf": 3.4646599448099447,
-      "layout_iou": 0.03436369473261873,
-      "reading_order_tau": 0.6314285714285715,
-      "ltb_100": 15.391812242954963,
-      "ltb_100_ci_low": 7.066844121785886,
-      "ltb_100_ci_high": 21.751157856309
+      "chrf": 2.3649344065348834,
+      "layout_iou": 0.10091311988835819,
+      "reading_order_tau": 0.4342857142857143,
+      "ltb_100": 12.895575085632473,
+      "ltb_100_ci_low": 6.709011701785546,
+      "ltb_100_ci_high": 17.690661406773025
     },
     {
       "lang_pair": "en-ja",
       "n_docs": 5,
-      "chrf": 1.092734147130086,
-      "layout_iou": 0.04470718810702652,
-      "reading_order_tau": 0.7778571428571428,
-      "ltb_100": 17.444725573918696,
-      "ltb_100_ci_low": 13.678876615938933,
-      "ltb_100_ci_high": 20.182287262327232
+      "chrf": 3.364797837881232,
+      "layout_iou": 0.11412854199218189,
+      "reading_order_tau": 0.47,
+      "ltb_100": 14.506255178706073,
+      "ltb_100_ci_low": 9.943587794659019,
+      "ltb_100_ci_high": 18.99456852999722
     },
     {
       "lang_pair": "en-fr",
       "n_docs": 5,
-      "chrf": 3.789459645983985,
-      "layout_iou": 0.03606608976559271,
-      "reading_order_tau": 0.6064285714285714,
-      "ltb_100": 15.105283944531203,
-      "ltb_100_ci_low": 7.0778303097357975,
-      "ltb_100_ci_high": 21.885656886869867
+      "chrf": 9.783234866004436,
+      "layout_iou": 0.10324414276171477,
+      "reading_order_tau": 0.3842857142857143,
+      "ltb_100": 15.674656001567946,
+      "ltb_100_ci_low": 7.084674455289379,
+      "ltb_100_ci_high": 23.282278331285045
     },
     {
       "lang_pair": "en-th",
       "n_docs": 5,
-      "chrf": 3.2697487571355253,
-      "layout_iou": 0.03914489400500992,
-      "reading_order_tau": 0.8564285714285714,
-      "ltb_100": 19.93779262728949,
-      "ltb_100_ci_low": 18.074223416611574,
-      "ltb_100_ci_high": 21.937653815591734
+      "chrf": 5.108836078152098,
+      "layout_iou": 0.12235829285464958,
+      "reading_order_tau": 0.495,
+      "ltb_100": 16.125166824715535,
+      "ltb_100_ci_low": 9.91815807165684,
+      "ltb_100_ci_high": 22.169539727506113
     },
     {
       "lang_pair": "en-ms",
       "n_docs": 5,
-      "chrf": 3.0043876801902685,
-      "layout_iou": 0.04216371407393668,
-      "reading_order_tau": 0.8314285714285714,
-      "ltb_100": 19.395676690884667,
-      "ltb_100_ci_low": 17.674730550775166,
-      "ltb_100_ci_high": 21.587337724418923
+      "chrf": 4.312470840753972,
+      "layout_iou": 0.10877144068660435,
+      "reading_order_tau": 0.495,
+      "ltb_100": 15.319378640975117,
+      "ltb_100_ci_low": 11.670409558564401,
+      "ltb_100_ci_high": 19.796875557131454
     },
     {
       "lang_pair": "en-ru",
@@ -198,15 +198,15 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-ar",
-      "chrf": 10.518817385559435,
-      "layout_iou": 0.10346140780724503,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 25.50610806985421,
+      "chrf": 5.971500996837084,
+      "layout_iou": 0.13727017629544408,
+      "reading_order_tau": 0.5714285714285714,
+      "ltb_100": 18.532427215853293,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 11.26984126984127,
-          "layout_iou": 0.0,
+          "chrf": 0.0,
+          "layout_iou": 0.3298872180451128,
           "matched": true
         },
         {
@@ -223,9 +223,9 @@
         },
         {
           "region_id": "r4",
-          "chrf": 4.874551971326164,
-          "layout_iou": 0.07472093553041233,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -235,9 +235,9 @@
         },
         {
           "region_id": "r6",
-          "chrf": 16.106979284958953,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -251,58 +251,58 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-ar",
-      "chrf": 0.29868578255675027,
-      "layout_iou": 0.0,
-      "reading_order_tau": 0.875,
-      "ltb_100": 17.649342891278376,
+      "chrf": 0.0,
+      "layout_iou": 0.17811313644102705,
+      "reading_order_tau": 0.625,
+      "ltb_100": 17.84339409323081,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.39215686274509803,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.2145214521452145,
           "matched": true
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.373134328358209,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 2.6881720430107525,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.26627218934911245,
           "matched": true
         },
         {
           "region_id": "r8",
           "chrf": 0.0,
-          "layout_iou": 0.0,
-          "matched": false
+          "layout_iou": 0.10309278350515463,
+          "matched": true
         }
       ],
       "parser_failure": false
@@ -310,33 +310,33 @@
     {
       "doc_id": "doc_003",
       "lang_pair": "en-ar",
-      "chrf": 6.505796555933537,
-      "layout_iou": 0.012194475267480414,
-      "reading_order_tau": 0.625,
-      "ltb_100": 16.11873253599118,
+      "chrf": 5.853171035837334,
+      "layout_iou": 0.06579347284875567,
+      "reading_order_tau": 0.375,
+      "ltb_100": 12.400389703381338,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 4.78927203065134,
-          "layout_iou": 0.018633540372670808,
+          "chrf": 47.59811591407155,
+          "layout_iou": 0.24830464267083985,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 7.647058823529412,
-          "layout_iou": 0.053411194986469165,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
-          "chrf": 7.775524002704532,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
-          "chrf": 27.34733690578494,
-          "layout_iou": 0.0,
+          "chrf": 2.6310903932792074,
+          "layout_iou": 0.17862246356101744,
           "matched": true
         },
         {
@@ -423,21 +423,21 @@
       "doc_id": "doc_005",
       "lang_pair": "en-ar",
       "chrf": 0.0,
-      "layout_iou": 0.05616259058836822,
-      "reading_order_tau": 0.8,
-      "ltb_100": 17.684877717651048,
+      "layout_iou": 0.12338881385656413,
+      "reading_order_tau": 0.6,
+      "ltb_100": 15.701664415696923,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.3058145913329676,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.041935483870967745,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -463,15 +463,15 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-de",
-      "chrf": 5.821180780694868,
-      "layout_iou": 0.10510852001244989,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 23.206703133578074,
+      "chrf": 6.813320495318076,
+      "layout_iou": 0.14053596864925794,
+      "reading_order_tau": 0.5714285714285714,
+      "ltb_100": 19.051310735708206,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 31.300878420332094,
+          "layout_iou": 0.34684684684684686,
           "matched": true
         },
         {
@@ -488,9 +488,9 @@
         },
         {
           "region_id": "r4",
-          "chrf": 6.525454205911612,
-          "layout_iou": 0.0793909940010631,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -500,9 +500,9 @@
         },
         {
           "region_id": "r6",
-          "chrf": 15.93615004295122,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -516,45 +516,45 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-de",
-      "chrf": 1.125389175490214,
-      "layout_iou": 0.030609121518212427,
-      "reading_order_tau": 0.875,
-      "ltb_100": 18.98096823329148,
+      "chrf": 1.7460700089576777,
+      "layout_iou": 0.23638743485581612,
+      "reading_order_tau": 0.75,
+      "ltb_100": 22.964658050153325,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.40816326530612246,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.24752475247524752,
           "matched": true
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.3597122302158273,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 2.7390843923101986,
-          "layout_iou": 0.0,
+          "chrf": 0.0,
+          "layout_iou": 0.41044776119402987,
           "matched": true
         },
         {
           "region_id": "r6",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 8.325211893517372,
+          "layout_iou": 0.2901023890784983,
           "matched": true
         },
         {
@@ -576,14 +576,14 @@
       "doc_id": "doc_003",
       "lang_pair": "en-de",
       "chrf": 0.0,
-      "layout_iou": 0.01537606590777299,
-      "reading_order_tau": 0.625,
-      "ltb_100": 12.961281977233192,
+      "layout_iou": 0.07183402122233441,
+      "reading_order_tau": 0.5,
+      "ltb_100": 12.155020636670033,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.018633540372670808,
+          "layout_iou": 0.24830464267083985,
           "matched": true
         },
         {
@@ -596,12 +596,12 @@
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.17862246356101744,
           "matched": true
         },
         {
@@ -688,21 +688,21 @@
       "doc_id": "doc_005",
       "lang_pair": "en-de",
       "chrf": 0.0,
-      "layout_iou": 0.051754642282495586,
-      "reading_order_tau": 0.8,
-      "ltb_100": 17.55263926847487,
+      "layout_iou": 0.1177898939234596,
+      "reading_order_tau": 0.6,
+      "ltb_100": 15.533696817703788,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.2996575342465753,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.040268456375838924,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -728,15 +728,15 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-es",
-      "chrf": 10.35563404923451,
-      "layout_iou": 0.09861162317541326,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 25.2790228627368,
+      "chrf": 20.027970060586878,
+      "layout_iou": 0.13245852316391216,
+      "reading_order_tau": 0.5714285714285714,
+      "ltb_100": 25.416312153782233,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 9.947964493419038,
-          "layout_iou": 0.0,
+          "chrf": 100.0,
+          "layout_iou": 0.32308430651095826,
           "matched": true
         },
         {
@@ -754,8 +754,8 @@
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0680786686838124,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -765,9 +765,9 @@
         },
         {
           "region_id": "r6",
-          "chrf": 17.321952208662594,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -781,45 +781,45 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-es",
-      "chrf": 1.3323907275520177,
-      "layout_iou": 0.05796225162422345,
-      "reading_order_tau": 0.875,
-      "ltb_100": 19.905062912502714,
+      "chrf": 3.1445886346948053,
+      "layout_iou": 0.22393894191923747,
+      "reading_order_tau": 0.75,
+      "ltb_100": 23.290462574924533,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.40816326530612246,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.2857142857142857,
           "matched": true
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.38461538461538464,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 4.5311990876507,
-          "layout_iou": 0.014084507042253521,
+          "chrf": 0.0,
+          "layout_iou": 0.2413793103448276,
           "matched": true
         },
         {
           "region_id": "r6",
-          "chrf": 0.0,
-          "layout_iou": 0.09090909090909091,
+          "chrf": 20.84098025193579,
+          "layout_iou": 0.14285714285714285,
           "matched": true
         },
         {
@@ -841,32 +841,32 @@
       "doc_id": "doc_003",
       "lang_pair": "en-es",
       "chrf": 0.0,
-      "layout_iou": 0.0071667493343596685,
-      "reading_order_tau": 0.5,
-      "ltb_100": 10.21500248003079,
+      "layout_iou": 0.058452761997334304,
+      "reading_order_tau": 0.25,
+      "ltb_100": 6.753582859920029,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.020792079207920793,
+          "layout_iou": 0.24830464267083985,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.09230542017427264,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.17862246356101744,
           "matched": true
         },
         {
@@ -952,22 +952,22 @@
     {
       "doc_id": "doc_005",
       "lang_pair": "en-es",
-      "chrf": 6.786516461063508,
-      "layout_iou": 0.05748483428679623,
-      "reading_order_tau": 0.8,
-      "ltb_100": 21.11780325913564,
+      "chrf": 26.2588508696739,
+      "layout_iou": 0.12352008592776023,
+      "reading_order_tau": 0.6,
+      "ltb_100": 28.835028012669756,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 88.92342714211783,
+          "layout_iou": 0.2996575342465753,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 12.575590984057177,
-          "layout_iou": 0.040268456375838924,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -993,15 +993,15 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-fr",
-      "chrf": 4.621329435817267,
-      "layout_iou": 0.10596803827229839,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 22.632563008934728,
+      "chrf": 8.343862792075573,
+      "layout_iou": 0.14320936436243784,
+      "reading_order_tau": 0.5714285714285714,
+      "ltb_100": 19.89678375548235,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 46.71830072883202,
+          "layout_iou": 0.3656716417910448,
           "matched": true
         },
         {
@@ -1018,9 +1018,9 @@
         },
         {
           "region_id": "r4",
-          "chrf": 4.329272774041819,
-          "layout_iou": 0.08445546442876216,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -1030,9 +1030,9 @@
         },
         {
           "region_id": "r6",
-          "chrf": 13.644059000196213,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -1046,51 +1046,51 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-fr",
-      "chrf": 1.0635746236867263,
-      "layout_iou": 0.0,
-      "reading_order_tau": 0.875,
-      "ltb_100": 18.031787311843363,
+      "chrf": 0.0,
+      "layout_iou": 0.1842196173654851,
+      "reading_order_tau": 0.5,
+      "ltb_100": 15.526588520964552,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.4166666666666667,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.2898550724637681,
           "matched": true
         },
         {
           "region_id": "r3",
-          "chrf": 5.937029873200086,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.390625,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 3.6351417399804498,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.31645569620253167,
           "matched": true
         },
         {
@@ -1105,33 +1105,33 @@
     {
       "doc_id": "doc_003",
       "lang_pair": "en-fr",
-      "chrf": 3.176627633031075,
-      "layout_iou": 0.006935667768137463,
-      "reading_order_tau": 0.5,
-      "ltb_100": 11.796383849559662,
+      "chrf": 15.671609352967417,
+      "layout_iou": 0.058452761997334304,
+      "reading_order_tau": 0.25,
+      "ltb_100": 14.589387536403736,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.018633540372670808,
+          "chrf": 68.17499947334817,
+          "layout_iou": 0.24830464267083985,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 6.880451581765571,
-          "layout_iou": 0.09230542017427264,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
-          "chrf": 2.140461039381378,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
-          "chrf": 15.09750231693623,
-          "layout_iou": 0.0,
+          "chrf": 46.92834319731463,
+          "layout_iou": 0.17862246356101744,
           "matched": true
         },
         {
@@ -1217,22 +1217,22 @@
     {
       "doc_id": "doc_005",
       "lang_pair": "en-fr",
-      "chrf": 10.085766537384856,
-      "layout_iou": 0.0674267427875277,
-      "reading_order_tau": 0.8,
-      "ltb_100": 23.06568555231826,
+      "chrf": 24.90070218497919,
+      "layout_iou": 0.13033897008331663,
+      "reading_order_tau": 0.6,
+      "ltb_100": 28.360520194989093,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 12.54135969267387,
-          "layout_iou": 0.0,
+          "chrf": 83.22869690398154,
+          "layout_iou": 0.2876712328767123,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 13.358559798188283,
-          "layout_iou": 0.0410958904109589,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -1258,15 +1258,15 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-ja",
-      "chrf": 2.533304420526025,
-      "layout_iou": 0.10346140780724503,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 21.513351587337507,
+      "chrf": 14.272414829690373,
+      "layout_iou": 0.13788804675684227,
+      "reading_order_tau": 0.5714285714285714,
+      "ltb_100": 22.701420246121884,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 100.0,
+          "layout_iou": 0.3344594594594595,
           "matched": true
         },
         {
@@ -1283,9 +1283,9 @@
         },
         {
           "region_id": "r4",
-          "chrf": 1.0162601626016257,
-          "layout_iou": 0.07472093553041233,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -1295,9 +1295,9 @@
         },
         {
           "region_id": "r6",
-          "chrf": 11.29366137382072,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -1311,58 +1311,58 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-ja",
-      "chrf": 0.46476788679517717,
-      "layout_iou": 0.0,
-      "reading_order_tau": 0.875,
-      "ltb_100": 17.73238394339759,
+      "chrf": 0.0,
+      "layout_iou": 0.1753537467823182,
+      "reading_order_tau": 0.5,
+      "ltb_100": 15.260612403469546,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.40816326530612246,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.2857142857142857,
           "matched": true
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.38461538461538464,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 4.182910981156595,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r8",
           "chrf": 0.0,
-          "layout_iou": 0.0,
-          "matched": false
+          "layout_iou": 0.2727272727272727,
+          "matched": true
         }
       ],
       "parser_failure": false
@@ -1371,32 +1371,32 @@
       "doc_id": "doc_003",
       "lang_pair": "en-ja",
       "chrf": 0.0,
-      "layout_iou": 0.006941512347271415,
-      "reading_order_tau": 0.5,
-      "ltb_100": 10.208245370418142,
+      "layout_iou": 0.05847098939310999,
+      "reading_order_tau": 0.25,
+      "ltb_100": 6.7541296817933,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.018633540372670808,
+          "layout_iou": 0.24830464267083985,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.09241460890137512,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.17872462110380327,
           "matched": true
         },
         {
@@ -1430,27 +1430,27 @@
       "doc_id": "doc_004",
       "lang_pair": "en-ja",
       "chrf": 0.0,
-      "layout_iou": 0.04987134877896343,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 18.638997606226045,
+      "layout_iou": 0.06963300378602229,
+      "reading_order_tau": 0.42857142857142855,
+      "ltb_100": 10.66041868500924,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.12639225181598063,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
@@ -1462,7 +1462,7 @@
           "region_id": "r5",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
@@ -1482,22 +1482,22 @@
     {
       "doc_id": "doc_005",
       "lang_pair": "en-ja",
-      "chrf": 2.465598428329228,
-      "layout_iou": 0.06326167160165275,
-      "reading_order_tau": 0.8,
-      "ltb_100": 19.1306493622142,
+      "chrf": 2.5515743597157874,
+      "layout_iou": 0.12929692324261674,
+      "reading_order_tau": 0.6,
+      "ltb_100": 17.154694877136397,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 3.2467532467532467,
+          "layout_iou": 0.2996575342465753,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 3.623188405797101,
-          "layout_iou": 0.040268456375838924,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -1523,15 +1523,15 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-ms",
-      "chrf": 7.200684946142241,
-      "layout_iou": 0.10438529297657281,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 23.87475840522545,
+      "chrf": 17.379010968827902,
+      "layout_iou": 0.13824412691929389,
+      "reading_order_tau": 0.5714285714285714,
+      "ltb_100": 24.265400720564195,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 100.0,
+          "layout_iou": 0.3298872180451128,
           "matched": true
         },
         {
@@ -1548,9 +1548,9 @@
         },
         {
           "region_id": "r4",
-          "chrf": 7.950513538748833,
-          "layout_iou": 0.07437360643966592,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -1560,9 +1560,9 @@
         },
         {
           "region_id": "r6",
-          "chrf": 15.187349678869396,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -1576,51 +1576,51 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-ms",
-      "chrf": 0.5034665652945222,
-      "layout_iou": 0.0,
-      "reading_order_tau": 0.875,
-      "ltb_100": 17.751733282647265,
+      "chrf": 0.0,
+      "layout_iou": 0.16628413014263102,
+      "reading_order_tau": 0.5,
+      "ltb_100": 14.98852390427893,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.39215686274509803,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.24053880692751764,
           "matched": true
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.3486750348675035,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 4.5311990876507,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.28835063437139563,
           "matched": true
         },
         {
@@ -1635,15 +1635,15 @@
     {
       "doc_id": "doc_003",
       "lang_pair": "en-ms",
-      "chrf": 7.31778688951458,
-      "layout_iou": 0.04881328545441644,
-      "reading_order_tau": 0.625,
-      "ltb_100": 17.623292008389786,
+      "chrf": 4.183343234941957,
+      "layout_iou": 0.053599336740492734,
+      "reading_order_tau": 0.375,
+      "ltb_100": 11.199651719685761,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.07435897435897436,
+          "chrf": 32.24927498781485,
+          "layout_iou": 0.24830464267083985,
           "matched": true
         },
         {
@@ -1654,15 +1654,15 @@
         },
         {
           "region_id": "r3",
-          "chrf": 1.984126984126984,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
-          "chrf": 36.32167802607861,
-          "layout_iou": 0.07754342431761786,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -1695,51 +1695,51 @@
       "doc_id": "doc_004",
       "lang_pair": "en-ms",
       "chrf": 0.0,
-      "layout_iou": 0.0020796867960411677,
-      "reading_order_tau": 1.0,
-      "ltb_100": 20.062390603881237,
+      "layout_iou": 0.06443703449887342,
+      "reading_order_tau": 0.42857142857142855,
+      "ltb_100": 10.504539606394774,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.1261061946902655,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
-          "layout_iou": 0.01596159615961596,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.4963680387409201,
           "matched": true
         },
         {
           "region_id": "r5",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.24216524216524216,
           "matched": true
         },
         {
           "region_id": "r7",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         }
       ],
       "parser_failure": false
@@ -1748,21 +1748,21 @@
       "doc_id": "doc_005",
       "lang_pair": "en-ms",
       "chrf": 0.0,
-      "layout_iou": 0.05554030514265297,
-      "reading_order_tau": 0.8,
-      "ltb_100": 17.666209154279592,
+      "layout_iou": 0.12129257513173072,
+      "reading_order_tau": 0.6,
+      "ltb_100": 15.638777253951922,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.29851145855643607,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.040268456375838924,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -1788,15 +1788,15 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-th",
-      "chrf": 6.862002707469866,
-      "layout_iou": 0.10346140780724503,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 23.677700730809427,
+      "chrf": 5.3799397779476905,
+      "layout_iou": 0.13788804675684227,
+      "reading_order_tau": 0.5714285714285714,
+      "ltb_100": 18.25518272025054,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 7.407407407407408,
+          "layout_iou": 0.3344594594594595,
           "matched": true
         },
         {
@@ -1813,9 +1813,9 @@
         },
         {
           "region_id": "r4",
-          "chrf": 2.5410353535353534,
-          "layout_iou": 0.07472093553041233,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -1825,9 +1825,9 @@
         },
         {
           "region_id": "r6",
-          "chrf": 14.685220664469185,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -1841,51 +1841,51 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-th",
-      "chrf": 0.4039046377756055,
-      "layout_iou": 0.0053290700772715156,
-      "reading_order_tau": 0.875,
-      "ltb_100": 17.86182442120595,
+      "chrf": 2.3156644724373097,
+      "layout_iou": 0.25333937272022633,
+      "reading_order_tau": 0.75,
+      "ltb_100": 23.758013417825445,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.38461538461538464,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.273972602739726,
           "matched": true
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.36764705882352944,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 3.6351417399804498,
-          "layout_iou": 0.0,
+          "chrf": 0.0,
+          "layout_iou": 0.36764705882352944,
           "matched": true
         },
         {
           "region_id": "r6",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 20.84098025193579,
+          "layout_iou": 0.36764705882352944,
           "matched": true
         },
         {
           "region_id": "r7",
           "chrf": 0.0,
-          "layout_iou": 0.03597122302158273,
+          "layout_iou": 0.2927400468384075,
           "matched": true
         },
         {
@@ -1900,46 +1900,46 @@
     {
       "doc_id": "doc_003",
       "lang_pair": "en-th",
-      "chrf": 3.541756079034921,
-      "layout_iou": 0.017349822700695863,
-      "reading_order_tau": 0.75,
-      "ltb_100": 17.29137272053834,
+      "chrf": 3.956820847513836,
+      "layout_iou": 0.026582160483565067,
+      "reading_order_tau": 0.125,
+      "ltb_100": 5.27587523826387,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 3.8051750380517504,
-          "layout_iou": 0.018633540372670808,
+          "chrf": 36.96076499357155,
+          "layout_iou": 0.24830464267083985,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 1.0964912280701753,
-          "layout_iou": 0.029940119760479042,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
-          "chrf": 3.6832412523020257,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
-          "chrf": 2.07735698795887,
-          "layout_iou": 0.03076923076923077,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
-          "chrf": 1.8768768768768769,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
-          "chrf": 9.995635128412959,
-          "layout_iou": 0.03359375,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -1960,51 +1960,51 @@
       "doc_id": "doc_004",
       "lang_pair": "en-th",
       "chrf": 0.0,
-      "layout_iou": 0.0021574266523095064,
-      "reading_order_tau": 1.0,
-      "ltb_100": 20.06472279956929,
+      "layout_iou": 0.06068333364414628,
+      "reading_order_tau": 0.42857142857142855,
+      "ltb_100": 10.39192858075296,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.12639225181598063,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
-          "layout_iou": 0.01655824955647546,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.44021217057177464,
           "matched": true
         },
         {
           "region_id": "r5",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.26638176638176636,
           "matched": true
         },
         {
           "region_id": "r7",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         }
       ],
       "parser_failure": false
@@ -2012,22 +2012,22 @@
     {
       "doc_id": "doc_005",
       "lang_pair": "en-th",
-      "chrf": 5.541080361397234,
-      "layout_iou": 0.0674267427875277,
-      "reading_order_tau": 0.8,
-      "ltb_100": 20.79334246432445,
+      "chrf": 13.891755292861653,
+      "layout_iou": 0.133298550668468,
+      "reading_order_tau": 0.6,
+      "ltb_100": 22.944834166484863,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 6.189107827038861,
-          "layout_iou": 0.0,
+          "chrf": 49.50277318546563,
+          "layout_iou": 0.2996575342465753,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 11.86678985749483,
-          "layout_iou": 0.0410958904109589,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -2053,22 +2053,22 @@
     {
       "doc_id": "doc_001",
       "lang_pair": "en-zh",
-      "chrf": 3.243713715561972,
-      "layout_iou": 0.09577162596669378,
-      "reading_order_tau": 0.8571428571428571,
-      "ltb_100": 21.63786277963894,
+      "chrf": 14.51234784568118,
+      "layout_iou": 0.11289688820959913,
+      "reading_order_tau": 0.42857142857142855,
+      "ltb_100": 19.214509140557134,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 100.0,
+          "layout_iou": 0.33171776375112716,
           "matched": true
         },
         {
           "region_id": "r2",
-          "chrf": 1.1574074074074074,
-          "layout_iou": 0.09365672921884112,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -2078,9 +2078,9 @@
         },
         {
           "region_id": "r4",
-          "chrf": 1.3440860215053763,
-          "layout_iou": 0.09852216748768473,
-          "matched": true
+          "chrf": 0.0,
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r5",
@@ -2090,9 +2090,9 @@
         },
         {
           "region_id": "r6",
-          "chrf": 13.072357293385215,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
@@ -2106,58 +2106,58 @@
     {
       "doc_id": "doc_002",
       "lang_pair": "en-zh",
-      "chrf": 0.46476788679517717,
-      "layout_iou": 0.0,
-      "reading_order_tau": 0.875,
-      "ltb_100": 17.73238394339759,
+      "chrf": 0.0,
+      "layout_iou": 0.17545839675111408,
+      "reading_order_tau": 0.625,
+      "ltb_100": 17.76375190253342,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.38461538461538464,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.21172638436482086,
           "matched": true
         },
         {
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.36764705882352944,
           "matched": true
         },
         {
           "region_id": "r5",
-          "chrf": 4.182910981156595,
+          "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r6",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r7",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.2631578947368421,
           "matched": true
         },
         {
           "region_id": "r8",
           "chrf": 0.0,
-          "layout_iou": 0.0,
-          "matched": false
+          "layout_iou": 0.10204081632653061,
+          "matched": true
         }
       ],
       "parser_failure": false
@@ -2166,14 +2166,14 @@
       "doc_id": "doc_003",
       "lang_pair": "en-zh",
       "chrf": 0.0,
-      "layout_iou": 0.009783533106957051,
-      "reading_order_tau": 0.5,
-      "ltb_100": 10.293505993208713,
+      "layout_iou": 0.06451881772857312,
+      "reading_order_tau": 0.375,
+      "ltb_100": 9.435564531857194,
       "region_scores": [
         {
           "region_id": "r1",
           "chrf": 0.0,
-          "layout_iou": 0.03489531405782652,
+          "layout_iou": 0.24830464267083985,
           "matched": true
         },
         {
@@ -2186,12 +2186,12 @@
           "region_id": "r3",
           "chrf": 0.0,
           "layout_iou": 0.0,
-          "matched": true
+          "matched": false
         },
         {
           "region_id": "r4",
           "chrf": 0.0,
-          "layout_iou": 0.0,
+          "layout_iou": 0.17872462110380327,
           "matched": true
         },
         {
@@ -2277,22 +2277,22 @@
     {
       "doc_id": "doc_005",
       "lang_pair": "en-zh",
-      "chrf": 1.756309207808326,
-      "layout_iou": 0.06760411842148537,
-      "reading_order_tau": 0.8,
-      "ltb_100": 18.90627815654873,
+      "chrf": 7.852415483177299,
+      "layout_iou": 0.13006730769750585,
+      "reading_order_tau": 0.6,
+      "ltb_100": 19.828226972513825,
       "region_scores": [
         {
           "region_id": "r1",
-          "chrf": 0.0,
-          "layout_iou": 0.0,
+          "chrf": 24.689230415244342,
+          "layout_iou": 0.28657100021417864,
           "matched": true
         },
         {
           "region_id": "r2",
           "chrf": 0.0,
-          "layout_iou": 0.04199385455786958,
-          "matched": true
+          "layout_iou": 0.0,
+          "matched": false
         },
         {
           "region_id": "r3",
@@ -2316,5 +2316,5 @@
       "parser_failure": false
     }
   ],
-  "scored_at": "2026-05-20T11:44:37+00:00"
+  "scored_at": "2026-05-22T04:16:56+00:00"
 }

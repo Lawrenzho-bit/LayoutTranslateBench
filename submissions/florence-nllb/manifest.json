@@ -1,0 +1,20 @@
+{
+  "system_name": "florence-nllb",
+  "system_version": "0.1.0",
+  "manifest_version": "0.1",
+  "model_id_or_url": "https://huggingface.co/microsoft/Florence-2-base + https://huggingface.co/facebook/nllb-200-distilled-600M",
+  "runner_config": {
+    "florence_model": "microsoft/Florence-2-base",
+    "nllb_model": "facebook/nllb-200-distilled-600M",
+    "max_translation_tokens": 256,
+    "pipeline": "florence-2-grounded-ocr -> nllb-200-translation"
+  },
+  "hardware": "cpu",
+  "total_runtime_seconds": null,
+  "median_per_doc_runtime_seconds": null,
+  "cost_usd": null,
+  "submitter": null,
+  "notes": "End-to-end open-source product baseline. Florence-2 (MIT) extracts text regions with bboxes; NLLB-200 (CC-BY-NC-4.0) translates per region. NOT an oracle-layout runner \u2014 bboxes come from the model, not the GT annotation. License note: NLLB-200 is CC-BY-NC-4.0 \u2014 for commercial product use, swap in MADLAD-400 (Apache-2.0) or Helsinki-NLP/opus-mt models (CC-BY-4.0).",
+  "system_type": "end-to-end",
+  "parser_failures": 0
+}

@@ -33,7 +33,8 @@ def match_regions(
     """Match predicted regions to ground-truth regions.
 
     Strategy:
-        1. Exact match by region_id if present in both.
+        1. Exact region_id match, honored only when the boxes also overlap
+           (IoU >= min_iou).
         2. Greedy match remaining by max IoU, threshold `min_iou`.
 
     Returns a dict mapping ground-truth region_id -> predicted region_id (or None).
@@ -45,9 +46,14 @@ def match_regions(
     matched_pred: set[str] = set()
     mapping: dict[str, str | None] = {gid: None for gid in gt_by_id}
 
-    # Phase 1: exact region_id match (most submissions will satisfy this)
+    # Phase 1: exact region_id match, honored only when the boxes also overlap.
+    # Oracle runners copy GT region_ids *and* GT boxes, so this IoU check passes
+    # trivially (IoU = 1.0). End-to-end runners may emit ids that coincidentally
+    # collide with the GT `r1, r2, ...` namespace; gating on IoU keeps the scorer
+    # from honoring a spurious id match between non-overlapping regions and lets
+    # those fall through to Phase 2 greedy IoU matching.
     for gid in list(gt_by_id):
-        if gid in pred_by_id:
+        if gid in pred_by_id and bbox_iou(gt_by_id[gid].bbox, pred_by_id[gid].bbox) >= min_iou:
             mapping[gid] = gid
             matched_gt.add(gid)
             matched_pred.add(gid)
