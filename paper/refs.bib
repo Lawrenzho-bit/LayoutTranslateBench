@@ -1,0 +1,212 @@
+% LayoutTranslateBench preprint --- bibliography
+% Some arXiv IDs / DOIs are marked "% TODO: verify" where exact identifiers
+% could not be confirmed against a primary source at drafting time.
+
+@misc{ltbench2026,
+  title        = {{LayoutTranslateBench}: A Benchmark for Document Translation with Layout Preservation},
+  author       = {{LayoutTranslateBench Contributors}},
+  year         = {2026},
+  howpublished = {\url{https://github.com/Lawrenzho-bit/LayoutTranslateBench}},
+  note         = {Spec v0.1, Dataset v0.1.7}
+}
+
+% --- Text-quality metrics -------------------------------------------------
+
+@inproceedings{popovic2015chrf,
+  title     = {{chrF}: character n-gram {F}-score for automatic {MT} evaluation},
+  author    = {Popovi{\'c}, Maja},
+  booktitle = {Proceedings of the Tenth Workshop on Statistical Machine Translation},
+  pages     = {392--395},
+  year      = {2015},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/W15-3049}
+}
+
+@inproceedings{popovic2017chrfpp,
+  title     = {{chrF++}: words helping character n-grams},
+  author    = {Popovi{\'c}, Maja},
+  booktitle = {Proceedings of the Second Conference on Machine Translation},
+  pages     = {612--618},
+  year      = {2017},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/W17-4770}
+}
+
+@inproceedings{rei2020comet,
+  title     = {{COMET}: A Neural Framework for {MT} Evaluation},
+  author    = {Rei, Ricardo and Stewart, Craig and Farinha, Ana C and Lavie, Alon},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages     = {2685--2702},
+  year      = {2020},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2020.emnlp-main.213}
+}
+
+@inproceedings{rei2022cometkiwi,
+  title     = {{CometKiwi}: {IST}-{Unbabel} 2022 Submission for the Quality Estimation Shared Task},
+  author    = {Rei, Ricardo and Treviso, Marcos and Guerreiro, Nuno M and Zerva, Chrysoula and Farinha, Ana C and Maroti, Christine and C. de Souza, Jos{\'e} G. and Glushkova, Taisiya and Alves, Duarte M and Lavie, Alon and Coheur, Luisa and Martins, Andr{\'e} F. T.},
+  booktitle = {Proceedings of the Seventh Conference on Machine Translation (WMT)},
+  pages     = {634--645},
+  year      = {2022},
+  publisher = {Association for Computational Linguistics}
+}
+
+@article{kendall1938tau,
+  title     = {A New Measure of Rank Correlation},
+  author    = {Kendall, M. G.},
+  journal   = {Biometrika},
+  volume    = {30},
+  number    = {1/2},
+  pages     = {81--93},
+  year      = {1938},
+  doi       = {10.2307/2332226}
+}
+
+@inproceedings{papineni2002bleu,
+  title     = {{BLEU}: a Method for Automatic Evaluation of Machine Translation},
+  author    = {Papineni, Kishore and Roukos, Salim and Ward, Todd and Zhu, Wei-Jing},
+  booktitle = {Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics},
+  pages     = {311--318},
+  year      = {2002},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.3115/1073083.1073135}
+}
+
+@inproceedings{post2018sacrebleu,
+  title     = {A Call for Clarity in Reporting {BLEU} Scores},
+  author    = {Post, Matt},
+  booktitle = {Proceedings of the Third Conference on Machine Translation: Research Papers},
+  pages     = {186--191},
+  year      = {2018},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/W18-6319}
+}
+
+% --- Translation models / data -------------------------------------------
+
+@article{nllb2022,
+  title   = {No Language Left Behind: Scaling Human-Centered Machine Translation},
+  author  = {{NLLB Team} and Costa-juss{\`a}, Marta R. and Cross, James and {\c{C}}elebi, Onur and Elbayad, Maha and Heafield, Kenneth and Heffernan, Kevin and Kalbassi, Elahe and Lam, Janice and Licht, Daniel and Maillard, Jean and Sun, Anna and Wang, Skyler and Wenzek, Guillaume and Youngblood, Al and Akula, Bapi and Barrault, Loic and Mejia-Gonzalez, Gabriel and Hansanti, Prangthip and Hoffman, John and Jarrett, Semarley and Sadagopan, Kaushik Ram and Rowe, Dirk and Spruit, Shannon and Tran, Chau and Andrews, Pierre and Ayan, Necip Fazil and Bhosale, Shruti and Edunov, Sergey and Fan, Angela and Gao, Cynthia and Goswami, Vedanuj and Guzm{\'a}n, Francisco and Koehn, Philipp and Mourachko, Alexandre and Ropers, Christophe and Saleem, Safiyyah and Schwenk, Holger and Wang, Jeff},
+  journal = {arXiv preprint arXiv:2207.04672},
+  year    = {2022}
+}
+
+@article{flores200,
+  title   = {The {Flores-200} Evaluation Benchmark for Low-Resource and Multilingual Machine Translation},
+  author  = {{NLLB Team} and Costa-juss{\`a}, Marta R. and others},
+  journal = {arXiv preprint arXiv:2207.04672},
+  year    = {2022},
+  note    = {FLORES-200 is released together with the NLLB project}
+}
+
+@inproceedings{tiedemann2020opusmt,
+  title     = {{OPUS-MT} --- Building open translation services for the World},
+  author    = {Tiedemann, J{\"o}rg and Thottingal, Santhosh},
+  booktitle = {Proceedings of the 22nd Annual Conference of the European Association for Machine Translation (EAMT)},
+  pages     = {479--480},
+  year      = {2020}
+}
+
+@inproceedings{junczys2018marian,
+  title     = {{Marian}: Fast Neural Machine Translation in {C++}},
+  author    = {Junczys-Dowmunt, Marcin and Grundkiewicz, Roman and Dwojak, Tomasz and Hoang, Hieu and Heafield, Kenneth and Neckermann, Tom and Seide, Frank and Germann, Ulrich and Fikri Aji, Alham and Bogoychev, Nikolay and Martins, Andr{\'e} F. T. and Birch, Alexandra},
+  booktitle = {Proceedings of ACL 2018, System Demonstrations},
+  pages     = {116--121},
+  year      = {2018},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/P18-4020}
+}
+
+% --- Vision / document models --------------------------------------------
+
+@article{xiao2024florence2,
+  title   = {{Florence-2}: Advancing a Unified Representation for a Variety of Vision Tasks},
+  author  = {Xiao, Bin and Wu, Haiping and Xu, Weijian and Dai, Xiyang and Hu, Houdong and Lu, Yumao and Zeng, Michael and Liu, Ce and Yuan, Lu},
+  journal = {arXiv preprint arXiv:2311.06242},
+  year    = {2023}
+}
+
+@misc{qwen3vl2025,
+  title        = {{Qwen3-VL}},
+  author       = {{Qwen Team}},
+  year         = {2025},
+  howpublished = {\url{https://huggingface.co/Qwen}},
+  note         = {Vision-language model family. % TODO: verify exact release reference / arXiv ID}
+}
+
+% --- Related benchmarks ---------------------------------------------------
+
+@inproceedings{ouyang2024omnidocbench,
+  title     = {{OmniDocBench}: Benchmarking Diverse {PDF} Document Parsing with Comprehensive Annotations},
+  author    = {Ouyang, Linke and Qu, Yuan and Zhou, Hongbin and Zhu, Jiawei and Zhang, Rui and Lin, Qunshu and Wang, Bin and Zhao, Zhiyuan and Jiang, Man and Zhao, Xiaomeng and Shi, Jin and Wu, Fan and Chu, Pei and Liu, Minghao and Li, Zhenxiang and Xu, Chao and Zhang, Bo and Shi, Botian and Tu, Zhongying and He, Conghui},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2025},
+  note      = {arXiv:2412.07626. % TODO: verify final venue/page numbers}
+}
+
+@misc{sococrbench,
+  title        = {{socOCRbench}: A Benchmark for Multi-Region {OCR} Quality},
+  author       = {Dasanaike, Noah},
+  year         = {2024},
+  howpublished = {\url{https://noahdasanaike.github.io/posts/sococrbench.html}},
+  note         = {% TODO: verify author and year}
+}
+
+@article{omnidoctokenbench,
+  title   = {{OmniDoc-TokenBench}: Benchmarking Tokenizer Reconstruction of Text-Heavy Documents},
+  author  = {{OmniDoc-TokenBench Authors}},
+  journal = {arXiv preprint arXiv:2605.13565},
+  year    = {2026},
+  note    = {% TODO: verify authors, title, and arXiv ID --- ID taken from the LTB related-work table}
+}
+
+% --- WMT shared tasks -----------------------------------------------------
+
+@inproceedings{kocmi2023wmt,
+  title     = {Findings of the 2023 Conference on Machine Translation ({WMT23}): {LLMs} Are Here but Not Quite There Yet},
+  author    = {Kocmi, Tom and Avramidis, Eleftherios and Bawden, Rachel and Bojar, Ond{\v{r}}ej and Dvorkovich, Anton and Federmann, Christian and Fishel, Mark and Freitag, Markus and Gowda, Thamme and Grundkiewicz, Roman and Haddow, Barry and Koehn, Philipp and Marie, Benjamin and Monz, Christof and Morishita, Makoto and Murray, Kenton and Nagata, Masaaki and Nakazawa, Toshiaki and Popel, Martin and Popovi{\'c}, Maja and Shmatova, Mariya},
+  booktitle = {Proceedings of the Eighth Conference on Machine Translation (WMT)},
+  pages     = {1--42},
+  year      = {2023},
+  publisher = {Association for Computational Linguistics}
+}
+
+@inproceedings{koehn2004statistical,
+  title     = {Statistical Significance Tests for Machine Translation Evaluation},
+  author    = {Koehn, Philipp},
+  booktitle = {Proceedings of the 2004 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages     = {388--395},
+  year      = {2004},
+  publisher = {Association for Computational Linguistics}
+}
+
+% --- Layout / document understanding -------------------------------------
+
+@inproceedings{xu2020layoutlm,
+  title     = {{LayoutLM}: Pre-training of Text and Layout for Document Image Understanding},
+  author    = {Xu, Yiheng and Li, Minghao and Cui, Lei and Huang, Shaohan and Wei, Furu and Zhou, Ming},
+  booktitle = {Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages     = {1192--1200},
+  year      = {2020},
+  doi       = {10.1145/3394486.3403172}
+}
+
+@inproceedings{zhang2018lpips,
+  title     = {The Unreasonable Effectiveness of Deep Features as a Perceptual Metric},
+  author    = {Zhang, Richard and Isola, Phillip and Efros, Alexei A and Shechtman, Eli and Wang, Oliver},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {586--595},
+  year      = {2018},
+  doi       = {10.1109/CVPR.2018.00068}
+}
+
+@inproceedings{efron1979bootstrap,
+  title     = {Bootstrap Methods: Another Look at the Jackknife},
+  author    = {Efron, Bradley},
+  booktitle = {The Annals of Statistics},
+  volume    = {7},
+  number    = {1},
+  pages     = {1--26},
+  year      = {1979},
+  doi       = {10.1214/aos/1176344552}
+}
