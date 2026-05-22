@@ -1,0 +1,793 @@
+% LayoutTranslateBench --- arXiv preprint (cs.CL)
+% arXiv-safe: standard `article` class, no conference style files.
+% Build: pdflatex main && bibtex main && pdflatex main && pdflatex main
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  citecolor=blue!55!black,
+  urlcolor=blue!55!black,
+}
+
+% Compact column type for numeric table cells.
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{1.6cm}}
+
+\title{LayoutTranslateBench: A Benchmark for Document\\ Translation with Layout Preservation}
+
+% TODO: real author names before arXiv submission
+\author{LayoutTranslateBench Contributors}
+\date{Dataset v0.1.7 \quad / \quad Spec v0.1 \\[2pt] \today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Machine translation is evaluated almost exclusively on plain text, yet most
+documents that people translate in practice---scanned forms, certificates,
+contracts, scientific papers, news pages---carry information in their
+\emph{layout}: the spatial arrangement of text regions and the order in which
+those regions are meant to be read. Current document-translation tools
+routinely degrade this layout, and there is no public benchmark that scores
+layout fidelity and reading order \emph{jointly} with translation quality, so
+there is no shared target to optimize. We introduce \textbf{LayoutTranslateBench
+(LTB)}, a public benchmark for document translation with layout preservation.
+LTB pairs each source document with annotated text regions---polygons or
+bounding boxes, a document-global reading-order index, and reference
+translations from certified translators or FLORES-200 parallel data---and asks
+a system to declare, for every region, both the translated text and the box
+where it placed that text. From this dual reporting LTB computes three metrics:
+character-level \textbf{chrF} with a language-detection gate, \textbf{layout
+IoU}, and a coverage-aware reading-order \textbf{Kendall~$\tau$}; it combines
+them into a single composite, \textbf{LTB-100}, and reports COMET-Kiwi-22 as an
+optional reference-free second metric on a parallel leaderboard. Version 0.1.7
+of the dataset contains 59 documents across 9 categories and 16 English-source
+language pairs. We evaluate seven systems in two classes---oracle-layout
+text-quality upper bounds (DeepL Text API, NLLB-200-distilled-600M,
+Helsinki-NLP/opus-mt, and an identity baseline) and end-to-end systems
+(identity, Qwen3-VL-2B-Instruct, and Florence-NLLB)---and report results on both
+metrics with bootstrap confidence intervals. We find that the chrF--COMET gap is
+largest on non-Latin script pairs, that one pair (en$\rightarrow$uz) is a
+structural zero for 600M-class open models, and that a large gap separates
+oracle-layout upper bounds from realistic end-to-end systems. We release the
+code (Apache-2.0), the dataset (CC-BY-4.0 / CC-BY-SA-4.0), the leaderboard, and
+a public methodology roadmap that tracks every known limitation.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+A large fraction of real-world translation demand is for \emph{documents}, not
+free-standing sentences: immigration paperwork, certified legal translations,
+localized scientific papers, corporate compliance material, and e-commerce
+listings all need a target-language artifact that resembles the source. For
+these inputs, the spatial layout is part of the message. A two-column scientific
+paper read column-major, a government form whose checkboxes sit beside their
+labels, a certificate whose seal and signature line have fixed positions---in
+each case the arrangement of text regions and their reading order carry meaning
+that a flat string does not.
+
+Current tools handle this poorly. Plain-text translators (DeepL, Google
+Translate text mode) translate strings well but discard layout entirely.
+Document-mode tools (DeepL Documents, Google Translate documents, vision-language
+chat assistants) accept a document but frequently degrade its layout:
+text expands or contracts and overflows its box, multi-column reading order
+collapses, fonts are flattened, and right-to-left targets are mirrored
+inconsistently. These failures are visible to any user, yet they are
+\emph{invisible to standard MT evaluation}, which scores text against a
+reference and never inspects the page.
+
+The missing ingredient is a benchmark. WMT shared tasks~\citep{kocmi2023wmt}
+measure text-only translation quality; document-parsing benchmarks such as
+OmniDocBench~\citep{ouyang2024omnidocbench} measure extraction from documents
+but not translation; OCR benchmarks measure recognition but not layout-preserved
+output in a target language. No public benchmark scores layout fidelity,
+reading-order preservation, and text quality \emph{together}. Without such a
+benchmark there is no single number for a layout-preserving translation system
+to optimize, and no objective way to compare systems.
+
+\paragraph{Contributions.} This paper introduces \textbf{LayoutTranslateBench
+(LTB)} and makes the following contributions.
+\begin{itemize}
+  \item \textbf{A task formulation} for document translation with layout
+  preservation: a system must declare, per source region, both the translated
+  text and the bounding box where it placed that text. This dual reporting is
+  what makes joint scoring of translation and layout possible
+  (Section~\ref{sec:benchmark}).
+  \item \textbf{A dataset} (v0.1.7): 59 annotated documents across 9 categories
+  and 16 English-source language pairs, with text regions, polygons/bounding
+  boxes, reading-order indices, and reference translations whose provenance and
+  per-document license are fully recorded (Section~\ref{sec:benchmark}).
+  \item \textbf{A metric suite}: chrF with a language-detection gate, layout
+  IoU, and a coverage-aware reading-order Kendall~$\tau$, combined into the
+  \textbf{LTB-100} composite, with COMET-Kiwi-22 as an optional reference-free
+  second metric and bootstrap confidence intervals on every score
+  (Section~\ref{sec:metrics}).
+  \item \textbf{A reference evaluation} of seven systems in two classes
+  (oracle-layout upper bounds and end-to-end systems), surfacing a chrF--COMET
+  gap concentrated on non-Latin scripts, a structural-zero pair, and a large
+  oracle-versus-end-to-end gap (Section~\ref{sec:experiments}).
+  \item \textbf{A public methodology roadmap} that tracks every known
+  limitation of the benchmark and its fix status, in the spirit of an honest,
+  self-critical research artifact (Sections~\ref{sec:limitations}
+  and~\ref{sec:conclusion}).
+\end{itemize}
+
+LTB is a research artifact. The code is released under Apache-2.0 and the
+dataset under CC-BY-4.0 (author-curated and ML-curated documents) or
+CC-BY-SA-4.0 (FLORES-derived documents), with per-document licenses recorded in
+the dataset manifest.
+
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Text-only MT evaluation.} The dominant paradigm evaluates
+translation on plain text. Surface-overlap metrics---BLEU~\citep{papineni2002bleu}
+and its standardized variant SacreBLEU~\citep{post2018sacrebleu}, and
+chrF~\citep{popovic2015chrf,popovic2017chrfpp}---compare a hypothesis string to
+a reference string. Learned metrics such as COMET~\citep{rei2020comet} and the
+reference-free COMET-Kiwi~\citep{rei2022cometkiwi} correlate better with human
+judgment. The WMT shared tasks~\citep{kocmi2023wmt} are the standard venue for
+comparing systems under these metrics. None of this machinery inspects a
+document page: layout fidelity and reading order are out of scope by
+construction. LTB reuses chrF and COMET-Kiwi as its \emph{text} component but
+adds layout and reading-order axes that text-only evaluation cannot express.
+
+\paragraph{Document parsing and OCR benchmarks.}
+OmniDocBench~\citep{ouyang2024omnidocbench} benchmarks PDF document parsing
+across diverse layouts---it scores how well a system \emph{extracts} structured
+content (Markdown/HTML) from a document. OCR benchmarks such as socOCRbench
+\citep{sococrbench} score multi-region text recognition quality. Both measure a
+source-language extraction step; neither scores a translation, nor whether a
+translated document preserves the source layout. These benchmarks are
+complementary to LTB: a system can extract a document well and still translate
+it badly or destroy its layout when re-rendering.
+
+\paragraph{Document reconstruction.}
+OmniDoc-TokenBench~\citep{omnidoctokenbench} evaluates tokenizer/autoencoder
+reconstruction fidelity on text-heavy documents---a generative-fidelity signal,
+not an end-to-end translation evaluation. LTB instead scores the full
+document-translation task.
+
+\paragraph{Layout-aware models.} Document-understanding models such as
+LayoutLM~\citep{xu2020layoutlm} jointly model text and 2-D layout, and
+OCR-grounded vision models such as Florence-2~\citep{xiao2024florence2} produce
+text with pixel-precise regions. These are \emph{systems} that could be
+evaluated; they are not benchmarks for layout-preserving translation. LTB
+provides the evaluation target such systems currently lack.
+
+\paragraph{Positioning.} Table~\ref{tab:related} summarizes the gap. To our
+knowledge LTB is the first public benchmark that scores translation quality,
+layout fidelity, and reading-order preservation \emph{jointly}, on documents,
+with a single composite score. We deliberately keep text, layout, and order as
+\emph{separate} reported axes---rather than collapsing them into one per-pixel
+bilingual signal as proposed for document-level visual metrics---so that a
+system's failure mode is diagnosable from its score profile.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}p{3.0cm}p{5.0cm}p{5.0cm}@{}}
+\toprule
+\textbf{Benchmark} & \textbf{What it measures} & \textbf{What LTB adds} \\
+\midrule
+OmniDocBench & Document parsing / OCR --- extraction to Markdown/HTML, not
+translation & Translation quality and layout scoring in a target language \\
+\addlinespace
+socOCRbench & Multi-region OCR recognition quality & Layout-preserved output,
+not just source-language extraction \\
+\addlinespace
+WMT shared tasks & Text-only translation quality & Document layout and reading
+order as first-class signals \\
+\addlinespace
+OmniDoc-TokenBench & Autoencoder reconstruction of text-heavy documents &
+End-to-end translation evaluation \\
+\bottomrule
+\end{tabular}
+\caption{LTB positioned against related benchmarks. The benchmarks are
+complementary; LTB is the first to score translation, layout, and reading order
+jointly.}
+\label{tab:related}
+\end{table}
+
+\section{The LTB Benchmark}
+\label{sec:benchmark}
+
+\subsection{Task formulation}
+
+A document in LTB is annotated as a set of \emph{text regions}. A region is a
+polygon (or axis-aligned bounding box) enclosing a contiguous run of text in a
+single logical block---a heading, a paragraph, a table cell, a stamp, a
+signature line. Every ground-truth region carries: the source text; a reference
+translation for each covered target pair; style hints (font-family class,
+size hint, color, background); a 0-based document-global reading-order index;
+and a layout class (e.g.\ \texttt{single-column}, \texttt{two-column},
+\texttt{form-field}, \texttt{table-cell}, \texttt{caption}, \texttt{header},
+\texttt{footer}).
+
+A submission for one (system, language pair) is a JSON Lines file: one line per
+document, each line listing predicted regions. For every region the system
+declares (i)~the translated text it produced and (ii)~the bounding box where it
+placed that text in its rendered output, plus a reading-order index. This
+\emph{dual reporting}---text and box together---is the design choice that lets
+LTB score translation quality and layout fidelity simultaneously from a single
+submission file.
+
+\subsection{Dataset (v0.1.7)}
+
+Version 0.1.7 of the dataset comprises \textbf{59 documents} across 9
+categories. Table~\ref{tab:categories} gives the actual category distribution.
+The \texttt{ocr-document} category dominates at 39 of 59 documents (66\%); we
+treat this imbalance as a known limitation (Section~\ref{sec:limitations}) and
+target $\geq 15$ documents per category, all author-curated or
+certified-translator sourced, for v0.2 (200 documents).
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lrl@{}}
+\toprule
+\textbf{Category} & \textbf{$n$ (v0.1.7)} & \textbf{Provenance} \\
+\midrule
+ocr-document       & 39 & ML-curated (multilingual-document corpus), script-validated \\
+magazine-news      & 11 & 1 author-curated + 10 FLORES-200 (Wikinews) \\
+scientific-paper   &  2 & author-curated \\
+gov-form           &  2 & author-curated \\
+certificate        &  1 & author-curated \\
+receipt-invoice    &  1 & author-curated \\
+business-letter    &  1 & author-curated \\
+handwritten-mixed  &  1 & author-curated \\
+legal-contract     &  1 & author-curated \\
+\midrule
+\textbf{Total}     & \textbf{59} & \\
+\bottomrule
+\end{tabular}
+\caption{Document categories in LTB v0.1.7 and their provenance.
+\texttt{ocr-document} is over-represented at 66\%; v0.2 rebalances to
+$\geq 15$ documents per category.}
+\label{tab:categories}
+\end{table}
+
+\paragraph{Language pairs.} LTB v0.1.7 covers \textbf{16 English-source language
+pairs}, organized as a frozen \emph{core} set of 8 and an \emph{extension} set
+of 8:
+\begin{itemize}
+  \item \textbf{Core 8} (frozen at spec v0.1, suitable for headline LTB-100
+  reporting): en$\rightarrow$es, en$\rightarrow$de, en$\rightarrow$zh,
+  en$\rightarrow$ar, en$\rightarrow$ja, en$\rightarrow$fr, en$\rightarrow$th,
+  en$\rightarrow$ms. These were chosen to stress distinct layout effects: text
+  expansion (German, $\sim$30\% longer), contraction (Chinese, $\sim$30--50\%
+  shorter), right-to-left mirroring (Arabic), and script mixing (Japanese).
+  \item \textbf{Extension 8} (added in v0.1.6, suitable for testing per-pair
+  coverage of large multilingual systems but at sample sizes that do not
+  support tight ranking): en$\rightarrow$ru, en$\rightarrow$ko,
+  en$\rightarrow$vi, en$\rightarrow$id, en$\rightarrow$ur, en$\rightarrow$uz,
+  en$\rightarrow$kk, en$\rightarrow$zh-tw.
+\end{itemize}
+At v0.1.7 every pair has at least 10 certified-translator-grade reference
+documents. Per-pair sample sizes are $N=20$ for six core pairs (en-es, en-de,
+en-ar, en-fr, en-th, en-ms), $N=27$ for en-zh, $N=28$ for en-ja, $N=10$ for
+en-ru (FLORES-200 only), and $N=13$ for each of the remaining seven extension
+pairs (10 FLORES-derived + 3 ML-curated). Confidence intervals on the extension
+pairs are deliberately wide---they are coverage proofs, not benchmark-quality
+samples.
+
+\paragraph{Provenance and licensing.} Reference quality is mixed by document and
+is fully transparent in each annotation's \texttt{provenance.grade} field.
+Author-curated references are single translations at a native-speaker,
+non-professional level; ML-curated references come from a multilingual-document
+corpus; certified-translator references are derived from the FLORES-200
+parallel evaluation data~\citep{flores200}. The code is Apache-2.0; the dataset is CC-BY-4.0 for
+author-curated and ML-curated documents and CC-BY-SA-4.0 for FLORES-derived
+documents, with per-document licenses recorded in \texttt{data/manifest.json}.
+
+\paragraph{Reference-script validation.} While investigating an anomaly on
+en-uz / en-ru, spot-checks revealed that the mined ML-curated source corpus
+contained region-level reference entries labeled as one language but written in
+a different script entirely (e.g.\ Simplified Chinese text under an en-ru
+label). A validation pass (\texttt{scripts/validate\_extension\_refs.py})
+detects script-mismatched references region-by-region and drops them; the
+document itself is retained as layout ground truth, and the coverage-aware
+scorer (Section~\ref{sec:metrics}) prevents the dropped regions from inflating
+the affected pair's average. This pass removed 103 region references across the
+ML-curated subset and reduced en-ru to zero documents at v0.1.6.4; v0.1.7
+restored en-ru to $N=10$ with FLORES-200 references. We recommend any external
+corpus adopted by LTB be run through this validation pass at ingest.
+
+\paragraph{Held-out split.} To discourage benchmark overfitting, 20\% of
+documents per category are held out and never published in raw form. Submitters
+score the public split locally; maintainers re-score the held-out split before
+promoting a result to the leaderboard. The split rotates on a quarterly cadence.
+
+\subsection{Annotation schema}
+
+Each ground-truth document is a JSON record of regions. Region geometry is a
+polygon or an axis-aligned bounding box in pixel coordinates relative to the
+rendered source page. The reading-order index is 0-based and document-global, so
+multi-column and footnote structure is expressible. Reference translations are
+attached per region per language pair. Style hints are coarse (font-family
+\emph{class} rather than a specific typeface) because the v0.1 metrics do not
+score typography; the v0.2 visual-fidelity metric will make finer use of them.
+
+\section{Metrics}
+\label{sec:metrics}
+
+LTB scores a system on three primary axes---text quality, layout fidelity, and
+reading-order preservation---and combines them into the LTB-100 composite. For
+each (system, language pair, document) triple the system produces predicted
+regions; the scorer matches predicted regions to ground-truth regions, scores
+each match, aggregates per document, then averages across documents and language
+pairs.
+
+\subsection{Region matching}
+
+A predicted region is matched to a ground-truth region in two phases:
+(i)~an exact \texttt{region\_id} match, honored only when the two boxes also
+overlap (IoU~$\geq 0.10$), so that an end-to-end system whose region ids happen
+to collide with the ground-truth namespace is not mis-paired to a
+non-overlapping region; then (ii)~greedy IoU matching for any remaining regions,
+with the same minimum IoU of $0.10$, candidate pairs sorted by descending IoU
+and matched without replacement. Predicted regions that fail to match contribute nothing positive.
+Ground-truth regions with no match contribute zero to chrF and IoU and are
+excluded from the reading-order sequence.
+
+\subsection{Text quality: chrF with a language-detection gate}
+
+The text metric is chrF$_2$---character-level F-score with $\beta=2$ over
+character $n$-grams for $n \in \{1,\dots,6\}$, the WMT-standard variant
+\citep{popovic2015chrf}. For a ground-truth region with reference translation
+$r$ and matched predicted text $h$,
+\begin{equation}
+\mathrm{chrF}_2(h, r) \;=\; \frac{1}{6}\sum_{n=1}^{6} F_2\big(\text{$n$-grams}(h),\,\text{$n$-grams}(r)\big),
+\qquad
+F_2(P,R) = \frac{5\,P\,R}{4\,P + R}.
+\end{equation}
+Per-document chrF is the \emph{area-weighted} mean of region chrF scores, so a
+large body paragraph counts for more than a small stamp.
+
+\paragraph{Language-detection gate.} chrF rewards character $n$-gram overlap
+\emph{regardless of whether the output is in the target language}. In LTB v0.1
+this was an artifact: an identity baseline that returns English text scored
+chrF~$\approx 25$ on Latin-script targets via shared Latin characters, copied
+proper nouns, and verbatim numbers and dates. Starting in v0.1.1, before
+computing chrF for a region the predicted text is checked against the target
+language; if it is confidently \emph{not} in the target language, chrF is forced
+to $0$ for that region. The gate has two layers:
+\begin{enumerate}
+  \item A \textbf{script-based pre-filter} for non-Latin targets (zh, ja, ar,
+  th, and the non-Latin extension scripts): the fraction of alphabetic
+  characters falling in the target's Unicode script block is computed; $\geq
+  50\%$ accepts, $<50\%$ rejects. This is more robust than a statistical
+  detector on short strings.
+  \item \textbf{Statistical language detection} for Latin-script targets (es,
+  de, fr, ms, and Latin-script extension pairs), where script alone is
+  insufficient.
+\end{enumerate}
+The gate is deliberately \emph{permissive}: short strings ($<4$ alphabetic
+characters), numbers, currency, and pure punctuation pass unchecked; detection
+failures fail open; and for en-ms both Malay and Indonesian are accepted because
+they are mutually intelligible and not reliably separable on short strings. The
+gate therefore fires only on \emph{confidently wrong-language} predictions and
+does not penalize paraphrase variation or technical terms that legitimately
+remain in the source language.
+
+\subsection{Layout fidelity: IoU}
+
+For each matched region pair $(g, p)$ the scorer computes axis-aligned
+bounding-box intersection-over-union,
+\begin{equation}
+\mathrm{IoU}(g, p) \;=\; \frac{\mathrm{area}(g \cap p)}{\mathrm{area}(g \cup p)}.
+\end{equation}
+Per-document layout IoU is the area-weighted mean over all ground-truth regions;
+unmatched ground-truth regions count as $\mathrm{IoU}=0$. This rewards systems
+that place translated text in the same regions of the page as the source.
+
+\subsection{Reading order: coverage-aware Kendall $\tau$}
+
+For each document, after region matching, the scorer extracts two parallel
+sequences---the ground-truth reading orders of the matched regions in document
+order, and the predicted reading orders of those same regions---and computes
+Kendall's $\tau$-b~\citep{kendall1938tau} between them ($\tau$-b handles ties),
+normalized to $[0,1]$ via $\tau_{\mathrm{norm}} = (\tau + 1)/2$.
+
+\paragraph{Coverage-aware correction.} A naive $\tau$ has a partial-coverage
+hole: a system that returns only one region out of seven trivially scores
+$\tau_{\mathrm{norm}}=1.0$, since a single-element sequence is in order by
+definition. To remove this free credit, LTB scales $\tau$ by coverage:
+\begin{equation}
+\tau_{\mathrm{final}} \;=\; \tau_{\mathrm{norm}} \times
+\min\!\left(1.0,\; \frac{n_{\mathrm{matched}}}{n_{\mathrm{gt}}}\right),
+\end{equation}
+where $n_{\mathrm{matched}}$ is the number of predicted regions that matched a
+ground-truth region and $n_{\mathrm{gt}}$ is the document's total ground-truth
+region count. Under this rule the one-of-seven fallback scores
+$1.0 \times (1/7) \approx 0.14$ rather than $1.0$.
+
+\subsection{Aggregation and the LTB-100 composite}
+
+Per-region scores are combined by area-weighted mean into a per-document score;
+per-document scores are combined by arithmetic mean into a per-language-pair
+score; per-language-pair scores are combined by arithmetic mean (over pairs with
+$n_{\mathrm{docs}} > 0$) into the overall score. Each language pair is weighted
+\emph{equally} in the overall score regardless of document count, which protects
+the benchmark against drift if documents are added unevenly across pairs.
+
+The composite, \textbf{LTB-100}, is a weighted linear combination of the three
+normalized metrics. The v0.1.x formula in production is
+\begin{equation}
+\mathrm{LTB\text{-}100}_{\,\mathrm{v0.1.x}}
+= 100 \times \big(0.50 \cdot \mathrm{chrF}/100
++ 0.30 \cdot \mathrm{IoU}
++ 0.20 \cdot \tau \big).
+\label{eq:ltb100v01}
+\end{equation}
+The weighting is intentionally biased toward text quality (50\%) because
+translation correctness remains the dominant signal at this stage of the field.
+The v0.2 formula adds an OCR round-trip term and an LPIPS visual-fidelity term
+(Section~\ref{sec:conclusion}) and rebalances the existing weights:
+\begin{equation}
+\mathrm{LTB\text{-}100}_{\,\mathrm{v0.2}}
+= 100 \times \big(0.40 \cdot \mathrm{chrF}/100
++ 0.25 \cdot \mathrm{IoU}
++ 0.15 \cdot \tau
++ 0.10 \cdot \mathrm{OCR}
++ 0.10 \cdot \mathrm{LPIPS} \big).
+\label{eq:ltb100v02}
+\end{equation}
+Submitted v0.1 results remain valid under v0.2 and are displayed with an
+explicit version label.
+
+\paragraph{Weight choice.} The 50/30/20 weighting is not arbitrary: it was
+validated post-hoc against three alternatives---balanced (40/40/20),
+text-heavy (60/20/20), and uniform (33/33/33). System rankings are
+\emph{identical} under all four schemes (rank correlation
+$\tau_{\mathrm{norm}}=1.0$ between every pair of rankings) on the systems
+evaluated, so weight choice does not change leaderboard ordering; the 50/30/20
+weights are retained because they communicate the intended emphasis. If a future
+system enters with chrF/IoU/$\tau$ in markedly different relative magnitudes,
+the ablation is to be re-run, and if rankings diverge the weights must be
+validated against human judgment.
+
+\subsection{Bootstrap confidence intervals}
+
+Every LTB-100 score is reported with a 95\% bootstrap percentile confidence
+interval~\citep{efron1979bootstrap}: 1000 resamples with replacement from the
+per-document scores, with a fixed seed (42) for reproducibility. The leaderboard
+displays scores as \texttt{point [CI low, CI high]}. Resampling over documents
+rather than reporting a bare point estimate follows standard practice for
+machine-translation evaluation, where small test sets make point differences
+unreliable~\citep{koehn2004statistical}.
+
+\subsection{COMET-Kiwi-22 as an optional second metric}
+
+chrF has well-known weaknesses---it is paraphrase-blind and adequacy-blind. LTB
+therefore supports \textbf{COMET-Kiwi-22}~\citep{rei2022cometkiwi}, a
+reference-free neural quality-estimation metric, as an optional second text
+metric (\texttt{ltbench score --text-metric comet-kiwi}). COMET-Kiwi produces a
+score in $[0,100]$ that substitutes for chrF in the composite formula, yielding
+a \emph{parallel} leaderboard. chrF remains the default because it is fast,
+deterministic, and CPU-only, whereas COMET-Kiwi requires a separate Python
+environment and a gated model download. Reporting both metrics is itself a
+design choice: rankings can differ between them, and where they differ is
+informative (Section~\ref{sec:experiments}).
+
+\subsection{Oracle-layout versus end-to-end systems}
+
+A runner declares its \texttt{system\_type}. An \textbf{end-to-end} runner
+produces its own bounding boxes from the source image---this is the realistic
+measurement. An \textbf{oracle-layout} runner copies ground-truth bounding boxes
+as its predictions and translates only the text---this is a text-quality
+\emph{upper bound}, not a real-world measurement of the underlying product. The
+leaderboard segregates the two classes into separate tables. Mixing them
+misleads readers: an oracle-layout score for a commercial translator measures
+``that translator's text quality assuming a perfect layout extractor,'' a
+capability the product itself does not provide. We stress that oracle-layout and
+end-to-end runners receive \emph{symmetric per-region inputs}---both are called
+per region---so comparisons \emph{within} a class are fair.
+
+\section{Experiments and Results}
+\label{sec:experiments}
+
+\subsection{Evaluated systems}
+
+We evaluate seven systems in two classes.
+
+\paragraph{Oracle-layout (text-quality upper bounds).}
+\begin{itemize}
+  \item \textbf{DeepL Text API} --- a commercial MT system, called per region
+  via its Text API. Covers 6 of 16 pairs (no Thai, no Malay, plus uncovered
+  extension pairs).
+  \item \textbf{NLLB-200-distilled-600M}~\citep{nllb2022} --- an open-weight
+  multilingual model (CC-BY-NC-4.0, research-only) covering all 16 pairs.
+  \item \textbf{Helsinki-NLP/opus-mt}~\citep{tiedemann2020opusmt} --- open
+  Marian-family models~\citep{junczys2018marian}, commercial-safe
+  (Apache-2.0 / CC-BY-4.0), covering 16 of 16 pairs through a mix of per-pair
+  and multi-target router models.
+  \item \textbf{Identity baseline} --- returns the source text unchanged in the
+  source boxes; a trivial lower bound on text quality and an upper bound on
+  layout.
+\end{itemize}
+
+\paragraph{End-to-end.}
+\begin{itemize}
+  \item \textbf{Identity baseline} --- as above; under end-to-end accounting it
+  also receives the source boxes, so it scores the layout ceiling with
+  near-zero text quality.
+  \item \textbf{Qwen3-VL-2B-Instruct}~\citep{qwen3vl2025} --- a zero-shot
+  vision-language model that must extract its own regions and translate them.
+  \item \textbf{Florence-NLLB} --- a two-stage end-to-end pipeline:
+  Florence-2~\citep{xiao2024florence2} grounded OCR for region detection,
+  followed by NLLB-200~\citep{nllb2022} for per-region translation. Described
+  in Section~\ref{sec:florence}.
+\end{itemize}
+
+\subsection{Leaderboard A: chrF}
+
+Table~\ref{tab:chrf-e2e} reports end-to-end systems and Table~\ref{tab:chrf-oracle}
+reports oracle-layout upper bounds, scored with chrF. LTB-100 cells show the
+point estimate with a 95\% bootstrap confidence interval.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}llRRRc@{}}
+\toprule
+\textbf{System} & \textbf{LTB-100 [95\% CI]} & \textbf{chrF} &
+\textbf{IoU} & \textbf{$\tau$} & \textbf{Coverage} \\
+\midrule
+identity-baseline v0.1.0      & 50.38 [50.2, 50.6] & 0.62 & 1.0000 & 1.0000 & 16/16 \\
+florence-nllb v0.1.0          & 39.79 [36.6, 42.9] & 37.93 & 0.1541 & 0.8104 & 8/16 \\
+qwen3-vl-2b-instruct v0.1.0   & 14.82 [12.1, 17.4] & 5.13 & 0.1084 & 0.4504 & 8/16 \\
+\bottomrule
+\end{tabular}
+\caption{Leaderboard A (chrF) --- end-to-end systems. These runners produce
+their own bounding boxes; this is the realistic real-world score.
+Florence-NLLB is detailed in Section~\ref{sec:florence}.}
+\label{tab:chrf-e2e}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}llRRRc@{}}
+\toprule
+\textbf{System} & \textbf{LTB-100 [95\% CI]} & \textbf{chrF} &
+\textbf{IoU} & \textbf{$\tau$} & \textbf{Coverage} \\
+\midrule
+deepl-text-oracle v0.1.0   & 78.20 [75.2, 81.7] & 56.40 & 1.0000 & 1.0000 & 6/16 \\
+nllb-text-oracle v0.1.0    & 73.71 [72.5, 74.9] & 47.61 & 1.0000 & 1.0000 & 16/16 \\
+opus-mt-text-oracle v0.1.0 & 68.60 [67.1, 70.0] & 37.26 & 1.0000 & 1.0000 & 16/16 \\
+\bottomrule
+\end{tabular}
+\caption{Leaderboard A (chrF) --- oracle-layout reference. Each runner is given
+ground-truth bounding boxes as predictions and translates only the text. These
+are \emph{upper bounds} on text quality, not realistic end-to-end measurements.}
+\label{tab:chrf-oracle}
+\end{table}
+
+\subsection{Leaderboard B: COMET-Kiwi-22}
+
+Tables~\ref{tab:comet-e2e} and~\ref{tab:comet-oracle} report the same systems
+under the reference-free COMET-Kiwi-22 metric. COMET-Kiwi replaces chrF in the
+composite; IoU and $\tau$ are unchanged.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}llRRRc@{}}
+\toprule
+\textbf{System} & \textbf{LTB-100 [95\% CI]} & \textbf{COMET-Kiwi} &
+\textbf{IoU} & \textbf{$\tau$} & \textbf{Coverage} \\
+\midrule
+identity-baseline v0.1.0    & 50.47 [50.3, 50.7] & 0.81 & 1.0000 & 1.0000 & 16/16 \\
+florence-nllb v0.1.0        & 48.11 [44.1, 51.7] & 54.56 & 0.1541 & 0.8104 & 8/16 \\
+qwen3-vl-2b-instruct v0.1.0 & 18.43 [14.6, 22.3] & 12.33 & 0.1084 & 0.4504 & 8/16 \\
+\bottomrule
+\end{tabular}
+\caption{Leaderboard B (COMET-Kiwi-22) --- end-to-end systems.}
+\label{tab:comet-e2e}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}llRRRc@{}}
+\toprule
+\textbf{System} & \textbf{LTB-100 [95\% CI]} & \textbf{COMET-Kiwi} &
+\textbf{IoU} & \textbf{$\tau$} & \textbf{Coverage} \\
+\midrule
+nllb-text-oracle v0.1.0    & 86.51 [85.3, 87.7] & 72.15 & 1.0000 & 1.0000 & 16/16 \\
+deepl-text-oracle v0.1.0   & 84.89 [81.4, 88.0] & 69.77 & 1.0000 & 1.0000 & 6/16 \\
+opus-mt-text-oracle v0.1.0 & 79.35 [77.9, 80.8] & 57.36 & 1.0000 & 1.0000 & 16/16 \\
+\bottomrule
+\end{tabular}
+\caption{Leaderboard B (COMET-Kiwi-22) --- oracle-layout reference. Note the
+ranking flip relative to Leaderboard A: NLLB-200 overtakes DeepL on COMET-Kiwi.}
+\label{tab:comet-oracle}
+\end{table}
+
+\subsection{Key findings}
+
+\paragraph{The chrF--COMET gap is largest on non-Latin pairs.} Rankings differ
+between the two metrics. On the oracle-layout tables, DeepL leads on chrF
+(78.20 vs.\ NLLB 73.71) but NLLB leads on COMET-Kiwi (86.51 vs.\ DeepL 84.89).
+At the per-pair level the gap is concentrated on non-Latin scripts: for NLLB-200,
+COMET-Kiwi exceeds chrF by roughly 31 points on en-kk (COMET 83.5 vs.\ chrF
+52.2) and on en-th (COMET 76.0 vs.\ chrF 45.2), and by roughly 41 points on
+en-ko (COMET 77.8 vs.\ chrF 36.9). chrF, a surface character-overlap metric,
+systematically under-credits adequate translations into scripts and morphologies
+unlike English; a learned metric does not. This divergence is exactly the
+signal the dual-metric design is meant to expose---a single text metric would
+have hidden it.
+
+\paragraph{en$\rightarrow$uz is a structural zero.} Both open models effectively
+fail Uzbek (Latin script): NLLB-200 scores chrF 0.07 and opus-mt scores chrF
+0.04, with COMET-Kiwi around 0.31. The failure is consistent across metrics and
+models, which indicates a genuine capability gap---Uzbek-Latin is not adequately
+supported at the 600M-parameter open-model scale---rather than a metric
+artifact. (A residual reference-quality concern on this pair cannot be fully
+excluded and is noted in the methodology record.) A benchmark that surfaces such
+a structural zero is doing useful work that a macro-average alone would obscure.
+
+\paragraph{Open models diverge sharply by region.} A head-to-head between
+opus-mt and NLLB-200 shows opus-mt is competitive with NLLB on European pairs
+(within $\sim$3 COMET-Kiwi points on en-es, en-de, en-fr, en-ar, en-zh, en-ru,
+with opus-mt slightly ahead on en-de and en-ru) but dramatically weaker on
+several Asian and Central Asian pairs, where opus-mt's per-language models fall
+tens of COMET-Kiwi points behind NLLB. Because opus-mt is Apache-2.0 / CC-BY-4.0
+and NLLB-200 is CC-BY-NC-4.0, this per-pair profile---not a single macro
+average---is the information a downstream practitioner actually needs.
+
+\paragraph{Oracle-layout strongly outscores end-to-end.} The gap between the two
+system classes is large. The best oracle-layout system reaches LTB-100 78.20
+(chrF) by construction---it is handed perfect bounding boxes---while the two
+non-trivial end-to-end systems measured reach far less: Florence-NLLB scores
+39.79 (chrF) and 48.11 (COMET-Kiwi), and the zero-shot Qwen3-VL-2B-Instruct
+14.82 and 18.43. The gap is driven by layout: end-to-end layout IoU is 0.1541
+for Florence-NLLB and 0.1084 for Qwen3-VL, far below the oracle's 1.0000
+ceiling. The identity baseline at
+LTB-100~$\approx 50$ illustrates the composite's structure---it earns full IoU
+and $\tau$ credit (it copies source boxes) and near-zero chrF (it does not
+translate), so half of LTB-100's weight is unrealizable for it. End-to-end
+document translation with faithful layout is, by this measurement, an open
+problem; the headline number for a real system is the end-to-end number, not the
+oracle-layout one.
+
+\subsection{Florence-NLLB: an end-to-end OCR+MT pipeline}
+\label{sec:florence}
+
+Florence-NLLB is the first end-to-end OCR+MT pipeline runner in LTB. It is a
+two-stage system: stage~1 uses Florence-2~\citep{xiao2024florence2} grounded OCR
+(the \texttt{<OCR\_WITH\_REGION>} task) to detect text regions and their
+bounding boxes directly from the source page image; stage~2 translates each
+detected region with NLLB-200-distilled-600M~\citep{nllb2022}. Crucially the
+bounding boxes come from Florence-2's predictions, \emph{not} from the
+ground-truth annotation---so Florence-NLLB is a genuine end-to-end runner rather
+than an oracle-layout one, and its layout score reflects a real region-detection
+step.
+
+Evaluated on the core-8 pairs (80 documents), Florence-NLLB scores LTB-100
+39.79 [36.6, 42.9] on the chrF leaderboard and 48.11 [44.1, 51.7] on
+COMET-Kiwi, ranking second of three end-to-end systems on both boards---behind
+only the trivial identity baseline (50.38 / 50.47) and well ahead of the
+zero-shot Qwen3-VL-2B-Instruct (14.82 / 18.43). Of its three components, layout
+fidelity is the weakest: IoU is 0.1541---higher than Qwen3-VL's 0.1084, which is
+consistent with Florence-2 being trained for document OCR grounding, but still
+far below the oracle ceiling of 1.0. Florence-2 detects 5--13 regions per page
+(mean 7.9, zero parser-failure placeholders), yet those regions only partially
+overlap the annotated blocks, and unmatched ground-truth regions score zero.
+Reading order is preserved reasonably well ($\tau = 0.81$), and text quality is
+moderate---chrF 37.93, COMET-Kiwi 54.56---with the two metrics diverging in the
+now-familiar pattern: the reference-free metric credits NLLB's fluent output
+more generously than character overlap does, most visibly on the CJK pairs where
+Florence-2's OCR is weakest (chrF 27.2 on en-zh and 29.4 on en-ja, against
+38--47 on the Latin-script pairs). Florence-NLLB thus illustrates the paper's
+central point concretely: a competent translation model paired with a
+document-trained OCR model still leaves a wide gap to the oracle ceiling, and
+that gap is dominated by imperfect layout extraction.
+
+\section{Limitations}
+\label{sec:limitations}
+
+LTB is an evolving research artifact, and its methodology limitations are
+tracked publicly in a methodology roadmap. We restate the substantive ones here.
+
+\begin{itemize}
+  \item \textbf{Single reference per region.} Each region currently has one
+  reference translation. FLORES-200 references raise the quality bar to
+  certified-translator level, but single-reference scoring still penalizes
+  legitimate paraphrase variation. Multi-reference scoring (two references per
+  document on the core 8) is deferred to v0.2 and requires a translation budget.
+  \item \textbf{No human-evaluation correlation collected yet.} The
+  infrastructure to correlate automatic LTB-100 with human Direct Assessment
+  judgments is implemented (export of rating prompts and a correlation
+  command), but no judgments have been collected. Until they are, the claim that
+  LTB-100 tracks human judgment rests on the component metrics' established
+  correlations~\citep{popovic2015chrf,rei2022cometkiwi}, not on LTB-specific
+  evidence. Collecting $\sim$1000 judgments across systems is v0.2 scope and
+  requires paid raters.
+  \item \textbf{Dataset size.} 59 documents is small. Six core pairs are at
+  $N=20$, and the extension pairs at $N=10$--$13$ have deliberately wide
+  confidence intervals; they are coverage proofs, not ranking-grade samples.
+  v0.2 targets 200 documents.
+  \item \textbf{Category imbalance.} \texttt{ocr-document} is over-represented
+  at 39 of 59 documents (66\%), so the headline number is weighted toward
+  scanned real-world documents over forms, certificates, scientific papers, and
+  contracts. v0.2 rebalances to $\geq 15$ documents per category.
+  \item \textbf{Partial end-to-end coverage.} The end-to-end leaderboard covers
+  the core-8 pairs only: both Florence-NLLB and Qwen3-VL-2B-Instruct are scored
+  on 8 of 16 pairs. The oracle-layout tables are more complete but, by
+  definition, do not measure layout extraction.
+  \item \textbf{chrF as a text metric.} chrF is paraphrase- and adequacy-blind;
+  the language-detection gate removes one specific artifact (Latin
+  bleed-through) but not these deeper weaknesses. COMET-Kiwi-22 is provided as a
+  parallel metric for this reason, and v0.2 will make it the leaderboard
+  default.
+  \item \textbf{Mined-reference quality.} The ML-curated subset required a
+  script-validation pass to remove mislabeled references; residual
+  reference-quality issues on individual pairs (notably en-uz) cannot be fully
+  excluded.
+  \item \textbf{No visual-fidelity or OCR round-trip metric yet.} v0.1 does not
+  score destroyed figures, charts, or stamps, nor does it verify that text
+  claimed in a submission was actually rendered. Both are v0.2 metrics
+  (Section~\ref{sec:conclusion}).
+\end{itemize}
+
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+
+LayoutTranslateBench is, to our knowledge, the first public benchmark that
+scores document translation, layout fidelity, and reading-order preservation
+jointly under a single composite, LTB-100, with a reference-free second metric
+on a parallel leaderboard. Version 0.1.7 provides 59 annotated documents across
+9 categories and 16 language pairs. Our reference evaluation shows that the
+chrF--COMET gap is concentrated on non-Latin scripts (validating the dual-metric
+design), that en$\rightarrow$uz is a structural zero for 600M-class open models,
+and that a large gap separates oracle-layout text-quality upper bounds from
+realistic end-to-end systems---meaning faithful end-to-end document translation
+remains an open problem.
+
+The v0.2 roadmap is concrete:
+\begin{itemize}
+  \item \textbf{LPIPS visual-fidelity metric}~\citep{zhang2018lpips} --- a
+  perceptual-similarity score on the non-text regions of the rendered output,
+  catching destroyed figures, charts, stamps, and backgrounds; added to the
+  composite at 10\% weight (Eq.~\ref{eq:ltb100v02}).
+  \item \textbf{OCR round-trip metric} --- OCR the rendered output and compare
+  the recognized text to the system's own declared translation, catching text
+  claimed in a submission but not actually rendered; added at 10\% weight.
+  \item \textbf{Multi-reference scoring} --- a second certified-translator
+  reference per document on the core 8, reducing paraphrase penalization.
+  \item \textbf{Human evaluation} --- Direct Assessment judgments across systems
+  to empirically validate LTB-100's correlation with human judgment.
+  \item \textbf{Dataset scale-up} --- to 200 documents, rebalanced to $\geq 15$
+  per category, with broader end-to-end system coverage.
+\end{itemize}
+Submitted v0.1 results remain valid under the v0.2 composite and are displayed
+with an explicit version label. The benchmark, dataset, leaderboard, and the
+public methodology roadmap are released so that the community can both build
+against LTB and argue with it.
+
+\paragraph{Availability.} Code (Apache-2.0), dataset (CC-BY-4.0 /
+CC-BY-SA-4.0), and the live leaderboard are available at
+\url{https://github.com/Lawrenzho-bit/LayoutTranslateBench}; the benchmark
+specification and dataset version are citable as~\citet{ltbench2026}.
+
+% TODO: add Acknowledgments section with translator / contributor credits before arXiv submission
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}
